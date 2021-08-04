@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/includedInDataCatalog", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "includedInDataCatalog", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/includedInDataCatalog", 
+                    "_lastone": true, 
+                    "rdfs:label": "includedInDataCatalog"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/includedDataCatalog", 
+        "rdfs:label": "includedDataCatalog"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "所在的数据集目录", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Dataset", 
+            "_last": true, 
+            "rdfs:label": "Dataset"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/dataset", 
+        "rdfs:label": "dataset"
+    }, 
+    "nameZh": "所在数据集目录", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DataCatalog", 
+            "_last": true, 
+            "rdfs:label": "DataCatalog"
+        }
+    ], 
+    "rdfs:comment": "A data catalog which contains this dataset.", 
+    "rdfs:label": "includedInDataCatalog", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

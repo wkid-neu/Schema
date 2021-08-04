@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/audienceType", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "audienceType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/audienceType", 
+                    "_lastone": true, 
+                    "rdfs:label": "audienceType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与给定受众相关的目标群体。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "_last": true, 
+            "rdfs:label": "Audience"
+        }
+    ], 
+    "nameZh": "受众类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The target group associated with a given audience (e.g. veterans, car owners, musicians, etc.).", 
+    "rdfs:label": "audienceType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

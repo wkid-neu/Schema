@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/material", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "material", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/material", 
+                    "_lastone": true, 
+                    "rdfs:label": "material"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/artMedium", 
+            "rdfs:label": "artMedium"
+        }, 
+        {
+            "@id": "http://cnschema.org/surface", 
+            "_last": true, 
+            "rdfs:label": "surface"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "物体使用的材料", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "nameZh": "材质", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "A material that something is made from, e.g. leather, wool, cotton, paper.", 
+    "rdfs:label": "material", 
+    "wikidataName": "material used", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P186", 
+    "wikipediaUrl": ""
+}

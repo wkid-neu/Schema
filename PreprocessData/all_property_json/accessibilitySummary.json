@@ -1,0 +1,105 @@
+{
+    "@id": "http://cnschema.org/accessibilitySummary", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A graphic novel book example.\nSee also https://github.com/daisy/epub-revision-a11y/wiki/ePub-3.1-Accessibility--Proposal-To-Schema.org", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "accessMode", 
+                "accessModeSufficient", 
+                "accessibilitySummary", 
+                "accessibilityFeature"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/issue-1100-examples.txt"
+        }, 
+        {
+            "JSON": "{\n  \"@context\": \"http://cnschema.org/\",\n  \"@type\": \"Movie\",\n  \"accessMode\": [\"auditory\", \"visual\"],\n  \"accessibilityFeature\": [\"audioDescription\", \"captions\"],\n  \"accessModeSufficient\": [ \n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"textual\", \"visual\"], \n      \"description\": \"Closed captioning\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\"], \n      \"description\": \"Audio description\"\n    }\n  ],\n  \"accessibilitySummary\": \"Captions provided in English; short scenes in French have English subtitles instead.\"\n}", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A second example.\nSee also https://github.com/daisy/epub-revision-a11y/wiki/ePub-3.1-Accessibility--Proposal-To-Schema.org", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "accessMode", 
+                "accessModeSufficient", 
+                "accessibilitySummary", 
+                "accessibilityFeature"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/issue-1100-examples.txt"
+        }, 
+        {
+            "JSON": "{\n  \"@context\": \"http://cnschema.org/\",\n  \"@type\": \"Book\",\n  \"name\": \"Alice in Wonderland\",\n  \"accessMode\": [\"auditory\", \"textual\", \"visual\"],\n  \"accessibilityFeature\": [\"alternativeText\", \"synchronizedAudioText\"],\n  \"accessModeSufficient\": [ \n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"textual\"], \n      \"description\": \"See the text\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"textual\", \"visual\"], \n      \"description\": \"See the text and images\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\"], \n      \"description\": \"Hear the text and image descriptions\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\", \"visual\"], \n      \"description\": \"Hear the text and see the images\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\", \"visual\", \"textual\"], \n      \"description\": \"Hear the text and see the text and images\"\n    }\n  ],\n  \"accessibilitySummary\": \"Short descriptions are provided; long descriptions of the images are not needed for most readers.\"\n}", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A third example.\nSee also https://github.com/daisy/epub-revision-a11y/wiki/ePub-3.1-Accessibility--Proposal-To-Schema.org", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "accessMode", 
+                "accessModeSufficient", 
+                "accessibilitySummary", 
+                "accessibilityFeature"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/issue-1100-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "accessibilitySummary", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/accessibilitySummary", 
+                    "_lastone": true, 
+                    "rdfs:label": "accessibilitySummary"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_source": [
+        {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1100", 
+            "_last": true, 
+            "rdfs:comment": "https://github.com/schemaorg/schemaorg/issues/1100", 
+            "rdfs:label": "https://github.com/schemaorg/schemaorg/issues/1100"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "达成无障碍环境可能遇到的风险的摘要描述，例如“提供了简短的描述，但非视觉用户将需要较长的描述”或“提供了简短描述，也不需要更长的描述“。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "无障碍环境服务的总结", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as \"short descriptions are present but long descriptions will be needed for non-visual users\" or \"short descriptions are present and no long descriptions are needed.\"", 
+    "rdfs:label": "accessibilitySummary", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

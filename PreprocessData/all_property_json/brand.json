@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/brand", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "brand", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/brand", 
+                    "_lastone": true, 
+                    "rdfs:label": "brand"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与该产品或服务相关的品牌，或者是由该组织或个人维护的品牌。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "nameZh": "品牌", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Brand", 
+            "_last": true, 
+            "rdfs:label": "Brand"
+        }
+    ], 
+    "rdfs:comment": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.", 
+    "rdfs:label": "brand", 
+    "wikidataName": "brand", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1716", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Brand"
+}

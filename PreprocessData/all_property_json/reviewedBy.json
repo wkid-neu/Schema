@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/reviewedBy", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "reviewedBy", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/reviewedBy", 
+                    "_lastone": true, 
+                    "rdfs:label": "reviewedBy"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "评论网页内容（准确性、完整性）的人或者组织", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/WebPage", 
+            "_last": true, 
+            "rdfs:label": "WebPage"
+        }
+    ], 
+    "nameZh": "评论者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "People or organizations that have reviewed the content on this web page for accuracy and/or completeness.", 
+    "rdfs:label": "reviewedBy", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

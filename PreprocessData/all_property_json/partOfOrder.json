@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/partOfOrder", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "partOfOrder", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/partOfOrder", 
+                    "_lastone": true, 
+                    "rdfs:label": "partOfOrder"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "包含此交货中物品的整体订单", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParcelDelivery", 
+            "_last": true, 
+            "rdfs:label": "ParcelDelivery"
+        }
+    ], 
+    "nameZh": "所属订单", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "rdfs:comment": "The overall order the items in this delivery were included in.", 
+    "rdfs:label": "partOfOrder", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

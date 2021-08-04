@@ -1,0 +1,607 @@
+{
+    "@id": "http://cnschema.org/BoardingPolicyType", 
+    "_group_type": true, 
+    "_instances": [
+        {
+            "@id": "http://cnschema.org/GroupBoardingPolicy", 
+            "rdfs:label": "GroupBoardingPolicy"
+        }, 
+        {
+            "@id": "http://cnschema.org/ZoneBoardingPolicy", 
+            "_last": true, 
+            "rdfs:label": "ZoneBoardingPolicy"
+        }
+    ], 
+    "_layer": "core", 
+    "_node_label": "BoardingPolicyType", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/boardingPolicy", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "航空公司所用的登机政策的类型（例如基于区域的、基于分组的）。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Airline", 
+                    "rdfs:label": "Airline"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Flight", 
+                    "_last": true, 
+                    "rdfs:label": "Flight"
+                }
+            ], 
+            "nameZh": "登机政策", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/BoardingPolicyType", 
+                    "_last": true, 
+                    "rdfs:label": "BoardingPolicyType"
+                }
+            ], 
+            "rdfs:comment": "The type of boarding policy used by the airline (e.g. zone-based or group-based).", 
+            "rdfs:label": "boardingPolicy", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Enumeration", 
+                    "rdfs:label": "Enumeration"
+                }, 
+                {
+                    "@id": "http://cnschema.org/BoardingPolicyType", 
+                    "_lastone": true, 
+                    "rdfs:label": "BoardingPolicyType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/Enumeration", 
+            "_last": true, 
+            "rdfs:label": "Enumeration"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "航空公司使用的一种登机政策", 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/boardingPolicy", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "航空公司所用的登机政策的类型（例如基于区域的、基于分组的）。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Airline"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Flight"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/BoardingPolicyType"
+            }, 
+            "nameZh": "登机政策", 
+            "rdfs:comment": "The type of boarding policy used by the airline (e.g. zone-based or group-based).", 
+            "rdfs:label": "boardingPolicy", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "登机政策类型", 
+    "rdfs:comment": "A type of boarding policy used by an airline.", 
+    "rdfs:label": "BoardingPolicyType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

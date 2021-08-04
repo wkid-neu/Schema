@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/lastReviewed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "lastReviewed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/lastReviewed", 
+                    "_lastone": true, 
+                    "rdfs:label": "lastReviewed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "上一次审查本网页内容的准确性和或完整性的日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/WebPage", 
+            "_last": true, 
+            "rdfs:label": "WebPage"
+        }
+    ], 
+    "nameZh": "最近审查时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "Date on which the content on this web page was last reviewed for accuracy and/or completeness.", 
+    "rdfs:label": "lastReviewed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

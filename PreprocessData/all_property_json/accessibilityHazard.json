@@ -1,0 +1,99 @@
+{
+    "@id": "http://cnschema.org/accessibilityHazard", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\nThis example shows the addition of Accessibility metadata. Although these properties are not\na formal enumeration, there is evolving consensus amongst accessibility experts for\nappropriate values for these properties. This example shows simple text values,\nas suggested by www.a11ymetadata.org.\n\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n      Name:\n      Holt Physical Science\n      Brief Synopsis:\n      NIMAC-sourced textbook\n      Long Synopsis:\n      N/A\n      Book Quality:\n      Publisher Quality\n      Book Size:\n      598 Pages\n      ISBN-13:\n      9780030426599\n      Publisher:\n      Holt, Rinehart and Winston\n      Date of Addition:\n      06/08/10\n      Copyright Date:\n      2007\n      Copyrighted By:\n      Holt, Rinehart and Winston\n      Adult content:\n      No\n      Language:\n      English US\n      Essential Images:\n      861\n      Described Images:\n      910\n      Categories:\n      Educational Materials\n      Grade Levels:\n      Sixth grade, Seventh grade, Eighth grade\n      Submitted By:\n      Bookshare Staff\n      NIMAC:\n      This book is currently only available to public K-12 schools and organizations in the\n      United States for use with students with an IEP, because it was created from files\n      supplied by the NIMAC under these restrictions. Learn more in the NIMAC Support Center.\n   \n   \n      Reviews of Holt Physical Science (0 reviews)\n      \n         0 - No Rating Yet\n      \n   \n", 
+            "PRE-MARKUP": "\n   \n      Name:\n      Holt Physical Science\n      Brief Synopsis:\n      NIMAC-sourced textbook\n      Long Synopsis:\n      N/A\n      Book Quality:\n      Publisher Quality\n      Book Size:\n      598 Pages\n      ISBN-13:\n      9780030426599\n      Publisher:\n      Holt, Rinehart and Winston\n      Date of Addition:\n      06/08/10\n      Copyright Date:\n      2007\n      Copyrighted By:\n      Holt, Rinehart and Winston\n      Adult content:\n      No\n      Language:\n      English US\n      Essential Images:\n      861\n      Described Images:\n      910\n      Categories:\n      Educational Materials\n      Grade Levels:\n      Sixth grade, Seventh grade, Eighth grade\n      Submitted By:\n      Bookshare Staff\n      NIMAC:\n      This book is currently only available to public K-12 schools and organizations in the\n      United States for use with students with an IEP, because it was created from files\n      supplied by the NIMAC under these restrictions. Learn more in the NIMAC Support Center.\n   \n   \n      Reviews of Holt Physical Science (0 reviews)\n      \n         0 - No Rating Yet\n      \n   \n", 
+            "RDFA": "\nThis example shows the addition of Accessibility metadata. Although these properties are not\na formal enumeration, there is evolving consensus amongst accessibility experts for\nappropriate values for these properties. This example shows simple text values,\nas suggested by www.a11ymetadata.org.\n\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n      Name:\n      Holt Physical Science\n      Brief Synopsis:\n      NIMAC-sourced textbook\n      Long Synopsis:\n      N/A\n      Book Quality:\n      Publisher Quality\n      Book Size:\n      598 Pages\n      ISBN-13:\n      9780030426599\n      Publisher:\n      Holt, Rinehart and Winston\n      Date of Addition:\n      06/08/10\n      Copyright Date:\n      2007\n      Copyrighted By:\n      Holt, Rinehart and Winston\n      Adult content:\n      No\n      Language:\n      English US\n      Essential Images:\n      861\n      Described Images:\n      910\n      Categories:\n      Educational Materials\n      Grade Levels:\n      Sixth grade, Seventh grade, Eighth grade\n      Submitted By:\n      Bookshare Staff\n      NIMAC:\n      This book is currently only available to public K-12 schools and organizations in the\n      United States for use with students with an IEP, because it was created from files\n      supplied by the NIMAC under these restrictions. Learn more in the NIMAC Support Center.\n   \n   \n      Reviews of Holt Physical Science (0 reviews)\n      \n         0 - No Rating Yet\n      \n   \n", 
+            "TYPES": [
+                "Book", 
+                "CreativeWork", 
+                "accessibilityFeature", 
+                "accessibilityHazard", 
+                "accessibilityControl", 
+                "accessibilityAPI"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "No Json example available", 
+            "MICRODATA": "\n \n \n \n \n \n\n", 
+            "PRE-MARKUP": "", 
+            "RDFA": "\n \n \n \n \n \n\n", 
+            "TYPES": [
+                "accessibilityFeature", 
+                "accessibilityHazard", 
+                "encodingFormat"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n \n", 
+            "PRE-MARKUP": "[A basic presentation in HTML]", 
+            "RDFA": "\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n \n", 
+            "TYPES": [
+                "encodingFormat", 
+                "accessibilityHazard", 
+                "accessibilityFeature", 
+                "accessibilityControl", 
+                "accessibilityAPI"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "accessibilityHazard", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/accessibilityHazard", 
+                    "_lastone": true, 
+                    "rdfs:label": "accessibilityHazard"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "系统可能对使用者产生生理危害", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "无障碍环境服务的连带风险", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A characteristic of the described resource that is physiologically dangerous to some users. Related to WCAG 2.0 guideline 2.3 (WebSchemas wiki lists possible values).", 
+    "rdfs:label": "accessibilityHazard", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

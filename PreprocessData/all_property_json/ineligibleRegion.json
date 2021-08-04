@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/ineligibleRegion", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "ineligibleRegion", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ineligibleRegion", 
+                    "_lastone": true, 
+                    "rdfs:label": "ineligibleRegion"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "不适合区域", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Demand", 
+            "rdfs:label": "Demand"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/DeliveryChargeSpecification", 
+            "_last": true, 
+            "rdfs:label": "DeliveryChargeSpecification"
+        }
+    ], 
+    "nameZh": "不适用地区", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "_last": true, 
+            "rdfs:label": "GeoShape"
+        }
+    ], 
+    "rdfs:comment": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\n\nSee also eligibleRegion.", 
+    "rdfs:label": "ineligibleRegion", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

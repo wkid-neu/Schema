@@ -1,0 +1,77 @@
+{
+    "@id": "http://cnschema.org/pageStart", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "pageStart", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/pageStart", 
+                    "_lastone": true, 
+                    "rdfs:label": "pageStart"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The W3C Schema Bib Extend (BibEx) group led the work to improve cnschema.org for bibliographic information, including terms for periodicals, articles and multi-volume works. The design was inspired in places (e.g. pageStart, pageEnd, pagination) by the Bibliographic Ontology, 'bibo'.", 
+            "rdfs:label": "BibExTerm", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "开始页码。例如，“135”或“xiii”", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PublicationVolume", 
+            "rdfs:label": "PublicationVolume"
+        }, 
+        {
+            "@id": "http://cnschema.org/PublicationIssue", 
+            "rdfs:label": "PublicationIssue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Article", 
+            "_last": true, 
+            "rdfs:label": "Article"
+        }
+    ], 
+    "nameZh": "开始页码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The page on which the work starts; for example \"135\" or \"xiii\".", 
+    "rdfs:label": "pageStart", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

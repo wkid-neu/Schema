@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/alternateName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "alternateName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_lastone": true, 
+                    "rdfs:label": "alternateName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该项的别名。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "nameZh": "别名", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "An alias for the item.", 
+    "rdfs:label": "alternateName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

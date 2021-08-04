@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/associatedArticle", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "associatedArticle", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/associatedArticle", 
+                    "_lastone": true, 
+                    "rdfs:label": "associatedArticle"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与该媒体对象相关的新闻文章。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "nameZh": "相关文章", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/NewsArticle", 
+            "_last": true, 
+            "rdfs:label": "NewsArticle"
+        }
+    ], 
+    "rdfs:comment": "A NewsArticle associated with the Media Object.", 
+    "rdfs:label": "associatedArticle", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

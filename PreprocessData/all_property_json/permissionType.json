@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/permissionType", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "permissionType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/permissionType", 
+                    "_lastone": true, 
+                    "rdfs:label": "permissionType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "授予该人，组织或观众的权限许可类型", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DigitalDocumentPermission", 
+            "_last": true, 
+            "rdfs:label": "DigitalDocumentPermission"
+        }
+    ], 
+    "nameZh": "权限类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DigitalDocumentPermissionType", 
+            "_last": true, 
+            "rdfs:label": "DigitalDocumentPermissionType"
+        }
+    ], 
+    "rdfs:comment": "The type of permission granted the person, organization, or audience.", 
+    "rdfs:label": "permissionType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

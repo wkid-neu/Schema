@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/additionalType", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+            "TYPES": [
+                "Offer", 
+                "offeredBy", 
+                "Book", 
+                "additionalType"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "additionalType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_lastone": true, 
+                    "rdfs:label": "additionalType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "nameZh": "附加类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+    "rdfs:label": "additionalType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

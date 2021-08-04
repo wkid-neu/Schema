@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/expectedArrivalUntil", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "expectedArrivalUntil", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/expectedArrivalUntil", 
+                    "_lastone": true, 
+                    "rdfs:label": "expectedArrivalUntil"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "包裹可能到达的最晚日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParcelDelivery", 
+            "_last": true, 
+            "rdfs:label": "ParcelDelivery"
+        }
+    ], 
+    "nameZh": "预计最晚送达时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The latest date the package may arrive.", 
+    "rdfs:label": "expectedArrivalUntil", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/valueName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "valueName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/valueName", 
+                    "_lastone": true, 
+                    "rdfs:label": "valueName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指明在URL模板中使用的“属性值详情”的名称和编码，格式类似于HTML的input@name", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValueSpecification", 
+            "_last": true, 
+            "rdfs:label": "PropertyValueSpecification"
+        }
+    ], 
+    "nameZh": "值的名称", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Indicates the name of the PropertyValueSpecification to be used in URL templates and form encoding in a manner analogous to HTML's input@name.", 
+    "rdfs:label": "valueName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

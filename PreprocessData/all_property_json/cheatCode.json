@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/cheatCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "cheatCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/cheatCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "cheatCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "游戏中的作弊代码。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "rdfs:label": "VideoGame"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "_last": true, 
+            "rdfs:label": "VideoGameSeries"
+        }
+    ], 
+    "nameZh": "游戏作弊码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "Cheat codes to the game.", 
+    "rdfs:label": "cheatCode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/birthPlace", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "birthPlace", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/birthPlace", 
+                    "_lastone": true, 
+                    "rdfs:label": "birthPlace"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "此人出生的地方。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "出生地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The place where the person was born.", 
+    "rdfs:label": "birthPlace", 
+    "wikidataName": "place of birth", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P19", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Birth_place"
+}

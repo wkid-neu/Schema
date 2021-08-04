@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/jobBenefits", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "jobBenefits", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/jobBenefits", 
+                    "_lastone": true, 
+                    "rdfs:label": "jobBenefits"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/benefits", 
+        "rdfs:label": "benefits"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "璇ヨ亴浣嶅叿鏈夌殑绂忓埄", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/JobPosting", 
+            "_last": true, 
+            "rdfs:label": "JobPosting"
+        }
+    ], 
+    "nameZh": "鑱屼綅绂忓埄", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Description of benefits associated with the job.", 
+    "rdfs:label": "jobBenefits", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Job_benefit"
+}

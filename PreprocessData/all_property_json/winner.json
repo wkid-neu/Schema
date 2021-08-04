@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/winner", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "winner", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/winner", 
+                    "_lastone": true, 
+                    "rdfs:label": "winner"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/participant", 
+            "_last": true, 
+            "rdfs:label": "participant"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "活动的获胜者。是活动参与者的子属性", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LoseAction", 
+            "_last": true, 
+            "rdfs:label": "LoseAction"
+        }
+    ], 
+    "nameZh": "赢家", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A sub property of participant. The winner of the action.", 
+    "rdfs:label": "winner", 
+    "wikidataName": "winner", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1346", 
+    "wikipediaUrl": ""
+}

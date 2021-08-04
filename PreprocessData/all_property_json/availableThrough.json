@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/availableThrough", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "availableThrough", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/availableThrough", 
+                    "_lastone": true, 
+                    "rdfs:label": "availableThrough"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "过了该日期，该商品将不可取件。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DeliveryEvent", 
+            "_last": true, 
+            "rdfs:label": "DeliveryEvent"
+        }
+    ], 
+    "nameZh": "提货截止时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "After this date, the item will no longer be available for pickup.", 
+    "rdfs:label": "availableThrough", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

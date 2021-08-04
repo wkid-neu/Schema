@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/agent", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "agent", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/agent", 
+                    "_lastone": true, 
+                    "rdfs:label": "agent"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "发起作用（或产生某种结果）的人或物", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "行为的发起者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "The direct performer or driver of the action (animate or inanimate). e.g. John wrote a book.", 
+    "rdfs:label": "agent", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

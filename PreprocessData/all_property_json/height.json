@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/height", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "height", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/height", 
+                    "_lastone": true, 
+                    "rdfs:label": "height"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "楂樺害", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "rdfs:label": "MediaObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/VisualArtwork", 
+            "_last": true, 
+            "rdfs:label": "VisualArtwork"
+        }
+    ], 
+    "nameZh": "楂樺害", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Distance", 
+            "rdfs:label": "Distance"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The height of the item.", 
+    "rdfs:label": "height", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Height"
+}

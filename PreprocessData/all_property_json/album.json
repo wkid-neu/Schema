@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/album", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "album", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/album", 
+                    "_lastone": true, 
+                    "rdfs:label": "album"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/albums", 
+        "rdfs:label": "albums"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "将一定数量以上的歌曲或乐曲集结在一起，并对外发行的一种媒体类型", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicGroup", 
+            "_last": true, 
+            "rdfs:label": "MusicGroup"
+        }
+    ], 
+    "nameZh": "专辑", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicAlbum", 
+            "_last": true, 
+            "rdfs:label": "MusicAlbum"
+        }
+    ], 
+    "rdfs:comment": "A music album.", 
+    "rdfs:label": "album", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Album"
+}

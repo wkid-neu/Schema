@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+      <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="{% static 'js/jquery-3.2.1.js' %}"></script>
+</head>
+<body>
+<div>
+    <div >
+        <form action="create/search/" method="get" style="margin: auto 0;">
+           <p>搜索你想标注的事物</p>
+            <input style="height: 20px;width: 200px" type="text" id="search-text" name="q">
+        </form>
+        <p id='search-result'  style="font-size:10px;width:200px;height:150px;line-height:25px;margin:0;overflow-y:auto; overflow-x:hidden" ></p>
+
+    </div>
+</div>
+<script type="text/javascript">
+function get_result()
+{
+    var dest = $("#search-text").val();                         //获取搜索框输入的值
+            $.get("/create/search",{'dest':dest}, function(data){               //参数：发送的url；传入的数据；请求成功后的调用函数（data即是试图函数返回的json格式数据）详情
+                data = data['result'];
+                var entity_name = '';
+                var namezh = '';
+                var url = '';
+                var html="";
+                for (var i = data.length - 1; i >= 0; i--) {
+                    entity_name = data[i][0];
+                    namezh = data[i][1];
+                    url = '/create/creating/'+entity_name;
+                    html =`<span><a href=${url}>`+entity_name+"("+namezh+")"+"</a></span><br/>";
+                    $('#search-result').append(html)      //加入到search-result部分显示
+                };
+            })
+}
+    $(document).ready(function(){
+        $("#search-text").keyup(function(){
+            get_result();
+
+        });
+
+        $('#search-text').keydown(function(){ //键盘松手触发
+            $('#search-result').empty();
+        })
+         $('#search-text').blur(function(){ //数去焦点
+            setTimeout(() => {
+            $('#search-result').hide();
+        },500)
+        })
+
+    });
+
+</script>
+
+</body>
+</html>

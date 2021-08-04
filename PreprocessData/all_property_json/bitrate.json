@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/bitrate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "bitrate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/bitrate", 
+                    "_lastone": true, 
+                    "rdfs:label": "bitrate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "媒体对象的比特率。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "nameZh": "比特率", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The bitrate of the media object.", 
+    "rdfs:label": "bitrate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Bit_rate"
+}

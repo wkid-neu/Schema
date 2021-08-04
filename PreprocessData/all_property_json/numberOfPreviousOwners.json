@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/numberOfPreviousOwners", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfPreviousOwners", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfPreviousOwners", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfPreviousOwners"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "这辆车的车主数量，包括现在的车主", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "历任车主数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The number of owners of the vehicle, including the current one.\n\nTypical unit code(s): C62", 
+    "rdfs:label": "numberOfPreviousOwners", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

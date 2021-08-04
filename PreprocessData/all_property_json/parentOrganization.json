@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/parentOrganization", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "parentOrganization", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/parentOrganization", 
+                    "_lastone": true, 
+                    "rdfs:label": "parentOrganization"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/branchOf", 
+        "rdfs:label": "branchOf"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "subOrganization鐨勫弽鍚戝睘鎬э紝鍗冲寘鍚繖涓粍缁囩殑鏇村ぇ缁勭粐", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/subOrganization", 
+        "rdfs:label": "subOrganization"
+    }, 
+    "nameZh": "涓婄骇缁勭粐", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The larger organization that this organization is a subOrganization of, if any.", 
+    "rdfs:label": "parentOrganization", 
+    "wikidataName": "parent organization", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P749", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Parent_organization"
+}

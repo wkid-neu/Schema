@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/seatSection", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "seatSection", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/seatSection", 
+                    "_lastone": true, 
+                    "rdfs:label": "seatSection"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "座位的所在区域。例如二层3排15号。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Seat", 
+            "_last": true, 
+            "rdfs:label": "Seat"
+        }
+    ], 
+    "nameZh": "座位区号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The section location of the reserved seat (e.g. Orchestra).", 
+    "rdfs:label": "seatSection", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

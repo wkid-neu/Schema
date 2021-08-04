@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/nutrition", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "nutrition", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/nutrition", 
+                    "_lastone": true, 
+                    "rdfs:label": "nutrition"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "椋熻氨鎴栬彍鍗曟潯鐩殑钀ュ吇淇℃伅", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MenuItem", 
+            "rdfs:label": "MenuItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/Recipe", 
+            "_last": true, 
+            "rdfs:label": "Recipe"
+        }
+    ], 
+    "nameZh": "钀ュ吇鎴愬垎", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/NutritionInformation", 
+            "_last": true, 
+            "rdfs:label": "NutritionInformation"
+        }
+    ], 
+    "rdfs:comment": "Nutrition information about the recipe or menu item.", 
+    "rdfs:label": "nutrition", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Nutrition"
+}

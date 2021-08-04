@@ -1,0 +1,1229 @@
+{
+    "@id": "http://cnschema.org/PlayAction", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "This example is JSON only.", 
+            "PRE-MARKUP": "John played angry birds with Steve.", 
+            "RDFA": "This example is JSON only.", 
+            "TYPES": [
+                "PlayAction"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "PlayAction", 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/PlayAction", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON only.", 
+                    "PRE-MARKUP": "John played angry birds with Steve.", 
+                    "RDFA": "This example is JSON only.", 
+                    "TYPES": [
+                        "PlayAction"
+                    ], 
+                    "_index": 1, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/audience", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+                            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                            "TYPES": [
+                                "learningResourceType", 
+                                "educationalAlignment", 
+                                "AlignmentObject", 
+                                "educationalFramework", 
+                                "alignmentType", 
+                                "targetName", 
+                                "targetUrl", 
+                                "audience", 
+                                "EducationalAudience", 
+                                "educationalRole"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/serviceAudience", 
+                        "rdfs:label": "serviceAudience"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该作品所面向的观众，也就是该作品为哪些群体创作。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PlayAction", 
+                            "rdfs:label": "PlayAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LodgingBusiness", 
+                            "_last": true, 
+                            "rdfs:label": "LodgingBusiness"
+                        }
+                    ], 
+                    "nameZh": "受众", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Audience", 
+                            "_last": true, 
+                            "rdfs:label": "Audience"
+                        }
+                    ], 
+                    "rdfs:comment": "An intended audience, i.e. a group for whom something was created.", 
+                    "rdfs:label": "audience", 
+                    "wikidataName": "intended public", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2360", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/event", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+                            "PRE-MARKUP": "Musée Marmottan Monet\nIt's a museum of Impressionism and french ninenteeth art.\nIt is hosting the Hodler's, Monet's and Munch's exibit: \"Peindre l'impossible\".\nStart date: September 15 2016\nEnd date: Genuary 22 2017\n", 
+                            "RDFA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "event", 
+                                "Event"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/events", 
+                        "rdfs:label": "events"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "即将发生或已经过去且与这个地方或机构相关的事件。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PlayAction", 
+                            "rdfs:label": "PlayAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/JoinAction", 
+                            "rdfs:label": "JoinAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/InviteAction", 
+                            "rdfs:label": "InviteAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/InformAction", 
+                            "rdfs:label": "InformAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LeaveAction", 
+                            "rdfs:label": "LeaveAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "事件", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "_last": true, 
+                            "rdfs:label": "Event"
+                        }
+                    ], 
+                    "rdfs:comment": "Upcoming or past event associated with this place, organization, or action.", 
+                    "rdfs:label": "event", 
+                    "wikidataName": "significant event", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P793", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "侧重于放松的休闲动作，比如玩耍、练习、训练等。", 
+            "nameZh": "动作：游玩", 
+            "rdfs:comment": "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise.\n\nRelated actions:\n\n\nListenAction: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\nWatchAction: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.\n\n", 
+            "rdfs:label": "PlayAction", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_examples": [
+                {
+                    "JSON": "\n", 
+                    "MICRODATA": "This example is JSON only.", 
+                    "PRE-MARKUP": "John listened to Pink with Steve at Anna's apartment on his iPod.", 
+                    "RDFA": "This example is JSON only.", 
+                    "TYPES": [
+                        "Action"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "\n", 
+                    "MICRODATA": "This example is JSON only.", 
+                    "PRE-MARKUP": "John created an exercise plan with Steve.", 
+                    "RDFA": "This example is JSON only.", 
+                    "TYPES": [
+                        "Action"
+                    ], 
+                    "_index": 2, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/actionStatus", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "表示当前执行操作的状态", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "执行操作的状态", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ActionStatusType", 
+                            "_last": true, 
+                            "rdfs:label": "ActionStatusType"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates the current disposition of the Action.", 
+                    "rdfs:label": "actionStatus", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/agent", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "发起作用（或产生某种结果）的人或物", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "行为的发起者", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "rdfs:comment": "The direct performer or driver of the action (animate or inanimate). e.g. John wrote a book.", 
+                    "rdfs:label": "agent", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/endTime", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "事件的结束时间", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/FoodEstablishmentReservation", 
+                            "rdfs:label": "FoodEstablishmentReservation"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "结束时刻", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/DateTime", 
+                            "_last": true, 
+                            "rdfs:label": "DateTime"
+                        }
+                    ], 
+                    "rdfs:comment": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to December.\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.", 
+                    "rdfs:label": "endTime", 
+                    "wikidataName": "end time", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P582", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/error", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "对于失败的操作，有关故障原因的更多信息。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "错误", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "For failed actions, more information on the cause of the failure.", 
+                    "rdfs:label": "error", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Error"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instrument", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "工作时所需用的器具", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "工具", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "The object that helped the agent perform the action. e.g. John wrote a book with a pen.", 
+                    "rdfs:label": "instrument", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Instrument"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "TYPES": [
+                                "Event", 
+                                "Place", 
+                                "PostalAddress", 
+                                "AggregateOffer", 
+                                "location", 
+                                "startDate", 
+                                "address", 
+                                "offers", 
+                                "offerCount"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "地址", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "rdfs:label": "Action"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "地点", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PostalAddress", 
+                            "rdfs:label": "PostalAddress"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The location of for example where the event is happening, an organization is located, or where an action takes place.", 
+                    "rdfs:label": "location", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "动作在其上执行的对象，其状态保持完整或更改", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "行动操作的对象", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read a book.", 
+                    "rdfs:label": "object", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "间接参与行动的其他人。 例如 约翰与史蒂夫写了一本书", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "参与者", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "rdfs:comment": "Other co-agents that participated in the action indirectly. e.g. John wrote a book with Steve.", 
+                    "rdfs:label": "participant", 
+                    "wikidataName": "participant", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P710", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/result", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "行动的结果。例如约翰写了一本书。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "行动的结果", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "The result produced in the action. e.g. John wrote a book.", 
+                    "rdfs:label": "result", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/startTime", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "某事的预期开始时间。对于跨越一段时间的动作。例如，约翰从１月到１２月写了一本书。注意：事件使用startDate / endDate而不是startTime / endTime，即使用时间描述日期。 今后的修订可能会澄清这种情况。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "rdfs:label": "Action"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/FoodEstablishmentReservation", 
+                            "_last": true, 
+                            "rdfs:label": "FoodEstablishmentReservation"
+                        }
+                    ], 
+                    "nameZh": "开始时刻", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/DateTime", 
+                            "_last": true, 
+                            "rdfs:label": "DateTime"
+                        }
+                    ], 
+                    "rdfs:comment": "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to December.\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.", 
+                    "rdfs:label": "startTime", 
+                    "wikidataName": "start time", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P580", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/target", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "表示行动的目标入口点", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "nameZh": "目标", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/EntryPoint", 
+                            "_last": true, 
+                            "rdfs:label": "EntryPoint"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a target EntryPoint for an Action.", 
+                    "rdfs:label": "target", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "由直接代理人和间接参与者在一个直接对象上执行的操作。 有时可以在一个有无生命仪器帮助的地点发生。 该动作的执行可能会产生一个结果。 具体操作子类型文档指定每个参数/角色的准确期望值。 另请参阅博客文章和操作概述文档。", 
+            "nameZh": "动作", 
+            "rdfs:comment": "An action performed by a direct agent and indirect participants upon a direct object. Optionally happens at a location with the help of an inanimate instrument. The execution of the action may produce a result. Specific action sub-type documentation specifies the exact expectation of each argument/role.\n\nSee also blog post and Actions overview document.", 
+            "rdfs:label": "Action", 
+            "wikidataName": "action", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q4026292", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Action_(philosophy)"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Action", 
+                    "rdfs:label": "Action"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PlayAction", 
+                    "_lastone": true, 
+                    "rdfs:label": "PlayAction"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/ExerciseAction", 
+            "rdfs:label": "ExerciseAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/PerformAction", 
+            "_last": true, 
+            "rdfs:label": "PerformAction"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "侧重于放松的休闲动作，比如玩耍、练习、训练等。", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/audience", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                    "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+                    "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                    "TYPES": [
+                        "learningResourceType", 
+                        "educationalAlignment", 
+                        "AlignmentObject", 
+                        "educationalFramework", 
+                        "alignmentType", 
+                        "targetName", 
+                        "targetUrl", 
+                        "audience", 
+                        "EducationalAudience", 
+                        "educationalRole"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/serviceAudience", 
+                "rdfs:label": "serviceAudience"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "该作品所面向的观众，也就是该作品为哪些群体创作。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Event"
+                }, 
+                {
+                    "@id": "http://cnschema.org/CreativeWork"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Product"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PlayAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/LodgingBusiness"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Audience"
+            }, 
+            "nameZh": "受众", 
+            "rdfs:comment": "An intended audience, i.e. a group for whom something was created.", 
+            "rdfs:label": "audience", 
+            "wikidataName": "intended public", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P2360", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/event", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+                    "PRE-MARKUP": "Musée Marmottan Monet\nIt's a museum of Impressionism and french ninenteeth art.\nIt is hosting the Hodler's, Monet's and Munch's exibit: \"Peindre l'impossible\".\nStart date: September 15 2016\nEnd date: Genuary 22 2017\n", 
+                    "RDFA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+                    "TYPES": [
+                        "TouristAttraction", 
+                        "event", 
+                        "Event"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/events", 
+                "rdfs:label": "events"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "即将发生或已经过去且与这个地方或机构相关的事件。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/PlayAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/JoinAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/InviteAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/InformAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/LeaveAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Event"
+            }, 
+            "nameZh": "事件", 
+            "rdfs:comment": "Upcoming or past event associated with this place, organization, or action.", 
+            "rdfs:label": "event", 
+            "wikidataName": "significant event", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P793", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "动作：游玩", 
+    "rdfs:comment": "The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise.\n\nRelated actions:\n\n\nListenAction: Unlike ListenAction (which is under ConsumeAction), PlayAction refers to performing for an audience or at an event, rather than consuming music.\nWatchAction: Unlike WatchAction (which is under ConsumeAction), PlayAction refers to showing/displaying for an audience or at an event, rather than consuming visual content.\n\n", 
+    "rdfs:label": "PlayAction", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

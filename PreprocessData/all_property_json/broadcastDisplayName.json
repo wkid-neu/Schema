@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/broadcastDisplayName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "broadcastDisplayName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/broadcastDisplayName", 
+                    "_lastone": true, 
+                    "rdfs:label": "broadcastDisplayName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "频道指南中显示的名称。 对于许多美国偶来说，就是网络名称。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "_last": true, 
+            "rdfs:label": "BroadcastService"
+        }
+    ], 
+    "nameZh": "广播频道名称", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The name displayed in the channel guide. For many US affiliates, it is the network name.", 
+    "rdfs:label": "broadcastDisplayName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

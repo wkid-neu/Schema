@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/userInteractionCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "userInteractionCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/userInteractionCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "userInteractionCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "通过网站或者应用程序与某个作品的交互数量", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/InteractionCounter", 
+            "_last": true, 
+            "rdfs:label": "InteractionCounter"
+        }
+    ], 
+    "nameZh": "用户交互数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication.", 
+    "rdfs:label": "userInteractionCount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

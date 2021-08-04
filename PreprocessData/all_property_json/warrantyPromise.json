@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/warrantyPromise", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "warrantyPromise", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/warrantyPromise", 
+                    "_lastone": true, 
+                    "rdfs:label": "warrantyPromise"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "在此交易中包括的担保承诺。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SellAction", 
+            "rdfs:label": "SellAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/BuyAction", 
+            "_last": true, 
+            "rdfs:label": "BuyAction"
+        }
+    ], 
+    "nameZh": "担保承诺", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/WarrantyPromise", 
+            "_last": true, 
+            "rdfs:label": "WarrantyPromise"
+        }
+    ], 
+    "rdfs:comment": "The warranty promise(s) included in the offer.", 
+    "rdfs:label": "warrantyPromise", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/warranty", 
+        "rdfs:label": "warranty"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

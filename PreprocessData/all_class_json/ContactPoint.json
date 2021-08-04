@@ -1,0 +1,2484 @@
+{
+    "@id": "http://cnschema.org/ContactPoint", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "This example is JSON only.", 
+            "PRE-MARKUP": "This example shows a JSON-LD description of services that do not necessarily have a direct\nhuman-oriented HTML description. It describes a GovernmentService named \"Veterans Affairs Emergency Mental Health\",\nits operator, service area and service details, such as its Veterans Crisis Line (including  phone contact line\nhours of operation, language and other details).", 
+            "RDFA": "This example is JSON only.", 
+            "TYPES": [
+                "GovernmentService", 
+                "GovernmentOrganization", 
+                "AdministrativeArea", 
+                "CivicAudience", 
+                "ContactPoint", 
+                "Language", 
+                "Hospital"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "This example is JSON-only.", 
+            "PRE-MARKUP": "Example specifying one customer service phone number.", 
+            "RDFA": "This example is JSON-only.", 
+            "TYPES": [
+                "Organization", 
+                "ContactPoint"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "This example is JSON-only.", 
+            "PRE-MARKUP": "A fuller example that illustrates multiple contact numbers for a company,\nincluding US toll-free numbers, a hearing-impaired number, and several contact categories.", 
+            "RDFA": "This example is JSON-only.", 
+            "TYPES": [
+                "HearingImpairedSupported", 
+                "TollFree", 
+                "ContactPoint", 
+                "Organization"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "ContactPoint", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/bccRecipient", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+                    "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "TYPES": [
+                        "EmailMessage", 
+                        "toRecipient", 
+                        "bccRecipient", 
+                        "ccRecipient"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "消息的密送收信人，这些人的名字不会被其他收信人看到", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Message", 
+                    "_last": true, 
+                    "rdfs:label": "Message"
+                }
+            ], 
+            "nameZh": "密送", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "_last": true, 
+                    "rdfs:label": "Person"
+                }
+            ], 
+            "rdfs:comment": "A sub property of recipient. The recipient blind copied on a message.", 
+            "rdfs:label": "bccRecipient", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Blind_carbon_copy"
+        }, 
+        {
+            "@id": "http://cnschema.org/ccRecipient", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+                    "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "TYPES": [
+                        "EmailMessage", 
+                        "toRecipient", 
+                        "bccRecipient", 
+                        "ccRecipient"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "消息的抄送收信人，这些人的名字可以被其他收信人看到", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Message", 
+                    "_last": true, 
+                    "rdfs:label": "Message"
+                }
+            ], 
+            "nameZh": "抄送", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "rdfs:label": "Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_last": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ], 
+            "rdfs:comment": "A sub property of recipient. The recipient copied on a message.", 
+            "rdfs:label": "ccRecipient", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Carbon_copy"
+        }, 
+        {
+            "@id": "http://cnschema.org/contactPoint", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/contactPoints", 
+                "rdfs:label": "contactPoints"
+            }, 
+            "_usage": "Between 10,000 and 50,000 domains", 
+            "descriptionZh": "个人或组织的联络点。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "_last": true, 
+                    "rdfs:label": "Person"
+                }
+            ], 
+            "nameZh": "联络点", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_last": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ], 
+            "rdfs:comment": "A contact point for a person or organization.", 
+            "rdfs:label": "contactPoint", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Point_of_contact"
+        }, 
+        {
+            "@id": "http://cnschema.org/contactPoints", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "个人或组织的联络点。（拼写的单数形式，contactPoint）。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "rdfs:label": "Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "_last": true, 
+                    "rdfs:label": "Organization"
+                }
+            ], 
+            "nameZh": "联络点", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_last": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ], 
+            "rdfs:comment": "A contact point for a person or organization.", 
+            "rdfs:label": "contactPoints", 
+            "supersededBy": {
+                "@id": "http://cnschema.org/contactPoint", 
+                "rdfs:label": "contactPoint"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Point_of_contact"
+        }, 
+        {
+            "@id": "http://cnschema.org/grantee", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "获得此许可的人员，组织，联络人或受众。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/DigitalDocumentPermission", 
+                    "_last": true, 
+                    "rdfs:label": "DigitalDocumentPermission"
+                }
+            ], 
+            "nameZh": "受让人", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Audience", 
+                    "rdfs:label": "Audience"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "rdfs:label": "Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "_last": true, 
+                    "rdfs:label": "Organization"
+                }
+            ], 
+            "rdfs:comment": "The person, organization, contact point, or audience that has been granted this permission.", 
+            "rdfs:label": "grantee", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/homeLocation", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "家庭联系地址", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "_last": true, 
+                    "rdfs:label": "Person"
+                }
+            ], 
+            "nameZh": "家庭地址", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "rdfs:label": "Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_last": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ], 
+            "rdfs:comment": "A contact location for a person's residence.", 
+            "rdfs:label": "homeLocation", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/recipient", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "参与者的子属性。 在行动接收端的参与者。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/SendAction", 
+                    "rdfs:label": "SendAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Message", 
+                    "rdfs:label": "Message"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DonateAction", 
+                    "rdfs:label": "DonateAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/CommunicateAction", 
+                    "rdfs:label": "CommunicateAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GiveAction", 
+                    "rdfs:label": "GiveAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/AuthorizeAction", 
+                    "rdfs:label": "AuthorizeAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ReturnAction", 
+                    "rdfs:label": "ReturnAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PayAction", 
+                    "rdfs:label": "PayAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/TipAction", 
+                    "_last": true, 
+                    "rdfs:label": "TipAction"
+                }
+            ], 
+            "nameZh": "接收者", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "rdfs:label": "Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Audience", 
+                    "_last": true, 
+                    "rdfs:label": "Audience"
+                }
+            ], 
+            "rdfs:comment": "A sub property of participant. The participant who is at the receiving end of the action.", 
+            "rdfs:label": "recipient", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/servicePhone", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "用来接通服务的电话号码", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ServiceChannel", 
+                    "_last": true, 
+                    "rdfs:label": "ServiceChannel"
+                }
+            ], 
+            "nameZh": "服务电话", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_last": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ], 
+            "rdfs:comment": "The phone number to use to access the service.", 
+            "rdfs:label": "servicePhone", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/serviceSmsNumber", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "可以通过发送短讯访问服务的号码", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ServiceChannel", 
+                    "_last": true, 
+                    "rdfs:label": "ServiceChannel"
+                }
+            ], 
+            "nameZh": "服务短信号码", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_last": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ], 
+            "rdfs:comment": "The number to access the service by text message.", 
+            "rdfs:label": "serviceSmsNumber", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/toRecipient", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+                    "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "TYPES": [
+                        "EmailMessage", 
+                        "toRecipient", 
+                        "bccRecipient", 
+                        "ccRecipient"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "消息的直接收件人", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Message", 
+                    "_last": true, 
+                    "rdfs:label": "Message"
+                }
+            ], 
+            "nameZh": "收件人", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "rdfs:label": "Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Audience", 
+                    "_last": true, 
+                    "rdfs:label": "Audience"
+                }
+            ], 
+            "rdfs:comment": "A sub property of recipient. The recipient who was directly sent the message.", 
+            "rdfs:label": "toRecipient", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/workLocation", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "此人工作场所的所在地", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person", 
+                    "_last": true, 
+                    "rdfs:label": "Person"
+                }
+            ], 
+            "nameZh": "工作地点", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "_last": true, 
+                    "rdfs:label": "Place"
+                }
+            ], 
+            "rdfs:comment": "A contact location for a person's place of work.", 
+            "rdfs:label": "workLocation", 
+            "wikidataName": "work location", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P937", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON only.", 
+                    "PRE-MARKUP": "This example shows a JSON-LD description of services that do not necessarily have a direct\nhuman-oriented HTML description. It describes a GovernmentService named \"Veterans Affairs Emergency Mental Health\",\nits operator, service area and service details, such as its Veterans Crisis Line (including  phone contact line\nhours of operation, language and other details).", 
+                    "RDFA": "This example is JSON only.", 
+                    "TYPES": [
+                        "GovernmentService", 
+                        "GovernmentOrganization", 
+                        "AdministrativeArea", 
+                        "CivicAudience", 
+                        "ContactPoint", 
+                        "Language", 
+                        "Hospital"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON-only.", 
+                    "PRE-MARKUP": "Example specifying one customer service phone number.", 
+                    "RDFA": "This example is JSON-only.", 
+                    "TYPES": [
+                        "Organization", 
+                        "ContactPoint"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON-only.", 
+                    "PRE-MARKUP": "A fuller example that illustrates multiple contact numbers for a company,\nincluding US toll-free numbers, a hearing-impaired number, and several contact categories.", 
+                    "RDFA": "This example is JSON-only.", 
+                    "TYPES": [
+                        "HearingImpairedSupported", 
+                        "TollFree", 
+                        "ContactPoint", 
+                        "Organization"
+                    ], 
+                    "_index": 3, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/areaServed", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/serviceArea", 
+                        "rdfs:label": "serviceArea"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "服务或产品所覆盖的区域。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/DeliveryChargeSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "DeliveryChargeSpecification"
+                        }
+                    ], 
+                    "nameZh": "服务覆盖区域", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/AdministrativeArea", 
+                            "rdfs:label": "AdministrativeArea"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "rdfs:comment": "The geographic area where a service or offered item is provided.", 
+                    "rdfs:label": "areaServed", 
+                    "wikidataName": "operating area", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2541", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/availableLanguage", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  We speak:\n  \n    \n      English\n    \n    \n      German\n    \n  \n", 
+                            "PRE-MARKUP": "This example is in microdata only.", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "availableLanguage", 
+                                "Language"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tNeuschwanstein Castle\n\tIt is a nineteenth-century Romanesque Revival palace in\n\t\t\n\t\t\tSchwangau, in\n\t\t\tGermany.\n\t\t\n\t\n\tGuided tours in\n\t\t\n\t\t\tGerman\n\t\t and\n\t\t\n\t\t\tEnglish.\n\t\t\n\t\n", 
+                            "PRE-MARKUP": "Neuschwanstein Castle\nNeuschwanstein Castle is a nineteenth-century Romanesque Revival palace in Schwangau, in southwest Bavaria, Germany.\nGuided tours in German and English.", 
+                            "RDFA": "\n\tNeuschwanstein Castle\n\tIt is a nineteenth-century Romanesque Revival palace in\n\t\t\n\t\t\tSchwangau, in\n\t\t\tGermany.\n\t\t\n\t\n\tGuided tours in\n\t\t\n\t\t\tGerman\n\t\t and\n\t\t\n\t\t\tEnglish.\n\t\t\n\t\n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "availableLanguage"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该商品所支持的语言", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ServiceChannel", 
+                            "rdfs:label": "ServiceChannel"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LodgingBusiness", 
+                            "rdfs:label": "LodgingBusiness"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/TouristAttraction", 
+                            "_last": true, 
+                            "rdfs:label": "TouristAttraction"
+                        }
+                    ], 
+                    "nameZh": "支持的语言", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Language", 
+                            "rdfs:label": "Language"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. See also inLanguage", 
+                    "rdfs:label": "availableLanguage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/contactOption", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该联络点提供的选项（例如免费电话号码或对听力受损呼叫者的支持）。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "_last": true, 
+                            "rdfs:label": "ContactPoint"
+                        }
+                    ], 
+                    "nameZh": "联系选项", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPointOption", 
+                            "_last": true, 
+                            "rdfs:label": "ContactPointOption"
+                        }
+                    ], 
+                    "rdfs:comment": "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).", 
+                    "rdfs:label": "contactOption", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/contactType", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "为了不同的目的，个人或组织可以有不同的接触点。例如，销售联络点，公关联络点等。此属性用于指定联系人的种类。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "_last": true, 
+                            "rdfs:label": "ContactPoint"
+                        }
+                    ], 
+                    "nameZh": "联系方式职能类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.", 
+                    "rdfs:label": "contactType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/email", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 250,000 and 500,000 domains", 
+                    "descriptionZh": "邮箱地址。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "电子邮件", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "Email address.", 
+                    "rdfs:label": "email", 
+                    "wikidataName": "e-mail", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P968", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Email"
+                }, 
+                {
+                    "@id": "http://cnschema.org/faxNumber", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "传真号。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "传真号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The fax number.", 
+                    "rdfs:label": "faxNumber", 
+                    "wikidataName": "fax number", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2900", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Fax_number"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hoursAvailable", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Hotel Features:\n  \n  \n    Sauna\n    \n    \n      (Open Thursdays\n       4:00 PM -\n       9:00 PM)\n    \n  \n  \n", 
+                            "PRE-MARKUP": "This example is in microdata only.", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "feature", 
+                                "LocationFeatureSpecification", 
+                                "hoursAvailable"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "该服务或联系人可用的时间。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LocationFeatureSpecification", 
+                            "rdfs:label": "LocationFeatureSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "_last": true, 
+                            "rdfs:label": "ContactPoint"
+                        }
+                    ], 
+                    "nameZh": "服务时间", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "OpeningHoursSpecification"
+                        }
+                    ], 
+                    "rdfs:comment": "The hours during which this service or contact is available.", 
+                    "rdfs:label": "hoursAvailable", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/productSupported", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "跟此支持接触点联系的产品或服务（例如对某产品的产品支持）。这可以是明确的产品或产品系列（例：\"iPhone\"），或者是更广泛的产品类别（例：“智能手机”)。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "_last": true, 
+                            "rdfs:label": "ContactPoint"
+                        }
+                    ], 
+                    "nameZh": "支持的产品", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\").", 
+                    "rdfs:label": "productSupported", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/telephone", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                            "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "TYPES": [
+                                "Place", 
+                                "LocalBusiness", 
+                                "address", 
+                                "streetAddress", 
+                                "addressLocality", 
+                                "PostalAddress", 
+                                "telephone"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "PRE-MARKUP": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "RDFA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "TYPES": [
+                                "Pharmacy", 
+                                "openingHours", 
+                                "telephone"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "电话号码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "电话号码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The telephone number.", 
+                    "rdfs:label": "telephone", 
+                    "wikidataName": "phone number", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P1329", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Telephone"
+                }
+            ], 
+            "_usage": "Between 10,000 and 50,000 domains", 
+            "descriptionZh": "联系方式 - 例如客户投诉部门", 
+            "nameZh": "联系方式", 
+            "rdfs:comment": "A contact point—for example, a Customer Complaints department.", 
+            "rdfs:label": "ContactPoint", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/StructuredValue", 
+                    "rdfs:label": "StructuredValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "_lastone": true, 
+                    "rdfs:label": "ContactPoint"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/PostalAddress", 
+            "_last": true, 
+            "rdfs:label": "PostalAddress"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/StructuredValue", 
+            "_last": true, 
+            "rdfs:label": "StructuredValue"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "联系方式 - 例如客户投诉部门", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/areaServed", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_sub": [
+                "http://cnschema.org/availableAtOrFrom", 
+                "http://cnschema.org/eligibleRegion"
+            ], 
+            "_supersede": {
+                "@id": "http://cnschema.org/serviceArea", 
+                "rdfs:label": "serviceArea"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "服务或产品所覆盖的区域。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/AdministrativeArea"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }
+            ], 
+            "nameZh": "服务覆盖区域", 
+            "rdfs:comment": "The geographic area where a service or offered item is provided.", 
+            "rdfs:label": "areaServed", 
+            "wikidataName": "operating area", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P2541", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/availableLanguage", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "This example is in microdata only.", 
+                    "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  We speak:\n  \n    \n      English\n    \n    \n      German\n    \n  \n", 
+                    "PRE-MARKUP": "This example is in microdata only.", 
+                    "RDFA": "This example is in microdata only.", 
+                    "TYPES": [
+                        "availableLanguage", 
+                        "Language"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n\tNeuschwanstein Castle\n\tIt is a nineteenth-century Romanesque Revival palace in\n\t\t\n\t\t\tSchwangau, in\n\t\t\tGermany.\n\t\t\n\t\n\tGuided tours in\n\t\t\n\t\t\tGerman\n\t\t and\n\t\t\n\t\t\tEnglish.\n\t\t\n\t\n", 
+                    "PRE-MARKUP": "Neuschwanstein Castle\nNeuschwanstein Castle is a nineteenth-century Romanesque Revival palace in Schwangau, in southwest Bavaria, Germany.\nGuided tours in German and English.", 
+                    "RDFA": "\n\tNeuschwanstein Castle\n\tIt is a nineteenth-century Romanesque Revival palace in\n\t\t\n\t\t\tSchwangau, in\n\t\t\tGermany.\n\t\t\n\t\n\tGuided tours in\n\t\t\n\t\t\tGerman\n\t\t and\n\t\t\n\t\t\tEnglish.\n\t\t\n\t\n", 
+                    "TYPES": [
+                        "TouristAttraction", 
+                        "availableLanguage"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "该商品所支持的语言", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ServiceChannel"
+                }, 
+                {
+                    "@id": "http://cnschema.org/LodgingBusiness"
+                }, 
+                {
+                    "@id": "http://cnschema.org/TouristAttraction"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Language"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "nameZh": "支持的语言", 
+            "rdfs:comment": "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. See also inLanguage", 
+            "rdfs:label": "availableLanguage", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/contactOption", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "该联络点提供的选项（例如免费电话号码或对听力受损呼叫者的支持）。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ContactPointOption"
+            }, 
+            "nameZh": "联系选项", 
+            "rdfs:comment": "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).", 
+            "rdfs:label": "contactOption", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/contactType", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "为了不同的目的，个人或组织可以有不同的接触点。例如，销售联络点，公关联络点等。此属性用于指定联系人的种类。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "联系方式职能类型", 
+            "rdfs:comment": "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point.", 
+            "rdfs:label": "contactType", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/email", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                    "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "TYPES": [
+                        "Person", 
+                        "PostalAddress", 
+                        "addressRegion", 
+                        "postalCode", 
+                        "address", 
+                        "streetAddress", 
+                        "telephone", 
+                        "email", 
+                        "url", 
+                        "addressLocality"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 250,000 and 500,000 domains", 
+            "descriptionZh": "邮箱地址。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "电子邮件", 
+            "rdfs:comment": "Email address.", 
+            "rdfs:label": "email", 
+            "wikidataName": "e-mail", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P968", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Email", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/faxNumber", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                    "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                    "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                    "TYPES": [
+                        "Organization", 
+                        "PostalAddress", 
+                        "address", 
+                        "streetAddress", 
+                        "postalCode", 
+                        "addressLocality", 
+                        "faxNumber", 
+                        "telephone"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "传真号。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "传真号", 
+            "rdfs:comment": "The fax number.", 
+            "rdfs:label": "faxNumber", 
+            "wikidataName": "fax number", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P2900", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Fax_number", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/hoursAvailable", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "This example is in microdata only.", 
+                    "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Hotel Features:\n  \n  \n    Sauna\n    \n    \n      (Open Thursdays\n       4:00 PM -\n       9:00 PM)\n    \n  \n  \n", 
+                    "PRE-MARKUP": "This example is in microdata only.", 
+                    "RDFA": "This example is in microdata only.", 
+                    "TYPES": [
+                        "feature", 
+                        "LocationFeatureSpecification", 
+                        "hoursAvailable"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "该服务或联系人可用的时间。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/LocationFeatureSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/OpeningHoursSpecification"
+            }, 
+            "nameZh": "服务时间", 
+            "rdfs:comment": "The hours during which this service or contact is available.", 
+            "rdfs:label": "hoursAvailable", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/productSupported", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "跟此支持接触点联系的产品或服务（例如对某产品的产品支持）。这可以是明确的产品或产品系列（例：\"iPhone\"），或者是更广泛的产品类别（例：“智能手机”)。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Product"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "nameZh": "支持的产品", 
+            "rdfs:comment": "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\").", 
+            "rdfs:label": "productSupported", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/serviceArea", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/area", 
+                "rdfs:label": "area"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "服务覆盖的地理区域。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/AdministrativeArea"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }
+            ], 
+            "http://cnschema.org/supersededBy": {
+                "@id": "http://cnschema.org/areaServed"
+            }, 
+            "nameZh": "服务区域", 
+            "rdfs:comment": "The geographic area where the service is provided.", 
+            "rdfs:label": "serviceArea", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/telephone", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                    "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "TYPES": [
+                        "Person", 
+                        "PostalAddress", 
+                        "addressRegion", 
+                        "postalCode", 
+                        "address", 
+                        "streetAddress", 
+                        "telephone", 
+                        "email", 
+                        "url", 
+                        "addressLocality"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                    "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                    "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                    "TYPES": [
+                        "Place", 
+                        "LocalBusiness", 
+                        "address", 
+                        "streetAddress", 
+                        "addressLocality", 
+                        "PostalAddress", 
+                        "telephone"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                    "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                    "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                    "TYPES": [
+                        "Organization", 
+                        "PostalAddress", 
+                        "address", 
+                        "streetAddress", 
+                        "postalCode", 
+                        "addressLocality", 
+                        "faxNumber", 
+                        "telephone"
+                    ], 
+                    "_index": 3, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                    "PRE-MARKUP": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                    "RDFA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                    "TYPES": [
+                        "Pharmacy", 
+                        "openingHours", 
+                        "telephone"
+                    ], 
+                    "_index": 4, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Over 1,000,000 domains", 
+            "descriptionZh": "电话号码", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "电话号码", 
+            "rdfs:comment": "The telephone number.", 
+            "rdfs:label": "telephone", 
+            "wikidataName": "phone number", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P1329", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Telephone", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/bccRecipient", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+                    "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "TYPES": [
+                        "EmailMessage", 
+                        "toRecipient", 
+                        "bccRecipient", 
+                        "ccRecipient"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/recipient"
+            ], 
+            "_usage": "", 
+            "descriptionZh": "消息的密送收信人，这些人的名字不会被其他收信人看到", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Message"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }
+            ], 
+            "nameZh": "密送", 
+            "rdfs:comment": "A sub property of recipient. The recipient blind copied on a message.", 
+            "rdfs:label": "bccRecipient", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/recipient"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Blind_carbon_copy", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/ccRecipient", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+                    "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "TYPES": [
+                        "EmailMessage", 
+                        "toRecipient", 
+                        "bccRecipient", 
+                        "ccRecipient"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/recipient"
+            ], 
+            "_usage": "", 
+            "descriptionZh": "消息的抄送收信人，这些人的名字可以被其他收信人看到", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Message"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }
+            ], 
+            "nameZh": "抄送", 
+            "rdfs:comment": "A sub property of recipient. The recipient copied on a message.", 
+            "rdfs:label": "ccRecipient", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/recipient"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Carbon_copy", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/contactPoint", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/contactPoints", 
+                "rdfs:label": "contactPoints"
+            }, 
+            "_usage": "Between 10,000 and 50,000 domains", 
+            "descriptionZh": "个人或组织的联络点。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "nameZh": "联络点", 
+            "rdfs:comment": "A contact point for a person or organization.", 
+            "rdfs:label": "contactPoint", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Point_of_contact", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/contactPoints", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "个人或组织的联络点。（拼写的单数形式，contactPoint）。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "http://cnschema.org/supersededBy": {
+                "@id": "http://cnschema.org/contactPoint"
+            }, 
+            "nameZh": "联络点", 
+            "rdfs:comment": "A contact point for a person or organization.", 
+            "rdfs:label": "contactPoints", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Point_of_contact", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/grantee", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "获得此许可的人员，组织，联络人或受众。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/DigitalDocumentPermission"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Audience"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "nameZh": "受让人", 
+            "rdfs:comment": "The person, organization, contact point, or audience that has been granted this permission.", 
+            "rdfs:label": "grantee", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/homeLocation", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/location"
+            ], 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "家庭联系地址", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Person"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }
+            ], 
+            "nameZh": "家庭地址", 
+            "rdfs:comment": "A contact location for a person's residence.", 
+            "rdfs:label": "homeLocation", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/location"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/recipient", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_sub": [
+                "http://cnschema.org/bccRecipient", 
+                "http://cnschema.org/ccRecipient", 
+                "http://cnschema.org/toRecipient"
+            ], 
+            "_super": [
+                "http://cnschema.org/participant"
+            ], 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "参与者的子属性。 在行动接收端的参与者。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/SendAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Message"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DonateAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/CommunicateAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GiveAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/AuthorizeAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ReturnAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PayAction"
+                }, 
+                {
+                    "@id": "http://cnschema.org/TipAction"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Audience"
+                }
+            ], 
+            "nameZh": "接收者", 
+            "rdfs:comment": "A sub property of participant. The participant who is at the receiving end of the action.", 
+            "rdfs:label": "recipient", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/participant"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/servicePhone", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "用来接通服务的电话号码", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ServiceChannel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "nameZh": "服务电话", 
+            "rdfs:comment": "The phone number to use to access the service.", 
+            "rdfs:label": "servicePhone", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/serviceSmsNumber", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "可以通过发送短讯访问服务的号码", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ServiceChannel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ContactPoint"
+            }, 
+            "nameZh": "服务短信号码", 
+            "rdfs:comment": "The number to access the service by text message.", 
+            "rdfs:label": "serviceSmsNumber", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/toRecipient", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+                    "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+                    "TYPES": [
+                        "EmailMessage", 
+                        "toRecipient", 
+                        "bccRecipient", 
+                        "ccRecipient"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/recipient"
+            ], 
+            "_usage": "", 
+            "descriptionZh": "消息的直接收件人", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Message"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Audience"
+                }
+            ], 
+            "nameZh": "收件人", 
+            "rdfs:comment": "A sub property of recipient. The recipient who was directly sent the message.", 
+            "rdfs:label": "toRecipient", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/recipient"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/workLocation", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/location"
+            ], 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "此人工作场所的所在地", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Person"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }
+            ], 
+            "nameZh": "工作地点", 
+            "rdfs:comment": "A contact location for a person's place of work.", 
+            "rdfs:label": "workLocation", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/location"
+            }, 
+            "wikidataName": "work location", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P937", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "联系方式", 
+    "rdfs:comment": "A contact point—for example, a Customer Complaints department.", 
+    "rdfs:label": "ContactPoint", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

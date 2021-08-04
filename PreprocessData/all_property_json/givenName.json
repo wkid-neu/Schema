@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/givenName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "givenName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/givenName", 
+                    "_lastone": true, 
+                    "rdfs:label": "givenName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "名。在美国，是一个人名字中的第一个字", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "名", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Given name. In the U.S., the first name of a Person. This can be used along with familyName instead of the name property.", 
+    "rdfs:label": "givenName", 
+    "wikidataName": "given name", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P735", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Given_name"
+}

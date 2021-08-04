@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/parentItem", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "parentItem", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/parentItem", 
+                    "_lastone": true, 
+                    "rdfs:label": "parentItem"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一个问题、答案或条目的父条目", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Comment", 
+            "_last": true, 
+            "rdfs:label": "Comment"
+        }
+    ], 
+    "nameZh": "上级条目", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Question", 
+            "_last": true, 
+            "rdfs:label": "Question"
+        }
+    ], 
+    "rdfs:comment": "The parent of a question, answer or item in general.", 
+    "rdfs:label": "parentItem", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

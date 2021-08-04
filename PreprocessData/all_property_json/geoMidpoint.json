@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/geoMidpoint", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "geoMidpoint", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/geoMidpoint", 
+                    "_lastone": true, 
+                    "rdfs:label": "geoMidpoint"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "中心点的经纬度", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoCircle", 
+            "_last": true, 
+            "rdfs:label": "GeoCircle"
+        }
+    ], 
+    "nameZh": "中心点经纬度", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoCoordinates", 
+            "_last": true, 
+            "rdfs:label": "GeoCoordinates"
+        }
+    ], 
+    "rdfs:comment": "Indicates the GeoCoordinates at the centre of a GeoShape e.g. GeoCircle.", 
+    "rdfs:label": "geoMidpoint", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

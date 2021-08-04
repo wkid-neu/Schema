@@ -1,0 +1,1914 @@
+{
+    "@id": "http://cnschema.org/Order", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+            "PRE-MARKUP": "An example of a invoice for a purchase and installation.\nACME Home Heating\nBill for: New furnace and installation\nCustomer: Jane Doe\npayment due: 2015-01-30\nminimum payment: $0.00\ntotal due: $0.00\npayment status: paid\norder: furnace model ABC123\norder: installation labor", 
+            "RDFA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+            "TYPES": [
+                "Invoice", 
+                "Order", 
+                "LocalBusiness", 
+                "Person", 
+                "PriceSpecification", 
+                "Service"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    ACME Supplies\n  \n  \n    Jane Doe\n  \n  \n    Item number: abc123\n    1\n    \n      Widget\n    \n    Delivered\n    \n      2015-03-10\n    \n  \n  \n    Item number: def456\n    4\n    \n      Widget accessories\n    \n    Shipped\n    \n      2015-03-15\n      2015-03-18\n    \n  \n", 
+            "PRE-MARKUP": "An example of an order for multiple items, shipped separately.\nACME Supplies\nCustomer: Jane Doe\nOrder:\n  Item abc123: 1 Widget: delivered 2015-03-10\n  Item def456: 3 Widget accessories: shipped 2015-03-12", 
+            "RDFA": "\n  \n    ACME Supplies\n  \n  \n    Jane Doe\n  \n  \n    Item number: abc123\n    1\n    \n      Widget\n    \n    Delivered\n    \n      2015-03-10\n    \n  \n  \n    Item number: def456\n    4\n    \n      Widget accessories\n    \n    Shipped\n    \n      2015-03-15\n      2015-03-18\n    \n  \n", 
+            "TYPES": [
+                "Order", 
+                "OrderItem", 
+                "Organization", 
+                "Person"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+        }
+    ], 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "Order", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/partOfOrder", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "包含此交货中物品的整体订单", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ParcelDelivery", 
+                    "_last": true, 
+                    "rdfs:label": "ParcelDelivery"
+                }
+            ], 
+            "nameZh": "所属订单", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Order", 
+                    "_last": true, 
+                    "rdfs:label": "Order"
+                }
+            ], 
+            "rdfs:comment": "The overall order the items in this delivery were included in.", 
+            "rdfs:label": "partOfOrder", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/referencesOrder", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "与此收据对应的客户订单。 一个收据可以对应一个或多个订单。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Invoice", 
+                    "_last": true, 
+                    "rdfs:label": "Invoice"
+                }
+            ], 
+            "nameZh": "对应的订单", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Order", 
+                    "_last": true, 
+                    "rdfs:label": "Order"
+                }
+            ], 
+            "rdfs:comment": "The Order(s) related to this Invoice. One or more Orders may be combined into a single Invoice.", 
+            "rdfs:label": "referencesOrder", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+                    "PRE-MARKUP": "An example of a invoice for a purchase and installation.\nACME Home Heating\nBill for: New furnace and installation\nCustomer: Jane Doe\npayment due: 2015-01-30\nminimum payment: $0.00\ntotal due: $0.00\npayment status: paid\norder: furnace model ABC123\norder: installation labor", 
+                    "RDFA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+                    "TYPES": [
+                        "Invoice", 
+                        "Order", 
+                        "LocalBusiness", 
+                        "Person", 
+                        "PriceSpecification", 
+                        "Service"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    ACME Supplies\n  \n  \n    Jane Doe\n  \n  \n    Item number: abc123\n    1\n    \n      Widget\n    \n    Delivered\n    \n      2015-03-10\n    \n  \n  \n    Item number: def456\n    4\n    \n      Widget accessories\n    \n    Shipped\n    \n      2015-03-15\n      2015-03-18\n    \n  \n", 
+                    "PRE-MARKUP": "An example of an order for multiple items, shipped separately.\nACME Supplies\nCustomer: Jane Doe\nOrder:\n  Item abc123: 1 Widget: delivered 2015-03-10\n  Item def456: 3 Widget accessories: shipped 2015-03-12", 
+                    "RDFA": "\n  \n    ACME Supplies\n  \n  \n    Jane Doe\n  \n  \n    Item number: abc123\n    1\n    \n      Widget\n    \n    Delivered\n    \n      2015-03-10\n    \n  \n  \n    Item number: def456\n    4\n    \n      Widget accessories\n    \n    Shipped\n    \n      2015-03-15\n      2015-03-18\n    \n  \n", 
+                    "TYPES": [
+                        "Order", 
+                        "OrderItem", 
+                        "Organization", 
+                        "Person"
+                    ], 
+                    "_index": 2, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/acceptedOffer", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "报价，例如订单中包含的产品、数量、价格的组合", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "被接受的报价", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "_last": true, 
+                            "rdfs:label": "Offer"
+                        }
+                    ], 
+                    "rdfs:comment": "The offer(s) -- e.g., product, quantity and price combinations -- included in the order.", 
+                    "rdfs:label": "acceptedOffer", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/billingAddress", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "账单的邮寄地址。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "账单地址", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PostalAddress", 
+                            "_last": true, 
+                            "rdfs:label": "PostalAddress"
+                        }
+                    ], 
+                    "rdfs:comment": "The billing address for the order.", 
+                    "rdfs:label": "billingAddress", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/broker", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/bookingAgent", 
+                        "rdfs:label": "bookingAgent"
+                    }, 
+                    "_usage": "", 
+                    "descriptionZh": "安排买方和卖方进行交易的实体。 大多数情况下，经纪人从未获取或发布交易所涉及的产品或服务的所有权。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Reservation", 
+                            "rdfs:label": "Reservation"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "rdfs:label": "Order"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "_last": true, 
+                            "rdfs:label": "Invoice"
+                        }
+                    ], 
+                    "nameZh": "经纪人", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "rdfs:comment": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.", 
+                    "rdfs:label": "broker", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Broker"
+                }, 
+                {
+                    "@id": "http://cnschema.org/confirmationNumber", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "已经收到的订单或者付款的确认编号。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "rdfs:label": "Order"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "_last": true, 
+                            "rdfs:label": "Invoice"
+                        }
+                    ], 
+                    "nameZh": "确认编号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A number that confirms the given order or payment has been received.", 
+                    "rdfs:label": "confirmationNumber", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/customer", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "下单或支付单据的一方。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "rdfs:label": "Order"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "_last": true, 
+                            "rdfs:label": "Invoice"
+                        }
+                    ], 
+                    "nameZh": "顾客", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "rdfs:comment": "Party placing the order or paying the invoice.", 
+                    "rdfs:label": "customer", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Customer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/discount", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "任何适用（于订单）的折扣。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "折扣", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Number", 
+                            "_last": true, 
+                            "rdfs:label": "Number"
+                        }
+                    ], 
+                    "rdfs:comment": "Any discount applied (to an Order).", 
+                    "rdfs:label": "discount", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/discountCode", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "用来兑换折扣的代码。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "优惠码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "Code used to redeem a discount.", 
+                    "rdfs:label": "discountCode", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/discountCurrency", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "折扣所使用的货币类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "折扣对应的货币", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The currency of the discount.\n\nUse standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\".", 
+                    "rdfs:label": "discountCurrency", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isGift", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "是否礼物", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "是否礼物", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Boolean", 
+                            "_last": true, 
+                            "rdfs:label": "Boolean"
+                        }
+                    ], 
+                    "rdfs:comment": "Was the offer accepted as a gift for someone other than the buyer.", 
+                    "rdfs:label": "isGift", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderDate", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "下单的日期", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "订单的下单日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/DateTime", 
+                            "_last": true, 
+                            "rdfs:label": "DateTime"
+                        }
+                    ], 
+                    "rdfs:comment": "Date order was placed.", 
+                    "rdfs:label": "orderDate", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderDelivery", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "订单所选物流", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OrderItem", 
+                            "rdfs:label": "OrderItem"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "订单的物流选择", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ParcelDelivery", 
+                            "_last": true, 
+                            "rdfs:label": "ParcelDelivery"
+                        }
+                    ], 
+                    "rdfs:comment": "The delivery of the parcel related to this order or order item.", 
+                    "rdfs:label": "orderDelivery", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderNumber", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "订单编号", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "订单的编号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier of the transaction.", 
+                    "rdfs:label": "orderNumber", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderStatus", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "订单的当前状态", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "订单的状态", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OrderStatus", 
+                            "_last": true, 
+                            "rdfs:label": "OrderStatus"
+                        }
+                    ], 
+                    "rdfs:comment": "The current status of the order.", 
+                    "rdfs:label": "orderStatus", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderedItem", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "订单条目", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OrderItem", 
+                            "rdfs:label": "OrderItem"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "订单条目", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OrderItem", 
+                            "rdfs:label": "OrderItem"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "rdfs:comment": "The item ordered.", 
+                    "rdfs:label": "orderedItem", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/partOfInvoice", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "所属账单，作为所属Invoice实体的一部分被付款的订单", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "所属账单", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "_last": true, 
+                            "rdfs:label": "Invoice"
+                        }
+                    ], 
+                    "rdfs:comment": "The order is being paid as part of the referenced Invoice.", 
+                    "rdfs:label": "partOfInvoice", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentDueDate", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/paymentDue", 
+                        "rdfs:label": "paymentDue"
+                    }, 
+                    "_usage": "", 
+                    "descriptionZh": "最晚付款日期", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "rdfs:label": "Invoice"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "最晚付款日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/DateTime", 
+                            "_last": true, 
+                            "rdfs:label": "DateTime"
+                        }
+                    ], 
+                    "rdfs:comment": "The date that payment is due.", 
+                    "rdfs:label": "paymentDueDate", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentMethod", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "信用卡的名称或订单的其他付款方式", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "rdfs:label": "Order"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "_last": true, 
+                            "rdfs:label": "Invoice"
+                        }
+                    ], 
+                    "nameZh": "支付方式", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PaymentMethod", 
+                            "_last": true, 
+                            "rdfs:label": "PaymentMethod"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the credit card or other method of payment for the order.", 
+                    "rdfs:label": "paymentMethod", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentMethodId", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "使用付款方式的标识符，例如信用卡的最后4位数字", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "rdfs:label": "Invoice"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "支付方式ID", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).", 
+                    "rdfs:label": "paymentMethodId", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentUrl", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "发送付款的URL", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "_last": true, 
+                            "rdfs:label": "Order"
+                        }
+                    ], 
+                    "nameZh": "付款链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "The URL for sending a payment.", 
+                    "rdfs:label": "paymentUrl", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/seller", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/vendor", 
+                        "rdfs:label": "vendor"
+                    }, 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "提供商品出售、物品租赁、贷款等服务的人或组织。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Flight", 
+                            "rdfs:label": "Flight"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "rdfs:label": "Order"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/BuyAction", 
+                            "_last": true, 
+                            "rdfs:label": "BuyAction"
+                        }
+                    ], 
+                    "nameZh": "卖家", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "rdfs:comment": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.", 
+                    "rdfs:label": "seller", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "订单是一种交易的确认，它可以包含多个商品及其报价。", 
+            "nameZh": "订单", 
+            "rdfs:comment": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.", 
+            "rdfs:label": "Order", 
+            "wikidataName": "order", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q566889", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order", 
+                    "_lastone": true, 
+                    "rdfs:label": "Order"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/Intangible", 
+            "_last": true, 
+            "rdfs:label": "Intangible"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "订单是一种交易的确认，它可以包含多个商品及其报价。", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/acceptedOffer", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "报价，例如订单中包含的产品、数量、价格的组合", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Offer"
+            }, 
+            "nameZh": "被接受的报价", 
+            "rdfs:comment": "The offer(s) -- e.g., product, quantity and price combinations -- included in the order.", 
+            "rdfs:label": "acceptedOffer", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/billingAddress", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "账单的邮寄地址。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/PostalAddress"
+            }, 
+            "nameZh": "账单地址", 
+            "rdfs:comment": "The billing address for the order.", 
+            "rdfs:label": "billingAddress", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/broker", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/bookingAgent", 
+                "rdfs:label": "bookingAgent"
+            }, 
+            "_usage": "", 
+            "descriptionZh": "安排买方和卖方进行交易的实体。 大多数情况下，经纪人从未获取或发布交易所涉及的产品或服务的所有权。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Reservation"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }
+            ], 
+            "nameZh": "经纪人", 
+            "rdfs:comment": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.", 
+            "rdfs:label": "broker", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Broker", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/confirmationNumber", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/identifier"
+            ], 
+            "_usage": "", 
+            "descriptionZh": "已经收到的订单或者付款的确认编号。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Order"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "确认编号", 
+            "rdfs:comment": "A number that confirms the given order or payment has been received.", 
+            "rdfs:label": "confirmationNumber", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/identifier"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/customer", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "下单或支付单据的一方。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Order"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }
+            ], 
+            "nameZh": "顾客", 
+            "rdfs:comment": "Party placing the order or paying the invoice.", 
+            "rdfs:label": "customer", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Customer", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/discount", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "任何适用（于订单）的折扣。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Number"
+                }
+            ], 
+            "nameZh": "折扣", 
+            "rdfs:comment": "Any discount applied (to an Order).", 
+            "rdfs:label": "discount", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/discountCode", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "用来兑换折扣的代码。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "优惠码", 
+            "rdfs:comment": "Code used to redeem a discount.", 
+            "rdfs:label": "discountCode", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/discountCurrency", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "折扣所使用的货币类型。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "折扣对应的货币", 
+            "rdfs:comment": "The currency of the discount.\n\nUse standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\".", 
+            "rdfs:label": "discountCurrency", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/isGift", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "是否礼物", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Boolean"
+            }, 
+            "nameZh": "是否礼物", 
+            "rdfs:comment": "Was the offer accepted as a gift for someone other than the buyer.", 
+            "rdfs:label": "isGift", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/merchant", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "属性'seller'的旧称（这样的陈旧条目是否应该删掉）", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }
+            ], 
+            "http://cnschema.org/supersededBy": {
+                "@id": "http://cnschema.org/seller"
+            }, 
+            "nameZh": "商人", 
+            "rdfs:comment": "'merchant' is an out-dated term for 'seller'.", 
+            "rdfs:label": "merchant", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Merchant", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/orderDate", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "下单的日期", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/DateTime"
+            }, 
+            "nameZh": "订单的下单日期", 
+            "rdfs:comment": "Date order was placed.", 
+            "rdfs:label": "orderDate", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/orderDelivery", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "订单所选物流", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/OrderItem"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ParcelDelivery"
+            }, 
+            "nameZh": "订单的物流选择", 
+            "rdfs:comment": "The delivery of the parcel related to this order or order item.", 
+            "rdfs:label": "orderDelivery", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/orderNumber", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/identifier"
+            ], 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "订单编号", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "订单的编号", 
+            "rdfs:comment": "The identifier of the transaction.", 
+            "rdfs:label": "orderNumber", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/identifier"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/orderStatus", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "订单的当前状态", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/OrderStatus"
+            }, 
+            "nameZh": "订单的状态", 
+            "rdfs:comment": "The current status of the order.", 
+            "rdfs:label": "orderStatus", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/orderedItem", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "订单条目", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/OrderItem"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/OrderItem"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Product"
+                }
+            ], 
+            "nameZh": "订单条目", 
+            "rdfs:comment": "The item ordered.", 
+            "rdfs:label": "orderedItem", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/partOfInvoice", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "所属账单，作为所属Invoice实体的一部分被付款的订单", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Invoice"
+            }, 
+            "nameZh": "所属账单", 
+            "rdfs:comment": "The order is being paid as part of the referenced Invoice.", 
+            "rdfs:label": "partOfInvoice", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/paymentDue", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "最晚付款日期", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Order"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/DateTime"
+            }, 
+            "http://cnschema.org/supersededBy": {
+                "@id": "http://cnschema.org/paymentDueDate"
+            }, 
+            "nameZh": "最晚付款日期", 
+            "rdfs:comment": "The date that payment is due.", 
+            "rdfs:label": "paymentDue", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/paymentDueDate", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/paymentDue", 
+                "rdfs:label": "paymentDue"
+            }, 
+            "_usage": "", 
+            "descriptionZh": "最晚付款日期", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/DateTime"
+            }, 
+            "nameZh": "最晚付款日期", 
+            "rdfs:comment": "The date that payment is due.", 
+            "rdfs:label": "paymentDueDate", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/paymentMethod", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "信用卡的名称或订单的其他付款方式", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Order"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/PaymentMethod"
+            }, 
+            "nameZh": "支付方式", 
+            "rdfs:comment": "The name of the credit card or other method of payment for the order.", 
+            "rdfs:label": "paymentMethod", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/paymentMethodId", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "使用付款方式的标识符，例如信用卡的最后4位数字", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Invoice"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "支付方式ID", 
+            "rdfs:comment": "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).", 
+            "rdfs:label": "paymentMethodId", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/paymentUrl", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "发送付款的URL", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/URL"
+            }, 
+            "nameZh": "付款链接", 
+            "rdfs:comment": "The URL for sending a payment.", 
+            "rdfs:label": "paymentUrl", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/seller", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/participant"
+            ], 
+            "_supersede": {
+                "@id": "http://cnschema.org/vendor", 
+                "rdfs:label": "vendor"
+            }, 
+            "_usage": "Between 10,000 and 50,000 domains", 
+            "descriptionZh": "提供商品出售、物品租赁、贷款等服务的人或组织。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Flight"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Order"
+                }, 
+                {
+                    "@id": "http://cnschema.org/BuyAction"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }
+            ], 
+            "nameZh": "卖家", 
+            "rdfs:comment": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.", 
+            "rdfs:label": "seller", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/participant"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/partOfOrder", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "包含此交货中物品的整体订单", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ParcelDelivery"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "nameZh": "所属订单", 
+            "rdfs:comment": "The overall order the items in this delivery were included in.", 
+            "rdfs:label": "partOfOrder", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/referencesOrder", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "与此收据对应的客户订单。 一个收据可以对应一个或多个订单。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Invoice"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Order"
+            }, 
+            "nameZh": "对应的订单", 
+            "rdfs:comment": "The Order(s) related to this Invoice. One or more Orders may be combined into a single Invoice.", 
+            "rdfs:label": "referencesOrder", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "订单", 
+    "rdfs:comment": "An order is a confirmation of a transaction (a receipt), which can contain multiple line items, each represented by an Offer that has been accepted by the customer.", 
+    "rdfs:label": "Order", 
+    "wikidataName": "order", 
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q566889", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/benefits", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "benefits", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/benefits", 
+                    "_lastone": true, 
+                    "rdfs:label": "benefits"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与该工作相关的福利。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/JobPosting", 
+            "_last": true, 
+            "rdfs:label": "JobPosting"
+        }
+    ], 
+    "nameZh": "工作福利", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Description of benefits associated with the job.", 
+    "rdfs:label": "benefits", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/jobBenefits", 
+        "rdfs:label": "jobBenefits"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

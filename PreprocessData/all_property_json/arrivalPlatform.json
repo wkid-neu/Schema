@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/arrivalPlatform", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "arrivalPlatform", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/arrivalPlatform", 
+                    "_lastone": true, 
+                    "rdfs:label": "arrivalPlatform"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "火车到达的站台", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TrainTrip", 
+            "_last": true, 
+            "rdfs:label": "TrainTrip"
+        }
+    ], 
+    "nameZh": "到达站台", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The platform where the train arrives.", 
+    "rdfs:label": "arrivalPlatform", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

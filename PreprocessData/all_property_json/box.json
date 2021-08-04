@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/box", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "box", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/box", 
+                    "_lastone": true, 
+                    "rdfs:label": "box"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "边界框是由两个点形成的矩形所包围的区域。第一个点是下角，第二个点是上角。边界框用空格符分隔的两个点来表示。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "_last": true, 
+            "rdfs:label": "GeoShape"
+        }
+    ], 
+    "nameZh": "边界框", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.", 
+    "rdfs:label": "box", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

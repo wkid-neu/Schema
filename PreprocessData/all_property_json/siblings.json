@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/siblings", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "siblings", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/siblings", 
+                    "_lastone": true, 
+                    "rdfs:label": "siblings"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鍏勫紵濮愬", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "鍏勫紵濮愬", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A sibling of the person.", 
+    "rdfs:label": "siblings", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/sibling", 
+        "rdfs:label": "sibling"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sibling"
+}

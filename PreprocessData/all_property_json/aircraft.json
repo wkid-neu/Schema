@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/aircraft", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "aircraft", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/aircraft", 
+                    "_lastone": true, 
+                    "rdfs:label": "aircraft"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "任何可以飞行的载具", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "航空器", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "rdfs:label": "Vehicle"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The kind of aircraft (e.g., \"Boeing 747\").", 
+    "rdfs:label": "aircraft", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Aircraft"
+}

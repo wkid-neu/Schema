@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/subEvents", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "subEvents", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/subEvents", 
+                    "_lastone": true, 
+                    "rdfs:label": "subEvents"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "表示事件的一部分。 例如，会议事件包括许多演示文稿，每个演示文稿都是会议的子事件", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "子活动", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "rdfs:comment": "Events that are a part of this event. For example, a conference event includes many presentations, each subEvents of the conference.", 
+    "rdfs:label": "subEvents", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/subEvent", 
+        "rdfs:label": "subEvent"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,79 @@
+{
+    "@id": "http://cnschema.org/genre", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  The Madonna with the Long Neck\n  Late Renaissance painting by\n  Parmigianino.\n", 
+            "PRE-MARKUP": "The Madonna with the Long Neck\nLate Renaissance painting by Parmigianino", 
+            "RDFA": "\n  The Madonna with the Long Neck\n  Late Renaissance painting by\n  Parmigianino.\n", 
+            "TYPES": [
+                "Painting", 
+                "genre"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "genre", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/genre", 
+                    "_lastone": true, 
+                    "rdfs:label": "genre"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "（文学、艺术、电影或音乐的）体裁，类型", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/MusicGroup", 
+            "rdfs:label": "MusicGroup"
+        }, 
+        {
+            "@id": "http://cnschema.org/BroadcastChannel", 
+            "_last": true, 
+            "rdfs:label": "BroadcastChannel"
+        }
+    ], 
+    "nameZh": "风格", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Genre of the creative work, broadcast channel or group.", 
+    "rdfs:label": "genre", 
+    "wikidataName": "genre", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P136", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Genre"
+}

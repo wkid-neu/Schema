@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/numberedPosition", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberedPosition", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberedPosition", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberedPosition"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "缁勭粐涓鑹插叧鑱旂殑鍙风爜锛屼緥濡傦紝杩愬姩鍛樿繍鍔ㄨ～涓婄殑鍙风爜", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/OrganizationRole", 
+            "_last": true, 
+            "rdfs:label": "OrganizationRole"
+        }
+    ], 
+    "nameZh": "瑙掕壊缂栫爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "A number associated with a role in an organization, for example, the number on an athlete's jersey.", 
+    "rdfs:label": "numberedPosition", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

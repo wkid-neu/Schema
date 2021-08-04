@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/vehicleConfiguration", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "vehicleConfiguration", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/vehicleConfiguration", 
+                    "_lastone": true, 
+                    "rdfs:label": "vehicleConfiguration"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指示车辆配置的简短文本，例如。 '5dr两厢车ST 2.5 MT 225马力'或'限量版'", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "车辆配置", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'.", 
+    "rdfs:label": "vehicleConfiguration", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

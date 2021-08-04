@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/bookFormat", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "bookFormat", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/bookFormat", 
+                    "_lastone": true, 
+                    "rdfs:label": "bookFormat"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该书的样式。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Book", 
+            "_last": true, 
+            "rdfs:label": "Book"
+        }
+    ], 
+    "nameZh": "书籍格式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BookFormatType", 
+            "_last": true, 
+            "rdfs:label": "BookFormatType"
+        }
+    ], 
+    "rdfs:comment": "The format of the book.", 
+    "rdfs:label": "bookFormat", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

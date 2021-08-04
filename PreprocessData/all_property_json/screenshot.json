@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/screenshot", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "screenshot", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/screenshot", 
+                    "_lastone": true, 
+                    "rdfs:label": "screenshot"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "璇ュ簲鐢ㄧ殑鎴浘閾炬帴", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "鎴浘", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "_last": true, 
+            "rdfs:label": "ImageObject"
+        }
+    ], 
+    "rdfs:comment": "A link to a screenshot image of the app.", 
+    "rdfs:label": "screenshot", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Screenshot"
+}

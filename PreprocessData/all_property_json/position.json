@@ -1,0 +1,83 @@
+{
+    "@id": "http://cnschema.org/position", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "position", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/position", 
+                    "_lastone": true, 
+                    "rdfs:label": "position"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/issueNumber", 
+            "rdfs:label": "issueNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/episodeNumber", 
+            "rdfs:label": "episodeNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/volumeNumber", 
+            "rdfs:label": "volumeNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/seasonNumber", 
+            "rdfs:label": "seasonNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/clipNumber", 
+            "_last": true, 
+            "rdfs:label": "clipNumber"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "项目在一系列或一系列项目中的位置。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ListItem", 
+            "rdfs:label": "ListItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "位置", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The position of an item in a series or sequence of items.", 
+    "rdfs:label": "position", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

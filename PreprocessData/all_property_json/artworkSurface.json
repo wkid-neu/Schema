@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/artworkSurface", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "artworkSurface", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/artworkSurface", 
+                    "_lastone": true, 
+                    "rdfs:label": "artworkSurface"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/surface", 
+        "rdfs:label": "surface"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "艺术品的辅助材料，例如 帆布，纸，木材，板木等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VisualArtwork", 
+            "_last": true, 
+            "rdfs:label": "VisualArtwork"
+        }
+    ], 
+    "nameZh": "艺术作品材质", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc.", 
+    "rdfs:label": "artworkSurface", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

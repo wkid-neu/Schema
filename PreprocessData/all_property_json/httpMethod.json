@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/httpMethod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "httpMethod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/httpMethod", 
+                    "_lastone": true, 
+                    "rdfs:label": "httpMethod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "渚嬪GET锛孭OST", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EntryPoint", 
+            "_last": true, 
+            "rdfs:label": "EntryPoint"
+        }
+    ], 
+    "nameZh": "http鏂规硶", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "An HTTP method that specifies the appropriate HTTP method for a request to an HTTP EntryPoint. Values are capitalized strings as used in HTTP.", 
+    "rdfs:label": "httpMethod", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/HTTP_method"
+}

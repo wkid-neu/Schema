@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/suggestedGender", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "suggestedGender", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/suggestedGender", 
+                    "_lastone": true, 
+                    "rdfs:label": "suggestedGender"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "受众的性别", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PeopleAudience", 
+            "_last": true, 
+            "rdfs:label": "PeopleAudience"
+        }
+    ], 
+    "nameZh": "建议的受众性别", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The gender of the person or audience.", 
+    "rdfs:label": "suggestedGender", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

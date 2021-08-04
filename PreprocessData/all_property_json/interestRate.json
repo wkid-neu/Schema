@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/interestRate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "interestRate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/interestRate", 
+                    "_lastone": true, 
+                    "rdfs:label": "interestRate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Financial Industry Business Ontology project (see http://www.fibo.org/schema for details), in support of the W3C Financial Industry Business Ontology Community Group (http://www.fibo.org/community). Many class and property definitions are inspired by or based on http://www.fibo.org.", 
+            "rdfs:label": "FIBO", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "閫傜敤浜庨噾铻嶄骇鍝佺殑鍒╃巼", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FinancialProduct", 
+            "_last": true, 
+            "rdfs:label": "FinancialProduct"
+        }
+    ], 
+    "nameZh": "鍒╃巼", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "rdfs:label": "Number"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The interest rate, charged or paid, applicable to the financial product. Note: This is different from the calculated annualPercentageRate.", 
+    "rdfs:label": "interestRate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Interest_rate"
+}

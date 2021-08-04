@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/originAddress", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "originAddress", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/originAddress", 
+                    "_lastone": true, 
+                    "rdfs:label": "originAddress"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍙戣揣鑰呯殑鍦板潃", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParcelDelivery", 
+            "_last": true, 
+            "rdfs:label": "ParcelDelivery"
+        }
+    ], 
+    "nameZh": "鍙戣揣鑰呯殑鍦板潃", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PostalAddress", 
+            "_last": true, 
+            "rdfs:label": "PostalAddress"
+        }
+    ], 
+    "rdfs:comment": "Shipper's address.", 
+    "rdfs:label": "originAddress", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/valuePattern", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "valuePattern", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/valuePattern", 
+                    "_lastone": true, 
+                    "rdfs:label": "valuePattern"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指定根据HTML规范测试文字值的正则表达式", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValueSpecification", 
+            "_last": true, 
+            "rdfs:label": "PropertyValueSpecification"
+        }
+    ], 
+    "nameZh": "值的正则表达式验证模版", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Specifies a regular expression for testing literal values according to the HTML spec.", 
+    "rdfs:label": "valuePattern", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

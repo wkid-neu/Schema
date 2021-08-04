@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/primaryImageOfPage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "primaryImageOfPage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/primaryImageOfPage", 
+                    "_lastone": true, 
+                    "rdfs:label": "primaryImageOfPage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "琛ㄧず椤甸潰涓婄殑涓昏鍥惧儚", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/WebPage", 
+            "_last": true, 
+            "rdfs:label": "WebPage"
+        }
+    ], 
+    "nameZh": "椤甸潰閲岀殑涓昏鍥剧墖", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "_last": true, 
+            "rdfs:label": "ImageObject"
+        }
+    ], 
+    "rdfs:comment": "Indicates the main image on the page.", 
+    "rdfs:label": "primaryImageOfPage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

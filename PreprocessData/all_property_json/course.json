@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/course", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "course", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "rdfs:label": "location"
+                }, 
+                {
+                    "@id": "http://cnschema.org/course", 
+                    "_lastone": true, 
+                    "rdfs:label": "course"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/location", 
+            "_last": true, 
+            "rdfs:label": "location"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "事物所处的位置，这类事物的位置不是一个点，而是一条路线", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ExerciseAction", 
+            "_last": true, 
+            "rdfs:label": "ExerciseAction"
+        }
+    ], 
+    "nameZh": "路线", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "A sub property of location. The course where this action was taken.", 
+    "rdfs:label": "course", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/exerciseCourse", 
+        "rdfs:label": "exerciseCourse"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

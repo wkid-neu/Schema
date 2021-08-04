@@ -1,0 +1,81 @@
+{
+    "@id": "http://cnschema.org/geoRadius", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+            "PRE-MARKUP": "", 
+            "RDFA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+            "TYPES": [
+                "Service", 
+                "TaxiService", 
+                "GeoCircle", 
+                "geoMidPoint", 
+                "geoRadius", 
+                "providerMobility", 
+                "PRE-MARKUP: ", 
+                "Car for hire driver #123 is within 50 meters of a given location, but is moving."
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-service-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "geoRadius", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/geoRadius", 
+                    "_lastone": true, 
+                    "rdfs:label": "geoRadius"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍖哄煙鍗婂緞", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoCircle", 
+            "_last": true, 
+            "rdfs:label": "GeoCircle"
+        }
+    ], 
+    "nameZh": "鍖哄煙鍗婂緞", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Distance", 
+            "rdfs:label": "Distance"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "rdfs:label": "Number"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation).", 
+    "rdfs:label": "geoRadius", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/branchCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "branchCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/branchCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "branchCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "一个简短的文本编码（也称为商店码）， 用于唯一标示商务地点。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "分支编码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\n\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.", 
+    "rdfs:label": "branchCode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

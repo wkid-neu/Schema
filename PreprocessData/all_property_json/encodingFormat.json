@@ -1,0 +1,111 @@
+{
+    "@id": "http://cnschema.org/encodingFormat", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+            "TYPES": [
+                "MediaObject", 
+                "AudioObject", 
+                "encodingFormat", 
+                "contentUrl", 
+                "description", 
+                "duration"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "No Json example available", 
+            "MICRODATA": "\n \n \n \n \n \n\n", 
+            "PRE-MARKUP": "", 
+            "RDFA": "\n \n \n \n \n \n\n", 
+            "TYPES": [
+                "accessibilityFeature", 
+                "accessibilityHazard", 
+                "encodingFormat"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n \n", 
+            "PRE-MARKUP": "[A basic presentation in HTML]", 
+            "RDFA": "\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n \n", 
+            "TYPES": [
+                "encodingFormat", 
+                "accessibilityHazard", 
+                "accessibilityFeature", 
+                "accessibilityControl", 
+                "accessibilityAPI"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "encodingFormat", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/encodingFormat", 
+                    "_lastone": true, 
+                    "rdfs:label": "encodingFormat"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/fileFormat", 
+        "rdfs:label": "fileFormat"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "编码格式，如mp3, mpeg4, 等等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "nameZh": "编码格式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Media type typically expressed using a MIME format (see IANA site and MDN reference) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for .mp3 etc.).\n\nIn cases where a CreativeWork has several media type representations, encoding can be used to indicate each MediaObject alongside particular encodingFormat information.\n\nUnregistered or niche encoding and file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia/Wikidata entry.", 
+    "rdfs:label": "encodingFormat", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

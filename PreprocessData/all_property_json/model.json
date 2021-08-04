@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/model", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "model", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/model", 
+                    "_lastone": true, 
+                    "rdfs:label": "model"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "产品的型号。可以是ProductModel类型的URL或者是型号标识的文本表示。ProductModel类型实体的URL可以来自外部来源。建议通过属性gtin8/gtin13/gtin14和mpn额外提供强产品标识。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "nameZh": "型号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/ProductModel", 
+            "_last": true, 
+            "rdfs:label": "ProductModel"
+        }
+    ], 
+    "rdfs:comment": "The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.", 
+    "rdfs:label": "model", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/employmentType", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "employmentType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/employmentType", 
+                    "_lastone": true, 
+                    "rdfs:label": "employmentType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "就业类型（例如全职，兼职，合同，临时，季节性，实习）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/JobPosting", 
+            "_last": true, 
+            "rdfs:label": "JobPosting"
+        }
+    ], 
+    "nameZh": "就业类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Type of employment (e.g. full-time, part-time, contract, temporary, seasonal, internship).", 
+    "rdfs:label": "employmentType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/replyToUrl", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "replyToUrl", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/replyToUrl", 
+                    "_lastone": true, 
+                    "rdfs:label": "replyToUrl"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "回复某一条用户评论对应的ＵＲＬ", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/UserComments", 
+            "_last": true, 
+            "rdfs:label": "UserComments"
+        }
+    ], 
+    "nameZh": "回复链接", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "The URL at which a reply may be posted to the specified UserComment.", 
+    "rdfs:label": "replyToUrl", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

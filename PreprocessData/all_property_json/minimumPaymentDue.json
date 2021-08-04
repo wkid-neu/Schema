@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/minimumPaymentDue", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "minimumPaymentDue", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/minimumPaymentDue", 
+                    "_lastone": true, 
+                    "rdfs:label": "minimumPaymentDue"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "Invoice类型实体此次需要支付的最小金额", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "最小付款额", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "rdfs:label": "PriceSpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/MonetaryAmount", 
+            "_last": true, 
+            "rdfs:label": "MonetaryAmount"
+        }
+    ], 
+    "rdfs:comment": "The minimum payment required at this time.", 
+    "rdfs:label": "minimumPaymentDue", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

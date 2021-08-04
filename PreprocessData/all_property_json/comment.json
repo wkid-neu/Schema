@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/comment", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "comment", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/comment", 
+                    "_lastone": true, 
+                    "rdfs:label": "comment"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "评论，一般是用户对CreativeWork的评论。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RsvpAction", 
+            "rdfs:label": "RsvpAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "评论", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Comment", 
+            "_last": true, 
+            "rdfs:label": "Comment"
+        }
+    ], 
+    "rdfs:comment": "Comments, typically from users.", 
+    "rdfs:label": "comment", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Comment"
+}

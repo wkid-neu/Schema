@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/photos", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "photos", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/photos", 
+                    "_lastone": true, 
+                    "rdfs:label": "photos"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "这个地方的照片", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "照片", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "rdfs:label": "ImageObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/Photograph", 
+            "_last": true, 
+            "rdfs:label": "Photograph"
+        }
+    ], 
+    "rdfs:comment": "Photographs of this place.", 
+    "rdfs:label": "photos", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/photo", 
+        "rdfs:label": "photo"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Photos"
+}

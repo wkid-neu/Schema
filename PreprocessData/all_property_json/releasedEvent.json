@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/releasedEvent", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "releasedEvent", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/releasedEvent", 
+                    "_lastone": true, 
+                    "rdfs:label": "releasedEvent"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "浣滃搧鐨勫彂甯冩椿鍔紙鍖呮嫭鏃堕棿鍜屽湴鐐癸級", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "鍙戝竷娲诲姩", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PublicationEvent", 
+            "_last": true, 
+            "rdfs:label": "PublicationEvent"
+        }
+    ], 
+    "rdfs:comment": "The place and time the release was issued, expressed as a PublicationEvent.", 
+    "rdfs:label": "releasedEvent", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

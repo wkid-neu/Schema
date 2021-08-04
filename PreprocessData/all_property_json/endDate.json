@@ -1,0 +1,72 @@
+{
+    "@id": "http://cnschema.org/endDate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "endDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/endDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "endDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "活动（事件）结束时间。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "rdfs:label": "CreativeWorkSeason"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/DatedMoneySpecification", 
+            "rdfs:label": "DatedMoneySpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeries", 
+            "rdfs:label": "CreativeWorkSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Role", 
+            "_last": true, 
+            "rdfs:label": "Role"
+        }
+    ], 
+    "nameZh": "结束日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "rdfs:label": "Date"
+        }, 
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The end date and time of the item (in ISO 8601 date format).", 
+    "rdfs:label": "endDate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

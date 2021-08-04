@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/language", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "language", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instrument", 
+                    "rdfs:label": "instrument"
+                }, 
+                {
+                    "@id": "http://cnschema.org/language", 
+                    "_lastone": true, 
+                    "rdfs:label": "language"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/instrument", 
+            "_last": true, 
+            "rdfs:label": "instrument"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "使用的语言", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CommunicateAction", 
+            "rdfs:label": "CommunicateAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/WriteAction", 
+            "_last": true, 
+            "rdfs:label": "WriteAction"
+        }
+    ], 
+    "nameZh": "语言", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Language", 
+            "_last": true, 
+            "rdfs:label": "Language"
+        }
+    ], 
+    "rdfs:comment": "A sub property of instrument. The language used on this action.", 
+    "rdfs:label": "language", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/inLanguage", 
+        "rdfs:label": "inLanguage"
+    }, 
+    "wikidataName": "language", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P2439", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Language"
+}

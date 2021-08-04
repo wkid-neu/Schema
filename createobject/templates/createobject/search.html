@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}搜索{% endblock %}
+{% block content %}
+<h2 style="color: #eb9316">创建你需要的实体</h2>
+    <div align="center">
+        <form action="create/search/" method="get" style="margin: auto 0;">
+           <h2 style="color: #eb9316">输入名字:</h2>
+            <input style="height: 25px;width: 200px" type="text" id="search-text" name="q"><button type="button" id='search-button'>搜索</button>
+        </form>
+        <p id='search-result' align="center" style="height:300px;line-height:40px;margin:0;overflow-y:auto; overflow-x:hidden" ></p>
+
+    </div>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#search-text").keyup(function(){
+            var dest = $("#search-text").val();                         //获取搜索框输入的值
+            $.get("/create/search",{'dest':dest}, function(data){               //参数：发送的url；传入的数据；请求成功后的调用函数（data即是试图函数返回的json格式数据）详情
+                data = data['result'];
+                var entity_name = '';
+                var namezh = '';
+                var url = '';
+                var html="";
+                console.log(data);
+                for (var i = data.length - 1; i >= 0; i--) {
+                    entity_name = data[i][0];
+                    namezh = data[i][1];
+                    url = '/create/creating/'+entity_name;
+                    html =`<span><a href=${url}>`+entity_name+"("+namezh+")"+"</a></span><br/>";
+                    $('#search-result').append(html)      //加入到search-result部分显示
+                };
+            })
+        });
+
+        $('#search-text').keydown(function(){ //键盘松手触发
+            $('#search-result').empty();
+        })
+         $('#search-text').blur(function(){ //数去焦点
+            setTimeout(() => {
+            $('#search-result').hide();
+        },500)
+        })
+
+
+    });
+
+</script>
+{% endblock %}
+

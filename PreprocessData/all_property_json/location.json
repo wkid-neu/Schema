@@ -1,0 +1,137 @@
+{
+    "@id": "http://cnschema.org/location", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+            "TYPES": [
+                "Event", 
+                "Place", 
+                "PostalAddress", 
+                "AggregateOffer", 
+                "location", 
+                "startDate", 
+                "address", 
+                "offers", 
+                "offerCount"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "location", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "_lastone": true, 
+                    "rdfs:label": "location"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/workLocation", 
+            "rdfs:label": "workLocation"
+        }, 
+        {
+            "@id": "http://cnschema.org/course", 
+            "rdfs:label": "course"
+        }, 
+        {
+            "@id": "http://cnschema.org/homeLocation", 
+            "rdfs:label": "homeLocation"
+        }, 
+        {
+            "@id": "http://cnschema.org/sportsEvent", 
+            "rdfs:label": "sportsEvent"
+        }, 
+        {
+            "@id": "http://cnschema.org/sportsActivityLocation", 
+            "rdfs:label": "sportsActivityLocation"
+        }, 
+        {
+            "@id": "http://cnschema.org/foodEvent", 
+            "rdfs:label": "foodEvent"
+        }, 
+        {
+            "@id": "http://cnschema.org/toLocation", 
+            "rdfs:label": "toLocation"
+        }, 
+        {
+            "@id": "http://cnschema.org/fromLocation", 
+            "rdfs:label": "fromLocation"
+        }, 
+        {
+            "@id": "http://cnschema.org/foodEstablishment", 
+            "rdfs:label": "foodEstablishment"
+        }, 
+        {
+            "@id": "http://cnschema.org/entertainmentBusiness", 
+            "rdfs:label": "entertainmentBusiness"
+        }, 
+        {
+            "@id": "http://cnschema.org/exerciseCourse", 
+            "_last": true, 
+            "rdfs:label": "exerciseCourse"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鍦板潃", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "rdfs:label": "Action"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "鍦扮偣", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PostalAddress", 
+            "rdfs:label": "PostalAddress"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The location of for example where the event is happening, an organization is located, or where an action takes place.", 
+    "rdfs:label": "location", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/caption", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "caption", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/caption", 
+                    "_lastone": true, 
+                    "rdfs:label": "caption"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鐗规寚鍥剧墖鍜岃棰戠殑鏍囬", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoObject", 
+            "rdfs:label": "VideoObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "_last": true, 
+            "rdfs:label": "ImageObject"
+        }
+    ], 
+    "nameZh": "鏍囬", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The caption for this object.", 
+    "rdfs:label": "caption", 
+    "wikidataName": "media legend", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2096", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Caption"
+}

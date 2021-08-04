@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/sibling", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "sibling", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/sibling", 
+                    "_lastone": true, 
+                    "rdfs:label": "sibling"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/siblings", 
+        "rdfs:label": "siblings"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鍏勫紵濮愬", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "鍏勫紵濮愬", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A sibling of the person.", 
+    "rdfs:label": "sibling", 
+    "wikidataName": "sibling", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P3373", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sibling"
+}

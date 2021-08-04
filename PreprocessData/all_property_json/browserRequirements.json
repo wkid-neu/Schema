@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/browserRequirements", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "browserRequirements", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/browserRequirements", 
+                    "_lastone": true, 
+                    "rdfs:label": "browserRequirements"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "用可读文本指定的对浏览器的要求，如“需要对HTML5的支持”。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/WebApplication", 
+            "_last": true, 
+            "rdfs:label": "WebApplication"
+        }
+    ], 
+    "nameZh": "浏览器要求", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Specifies browser requirements in human-readable text. For example, 'requires HTML5 support'.", 
+    "rdfs:label": "browserRequirements", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

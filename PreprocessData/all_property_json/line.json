@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/line", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "line", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/line", 
+                    "_lastone": true, 
+                    "rdfs:label": "line"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鐢变袱鐐规垨澶氱偣缁勬垚鐨勭偣瀵圭偣璺緞", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "_last": true, 
+            "rdfs:label": "GeoShape"
+        }
+    ], 
+    "nameZh": "鐩寸嚎", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.", 
+    "rdfs:label": "line", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Line_(geometry)"
+}

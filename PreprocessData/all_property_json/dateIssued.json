@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/dateIssued", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dateIssued", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dateIssued", 
+                    "_lastone": true, 
+                    "rdfs:label": "dateIssued"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "该票发布的日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "_last": true, 
+            "rdfs:label": "Ticket"
+        }
+    ], 
+    "nameZh": "签发日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The date the ticket was issued.", 
+    "rdfs:label": "dateIssued", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

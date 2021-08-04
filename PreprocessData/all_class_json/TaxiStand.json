@@ -1,0 +1,2208 @@
+{
+    "@id": "http://cnschema.org/TaxiStand", 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "TaxiStand", 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/CivicStructure", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Springfield Town Hall\n  Hours:\n  Mon-Fri 9am - 5:30pm\n  Sat 9am - 12pm\n  Closed Sun\n", 
+                    "PRE-MARKUP": "Springfield Town Hall\nHours:\n   Mon-Fri 9am - 5:30pm\n   Sat 9am - 12pm\n   Closed Sun", 
+                    "RDFA": "\n  Springfield Town Hall\n  Hours:\n  Mon-Fri 9am - 5:30pm\n  Sat 9am - 12pm\n  Closed Sun\n", 
+                    "TYPES": [
+                        "CivicStructure", 
+                        "Place"
+                    ], 
+                    "_index": 1, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/openingHours", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "PRE-MARKUP": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "RDFA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "TYPES": [
+                                "Pharmacy", 
+                                "openingHours", 
+                                "telephone"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+                            "PRE-MARKUP": "Disneyland Paris\nIt's an amusement park in Marne-la-Vallée, near Paris, in France.\nHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\nEntrance: with ticket\nCurrency accepted: Euro\nPayment accepted: Cash, Credit Card\nWebsite:\n\twww.disneylandparis.it\n", 
+                            "RDFA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+                            "TYPES": [
+                                "AmusementPark", 
+                                "TouristAttraction", 
+                                "isAccessibleForFree", 
+                                "currenciesAccepted", 
+                                "openingHours", 
+                                "paymentAccepted"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "营业时间。例子：周二和周四下午4点到8点", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CivicStructure", 
+                            "rdfs:label": "CivicStructure"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LocalBusiness", 
+                            "_last": true, 
+                            "rdfs:label": "LocalBusiness"
+                        }
+                    ], 
+                    "nameZh": "开放时间", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.\n\n\nDays are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su.\nTimes are specified using 24:00 time. For example, 3pm is specified as 15:00. \nHere is an example: <time itemprop=\"openingHours\" datetime=\"Tu,Th 16:00-20:00\">Tuesdays and Thursdays 4-8pm</time>.\nIf a business is open 7 days a week, then it can be specified as <time itemprop=\"openingHours\" datetime=\"Mo-Su\">Monday through Sunday, all day</time>.\n\n", 
+                    "rdfs:label": "openingHours", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Opening_hours"
+                }
+            ], 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "公共建筑，如市政厅或音乐厅", 
+            "nameZh": "市政建筑", 
+            "rdfs:comment": "A public structure, such as a town hall or concert hall.", 
+            "rdfs:label": "CivicStructure", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                    "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                    "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                    "TYPES": [
+                        "Place", 
+                        "LocalBusiness", 
+                        "address", 
+                        "streetAddress", 
+                        "addressLocality", 
+                        "PostalAddress", 
+                        "telephone"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                    "PRE-MARKUP": "What is the latitude and longitude of the Empire State Building?\nAnswer:\nLatitude: 40 deg 44 min 54.36 sec N\nLongitude: 73 deg 59 min 8.5 sec W", 
+                    "RDFA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                    "TYPES": [
+                        "Place", 
+                        "GeoCoordinates", 
+                        "latitude", 
+                        "longitude", 
+                        "geo"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                    "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                    "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "AggregateOffer", 
+                        "location", 
+                        "startDate", 
+                        "address", 
+                        "offers", 
+                        "offerCount"
+                    ], 
+                    "_index": 3, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Springfield Town Hall\n  Hours:\n  Mon-Fri 9am - 5:30pm\n  Sat 9am - 12pm\n  Closed Sun\n", 
+                    "PRE-MARKUP": "Springfield Town Hall\nHours:\n   Mon-Fri 9am - 5:30pm\n   Sat 9am - 12pm\n   Closed Sun", 
+                    "RDFA": "\n  Springfield Town Hall\n  Hours:\n  Mon-Fri 9am - 5:30pm\n  Sat 9am - 12pm\n  Closed Sun\n", 
+                    "TYPES": [
+                        "CivicStructure", 
+                        "Place"
+                    ], 
+                    "_index": 4, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n    \n        Sat Sep 14\n    \n    \n        Typhoon with Radiation City\n    \n    \n        The Hi-Dive\n        \n            7 S. Broadway\n            Denver, CO 80209\n        \n    \n    9:30 PM\n    \n        $13.00\n        Tickets\n    \n", 
+                    "PRE-MARKUP": "\n  Sat Sep 14\n  Typhoon with Radiation City\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver, CO 80209\n    \n  \n  9:30 PM\n  $13.00\n  Tickets\n", 
+                    "RDFA": "\n  Sat Sep 14\n  Typhoon with Radiation City\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver,\n      CO\n      80209\n    \n  \n  9:30 PM\n \n \n    $\n    13.00\n \n Tickets\n \n", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "Offer"
+                    ], 
+                    "_index": 5, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n    \n        Sat Sep 14\n    \n    \n        CANCELLED - Typhoon with Radiation City\n    \n    \n    \n        The Hi-Dive\n        \n            7 S. Broadway\n            Denver, CO 80209\n        \n    \n    9:30 PM\n    \n        $13.00\n        \n        Tickets\n    \n", 
+                    "PRE-MARKUP": "\n  Sat Sep 14\n  Typhoon with Radiation City\n  CANCELLED - Typhoon with Radiation City\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver, CO 80209\n    \n  \n  9:30 PM\n  $13.00\n  Tickets\n", 
+                    "RDFA": "\n    \n        Sat Sep 14\n    \n    \n        CANCELLED - Typhoon with Radiation City\n    \n    \n    \n        The Hi-Dive\n        \n            7 S. Broadway\n            Denver, CO 80209\n        \n    \n    9:30 PM\n    \n        $13.00\n        Tickets\n    \n", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "Offer", 
+                        "EventCancelled"
+                    ], 
+                    "_index": 6, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n    \n        Sat Oct 12\n    \n    \n        Typhoon with Radiation City\n    \n    (previously scheduled for Sept 14th)\n    \n        The Hi-Dive\n        \n            7 S. Broadway\n            Denver, CO 80209\n        \n    \n    \n        10:00 PM\n    \n    \n        $13.00\n        Tickets\n    \n", 
+                    "PRE-MARKUP": "\n  Sat Oct 12\n  (previously scheduled for Sept 14th)\n  Typhoon with Radiation City\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver, CO 80209\n    \n  \n  10:00 PM\n \n  $13.00\n  Tickets\n \n", 
+                    "RDFA": "\n  Sat Oct 12\n  Typhoon with Radiation City\n  \n  (previously scheduled for Sept 14th)\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver,\n      CO\n      80209\n    \n  \n  10:00 PM\n  \n  \n    $\n    13.00\n  \n  Tickets\n  \n", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "Offer"
+                    ], 
+                    "_index": 7, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n    \n        Sat Sep 14\n    \n    \n        SOLD OUT! Typhoon with Radiation City\n    \n    \n        The Hi-Dive\n        \n            7 S. Broadway\n            Denver, CO 80209\n        \n    \n    9:30 PM\n    \n        \n        $13.00\n        Tickets\n    \n", 
+                    "PRE-MARKUP": "\n  Sat Sep 14\n  SOLD OUT! Typhoon with Radiation City\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver, CO 80209\n    \n  \n  10:00 PM\n \n  $13.00\n  Tickets\n \n", 
+                    "RDFA": "\n  Sat Sep 14\n  SOLD OUT! Typhoon with Radiation City\n  \n    The Hi-Dive\n    \n      7 S. Broadway\n      Denver,\n      CO\n      80209\n    \n  \n  9:30 PM\n \n  \n  \n    $\n    13.00\n  \n  Tickets\n \n", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "Offer", 
+                        "SoldOut"
+                    ], 
+                    "_index": 8, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON only.", 
+                    "PRE-MARKUP": "JSON-LD description of a scheduled Event with limited ticket availability and performer details indicated using sameAs.", 
+                    "RDFA": "This example is JSON only.", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "MusicGroup", 
+                        "Offer", 
+                        "LimitedAvailability"
+                    ], 
+                    "_index": 9, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON-only.", 
+                    "PRE-MARKUP": "An example snippet of JSON-LD describing two B.B. King concerts.", 
+                    "RDFA": "This example is JSON-only.", 
+                    "TYPES": [
+                        "MusicEvent", 
+                        "Place", 
+                        "Offer"
+                    ], 
+                    "_index": 10, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "This example is JSON-only.", 
+                    "PRE-MARKUP": "An example of a more fully specified MusicEvent, including a tour image,\nfull venue address, multiple performers, and multiple ticket classes.", 
+                    "RDFA": "This example is JSON-only.", 
+                    "TYPES": [
+                        "MusicEvent", 
+                        "Place", 
+                        "PostalAddress", 
+                        "Offer", 
+                        "MusicGroup", 
+                        "EventRescheduled"
+                    ], 
+                    "_index": 11, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalProperty", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                            "PRE-MARKUP": "Beach in Mexico\n\nBy Jane Doe\nPhotographed in Puerto Vallarta, Mexico\nDate uploaded: Jan 25, 2008\nI took this picture while on vacation last year.\n", 
+                            "RDFA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                            "TYPES": [
+                                "ImageObject", 
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-lD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450g\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 5, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n\n      ft.\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n      ft.\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 6, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 7, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      USB interface:\n      Yes\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      USB interface: Yes\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 8, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interface:\n      USB\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interface: USB\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 9, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 10, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 11, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:\n      Yes\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:Yes\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 12, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 13, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 14, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode:\n        Yes\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode: Yes\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 15, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示实体附加特征的属性值对（例如cnschema.org中没有匹配属性的产品功能或其他特性）", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "rdfs:label": "QualitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "rdfs:label": "QuantitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "附加属性", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "_last": true, 
+                            "rdfs:label": "PropertyValue"
+                        }
+                    ], 
+                    "rdfs:comment": "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in cnschema.org.\n\nNote: Publishers should be aware that applications designed to use specific cnschema.org properties (e.g. http://cnschema.org/width, http://cnschema.org/color, http://cnschema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.", 
+                    "rdfs:label": "additionalProperty", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/address", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                            "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "TYPES": [
+                                "Place", 
+                                "LocalBusiness", 
+                                "address", 
+                                "streetAddress", 
+                                "addressLocality", 
+                                "PostalAddress", 
+                                "telephone"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "TYPES": [
+                                "Event", 
+                                "Place", 
+                                "PostalAddress", 
+                                "AggregateOffer", 
+                                "location", 
+                                "startDate", 
+                                "address", 
+                                "offers", 
+                                "offerCount"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的物理地址。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "rdfs:label": "GeoShape"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoCoordinates", 
+                            "rdfs:label": "GeoCoordinates"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "地址", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PostalAddress", 
+                            "rdfs:label": "PostalAddress"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "Physical address of the item.", 
+                    "rdfs:label": "address", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/aggregateRating", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+                            "PRE-MARKUP": "GreatFood\n4 stars - based on 250 reviews\n1901 Lemur Ave\nSunnyvale, CA 94086\n(408) 714-1489\nwww.greatfood.com\nHours:\nMon-Sat 11am - 2:30pm\nMon-Thur 5pm - 9:30pm\nFri-Sat 5pm - 10pm\nCategories: Middle Eastern, Mediterranean\nPrice Range: $$\nTakes Reservations: Yes", 
+                            "RDFA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+                            "TYPES": [
+                                "Restaurant", 
+                                "AggregateRating", 
+                                "FoodEstablishment", 
+                                "LocalBusiness", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "PRE-MARKUP": "Kenmore White 17\" Microwave\n\nRated 3.5/5 based on 11 customer reviews\n$55.00\nIn stock\nProduct description:\n0.7 cubic feet countertop microwave. Has six preset cooking categories and\n convenience features like Add-A-Minute and Child Lock.\nCustomer reviews:\nNot a happy camper - by Ellie, April 1, 2011\n1/5 stars\nThe lamp burned out and now I have to replace it.\n Value purchase - by Lucas, March 25, 2011\n4/5 stars\nGreat microwave for the price. It is small and fits in my apartment.\n...", 
+                            "RDFA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "Offer", 
+                                "Review", 
+                                "Rating", 
+                                "price", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount", 
+                                "availability", 
+                                "InStock"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 250,000 and 500,000 domains", 
+                    "descriptionZh": "基于该项的一系列评论的总体评价。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "总体评分", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/AggregateRating", 
+                            "_last": true, 
+                            "rdfs:label": "AggregateRating"
+                        }
+                    ], 
+                    "rdfs:comment": "The overall rating, based on a collection of reviews or ratings, of the item.", 
+                    "rdfs:label": "aggregateRating", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/amenityFeature", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "住宿的便利设施（例如特色或服务）。这个通用财产并没有说明该功能是否包含在主要住宿的报价中，或者是额外的费用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/LodgingBusiness", 
+                            "rdfs:label": "LodgingBusiness"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Accommodation", 
+                            "_last": true, 
+                            "rdfs:label": "Accommodation"
+                        }
+                    ], 
+                    "nameZh": "特色服务", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/LocationFeatureSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "LocationFeatureSpecification"
+                        }
+                    ], 
+                    "rdfs:comment": "An amenity feature (e.g. a characteristic or service) of the Accommodation. This generic property does not make a statement about whether the feature is included in an offer for the main accommodation or available at extra costs.", 
+                    "rdfs:label": "amenityFeature", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/branchCode", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "一个简短的文本编码（也称为商店码）， 用于唯一标示商务地点。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "分支编码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A short textual code (also called \"store code\") that uniquely identifies a place of business. The code is typically assigned by the parentOrganization and used in structured URLs.\n\nFor example, in the URL http://www.starbucks.co.uk/store-locator/etc/detail/3047 the code \"3047\" is a branchCode for a particular branch.", 
+                    "rdfs:label": "branchCode", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/containedInPlace", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/containedIn", 
+                        "rdfs:label": "containedIn"
+                    }, 
+                    "_usage": "", 
+                    "descriptionZh": "地点的包含关系", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/containsPlace", 
+                        "rdfs:label": "containsPlace"
+                    }, 
+                    "nameZh": "包含在", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "rdfs:comment": "The basic containment relation between a place and one that contains it.", 
+                    "rdfs:label": "containedInPlace", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/containsPlace", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "地点的包含关系", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/containedInPlace", 
+                        "rdfs:label": "containedInPlace"
+                    }, 
+                    "nameZh": "包含", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "rdfs:comment": "The basic containment relation between a place and another that it contains.", 
+                    "rdfs:label": "containsPlace", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/event", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+                            "PRE-MARKUP": "Musée Marmottan Monet\nIt's a museum of Impressionism and french ninenteeth art.\nIt is hosting the Hodler's, Monet's and Munch's exibit: \"Peindre l'impossible\".\nStart date: September 15 2016\nEnd date: Genuary 22 2017\n", 
+                            "RDFA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "event", 
+                                "Event"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/events", 
+                        "rdfs:label": "events"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "即将发生或已经过去且与这个地方或机构相关的事件。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PlayAction", 
+                            "rdfs:label": "PlayAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/JoinAction", 
+                            "rdfs:label": "JoinAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/InviteAction", 
+                            "rdfs:label": "InviteAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/InformAction", 
+                            "rdfs:label": "InformAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LeaveAction", 
+                            "rdfs:label": "LeaveAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "事件", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "_last": true, 
+                            "rdfs:label": "Event"
+                        }
+                    ], 
+                    "rdfs:comment": "Upcoming or past event associated with this place, organization, or action.", 
+                    "rdfs:label": "event", 
+                    "wikidataName": "significant event", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P793", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/faxNumber", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "传真号。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "传真号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The fax number.", 
+                    "rdfs:label": "faxNumber", 
+                    "wikidataName": "fax number", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2900", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Fax_number"
+                }, 
+                {
+                    "@id": "http://cnschema.org/geo", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                            "PRE-MARKUP": "What is the latitude and longitude of the Empire State Building?\nAnswer:\nLatitude: 40 deg 44 min 54.36 sec N\nLongitude: 73 deg 59 min 8.5 sec W", 
+                            "RDFA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                            "TYPES": [
+                                "Place", 
+                                "GeoCoordinates", 
+                                "latitude", 
+                                "longitude", 
+                                "geo"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n    Technikerstrasse 21\n    6020\n    Innsbruck\n    Tyrol,\n    Austria\n  \n  \n    \n    \n  \n", 
+                            "PRE-MARKUP": "This example is in microdata only.", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "GeoCoordinates", 
+                                "geo"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "地理位置的坐标。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "经纬度", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoCoordinates", 
+                            "rdfs:label": "GeoCoordinates"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "rdfs:comment": "The geo coordinates of the place.", 
+                    "rdfs:label": "geo", 
+                    "wikidataName": "coordinate location", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P625", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Geographic_coordinate_system"
+                }, 
+                {
+                    "@id": "http://cnschema.org/globalLocationNumber", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "全球位置码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "全球位置码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The Global Location Number (GLN, sometimes also referred to as International Location Number or ILN) of the respective organization, person, or place. The GLN is a 13-digit number used to identify parties and physical locations.", 
+                    "rdfs:label": "globalLocationNumber", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Global_Location_Number"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasMap", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Click here for a map.\n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Click here for a map.\n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "hasMap"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/map", 
+                        "rdfs:label": "map"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "一个显示位置地图的URL", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "地图URL", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Map", 
+                            "_last": true, 
+                            "rdfs:label": "Map"
+                        }
+                    ], 
+                    "rdfs:comment": "A URL to a map of the place.", 
+                    "rdfs:label": "hasMap", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isAccessibleForFree", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tHyde Park\n\t\n\t\tIt's one of nine royal parks of London.\n\t\n\tWebsite:\n\t\twww.royalparks.org.uk/parks/hyde-park\n\t\n\t\n\t\tTicket: access for free.\n\t\n", 
+                            "PRE-MARKUP": "Hyde Park\nIt's one of the nine royal parks of London.\nWebsite:\n\twww.royalparks.org.uk/parks/hyde-park\n\nTicket: access for free.", 
+                            "RDFA": "\n\tHyde Park\n\t\n\t\tIt's one of nine royal parks of London.\n\t\n\tWebsite:\n\t\twww.royalparks.org.uk/parks/hyde-park\n\t\n\t\n\t\tTicket: access for free.\n\t\n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "isAccessibleForFree"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+                            "PRE-MARKUP": "Disneyland Paris\nIt's an amusement park in Marne-la-Vallée, near Paris, in France.\nHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\nEntrance: with ticket\nCurrency accepted: Euro\nPayment accepted: Cash, Credit Card\nWebsite:\n\twww.disneylandparis.it\n", 
+                            "RDFA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+                            "TYPES": [
+                                "AmusementPark", 
+                                "TouristAttraction", 
+                                "isAccessibleForFree", 
+                                "currenciesAccepted", 
+                                "openingHours", 
+                                "paymentAccepted"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n      \n      \n      \n    \n    \n    \n    \n    \n    \n  \n", 
+                            "PRE-MARKUP": "Name: The Falles 2017\nDescription: The Falles is a traditional celebration held in commemoration of Saint Joseph in the city of Valencia, Spain. The term Falles refers to both the celebration and the monuments burnt during the celebration. Added to UNESCO's intangible cultural heritage of humanity list on 30 November 2016.\nFrom: March 3, 2017\nTo: March 3, 2017\nLocation: Valencia, ES\nPublic Access: yes\nIs Accessible For Free: yes\nTourist Audience: Cultural tourism\nImage 1: https://commons.wikimedia.org/wiki/File%3AFalla_Plaza_del_Ayuntamiento_2016_(1).jpg\nImage 2: https://commons.wikimedia.org/wiki/File:La_fallera_y_su_crem%C3%A1.jpg\nSame As: http://www.wikidata.org/entity/Q1143768", 
+                            "RDFA": "\n    \n    \n    \n    \n    \n    \n    \n    \n        \n        \n        \n    \n    \n    \n    \n    \n    \n    \n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "isAccessibleForFree"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n    \n    \n    \n    \n      \n      \n        \n      \n      \n        \n      \n    \n    \n      \n      \n    \n    \n      \n      \n    \n    \n    \n    \n    \n  \n", 
+                            "PRE-MARKUP": "Name: Villers–Bretonneux Australian National Memorial\nDescription: The Australian National Memorial, Villers–Bretonneux is the main memorial to Australian military personnel killed on the Western Front during World War I.\nAddress: Fouilloy, FR\nGeocoordinates: lat 49.8852515, lon 2.5106436\nPublic Access: yes\nIs Accessible For Free: yes\nTourist Audience: Memorial Tourism from Australia and New Zealand\nImage: https://commons.wikimedia.org/wiki/File%3AVillers-Bretonneux_m%C3%A9morial_australien_(tour_et_croix)_1.jpg\nSame As: https://www.wikidata.org/wiki/Q2544355", 
+                            "RDFA": "\n    \n    \n    \n        \n        \n            >\n            \n        \n        \n            \n        \n    \n\n\n    \n    \n\n\n    \n    \n\n\n\n    \n    \n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "touristType", 
+                                "isAccessibleForFree", 
+                                "Cemetery"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/free", 
+                        "rdfs:label": "free"
+                    }, 
+                    "_usage": "", 
+                    "descriptionZh": "表示该出版物可免费获得的标志。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PublicationEvent", 
+                            "_last": true, 
+                            "rdfs:label": "PublicationEvent"
+                        }
+                    ], 
+                    "nameZh": "是否免费", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Boolean", 
+                            "_last": true, 
+                            "rdfs:label": "Boolean"
+                        }
+                    ], 
+                    "rdfs:comment": "A flag to signal that the item, event, or place is accessible for free.", 
+                    "rdfs:label": "isAccessibleForFree", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isicV4", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "ISIC是所有经济活动的国际工业分类标准，而V4代码是为特定组织，商业人士或地点的修订", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "nameZh": "国际标准行业分类", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The International Standard of Industrial Classification of All Economic Activities (ISIC), Revision 4 code for a particular organization, business person, or place.", 
+                    "rdfs:label": "isicV4", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/logo", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "关联的商标", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "商标", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An associated logo.", 
+                    "rdfs:label": "logo", 
+                    "wikidataName": "logo image", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P154", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Logo"
+                }, 
+                {
+                    "@id": "http://cnschema.org/maximumAttendeeCapacity", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "可以参加活动或场地的总人数", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "_last": true, 
+                            "rdfs:label": "Event"
+                        }
+                    ], 
+                    "nameZh": "最多可容纳多少人参与", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Integer", 
+                            "_last": true, 
+                            "rdfs:label": "Integer"
+                        }
+                    ], 
+                    "rdfs:comment": "The total number of individuals that may attend an event or venue.", 
+                    "rdfs:label": "maximumAttendeeCapacity", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/openingHoursSpecification", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    \n        Music Resource Centre\n    \n    \n        Opening hours\n    \n    \n        Monday: 9:00 AM - 5:00 PM\n    \n    \n        Tuesday: 9:00 AM - 5:00 PM\n    \n    \n        Wednesday: 9:00 AM - 5:00 PM\n    \n    \n        Thursday: 9:00 AM - 5:00 PM\n    \n    \n        Friday: 9:00 AM - 5:00 PM\n    \n    \n        Saturday: 9:00 AM - 5:00 PM\n    \n    \n        Sunday: 9:00 AM - 5:00 PM\n    \n    \n        Contact information\n    \n    \n        Email address: dscott@laurentian.ca\n    \n    \n        \n            \n                Mailing address\n            School of Education - Music Resource Centre\n            Laurentian University\n            Sudbury\n            ON\n            Canada\n            P3E 2C6\n        \n    \n    \n        Branch relationship\n    \n    \n        Parent library: Laurentian University\n    \n", 
+                            "PRE-MARKUP": "\nMusic Resource Centre\nOpening hours\nMonday:  9:00 AM -  5:00 PM\nTuesday:  9:00 AM -  5:00 PM\nWednesday:  9:00 AM -  5:00 PM\nThursday:  9:00 AM -  5:00 PM\nFriday:  9:00 AM -  5:00 PM\nSaturday:  9:00 AM -  5:00 PM\nSunday:  9:00 AM -  5:00 PM\n    Contact information\n        Email address: \n        dscott@laurentian.ca\n    \n        \n            Mailing address\n            School of Education - Music Resource CentreLaurentian University\n            Sudbury\n            ON\n            Canada\n            P3E 2C6\n        \n    \n    Branch relationship\n    Parent library:\n        Laurentian University\n    ", 
+                            "RDFA": "\n    \n        Music Resource Centre\n    \n    \n        Opening hours\n    \n    \n        Monday: 9:00 AM - 5:00 PM\n    \n    \n        Tuesday: 9:00 AM - 5:00 PM\n    \n    \n        Wednesday: 9:00 AM - 5:00 PM\n    \n    \n        Thursday: 9:00 AM - 5:00 PM\n    \n    \n        Friday: 9:00 AM - 5:00 PM\n    \n    \n        Saturday: 9:00 AM - 5:00 PM\n    \n    \n        Sunday: 9:00 AM - 5:00 PM\n    \n    \n        Contact information\n    \n    \n        Email address: dscott@laurentian.ca\n    \n    \n        \n            \n                Mailing address\n            School of Education - Music Resource Centre\n            Laurentian University\n            Sudbury\n            ON\n            Canada\n            P3E 2C6\n        \n    \n    \n        Branch relationship\n    \n    \n        Parent library: Laurentian University\n    \n", 
+                            "TYPES": [
+                                "Library", 
+                                "OpeningHoursSpecification", 
+                                "openingHoursSpecification"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-library-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "开放时间详细信息", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "开放时间详情", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "OpeningHoursSpecification"
+                        }
+                    ], 
+                    "rdfs:comment": "The opening hours of a certain place.", 
+                    "rdfs:label": "openingHoursSpecification", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/photo", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/photos", 
+                        "rdfs:label": "photos"
+                    }, 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "这个地方的照片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "照片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "rdfs:label": "ImageObject"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Photograph", 
+                            "_last": true, 
+                            "rdfs:label": "Photograph"
+                        }
+                    ], 
+                    "rdfs:comment": "A photograph of this place.", 
+                    "rdfs:label": "photo", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Photo"
+                }, 
+                {
+                    "@id": "http://cnschema.org/publicAccess", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\tLeaning Tower of Pisa\n\t\n\t\tIt is a twelfth-thirteenth century Romanesque tower started building by Bonanno Pisano.\n\t\n\t\n\t\tPublic access: yes\n\t\n", 
+                            "PRE-MARKUP": "Leaning Tower of Pisa\nIt is a twelfth-thirteenth century Romanesque tower started building by Bonanno Pisano.\nPublic access: yes", 
+                            "RDFA": "\n\tLeaning Tower of Pisa\n\t\n\t\tIt is a twelfth-thirteenth century Romanesque tower started building by Bonanno Pisano.\n\t\n\t\n\t\tPublic access: yes\n\t\n", 
+                            "TYPES": [
+                                "TouristAttraction", 
+                                "publicAccess"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "一个地点是否对公众开放，布尔值。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "是否对公众开放", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Boolean", 
+                            "_last": true, 
+                            "rdfs:label": "Boolean"
+                        }
+                    ], 
+                    "rdfs:comment": "A flag to signal that the Place is open to public visitors.  If this property is omitted there is no assumed default boolean value", 
+                    "rdfs:label": "publicAccess", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/review", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/reviews", 
+                        "rdfs:label": "reviews"
+                    }, 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "针对某一个事物（人，文章，地点，产品）的评论", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "事物的评论", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Review", 
+                            "_last": true, 
+                            "rdfs:label": "Review"
+                        }
+                    ], 
+                    "rdfs:comment": "A review of the item.", 
+                    "rdfs:label": "review", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/smokingAllowed", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "指示是否能够吸烟的标识，例如在餐馆，酒店中", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "是否允许吸烟", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Boolean", 
+                            "_last": true, 
+                            "rdfs:label": "Boolean"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.", 
+                    "rdfs:label": "smokingAllowed", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/specialOpeningHoursSpecification", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "特定开放时间的某个地方。 使用此功能通过打开“小时规格”或“营业时间”来明确地覆盖引入范围的一般开放时间。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "特殊开放时间详情", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "OpeningHoursSpecification"
+                        }
+                    ], 
+                    "rdfs:comment": "The special opening hours of a certain place.\n\nUse this to explicitly override general opening hours brought in scope by openingHoursSpecification or openingHours.", 
+                    "rdfs:label": "specialOpeningHoursSpecification", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/telephone", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                            "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "TYPES": [
+                                "Place", 
+                                "LocalBusiness", 
+                                "address", 
+                                "streetAddress", 
+                                "addressLocality", 
+                                "PostalAddress", 
+                                "telephone"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "PRE-MARKUP": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "RDFA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+                            "TYPES": [
+                                "Pharmacy", 
+                                "openingHours", 
+                                "telephone"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "电话号码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "nameZh": "电话号码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The telephone number.", 
+                    "rdfs:label": "telephone", 
+                    "wikidataName": "phone number", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P1329", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Telephone"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "广泛意义上的一个地方", 
+            "nameZh": "地方", 
+            "rdfs:comment": "Entities that have a somewhat fixed, physical extension.", 
+            "rdfs:label": "Place", 
+            "wikidataName": "geographical point", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q2221906", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Location_(geography)"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "rdfs:label": "Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/CivicStructure", 
+                    "rdfs:label": "CivicStructure"
+                }, 
+                {
+                    "@id": "http://cnschema.org/TaxiStand", 
+                    "_lastone": true, 
+                    "rdfs:label": "TaxiStand"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/CivicStructure", 
+            "_last": true, 
+            "rdfs:label": "CivicStructure"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一个出租车站", 
+    "nameZh": "出租车站", 
+    "rdfs:comment": "A taxi stand.", 
+    "rdfs:label": "TaxiStand", 
+    "wikidataName": "taxicab stand", 
+    "wikidataUrl": "https://www.wikidata.org/wiki/Q1395196", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Taxi_Stand"
+}

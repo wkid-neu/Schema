@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/vehicleEngine", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "vehicleEngine", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/vehicleEngine", 
+                    "_lastone": true, 
+                    "rdfs:label": "vehicleEngine"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "此车辆发动机的信息", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "车辆引擎", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/EngineSpecification", 
+            "_last": true, 
+            "rdfs:label": "EngineSpecification"
+        }
+    ], 
+    "rdfs:comment": "Information about the engine or engines of the vehicle.", 
+    "rdfs:label": "vehicleEngine", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

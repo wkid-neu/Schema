@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/contactOption", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "contactOption", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/contactOption", 
+                    "_lastone": true, 
+                    "rdfs:label": "contactOption"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该联络点提供的选项（例如免费电话号码或对听力受损呼叫者的支持）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "_last": true, 
+            "rdfs:label": "ContactPoint"
+        }
+    ], 
+    "nameZh": "联系选项", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPointOption", 
+            "_last": true, 
+            "rdfs:label": "ContactPointOption"
+        }
+    ], 
+    "rdfs:comment": "An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers).", 
+    "rdfs:label": "contactOption", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

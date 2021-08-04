@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/softwareVersion", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "softwareVersion", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/softwareVersion", 
+                    "_lastone": true, 
+                    "rdfs:label": "softwareVersion"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "软件的版本", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "软件的版本", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Version of the software instance.", 
+    "rdfs:label": "softwareVersion", 
+    "wikidataName": "software version", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P348", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Software_versioning"
+}

@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/iswcCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "iswcCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/iswcCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "iswcCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍥介檯鏍囧噯闊充箰浣滃搧缂栫爜", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicComposition", 
+            "_last": true, 
+            "rdfs:label": "MusicComposition"
+        }
+    ], 
+    "nameZh": "鍥介檯鏍囧噯闊充箰浣滃搧缂栫爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The International Standard Musical Work Code for the composition.", 
+    "rdfs:label": "iswcCode", 
+    "wikidataName": "ISWC", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1827", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/ISWC"
+}

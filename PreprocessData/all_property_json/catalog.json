@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/catalog", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "catalog", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/catalog", 
+                    "_lastone": true, 
+                    "rdfs:label": "catalog"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "包含此数据集的数据目录。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Dataset", 
+            "_last": true, 
+            "rdfs:label": "Dataset"
+        }
+    ], 
+    "nameZh": "所属数据目录", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DataCatalog", 
+            "_last": true, 
+            "rdfs:label": "DataCatalog"
+        }
+    ], 
+    "rdfs:comment": "A data catalog which contains this dataset.", 
+    "rdfs:label": "catalog", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/includedInDataCatalog", 
+        "rdfs:label": "includedInDataCatalog"
+    }, 
+    "wikidataName": "catalog", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P972", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Catalog"
+}

@@ -1,0 +1,87 @@
+{
+    "@id": "http://cnschema.org/seller", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "seller", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/seller", 
+                    "_lastone": true, 
+                    "rdfs:label": "seller"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/participant", 
+            "_last": true, 
+            "rdfs:label": "participant"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/vendor", 
+        "rdfs:label": "vendor"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "提供商品出售、物品租赁、贷款等服务的人或组织。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Demand", 
+            "rdfs:label": "Demand"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "rdfs:label": "Flight"
+        }, 
+        {
+            "@id": "http://cnschema.org/Order", 
+            "rdfs:label": "Order"
+        }, 
+        {
+            "@id": "http://cnschema.org/BuyAction", 
+            "_last": true, 
+            "rdfs:label": "BuyAction"
+        }
+    ], 
+    "nameZh": "卖家", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "An entity which offers (sells / leases / lends / loans) the services / goods.  A seller may also be a provider.", 
+    "rdfs:label": "seller", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

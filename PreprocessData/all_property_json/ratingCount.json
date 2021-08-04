@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/ratingCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "ratingCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ratingCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "ratingCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 250,000 and 500,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "瀵圭洰鏍囦竴鍏辨湁澶氬皯涓笉鍚岀殑璇勫垎", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/AggregateRating", 
+            "_last": true, 
+            "rdfs:label": "AggregateRating"
+        }
+    ], 
+    "nameZh": "璇勫垎鎬绘暟", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The count of total number of ratings.", 
+    "rdfs:label": "ratingCount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

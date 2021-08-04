@@ -1,0 +1,81 @@
+{
+    "@id": "http://cnschema.org/openingHoursSpecification", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    \n        Music Resource Centre\n    \n    \n        Opening hours\n    \n    \n        Monday: 9:00 AM - 5:00 PM\n    \n    \n        Tuesday: 9:00 AM - 5:00 PM\n    \n    \n        Wednesday: 9:00 AM - 5:00 PM\n    \n    \n        Thursday: 9:00 AM - 5:00 PM\n    \n    \n        Friday: 9:00 AM - 5:00 PM\n    \n    \n        Saturday: 9:00 AM - 5:00 PM\n    \n    \n        Sunday: 9:00 AM - 5:00 PM\n    \n    \n        Contact information\n    \n    \n        Email address: dscott@laurentian.ca\n    \n    \n        \n            \n                Mailing address\n            School of Education - Music Resource Centre\n            Laurentian University\n            Sudbury\n            ON\n            Canada\n            P3E 2C6\n        \n    \n    \n        Branch relationship\n    \n    \n        Parent library: Laurentian University\n    \n", 
+            "PRE-MARKUP": "\nMusic Resource Centre\nOpening hours\nMonday:  9:00 AM -  5:00 PM\nTuesday:  9:00 AM -  5:00 PM\nWednesday:  9:00 AM -  5:00 PM\nThursday:  9:00 AM -  5:00 PM\nFriday:  9:00 AM -  5:00 PM\nSaturday:  9:00 AM -  5:00 PM\nSunday:  9:00 AM -  5:00 PM\n    Contact information\n        Email address: \n        dscott@laurentian.ca\n    \n        \n            Mailing address\n            School of Education - Music Resource CentreLaurentian University\n            Sudbury\n            ON\n            Canada\n            P3E 2C6\n        \n    \n    Branch relationship\n    Parent library:\n        Laurentian University\n    ", 
+            "RDFA": "\n    \n        Music Resource Centre\n    \n    \n        Opening hours\n    \n    \n        Monday: 9:00 AM - 5:00 PM\n    \n    \n        Tuesday: 9:00 AM - 5:00 PM\n    \n    \n        Wednesday: 9:00 AM - 5:00 PM\n    \n    \n        Thursday: 9:00 AM - 5:00 PM\n    \n    \n        Friday: 9:00 AM - 5:00 PM\n    \n    \n        Saturday: 9:00 AM - 5:00 PM\n    \n    \n        Sunday: 9:00 AM - 5:00 PM\n    \n    \n        Contact information\n    \n    \n        Email address: dscott@laurentian.ca\n    \n    \n        \n            \n                Mailing address\n            School of Education - Music Resource Centre\n            Laurentian University\n            Sudbury\n            ON\n            Canada\n            P3E 2C6\n        \n    \n    \n        Branch relationship\n    \n    \n        Parent library: Laurentian University\n    \n", 
+            "TYPES": [
+                "Library", 
+                "OpeningHoursSpecification", 
+                "openingHoursSpecification"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-library-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "openingHoursSpecification", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/openingHoursSpecification", 
+                    "_lastone": true, 
+                    "rdfs:label": "openingHoursSpecification"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "开放时间详细信息", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "开放时间详情", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+            "_last": true, 
+            "rdfs:label": "OpeningHoursSpecification"
+        }
+    ], 
+    "rdfs:comment": "The opening hours of a certain place.", 
+    "rdfs:label": "openingHoursSpecification", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

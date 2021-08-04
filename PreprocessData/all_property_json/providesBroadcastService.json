@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/providesBroadcastService", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "providesBroadcastService", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/providesBroadcastService", 
+                    "_lastone": true, 
+                    "rdfs:label": "providesBroadcastService"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "该频道提供的广播服务", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastChannel", 
+            "_last": true, 
+            "rdfs:label": "BroadcastChannel"
+        }
+    ], 
+    "nameZh": "提供的广播服务", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "_last": true, 
+            "rdfs:label": "BroadcastService"
+        }
+    ], 
+    "rdfs:comment": "The BroadcastService offered on this channel.", 
+    "rdfs:label": "providesBroadcastService", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

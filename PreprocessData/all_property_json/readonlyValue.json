@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/readonlyValue", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "readonlyValue", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/readonlyValue", 
+                    "_lastone": true, 
+                    "rdfs:label": "readonlyValue"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "对应属性的值是否可变更。 默认值为false。 当取值为True时，说明属性的值不可变更。这类似与ＨＴＭＬ表单中的hidden功能，相当于属性值预先指定且不可变更。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValueSpecification", 
+            "_last": true, 
+            "rdfs:label": "PropertyValueSpecification"
+        }
+    ], 
+    "nameZh": "值是否只读", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Whether or not a property is mutable.  Default is false. Specifying this for a property that also has a value makes it act similar to a \"hidden\" input in an HTML form.", 
+    "rdfs:label": "readonlyValue", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

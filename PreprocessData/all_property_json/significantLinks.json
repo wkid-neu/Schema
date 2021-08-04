@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/significantLinks", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "significantLinks", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/significantLinks", 
+                    "_lastone": true, 
+                    "rdfs:label": "significantLinks"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "网页上最重要的网址。 通常，这些是最多点击的非导航链接。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/WebPage", 
+            "_last": true, 
+            "rdfs:label": "WebPage"
+        }
+    ], 
+    "nameZh": "主要对外链接", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "The most significant URLs on the page. Typically, these are the non-navigation links that are clicked on the most.", 
+    "rdfs:label": "significantLinks", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/significantLink", 
+        "rdfs:label": "significantLink"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

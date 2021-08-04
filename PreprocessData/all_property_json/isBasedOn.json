@@ -1,0 +1,78 @@
+{
+    "@id": "http://cnschema.org/isBasedOn", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\nDerivative work\nIn copyright law, a derivative work is an expressive\n    creation that includes major elements of a previously created original work.\n    An example of a derivative work is L.H.O.O.Q, or Mona Lisa With a Moustache,\n    by Marcel Duchamp.\n    \n    Note: this defintion is based on the wikipedia\n    article on Derivative Work\n    \n    \n\n", 
+            "PRE-MARKUP": "\nDerivative work\nIn copyright law, a derivative work is an expressive creation that\n    includes major elements of a previously created original work. An\n    example of a derivative work is L.H.O.O.Q, or Mona Lisa With a Moustache,\n    by Marcel Duchamp.\n    Note: this defintion is based on the wikipedia article on Derivative\n    Work\n\n", 
+            "RDFA": "\nDerivative work\nIn copyright law, a derivative work is an expressive\n    creation that includes major elements of a previously created original work.\n    An example of a derivative work is L.H.O.O.Q, or Mona Lisa With a Moustache,\n    by Marcel Duchamp.\n    \n    Note: this defintion is based on the wikipedia\n    article on Derivative Work\n    \n    \n\n", 
+            "TYPES": [
+                "isBasedOn"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "isBasedOn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isBasedOn", 
+                    "_lastone": true, 
+                    "rdfs:label": "isBasedOn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/isBasedOnUrl", 
+        "rdfs:label": "isBasedOnUrl"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "涓婃父璧勬簮URL", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "涓婃父璧勬簮URL", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "A resource that was used in the creation of this resource. This term can be repeated for multiple sources. For example, http://example.com/great-multiplication-intro.html.", 
+    "rdfs:label": "isBasedOn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/numberOfBeds", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfBeds", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfBeds", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfBeds"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "旅馆、套房、别墅、公寓中给定床位类型空余数量", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BedDetails", 
+            "_last": true, 
+            "rdfs:label": "BedDetails"
+        }
+    ], 
+    "nameZh": "床位数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The quantity of the given bed type available in the HotelRoom, Suite, House, or Apartment.", 
+    "rdfs:label": "numberOfBeds", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

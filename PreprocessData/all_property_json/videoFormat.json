@@ -1,0 +1,79 @@
+{
+    "@id": "http://cnschema.org/videoFormat", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  FIFA Women's World Cup Final\n  US vs. Japan\n  \n  HD\n  starts 07/05/2015 3:30PM\n  \n    FIFA Women's World Cup Final 2015\n    \n      \n    \n    \n      \n    \n    \n    \n      Played in Vancouver\n    \n  \n", 
+            "PRE-MARKUP": "A broadcast of the FIFA Women's World Cup 2015 final.", 
+            "RDFA": "\n  FIFA Women's World Cup Final\n  US vs. Japan\n  \n  HD\n  starts 07/05/2015 3:30PM\n  \n    FIFA Women's World Cup Final 2015\n    \n      \n    \n    \n      \n    \n    \n    \n      Played in Vancouver\n    \n  \n", 
+            "TYPES": [
+                "BroadcastEvent", 
+                "SportsEvent", 
+                "broadcastOfEvent", 
+                "isLiveBroadcast", 
+                "videoFormat", 
+                "competitor"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tv-listing-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "videoFormat", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/videoFormat", 
+                    "_lastone": true, 
+                    "rdfs:label": "videoFormat"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "播放所使用的的视频格式，例如：IMAX, 3D, SD, HD", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "rdfs:label": "BroadcastService"
+        }, 
+        {
+            "@id": "http://cnschema.org/BroadcastEvent", 
+            "rdfs:label": "BroadcastEvent"
+        }, 
+        {
+            "@id": "http://cnschema.org/ScreeningEvent", 
+            "_last": true, 
+            "rdfs:label": "ScreeningEvent"
+        }
+    ], 
+    "nameZh": "视频格式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The type of screening or video broadcast used (e.g. IMAX, 3D, SD, HD, etc.).", 
+    "rdfs:label": "videoFormat", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

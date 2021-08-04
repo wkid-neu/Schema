@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/doorTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "doorTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/doorTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "doorTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "活动时，开门允许观众入场的时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "允许进场时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The time admission will commence.", 
+    "rdfs:label": "doorTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

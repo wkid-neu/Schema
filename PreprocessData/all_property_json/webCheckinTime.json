@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/webCheckinTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "webCheckinTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/webCheckinTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "webCheckinTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "缃戜笂鍊兼満鏃堕棿", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "缃戜笂鍊兼満鏃堕棿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The time when a passenger can check into the flight online.", 
+    "rdfs:label": "webCheckinTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

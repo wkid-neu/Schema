@@ -1,0 +1,88 @@
+{
+    "@id": "http://cnschema.org/musicBy", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "musicBy", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/musicBy", 
+                    "_lastone": true, 
+                    "rdfs:label": "musicBy"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "影视配乐的作曲者", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RadioSeries", 
+            "rdfs:label": "RadioSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoObject", 
+            "rdfs:label": "VideoObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "rdfs:label": "Episode"
+        }, 
+        {
+            "@id": "http://cnschema.org/MovieSeries", 
+            "rdfs:label": "MovieSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "rdfs:label": "VideoGame"
+        }, 
+        {
+            "@id": "http://cnschema.org/Movie", 
+            "rdfs:label": "Movie"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "rdfs:label": "TVSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Clip", 
+            "_last": true, 
+            "rdfs:label": "Clip"
+        }
+    ], 
+    "nameZh": "作曲者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/MusicGroup", 
+            "_last": true, 
+            "rdfs:label": "MusicGroup"
+        }
+    ], 
+    "rdfs:comment": "The composer of the soundtrack.", 
+    "rdfs:label": "musicBy", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

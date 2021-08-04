@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/containedInPlace", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "containedInPlace", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/containedInPlace", 
+                    "_lastone": true, 
+                    "rdfs:label": "containedInPlace"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/containedIn", 
+        "rdfs:label": "containedIn"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "地点的包含关系", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/containsPlace", 
+        "rdfs:label": "containsPlace"
+    }, 
+    "nameZh": "包含在", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The basic containment relation between a place and one that contains it.", 
+    "rdfs:label": "containedInPlace", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

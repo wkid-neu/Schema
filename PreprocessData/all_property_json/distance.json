@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/distance", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "distance", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/distance", 
+                    "_lastone": true, 
+                    "rdfs:label": "distance"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "行程的距离，例如行驶或旅行。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TravelAction", 
+            "rdfs:label": "TravelAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/ExerciseAction", 
+            "_last": true, 
+            "rdfs:label": "ExerciseAction"
+        }
+    ], 
+    "nameZh": "距离", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Distance", 
+            "_last": true, 
+            "rdfs:label": "Distance"
+        }
+    ], 
+    "rdfs:comment": "The distance travelled, e.g. exercising or travelling.", 
+    "rdfs:label": "distance", 
+    "wikidataName": "length", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2043", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Distance"
+}

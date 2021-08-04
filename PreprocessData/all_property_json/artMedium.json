@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/artMedium", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "artMedium", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/material", 
+                    "rdfs:label": "material"
+                }, 
+                {
+                    "@id": "http://cnschema.org/artMedium", 
+                    "_lastone": true, 
+                    "rdfs:label": "artMedium"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/material", 
+            "_last": true, 
+            "rdfs:label": "material"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "使用的材料。（例如油，水彩，亚克力，大理石，数字，平版印刷，凹版，粉彩，木刻，铅笔，混合媒体等）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VisualArtwork", 
+            "_last": true, 
+            "rdfs:label": "VisualArtwork"
+        }
+    ], 
+    "nameZh": "艺术材料", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "The material used. (e.g. Oil, Watercolour, Acrylic, Linoprint, Marble, Cyanotype, Digital, Lithograph, DryPoint, Intaglio, Pastel, Woodcut, Pencil, Mixed Media, etc.)", 
+    "rdfs:label": "artMedium", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

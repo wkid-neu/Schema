@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/childMaxAge", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "childMaxAge", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/childMaxAge", 
+                    "_lastone": true, 
+                    "rdfs:label": "childMaxAge"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "满足条件的儿童的最大年龄", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParentAudience", 
+            "_last": true, 
+            "rdfs:label": "ParentAudience"
+        }
+    ], 
+    "nameZh": "最大儿童年龄", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "Maximal age of the child.", 
+    "rdfs:label": "childMaxAge", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

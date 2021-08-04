@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/isGift", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "isGift", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isGift", 
+                    "_lastone": true, 
+                    "rdfs:label": "isGift"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鏄惁绀肩墿", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "nameZh": "鏄惁绀肩墿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Was the offer accepted as a gift for someone other than the buyer.", 
+    "rdfs:label": "isGift", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

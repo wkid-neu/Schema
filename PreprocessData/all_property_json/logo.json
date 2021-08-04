@@ -1,0 +1,112 @@
+{
+    "@id": "http://cnschema.org/logo", 
+    "_examples": [
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "Hotel", 
+                "logo", 
+                "image"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "logo", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "rdfs:label": "image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/logo", 
+                    "_lastone": true, 
+                    "rdfs:label": "logo"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/image", 
+            "_last": true, 
+            "rdfs:label": "image"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "关联的商标", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "rdfs:label": "Service"
+        }, 
+        {
+            "@id": "http://cnschema.org/Brand", 
+            "rdfs:label": "Brand"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "nameZh": "商标", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "_last": true, 
+            "rdfs:label": "ImageObject"
+        }
+    ], 
+    "rdfs:comment": "An associated logo.", 
+    "rdfs:label": "logo", 
+    "wikidataName": "logo image", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P154", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Logo"
+}

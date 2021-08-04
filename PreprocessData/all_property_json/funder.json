@@ -1,0 +1,79 @@
+{
+    "@id": "http://cnschema.org/funder", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "funder", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/sponsor", 
+                    "rdfs:label": "sponsor"
+                }, 
+                {
+                    "@id": "http://cnschema.org/funder", 
+                    "_lastone": true, 
+                    "rdfs:label": "funder"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/sponsor", 
+            "_last": true, 
+            "rdfs:label": "sponsor"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "通过某种财务贡献支持（赞助）某事的个人或组织。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "投资者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A person or organization that supports (sponsors) something through some kind of financial contribution.", 
+    "rdfs:label": "funder", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

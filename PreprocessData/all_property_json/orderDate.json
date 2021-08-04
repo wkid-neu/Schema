@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/orderDate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "orderDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "orderDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "下单的日期", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "nameZh": "订单的下单日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "Date order was placed.", 
+    "rdfs:label": "orderDate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

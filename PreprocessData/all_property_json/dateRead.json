@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/dateRead", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dateRead", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dateRead", 
+                    "_lastone": true, 
+                    "rdfs:label": "dateRead"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "如果存在单个的收件人，就是消息被收件人读取的日期/时间。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Message", 
+            "_last": true, 
+            "rdfs:label": "Message"
+        }
+    ], 
+    "nameZh": "阅读日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The date/time at which the message has been read by the recipient if a single recipient exists.", 
+    "rdfs:label": "dateRead", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

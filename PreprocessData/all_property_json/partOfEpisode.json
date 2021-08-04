@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/partOfEpisode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "partOfEpisode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isPartOf", 
+                    "rdfs:label": "isPartOf"
+                }, 
+                {
+                    "@id": "http://cnschema.org/partOfEpisode", 
+                    "_lastone": true, 
+                    "rdfs:label": "partOfEpisode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/isPartOf", 
+            "_last": true, 
+            "rdfs:label": "isPartOf"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "片段所属的剧集", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Clip", 
+            "_last": true, 
+            "rdfs:label": "Clip"
+        }
+    ], 
+    "nameZh": "所属剧集", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "_last": true, 
+            "rdfs:label": "Episode"
+        }
+    ], 
+    "rdfs:comment": "The episode to which this clip belongs.", 
+    "rdfs:label": "partOfEpisode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

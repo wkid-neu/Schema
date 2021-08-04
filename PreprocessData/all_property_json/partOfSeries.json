@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/partOfSeries", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "partOfSeries", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isPartOf", 
+                    "rdfs:label": "isPartOf"
+                }, 
+                {
+                    "@id": "http://cnschema.org/partOfSeries", 
+                    "_lastone": true, 
+                    "rdfs:label": "partOfSeries"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/isPartOf", 
+            "_last": true, 
+            "rdfs:label": "isPartOf"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/partOfTVSeries", 
+        "rdfs:label": "partOfTVSeries"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "这一集或季属于哪个系列", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Clip", 
+            "rdfs:label": "Clip"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "rdfs:label": "CreativeWorkSeason"
+        }, 
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "_last": true, 
+            "rdfs:label": "Episode"
+        }
+    ], 
+    "nameZh": "所属系列", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeries", 
+            "_last": true, 
+            "rdfs:label": "CreativeWorkSeries"
+        }
+    ], 
+    "rdfs:comment": "The series to which this episode or season belongs.", 
+    "rdfs:label": "partOfSeries", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

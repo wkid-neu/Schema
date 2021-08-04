@@ -1,0 +1,42 @@
+{
+    "@id": "http://cnschema.org/interactionCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "interactionCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/interactionCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "interactionCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "浜や簰鎬绘暟", 
+    "nameZh": "浜や簰鎬绘暟", 
+    "rdfs:comment": "This property is deprecated, alongside the UserInteraction types on which it depended.", 
+    "rdfs:label": "interactionCount", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/interactionStatistic", 
+        "rdfs:label": "interactionStatistic"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

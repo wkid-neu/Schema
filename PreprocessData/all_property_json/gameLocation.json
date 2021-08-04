@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/gameLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gameLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gameLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "gameLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "娓告垙涓殑鐪熷疄鎴栬櫄鎷熺殑鍦板潃", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Game", 
+            "_last": true, 
+            "rdfs:label": "Game"
+        }
+    ], 
+    "nameZh": "娓告垙鍦板潃", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/PostalAddress", 
+            "_last": true, 
+            "rdfs:label": "PostalAddress"
+        }
+    ], 
+    "rdfs:comment": "Real or fictional location of the game (or part of game).", 
+    "rdfs:label": "gameLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/proteinContent", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "proteinContent", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/proteinContent", 
+                    "_lastone": true, 
+                    "rdfs:label": "proteinContent"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "蛋白质的重量克数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/NutritionInformation", 
+            "_last": true, 
+            "rdfs:label": "NutritionInformation"
+        }
+    ], 
+    "nameZh": "蛋白质含量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Mass", 
+            "_last": true, 
+            "rdfs:label": "Mass"
+        }
+    ], 
+    "rdfs:comment": "The number of grams of protein.", 
+    "rdfs:label": "proteinContent", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

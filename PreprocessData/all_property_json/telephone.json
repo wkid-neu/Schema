@@ -1,0 +1,135 @@
+{
+    "@id": "http://cnschema.org/telephone", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+            "TYPES": [
+                "Person", 
+                "PostalAddress", 
+                "addressRegion", 
+                "postalCode", 
+                "address", 
+                "streetAddress", 
+                "telephone", 
+                "email", 
+                "url", 
+                "addressLocality"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+            "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+            "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+            "TYPES": [
+                "Place", 
+                "LocalBusiness", 
+                "address", 
+                "streetAddress", 
+                "addressLocality", 
+                "PostalAddress", 
+                "telephone"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+            "TYPES": [
+                "Organization", 
+                "PostalAddress", 
+                "address", 
+                "streetAddress", 
+                "postalCode", 
+                "addressLocality", 
+                "faxNumber", 
+                "telephone"
+            ], 
+            "_index": 3, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+            "PRE-MARKUP": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+            "RDFA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+            "TYPES": [
+                "Pharmacy", 
+                "openingHours", 
+                "telephone"
+            ], 
+            "_index": 4, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "telephone", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/telephone", 
+                    "_lastone": true, 
+                    "rdfs:label": "telephone"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Over 1,000,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鐢佃瘽鍙风爜", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "鐢佃瘽鍙风爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The telephone number.", 
+    "rdfs:label": "telephone", 
+    "wikidataName": "phone number", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1329", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Telephone"
+}

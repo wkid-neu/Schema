@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/episodeNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "episodeNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/position", 
+                    "rdfs:label": "position"
+                }, 
+                {
+                    "@id": "http://cnschema.org/episodeNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "episodeNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/position", 
+            "_last": true, 
+            "rdfs:label": "position"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "电视剧或其某一季的剧集号。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "_last": true, 
+            "rdfs:label": "Episode"
+        }
+    ], 
+    "nameZh": "剧集编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "Position of the episode within an ordered group of episodes.", 
+    "rdfs:label": "episodeNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

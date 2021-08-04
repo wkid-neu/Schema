@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/isrcCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "isrcCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isrcCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "isrcCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍥介檯鏍囧噯闊冲儚鍒跺搧浠ｇ爜", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRecording", 
+            "_last": true, 
+            "rdfs:label": "MusicRecording"
+        }
+    ], 
+    "nameZh": "鍥介檯鏍囧噯闊冲儚鍒跺搧浠ｇ爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The International Standard Recording Code for the recording.", 
+    "rdfs:label": "isrcCode", 
+    "wikidataName": "International Standard Recording Code", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P1243", 
+    "wikipediaUrl": ""
+}

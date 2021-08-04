@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/instructor", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "No Microdata", 
+            "PRE-MARKUP": "\n\n\n\n  The Data Scientist's Toolbox\n  \n    Johns Hopkins University\n  \n  About this Course\n  \n    Instructors\n    \n      \n        Jeff Leek, PhD\n        Associate Professor, Biostatistics\n        Bloomberg School of Public Health \n      \n                \n  \n\n", 
+            "RDFA": "\n\n\n\n  The Data Scientist's Toolbox\n  \n    Johns Hopkins University\n  \n  About this Course\n  \n    \n    \n    \n      \n      \n    \n    Instructors\n    \n      \n        Jeff Leek, PhD\n        Associate Professor, Biostatistics\n        Bloomberg School of Public Health \n      \n                \n  \n\n", 
+            "TYPES": [
+                "instructor", 
+                "provider"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "instructor", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instructor", 
+                    "_lastone": true, 
+                    "rdfs:label": "instructor"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鏁欐巿璇剧▼鐨勪汉", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CourseInstance", 
+            "_last": true, 
+            "rdfs:label": "CourseInstance"
+        }
+    ], 
+    "nameZh": "鏁欏笀", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A person assigned to instruct or provide instructional assistance for the CourseInstance.", 
+    "rdfs:label": "instructor", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

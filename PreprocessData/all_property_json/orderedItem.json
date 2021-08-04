@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/orderedItem", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "orderedItem", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderedItem", 
+                    "_lastone": true, 
+                    "rdfs:label": "orderedItem"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "璁㈠崟鏉＄洰", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/OrderItem", 
+            "rdfs:label": "OrderItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "nameZh": "璁㈠崟鏉＄洰", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/OrderItem", 
+            "rdfs:label": "OrderItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "rdfs:comment": "The item ordered.", 
+    "rdfs:label": "orderedItem", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

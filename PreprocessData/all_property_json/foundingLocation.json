@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/foundingLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "foundingLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/foundingLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "foundingLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "组织机构成立的地点", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "成立地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The place where the Organization was founded.", 
+    "rdfs:label": "foundingLocation", 
+    "wikidataName": "location of formation", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P740", 
+    "wikipediaUrl": ""
+}

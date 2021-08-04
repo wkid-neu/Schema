@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/hasDeliveryMethod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasDeliveryMethod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasDeliveryMethod", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasDeliveryMethod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "閫佽揣鏂瑰紡", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParcelDelivery", 
+            "rdfs:label": "ParcelDelivery"
+        }, 
+        {
+            "@id": "http://cnschema.org/DeliveryEvent", 
+            "_last": true, 
+            "rdfs:label": "DeliveryEvent"
+        }
+    ], 
+    "nameZh": "鐗╂祦閫佽揣鏂瑰紡", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DeliveryMethod", 
+            "_last": true, 
+            "rdfs:label": "DeliveryMethod"
+        }
+    ], 
+    "rdfs:comment": "Method used for delivery or shipping.", 
+    "rdfs:label": "hasDeliveryMethod", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/productSupported", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "productSupported", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/productSupported", 
+                    "_lastone": true, 
+                    "rdfs:label": "productSupported"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "跟此支持接触点联系的产品或服务（例如对某产品的产品支持）。这可以是明确的产品或产品系列（例：\"iPhone\"），或者是更广泛的产品类别（例：“智能手机”)。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "_last": true, 
+            "rdfs:label": "ContactPoint"
+        }
+    ], 
+    "nameZh": "支持的产品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The product or service this support contact point is related to (such as product support for a particular product line). This can be a specific product or product line (e.g. \"iPhone\") or a general category of products or services (e.g. \"smartphones\").", 
+    "rdfs:label": "productSupported", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

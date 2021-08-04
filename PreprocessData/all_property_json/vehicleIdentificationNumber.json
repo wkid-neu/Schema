@@ -1,0 +1,80 @@
+{
+    "@id": "http://cnschema.org/vehicleIdentificationNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "vehicleIdentificationNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/serialNumber", 
+                    "rdfs:label": "serialNumber"
+                }, 
+                {
+                    "@id": "http://cnschema.org/vehicleIdentificationNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "vehicleIdentificationNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/serialNumber", 
+            "_last": true, 
+            "rdfs:label": "serialNumber"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "车辆识别号（VIN）是汽车行业用于识别单个机动车辆的唯一序列号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "车辆识别号码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The Vehicle Identification Number (VIN) is a unique serial number used by the automotive industry to identify individual motor vehicles.", 
+    "rdfs:label": "vehicleIdentificationNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Vehicle_identification_number"
+}

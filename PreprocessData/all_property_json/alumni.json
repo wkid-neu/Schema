@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/alumni", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "alumni", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/alumni", 
+                    "_lastone": true, 
+                    "rdfs:label": "alumni"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "同属于一个组织的人（例如校友）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/EducationalOrganization", 
+            "_last": true, 
+            "rdfs:label": "EducationalOrganization"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/alumniOf", 
+        "rdfs:label": "alumniOf"
+    }, 
+    "nameZh": "校友", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "Alumni of an organization.", 
+    "rdfs:label": "alumni", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Alumnus"
+}

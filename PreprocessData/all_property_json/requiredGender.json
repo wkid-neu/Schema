@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/requiredGender", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "requiredGender", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/requiredGender", 
+                    "_lastone": true, 
+                    "rdfs:label": "requiredGender"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "对于受众的性别要求", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PeopleAudience", 
+            "_last": true, 
+            "rdfs:label": "PeopleAudience"
+        }
+    ], 
+    "nameZh": "性别要求", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Audiences defined by a person's gender.", 
+    "rdfs:label": "requiredGender", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

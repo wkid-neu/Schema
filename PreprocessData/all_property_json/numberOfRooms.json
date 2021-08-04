@@ -1,0 +1,110 @@
+{
+    "@id": "http://cnschema.org/numberOfRooms", 
+    "_examples": [
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  60 rooms.\n", 
+            "PRE-MARKUP": "This example is in microdata only.", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "numberOfRooms"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }, 
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n     45\n     double rooms\n  \n  \n     15\n     single rooms\n  \n", 
+            "PRE-MARKUP": "This example is in microdata only.", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "numberOfRooms"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfRooms", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfRooms", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfRooms"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "住宿的房间数量", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/House", 
+            "rdfs:label": "House"
+        }, 
+        {
+            "@id": "http://cnschema.org/SingleFamilyResidence", 
+            "rdfs:label": "SingleFamilyResidence"
+        }, 
+        {
+            "@id": "http://cnschema.org/Suite", 
+            "rdfs:label": "Suite"
+        }, 
+        {
+            "@id": "http://cnschema.org/Apartment", 
+            "rdfs:label": "Apartment"
+        }, 
+        {
+            "@id": "http://cnschema.org/Accommodation", 
+            "_last": true, 
+            "rdfs:label": "Accommodation"
+        }
+    ], 
+    "nameZh": "房间数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The number of rooms (excluding bathrooms and closets) of the accommodation or lodging business.\nTypical unit code(s): ROM for room or C62 for no unit. The type of room can be put in the unitText property of the QuantitativeValue.", 
+    "rdfs:label": "numberOfRooms", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

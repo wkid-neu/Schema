@@ -1,0 +1,72 @@
+{
+    "@id": "http://cnschema.org/inLanguage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "inLanguage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/inLanguage", 
+                    "_lastone": true, 
+                    "rdfs:label": "inLanguage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/language", 
+        "rdfs:label": "language"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 250,000 and 500,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "使用的语言", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/WriteAction", 
+            "rdfs:label": "WriteAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/CommunicateAction", 
+            "rdfs:label": "CommunicateAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "使用语言", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Language", 
+            "_last": true, 
+            "rdfs:label": "Language"
+        }
+    ], 
+    "rdfs:comment": "The language of the content or performance or used in an action. Please use one of the language codes from the IETF BCP 47 standard. See also availableLanguage.", 
+    "rdfs:label": "inLanguage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

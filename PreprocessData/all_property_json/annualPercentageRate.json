@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/annualPercentageRate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "annualPercentageRate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/annualPercentageRate", 
+                    "_lastone": true, 
+                    "rdfs:label": "annualPercentageRate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Financial Industry Business Ontology project (see http://www.fibo.org/schema for details), in support of the W3C Financial Industry Business Ontology Community Group (http://www.fibo.org/community). Many class and property definitions are inspired by or based on http://www.fibo.org.", 
+            "rdfs:label": "FIBO", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "借款（或投资产生的）年度利率，以单一百分比数表示，表示贷款期间实际的年度资金成本。这包括与交易相关的任何费用或额外费用。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FinancialProduct", 
+            "_last": true, 
+            "rdfs:label": "FinancialProduct"
+        }
+    ], 
+    "nameZh": "年利率", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The annual rate that is charged for borrowing (or made by investing), expressed as a single percentage number that represents the actual yearly cost of funds over the term of a loan. This includes any fees or additional costs associated with the transaction.", 
+    "rdfs:label": "annualPercentageRate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Annual_percentage_rate"
+}

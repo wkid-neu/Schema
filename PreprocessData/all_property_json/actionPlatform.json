@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/actionPlatform", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "actionPlatform", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/actionPlatform", 
+                    "_lastone": true, 
+                    "rdfs:label": "actionPlatform"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "对给定URL执行操作的高级平台（要指定特定的应用程序或操作系统实例需使用actionApplication）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EntryPoint", 
+            "_last": true, 
+            "rdfs:label": "EntryPoint"
+        }
+    ], 
+    "nameZh": "执行操作的平台", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The high level platform(s) where the Action can be performed for the given URL. To specify a specific application or operating system instance, use actionApplication.", 
+    "rdfs:label": "actionPlatform", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

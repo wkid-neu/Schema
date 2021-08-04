@@ -1,0 +1,81 @@
+{
+    "@id": "http://cnschema.org/unitCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "unitCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/unitCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "unitCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "使用UN / CEFACT通用代码（3个字符）给出的测量单位或URL。 与UN / CEFACT通用代码相比，其他代码可能使用前缀后跟冒号。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/UnitPriceSpecification", 
+            "rdfs:label": "UnitPriceSpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "rdfs:label": "PropertyValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/TypeAndQuantityNode", 
+            "rdfs:label": "TypeAndQuantityNode"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "nameZh": "单位代码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.", 
+    "rdfs:label": "unitCode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

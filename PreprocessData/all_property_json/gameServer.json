@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/gameServer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gameServer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gameServer", 
+                    "_lastone": true, 
+                    "rdfs:label": "gameServer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "支持游戏运行的服务器", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "_last": true, 
+            "rdfs:label": "VideoGame"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/game", 
+        "rdfs:label": "game"
+    }, 
+    "nameZh": "游戏服务器", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/GameServer", 
+            "_last": true, 
+            "rdfs:label": "GameServer"
+        }
+    ], 
+    "rdfs:comment": "The server on which  it is possible to play the game.", 
+    "rdfs:label": "gameServer", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Game_server"
+}

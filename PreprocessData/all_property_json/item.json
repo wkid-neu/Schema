@@ -1,0 +1,74 @@
+{
+    "@id": "http://cnschema.org/item", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    \n    Dresses\n    \n  \n  \n    \n    Real Dresses\n    \n  \n", 
+            "PRE-MARKUP": "\n  \n    Dresses\n  \n  \n    Real Dresses\n  \n", 
+            "RDFA": "\n  \n    \n     Dresses\n     \n  \n  \n    \n    Real Dresses\n    \n  \n", 
+            "TYPES": [
+                "BreadcrumbList", 
+                "ItemList", 
+                "ListItem", 
+                "itemListElement", 
+                "item"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-itemlist-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "item", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/item", 
+                    "_lastone": true, 
+                    "rdfs:label": "item"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "列表中的一项", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DataFeedItem", 
+            "rdfs:label": "DataFeedItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/ListItem", 
+            "_last": true, 
+            "rdfs:label": "ListItem"
+        }
+    ], 
+    "nameZh": "条目", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’.", 
+    "rdfs:label": "item", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

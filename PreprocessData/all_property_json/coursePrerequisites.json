@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/coursePrerequisites", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "coursePrerequisites", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/coursePrerequisites", 
+                    "_lastone": true, 
+                    "rdfs:label": "coursePrerequisites"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "参加课程的要求。可以是完成另一门课程或者像“老师的许可”之类的文本描述。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Course", 
+            "_last": true, 
+            "rdfs:label": "Course"
+        }
+    ], 
+    "nameZh": "课程必需的预备知识", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/AlignmentObject", 
+            "rdfs:label": "AlignmentObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/Course", 
+            "_last": true, 
+            "rdfs:label": "Course"
+        }
+    ], 
+    "rdfs:comment": "Requirements for taking the Course. May be completion of another Course or a textual description like \"permission of instructor\". Requirements may be a pre-requisite competency, referenced using AlignmentObject.", 
+    "rdfs:label": "coursePrerequisites", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

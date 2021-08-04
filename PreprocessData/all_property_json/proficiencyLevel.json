@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/proficiencyLevel", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "proficiencyLevel", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/proficiencyLevel", 
+                    "_lastone": true, 
+                    "rdfs:label": "proficiencyLevel"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "内容所需要的熟练度； 预期数值：“入门”，“专家”", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TechArticle", 
+            "_last": true, 
+            "rdfs:label": "TechArticle"
+        }
+    ], 
+    "nameZh": "熟练度水平", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Proficiency needed for this content; expected values: 'Beginner', 'Expert'.", 
+    "rdfs:label": "proficiencyLevel", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

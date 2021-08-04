@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/actionApplication", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "actionApplication", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/actionApplication", 
+                    "_lastone": true, 
+                    "rdfs:label": "actionApplication"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/application", 
+        "rdfs:label": "application"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "可以完成该请求的应用程序。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EntryPoint", 
+            "_last": true, 
+            "rdfs:label": "EntryPoint"
+        }
+    ], 
+    "nameZh": "执行操作的应用", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "rdfs:comment": "An application that can complete the request.", 
+    "rdfs:label": "actionApplication", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,96 @@
+{
+    "@id": "http://cnschema.org/event", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+            "PRE-MARKUP": "Musée Marmottan Monet\nIt's a museum of Impressionism and french ninenteeth art.\nIt is hosting the Hodler's, Monet's and Munch's exibit: \"Peindre l'impossible\".\nStart date: September 15 2016\nEnd date: Genuary 22 2017\n", 
+            "RDFA": "\n\tMusée Marmottan Monet\n\t\n\t\tIt's a museum of Impressionism and french ninenteeth art.\n\t\n\tIt is hosting the\n\t\tHodler's\n\t\tMonet's\n\t\tMunch's exibit:\n\t\t\"Peindre l'impossible\".\n\t\tStart date: September 15 2016\n\t\tEnd date: Genuary 22 2017\n\t\n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "event", 
+                "Event"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "event", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/event", 
+                    "_lastone": true, 
+                    "rdfs:label": "event"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/events", 
+        "rdfs:label": "events"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "即将发生或已经过去且与这个地方或机构相关的事件。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PlayAction", 
+            "rdfs:label": "PlayAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/JoinAction", 
+            "rdfs:label": "JoinAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/InviteAction", 
+            "rdfs:label": "InviteAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/InformAction", 
+            "rdfs:label": "InformAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/LeaveAction", 
+            "rdfs:label": "LeaveAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "事件", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "rdfs:comment": "Upcoming or past event associated with this place, organization, or action.", 
+    "rdfs:label": "event", 
+    "wikidataName": "significant event", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P793", 
+    "wikipediaUrl": ""
+}

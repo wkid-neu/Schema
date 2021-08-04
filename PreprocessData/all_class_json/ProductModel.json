@@ -1,0 +1,2493 @@
+{
+    "@id": "http://cnschema.org/ProductModel", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "A ProductModel gives a datasheet or vendor specification of a\nproduct (in the sense of a prototypical description).  Use this type\nwhen you are describing a product datasheet rather than an actual\nproduct, e.g. if you are the manufacturer of the product and want to\nmark up your product specification pages. For example: The ACME\nColorvision 123 specifiation on the ACME Corp. site for that model.\n\n \n ACME Colorvision 123\n The ACME Colorvision 123 is\n  the leading-edge color TV from our company.\n EAN/UPC: 1234567890123\n\nRecommendation: Try to provide identifiers (gtin13, gtin14, gtin8, mpn\nproperties) and link to you as the manufacturer (manufacturer\nproperty) so that search engines can use your data to enrich offers of\nyour products found elsewhere.", 
+            "PRE-MARKUP": "\nACME Colorvision 123. The ACME Colorvision 123 is the leading-edge color TV from\nour company. EAN/UPC: 1234567890123.\n", 
+            "RDFA": "A ProductModel gives a datasheet or vendor specification of a\nproduct (in the sense of a prototypical description).  Use this type\nwhen you are describing a product datasheet rather than an actual\nproduct, e.g. if you are the manufacturer of the product and want to\nmark up your product specification pages. For example: The ACME\nColorvision 123 specifiation on the ACME Corp. site for that model.\n\n \n ACME Colorvision 123\n The ACME Colorvision 123 is\n  the leading-edge color TV from our company.\n EAN/UPC: 1234567890123\n\nRecommendation: Try to provide identifiers (gtin13, gtin14, gtin8, mpn\nproperties) and link to you as the manufacturer (manufacturer\nproperty) so that search engines can use your data to enrich offers of\nyour products found elsewhere.", 
+            "TYPES": [
+                "ProductModel"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "ProductModel", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/isVariantOf", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "是他的一种变形", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "nameZh": "变形", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "rdfs:comment": "A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.", 
+            "rdfs:label": "isVariantOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/model", 
+            "_layer": "core", 
+            "_usage": "Between 50,000 and 100,000 domains", 
+            "descriptionZh": "产品的型号。可以是ProductModel类型的URL或者是型号标识的文本表示。ProductModel类型实体的URL可以来自外部来源。建议通过属性gtin8/gtin13/gtin14和mpn额外提供强产品标识。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Product", 
+                    "_last": true, 
+                    "rdfs:label": "Product"
+                }
+            ], 
+            "nameZh": "型号", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "rdfs:label": "Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "rdfs:comment": "The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.", 
+            "rdfs:label": "model", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/predecessorOf", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "产品的上一代型号", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "nameZh": "上一代型号", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "rdfs:comment": "A pointer from a previous, often discontinued variant of the product to its newer variant.", 
+            "rdfs:label": "predecessorOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/successorOf", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "新一代的产品之前的产品，通常是已经停产的产品", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "nameZh": "上一代型号", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_last": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ], 
+            "rdfs:comment": "A pointer from a newer variant of a product  to its previous, often discontinued predecessor.", 
+            "rdfs:label": "successorOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/ProductModel", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "A ProductModel gives a datasheet or vendor specification of a\nproduct (in the sense of a prototypical description).  Use this type\nwhen you are describing a product datasheet rather than an actual\nproduct, e.g. if you are the manufacturer of the product and want to\nmark up your product specification pages. For example: The ACME\nColorvision 123 specifiation on the ACME Corp. site for that model.\n\n \n ACME Colorvision 123\n The ACME Colorvision 123 is\n  the leading-edge color TV from our company.\n EAN/UPC: 1234567890123\n\nRecommendation: Try to provide identifiers (gtin13, gtin14, gtin8, mpn\nproperties) and link to you as the manufacturer (manufacturer\nproperty) so that search engines can use your data to enrich offers of\nyour products found elsewhere.", 
+                    "PRE-MARKUP": "\nACME Colorvision 123. The ACME Colorvision 123 is the leading-edge color TV from\nour company. EAN/UPC: 1234567890123.\n", 
+                    "RDFA": "A ProductModel gives a datasheet or vendor specification of a\nproduct (in the sense of a prototypical description).  Use this type\nwhen you are describing a product datasheet rather than an actual\nproduct, e.g. if you are the manufacturer of the product and want to\nmark up your product specification pages. For example: The ACME\nColorvision 123 specifiation on the ACME Corp. site for that model.\n\n \n ACME Colorvision 123\n The ACME Colorvision 123 is\n  the leading-edge color TV from our company.\n EAN/UPC: 1234567890123\n\nRecommendation: Try to provide identifiers (gtin13, gtin14, gtin8, mpn\nproperties) and link to you as the manufacturer (manufacturer\nproperty) so that search engines can use your data to enrich offers of\nyour products found elsewhere.", 
+                    "TYPES": [
+                        "ProductModel"
+                    ], 
+                    "_index": 1, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/isVariantOf", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "是他的一种变形", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "nameZh": "变形", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.", 
+                    "rdfs:label": "isVariantOf", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/predecessorOf", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "产品的上一代型号", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "nameZh": "上一代型号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer from a previous, often discontinued variant of the product to its newer variant.", 
+                    "rdfs:label": "predecessorOf", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/successorOf", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "新一代的产品之前的产品，通常是已经停产的产品", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "nameZh": "上一代型号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer from a newer variant of a product  to its previous, often discontinued predecessor.", 
+                    "rdfs:label": "successorOf", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "制造厂商用来提供每一个特殊类别产品的标识。", 
+            "nameZh": "产品型号", 
+            "rdfs:comment": "A datasheet or vendor specification of a product (in the sense of a prototypical description).", 
+            "rdfs:label": "ProductModel", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                    "PRE-MARKUP": "Kenmore White 17\" Microwave\n\nRated 3.5/5 based on 11 customer reviews\n$55.00\nIn stock\nProduct description:\n0.7 cubic feet countertop microwave. Has six preset cooking categories and\n convenience features like Add-A-Minute and Child Lock.\nCustomer reviews:\nNot a happy camper - by Ellie, April 1, 2011\n1/5 stars\nThe lamp burned out and now I have to replace it.\n Value purchase - by Lucas, March 25, 2011\n4/5 stars\nGreat microwave for the price. It is small and fits in my apartment.\n...", 
+                    "RDFA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                    "TYPES": [
+                        "Product", 
+                        "AggregateRating", 
+                        "Offer", 
+                        "Review", 
+                        "Rating", 
+                        "price", 
+                        "aggregateRating", 
+                        "ratingValue", 
+                        "reviewCount", 
+                        "availability", 
+                        "InStock"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                    "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                    "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                    "TYPES": [
+                        "Product", 
+                        "AggregateRating", 
+                        "AggregateOffer", 
+                        "Offer", 
+                        "aggregateRating", 
+                        "image", 
+                        "offers"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n    315\n    \n         BRAND 502\n        \n            4399 р.\n        ...\n    \n    \n        ...\n    \n", 
+                    "PRE-MARKUP": "\n  \n  315\n  \n    \n    \n      BRAND 502\n    \n    \n      4399 р.\n    ...\n    \n    ...\n    \n  \n", 
+                    "RDFA": "\n    315\n    \n         BRAND 502\n        \n            руб\n            4 399,00\n            \n        ...\n    \n    \n        ...\n    \n", 
+                    "TYPES": [
+                        "ItemList", 
+                        "Product", 
+                        "Offer"
+                    ], 
+                    "_index": 3, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalProperty", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                            "PRE-MARKUP": "Beach in Mexico\n\nBy Jane Doe\nPhotographed in Puerto Vallarta, Mexico\nDate uploaded: Jan 25, 2008\nI took this picture while on vacation last year.\n", 
+                            "RDFA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                            "TYPES": [
+                                "ImageObject", 
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-lD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450g\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 5, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n\n      ft.\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n      ft.\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 6, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 7, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      USB interface:\n      Yes\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      USB interface: Yes\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 8, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interface:\n      USB\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interface: USB\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 9, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 10, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 11, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:\n      Yes\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:Yes\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 12, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 13, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 14, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode:\n        Yes\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode: Yes\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 15, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示实体附加特征的属性值对（例如cnschema.org中没有匹配属性的产品功能或其他特性）", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "rdfs:label": "QualitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "rdfs:label": "QuantitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "附加属性", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "_last": true, 
+                            "rdfs:label": "PropertyValue"
+                        }
+                    ], 
+                    "rdfs:comment": "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in cnschema.org.\n\nNote: Publishers should be aware that applications designed to use specific cnschema.org properties (e.g. http://cnschema.org/width, http://cnschema.org/color, http://cnschema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.", 
+                    "rdfs:label": "additionalProperty", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/aggregateRating", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+                            "PRE-MARKUP": "GreatFood\n4 stars - based on 250 reviews\n1901 Lemur Ave\nSunnyvale, CA 94086\n(408) 714-1489\nwww.greatfood.com\nHours:\nMon-Sat 11am - 2:30pm\nMon-Thur 5pm - 9:30pm\nFri-Sat 5pm - 10pm\nCategories: Middle Eastern, Mediterranean\nPrice Range: $$\nTakes Reservations: Yes", 
+                            "RDFA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+                            "TYPES": [
+                                "Restaurant", 
+                                "AggregateRating", 
+                                "FoodEstablishment", 
+                                "LocalBusiness", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "PRE-MARKUP": "Kenmore White 17\" Microwave\n\nRated 3.5/5 based on 11 customer reviews\n$55.00\nIn stock\nProduct description:\n0.7 cubic feet countertop microwave. Has six preset cooking categories and\n convenience features like Add-A-Minute and Child Lock.\nCustomer reviews:\nNot a happy camper - by Ellie, April 1, 2011\n1/5 stars\nThe lamp burned out and now I have to replace it.\n Value purchase - by Lucas, March 25, 2011\n4/5 stars\nGreat microwave for the price. It is small and fits in my apartment.\n...", 
+                            "RDFA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "Offer", 
+                                "Review", 
+                                "Rating", 
+                                "price", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount", 
+                                "availability", 
+                                "InStock"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 250,000 and 500,000 domains", 
+                    "descriptionZh": "基于该项的一系列评论的总体评价。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "总体评分", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/AggregateRating", 
+                            "_last": true, 
+                            "rdfs:label": "AggregateRating"
+                        }
+                    ], 
+                    "rdfs:comment": "The overall rating, based on a collection of reviews or ratings, of the item.", 
+                    "rdfs:label": "aggregateRating", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/audience", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+                            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                            "TYPES": [
+                                "learningResourceType", 
+                                "educationalAlignment", 
+                                "AlignmentObject", 
+                                "educationalFramework", 
+                                "alignmentType", 
+                                "targetName", 
+                                "targetUrl", 
+                                "audience", 
+                                "EducationalAudience", 
+                                "educationalRole"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/serviceAudience", 
+                        "rdfs:label": "serviceAudience"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该作品所面向的观众，也就是该作品为哪些群体创作。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PlayAction", 
+                            "rdfs:label": "PlayAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LodgingBusiness", 
+                            "_last": true, 
+                            "rdfs:label": "LodgingBusiness"
+                        }
+                    ], 
+                    "nameZh": "受众", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Audience", 
+                            "_last": true, 
+                            "rdfs:label": "Audience"
+                        }
+                    ], 
+                    "rdfs:comment": "An intended audience, i.e. a group for whom something was created.", 
+                    "rdfs:label": "audience", 
+                    "wikidataName": "intended public", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2360", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/award", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/awards", 
+                        "rdfs:label": "awards"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "此人或该创作性作品获得的奖金(奖项)。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "_last": true, 
+                            "rdfs:label": "CreativeWork"
+                        }
+                    ], 
+                    "nameZh": "所获奖项", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An award won by or for this item.", 
+                    "rdfs:label": "award", 
+                    "wikidataName": "award received", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P166", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Award"
+                }, 
+                {
+                    "@id": "http://cnschema.org/brand", 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "与该产品或服务相关的品牌，或者是由该组织或个人维护的品牌。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "品牌", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "_last": true, 
+                            "rdfs:label": "Brand"
+                        }
+                    ], 
+                    "rdfs:comment": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.", 
+                    "rdfs:label": "brand", 
+                    "wikidataName": "brand", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P1716", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Brand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/category", 
+                    "_layer": "core", 
+                    "_usage": "Between 50,000 and 100,000 domains", 
+                    "descriptionZh": "该项的类别。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "rdfs:label": "Invoice"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "类别", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.", 
+                    "rdfs:label": "category", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/color", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "该产品的颜色。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "颜色", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The color of the product.", 
+                    "rdfs:label": "color", 
+                    "wikidataName": "color", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P462", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Color"
+                }, 
+                {
+                    "@id": "http://cnschema.org/depth", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的深度。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/VisualArtwork", 
+                            "_last": true, 
+                            "rdfs:label": "VisualArtwork"
+                        }
+                    ], 
+                    "nameZh": "深度", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "rdfs:label": "QuantitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Distance", 
+                            "_last": true, 
+                            "rdfs:label": "Distance"
+                        }
+                    ], 
+                    "rdfs:comment": "The depth of the item.", 
+                    "rdfs:label": "depth", 
+                    "wikidataName": "thickness", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2610", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Depth"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gtin12", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "12位全球贸易品项识别码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "_last": true, 
+                            "rdfs:label": "Demand"
+                        }
+                    ], 
+                    "nameZh": "12位全球贸易品项识别码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See GS1 GTIN Summary for more details.", 
+                    "rdfs:label": "gtin12", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/GTIN-12"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gtin13", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "13位全球贸易品项识别码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "_last": true, 
+                            "rdfs:label": "Demand"
+                        }
+                    ], 
+                    "nameZh": "13位全球贸易品项识别码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The GTIN-13 code of the product, or the product to which the offer refers. This is equivalent to 13-digit ISBN codes and EAN UCC-13. Former 12-digit UPC codes can be converted into a GTIN-13 code by simply adding a preceeding zero. See GS1 GTIN Summary for more details.", 
+                    "rdfs:label": "gtin13", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/GTIN-13"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gtin14", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "14位全球贸易品项识别码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "14位全球贸易品项识别码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The GTIN-14 code of the product, or the product to which the offer refers. See GS1 GTIN Summary for more details.", 
+                    "rdfs:label": "gtin14", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/GTIN-14"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gtin8", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "8位全球贸易品项识别码", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "_last": true, 
+                            "rdfs:label": "Offer"
+                        }
+                    ], 
+                    "nameZh": "8位全球贸易品项识别码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The GTIN-8 code of the product, or the product to which the offer refers. This code is also known as EAN/UCC-8 or 8-digit EAN. See GS1 GTIN Summary for more details.", 
+                    "rdfs:label": "gtin8", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/GTIN-8"
+                }, 
+                {
+                    "@id": "http://cnschema.org/height", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "高度", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/MediaObject", 
+                            "rdfs:label": "MediaObject"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/VisualArtwork", 
+                            "_last": true, 
+                            "rdfs:label": "VisualArtwork"
+                        }
+                    ], 
+                    "nameZh": "高度", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Distance", 
+                            "rdfs:label": "Distance"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "The height of the item.", 
+                    "rdfs:label": "height", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Height"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isAccessoryOrSparePartFor", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "指明本产品是其他产品的附件或备件的指针。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "是另一产品的附件或备件", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to another product (or multiple products) for which this product is an accessory or spare part.", 
+                    "rdfs:label": "isAccessoryOrSparePartFor", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isConsumableFor", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "指明此产品是消耗品的另一产品（或多个产品）的指针。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "下游产品", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to another product (or multiple products) for which this product is a consumable.", 
+                    "rdfs:label": "isConsumableFor", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isRelatedTo", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "跟它相关", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "相关", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to another, somehow related product (or multiple products).", 
+                    "rdfs:label": "isRelatedTo", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isSimilarTo", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "跟它相似", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "相似", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to another, functionally similar product (or multiple products).", 
+                    "rdfs:label": "isSimilarTo", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/itemCondition", 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "预定义值", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "_last": true, 
+                            "rdfs:label": "Offer"
+                        }
+                    ], 
+                    "nameZh": "规格", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OfferItemCondition", 
+                            "_last": true, 
+                            "rdfs:label": "OfferItemCondition"
+                        }
+                    ], 
+                    "rdfs:comment": "A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.", 
+                    "rdfs:label": "itemCondition", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/logo", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "关联的商标", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "商标", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An associated logo.", 
+                    "rdfs:label": "logo", 
+                    "wikidataName": "logo image", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P154", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Logo"
+                }, 
+                {
+                    "@id": "http://cnschema.org/manufacturer", 
+                    "_layer": "core", 
+                    "_usage": "Between 50,000 and 100,000 domains", 
+                    "descriptionZh": "产品的制造商", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "制造商", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "_last": true, 
+                            "rdfs:label": "Organization"
+                        }
+                    ], 
+                    "rdfs:comment": "The manufacturer of the product.", 
+                    "rdfs:label": "manufacturer", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/material", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "物体使用的材料", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "材质", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "A material that something is made from, e.g. leather, wool, cotton, paper.", 
+                    "rdfs:label": "material", 
+                    "wikidataName": "material used", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P186", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/model", 
+                    "_layer": "core", 
+                    "_usage": "Between 50,000 and 100,000 domains", 
+                    "descriptionZh": "产品的型号。可以是ProductModel类型的URL或者是型号标识的文本表示。ProductModel类型实体的URL可以来自外部来源。建议通过属性gtin8/gtin13/gtin14和mpn额外提供强产品标识。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "型号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ProductModel", 
+                            "_last": true, 
+                            "rdfs:label": "ProductModel"
+                        }
+                    ], 
+                    "rdfs:comment": "The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.", 
+                    "rdfs:label": "model", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/mpn", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "产品的制造商零件编号（MPN）或提供者对产品的引用", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "制造商零件编码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The Manufacturer Part Number (MPN) of the product, or the product to which the offer refers.", 
+                    "rdfs:label": "mpn", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Part_number"
+                }, 
+                {
+                    "@id": "http://cnschema.org/offers", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "TYPES": [
+                                "Event", 
+                                "Place", 
+                                "PostalAddress", 
+                                "AggregateOffer", 
+                                "location", 
+                                "startDate", 
+                                "address", 
+                                "offers", 
+                                "offerCount"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "提供此项目的报价 - 例如，出售产品的报价，出租电影DVD的价格、门票价格", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Trip", 
+                            "rdfs:label": "Trip"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/AggregateOffer", 
+                            "rdfs:label": "AggregateOffer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/MenuItem", 
+                            "rdfs:label": "MenuItem"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "_last": true, 
+                            "rdfs:label": "Event"
+                        }
+                    ], 
+                    "nameZh": "报价", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "_last": true, 
+                            "rdfs:label": "Offer"
+                        }
+                    ], 
+                    "rdfs:comment": "An offer to provide this item—for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.", 
+                    "rdfs:label": "offers", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/productID", 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "产品标识码，例如ＩＳＢＮ。例子meta itemprop=\"productID\" content=\"isbn:123-456-789\"", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "产品ID", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The product identifier, such as ISBN. For example: meta itemprop=\"productID\" content=\"isbn:123-456-789\".", 
+                    "rdfs:label": "productID", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/productionDate", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "项目（例：汽车）的生产日期", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Vehicle", 
+                            "_last": true, 
+                            "rdfs:label": "Vehicle"
+                        }
+                    ], 
+                    "nameZh": "生产日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Date", 
+                            "_last": true, 
+                            "rdfs:label": "Date"
+                        }
+                    ], 
+                    "rdfs:comment": "The date of production of the item, e.g. vehicle.", 
+                    "rdfs:label": "productionDate", 
+                    "wikidataName": "production date", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2754", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/purchaseDate", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "物品（例：汽车）被当前物主的购买日期", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Vehicle", 
+                            "_last": true, 
+                            "rdfs:label": "Vehicle"
+                        }
+                    ], 
+                    "nameZh": "购买日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Date", 
+                            "_last": true, 
+                            "rdfs:label": "Date"
+                        }
+                    ], 
+                    "rdfs:comment": "The date the item e.g. vehicle was purchased by the current owner.", 
+                    "rdfs:label": "purchaseDate", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/releaseDate", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "产品或者产品型号的发布日期。可以用来区分同一产品系列下的不同产品。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "发布日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Date", 
+                            "_last": true, 
+                            "rdfs:label": "Date"
+                        }
+                    ], 
+                    "rdfs:comment": "The release date of a product or product model. This can be used to distinguish the exact variant of a product.", 
+                    "rdfs:label": "releaseDate", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/review", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/reviews", 
+                        "rdfs:label": "reviews"
+                    }, 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "针对某一个事物（人，文章，地点，产品）的评论", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "事物的评论", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Review", 
+                            "_last": true, 
+                            "rdfs:label": "Review"
+                        }
+                    ], 
+                    "rdfs:comment": "A review of the item.", 
+                    "rdfs:label": "review", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sku", 
+                    "_layer": "core", 
+                    "_usage": "Between 250,000 and 500,000 domains", 
+                    "descriptionZh": "最小库存单元是指包含特定的自然属性与社会属性的商品种类，在零售连锁门店管理中通常称为“单品”。当一种商品而言，当他的品牌、型号、配置、花色、容量、生产日期、保质期、用途、价格、产地等属性与其他商品存在不同时，就是一个不同的最小存货单元。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "_last": true, 
+                            "rdfs:label": "Offer"
+                        }
+                    ], 
+                    "nameZh": "单品编号", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers.", 
+                    "rdfs:label": "sku", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/weight", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "物体的重量", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "nameZh": "重量", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "The weight of the product or person.", 
+                    "rdfs:label": "weight", 
+                    "wikidataName": "mass", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2067", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Weight"
+                }, 
+                {
+                    "@id": "http://cnschema.org/width", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "物体的宽度", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/MediaObject", 
+                            "rdfs:label": "MediaObject"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/VisualArtwork", 
+                            "_last": true, 
+                            "rdfs:label": "VisualArtwork"
+                        }
+                    ], 
+                    "nameZh": "宽度", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Distance", 
+                            "rdfs:label": "Distance"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "The width of the item.", 
+                    "rdfs:label": "width", 
+                    "wikidataName": "width", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P2049", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Width"
+                }
+            ], 
+            "_usage": "Over 1,000,000 domains", 
+            "descriptionZh": "用来满足人们需求和欲望的物体或无形的载体。", 
+            "nameZh": "产品", 
+            "rdfs:comment": "Any offered product or service. For example: a pair of shoes; a concert ticket; the rental of a car; a haircut; or an episode of a TV show streamed online.", 
+            "rdfs:label": "Product", 
+            "wikidataName": "product", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q2424752", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Product_(business)"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Product", 
+                    "rdfs:label": "Product"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ProductModel", 
+                    "_lastone": true, 
+                    "rdfs:label": "ProductModel"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This class is derived from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web that can be expressed in a variety of syntaxes, including RDFa and HTML5 Microdata. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "制造厂商用来提供每一个特殊类别产品的标识。", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/isVariantOf", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "是他的一种变形", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "变形", 
+            "rdfs:comment": "A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.", 
+            "rdfs:label": "isVariantOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/predecessorOf", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "产品的上一代型号", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "上一代型号", 
+            "rdfs:comment": "A pointer from a previous, often discontinued variant of the product to its newer variant.", 
+            "rdfs:label": "predecessorOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/successorOf", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "新一代的产品之前的产品，通常是已经停产的产品", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "上一代型号", 
+            "rdfs:comment": "A pointer from a newer variant of a product  to its previous, often discontinued predecessor.", 
+            "rdfs:label": "successorOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/isVariantOf", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "是他的一种变形", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "变形", 
+            "rdfs:comment": "A pointer to a base product from which this product is a variant. It is safe to infer that the variant inherits all product features from the base model, unless defined locally. This is not transitive.", 
+            "rdfs:label": "isVariantOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/model", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 50,000 and 100,000 domains", 
+            "descriptionZh": "产品的型号。可以是ProductModel类型的URL或者是型号标识的文本表示。ProductModel类型实体的URL可以来自外部来源。建议通过属性gtin8/gtin13/gtin14和mpn额外提供强产品标识。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Product"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ProductModel"
+                }
+            ], 
+            "nameZh": "型号", 
+            "rdfs:comment": "The model of the product. Use with the URL of a ProductModel or a textual representation of the model identifier. The URL of the ProductModel can be from an external source. It is recommended to additionally provide strong product identifiers via the gtin8/gtin13/gtin14 and mpn properties.", 
+            "rdfs:label": "model", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/predecessorOf", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "产品的上一代型号", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "上一代型号", 
+            "rdfs:comment": "A pointer from a previous, often discontinued variant of the product to its newer variant.", 
+            "rdfs:label": "predecessorOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/successorOf", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "新一代的产品之前的产品，通常是已经停产的产品", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/ProductModel"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "上一代型号", 
+            "rdfs:comment": "A pointer from a newer variant of a product  to its previous, often discontinued predecessor.", 
+            "rdfs:label": "successorOf", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "产品型号", 
+    "rdfs:comment": "A datasheet or vendor specification of a product (in the sense of a prototypical description).", 
+    "rdfs:label": "ProductModel", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

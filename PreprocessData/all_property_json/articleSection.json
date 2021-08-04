@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/articleSection", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "articleSection", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/articleSection", 
+                    "_lastone": true, 
+                    "rdfs:label": "articleSection"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "在杂志或报纸中文章可能属于一个或多个‘章节’, 比如体育章节, 生活章节, 等等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Article", 
+            "_last": true, 
+            "rdfs:label": "Article"
+        }
+    ], 
+    "nameZh": "文章所在栏目", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Articles may belong to one or more 'sections' in a magazine or newspaper, such as Sports, Lifestyle, etc.", 
+    "rdfs:label": "articleSection", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

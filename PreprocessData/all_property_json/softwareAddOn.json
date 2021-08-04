@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/softwareAddOn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "softwareAddOn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/softwareAddOn", 
+                    "_lastone": true, 
+                    "rdfs:label": "softwareAddOn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "软件应用程序的附加内容", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "软件的插件", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "rdfs:comment": "Additional content for a software application.", 
+    "rdfs:label": "softwareAddOn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

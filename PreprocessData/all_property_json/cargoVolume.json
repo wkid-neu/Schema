@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/cargoVolume", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "cargoVolume", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/cargoVolume", 
+                    "_lastone": true, 
+                    "rdfs:label": "cargoVolume"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "通常指汽车后备箱的容积", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "汽车载货容量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The available volume for cargo or luggage. For automobiles, this is usually the trunk volume.\n\nTypical unit code(s): LTR for liters, FTQ for cubic foot/feet\n\nNote: You can use minValue and maxValue to indicate ranges.", 
+    "rdfs:label": "cargoVolume", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

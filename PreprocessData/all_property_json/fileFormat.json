@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/fileFormat", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "fileFormat", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/fileFormat", 
+                    "_lastone": true, 
+                    "rdfs:label": "fileFormat"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "文件格式（或文件类型）是指电脑为了存储信息而使用的对信息的特殊编码方式，是用于识别内部储存的资料。比如有的储存图片，有的储存程序，有的储存文字信息。每一类信息，都可以一种或多种文件格式保存在电脑存储中。每一种文件格式通常会有一种或多种扩展名可以用来识别，但也可能没有扩展名。扩展名可以帮助应用程序识别的文件格式。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "文件格式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. In cases where a CreativeWork has several media type representations, 'encoding' can be used to indicate each MediaObject alongside particular fileFormat information. Unregistered or niche file formats can be indicated instead via the most appropriate URL, e.g. defining Web page or a Wikipedia entry.", 
+    "rdfs:label": "fileFormat", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/encodingFormat", 
+        "rdfs:label": "encodingFormat"
+    }, 
+    "wikidataName": "file format", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2701", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/File_format"
+}

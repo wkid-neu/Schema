@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/printColumn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "printColumn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/printColumn", 
+                    "_lastone": true, 
+                    "rdfs:label": "printColumn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "新闻文章出现在打印版本中的列数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/NewsArticle", 
+            "_last": true, 
+            "rdfs:label": "NewsArticle"
+        }
+    ], 
+    "nameZh": "印刷品所在列数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The number of the column in which the NewsArticle appears in the print edition.", 
+    "rdfs:label": "printColumn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/itemCondition", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "itemCondition", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/itemCondition", 
+                    "_lastone": true, 
+                    "rdfs:label": "itemCondition"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "预定义值", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Demand", 
+            "rdfs:label": "Demand"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "_last": true, 
+            "rdfs:label": "Offer"
+        }
+    ], 
+    "nameZh": "规格", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/OfferItemCondition", 
+            "_last": true, 
+            "rdfs:label": "OfferItemCondition"
+        }
+    ], 
+    "rdfs:comment": "A predefined value from OfferItemCondition or a textual description of the condition of the product or service, or the products or services included in the offer.", 
+    "rdfs:label": "itemCondition", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

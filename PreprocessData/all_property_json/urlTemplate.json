@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/urlTemplate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "urlTemplate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/urlTemplate", 
+                    "_lastone": true, 
+                    "rdfs:label": "urlTemplate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 250,000 and 500,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一个URL的模版，可以利用变化参数形成完整的URL。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EntryPoint", 
+            "_last": true, 
+            "rdfs:label": "EntryPoint"
+        }
+    ], 
+    "nameZh": "链接模版", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "An url template (RFC6570) that will be used to construct the target of the execution of the action.", 
+    "rdfs:label": "urlTemplate", 
+    "wikidataName": "formatter URL", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1630", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL_Template"
+}

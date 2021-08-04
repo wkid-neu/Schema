@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/multipleValues", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "multipleValues", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/multipleValues", 
+                    "_lastone": true, 
+                    "rdfs:label": "multipleValues"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "该属性是否允许多值，缺省为false", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValueSpecification", 
+            "_last": true, 
+            "rdfs:label": "PropertyValueSpecification"
+        }
+    ], 
+    "nameZh": "是否允许多个值", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Whether multiple values are allowed for the property.  Default is false.", 
+    "rdfs:label": "multipleValues", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

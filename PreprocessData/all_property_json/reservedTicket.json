@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/reservedTicket", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "reservedTicket", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/reservedTicket", 
+                    "_lastone": true, 
+                    "rdfs:label": "reservedTicket"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "预订相关的票据", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "nameZh": "预定的票据", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "_last": true, 
+            "rdfs:label": "Ticket"
+        }
+    ], 
+    "rdfs:comment": "A ticket associated with the reservation.", 
+    "rdfs:label": "reservedTicket", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

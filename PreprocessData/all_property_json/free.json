@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/free", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "free", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/free", 
+                    "_lastone": true, 
+                    "rdfs:label": "free"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "用于表示可以免费获取该出版物或事件的标志。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PublicationEvent", 
+            "_last": true, 
+            "rdfs:label": "PublicationEvent"
+        }
+    ], 
+    "nameZh": "免费标记", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "A flag to signal that the item, event, or place is accessible for free.", 
+    "rdfs:label": "free", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/isAccessibleForFree", 
+        "rdfs:label": "isAccessibleForFree"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

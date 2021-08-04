@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/expectedArrivalFrom", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "expectedArrivalFrom", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/expectedArrivalFrom", 
+                    "_lastone": true, 
+                    "rdfs:label": "expectedArrivalFrom"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "包裹可能到达的最早日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParcelDelivery", 
+            "_last": true, 
+            "rdfs:label": "ParcelDelivery"
+        }
+    ], 
+    "nameZh": "预计最早送达时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The earliest date the package may arrive.", 
+    "rdfs:label": "expectedArrivalFrom", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,99 @@
+{
+    "@id": "http://cnschema.org/interactionStatistic", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    \n        Foo Fighters\n    \n    \n        \n            Video: Interview with the Foo Fighters\n        \n        \n        \n            \n             \n         Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.\n        \n            Comments:\n        Excited about seeing them in concert next week. -Lawrence , Jan 23 I dig their latest single. -Mary, Jan 19\n        \n            \n            \n        Showing 1-2 of 18 comments. More\n        \n    \n        Songs\n    \n    \n        Rope\n        Length:\n        4:05 - 14300 plays\n        \n            \n            \n        Play Buy From album: Wasting Light\n    \n    \n        Everlong\n        Length:\n        6:33 - 11700 plays\n        \n            \n            \n        Play Buy From album: The Color And The Shape\n    \n    \n        Upcoming shows\n    \n    \n        FedExForum Memphis, TN, US\n        May 20 Buy tickets\n    \n    \n        Mid America Center Council Bluffs, IA, US\n        May 23 Buy tickets\n    \n    \n        28 Photos\n      \n", 
+            "PRE-MARKUP": "Foo Fighters\nVideo: Interview with the Foo Fighters\n\n  \n  \n\nCatch this exclusive interview with Dave Grohl and the Foo Fighters\n about their new album, Rope.\nSongs\nRope\n Length: 4:05 - 14300 plays\nPlay\nBuy\nFrom album: Wasting Light\nEverlong\n Length: 6:33 - 11700 plays\nPlay\nBuy\nFrom album: The Color And The Shape\nUpcoming shows\nFedExForum\nMemphis, TN, US\nMay 20\nBuy tickets\nMid America Center\nCouncil Bluffs, IA, US\nMay 23\nBuy tickets\n28 Photos\n\n\n\nComments:\nExcited about seeing them in concert next week. -Lawrence , Jan 23\nI dig their latest single. -Mary, Jan 19\nShowing 1-2 of 18 comments. More", 
+            "RDFA": "\n    \n        Foo Fighters\n    \n    \n        \n            Video: Interview with the Foo Fighters\n        \n        \n        \n            \n             \n         Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.\n        \n            Comments:\n        Excited about seeing them in concert next week. -Lawrence , Jan 23 I dig their latest single. -Mary, Jan 19\n        \n            \n            \n        Showing 1-2 of 18 comments. More\n    \n    \n        Songs\n    \n    \n        Rope\n        Length:\n        4:05 - 14300 plays\n        \n            \n            \n        Play Buy From album: Wasting Light\n    \n    \n        Everlong\n        Length:\n        6:33 - 11700 plays\n        \n            \n            \n        Play Buy From album: The Color And The Shape\n    \n    \n        Upcoming shows\n    \n    \n        FedExForum Memphis, TN, US\n        May 20 Buy tickets\n    \n    \n        Mid America Center Council Bluffs, IA, US\n        May 23 Buy tickets\n    \n    \n        28 Photos\n      \n", 
+            "TYPES": [
+                "VideoObject", 
+                "MusicGroup", 
+                "MusicRecording", 
+                "Event", 
+                "video", 
+                "interactionStatistic", 
+                "InteractionCounter", 
+                "duration", 
+                "interactionStatistic", 
+                "interactionType"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    \n        Foo Fighters\n    \n    \n        \n            Video: Interview with the Foo Fighters\n        \n        \n        \n            \n             \n         Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.\n        \n            Comments:\n        Excited about seeing them in concert next week. -Lawrence , Jan 23 I dig their latest single. -Mary, Jan 19\n        \n            \n            \n        Showing 1-2 of 18 comments. More\n        \n    \n        Songs\n    \n    \n        Rope\n        Length:\n        4:05 - 14300 plays\n        \n            \n            \n        Play Buy From album: Wasting Light\n    \n    \n        Everlong\n        Length:\n        6:33 - 11700 plays\n        \n            \n            \n        Play Buy From album: The Color And The Shape\n    \n    \n        Upcoming shows\n    \n    \n        FedExForum Memphis, TN, US\n        May 20 Buy tickets\n    \n    \n        Mid America Center Council Bluffs, IA, US\n        May 23 Buy tickets\n    \n    \n        28 Photos\n      \n", 
+            "PRE-MARKUP": "Foo Fighters\nVideo: Interview with the Foo Fighters\n\n  \n  \n\nCatch this exclusive interview with Dave Grohl and the Foo Fighters\n about their new album, Rope.\nSongs\nRope\n Length: 4:05 - 14300 plays\nPlay\nBuy\nFrom album: Wasting Light\nEverlong\n Length: 6:33 - 11700 plays\nPlay\nBuy\nFrom album: The Color And The Shape\nUpcoming shows\nFedExForum\nMemphis, TN, US\nMay 20\nBuy tickets\nMid America Center\nCouncil Bluffs, IA, US\nMay 23\nBuy tickets\n28 Photos\n\n\n\nComments:\nExcited about seeing them in concert next week. -Lawrence , Jan 23\nI dig their latest single. -Mary, Jan 19\nShowing 1-2 of 18 comments. More", 
+            "RDFA": "\n    \n        Foo Fighters\n    \n    \n        \n            Video: Interview with the Foo Fighters\n        \n        \n        \n            \n             \n         Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.\n        \n            Comments:\n        Excited about seeing them in concert next week. -Lawrence , Jan 23 I dig their latest single. -Mary, Jan 19\n        \n            \n            \n        Showing 1-2 of 18 comments. More\n    \n    \n        Songs\n    \n    \n        Rope\n        Length:\n        4:05 - 14300 plays\n        \n            \n            \n        Play Buy From album: Wasting Light\n    \n    \n        Everlong\n        Length:\n        6:33 - 11700 plays\n        \n            \n            \n        Play Buy From album: The Color And The Shape\n    \n    \n        Upcoming shows\n    \n    \n        FedExForum Memphis, TN, US\n        May 20 Buy tickets\n    \n    \n        Mid America Center Council Bluffs, IA, US\n        May 23 Buy tickets\n    \n    \n        28 Photos\n      \n", 
+            "TYPES": [
+                "VideoObject", 
+                "MusicGroup", 
+                "MusicRecording", 
+                "Event", 
+                "video", 
+                "interactionStatistic", 
+                "InteractionCounter", 
+                "duration", 
+                "interactionStatistic", 
+                "interactionType"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "interactionStatistic", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/interactionStatistic", 
+                    "_lastone": true, 
+                    "rdfs:label": "interactionStatistic"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/interactionCount", 
+        "rdfs:label": "interactionCount"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "浜や簰缁熻", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "浜や簰缁熻", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/InteractionCounter", 
+            "_last": true, 
+            "rdfs:label": "InteractionCounter"
+        }
+    ], 
+    "rdfs:comment": "The number of interactions for the CreativeWork using the WebSite or SoftwareApplication. The most specific child type of InteractionCounter should be used.", 
+    "rdfs:label": "interactionStatistic", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

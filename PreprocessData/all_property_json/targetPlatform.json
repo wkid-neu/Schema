@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/targetPlatform", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "targetPlatform", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/targetPlatform", 
+                    "_lastone": true, 
+                    "rdfs:label": "targetPlatform"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "应用程序的目标硬件平台，例如手机，台式机，XBox", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/APIReference", 
+            "_last": true, 
+            "rdfs:label": "APIReference"
+        }
+    ], 
+    "nameZh": "软件应用的目标硬件平台", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Type of app development: phone, Metro style, desktop, XBox, etc.", 
+    "rdfs:label": "targetPlatform", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

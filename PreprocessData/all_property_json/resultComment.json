@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/resultComment", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "resultComment", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/result", 
+                    "rdfs:label": "result"
+                }, 
+                {
+                    "@id": "http://cnschema.org/resultComment", 
+                    "_lastone": true, 
+                    "rdfs:label": "resultComment"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/result", 
+            "_last": true, 
+            "rdfs:label": "result"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "结果的子属性。以文字结论作为行动的结果。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ReplyAction", 
+            "rdfs:label": "ReplyAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/CommentAction", 
+            "_last": true, 
+            "rdfs:label": "CommentAction"
+        }
+    ], 
+    "nameZh": "行动的结论", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Comment", 
+            "_last": true, 
+            "rdfs:label": "Comment"
+        }
+    ], 
+    "rdfs:comment": "A sub property of result. The Comment created or sent as a result of this action.", 
+    "rdfs:label": "resultComment", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

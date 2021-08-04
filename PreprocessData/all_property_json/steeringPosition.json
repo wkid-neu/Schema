@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/steeringPosition", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "steeringPosition", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/steeringPosition", 
+                    "_lastone": true, 
+                    "rdfs:label": "steeringPosition"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "方向盘，或者其他类似设备（主要是汽车的设备）的位置。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "方向盘位置", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/SteeringPositionValue", 
+            "_last": true, 
+            "rdfs:label": "SteeringPositionValue"
+        }
+    ], 
+    "rdfs:comment": "The position of the steering wheel or similar device (mostly for cars).", 
+    "rdfs:label": "steeringPosition", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

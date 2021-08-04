@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/regionsAllowed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "regionsAllowed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/regionsAllowed", 
+                    "_lastone": true, 
+                    "rdfs:label": "regionsAllowed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "媒体发行播放的指定区域。如果没有指定，则表示可以在任何国家发行。指定发行国家按照需要按照ISO 3166标准", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "nameZh": "允许播放的地区", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The regions where the media is allowed. If not specified, then it's assumed to be allowed everywhere. Specify the countries in ISO 3166 format.", 
+    "rdfs:label": "regionsAllowed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

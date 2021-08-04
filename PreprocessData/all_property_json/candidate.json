@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/candidate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "candidate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "rdfs:label": "object"
+                }, 
+                {
+                    "@id": "http://cnschema.org/candidate", 
+                    "_lastone": true, 
+                    "rdfs:label": "candidate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/object", 
+            "_last": true, 
+            "rdfs:label": "object"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "对象的子属性。该动作的候选人。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VoteAction", 
+            "_last": true, 
+            "rdfs:label": "VoteAction"
+        }
+    ], 
+    "nameZh": "候选人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A sub property of object. The candidate subject of this action.", 
+    "rdfs:label": "candidate", 
+    "wikidataName": "candidate", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P726", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Candidate"
+}

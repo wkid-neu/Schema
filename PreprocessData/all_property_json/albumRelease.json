@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/albumRelease", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "albumRelease", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/albumRelease", 
+                    "_lastone": true, 
+                    "rdfs:label": "albumRelease"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "专辑的发行版本，通常具有不同的出版号。例如，某专辑在香港，日本各有一个发行版本。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicAlbum", 
+            "_last": true, 
+            "rdfs:label": "MusicAlbum"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/releaseOf", 
+        "rdfs:label": "releaseOf"
+    }, 
+    "nameZh": "专辑发行版本", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRelease", 
+            "_last": true, 
+            "rdfs:label": "MusicRelease"
+        }
+    ], 
+    "rdfs:comment": "A release of this album.", 
+    "rdfs:label": "albumRelease", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

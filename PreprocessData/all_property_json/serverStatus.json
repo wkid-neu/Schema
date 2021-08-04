@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/serverStatus", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "serverStatus", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/serverStatus", 
+                    "_lastone": true, 
+                    "rdfs:label": "serverStatus"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "游戏服务器的状态", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GameServer", 
+            "_last": true, 
+            "rdfs:label": "GameServer"
+        }
+    ], 
+    "nameZh": "服务器状态", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/GameServerStatus", 
+            "_last": true, 
+            "rdfs:label": "GameServerStatus"
+        }
+    ], 
+    "rdfs:comment": "Status of a game server.", 
+    "rdfs:label": "serverStatus", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

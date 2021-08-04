@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/countriesSupported", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "countriesSupported", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/countriesSupported", 
+                    "_lastone": true, 
+                    "rdfs:label": "countriesSupported"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "应用支持的国家。你也可以提供两个字母的ISO 3166-1 α-2国家代码。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "支持的国家", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Countries for which the application is supported. You can also provide the two-letter ISO 3166-1 alpha-2 country code.", 
+    "rdfs:label": "countriesSupported", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

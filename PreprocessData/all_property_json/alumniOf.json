@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/alumniOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "alumniOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/alumniOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "alumniOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "此人的母校。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/alumni", 
+        "rdfs:label": "alumni"
+    }, 
+    "nameZh": "毕业于", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/EducationalOrganization", 
+            "_last": true, 
+            "rdfs:label": "EducationalOrganization"
+        }
+    ], 
+    "rdfs:comment": "An organization that the person is an alumni of.", 
+    "rdfs:label": "alumniOf", 
+    "wikidataName": "educated at", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P69", 
+    "wikipediaUrl": ""
+}

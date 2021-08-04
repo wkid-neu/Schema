@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/dependencies", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dependencies", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dependencies", 
+                    "_lastone": true, 
+                    "rdfs:label": "dependencies"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "完成文章中的步骤所需的先决条件。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TechArticle", 
+            "_last": true, 
+            "rdfs:label": "TechArticle"
+        }
+    ], 
+    "nameZh": "依赖的先决条件", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Prerequisites needed to fulfill steps in article.", 
+    "rdfs:label": "dependencies", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

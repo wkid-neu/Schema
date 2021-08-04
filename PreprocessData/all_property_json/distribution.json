@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/distribution", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "distribution", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/distribution", 
+                    "_lastone": true, 
+                    "rdfs:label": "distribution"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该数据集的可下载形式，在特定位置，以特定格式。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Dataset", 
+            "_last": true, 
+            "rdfs:label": "Dataset"
+        }
+    ], 
+    "nameZh": "数据集的下载版本", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DataDownload", 
+            "_last": true, 
+            "rdfs:label": "DataDownload"
+        }
+    ], 
+    "rdfs:comment": "A downloadable form of this dataset, at a specific location, in a specific format.", 
+    "rdfs:label": "distribution", 
+    "wikidataName": "distribution", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P437", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/releaseOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "releaseOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/releaseOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "releaseOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "该（地区）发行版本对应的音乐专辑。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRelease", 
+            "_last": true, 
+            "rdfs:label": "MusicRelease"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/albumRelease", 
+        "rdfs:label": "albumRelease"
+    }, 
+    "nameZh": "对应的专辑", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicAlbum", 
+            "_last": true, 
+            "rdfs:label": "MusicAlbum"
+        }
+    ], 
+    "rdfs:comment": "The album this is a release of.", 
+    "rdfs:label": "releaseOf", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

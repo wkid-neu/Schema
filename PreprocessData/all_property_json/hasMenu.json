@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/hasMenu", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasMenu", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasMenu", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasMenu"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/menu", 
+        "rdfs:label": "menu"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍦ㄦ枃鏈腑鐨勫叿浣撶粨鏋勫寲鐩綍鎴栫洰褰曠殑URL", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FoodEstablishment", 
+            "_last": true, 
+            "rdfs:label": "FoodEstablishment"
+        }
+    ], 
+    "nameZh": "鐩綍", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Menu", 
+            "_last": true, 
+            "rdfs:label": "Menu"
+        }
+    ], 
+    "rdfs:comment": "Either the actual menu as a structured representation, as text, or a URL of the menu.", 
+    "rdfs:label": "hasMenu", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

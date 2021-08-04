@@ -1,0 +1,91 @@
+{
+    "@id": "http://cnschema.org/object", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "object", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "_lastone": true, 
+                    "rdfs:label": "object"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/actionOption", 
+            "rdfs:label": "actionOption"
+        }, 
+        {
+            "@id": "http://cnschema.org/option", 
+            "rdfs:label": "option"
+        }, 
+        {
+            "@id": "http://cnschema.org/followee", 
+            "rdfs:label": "followee"
+        }, 
+        {
+            "@id": "http://cnschema.org/replacee", 
+            "rdfs:label": "replacee"
+        }, 
+        {
+            "@id": "http://cnschema.org/replacer", 
+            "rdfs:label": "replacer"
+        }, 
+        {
+            "@id": "http://cnschema.org/question", 
+            "rdfs:label": "question"
+        }, 
+        {
+            "@id": "http://cnschema.org/collection", 
+            "rdfs:label": "collection"
+        }, 
+        {
+            "@id": "http://cnschema.org/targetCollection", 
+            "rdfs:label": "targetCollection"
+        }, 
+        {
+            "@id": "http://cnschema.org/candidate", 
+            "_last": true, 
+            "rdfs:label": "candidate"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "动作在其上执行的对象，其状态保持完整或更改", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "行动操作的对象", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "The object upon which the action is carried out, whose state is kept intact or changed. Also known as the semantic roles patient, affected or undergoer (which change their state) or theme (which doesn't). e.g. John read a book.", 
+    "rdfs:label": "object", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

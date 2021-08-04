@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/workPerformed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "workPerformed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/workFeatured", 
+                    "rdfs:label": "workFeatured"
+                }, 
+                {
+                    "@id": "http://cnschema.org/workPerformed", 
+                    "_lastone": true, 
+                    "rdfs:label": "workPerformed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/workFeatured", 
+            "_last": true, 
+            "rdfs:label": "workFeatured"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "某活动中表演的作品。例如剧院活动里的一出戏。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "表演的作品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "A work performed in some event, for example a play performed in a TheaterEvent.", 
+    "rdfs:label": "workPerformed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

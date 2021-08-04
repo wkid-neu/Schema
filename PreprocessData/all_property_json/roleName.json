@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/roleName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "roleName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/roleName", 
+                    "_lastone": true, 
+                    "rdfs:label": "roleName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/namedPosition", 
+        "rdfs:label": "namedPosition"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "由个人或组织发挥，扮演或担任的角色。例如例如，漫画书的创作者团队可能会创作“蜘蛛侠”，“钢铁侠”的角色; 或运动队的运动员可能会在运动场上担任“四分卫”的角色", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Role", 
+            "_last": true, 
+            "rdfs:label": "Role"
+        }
+    ], 
+    "nameZh": "角色名称", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "A role played, performed or filled by a person or organization. For example, the team of creators for a comic book might fill the roles named 'inker', 'penciller', and 'letterer'; or an athlete in a SportsTeam might play in the position named 'Quarterback'.", 
+    "rdfs:label": "roleName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

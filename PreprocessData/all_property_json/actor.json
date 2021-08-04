@@ -1,0 +1,96 @@
+{
+    "@id": "http://cnschema.org/actor", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "actor", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/actor", 
+                    "_lastone": true, 
+                    "rdfs:label": "actor"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/actors", 
+        "rdfs:label": "actors"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "电视、广播、电影、视频游戏或事件中的演员， 演员既可以与单个项目关联，又可以与一系列剧集、情节相关联。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoObject", 
+            "rdfs:label": "VideoObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "rdfs:label": "Episode"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "rdfs:label": "CreativeWorkSeason"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "rdfs:label": "TVSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Movie", 
+            "rdfs:label": "Movie"
+        }, 
+        {
+            "@id": "http://cnschema.org/Clip", 
+            "rdfs:label": "Clip"
+        }, 
+        {
+            "@id": "http://cnschema.org/RadioSeries", 
+            "rdfs:label": "RadioSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "rdfs:label": "VideoGame"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/MovieSeries", 
+            "rdfs:label": "MovieSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "演员", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "An actor, e.g. in tv, radio, movie, video games etc., or in an event. Actors can be associated with individual items or with a series, episode, clip.", 
+    "rdfs:label": "actor", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

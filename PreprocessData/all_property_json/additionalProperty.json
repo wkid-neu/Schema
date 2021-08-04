@@ -1,0 +1,248 @@
+{
+    "@id": "http://cnschema.org/additionalProperty", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+            "PRE-MARKUP": "Beach in Mexico\n\nBy Jane Doe\nPhotographed in Puerto Vallarta, Mexico\nDate uploaded: Jan 25, 2008\nI took this picture while on vacation last year.\n", 
+            "RDFA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+            "TYPES": [
+                "ImageObject", 
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-lD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 3, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450g\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 4, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 5, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n\n      ft.\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n      ft.\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 6, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 7, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      USB interface:\n      Yes\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      USB interface: Yes\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 8, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interface:\n      USB\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interface: USB\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 9, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 10, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n      \n  \n", 
+            "PRE-MARKUP": "\n\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 11, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:\n      Yes\n      \n  \n", 
+            "PRE-MARKUP": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:Yes\n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 12, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 13, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 14, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }, 
+        {
+            "JSON": "No JSON-LD", 
+            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode:\n        Yes\n      \n  \n", 
+            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode: Yes\n      \n  \n", 
+            "RDFA": "No RDFa", 
+            "TYPES": [
+                "PropertyValue", 
+                "additionalProperty"
+            ], 
+            "_index": 15, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "additionalProperty", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/additionalProperty", 
+                    "_lastone": true, 
+                    "rdfs:label": "additionalProperty"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "表示实体附加特征的属性值对（例如cnschema.org中没有匹配属性的产品功能或其他特性）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "rdfs:label": "QualitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "nameZh": "附加属性", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "_last": true, 
+            "rdfs:label": "PropertyValue"
+        }
+    ], 
+    "rdfs:comment": "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in cnschema.org.\n\nNote: Publishers should be aware that applications designed to use specific cnschema.org properties (e.g. http://cnschema.org/width, http://cnschema.org/color, http://cnschema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.", 
+    "rdfs:label": "additionalProperty", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

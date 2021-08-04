@@ -1,0 +1,87 @@
+{
+    "@id": "http://cnschema.org/leiCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "leiCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/leiCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "leiCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Financial Industry Business Ontology project (see http://www.fibo.org/schema for details), in support of the W3C Financial Industry Business Ontology Community Group (http://www.fibo.org/community). Many class and property definitions are inspired by or based on http://www.fibo.org.", 
+            "rdfs:label": "FIBO", 
+            "xtype": "http://cnschema.org/Organization"
+        }, 
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#GLEIF", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The implementation and use of Legal Entity Identifier (LEI) is supported by Global Legal Entity Identifier Foundation https://www.gleif.org.", 
+            "rdfs:label": "GLEIF", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍏ㄧ悆娉曚汉鏈烘瀯璇嗗埆缂栫爜", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "鍏ㄧ悆娉曚汉鏈烘瀯璇嗗埆缂栫爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "An organization identifier that uniquely identifies a legal entity as defined in ISO 17442.", 
+    "rdfs:label": "leiCode", 
+    "wikidataName": "Legal Entity ID", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P1278", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,89 @@
+{
+    "@id": "http://cnschema.org/valueReference", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "valueReference", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/valueReference", 
+                    "_lastone": true, 
+                    "rdfs:label": "valueReference"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "指向提供关于原始值的附加信息，例如： 参考温度。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "rdfs:label": "QualitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "rdfs:label": "PropertyValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "nameZh": "参考值", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Enumeration", 
+            "rdfs:label": "Enumeration"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "rdfs:label": "PropertyValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/StructuredValue", 
+            "rdfs:label": "StructuredValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QualitativeValue"
+        }
+    ], 
+    "rdfs:comment": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.", 
+    "rdfs:label": "valueReference", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

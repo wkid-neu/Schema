@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/productionDate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "productionDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/productionDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "productionDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "项目（例：汽车）的生产日期", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "生产日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "The date of production of the item, e.g. vehicle.", 
+    "rdfs:label": "productionDate", 
+    "wikidataName": "production date", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2754", 
+    "wikipediaUrl": ""
+}

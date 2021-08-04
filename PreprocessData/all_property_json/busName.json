@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/busName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "busName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/busName", 
+                    "_lastone": true, 
+                    "rdfs:label": "busName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "公共汽车的名称。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BusTrip", 
+            "_last": true, 
+            "rdfs:label": "BusTrip"
+        }
+    ], 
+    "nameZh": "公共汽车名称", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The name of the bus (e.g. Bolt Express).", 
+    "rdfs:label": "busName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

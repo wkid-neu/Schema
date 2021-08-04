@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/editor", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "editor", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/editor", 
+                    "_lastone": true, 
+                    "rdfs:label": "editor"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "指定编辑CreativeWork的人。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "编辑者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "Specifies the Person who edited the CreativeWork.", 
+    "rdfs:label": "editor", 
+    "wikidataName": "editor", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P98", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Editor"
+}

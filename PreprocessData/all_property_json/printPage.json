@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/printPage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "printPage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/printPage", 
+                    "_lastone": true, 
+                    "rdfs:label": "printPage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "如果新闻文章出现在印刷品中，则此字段指示找到该文章的页面的名称。 请注意，此字段用于确切的页面名称（例如A5，B18）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/NewsArticle", 
+            "_last": true, 
+            "rdfs:label": "NewsArticle"
+        }
+    ], 
+    "nameZh": "印刷品所在页面", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "If this NewsArticle appears in print, this field indicates the name of the page on which the article is found. Please note that this field is intended for the exact page name (e.g. A5, B18).", 
+    "rdfs:label": "printPage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

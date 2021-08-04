@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/quest", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "quest", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/quest", 
+                    "_lastone": true, 
+                    "rdfs:label": "quest"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "涓轰簡鑾峰緱濂栧姳锛屼竴涓垨鑰呬竴缁勭敱鐜╁鎺у埗鐨勮鑹查渶瑕佸畬鎴愮殑浠诲姟", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Game", 
+            "_last": true, 
+            "rdfs:label": "Game"
+        }
+    ], 
+    "nameZh": "娓告垙浠诲姟", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "The task that a player-controlled character, or group of characters may complete in order to gain a reward.", 
+    "rdfs:label": "quest", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/performerIn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "performerIn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/performerIn", 
+                    "_lastone": true, 
+                    "rdfs:label": "performerIn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "杩欎釜浜烘槸琛ㄦ紨鑰呮垨鍙備笌鑰呯殑娲诲姩", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "琛ㄦ紨娲诲姩", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "rdfs:comment": "Event that this person is a performer or participant in.", 
+    "rdfs:label": "performerIn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

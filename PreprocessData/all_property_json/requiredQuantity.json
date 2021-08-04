@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/requiredQuantity", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "requiredQuantity", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/requiredQuantity", 
+                    "_lastone": true, 
+                    "rdfs:label": "requiredQuantity"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "操作所需物料的数量", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/HowToItem", 
+            "_last": true, 
+            "rdfs:label": "HowToItem"
+        }
+    ], 
+    "nameZh": "相关物料的数量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The required quantity of the item(s).", 
+    "rdfs:label": "requiredQuantity", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/providerMobility", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+            "PRE-MARKUP": "", 
+            "RDFA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+            "TYPES": [
+                "Service", 
+                "TaxiService", 
+                "GeoCircle", 
+                "geoMidPoint", 
+                "geoRadius", 
+                "providerMobility", 
+                "PRE-MARKUP: ", 
+                "Car for hire driver #123 is within 50 meters of a given location, but is moving."
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-service-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "providerMobility", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/providerMobility", 
+                    "_lastone": true, 
+                    "rdfs:label": "providerMobility"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "表示提供的服务的移动性（例如“静态”，“动态”）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "nameZh": "提供方是否机动", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Indicates the mobility of a provided service (e.g. 'static', 'dynamic').", 
+    "rdfs:label": "providerMobility", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

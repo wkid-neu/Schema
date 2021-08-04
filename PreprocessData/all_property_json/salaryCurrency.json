@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/salaryCurrency", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "salaryCurrency", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/salaryCurrency", 
+                    "_lastone": true, 
+                    "rdfs:label": "salaryCurrency"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "发布的职位上，用于描述薪水的货币单位。（使用ISO 4217标准）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EmployeeRole", 
+            "rdfs:label": "EmployeeRole"
+        }, 
+        {
+            "@id": "http://cnschema.org/JobPosting", 
+            "_last": true, 
+            "rdfs:label": "JobPosting"
+        }
+    ], 
+    "nameZh": "工资结算货币", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The currency (coded using ISO 4217 ) used for the main salary information in this job posting or for this employee.", 
+    "rdfs:label": "salaryCurrency", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

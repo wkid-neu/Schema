@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/discountCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "discountCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/discountCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "discountCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "用来兑换折扣的代码。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "nameZh": "优惠码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Code used to redeem a discount.", 
+    "rdfs:label": "discountCode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

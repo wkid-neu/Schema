@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/sport", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "sport", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/sport", 
+                    "_lastone": true, 
+                    "rdfs:label": "sport"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一种运动项目，例如棒球", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SportsOrganization", 
+            "_last": true, 
+            "rdfs:label": "SportsOrganization"
+        }
+    ], 
+    "nameZh": "运动", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A type of sport (e.g. Baseball).", 
+    "rdfs:label": "sport", 
+    "wikidataName": "sport", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P641", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Sport"
+}

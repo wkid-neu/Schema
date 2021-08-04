@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/toLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "toLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "rdfs:label": "location"
+                }, 
+                {
+                    "@id": "http://cnschema.org/toLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "toLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/location", 
+            "_last": true, 
+            "rdfs:label": "location"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "地方的子属性。表示目的地。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MoveAction", 
+            "rdfs:label": "MoveAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/InsertAction", 
+            "rdfs:label": "InsertAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/ExerciseAction", 
+            "rdfs:label": "ExerciseAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/TransferAction", 
+            "_last": true, 
+            "rdfs:label": "TransferAction"
+        }
+    ], 
+    "nameZh": "到什么地方", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "A sub property of location. The final location of the object or the agent after the action.", 
+    "rdfs:label": "toLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

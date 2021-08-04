@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/validIn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "validIn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/validIn", 
+                    "_lastone": true, 
+                    "rdfs:label": "validIn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "有效的地理区域", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Permit", 
+            "_last": true, 
+            "rdfs:label": "Permit"
+        }
+    ], 
+    "nameZh": "有效地区", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/AdministrativeArea", 
+            "_last": true, 
+            "rdfs:label": "AdministrativeArea"
+        }
+    ], 
+    "rdfs:comment": "The geographic area where the permit is valid.", 
+    "rdfs:label": "validIn", 
+    "wikidataName": "applies to territorial jurisdiction", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1001", 
+    "wikipediaUrl": ""
+}

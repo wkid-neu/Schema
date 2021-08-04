@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/paymentDue", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "paymentDue", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentDue", 
+                    "_lastone": true, 
+                    "rdfs:label": "paymentDue"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "最晚付款日期", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "rdfs:label": "Order"
+        }, 
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "最晚付款日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The date that payment is due.", 
+    "rdfs:label": "paymentDue", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/paymentDueDate", 
+        "rdfs:label": "paymentDueDate"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/pagination", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "pagination", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/pagination", 
+                    "_lastone": true, 
+                    "rdfs:label": "pagination"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The W3C Schema Bib Extend (BibEx) group led the work to improve cnschema.org for bibliographic information, including terms for periodicals, articles and multi-volume works. The design was inspired in places (e.g. pageStart, pageEnd, pagination) by the Bibliographic Ontology, 'bibo'.", 
+            "rdfs:label": "BibExTerm", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "多段页码范围。例如“1-6,9,55”或“10-12,46-49”", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Article", 
+            "rdfs:label": "Article"
+        }, 
+        {
+            "@id": "http://cnschema.org/PublicationVolume", 
+            "rdfs:label": "PublicationVolume"
+        }, 
+        {
+            "@id": "http://cnschema.org/PublicationIssue", 
+            "_last": true, 
+            "rdfs:label": "PublicationIssue"
+        }
+    ], 
+    "nameZh": "起止页码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Any description of pages that is not separated into pageStart and pageEnd; for example, \"1-6, 9, 55\" or \"10-12, 46-49\".", 
+    "rdfs:label": "pagination", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Pagination"
+}

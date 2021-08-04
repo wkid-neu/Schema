@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/creator", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "creator", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/creator", 
+                    "_lastone": true, 
+                    "rdfs:label": "creator"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该 CreativeWork 的创作者/作者。跟CreativeWork的Author属性一样。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/UserComments", 
+            "_last": true, 
+            "rdfs:label": "UserComments"
+        }
+    ], 
+    "nameZh": "作者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "The creator/author of this CreativeWork. This is the same as the Author property for CreativeWork.", 
+    "rdfs:label": "creator", 
+    "wikidataName": "creator", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P170", 
+    "wikipediaUrl": ""
+}

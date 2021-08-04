@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/pickupTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "pickupTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/pickupTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "pickupTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "出租车可以接旅客的时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RentalCarReservation", 
+            "rdfs:label": "RentalCarReservation"
+        }, 
+        {
+            "@id": "http://cnschema.org/TaxiReservation", 
+            "_last": true, 
+            "rdfs:label": "TaxiReservation"
+        }
+    ], 
+    "nameZh": "接人时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "When a taxi will pickup a passenger or a rental car can be picked up.", 
+    "rdfs:label": "pickupTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/gameTip", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gameTip", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gameTip", 
+                    "_lastone": true, 
+                    "rdfs:label": "gameTip"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "游戏攻略指的就是指官方或非官方发布的，可以为玩家提供一些游戏经验与心得的文字或视频类的教材。引导玩家特别是新手玩家熟悉并能尽快的对相关游戏的更多深入了解的文章，或者也可以说是一些玩家自己的游戏心得，跟大家一起分享。有些玩家也会称之为游戏秘籍。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "_last": true, 
+            "rdfs:label": "VideoGame"
+        }
+    ], 
+    "nameZh": "游戏攻略", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "Links to tips, tactics, etc.", 
+    "rdfs:label": "gameTip", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/recordedAt", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recordedAt", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recordedAt", 
+                    "_lastone": true, 
+                    "rdfs:label": "recordedAt"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "媒体记录对应的活动，例如一段录音记录了某个会议活动。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/recordedIn", 
+        "rdfs:label": "recordedIn"
+    }, 
+    "nameZh": "对应的活动", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "rdfs:comment": "The Event where the CreativeWork was recorded. The CreativeWork may capture all or part of the event.", 
+    "rdfs:label": "recordedAt", 
+    "wikidataName": "recorded at", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P483", 
+    "wikipediaUrl": ""
+}

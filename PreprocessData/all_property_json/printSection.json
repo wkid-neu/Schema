@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/printSection", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "printSection", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/printSection", 
+                    "_lastone": true, 
+                    "rdfs:label": "printSection"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "如果此新闻文章出现在印刷物中，则此字段表示文章出现在印刷物中的区域。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/NewsArticle", 
+            "_last": true, 
+            "rdfs:label": "NewsArticle"
+        }
+    ], 
+    "nameZh": "印刷品所在栏目", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "If this NewsArticle appears in print, this field indicates the print section in which the article appeared.", 
+    "rdfs:label": "printSection", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

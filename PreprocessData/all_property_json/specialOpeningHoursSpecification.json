@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/specialOpeningHoursSpecification", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "specialOpeningHoursSpecification", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/specialOpeningHoursSpecification", 
+                    "_lastone": true, 
+                    "rdfs:label": "specialOpeningHoursSpecification"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "特定开放时间的某个地方。 使用此功能通过打开“小时规格”或“营业时间”来明确地覆盖引入范围的一般开放时间。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "特殊开放时间详情", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+            "_last": true, 
+            "rdfs:label": "OpeningHoursSpecification"
+        }
+    ], 
+    "rdfs:comment": "The special opening hours of a certain place.\n\nUse this to explicitly override general opening hours brought in scope by openingHoursSpecification or openingHours.", 
+    "rdfs:label": "specialOpeningHoursSpecification", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

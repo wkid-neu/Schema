@@ -1,0 +1,48 @@
+a,#assign {
+  cursor:pointer;
+}
+th, td {
+  padding: 5px 5px;
+}
+#name_block
+{
+    height: 150px;
+    width: 35%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+#submit_block
+{
+    height: 250px;
+    width: 40%;
+    vertical-align: top;
+
+}
+#description_block
+{
+    height: 100px;
+    text-align: left;
+    font-size: 15px;
+}
+#property_block
+{
+    font-size: 10px;
+
+}
+#writed_block
+{
+    height: 60%;
+    vertical-align: top;
+    text-align: left;
+}
+#created_entity_block
+{
+    width: 25%;
+    vertical-align: top;
+    text-align: left;
+}
+#created_entity_block
+{
+    border:2px #9d9d9d solid;
+}

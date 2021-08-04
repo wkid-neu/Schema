@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/endTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "endTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/endTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "endTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "事件的结束时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FoodEstablishmentReservation", 
+            "rdfs:label": "FoodEstablishmentReservation"
+        }, 
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "结束时刻", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The endTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to end. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to December.\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.", 
+    "rdfs:label": "endTime", 
+    "wikidataName": "end time", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P582", 
+    "wikipediaUrl": ""
+}

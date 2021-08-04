@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/departureTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "departureTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/departureTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "departureTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "预计的出发时间。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Trip", 
+            "_last": true, 
+            "rdfs:label": "Trip"
+        }
+    ], 
+    "nameZh": "出发时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The expected departure time.", 
+    "rdfs:label": "departureTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/currency", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "currency", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/currency", 
+                    "_lastone": true, 
+                    "rdfs:label": "currency"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与amount一起使用，说明金额对应的币种，例如美元，人民币，使用3个字母的 ISO 4217 格式", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DatedMoneySpecification", 
+            "rdfs:label": "DatedMoneySpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/MonetaryAmount", 
+            "_last": true, 
+            "rdfs:label": "MonetaryAmount"
+        }
+    ], 
+    "nameZh": "货币种类", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The currency in which the monetary amount is expressed.\n\nUse standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\".", 
+    "rdfs:label": "currency", 
+    "wikidataName": "currency", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P38", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Currency"
+}

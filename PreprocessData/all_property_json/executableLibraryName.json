@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/executableLibraryName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "executableLibraryName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/executableLibraryName", 
+                    "_lastone": true, 
+                    "rdfs:label": "executableLibraryName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/assembly", 
+        "rdfs:label": "assembly"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "软件开发中，软件库的文件名，例如windows 里的DLL文件。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/APIReference", 
+            "_last": true, 
+            "rdfs:label": "APIReference"
+        }
+    ], 
+    "nameZh": "可执行链接库名称", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Library file name e.g., mscorlib.dll, system.web.dll.", 
+    "rdfs:label": "executableLibraryName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

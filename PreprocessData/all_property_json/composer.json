@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/composer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "composer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/composer", 
+                    "_lastone": true, 
+                    "rdfs:label": "composer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "写了一首作曲的人或者组织，或者是在一些活动上表演的一部作品的作曲家。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/MusicComposition", 
+            "_last": true, 
+            "rdfs:label": "MusicComposition"
+        }
+    ], 
+    "nameZh": "作曲者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "The person or organization who wrote a composition, or who is the composer of a work performed at some event.", 
+    "rdfs:label": "composer", 
+    "wikidataName": "composer", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P86", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Composer"
+}

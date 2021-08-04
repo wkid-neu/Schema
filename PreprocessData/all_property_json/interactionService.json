@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/interactionService", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "interactionService", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/interactionService", 
+                    "_lastone": true, 
+                    "rdfs:label": "interactionService"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "交互对应的软件服务", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/InteractionCounter", 
+            "_last": true, 
+            "rdfs:label": "InteractionCounter"
+        }
+    ], 
+    "nameZh": "交互对应的软件服务", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/WebSite", 
+            "rdfs:label": "WebSite"
+        }, 
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "rdfs:comment": "The WebSite or SoftwareApplication where the interactions took place.", 
+    "rdfs:label": "interactionService", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

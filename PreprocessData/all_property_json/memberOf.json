@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/memberOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "memberOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/memberOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "memberOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/affiliation", 
+            "_last": true, 
+            "rdfs:label": "affiliation"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "会员所属的机构或项目组织", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/member", 
+        "rdfs:label": "member"
+    }, 
+    "nameZh": "会员所属的机构", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ProgramMembership", 
+            "rdfs:label": "ProgramMembership"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "An Organization (or ProgramMembership) to which this Person or Organization belongs.", 
+    "rdfs:label": "memberOf", 
+    "wikidataName": "member of", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P463", 
+    "wikipediaUrl": ""
+}

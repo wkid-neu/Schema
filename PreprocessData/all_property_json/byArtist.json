@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/byArtist", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "byArtist", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/byArtist", 
+                    "_lastone": true, 
+                    "rdfs:label": "byArtist"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "参演该专辑或MV的艺术家。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicAlbum", 
+            "rdfs:label": "MusicAlbum"
+        }, 
+        {
+            "@id": "http://cnschema.org/MusicRecording", 
+            "_last": true, 
+            "rdfs:label": "MusicRecording"
+        }
+    ], 
+    "nameZh": "艺人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicGroup", 
+            "_last": true, 
+            "rdfs:label": "MusicGroup"
+        }
+    ], 
+    "rdfs:comment": "The artist that performed this album or recording.", 
+    "rdfs:label": "byArtist", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

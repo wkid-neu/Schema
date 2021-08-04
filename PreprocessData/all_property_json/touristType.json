@@ -1,0 +1,123 @@
+{
+    "@id": "http://cnschema.org/touristType", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    \n    \n        Please Touch Museum\n    \n    \n        It is a\n        \n            children\n        's museum located in\n        \n            \n                Philadelphia\n            ,\n            \n                USA\n            .\n        \n    \n    \n        The museum focuses on teaching children through interactive exhibits and special events.\n    \n", 
+            "PRE-MARKUP": "Please Touch Museum\nIt is a children's museum located in Philadelphia, Pennsylvania, USA.\nThe museum focuses on teaching children through interactive exhibits and special events.", 
+            "RDFA": "\n    \n        Please Touch Museum\n    \n    \n        It is a\n        \n            children\n        's museum located in\n        \n            \n                Philadelphia\n            ,\n            \n                USA\n            .\n        \n    \n    \n        The museum focuses on teaching children through interactive exhibits and special events.\n    \n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "touristType", 
+                "Museum"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    \n    \n    \n    \n      \n      \n        \n      \n      \n        \n      \n    \n    \n      \n      \n    \n    \n      \n      \n    \n    \n    \n    \n    \n  \n", 
+            "PRE-MARKUP": "Name: Villers–Bretonneux Australian National Memorial\nDescription: The Australian National Memorial, Villers–Bretonneux is the main memorial to Australian military personnel killed on the Western Front during World War I.\nAddress: Fouilloy, FR\nGeocoordinates: lat 49.8852515, lon 2.5106436\nPublic Access: yes\nIs Accessible For Free: yes\nTourist Audience: Memorial Tourism from Australia and New Zealand\nImage: https://commons.wikimedia.org/wiki/File%3AVillers-Bretonneux_m%C3%A9morial_australien_(tour_et_croix)_1.jpg\nSame As: https://www.wikidata.org/wiki/Q2544355", 
+            "RDFA": "\n    \n    \n    \n        \n        \n            >\n            \n        \n        \n            \n        \n    \n\n\n    \n    \n\n\n    \n    \n\n\n\n    \n    \n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "touristType", 
+                "isAccessibleForFree", 
+                "Cemetery"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    \n    \n    \n    \n      \n      \n      \n      \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n  \n", 
+            "PRE-MARKUP": "Name: Bodegas Protos\nDescription: Protos means “first” in Greek, and since 1927 this centenary winery has embarked on the mission to be number one. This attitude has driven their search for constant improvement. The new facilities designed by prestigious architect and winner of the Priztker Award, Sir Richard Rogers, once again took the winery to the forefront of wine tourism. A tour around Protos includes a detailed visit to both the underground cellar dug into the hillside of Peñafiel Castle and to the winery designed by celebrated architect Sir Richard Rogers. After completing the itinerary, visitors can taste 2 excellent Protos wines and will receive a gift. The visit lasts 1.5 hours (including the sampling).\nOpening Hours: Monday to Friday, 10:00-13:00 and 16:30-18:00\nAddress: C/ Bodegas Protos, 24-28, 47300 - Peñafiel, Spain\nPublic Access: yes\nTourist Audience: Wine tourism, Cultural tourism\nAvailable Languages: English, Spanish\nTelephone: +34983878011, +34659843463\nSame As: http://www.bodegasprotos.com\nEmail: enoturismo@bodegasprotos.com\nImage: https://commons.wikimedia.org/wiki/File%3AFoto_Bodega_Rogers2.jpg", 
+            "RDFA": "\n    \n        \n        \n        \n            \n            \n            \n            \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n        \n    \n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "touristType", 
+                "Winery"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "touristType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/touristType", 
+                    "_lastone": true, 
+                    "rdfs:label": "touristType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#IIT-CNR.it", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on work by the Web Applications for the Future Internet Lab, Institute of Informatics and Telematics, Pisa, Italy.", 
+            "rdfs:label": "IITCNRit", 
+            "xtype": "http://cnschema.org/Organization"
+        }, 
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Tourism", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Tourism Structured Web Data Community Group.", 
+            "rdfs:label": "Tourism", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "景点适宜的游客类型", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TouristAttraction", 
+            "_last": true, 
+            "rdfs:label": "TouristAttraction"
+        }
+    ], 
+    "nameZh": "适宜的游客类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "rdfs:label": "Audience"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Attraction suitable for type(s) of tourist. eg. Children, visitors from a particular country, etc.", 
+    "rdfs:label": "touristType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

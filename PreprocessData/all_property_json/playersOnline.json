@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/playersOnline", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "playersOnline", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/playersOnline", 
+                    "_lastone": true, 
+                    "rdfs:label": "playersOnline"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "服务器上的玩家人数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GameServer", 
+            "_last": true, 
+            "rdfs:label": "GameServer"
+        }
+    ], 
+    "nameZh": "在线玩家数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "Number of players on the server.", 
+    "rdfs:label": "playersOnline", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

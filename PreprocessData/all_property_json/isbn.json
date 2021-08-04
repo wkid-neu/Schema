@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/isbn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "isbn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isbn", 
+                    "_lastone": true, 
+                    "rdfs:label": "isbn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "书籍的国际标准书号(ISBN)", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Book", 
+            "_last": true, 
+            "rdfs:label": "Book"
+        }
+    ], 
+    "nameZh": "ISBN码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The ISBN of the book.", 
+    "rdfs:label": "isbn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

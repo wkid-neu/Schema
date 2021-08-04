@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/assemblyVersion", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "assemblyVersion", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/assemblyVersion", 
+                    "_lastone": true, 
+                    "rdfs:label": "assemblyVersion"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "相关的程序库的版本，比如.NET Framework 4.5", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/APIReference", 
+            "_last": true, 
+            "rdfs:label": "APIReference"
+        }
+    ], 
+    "nameZh": "程序库版本", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Associated product/technology version. e.g., .NET Framework 4.5.", 
+    "rdfs:label": "assemblyVersion", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/upvoteCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "upvoteCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/upvoteCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "upvoteCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "浠庣ぞ鍖轰腑鏀跺埌鏀寔杩欎釜闂锛屾垨鑰呯瓟妗堟垨鑰呰瘎璁虹殑鏁伴噺", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Comment", 
+            "rdfs:label": "Comment"
+        }, 
+        {
+            "@id": "http://cnschema.org/Question", 
+            "_last": true, 
+            "rdfs:label": "Question"
+        }
+    ], 
+    "nameZh": "鏀寔鎬绘暟", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of upvotes this question, answer or comment has received from the community.", 
+    "rdfs:label": "upvoteCount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/hasDigitalDocumentPermission", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasDigitalDocumentPermission", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasDigitalDocumentPermission", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasDigitalDocumentPermission"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鏁板瓧鏂囨。璁块棶鏉冮檺", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DigitalDocument", 
+            "_last": true, 
+            "rdfs:label": "DigitalDocument"
+        }
+    ], 
+    "nameZh": "鏁板瓧鏂囨。璁块棶鏉冮檺", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DigitalDocumentPermission", 
+            "_last": true, 
+            "rdfs:label": "DigitalDocumentPermission"
+        }
+    ], 
+    "rdfs:comment": "A permission related to the access to this document (e.g. permission to read or write an electronic document). For a public document, specify a grantee with an Audience with audienceType equal to \"public\".", 
+    "rdfs:label": "hasDigitalDocumentPermission", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

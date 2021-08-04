@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/downvoteCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "downvoteCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/downvoteCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "downvoteCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "来自该社区的，对于这个问题、答案或意见的反对数量。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Comment", 
+            "rdfs:label": "Comment"
+        }, 
+        {
+            "@id": "http://cnschema.org/Question", 
+            "_last": true, 
+            "rdfs:label": "Question"
+        }
+    ], 
+    "nameZh": "反对总数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of downvotes this question, answer or comment has received from the community.", 
+    "rdfs:label": "downvoteCount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/programmingLanguage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "programmingLanguage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/programmingLanguage", 
+                    "_lastone": true, 
+                    "rdfs:label": "programmingLanguage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "计算机编程语言", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareSourceCode", 
+            "_last": true, 
+            "rdfs:label": "SoftwareSourceCode"
+        }
+    ], 
+    "nameZh": "编程语言", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ComputerLanguage", 
+            "rdfs:label": "ComputerLanguage"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The computer programming language.", 
+    "rdfs:label": "programmingLanguage", 
+    "wikidataName": "programming language", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P277", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Programming_language"
+}

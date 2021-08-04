@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/previousStartDate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "previousStartDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/previousStartDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "previousStartDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与eventStatus结合使用，用于重新安排或取消的事件。 此属性包含以前计划的开始日期。 对于重新安排的事件，startDate属性应用于新计划的开始日期。 在事件已被推迟和重新安排多次的（罕见）情况下，可以重复此字段。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "之前计划的开始日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "Used in conjunction with eventStatus for rescheduled or cancelled events. This property contains the previously scheduled start date. For rescheduled events, the startDate property should be used for the newly scheduled start date. In the (rare) case of an event that has been postponed and rescheduled multiple times, this field may be repeated.", 
+    "rdfs:label": "previousStartDate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

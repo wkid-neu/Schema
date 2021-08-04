@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/membershipNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "membershipNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/membershipNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "membershipNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "成员身份的唯一标识符", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ProgramMembership", 
+            "_last": true, 
+            "rdfs:label": "ProgramMembership"
+        }
+    ], 
+    "nameZh": "会员编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A unique identifier for the membership.", 
+    "rdfs:label": "membershipNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

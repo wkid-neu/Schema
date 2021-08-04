@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/currenciesAccepted", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+            "PRE-MARKUP": "Disneyland Paris\nIt's an amusement park in Marne-la-Vallée, near Paris, in France.\nHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\nEntrance: with ticket\nCurrency accepted: Euro\nPayment accepted: Cash, Credit Card\nWebsite:\n\twww.disneylandparis.it\n", 
+            "RDFA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+            "TYPES": [
+                "AmusementPark", 
+                "TouristAttraction", 
+                "isAccessibleForFree", 
+                "currenciesAccepted", 
+                "openingHours", 
+                "paymentAccepted"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "currenciesAccepted", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/currenciesAccepted", 
+                    "_lastone": true, 
+                    "rdfs:label": "currenciesAccepted"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "接收的货币，使用ISO 4217货币格式。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LocalBusiness", 
+            "_last": true, 
+            "rdfs:label": "LocalBusiness"
+        }
+    ], 
+    "nameZh": "接收的货币", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The currency accepted.\n\nUse standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\".", 
+    "rdfs:label": "currenciesAccepted", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

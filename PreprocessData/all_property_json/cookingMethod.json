@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/cookingMethod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "cookingMethod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/cookingMethod", 
+                    "_lastone": true, 
+                    "rdfs:label": "cookingMethod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "烹调方法，如油炸、蒸等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Recipe", 
+            "_last": true, 
+            "rdfs:label": "Recipe"
+        }
+    ], 
+    "nameZh": "烹饪方法", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The method of cooking, such as Frying, Steaming, ...", 
+    "rdfs:label": "cookingMethod", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

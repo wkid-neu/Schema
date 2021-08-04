@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/deathPlace", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "deathPlace", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/deathPlace", 
+                    "_lastone": true, 
+                    "rdfs:label": "deathPlace"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该人死亡的地方", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "逝世地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The place where the person died.", 
+    "rdfs:label": "deathPlace", 
+    "wikidataName": "place of death", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P20", 
+    "wikipediaUrl": ""
+}

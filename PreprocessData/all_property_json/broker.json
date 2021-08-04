@@ -1,0 +1,72 @@
+{
+    "@id": "http://cnschema.org/broker", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "broker", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/broker", 
+                    "_lastone": true, 
+                    "rdfs:label": "broker"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/bookingAgent", 
+        "rdfs:label": "bookingAgent"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "安排买方和卖方进行交易的实体。 大多数情况下，经纪人从未获取或发布交易所涉及的产品或服务的所有权。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "rdfs:label": "Service"
+        }, 
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "rdfs:label": "Reservation"
+        }, 
+        {
+            "@id": "http://cnschema.org/Order", 
+            "rdfs:label": "Order"
+        }, 
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "经纪人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.", 
+    "rdfs:label": "broker", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Broker"
+}

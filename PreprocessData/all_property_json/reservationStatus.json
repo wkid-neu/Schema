@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/reservationStatus", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "reservationStatus", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/reservationStatus", 
+                    "_lastone": true, 
+                    "rdfs:label": "reservationStatus"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "预订的当前状态", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "nameZh": "预定的状态", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ReservationStatusType", 
+            "_last": true, 
+            "rdfs:label": "ReservationStatusType"
+        }
+    ], 
+    "rdfs:comment": "The current status of the reservation.", 
+    "rdfs:label": "reservationStatus", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

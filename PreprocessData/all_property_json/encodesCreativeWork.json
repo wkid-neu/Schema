@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/encodesCreativeWork", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "encodesCreativeWork", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/encodesCreativeWork", 
+                    "_lastone": true, 
+                    "rdfs:label": "encodesCreativeWork"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该媒体对象编码的CreativeWork。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "nameZh": "对应的作品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "The CreativeWork encoded by this media object.", 
+    "rdfs:label": "encodesCreativeWork", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

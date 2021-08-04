@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/orderNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "orderNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "orderNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "订单编号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "nameZh": "订单的编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The identifier of the transaction.", 
+    "rdfs:label": "orderNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

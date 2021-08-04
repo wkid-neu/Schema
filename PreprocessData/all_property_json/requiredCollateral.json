@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/requiredCollateral", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "requiredCollateral", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/requiredCollateral", 
+                    "_lastone": true, 
+                    "rdfs:label": "requiredCollateral"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Financial Industry Business Ontology project (see http://www.fibo.org/schema for details), in support of the W3C Financial Industry Business Ontology Community Group (http://www.fibo.org/community). Many class and property definitions are inspired by or based on http://www.fibo.org.", 
+            "rdfs:label": "FIBO", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "贷款或信贷还款所必需的抵押资产。 可以采取第三方质押，货物，金融工具（现金，证券等）的形式", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LoanOrCredit", 
+            "_last": true, 
+            "rdfs:label": "LoanOrCredit"
+        }
+    ], 
+    "nameZh": "必须抵押品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "Assets required to secure loan or credit repayments. It may take form of third party pledge, goods, financial instruments (cash, securities, etc.)", 
+    "rdfs:label": "requiredCollateral", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

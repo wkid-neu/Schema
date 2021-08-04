@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/boardingGroup", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "boardingGroup", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/boardingGroup", 
+                    "_lastone": true, 
+                    "rdfs:label": "boardingGroup"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "航空公司的登机顺序或优先顺序。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FlightReservation", 
+            "_last": true, 
+            "rdfs:label": "FlightReservation"
+        }
+    ], 
+    "nameZh": "登机乘客分组", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The airline-specific indicator of boarding order / preference.", 
+    "rdfs:label": "boardingGroup", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

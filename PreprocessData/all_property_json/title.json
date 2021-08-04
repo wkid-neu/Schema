@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/title", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "title", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/title", 
+                    "_lastone": true, 
+                    "rdfs:label": "title"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "宸ヤ綔鑱屼綅鍚嶇О", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/JobPosting", 
+            "_last": true, 
+            "rdfs:label": "JobPosting"
+        }
+    ], 
+    "nameZh": "澶磋", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The title of the job.", 
+    "rdfs:label": "title", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

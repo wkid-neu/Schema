@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/installUrl", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "installUrl", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/installUrl", 
+                    "_lastone": true, 
+                    "rdfs:label": "installUrl"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "APP瀹夎鍦板潃", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "APP瀹夎鍦板潃", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "URL at which the app may be installed, if different from the URL of the item.", 
+    "rdfs:label": "installUrl", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,85 @@
+{
+    "@id": "http://cnschema.org/faxNumber", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+            "TYPES": [
+                "Organization", 
+                "PostalAddress", 
+                "address", 
+                "streetAddress", 
+                "postalCode", 
+                "addressLocality", 
+                "faxNumber", 
+                "telephone"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "faxNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/faxNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "faxNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "传真号。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "传真号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The fax number.", 
+    "rdfs:label": "faxNumber", 
+    "wikidataName": "fax number", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2900", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Fax_number"
+}

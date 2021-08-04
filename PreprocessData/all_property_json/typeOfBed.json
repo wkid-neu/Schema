@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/typeOfBed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "typeOfBed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/typeOfBed", 
+                    "_lastone": true, 
+                    "rdfs:label": "typeOfBed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "在某种场合（例：酒店）订床时床的类型（例：单人床）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BedDetails", 
+            "_last": true, 
+            "rdfs:label": "BedDetails"
+        }
+    ], 
+    "nameZh": "床位类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The type of bed to which the BedDetail refers, i.e. the type of bed available in the quantity indicated by quantity.", 
+    "rdfs:label": "typeOfBed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

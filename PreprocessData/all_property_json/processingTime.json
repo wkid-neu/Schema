@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/processingTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "processingTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/processingTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "processingTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "使用此渠道的服务的预期处理时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ServiceChannel", 
+            "_last": true, 
+            "rdfs:label": "ServiceChannel"
+        }
+    ], 
+    "nameZh": "处理时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Duration", 
+            "_last": true, 
+            "rdfs:label": "Duration"
+        }
+    ], 
+    "rdfs:comment": "Estimated processing time for the service using this channel.", 
+    "rdfs:label": "processingTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,97 @@
+{
+    "@id": "http://cnschema.org/hasCourseInstance", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "No Microdata", 
+            "PRE-MARKUP": "\n\n\n\n  The Data Scientist's Toolbox\n  About this Course\n  In this course you will get an introduction to the main tools and ideas in the\n       data scientist's toolbox...\n  \n    Session dates\n    February 15 - \n    March 21                \n  \n\n", 
+            "RDFA": "\n\n\n\n  The Data Scientist's Toolbox\n  About this Course\n  \n       In this course you will get an introduction to the main tools and ideas in the\n       data scientist's toolbox...\n  \n    \n    \n    Session dates\n    February 15 - \n    March 21                \n  \n\n", 
+            "TYPES": [
+                "Course", 
+                "CourseInstance", 
+                "hasCourseInstance", 
+                "courseMode"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "No Microdata", 
+            "PRE-MARKUP": "\n\n\n  Course Details           \n  HNC Accounting\n    This course is designed for those wishing to take up \n       a career in Accounting and Financial Administration within a range of \n       organisations....\n  This course is currently offered on the date(s) and venue(s) listed below.\n    \n      \n        \n          Method of Study\n          Starts\n          Ends\n          Based at\n        \n        \n          Full-time\n          29 Aug 2016\n          23 Jun 2017\n          St Brycedale Campus Kirkcaldy\n        \n        \n          Full-time\n          29 Aug 2016\n          23 Jun 2017\n          Halbeath Campus Dunfermline\n        \n        \n          Evenings only and weekends\n          31 Aug 2016\n          21 Jun 2017\n          St Brycedale Campus Kirkcaldy\n        \n      \n      \n", 
+            "RDFA": "\n\n\n  Course Details           \n  HNC Accounting\n    This course is designed for those wishing to take up \n       a career in Accounting and Financial Administration within a range of \n       organisations....\n  This course is currently offered on the date(s) and venue(s) listed below.\n    \n      \n        \n          Method of Study\n          Starts\n          Ends\n          Based at\n        \n        \n          full-time\n          29 Aug 2016\n          23 Jun 2017\n          St Brycedale Campus Kirkcaldy\n        \n        \n          full-time\n          29 Aug 2016\n          23 Jun 2017\n          Halbeath Campus Dunfermline\n        \n        \n          \n              Evenings only and weekends\n          31 Aug 2016\n          21 Jun 2017\n          St Brycedale Campus Kirkcaldy\n        \n      \n      \n", 
+            "TYPES": [
+                "Course", 
+                "CourseInstance", 
+                "hasCourseInstance", 
+                "courseMode"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "No Microdata", 
+            "PRE-MARKUP": "\n\n\n\n  Basic Proofreading\n  The distance learning training course that takes you \n        from complete beginner to PQB qualified proofreader in one step.\n  \n    Online, cost: 拢395\n  \n  \n    Posted, cost:拢440\n  \t\n\n", 
+            "RDFA": "\n\n\n\n  Basic Proofreading\n  The distance learning training course that takes you \n        from complete beginner to PQB qualified proofreader in one step.\n  \n    \n    Online,\n    \n      cost:\n           拢395\n    \n  \n  \n    \n    Posted,\n    \n      cost:\n           拢440\n    \n  \t\n\n", 
+            "TYPES": [
+                "Course", 
+                "CourseInstance", 
+                "hasCourseInstance", 
+                "courseMode"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasCourseInstance", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasCourseInstance", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasCourseInstance"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍏蜂綋璇剧▼", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Course", 
+            "_last": true, 
+            "rdfs:label": "Course"
+        }
+    ], 
+    "nameZh": "璇剧▼瀹炰緥", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CourseInstance", 
+            "_last": true, 
+            "rdfs:label": "CourseInstance"
+        }
+    ], 
+    "rdfs:comment": "An offering of the course at a specific time and place or through specific media or mode of study or to a specific section of students.", 
+    "rdfs:label": "hasCourseInstance", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

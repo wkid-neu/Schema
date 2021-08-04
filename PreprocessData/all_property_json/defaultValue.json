@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/defaultValue", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "defaultValue", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/defaultValue", 
+                    "_lastone": true, 
+                    "rdfs:label": "defaultValue"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "输入的默认值。 对于期望文字的属性，默认值为文字值，对于期望对象的属性，它是对当前值之一的ID引用。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValueSpecification", 
+            "_last": true, 
+            "rdfs:label": "PropertyValueSpecification"
+        }
+    ], 
+    "nameZh": "缺省值", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "The default value of the input.  For properties that expect a literal, the default is a literal value, for properties that expect an object, it's an ID reference to one of the current values.", 
+    "rdfs:label": "defaultValue", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

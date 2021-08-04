@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/inPlaylist", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "inPlaylist", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/inPlaylist", 
+                    "_lastone": true, 
+                    "rdfs:label": "inPlaylist"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "音乐所属的播放列表", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRecording", 
+            "_last": true, 
+            "rdfs:label": "MusicRecording"
+        }
+    ], 
+    "nameZh": "所属播放列表", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicPlaylist", 
+            "_last": true, 
+            "rdfs:label": "MusicPlaylist"
+        }
+    ], 
+    "rdfs:comment": "The playlist to which this recording belongs.", 
+    "rdfs:label": "inPlaylist", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

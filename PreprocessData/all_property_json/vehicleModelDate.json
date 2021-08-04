@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/vehicleModelDate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "vehicleModelDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/vehicleModelDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "vehicleModelDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "车辆型号的发布日期（通常用于将相同版本和型号的车辆做区分）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "车辆型号发布日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "The release date of a vehicle model (often used to differentiate versions of the same make and model).", 
+    "rdfs:label": "vehicleModelDate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

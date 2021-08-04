@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/recipeCuisine", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recipeCuisine", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recipeCuisine", 
+                    "_lastone": true, 
+                    "rdfs:label": "recipeCuisine"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "菜谱的菜系，例如法国菜或中国菜。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Recipe", 
+            "_last": true, 
+            "rdfs:label": "Recipe"
+        }
+    ], 
+    "nameZh": "菜谱的菜系", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The cuisine of the recipe (for example, French or Ethiopian).", 
+    "rdfs:label": "recipeCuisine", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

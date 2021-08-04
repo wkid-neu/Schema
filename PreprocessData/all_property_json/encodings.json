@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/encodings", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "encodings", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/encodings", 
+                    "_lastone": true, 
+                    "rdfs:label": "encodings"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "对CreativeWork编码的媒体对象。(拼写的单数形式, encoding)", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "编码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "rdfs:comment": "A media object that encodes this CreativeWork.", 
+    "rdfs:label": "encodings", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/encoding", 
+        "rdfs:label": "encoding"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

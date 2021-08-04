@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/productID", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "productID", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/productID", 
+                    "_lastone": true, 
+                    "rdfs:label": "productID"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "浜у搧鏍囪瘑鐮侊紝渚嬪锛╋汲锛籍銆備緥瀛恗eta itemprop=\"productID\" content=\"isbn:123-456-789\"", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "_last": true, 
+            "rdfs:label": "Product"
+        }
+    ], 
+    "nameZh": "浜у搧ID", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The product identifier, such as ISBN. For example: meta itemprop=\"productID\" content=\"isbn:123-456-789\".", 
+    "rdfs:label": "productID", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

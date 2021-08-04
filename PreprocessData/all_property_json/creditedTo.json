@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/creditedTo", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "creditedTo", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/creditedTo", 
+                    "_lastone": true, 
+                    "rdfs:label": "creditedTo"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "一个作品除主要作者外的其他贡献者，例如 “Red and Blue”那首歌的贡献者是“Stefani Germanotta乐队”，但是主唱是Lady Gaga。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRelease", 
+            "_last": true, 
+            "rdfs:label": "MusicRelease"
+        }
+    ], 
+    "nameZh": "贡献者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The group the release is credited to if different than the byArtist. For example, Red and Blue is credited to \"Stefani Germanotta Band\", but by Lady Gaga.", 
+    "rdfs:label": "creditedTo", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Credit_(creative_arts)"
+}

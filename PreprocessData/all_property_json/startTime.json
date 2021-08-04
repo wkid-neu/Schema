@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/startTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "startTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/startTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "startTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "某事的预期开始时间。对于跨越一段时间的动作。例如，约翰从１月到１２月写了一本书。注意：事件使用startDate / endDate而不是startTime / endTime，即使用时间描述日期。 今后的修订可能会澄清这种情况。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "rdfs:label": "Action"
+        }, 
+        {
+            "@id": "http://cnschema.org/FoodEstablishmentReservation", 
+            "_last": true, 
+            "rdfs:label": "FoodEstablishmentReservation"
+        }
+    ], 
+    "nameZh": "开始时刻", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The startTime of something. For a reserved event or service (e.g. FoodEstablishmentReservation), the time that it is expected to start. For actions that span a period of time, when the action was performed. e.g. John wrote a book from January to December.\n\nNote that Event uses startDate/endDate instead of startTime/endTime, even when describing dates with times. This situation may be clarified in future revisions.", 
+    "rdfs:label": "startTime", 
+    "wikidataName": "start time", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P580", 
+    "wikipediaUrl": ""
+}

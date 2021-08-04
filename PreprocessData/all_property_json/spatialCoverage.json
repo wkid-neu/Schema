@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/spatialCoverage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "spatialCoverage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/contentLocation", 
+                    "rdfs:label": "contentLocation"
+                }, 
+                {
+                    "@id": "http://cnschema.org/spatialCoverage", 
+                    "_lastone": true, 
+                    "rdfs:label": "spatialCoverage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/contentLocation", 
+            "_last": true, 
+            "rdfs:label": "contentLocation"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/spatial", 
+        "rdfs:label": "spatial"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "表示内容集中在什么地方。 它是内容位置的一个子属性，主要用于更多的技术性的、详细的材料。 例如使用数据集时，它表示数据集描述的区域：纽约天气的数据集。那么数据集对应的地区便是纽约州。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "数据集对应的地区", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The spatialCoverage of a CreativeWork indicates the place(s) which are the focus of the content. It is a subproperty of\n      contentLocation intended primarily for more technical and detailed materials. For example with a Dataset, it indicates\n      areas that the dataset describes: a dataset of New York weather would have spatialCoverage which was the place: the state of New York.", 
+    "rdfs:label": "spatialCoverage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

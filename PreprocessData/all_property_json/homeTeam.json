@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/homeTeam", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "homeTeam", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/competitor", 
+                    "rdfs:label": "competitor"
+                }, 
+                {
+                    "@id": "http://cnschema.org/homeTeam", 
+                    "_lastone": true, 
+                    "rdfs:label": "homeTeam"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/competitor", 
+            "_last": true, 
+            "rdfs:label": "competitor"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "浣撹偛杩愬姩涓殑涓婚槦", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SportsEvent", 
+            "_last": true, 
+            "rdfs:label": "SportsEvent"
+        }
+    ], 
+    "nameZh": "涓婚槦", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/SportsTeam", 
+            "_last": true, 
+            "rdfs:label": "SportsTeam"
+        }
+    ], 
+    "rdfs:comment": "The home team in a sports event.", 
+    "rdfs:label": "homeTeam", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

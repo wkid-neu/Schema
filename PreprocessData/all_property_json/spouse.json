@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/spouse", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "spouse", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/spouse", 
+                    "_lastone": true, 
+                    "rdfs:label": "spouse"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "此人的妻子，或者丈夫", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "配偶", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "The person's spouse.", 
+    "rdfs:label": "spouse", 
+    "wikidataName": "spouse", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P26", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Spouse"
+}

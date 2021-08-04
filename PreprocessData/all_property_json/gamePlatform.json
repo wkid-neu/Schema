@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/gamePlatform", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gamePlatform", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gamePlatform", 
+                    "_lastone": true, 
+                    "rdfs:label": "gamePlatform"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "用于玩电子游戏的电子系统。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "rdfs:label": "VideoGame"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "_last": true, 
+            "rdfs:label": "VideoGameSeries"
+        }
+    ], 
+    "nameZh": "游戏平台", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "rdfs:label": "Thing"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The electronic systems used to play video games.", 
+    "rdfs:label": "gamePlatform", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

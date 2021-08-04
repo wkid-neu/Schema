@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/checkinTime", 
+    "_examples": [
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Check-in: 2:00 PM\n  Check-out: 11:00 AM\n", 
+            "PRE-MARKUP": "This example is in microdata only.", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "checkinTime", 
+                "checkoutTime"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "checkinTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/checkinTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "checkinTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "酒店的最早入住时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LodgingReservation", 
+            "rdfs:label": "LodgingReservation"
+        }, 
+        {
+            "@id": "http://cnschema.org/LodgingBusiness", 
+            "_last": true, 
+            "rdfs:label": "LodgingBusiness"
+        }
+    ], 
+    "nameZh": "入住时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The earliest someone may check into a lodging establishment.", 
+    "rdfs:label": "checkinTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/remainingAttendeeCapacity", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "remainingAttendeeCapacity", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/remainingAttendeeCapacity", 
+                    "_lastone": true, 
+                    "rdfs:label": "remainingAttendeeCapacity"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "活动还可以容纳的参与者人数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "剩余可容纳的参与人数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of attendee places for an event that remain unallocated.", 
+    "rdfs:label": "remainingAttendeeCapacity", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

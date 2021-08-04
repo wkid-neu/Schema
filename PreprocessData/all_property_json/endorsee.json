@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/endorsee", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "endorsee", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/endorsee", 
+                    "_lastone": true, 
+                    "rdfs:label": "endorsee"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/participant", 
+            "_last": true, 
+            "rdfs:label": "participant"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "参与者的子属性。 被支持的人/组织。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EndorseAction", 
+            "_last": true, 
+            "rdfs:label": "EndorseAction"
+        }
+    ], 
+    "nameZh": "背书支持", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "A sub property of participant. The person/organization being supported.", 
+    "rdfs:label": "endorsee", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/dataFeedElement", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dataFeedElement", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dataFeedElement", 
+                    "_lastone": true, 
+                    "rdfs:label": "dataFeedElement"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "数据源通常发布多条数据，其中的数据用此属性标记", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DataFeed", 
+            "_last": true, 
+            "rdfs:label": "DataFeed"
+        }
+    ], 
+    "nameZh": "数据源的一条记录", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/DataFeedItem", 
+            "rdfs:label": "DataFeedItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "An item within in a data feed. Data feeds may have many elements.", 
+    "rdfs:label": "dataFeedElement", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

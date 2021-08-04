@@ -1,0 +1,99 @@
+{
+    "@id": "http://cnschema.org/audience", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "TYPES": [
+                "learningResourceType", 
+                "educationalAlignment", 
+                "AlignmentObject", 
+                "educationalFramework", 
+                "alignmentType", 
+                "targetName", 
+                "targetUrl", 
+                "audience", 
+                "EducationalAudience", 
+                "educationalRole"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "audience", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/audience", 
+                    "_lastone": true, 
+                    "rdfs:label": "audience"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/serviceAudience", 
+        "rdfs:label": "serviceAudience"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该作品所面向的观众，也就是该作品为哪些群体创作。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Service", 
+            "rdfs:label": "Service"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/PlayAction", 
+            "rdfs:label": "PlayAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/LodgingBusiness", 
+            "_last": true, 
+            "rdfs:label": "LodgingBusiness"
+        }
+    ], 
+    "nameZh": "受众", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "_last": true, 
+            "rdfs:label": "Audience"
+        }
+    ], 
+    "rdfs:comment": "An intended audience, i.e. a group for whom something was created.", 
+    "rdfs:label": "audience", 
+    "wikidataName": "intended public", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2360", 
+    "wikipediaUrl": ""
+}

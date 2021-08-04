@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/geographicArea", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "geographicArea", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/geographicArea", 
+                    "_lastone": true, 
+                    "rdfs:label": "geographicArea"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "受众群所在地理区域", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "_last": true, 
+            "rdfs:label": "Audience"
+        }
+    ], 
+    "nameZh": "受众群所在地理区域", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/AdministrativeArea", 
+            "_last": true, 
+            "rdfs:label": "AdministrativeArea"
+        }
+    ], 
+    "rdfs:comment": "The geographic area associated with the audience.", 
+    "rdfs:label": "geographicArea", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

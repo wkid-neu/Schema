@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/messageAttachment", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "messageAttachment", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/messageAttachment", 
+                    "_lastone": true, 
+                    "rdfs:label": "messageAttachment"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "娑堟伅鐨凜reateWork绫诲瀷闄勪欢", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Message", 
+            "_last": true, 
+            "rdfs:label": "Message"
+        }
+    ], 
+    "nameZh": "娑堟伅闄勪欢", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "A CreativeWork attached to the message.", 
+    "rdfs:label": "messageAttachment", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

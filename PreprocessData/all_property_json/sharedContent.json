@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/sharedContent", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Leaked new BMW 2 series (m235i)\n  Date posted: March 4, 2014 \n  Author:\n    \n      \n        Ryan Sammy\n    \n  \n  \n      \n        \n          Leaked new BMW 2 series (m235i) ahead of oct 25 reveal\n      \n      Author: \n        \n          threal135i\n        \n      \n  \n", 
+            "PRE-MARKUP": "Leaked new BMW 2 series (m235i)\nDate posted: March 4, 2014\nAuthor: Ryan Sammy\n\n   \n     Leaked new BMW 2 series (m235i) ahead of oct 25 reveal\n\nAuthor: threal135i", 
+            "RDFA": "\n  Leaked new BMW 2 series (m235i)\n  Date posted: March 4, 2014 \n  Author:\n    \n      \n        Ryan Sammy\n    \n  \n  \n      \n        \n          Leaked new BMW 2 series (m235i) ahead of oct 25 reveal\n      \n      Author: \n        \n          threal135i\n        \n      \n  \n", 
+            "TYPES": [
+                "SocialMediaPosting", 
+                "sharedContent"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-social-media-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "sharedContent", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/sharedContent", 
+                    "_lastone": true, 
+                    "rdfs:label": "sharedContent"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "以发布的形式共享的作品，例如：图形，视频，音频剪辑", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SocialMediaPosting", 
+            "_last": true, 
+            "rdfs:label": "SocialMediaPosting"
+        }
+    ], 
+    "nameZh": "分享的内容", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "A CreativeWork such as an image, video, or audio clip shared as part of this posting.", 
+    "rdfs:label": "sharedContent", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/educationalRole", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "TYPES": [
+                "learningResourceType", 
+                "educationalAlignment", 
+                "AlignmentObject", 
+                "educationalFramework", 
+                "alignmentType", 
+                "targetName", 
+                "targetUrl", 
+                "audience", 
+                "EducationalAudience", 
+                "educationalRole"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "educationalRole", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/educationalRole", 
+                    "_lastone": true, 
+                    "rdfs:label": "educationalRole"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "受教育观众在教育活动中所处的角色。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EducationalAudience", 
+            "_last": true, 
+            "rdfs:label": "EducationalAudience"
+        }
+    ], 
+    "nameZh": "教育活动中的角色", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "An educationalRole of an EducationalAudience.", 
+    "rdfs:label": "educationalRole", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

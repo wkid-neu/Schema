@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/learningResourceType", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "TYPES": [
+                "learningResourceType", 
+                "educationalAlignment", 
+                "AlignmentObject", 
+                "educationalFramework", 
+                "alignmentType", 
+                "targetName", 
+                "targetUrl", 
+                "audience", 
+                "EducationalAudience", 
+                "educationalRole"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "learningResourceType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/learningResourceType", 
+                    "_lastone": true, 
+                    "rdfs:label": "learningResourceType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "表示学习资料类型或种类。包括演示，讲义等", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "学习资料类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The predominant type or kind characterizing the learning resource. For example, 'presentation', 'handout'.", 
+    "rdfs:label": "learningResourceType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

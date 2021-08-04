@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/surface", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "surface", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/material", 
+                    "rdfs:label": "material"
+                }, 
+                {
+                    "@id": "http://cnschema.org/surface", 
+                    "_lastone": true, 
+                    "rdfs:label": "surface"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/material", 
+            "_last": true, 
+            "rdfs:label": "material"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鑹烘湳鍝佸熀璐ㄦ潗鏂欙紝渚嬪甯嗗竷锛岀焊锛屾湪澶达紝鏈ㄦ澘", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VisualArtwork", 
+            "_last": true, 
+            "rdfs:label": "VisualArtwork"
+        }
+    ], 
+    "nameZh": "浣滃搧鏉愯川", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc.", 
+    "rdfs:label": "surface", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/artworkSurface", 
+        "rdfs:label": "artworkSurface"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

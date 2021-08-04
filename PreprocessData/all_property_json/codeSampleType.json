@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/codeSampleType", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "codeSampleType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/codeSampleType", 
+                    "_lastone": true, 
+                    "rdfs:label": "codeSampleType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/sampleType", 
+        "rdfs:label": "sampleType"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "什么类型的代码示例：完整的解决方案，代码片段，内联代码，脚本，模板", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareSourceCode", 
+            "_last": true, 
+            "rdfs:label": "SoftwareSourceCode"
+        }
+    ], 
+    "nameZh": "代码示例的类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template.", 
+    "rdfs:label": "codeSampleType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

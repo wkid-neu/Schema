@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/supportingData", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "Example is JSON-LD only.", 
+            "PRE-MARKUP": "The e-reader comes installed with Anna Karenina, Pride and Prejudice, and My Bondage and My Freedom", 
+            "RDFA": "Example is JSON-LD only.", 
+            "TYPES": [
+                "MobileApplication", 
+                "DataFeed", 
+                "supportingData"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-datafeed-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "supportingData", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/supportingData", 
+                    "_lastone": true, 
+                    "rdfs:label": "supportingData"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "例如杀毒软件所需要的病毒数据库", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "软件应用所需的数据", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DataFeed", 
+            "_last": true, 
+            "rdfs:label": "DataFeed"
+        }
+    ], 
+    "rdfs:comment": "Supporting data for a SoftwareApplication.", 
+    "rdfs:label": "supportingData", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

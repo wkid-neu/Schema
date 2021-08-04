@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/inBroadcastLineup", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "inBroadcastLineup", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/inBroadcastLineup", 
+                    "_lastone": true, 
+                    "rdfs:label": "inBroadcastLineup"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "提供该频道的有线或者卫星服务", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastChannel", 
+            "_last": true, 
+            "rdfs:label": "BroadcastChannel"
+        }
+    ], 
+    "nameZh": "提供该频道的有线或者卫星服务", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CableOrSatelliteService", 
+            "_last": true, 
+            "rdfs:label": "CableOrSatelliteService"
+        }
+    ], 
+    "rdfs:comment": "The CableOrSatelliteService offering the channel.", 
+    "rdfs:label": "inBroadcastLineup", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

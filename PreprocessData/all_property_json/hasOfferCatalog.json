@@ -1,0 +1,78 @@
+{
+    "@id": "http://cnschema.org/hasOfferCatalog", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n  \n    ACME Home Cleaning\n  \n  offers a variety of services in\n  \n    Massachusetts, including\n  \n  \n    \n      House cleaning\n      \n        \n          \n            Apartment light cleaning\n          \n        \n        \n          \n            House light cleaning up to 2 bedrooms\n          \n        \n        \n          \n            House light cleaning 3+ bedrooms\n          \n        \n      \n    \n      One-time services\n      \n        \n          \n            Window washing\n          \n        \n        \n          \n            Carpet deep cleaning\n          \n        \n        \n          \n            Move in/out cleaning\n          \n        \n      \n    \n  \n", 
+            "PRE-MARKUP": "ACME Home Cleaning offers a variety of services in Massachusetts, including:\n\n  House cleaning\n  \n    Apartment light cleaning\n    House light cleaning up to 2 bedrooms\n    House light cleaning 3+ bedrooms\n  \n  One-time services\n  \n    Window washing\n    Carpet deep cleaning\n    Move in/out cleaning\n  \n", 
+            "RDFA": "\n  \n  \n    ACME Home Cleaning\n  \n  offers a variety of services in\n  \n    Massachusetts, including\n  \n  \n    \n      House cleaning\n      \n        \n          \n            Apartment light cleaning\n          \n        \n        \n          \n            House light cleaning up to 2 bedrooms\n          \n        \n        \n          \n            House light cleaning 3+ bedrooms\n          \n        \n      \n    \n      One-time services\n      \n        \n          \n            Window washing\n          \n        \n        \n          \n            Carpet deep cleaning\n          \n        \n        \n          \n            Move in/out cleaning\n          \n        \n      \n    \n  \n", 
+            "TYPES": [
+                "Offer", 
+                "OfferCatalog", 
+                "Service", 
+                "LocalBusiness", 
+                "hasOfferCatalog"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasOfferCatalog", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasOfferCatalog", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasOfferCatalog"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "为组织、个人或服务提供的清单列表", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Service", 
+            "rdfs:label": "Service"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "清单", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/OfferCatalog", 
+            "_last": true, 
+            "rdfs:label": "OfferCatalog"
+        }
+    ], 
+    "rdfs:comment": "Indicates an OfferCatalog listing for this Organization, Person, or Service.", 
+    "rdfs:label": "hasOfferCatalog", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

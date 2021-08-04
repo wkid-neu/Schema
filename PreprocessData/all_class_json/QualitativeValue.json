@@ -1,0 +1,2118 @@
+{
+    "@id": "http://cnschema.org/QualitativeValue", 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "QualitativeValue", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/equal", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数值之间的排序关系，表示主语等于谓语。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "nameZh": "等于", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is equal to the object.", 
+            "rdfs:label": "equal", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/fuelType", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "适用于发动机或发动机的燃料类型。 如果车辆只有一个发动机，该属性可以直接连接到车辆。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/EngineSpecification", 
+                    "rdfs:label": "EngineSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Vehicle", 
+                    "_last": true, 
+                    "rdfs:label": "Vehicle"
+                }
+            ], 
+            "nameZh": "燃料类型", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/URL", 
+                    "rdfs:label": "URL"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "rdfs:label": "QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "_last": true, 
+                    "rdfs:label": "Text"
+                }
+            ], 
+            "rdfs:comment": "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.", 
+            "rdfs:label": "fuelType", 
+            "wikidataName": "source of energy", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P618", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/greater", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的大于", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "nameZh": "大于", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than the object.", 
+            "rdfs:label": "greater", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/greaterOrEqual", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的大于等于", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "nameZh": "大于等于", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.", 
+            "rdfs:label": "greaterOrEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/lesser", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的小于", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "nameZh": "小于", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than the object.", 
+            "rdfs:label": "lesser", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/lesserOrEqual", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的小于等于", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "nameZh": "小于等于", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.", 
+            "rdfs:label": "lesserOrEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/lodgingUnitType", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "旅馆房间房型的描述", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/LodgingReservation", 
+                    "_last": true, 
+                    "rdfs:label": "LodgingReservation"
+                }
+            ], 
+            "nameZh": "旅馆房间房型", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "rdfs:label": "QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "_last": true, 
+                    "rdfs:label": "Text"
+                }
+            ], 
+            "rdfs:comment": "Textual description of the unit type (including suite vs. room, size of bed, etc.).", 
+            "rdfs:label": "lodgingUnitType", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/nonEqual", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "定性值的序关系：表示主语不等于宾语", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "nameZh": "不等于", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is not equal to the object.", 
+            "rdfs:label": "nonEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/passengerPriorityStatus", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "分配给乘客的安全或登机的优先级状态，例如FastTrack或Priority", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/FlightReservation", 
+                    "_last": true, 
+                    "rdfs:label": "FlightReservation"
+                }
+            ], 
+            "nameZh": "乘客优先级状态", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "rdfs:label": "Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).", 
+            "rdfs:label": "passengerPriorityStatus", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/seatingType", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "座位的类型", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Seat", 
+                    "_last": true, 
+                    "rdfs:label": "Seat"
+                }
+            ], 
+            "nameZh": "座位类型", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "rdfs:label": "QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "_last": true, 
+                    "rdfs:label": "Text"
+                }
+            ], 
+            "rdfs:comment": "The type/class of the seat.", 
+            "rdfs:label": "seatingType", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/valueReference", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "指向提供关于原始值的附加信息，例如： 参考温度。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "rdfs:label": "QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue", 
+                    "rdfs:label": "PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QuantitativeValue"
+                }
+            ], 
+            "nameZh": "参考值", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Enumeration", 
+                    "rdfs:label": "Enumeration"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue", 
+                    "rdfs:label": "QuantitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue", 
+                    "rdfs:label": "PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/StructuredValue", 
+                    "rdfs:label": "StructuredValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_last": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ], 
+            "rdfs:comment": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.", 
+            "rdfs:label": "valueReference", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/vehicleTransmission", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "用于将动力从旋转动力源传递到车轮或其他相关部件（“汽车的变速箱”）的组件类型", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Vehicle", 
+                    "_last": true, 
+                    "rdfs:label": "Vehicle"
+                }
+            ], 
+            "nameZh": "车辆传动装置", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/URL", 
+                    "rdfs:label": "URL"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "rdfs:label": "QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "_last": true, 
+                    "rdfs:label": "Text"
+                }
+            ], 
+            "rdfs:comment": "The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) (\"gearbox\" for cars).", 
+            "rdfs:label": "vehicleTransmission", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalProperty", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                            "PRE-MARKUP": "Beach in Mexico\n\nBy Jane Doe\nPhotographed in Puerto Vallarta, Mexico\nDate uploaded: Jan 25, 2008\nI took this picture while on vacation last year.\n", 
+                            "RDFA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                            "TYPES": [
+                                "ImageObject", 
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-lD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450g\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 5, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n\n      ft.\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n      ft.\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 6, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 7, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      USB interface:\n      Yes\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      USB interface: Yes\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 8, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interface:\n      USB\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interface: USB\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 9, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 10, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 11, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:\n      Yes\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:Yes\n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 12, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 13, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 14, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }, 
+                        {
+                            "JSON": "No JSON-LD", 
+                            "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode:\n        Yes\n      \n  \n", 
+                            "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode: Yes\n      \n  \n", 
+                            "RDFA": "No RDFa", 
+                            "TYPES": [
+                                "PropertyValue", 
+                                "additionalProperty"
+                            ], 
+                            "_index": 15, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示实体附加特征的属性值对（例如cnschema.org中没有匹配属性的产品功能或其他特性）", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "rdfs:label": "QualitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "rdfs:label": "QuantitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "附加属性", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "_last": true, 
+                            "rdfs:label": "PropertyValue"
+                        }
+                    ], 
+                    "rdfs:comment": "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in cnschema.org.\n\nNote: Publishers should be aware that applications designed to use specific cnschema.org properties (e.g. http://cnschema.org/width, http://cnschema.org/color, http://cnschema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.", 
+                    "rdfs:label": "additionalProperty", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/equal", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "数值之间的排序关系，表示主语等于谓语。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "nameZh": "等于", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is equal to the object.", 
+                    "rdfs:label": "equal", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/greater", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "数学中的大于", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "nameZh": "大于", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than the object.", 
+                    "rdfs:label": "greater", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/greaterOrEqual", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "数学中的大于等于", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "nameZh": "大于等于", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.", 
+                    "rdfs:label": "greaterOrEqual", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/lesser", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "数学中的小于", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "nameZh": "小于", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than the object.", 
+                    "rdfs:label": "lesser", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/lesserOrEqual", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "数学中的小于等于", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "nameZh": "小于等于", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.", 
+                    "rdfs:label": "lesserOrEqual", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/nonEqual", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "定性值的序关系：表示主语不等于宾语", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "nameZh": "不等于", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is not equal to the object.", 
+                    "rdfs:label": "nonEqual", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/valueReference", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "指向提供关于原始值的附加信息，例如： 参考温度。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "rdfs:label": "QualitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "nameZh": "参考值", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Enumeration", 
+                            "rdfs:label": "Enumeration"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "rdfs:label": "QuantitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/StructuredValue", 
+                            "rdfs:label": "StructuredValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QualitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QualitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.", 
+                    "rdfs:label": "valueReference", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "定性地描述一个物品的属性，比如衣服的尺寸有S，M，L和XL等等。", 
+            "nameZh": "定性值", 
+            "rdfs:comment": "A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.", 
+            "rdfs:label": "QualitativeValue", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Enumeration", 
+                    "rdfs:label": "Enumeration"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue", 
+                    "_lastone": true, 
+                    "rdfs:label": "QualitativeValue"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This class is derived from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web that can be expressed in a variety of syntaxes, including RDFa and HTML5 Microdata. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/SteeringPositionValue", 
+            "rdfs:label": "SteeringPositionValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/DriveWheelConfigurationValue", 
+            "_last": true, 
+            "rdfs:label": "DriveWheelConfigurationValue"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/Enumeration", 
+            "_last": true, 
+            "rdfs:label": "Enumeration"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "定性地描述一个物品的属性，比如衣服的尺寸有S，M，L和XL等等。", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/additionalProperty", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                    "PRE-MARKUP": "Beach in Mexico\n\nBy Jane Doe\nPhotographed in Puerto Vallarta, Mexico\nDate uploaded: Jan 25, 2008\nI took this picture while on vacation last year.\n", 
+                    "RDFA": "\n  Beach in Mexico\n  \n  By Jane Doe\n  Photographed in\n    Puerto Vallarta, Mexico\n  Date uploaded:\n    Jan 25, 2008\n  I took this picture while on vacation last year.\n\n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n  \n      \n      \n  \n", 
+                    "TYPES": [
+                        "ImageObject", 
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      gram\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-lD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 3, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450\n      g\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Approx. Weight\n      450g\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 4, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 5, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n\n      ft.\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Wifi range: up to\n      30\n      ft.\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 6, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating voltage:\n      9-12 or\n      100-250\n      volts\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 7, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      USB interface:\n      Yes\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      USB interface: Yes\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 8, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interface:\n      USB\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interface: USB\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 9, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Interfaces:\n      USB,\n      Ethernet\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 10, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n      \n  \n", 
+                    "PRE-MARKUP": "\n\n\n  \n  Station Waggon 123\n  \n      Luggage Capacity (seats folded):\n      500\n      liter\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 11, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:\n      Yes\n      \n  \n", 
+                    "PRE-MARKUP": "\n\n\n  \n  Digital Camera 123\n  \n      USB Interface:Yes\n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 12, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Operating Voltage\n      100-\n      250\n      volts\n      at\n      \n         50\n         Hz\n      \n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 13, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Station Waggon 123\n  \n      Fuel consumption:\n      5\n      liter /\n      \n        100\n        km\n      \n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 14, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }, 
+                {
+                    "JSON": "No JSON-LD", 
+                    "MICRODATA": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode:\n        Yes\n      \n  \n", 
+                    "PRE-MARKUP": "\n\n  \n  Digital Camera 123\n  \n      Focus/Autofocus\n      \n        Picture Control\n        Landscape\n        Monochrome\n        Portrait\n      \n      \n        Single-point AF Mode: Yes\n      \n  \n", 
+                    "RDFA": "No RDFa", 
+                    "TYPES": [
+                        "PropertyValue", 
+                        "additionalProperty"
+                    ], 
+                    "_index": 15, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-property-value-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "表示实体附加特征的属性值对（例如cnschema.org中没有匹配属性的产品功能或其他特性）", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Product"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/PropertyValue"
+            }, 
+            "nameZh": "附加属性", 
+            "rdfs:comment": "A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no matching property in cnschema.org.\n\nNote: Publishers should be aware that applications designed to use specific cnschema.org properties (e.g. http://cnschema.org/width, http://cnschema.org/color, http://cnschema.org/gtin13, ...) will typically expect such data to be provided using those properties, rather than using the generic property/value mechanism.", 
+            "rdfs:label": "additionalProperty", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/equal", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数值之间的排序关系，表示主语等于谓语。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is equal to the object.", 
+            "rdfs:label": "equal", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/greater", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的大于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "大于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than the object.", 
+            "rdfs:label": "greater", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/greaterOrEqual", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的大于等于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "大于等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.", 
+            "rdfs:label": "greaterOrEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/lesser", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的小于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "小于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than the object.", 
+            "rdfs:label": "lesser", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/lesserOrEqual", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的小于等于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "小于等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.", 
+            "rdfs:label": "lesserOrEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/nonEqual", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "定性值的序关系：表示主语不等于宾语", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "不等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is not equal to the object.", 
+            "rdfs:label": "nonEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/valueReference", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "指向提供关于原始值的附加信息，例如： 参考温度。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Enumeration"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/StructuredValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }
+            ], 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "参考值", 
+            "rdfs:comment": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.", 
+            "rdfs:label": "valueReference", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/equal", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数值之间的排序关系，表示主语等于谓语。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is equal to the object.", 
+            "rdfs:label": "equal", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/fuelType", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "适用于发动机或发动机的燃料类型。 如果车辆只有一个发动机，该属性可以直接连接到车辆。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/EngineSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Vehicle"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/URL"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group"
+            }, 
+            "nameZh": "燃料类型", 
+            "rdfs:comment": "The type of fuel suitable for the engine or engines of the vehicle. If the vehicle has only one engine, this property can be attached directly to the vehicle.", 
+            "rdfs:label": "fuelType", 
+            "wikidataName": "source of energy", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P618", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/greater", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的大于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "大于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than the object.", 
+            "rdfs:label": "greater", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/greaterOrEqual", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的大于等于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "大于等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is greater than or equal to the object.", 
+            "rdfs:label": "greaterOrEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/lesser", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的小于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "小于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than the object.", 
+            "rdfs:label": "lesser", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/lesserOrEqual", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "数学中的小于等于", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "小于等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is lesser than or equal to the object.", 
+            "rdfs:label": "lesserOrEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/lodgingUnitType", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "旅馆房间房型的描述", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/LodgingReservation"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "nameZh": "旅馆房间房型", 
+            "rdfs:comment": "Textual description of the unit type (including suite vs. room, size of bed, etc.).", 
+            "rdfs:label": "lodgingUnitType", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/nonEqual", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "定性值的序关系：表示主语不等于宾语", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QualitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "不等于", 
+            "rdfs:comment": "This ordering relation for qualitative values indicates that the subject is not equal to the object.", 
+            "rdfs:label": "nonEqual", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/passengerPriorityStatus", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "分配给乘客的安全或登机的优先级状态，例如FastTrack或Priority", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/FlightReservation"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }
+            ], 
+            "nameZh": "乘客优先级状态", 
+            "rdfs:comment": "The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).", 
+            "rdfs:label": "passengerPriorityStatus", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/seatingType", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "座位的类型", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Seat"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "nameZh": "座位类型", 
+            "rdfs:comment": "The type/class of the seat.", 
+            "rdfs:label": "seatingType", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/valueReference", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "指向提供关于原始值的附加信息，例如： 参考温度。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Enumeration"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/StructuredValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }
+            ], 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "参考值", 
+            "rdfs:comment": "A pointer to a secondary value that provides additional information on the original value, e.g. a reference temperature.", 
+            "rdfs:label": "valueReference", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/vehicleTransmission", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "用于将动力从旋转动力源传递到车轮或其他相关部件（“汽车的变速箱”）的组件类型", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Vehicle"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/URL"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QualitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group"
+            }, 
+            "nameZh": "车辆传动装置", 
+            "rdfs:comment": "The type of component used for transmitting the power from a rotating power source to the wheels or other relevant component(s) (\"gearbox\" for cars).", 
+            "rdfs:label": "vehicleTransmission", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "定性值", 
+    "rdfs:comment": "A predefined value for a product characteristic, e.g. the power cord plug type 'US' or the garment sizes 'S', 'M', 'L', and 'XL'.", 
+    "rdfs:label": "QualitativeValue", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

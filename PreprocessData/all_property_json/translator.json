@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/translator", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "translator", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/translator", 
+                    "_lastone": true, 
+                    "rdfs:label": "translator"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "将作品翻译成其他语言的组织或者个人", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "翻译者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "Organization or person who adapts a creative work to different languages, regional differences and technical requirements of a target market, or that translates during some event.", 
+    "rdfs:label": "translator", 
+    "wikidataName": "translator", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P655", 
+    "wikipediaUrl": ""
+}

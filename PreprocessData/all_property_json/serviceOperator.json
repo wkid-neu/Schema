@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/serviceOperator", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "serviceOperator", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/serviceOperator", 
+                    "_lastone": true, 
+                    "rdfs:label": "serviceOperator"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "涓嶅悓浜庢彁渚涘晢锛坧rovider锛夋彁渚涙湇鍔★紝杩愯惀鍟嗭紙渚嬪鍒嗗寘鍟嗭級杩愯惀鏈嶅姟", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GovernmentService", 
+            "_last": true, 
+            "rdfs:label": "GovernmentService"
+        }
+    ], 
+    "nameZh": "鏈嶅姟鐨勮繍钀ュ晢", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The operating organization, if different from the provider.  This enables the representation of services that are provided by an organization, but operated by another organization like a subcontractor.", 
+    "rdfs:label": "serviceOperator", 
+    "wikidataName": "operator", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P137", 
+    "wikipediaUrl": ""
+}

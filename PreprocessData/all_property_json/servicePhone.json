@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/servicePhone", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "servicePhone", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/servicePhone", 
+                    "_lastone": true, 
+                    "rdfs:label": "servicePhone"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "用来接通服务的电话号码", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ServiceChannel", 
+            "_last": true, 
+            "rdfs:label": "ServiceChannel"
+        }
+    ], 
+    "nameZh": "服务电话", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "_last": true, 
+            "rdfs:label": "ContactPoint"
+        }
+    ], 
+    "rdfs:comment": "The phone number to use to access the service.", 
+    "rdfs:label": "servicePhone", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

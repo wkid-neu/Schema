@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/targetDescription", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "targetDescription", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/targetDescription", 
+                    "_lastone": true, 
+                    "rdfs:label": "targetDescription"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鐩爣鐭ヨ瘑鐐圭殑鎻忚堪", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/AlignmentObject", 
+            "_last": true, 
+            "rdfs:label": "AlignmentObject"
+        }
+    ], 
+    "nameZh": "鐩爣鐭ヨ瘑鐐圭殑鎻忚堪", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The description of a node in an established educational framework.", 
+    "rdfs:label": "targetDescription", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

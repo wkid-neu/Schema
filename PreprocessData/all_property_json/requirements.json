@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/requirements", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "requirements", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/requirements", 
+                    "_lastone": true, 
+                    "rdfs:label": "requirements"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "应用程序的组件依赖性要求。 这包括运行环境和未包含在应用程序分发程序包中但是运行应用程序却需要的共享库或软件包（示例：DirectX，Java或.NET运行虚拟环境，JAVA程序的依赖JAR包）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "运行要求", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Component dependency requirements for application. This includes runtime environments and shared libraries that are not included in the application distribution package, but required to run the application (Examples: DirectX, Java or .NET runtime).", 
+    "rdfs:label": "requirements", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/softwareRequirements", 
+        "rdfs:label": "softwareRequirements"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

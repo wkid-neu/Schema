@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/episodes", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "episodes", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/episodes", 
+                    "_lastone": true, 
+                    "rdfs:label": "episodes"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "电视剧或其某一季的剧集。(拼写的单数形式, episode)", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RadioSeries", 
+            "rdfs:label": "RadioSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "rdfs:label": "CreativeWorkSeason"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "_last": true, 
+            "rdfs:label": "TVSeries"
+        }
+    ], 
+    "nameZh": "剧集", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "_last": true, 
+            "rdfs:label": "Episode"
+        }
+    ], 
+    "rdfs:comment": "An episode of a TV/radio series or season.", 
+    "rdfs:label": "episodes", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/episode", 
+        "rdfs:label": "episode"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

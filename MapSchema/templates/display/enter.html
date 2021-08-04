@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/address.css' %}">
+
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=2.0&ak=h40MTWwwSpgwCUEw8MbIiBnc3X4keNgX"></script>
+    <script type="text/javascript" src="{% static 'js/3.1.1/layer.js' %}"></script>
+{% endblock %}
+{% block title %}主页{% endblock %}
+{% block content %}
+    <div id="allmap"></div>
+    <p>。。。。。</p>
+<input type="button" value="保存设置" οnclick="javascrtpt:window.location.href='/map/enter/'">
+
+    <script type="text/javascript">
+    // 百度地图API功能
+
+       // 百度地图API功能
+    var marker;
+    var time = 0;
+    var bjh = $("input[name='bjh']").val();
+    var sx = $("input[name='sx']").val();
+    var sqr = $("input[name='sqr']").val();
+    var pointX;
+    var pointY;
+
+    var map = new BMap.Map("allmap"); // 创建Map实例
+    map.centerAndZoom(new BMap.Point(123.471095,41.68383), 17); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
+
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes : [ BMAP_NORMAL_MAP, BMAP_HYBRID_MAP ]
+    }));
+    map.setCurrentCity("沈阳"); // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+    //点击地图并在此添加标记
+    map.addEventListener("click", function(e) {//鼠标单击地图触发
+        if (time >= 1) {
+            return;
+        } else {
+            popLayer(e);
+        }
+
+    });
+
+function popLayer(e) {
+    console.log(e.point.lng,e.point.lat)
+    layer.open({
+    type: 2,
+    title: '编辑标注信息',
+    closeBtn: 1,
+    area: ['700px', '550px'],
+    shadeClose: true, //点击遮罩关闭
+    content: '/map/form/',
+    end:function(){
+            var handle_status = $("#handle_status").val();
+            if ( handle_status == '1' ) {
+                layer.msg('保存成功！',{
+                    icon: 1,
+                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                },function(){
+                    history.go(0);
+                });
+            } else if ( handle_status == '2' ) {
+                layer.msg('修改失败！',{
+                    icon: 2,
+                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
+                },function(){
+                    history.go(0);
+                });
+            }
+        }
+  });
+
+    }
+
+</script>
+{% endblock %}

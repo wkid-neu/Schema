@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/smokingAllowed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "smokingAllowed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/smokingAllowed", 
+                    "_lastone": true, 
+                    "rdfs:label": "smokingAllowed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指示是否能够吸烟的标识，例如在餐馆，酒店中", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "是否允许吸烟", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Indicates whether it is allowed to smoke in the place, e.g. in the restaurant, hotel or hotel room.", 
+    "rdfs:label": "smokingAllowed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

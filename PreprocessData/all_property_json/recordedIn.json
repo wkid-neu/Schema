@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/recordedIn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recordedIn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recordedIn", 
+                    "_lastone": true, 
+                    "rdfs:label": "recordedIn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "活动的媒体记录，例如活动的录像，照片，录音。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/recordedAt", 
+        "rdfs:label": "recordedAt"
+    }, 
+    "nameZh": "所属媒体记录", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "The CreativeWork that captured all or part of this Event.", 
+    "rdfs:label": "recordedIn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

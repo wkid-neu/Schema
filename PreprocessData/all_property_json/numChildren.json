@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/numChildren", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numChildren", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numChildren", 
+                    "_lastone": true, 
+                    "rdfs:label": "numChildren"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "住宿预定的儿童人数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LodgingReservation", 
+            "_last": true, 
+            "rdfs:label": "LodgingReservation"
+        }
+    ], 
+    "nameZh": "小孩人数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "rdfs:label": "Integer"
+        }, 
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The number of children staying in the unit.", 
+    "rdfs:label": "numChildren", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

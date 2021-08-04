@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/contentRating", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "contentRating", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/contentRating", 
+                    "_lastone": true, 
+                    "rdfs:label": "contentRating"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一项内容的官方评级，如‘MPAA PG-13’。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "内容的评级", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Rating", 
+            "rdfs:label": "Rating"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Official rating of a piece of content—for example,'MPAA PG-13'.", 
+    "rdfs:label": "contentRating", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Content_rating"
+}

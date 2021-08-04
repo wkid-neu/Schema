@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/amount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "amount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/amount", 
+                    "_lastone": true, 
+                    "rdfs:label": "amount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "金钱的总量", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LoanOrCredit", 
+            "rdfs:label": "LoanOrCredit"
+        }, 
+        {
+            "@id": "http://cnschema.org/InvestmentOrDeposit", 
+            "rdfs:label": "InvestmentOrDeposit"
+        }, 
+        {
+            "@id": "http://cnschema.org/DatedMoneySpecification", 
+            "_last": true, 
+            "rdfs:label": "DatedMoneySpecification"
+        }
+    ], 
+    "nameZh": "金钱数量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MonetaryAmount", 
+            "rdfs:label": "MonetaryAmount"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The amount of money.", 
+    "rdfs:label": "amount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/trackingUrl", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "trackingUrl", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/trackingUrl", 
+                    "_lastone": true, 
+                    "rdfs:label": "trackingUrl"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "跟踪包裹递送状态的网址", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ParcelDelivery", 
+            "_last": true, 
+            "rdfs:label": "ParcelDelivery"
+        }
+    ], 
+    "nameZh": "物流状态跟踪链接", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "Tracking url for the parcel delivery.", 
+    "rdfs:label": "trackingUrl", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

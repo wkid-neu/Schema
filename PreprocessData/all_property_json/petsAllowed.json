@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/petsAllowed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "petsAllowed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/petsAllowed", 
+                    "_lastone": true, 
+                    "rdfs:label": "petsAllowed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "表示是否允许宠物进入住宿或住宿业务。 更详细的信息可以放在一个文本值中。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Accommodation", 
+            "rdfs:label": "Accommodation"
+        }, 
+        {
+            "@id": "http://cnschema.org/LodgingBusiness", 
+            "_last": true, 
+            "rdfs:label": "LodgingBusiness"
+        }
+    ], 
+    "nameZh": "是否允许带宠物", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Indicates whether pets are allowed to enter the accommodation or lodging business. More detailed information can be put in a text value.", 
+    "rdfs:label": "petsAllowed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

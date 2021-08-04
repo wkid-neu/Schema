@@ -1,0 +1,156 @@
+{
+    "@id": "http://cnschema.org/identifier", 
+    "_examples": [
+        {
+            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+            "TYPES": [
+                "identifier"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+        }, 
+        {
+            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+            "TYPES": [
+                "identifier"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "identifier", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_lastone": true, 
+                    "rdfs:label": "identifier"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/isbn", 
+            "rdfs:label": "isbn"
+        }, 
+        {
+            "@id": "http://cnschema.org/sku", 
+            "rdfs:label": "sku"
+        }, 
+        {
+            "@id": "http://cnschema.org/serialNumber", 
+            "rdfs:label": "serialNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/orderNumber", 
+            "rdfs:label": "orderNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/gtin8", 
+            "rdfs:label": "gtin8"
+        }, 
+        {
+            "@id": "http://cnschema.org/flightNumber", 
+            "rdfs:label": "flightNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/globalLocationNumber", 
+            "rdfs:label": "globalLocationNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/confirmationNumber", 
+            "rdfs:label": "confirmationNumber"
+        }, 
+        {
+            "@id": "http://cnschema.org/duns", 
+            "rdfs:label": "duns"
+        }, 
+        {
+            "@id": "http://cnschema.org/taxID", 
+            "rdfs:label": "taxID"
+        }, 
+        {
+            "@id": "http://cnschema.org/issn", 
+            "rdfs:label": "issn"
+        }, 
+        {
+            "@id": "http://cnschema.org/leiCode", 
+            "rdfs:label": "leiCode"
+        }, 
+        {
+            "@id": "http://cnschema.org/gtin14", 
+            "rdfs:label": "gtin14"
+        }, 
+        {
+            "@id": "http://cnschema.org/gtin13", 
+            "rdfs:label": "gtin13"
+        }, 
+        {
+            "@id": "http://cnschema.org/gtin12", 
+            "rdfs:label": "gtin12"
+        }, 
+        {
+            "@id": "http://cnschema.org/productID", 
+            "rdfs:label": "productID"
+        }, 
+        {
+            "@id": "http://cnschema.org/accountId", 
+            "_last": true, 
+            "rdfs:label": "accountId"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "标识符", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "nameZh": "标识符", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "rdfs:label": "PropertyValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+    "rdfs:label": "identifier", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+}

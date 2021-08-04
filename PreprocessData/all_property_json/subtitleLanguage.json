@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/subtitleLanguage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "subtitleLanguage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/subtitleLanguage", 
+                    "_lastone": true, 
+                    "rdfs:label": "subtitleLanguage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "瀛楀箷璇█锛屾牸寮忎竴鑸负IETF BCP 47鏍囧噯", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TVEpisode", 
+            "rdfs:label": "TVEpisode"
+        }, 
+        {
+            "@id": "http://cnschema.org/ScreeningEvent", 
+            "rdfs:label": "ScreeningEvent"
+        }, 
+        {
+            "@id": "http://cnschema.org/Movie", 
+            "_last": true, 
+            "rdfs:label": "Movie"
+        }
+    ], 
+    "nameZh": "瀛楀箷璇█", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Language", 
+            "_last": true, 
+            "rdfs:label": "Language"
+        }
+    ], 
+    "rdfs:comment": "Languages in which subtitles/captions are available, in IETF BCP 47 standard format.", 
+    "rdfs:label": "subtitleLanguage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

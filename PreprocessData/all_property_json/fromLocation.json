@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/fromLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "fromLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "rdfs:label": "location"
+                }, 
+                {
+                    "@id": "http://cnschema.org/fromLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "fromLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/location", 
+            "_last": true, 
+            "rdfs:label": "location"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "发源地", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ExerciseAction", 
+            "rdfs:label": "ExerciseAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/TransferAction", 
+            "rdfs:label": "TransferAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/MoveAction", 
+            "_last": true, 
+            "rdfs:label": "MoveAction"
+        }
+    ], 
+    "nameZh": "发源地", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "A sub property of location. The original location of the object or the agent before the action.", 
+    "rdfs:label": "fromLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

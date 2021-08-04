@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/events", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "events", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/events", 
+                    "_lastone": true, 
+                    "rdfs:label": "events"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "即将发生或已经过去且与这个地方或机构相关的事件。 (拼写的单数形式，如event)", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "事件", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "rdfs:comment": "Upcoming or past events associated with this place or organization.", 
+    "rdfs:label": "events", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/event", 
+        "rdfs:label": "event"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

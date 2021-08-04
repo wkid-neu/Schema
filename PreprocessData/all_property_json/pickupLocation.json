@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/pickupLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "pickupLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/pickupLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "pickupLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "出租车可以接旅客的地点", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TaxiReservation", 
+            "rdfs:label": "TaxiReservation"
+        }, 
+        {
+            "@id": "http://cnschema.org/RentalCarReservation", 
+            "_last": true, 
+            "rdfs:label": "RentalCarReservation"
+        }
+    ], 
+    "nameZh": "接人地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "Where a taxi will pick up a passenger or a rental car can be picked up.", 
+    "rdfs:label": "pickupLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

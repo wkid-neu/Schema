@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/rsvpResponse", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "rsvpResponse", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/rsvpResponse", 
+                    "_lastone": true, 
+                    "rdfs:label": "rsvpResponse"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍥炲绉嶇被锛氬彲浠ワ紝涓嶅彲浠ワ紝鍙兘", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RsvpAction", 
+            "_last": true, 
+            "rdfs:label": "RsvpAction"
+        }
+    ], 
+    "nameZh": "瀵硅鏌殑鍥炲", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/RsvpResponseType", 
+            "_last": true, 
+            "rdfs:label": "RsvpResponseType"
+        }
+    ], 
+    "rdfs:comment": "The response (yes, no, maybe) to the RSVP.", 
+    "rdfs:label": "rsvpResponse", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

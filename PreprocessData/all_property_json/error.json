@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/error", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "error", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/error", 
+                    "_lastone": true, 
+                    "rdfs:label": "error"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "对于失败的操作，有关故障原因的更多信息。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "错误", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "For failed actions, more information on the cause of the failure.", 
+    "rdfs:label": "error", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Error"
+}

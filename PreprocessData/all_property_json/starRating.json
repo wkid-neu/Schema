@@ -1,0 +1,94 @@
+{
+    "@id": "http://cnschema.org/starRating", 
+    "_examples": [
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Star rating: \n    ****\n  Room rates: $100 - $240\n", 
+            "PRE-MARKUP": "ACME Hotel Innsbruck\nA beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Star rating: ****\n  Room rates: $100 - $240\n", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "starRating"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }, 
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Star rating: \n    \n      DEHOGA\n    \n    ****\n  \n  Room rates: $100 - $240\n", 
+            "PRE-MARKUP": "ACME Hotel Innsbruck\nA beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Star rating: **** (DEHOGA)\n  Room rates: $100 - $240\n", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "starRating"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "starRating", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/starRating", 
+                    "_lastone": true, 
+                    "rdfs:label": "starRating"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "住宿业务或食品业的官方（例如 来自国家协会或标准机构）评级。使用author属性指示评级机构，例如，作为一个名称为(例如HOTREC、DEHOGA、WHR或Hotelstars)的机构。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LodgingBusiness", 
+            "rdfs:label": "LodgingBusiness"
+        }, 
+        {
+            "@id": "http://cnschema.org/FoodEstablishment", 
+            "_last": true, 
+            "rdfs:label": "FoodEstablishment"
+        }
+    ], 
+    "nameZh": "星级评分", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Rating", 
+            "_last": true, 
+            "rdfs:label": "Rating"
+        }
+    ], 
+    "rdfs:comment": "An official rating for a lodging business or food establishment, e.g. from national associations or standards bodies. Use the author property to indicate the rating organization, e.g. as an Organization with name such as (e.g. HOTREC, DEHOGA, WHR, or Hotelstars).", 
+    "rdfs:label": "starRating", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Star_rating"
+}

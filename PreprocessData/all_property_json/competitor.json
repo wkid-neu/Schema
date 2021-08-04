@@ -1,0 +1,86 @@
+{
+    "@id": "http://cnschema.org/competitor", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  FIFA Women's World Cup Final\n  US vs. Japan\n  \n  HD\n  starts 07/05/2015 3:30PM\n  \n    FIFA Women's World Cup Final 2015\n    \n      \n    \n    \n      \n    \n    \n    \n      Played in Vancouver\n    \n  \n", 
+            "PRE-MARKUP": "A broadcast of the FIFA Women's World Cup 2015 final.", 
+            "RDFA": "\n  FIFA Women's World Cup Final\n  US vs. Japan\n  \n  HD\n  starts 07/05/2015 3:30PM\n  \n    FIFA Women's World Cup Final 2015\n    \n      \n    \n    \n      \n    \n    \n    \n      Played in Vancouver\n    \n  \n", 
+            "TYPES": [
+                "BroadcastEvent", 
+                "SportsEvent", 
+                "broadcastOfEvent", 
+                "isLiveBroadcast", 
+                "videoFormat", 
+                "competitor"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tv-listing-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "competitor", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/competitor", 
+                    "_lastone": true, 
+                    "rdfs:label": "competitor"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/awayTeam", 
+            "rdfs:label": "awayTeam"
+        }, 
+        {
+            "@id": "http://cnschema.org/homeTeam", 
+            "_last": true, 
+            "rdfs:label": "homeTeam"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "体育赛事中的竞争对手。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SportsEvent", 
+            "_last": true, 
+            "rdfs:label": "SportsEvent"
+        }
+    ], 
+    "nameZh": "竞技对手", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/SportsTeam", 
+            "rdfs:label": "SportsTeam"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A competitor in a sports event.", 
+    "rdfs:label": "competitor", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

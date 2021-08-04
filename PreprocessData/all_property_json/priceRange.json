@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/priceRange", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "priceRange", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/priceRange", 
+                    "_lastone": true, 
+                    "rdfs:label": "priceRange"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "涓氬姟鐨勪环鏍艰寖鍥达紝渚嬪$$$", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LocalBusiness", 
+            "_last": true, 
+            "rdfs:label": "LocalBusiness"
+        }
+    ], 
+    "nameZh": "浠锋牸鑼冨洿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The price range of the business, for example $$$.", 
+    "rdfs:label": "priceRange", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

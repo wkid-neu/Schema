@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/flightNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "flightNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/flightNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "flightNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "包含国际航空运输协会（IATA）代码在内的航班唯一标记号。例如，联合航空公司对应的IATA代码是“UA”，它有一架航班为110，那么它的航班号是“UA110”。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "航班号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The unique identifier for a flight including the airline IATA code. For example, if describing United flight 110, where the IATA code for United is 'UA', the flightNumber is 'UA110'.", 
+    "rdfs:label": "flightNumber", 
+    "wikidataName": "flight number", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P3090", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Flight_number"
+}

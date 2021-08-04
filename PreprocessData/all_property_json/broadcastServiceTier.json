@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/broadcastServiceTier", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "broadcastServiceTier", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/broadcastServiceTier", 
+                    "_lastone": true, 
+                    "rdfs:label": "broadcastServiceTier"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "访问频道所需的服务类型（例如标准版或高级版）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastChannel", 
+            "_last": true, 
+            "rdfs:label": "BroadcastChannel"
+        }
+    ], 
+    "nameZh": "广播频道所属的服务级别", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The type of service required to have access to the channel (e.g. Standard or Premium).", 
+    "rdfs:label": "broadcastServiceTier", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

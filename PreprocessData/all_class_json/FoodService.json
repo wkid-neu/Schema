@@ -1,0 +1,1617 @@
+{
+    "@id": "http://cnschema.org/FoodService", 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "FoodService", 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+                    "PRE-MARKUP": "An example of a invoice for a purchase and installation.\nACME Home Heating\nBill for: New furnace and installation\nCustomer: Jane Doe\npayment due: 2015-01-30\nminimum payment: $0.00\ntotal due: $0.00\npayment status: paid\norder: furnace model ABC123\norder: installation labor", 
+                    "RDFA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+                    "TYPES": [
+                        "Invoice", 
+                        "Order", 
+                        "LocalBusiness", 
+                        "Person", 
+                        "PriceSpecification", 
+                        "Service"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n  \n    ACME Home Cleaning\n  \n  offers a variety of services in\n  \n    Massachusetts, including\n  \n  \n    \n      House cleaning\n      \n        \n          \n            Apartment light cleaning\n          \n        \n        \n          \n            House light cleaning up to 2 bedrooms\n          \n        \n        \n          \n            House light cleaning 3+ bedrooms\n          \n        \n      \n    \n      One-time services\n      \n        \n          \n            Window washing\n          \n        \n        \n          \n            Carpet deep cleaning\n          \n        \n        \n          \n            Move in/out cleaning\n          \n        \n      \n    \n  \n", 
+                    "PRE-MARKUP": "ACME Home Cleaning offers a variety of services in Massachusetts, including:\n\n  House cleaning\n  \n    Apartment light cleaning\n    House light cleaning up to 2 bedrooms\n    House light cleaning 3+ bedrooms\n  \n  One-time services\n  \n    Window washing\n    Carpet deep cleaning\n    Move in/out cleaning\n  \n", 
+                    "RDFA": "\n  \n  \n    ACME Home Cleaning\n  \n  offers a variety of services in\n  \n    Massachusetts, including\n  \n  \n    \n      House cleaning\n      \n        \n          \n            Apartment light cleaning\n          \n        \n        \n          \n            House light cleaning up to 2 bedrooms\n          \n        \n        \n          \n            House light cleaning 3+ bedrooms\n          \n        \n      \n    \n      One-time services\n      \n        \n          \n            Window washing\n          \n        \n        \n          \n            Carpet deep cleaning\n          \n        \n        \n          \n            Move in/out cleaning\n          \n        \n      \n    \n  \n", 
+                    "TYPES": [
+                        "Offer", 
+                        "OfferCatalog", 
+                        "Service", 
+                        "LocalBusiness", 
+                        "hasOfferCatalog"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+                    "PRE-MARKUP": "", 
+                    "RDFA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+                    "TYPES": [
+                        "Service", 
+                        "TaxiService", 
+                        "GeoCircle", 
+                        "geoMidPoint", 
+                        "geoRadius", 
+                        "providerMobility", 
+                        "PRE-MARKUP: ", 
+                        "Car for hire driver #123 is within 50 meters of a given location, but is moving."
+                    ], 
+                    "_index": 3, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-service-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/aggregateRating", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+                            "PRE-MARKUP": "GreatFood\n4 stars - based on 250 reviews\n1901 Lemur Ave\nSunnyvale, CA 94086\n(408) 714-1489\nwww.greatfood.com\nHours:\nMon-Sat 11am - 2:30pm\nMon-Thur 5pm - 9:30pm\nFri-Sat 5pm - 10pm\nCategories: Middle Eastern, Mediterranean\nPrice Range: $$\nTakes Reservations: Yes", 
+                            "RDFA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+                            "TYPES": [
+                                "Restaurant", 
+                                "AggregateRating", 
+                                "FoodEstablishment", 
+                                "LocalBusiness", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "PRE-MARKUP": "Kenmore White 17\" Microwave\n\nRated 3.5/5 based on 11 customer reviews\n$55.00\nIn stock\nProduct description:\n0.7 cubic feet countertop microwave. Has six preset cooking categories and\n convenience features like Add-A-Minute and Child Lock.\nCustomer reviews:\nNot a happy camper - by Ellie, April 1, 2011\n1/5 stars\nThe lamp burned out and now I have to replace it.\n Value purchase - by Lucas, March 25, 2011\n4/5 stars\nGreat microwave for the price. It is small and fits in my apartment.\n...", 
+                            "RDFA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "Offer", 
+                                "Review", 
+                                "Rating", 
+                                "price", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount", 
+                                "availability", 
+                                "InStock"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 250,000 and 500,000 domains", 
+                    "descriptionZh": "基于该项的一系列评论的总体评价。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "总体评分", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/AggregateRating", 
+                            "_last": true, 
+                            "rdfs:label": "AggregateRating"
+                        }
+                    ], 
+                    "rdfs:comment": "The overall rating, based on a collection of reviews or ratings, of the item.", 
+                    "rdfs:label": "aggregateRating", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/areaServed", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/serviceArea", 
+                        "rdfs:label": "serviceArea"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "服务或产品所覆盖的区域。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "rdfs:label": "ContactPoint"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/DeliveryChargeSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "DeliveryChargeSpecification"
+                        }
+                    ], 
+                    "nameZh": "服务覆盖区域", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/AdministrativeArea", 
+                            "rdfs:label": "AdministrativeArea"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "rdfs:comment": "The geographic area where a service or offered item is provided.", 
+                    "rdfs:label": "areaServed", 
+                    "wikidataName": "operating area", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2541", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/audience", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+                            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+                            "TYPES": [
+                                "learningResourceType", 
+                                "educationalAlignment", 
+                                "AlignmentObject", 
+                                "educationalFramework", 
+                                "alignmentType", 
+                                "targetName", 
+                                "targetUrl", 
+                                "audience", 
+                                "EducationalAudience", 
+                                "educationalRole"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/serviceAudience", 
+                        "rdfs:label": "serviceAudience"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该作品所面向的观众，也就是该作品为哪些群体创作。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PlayAction", 
+                            "rdfs:label": "PlayAction"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LodgingBusiness", 
+                            "_last": true, 
+                            "rdfs:label": "LodgingBusiness"
+                        }
+                    ], 
+                    "nameZh": "受众", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Audience", 
+                            "_last": true, 
+                            "rdfs:label": "Audience"
+                        }
+                    ], 
+                    "rdfs:comment": "An intended audience, i.e. a group for whom something was created.", 
+                    "rdfs:label": "audience", 
+                    "wikidataName": "intended public", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2360", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/availableChannel", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "访问服务的方式（例如，电话银行，网站，位置等）", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "获得服务的渠道", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/ServiceChannel", 
+                            "_last": true, 
+                            "rdfs:label": "ServiceChannel"
+                        }
+                    ], 
+                    "rdfs:comment": "A means of accessing the service (e.g. a phone bank, a web site, a location, etc.).", 
+                    "rdfs:label": "availableChannel", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/award", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/awards", 
+                        "rdfs:label": "awards"
+                    }, 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "此人或该创作性作品获得的奖金(奖项)。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "_last": true, 
+                            "rdfs:label": "CreativeWork"
+                        }
+                    ], 
+                    "nameZh": "所获奖项", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An award won by or for this item.", 
+                    "rdfs:label": "award", 
+                    "wikidataName": "award received", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P166", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Award"
+                }, 
+                {
+                    "@id": "http://cnschema.org/brand", 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "与该产品或服务相关的品牌，或者是由该组织或个人维护的品牌。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "品牌", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "_last": true, 
+                            "rdfs:label": "Brand"
+                        }
+                    ], 
+                    "rdfs:comment": "The brand(s) associated with a product or service, or the brand(s) maintained by an organization or business person.", 
+                    "rdfs:label": "brand", 
+                    "wikidataName": "brand", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P1716", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Brand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/broker", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/bookingAgent", 
+                        "rdfs:label": "bookingAgent"
+                    }, 
+                    "_usage": "", 
+                    "descriptionZh": "安排买方和卖方进行交易的实体。 大多数情况下，经纪人从未获取或发布交易所涉及的产品或服务的所有权。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Reservation", 
+                            "rdfs:label": "Reservation"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Order", 
+                            "rdfs:label": "Order"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "_last": true, 
+                            "rdfs:label": "Invoice"
+                        }
+                    ], 
+                    "nameZh": "经纪人", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "rdfs:comment": "An entity that arranges for an exchange between a buyer and a seller.  In most cases a broker never acquires or releases ownership of a product or service involved in an exchange.  If it is not clear whether an entity is a broker, seller, or buyer, the latter two terms are preferred.", 
+                    "rdfs:label": "broker", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Broker"
+                }, 
+                {
+                    "@id": "http://cnschema.org/category", 
+                    "_layer": "core", 
+                    "_usage": "Between 50,000 and 100,000 domains", 
+                    "descriptionZh": "该项的类别。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "rdfs:label": "Invoice"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "类别", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.", 
+                    "rdfs:label": "category", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasOfferCatalog", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  \n    ACME Home Cleaning\n  \n  offers a variety of services in\n  \n    Massachusetts, including\n  \n  \n    \n      House cleaning\n      \n        \n          \n            Apartment light cleaning\n          \n        \n        \n          \n            House light cleaning up to 2 bedrooms\n          \n        \n        \n          \n            House light cleaning 3+ bedrooms\n          \n        \n      \n    \n      One-time services\n      \n        \n          \n            Window washing\n          \n        \n        \n          \n            Carpet deep cleaning\n          \n        \n        \n          \n            Move in/out cleaning\n          \n        \n      \n    \n  \n", 
+                            "PRE-MARKUP": "ACME Home Cleaning offers a variety of services in Massachusetts, including:\n\n  House cleaning\n  \n    Apartment light cleaning\n    House light cleaning up to 2 bedrooms\n    House light cleaning 3+ bedrooms\n  \n  One-time services\n  \n    Window washing\n    Carpet deep cleaning\n    Move in/out cleaning\n  \n", 
+                            "RDFA": "\n  \n  \n    ACME Home Cleaning\n  \n  offers a variety of services in\n  \n    Massachusetts, including\n  \n  \n    \n      House cleaning\n      \n        \n          \n            Apartment light cleaning\n          \n        \n        \n          \n            House light cleaning up to 2 bedrooms\n          \n        \n        \n          \n            House light cleaning 3+ bedrooms\n          \n        \n      \n    \n      One-time services\n      \n        \n          \n            Window washing\n          \n        \n        \n          \n            Carpet deep cleaning\n          \n        \n        \n          \n            Move in/out cleaning\n          \n        \n      \n    \n  \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "OfferCatalog", 
+                                "Service", 
+                                "LocalBusiness", 
+                                "hasOfferCatalog"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "为组织、个人或服务提供的清单列表", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "nameZh": "清单", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OfferCatalog", 
+                            "_last": true, 
+                            "rdfs:label": "OfferCatalog"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates an OfferCatalog listing for this Organization, Person, or Service.", 
+                    "rdfs:label": "hasOfferCatalog", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/hoursAvailable", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Hotel Features:\n  \n  \n    Sauna\n    \n    \n      (Open Thursdays\n       4:00 PM -\n       9:00 PM)\n    \n  \n  \n", 
+                            "PRE-MARKUP": "This example is in microdata only.", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "feature", 
+                                "LocationFeatureSpecification", 
+                                "hoursAvailable"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "该服务或联系人可用的时间。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LocationFeatureSpecification", 
+                            "rdfs:label": "LocationFeatureSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ContactPoint", 
+                            "_last": true, 
+                            "rdfs:label": "ContactPoint"
+                        }
+                    ], 
+                    "nameZh": "服务时间", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "OpeningHoursSpecification"
+                        }
+                    ], 
+                    "rdfs:comment": "The hours during which this service or contact is available.", 
+                    "rdfs:label": "hoursAvailable", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isRelatedTo", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "跟它相关", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "相关", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to another, somehow related product (or multiple products).", 
+                    "rdfs:label": "isRelatedTo", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/isSimilarTo", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "跟它相似", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "相似", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "rdfs:comment": "A pointer to another, functionally similar product (or multiple products).", 
+                    "rdfs:label": "isSimilarTo", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/logo", 
+                    "_examples": [
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "关联的商标", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "rdfs:label": "Place"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "_last": true, 
+                            "rdfs:label": "Product"
+                        }
+                    ], 
+                    "nameZh": "商标", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An associated logo.", 
+                    "rdfs:label": "logo", 
+                    "wikidataName": "logo image", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P154", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Logo"
+                }, 
+                {
+                    "@id": "http://cnschema.org/offers", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "TYPES": [
+                                "Event", 
+                                "Place", 
+                                "PostalAddress", 
+                                "AggregateOffer", 
+                                "location", 
+                                "startDate", 
+                                "address", 
+                                "offers", 
+                                "offerCount"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "提供此项目的报价 - 例如，出售产品的报价，出租电影DVD的价格、门票价格", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Trip", 
+                            "rdfs:label": "Trip"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/AggregateOffer", 
+                            "rdfs:label": "AggregateOffer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/MenuItem", 
+                            "rdfs:label": "MenuItem"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "_last": true, 
+                            "rdfs:label": "Event"
+                        }
+                    ], 
+                    "nameZh": "报价", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "_last": true, 
+                            "rdfs:label": "Offer"
+                        }
+                    ], 
+                    "rdfs:comment": "An offer to provide this item—for example, an offer to sell a product, rent the DVD of a movie, perform a service, or give away tickets to an event.", 
+                    "rdfs:label": "offers", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/provider", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "No Microdata", 
+                            "PRE-MARKUP": "\n\n\n\n  The Data Scientist's Toolbox\n  \n    Johns Hopkins University\n  \n  About this Course\n  \n    Instructors\n    \n      \n        Jeff Leek, PhD\n        Associate Professor, Biostatistics\n        Bloomberg School of Public Health \n      \n                \n  \n\n", 
+                            "RDFA": "\n\n\n\n  The Data Scientist's Toolbox\n  \n    Johns Hopkins University\n  \n  About this Course\n  \n    \n    \n    \n      \n      \n    \n    Instructors\n    \n      \n        Jeff Leek, PhD\n        Associate Professor, Biostatistics\n        Bloomberg School of Public Health \n      \n                \n  \n\n", 
+                            "TYPES": [
+                                "instructor", 
+                                "provider"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "No Microdata", 
+                            "PRE-MARKUP": "\n\n\n    \n        Physics\n        \n            \n                University of Bristol \n            \n        \n        \n            Course code: F300\n        \n    \n", 
+                            "RDFA": "\n\n\n    \n        Physics\n        \n            \n                University of Bristol \n            \n        \n        \n            Course code F300\n        \n    \n", 
+                            "TYPES": [
+                                "Course", 
+                                "courseCode", 
+                                "provider"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/carrier", 
+                        "rdfs:label": "carrier"
+                    }, 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "服务提供商，服务运营商或服务执行者; 货物生产者。 另一方（卖方）可以代表提供者提供这些服务或商品。 提供商也可以作为卖方。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Reservation", 
+                            "rdfs:label": "Reservation"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Invoice", 
+                            "rdfs:label": "Invoice"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Trip", 
+                            "rdfs:label": "Trip"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ParcelDelivery", 
+                            "rdfs:label": "ParcelDelivery"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "_last": true, 
+                            "rdfs:label": "CreativeWork"
+                        }
+                    ], 
+                    "nameZh": "提供方", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "_last": true, 
+                            "rdfs:label": "Person"
+                        }
+                    ], 
+                    "rdfs:comment": "The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.", 
+                    "rdfs:label": "provider", 
+                    "wikidataName": "manufacturer", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P176", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Provider"
+                }, 
+                {
+                    "@id": "http://cnschema.org/providerMobility", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+                            "PRE-MARKUP": "", 
+                            "RDFA": "\n  \n    driver #123\n    \n      \n        \n          \n          \n        \n        \n      \n    \n  \n  \n", 
+                            "TYPES": [
+                                "Service", 
+                                "TaxiService", 
+                                "GeoCircle", 
+                                "geoMidPoint", 
+                                "geoRadius", 
+                                "providerMobility", 
+                                "PRE-MARKUP: ", 
+                                "Car for hire driver #123 is within 50 meters of a given location, but is moving."
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-service-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示提供的服务的移动性（例如“静态”，“动态”）。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "提供方是否机动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates the mobility of a provided service (e.g. 'static', 'dynamic').", 
+                    "rdfs:label": "providerMobility", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/review", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/reviews", 
+                        "rdfs:label": "reviews"
+                    }, 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "针对某一个事物（人，文章，地点，产品）的评论", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Product", 
+                            "rdfs:label": "Product"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "rdfs:label": "Service"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Brand", 
+                            "rdfs:label": "Brand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Event", 
+                            "rdfs:label": "Event"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "事物的评论", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Review", 
+                            "_last": true, 
+                            "rdfs:label": "Review"
+                        }
+                    ], 
+                    "rdfs:comment": "A review of the item.", 
+                    "rdfs:label": "review", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/serviceOutput", 
+                    "_layer": "core", 
+                    "_supersede": {
+                        "@id": "http://cnschema.org/produces", 
+                        "rdfs:label": "produces"
+                    }, 
+                    "_usage": "", 
+                    "descriptionZh": "由服务产生的有形的东西，例如 护照，许可证等", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "服务产出", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "rdfs:comment": "The tangible thing generated by the service, e.g. a passport, permit, etc.", 
+                    "rdfs:label": "serviceOutput", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/serviceType", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "提供的服务类型，例如 退伍军人的福利，紧急救济等", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Service", 
+                            "_last": true, 
+                            "rdfs:label": "Service"
+                        }
+                    ], 
+                    "nameZh": "服务类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The type of service being offered, e.g. veterans' benefits, emergency relief, etc.", 
+                    "rdfs:label": "serviceType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "由组织或个人为他人提供有偿或无偿的活动", 
+            "nameZh": "服务", 
+            "rdfs:comment": "A service provided by an organization, e.g. delivery service, print services, etc.", 
+            "rdfs:label": "Service", 
+            "wikidataName": "service", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q7406919", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Service_(economics)"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service", 
+                    "rdfs:label": "Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/FoodService", 
+                    "_lastone": true, 
+                    "rdfs:label": "FoodService"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "提供早中晚饭的服务", 
+    "nameZh": "提供早中晚饭的服务", 
+    "rdfs:comment": "A food service, like breakfast, lunch, or dinner.", 
+    "rdfs:label": "FoodService", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

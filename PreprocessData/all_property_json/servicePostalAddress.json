@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/servicePostalAddress", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "servicePostalAddress", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/servicePostalAddress", 
+                    "_lastone": true, 
+                    "rdfs:label": "servicePostalAddress"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "可以通过邮件访问服务的地址", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ServiceChannel", 
+            "_last": true, 
+            "rdfs:label": "ServiceChannel"
+        }
+    ], 
+    "nameZh": "服务邮寄地址", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PostalAddress", 
+            "_last": true, 
+            "rdfs:label": "PostalAddress"
+        }
+    ], 
+    "rdfs:comment": "The address for accessing the service by mail.", 
+    "rdfs:label": "servicePostalAddress", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

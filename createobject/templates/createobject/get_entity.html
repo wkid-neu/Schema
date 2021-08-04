@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load myfilter %}
+
+{% block title %}搜索{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+{% endblock %}
+{% block content %}
+<div>
+{% for key,value in result.items %}
+<p>{{ key }}</p>
+    {% for obj in value %}
+        {% if obj|type == "str" %}
+            <p>{{  obj}}</p>
+        {% elif obj|type == "date" %}
+            <p>{{ obj|date:"Y-m-d" }}</p>
+        {% elif obj|type == "list" %}
+            <a onclick=window.open('/create/looking/'+'{{ obj.1 }}')>{{ obj.0 }}</a>
+        {% endif %}
+        {% endfor %}
+{% endfor %}
+</div>
+<script type="text/javascript">
+</script>
+
+{% endblock %}

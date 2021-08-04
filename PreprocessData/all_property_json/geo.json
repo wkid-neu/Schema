@@ -1,0 +1,86 @@
+{
+    "@id": "http://cnschema.org/geo", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+            "PRE-MARKUP": "What is the latitude and longitude of the Empire State Building?\nAnswer:\nLatitude: 40 deg 44 min 54.36 sec N\nLongitude: 73 deg 59 min 8.5 sec W", 
+            "RDFA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+            "TYPES": [
+                "Place", 
+                "GeoCoordinates", 
+                "latitude", 
+                "longitude", 
+                "geo"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n    Technikerstrasse 21\n    6020\n    Innsbruck\n    Tyrol,\n    Austria\n  \n  \n    \n    \n  \n", 
+            "PRE-MARKUP": "This example is in microdata only.", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "GeoCoordinates", 
+                "geo"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "geo", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/geo", 
+                    "_lastone": true, 
+                    "rdfs:label": "geo"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "地理位置的坐标。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "经纬度", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoCoordinates", 
+            "rdfs:label": "GeoCoordinates"
+        }, 
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "_last": true, 
+            "rdfs:label": "GeoShape"
+        }
+    ], 
+    "rdfs:comment": "The geo coordinates of the place.", 
+    "rdfs:label": "geo", 
+    "wikidataName": "coordinate location", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P625", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Geographic_coordinate_system"
+}

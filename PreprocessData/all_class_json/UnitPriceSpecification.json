@@ -1,0 +1,1370 @@
+{
+    "@id": "http://cnschema.org/UnitPriceSpecification", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    Wells Fargo Secured Visa® Credit Card\n    Requires a minimum $300 security deposit.\n    When you apply, you provide a minimum security deposit of at least \n      $\n      300, or up to $\n      10,000.\n    \n    \n      \n      Annual fee \n        $\n        25\n        \n            \n        \n      \n    \n    Annual Percentage Rate (APR) Currently, a variable \n      18.99% APR on purchases. (These APRs do not apply to cash advances.)\n    \n    Full terms and conditions\n", 
+            "PRE-MARKUP": "Wells Fargo Secured Visa® Credit Card\nRequires a minimum $300 security deposit.\nWhen you apply, you provide a minimum security deposit of at least $300, or up to $10,000.\nAnnual fee $25\nAnnual Percentage Rate (APR) Currently, a variable 18.99% APR on purchases. (These APRs do not apply to cash advances.)\nFull terms and conditions", 
+            "RDFA": "\n    Wells Fargo Secured Visa® Credit Card\n    Requires a minimum $300 security deposit.\n    When you apply, you provide a minimum security deposit of at least \n      $\n      300, or up to $\n      10,000.\n    \n    \n      \n      Annual fee \n        $\n        25\n        \n            \n            \n        \n      \n    \n    Annual Percentage Rate (APR) Currently, a variable \n      18.99% APR on purchases. (These APRs do not apply to cash advances.)\n    \n    Full terms and conditions\n", 
+            "TYPES": [
+                "CreditCard", 
+                "MonetaryAmount", 
+                "UnitPriceSpecification"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-fibo-examples.txt"
+        }
+    ], 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "UnitPriceSpecification", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/priceComponent", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "复合价格规格是捆绑多种价格的产品，这些价格都适用于不同尺寸的消费。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/CompoundPriceSpecification", 
+                    "_last": true, 
+                    "rdfs:label": "CompoundPriceSpecification"
+                }
+            ], 
+            "nameZh": "复合价格中提及的所有单价", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/UnitPriceSpecification", 
+                    "_last": true, 
+                    "rdfs:label": "UnitPriceSpecification"
+                }
+            ], 
+            "rdfs:comment": "This property links to all UnitPriceSpecification nodes that apply in parallel for the CompoundPriceSpecification node.", 
+            "rdfs:label": "priceComponent", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/UnitPriceSpecification", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n    Wells Fargo Secured Visa® Credit Card\n    Requires a minimum $300 security deposit.\n    When you apply, you provide a minimum security deposit of at least \n      $\n      300, or up to $\n      10,000.\n    \n    \n      \n      Annual fee \n        $\n        25\n        \n            \n        \n      \n    \n    Annual Percentage Rate (APR) Currently, a variable \n      18.99% APR on purchases. (These APRs do not apply to cash advances.)\n    \n    Full terms and conditions\n", 
+                    "PRE-MARKUP": "Wells Fargo Secured Visa® Credit Card\nRequires a minimum $300 security deposit.\nWhen you apply, you provide a minimum security deposit of at least $300, or up to $10,000.\nAnnual fee $25\nAnnual Percentage Rate (APR) Currently, a variable 18.99% APR on purchases. (These APRs do not apply to cash advances.)\nFull terms and conditions", 
+                    "RDFA": "\n    Wells Fargo Secured Visa® Credit Card\n    Requires a minimum $300 security deposit.\n    When you apply, you provide a minimum security deposit of at least \n      $\n      300, or up to $\n      10,000.\n    \n    \n      \n      Annual fee \n        $\n        25\n        \n            \n            \n        \n      \n    \n    Annual Percentage Rate (APR) Currently, a variable \n      18.99% APR on purchases. (These APRs do not apply to cash advances.)\n    \n    Full terms and conditions\n", 
+                    "TYPES": [
+                        "CreditCard", 
+                        "MonetaryAmount", 
+                        "UnitPriceSpecification"
+                    ], 
+                    "_index": 1, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-fibo-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/billingIncrement", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "指定了作为账单计费基础的最小数量和舍入增量。测量单位由unitCode属性指定。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/UnitPriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "UnitPriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "计费增量", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Number", 
+                            "_last": true, 
+                            "rdfs:label": "Number"
+                        }
+                    ], 
+                    "rdfs:comment": "This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.", 
+                    "rdfs:label": "billingIncrement", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/priceType", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "一个简短的文字或首字母缩略词，表示同一报价的多个价格规格，例如 SRP为建议零售价，INVOICE为发票价格，主要用于汽车行业。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/UnitPriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "UnitPriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "价格类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A short text or acronym indicating multiple price specifications for the same offer, e.g. SRP for the suggested retail price or INVOICE for the invoice price, mostly used in the car industry.", 
+                    "rdfs:label": "priceType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/referenceQuantity", 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "报价对应的商品数量，例如 每4 kWh电1欧元，10块钱3个苹果。该属性适用于缺乏标准产品单价的产品。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/UnitPriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "UnitPriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "参考数量", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.", 
+                    "rdfs:label": "referenceQuantity", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/unitCode", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "使用UN / CEFACT通用代码（3个字符）给出的测量单位或URL。 与UN / CEFACT通用代码相比，其他代码可能使用前缀后跟冒号。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/UnitPriceSpecification", 
+                            "rdfs:label": "UnitPriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/TypeAndQuantityNode", 
+                            "rdfs:label": "TypeAndQuantityNode"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "nameZh": "单位代码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.", 
+                    "rdfs:label": "unitCode", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/unitText", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "指示测量单位的字符串或文本。 如果您不能为unitCode提供标准单位代码，则很有用", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "rdfs:label": "QuantitativeValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/TypeAndQuantityNode", 
+                            "rdfs:label": "TypeAndQuantityNode"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/UnitPriceSpecification", 
+                            "rdfs:label": "UnitPriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "_last": true, 
+                            "rdfs:label": "PropertyValue"
+                        }
+                    ], 
+                    "nameZh": "单位文字", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\nunitCode.", 
+                    "rdfs:label": "unitText", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "单价是指某种商品单位数量的价格，也指商品的最小计价单位。顾名思义，是指一个数量单位商品的价格。", 
+            "nameZh": "单价详情", 
+            "rdfs:comment": "The price asked for a given offer by the respective organization or person.", 
+            "rdfs:label": "UnitPriceSpecification", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  January 2015 Visa\n  Invoice PDF\n  \n    ACME Bank\n  \n  xxxx-xxxx-xxxx-1234\n  \n    Jane Doe\n  \n  2015-01-30\n  \n    15.00\n    USD\n  \n  \n    200.00\n    USD\n  \n  starts:2014-12-21 30 days\n  \n", 
+                    "PRE-MARKUP": "An example of a credit card bill (invoice).\nACME Bank\nBill for: January 2015 Visa\ninvoice link: http://www.acmebank.com/invoice.pdf\nCustomer: Jane Doe\naccount ID: xxxx-xxxx-xxxx-1234\npayment due: 2015-01-30\nminimum payment: $15.00\ntotal due: $200.00\nbilling period: 2014-12-21 to 2015-01-20\npayment due", 
+                    "RDFA": "\n  January 2015 Visa\n  Invoice PDF\n  \n    ACME Bank\n  \n  xxxx-xxxx-xxxx-1234\n  \n    Jane Doe\n  \n  2015-01-30T12:00:00\n  \n    15.00\n    USD\n  \n  \n    200.00\n    USD\n  \n  starts:2014-12-21 30 days\n  \n", 
+                    "TYPES": [
+                        "Invoice", 
+                        "BankOrCreditUnion", 
+                        "Person", 
+                        "PriceSpecification"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+                    "PRE-MARKUP": "An example of a invoice for a purchase and installation.\nACME Home Heating\nBill for: New furnace and installation\nCustomer: Jane Doe\npayment due: 2015-01-30\nminimum payment: $0.00\ntotal due: $0.00\npayment status: paid\norder: furnace model ABC123\norder: installation labor", 
+                    "RDFA": "\n  New furnace and installation\n  \n    ACME Home Heating\n  \n  \n    Jane Doe\n  \n  2015-01-30\n  \n    0.00\n    USD\n  \n  \n    0.00\n    USD\n  \n  \n  \n    furnace\n    2014-12-01\n    123ABC\n    \n      ACME Furnace 3000\n      \n    \n  \n  \n    furnace installation\n    2014-12-02\n    \n      furnace installation\n    \n  \n", 
+                    "TYPES": [
+                        "Invoice", 
+                        "Order", 
+                        "LocalBusiness", 
+                        "Person", 
+                        "PriceSpecification", 
+                        "Service"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-invoice-examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Joe's Pizza\n  \n    123 Main Street\n    Cambridge\n    MA\n    02142\n  \n  delivers within 5 km of its store\n  \n    \n      \n        \n        \n        \n        \n      \n      \n    \n    with a minium order of $20.\n    \n      \n      \n        \n        \n      \n    \n  \n", 
+                    "PRE-MARKUP": "Joes' Pizza\n123 Main Street\nCambridge, MA 02142\ndelivers within 5 km of its store with a minimum order of $20.", 
+                    "RDFA": "\n  Joe's Pizza\n  \n    123 Main Street\n    Cambridge\n    MA\n    02142\n  \n  delivers within 5 km of its store with a minium order of $20.\n  \n    \n      \n      \n        \n        \n      \n      \n        \n          \n          \n          \n          \n        \n        \n      \n    \n  \n", 
+                    "TYPES": [
+                        "Offer", 
+                        "FoodEstablishment", 
+                        "GeoCircle", 
+                        "DeliveryChargeSpecification", 
+                        "PriceSpecification"
+                    ], 
+                    "_index": 3, 
+                    "_last": true, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/eligibleQuantity", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "报价最多可有购买多少货品，例如每客户最多可以购买一个优惠产品。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "PriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "适用数量", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/QuantitativeValue", 
+                            "_last": true, 
+                            "rdfs:label": "QuantitativeValue"
+                        }
+                    ], 
+                    "rdfs:comment": "The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.", 
+                    "rdfs:label": "eligibleQuantity", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/eligibleTransactionVolume", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "适用适用的最低消费，例如满100免运费。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "rdfs:label": "PriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "_last": true, 
+                            "rdfs:label": "Demand"
+                        }
+                    ], 
+                    "nameZh": "适用购买数量", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "PriceSpecification"
+                        }
+                    ], 
+                    "rdfs:comment": "The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express free shipping above a certain order volume, or to limit the acceptance of credit cards to purchases to a certain minimal amount.", 
+                    "rdfs:label": "eligibleTransactionVolume", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/maxPrice", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "最高价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "PriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "最高价格", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Number", 
+                            "_last": true, 
+                            "rdfs:label": "Number"
+                        }
+                    ], 
+                    "rdfs:comment": "The highest price if the price is a range.", 
+                    "rdfs:label": "maxPrice", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/minPrice", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "一个价格范围中的最低价格", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "PriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "最低价格", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Number", 
+                            "_last": true, 
+                            "rdfs:label": "Number"
+                        }
+                    ], 
+                    "rdfs:comment": "The lowest price if the price is a range.", 
+                    "rdfs:label": "minPrice", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/price", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "PRE-MARKUP": "Kenmore White 17\" Microwave\n\nRated 3.5/5 based on 11 customer reviews\n$55.00\nIn stock\nProduct description:\n0.7 cubic feet countertop microwave. Has six preset cooking categories and\n convenience features like Add-A-Minute and Child Lock.\nCustomer reviews:\nNot a happy camper - by Ellie, April 1, 2011\n1/5 stars\nThe lamp burned out and now I have to replace it.\n Value purchase - by Lucas, March 25, 2011\n4/5 stars\nGreat microwave for the price. It is small and fits in my apartment.\n...", 
+                            "RDFA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "Offer", 
+                                "Review", 
+                                "Rating", 
+                                "price", 
+                                "aggregateRating", 
+                                "ratingValue", 
+                                "reviewCount", 
+                                "availability", 
+                                "InStock"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "附加到价格规范及其子类型时的产品或价格组件的报价。使用指南：使用priceCurrency属性（使用ISO 4217代码，例如“USD”），而不是在值中包含不明确的符号，例如“$”。使用 '。' （Unicode'FULL STOP'（U + 002E））而不是'，'表示小数点。避免使用这些符号作为可读性分隔符。 请注意，RDFa和Microdata语法都允许使用“content =”属性来发布简单的机器可读值，以及更加人性化的格式化。使用0123456789（Unicode'DIGIT ZERO'（U + 0030）到'DIGIT NINE'（U + 0039））的值，而不是表面上类似的Unicode符号。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "rdfs:label": "PriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/TradeAction", 
+                            "_last": true, 
+                            "rdfs:label": "TradeAction"
+                        }
+                    ], 
+                    "nameZh": "价格", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Number", 
+                            "rdfs:label": "Number"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes.\n\nUsage guidelines:\n\n\nUse the priceCurrency property (with standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\") instead of including ambiguous symbols such as '$' in the value.\nUse '.' (Unicode 'FULL STOP' (U+002E)) rather than ',' to indicate a decimal point. Avoid using these symbols as a readability separator.\nNote that both RDFa and Microdata syntax allow the use of a \"content=\" attribute for publishing simple machine-readable values alongside more human-friendly formatting.\nUse values from 0123456789 (Unicode 'DIGIT ZERO' (U+0030) to 'DIGIT NINE' (U+0039)) rather than superficially similiar Unicode symbols.\n\n", 
+                    "rdfs:label": "price", 
+                    "wikidataName": "price", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2284", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Price"
+                }, 
+                {
+                    "@id": "http://cnschema.org/priceCurrency", 
+                    "_layer": "core", 
+                    "_usage": "Between 500,000 and 1,000,000 domains", 
+                    "descriptionZh": "价格或价格分量的货币（以3个字母的ISO 4217格式），附在价格明细及其子类型上。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "rdfs:label": "PriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Reservation", 
+                            "rdfs:label": "Reservation"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Ticket", 
+                            "_last": true, 
+                            "rdfs:label": "Ticket"
+                        }
+                    ], 
+                    "nameZh": "价格对应的货币单位", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The currency of the price, or a price component when attached to PriceSpecification and its subtypes.\n\nUse standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\".", 
+                    "rdfs:label": "priceCurrency", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/validFrom", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "有效开始日期", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Permit", 
+                            "rdfs:label": "Permit"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+                            "rdfs:label": "OpeningHoursSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/MonetaryAmount", 
+                            "rdfs:label": "MonetaryAmount"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LocationFeatureSpecification", 
+                            "rdfs:label": "LocationFeatureSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "rdfs:label": "PriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "_last": true, 
+                            "rdfs:label": "Demand"
+                        }
+                    ], 
+                    "nameZh": "生效日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/DateTime", 
+                            "_last": true, 
+                            "rdfs:label": "DateTime"
+                        }
+                    ], 
+                    "rdfs:comment": "The date when the item becomes valid.", 
+                    "rdfs:label": "validFrom", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/validThrough", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "有效截止日期", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/MonetaryAmount", 
+                            "rdfs:label": "MonetaryAmount"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "rdfs:label": "PriceSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Demand", 
+                            "rdfs:label": "Demand"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Offer", 
+                            "rdfs:label": "Offer"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/JobPosting", 
+                            "rdfs:label": "JobPosting"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+                            "rdfs:label": "OpeningHoursSpecification"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/LocationFeatureSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "LocationFeatureSpecification"
+                        }
+                    ], 
+                    "nameZh": "有效截止日期", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/DateTime", 
+                            "_last": true, 
+                            "rdfs:label": "DateTime"
+                        }
+                    ], 
+                    "rdfs:comment": "The date after when the item is not valid. For example the end of an offer, salary period, or a period of opening hours.", 
+                    "rdfs:label": "validThrough", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/valueAddedTaxIncluded", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "指定价格规格中是否包含适用的增值税（VAT）", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PriceSpecification", 
+                            "_last": true, 
+                            "rdfs:label": "PriceSpecification"
+                        }
+                    ], 
+                    "nameZh": "是否含税", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Boolean", 
+                            "_last": true, 
+                            "rdfs:label": "Boolean"
+                        }
+                    ], 
+                    "rdfs:comment": "Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.", 
+                    "rdfs:label": "valueAddedTaxIncluded", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }
+            ], 
+            "_usage": "Between 10,000 and 50,000 domains", 
+            "descriptionZh": "一组结构型的数据用来展示每种产品的价格。", 
+            "nameZh": "价格明细", 
+            "rdfs:comment": "A structured value representing a price or price range. Typically, only the subclasses of this type are used for markup. It is recommended to use MonetaryAmount to describe independent amounts of money such as a salary, credit card limits, etc.", 
+            "rdfs:label": "PriceSpecification", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/StructuredValue", 
+                    "rdfs:label": "StructuredValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PriceSpecification", 
+                    "rdfs:label": "PriceSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/UnitPriceSpecification", 
+                    "_lastone": true, 
+                    "rdfs:label": "UnitPriceSpecification"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsClass", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This class is derived from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web that can be expressed in a variety of syntaxes, including RDFa and HTML5 Microdata. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "_last": true, 
+            "rdfs:label": "PriceSpecification"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "单价是指某种商品单位数量的价格，也指商品的最小计价单位。顾名思义，是指一个数量单位商品的价格。", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/billingIncrement", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "指定了作为账单计费基础的最小数量和舍入增量。测量单位由unitCode属性指定。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/UnitPriceSpecification"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Number"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "计费增量", 
+            "rdfs:comment": "This property specifies the minimal quantity and rounding increment that will be the basis for the billing. The unit of measurement is specified by the unitCode property.", 
+            "rdfs:label": "billingIncrement", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/priceType", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "一个简短的文字或首字母缩略词，表示同一报价的多个价格规格，例如 SRP为建议零售价，INVOICE为发票价格，主要用于汽车行业。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/UnitPriceSpecification"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "价格类型", 
+            "rdfs:comment": "A short text or acronym indicating multiple price specifications for the same offer, e.g. SRP for the suggested retail price or INVOICE for the invoice price, mostly used in the car industry.", 
+            "rdfs:label": "priceType", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/referenceQuantity", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "报价对应的商品数量，例如 每4 kWh电1欧元，10块钱3个苹果。该属性适用于缺乏标准产品单价的产品。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/UnitPriceSpecification"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/QuantitativeValue"
+            }, 
+            "http://purl.org/dc/terms/source": [
+                {
+                    "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+                }, 
+                {
+                    "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsProperties"
+                }
+            ], 
+            "nameZh": "参考数量", 
+            "rdfs:comment": "The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. This property is a replacement for unitOfMeasurement for the advanced cases where the price does not relate to a standard unit.", 
+            "rdfs:label": "referenceQuantity", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/unitCode", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "使用UN / CEFACT通用代码（3个字符）给出的测量单位或URL。 与UN / CEFACT通用代码相比，其他代码可能使用前缀后跟冒号。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/UnitPriceSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/TypeAndQuantityNode"
+                }, 
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/URL"
+                }
+            ], 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "单位代码", 
+            "rdfs:comment": "The unit of measurement given using the UN/CEFACT Common Code (3 characters) or a URL. Other codes than the UN/CEFACT Common Code may be used with a prefix followed by a colon.", 
+            "rdfs:label": "unitCode", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/unitText", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "指示测量单位的字符串或文本。 如果您不能为unitCode提供标准单位代码，则很有用", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/QuantitativeValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/TypeAndQuantityNode"
+                }, 
+                {
+                    "@id": "http://cnschema.org/UnitPriceSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PropertyValue"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "单位文字", 
+            "rdfs:comment": "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\nunitCode.", 
+            "rdfs:label": "unitText", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/priceComponent", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "复合价格规格是捆绑多种价格的产品，这些价格都适用于不同尺寸的消费。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/CompoundPriceSpecification"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/UnitPriceSpecification"
+            }, 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "复合价格中提及的所有单价", 
+            "rdfs:comment": "This property links to all UnitPriceSpecification nodes that apply in parallel for the CompoundPriceSpecification node.", 
+            "rdfs:label": "priceComponent", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "单价详情", 
+    "rdfs:comment": "The price asked for a given offer by the respective organization or person.", 
+    "rdfs:label": "UnitPriceSpecification", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

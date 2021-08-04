@@ -1,0 +1,93 @@
+{
+    "@id": "http://cnschema.org/educationalAlignment", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\n    Designing a treasure map\n    Resource type: \n      lesson plan, \n      learning activity\n    \n    Target audience: \n      \n        teachers.\n    \n    \n        educationalLevel: \n        US Grade Levels \n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "PRE-MARKUP": "\n\n  Designing a treasure map\n  Resource type: lesson plan, learning activity\n  Target audience: teachers\n  Educational level: US Grade 2\n  Link to lesson plan: http://example.org/lessonplan\n", 
+            "RDFA": "\n\n    Designing a treasure map\n    Resource type: \n     lesson plan,\n     learning activity\n    \n    Target audience:\n      \n        teachers\n      \n    \n    \n        educationalLevel:\n        US Grade Levels\n        2\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n", 
+            "TYPES": [
+                "learningResourceType", 
+                "educationalAlignment", 
+                "AlignmentObject", 
+                "educationalFramework", 
+                "alignmentType", 
+                "targetName", 
+                "targetUrl", 
+                "audience", 
+                "EducationalAudience", 
+                "educationalRole"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    The Declaration of Arbroath\n    A lesson plan \n       for \n           teachers with associated video. \n       Typical length of lesson, 1 hour. \n       Recommended for children aged 10-12 years old.\n    \n    Subject: Wars of Scottish independence\n    Alignment to curriculum:\n    \n        England \n            \n                \n                National Curriculum:\n                KS 3\n                \n            \n            \n                \n                \n                History: The middle ages (12th to 15th century)\n                \n            \n        \n        Scotland \n            \n                \n                SCQF:\n                Level 2\n                \n            \n            \n                \n                 Curriculum for Excellence:\n                Social studies: people past events and societies\n                \n            \n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n    \n        \n        Video Title\n        Video description\n        2000-01-01\n        \n        Duration: 03:12       \n    \n    This example is based on Declaration of Arbroath from BBC Bitesize\n", 
+            "PRE-MARKUP": "\n    The Declaration of Arbroath\n    A lesson plan for teachers with associated video. \n       Typical length of lesson, 1 hour. \n       Recommended for children aged 10-12 years old.\n    \n    Subject: Wars of Scottish independence\n    Alignment to curriculum:\n    \n        England \n            National Curriculum: KS 3 History: The middle ages (12th to 15th century)\n        \n        Scotland \n            SCQF: Level 2\n            Curriculum for Excellence: Social studies: people past events and societies\n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n    \n        \n        Duration 03:12\n    \n    This example is based on Declaration of Arbroath from BBC Bitesize\n", 
+            "RDFA": "\n    The Declaration of Arbroath\n    A lesson plan \n       for \n           teachers with associated video. \n       Typical length of lesson, 1 hour. \n       Recommended for children aged 10-12 years old.\n    \n    Subject: Wars of Scottish independence\n    Alignment to curriculum:\n    \n        England \n            \n                \n                National Curriculum:\n                KS 3\n                \n            \n            \n                \n                \n                History: The middle ages (12th to 15th century)\n                \n            \n        \n        Scotland \n            \n                \n                SCQF:\n                Level 2\n                \n            \n            \n                \n                 Curriculum for Excellence: \n                Social studies: people past events and societies\n                \n            \n        \n    \n    Link to lesson plan: http://example.org/lessonplan\n    \n        \n        Video Title\n        Video description\n        2000-01-01\n        \n        Duration: 03:12\n    \n    This example is based on Declaration of Arbroath from BBC Bitesize\n", 
+            "TYPES": [
+                "typicalAgeRange", 
+                "timeRequired", 
+                "educationalAlignment", 
+                "AlignmentObject", 
+                "educationalFramework", 
+                "alignmentType", 
+                "targetName", 
+                "targetUrl"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-lrmi-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "educationalAlignment", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/educationalAlignment", 
+                    "_lastone": true, 
+                    "rdfs:label": "educationalAlignment"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与已建立的教育框架相一致。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "对应的教学达标要求", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/AlignmentObject", 
+            "_last": true, 
+            "rdfs:label": "AlignmentObject"
+        }
+    ], 
+    "rdfs:comment": "An alignment to an established educational framework.", 
+    "rdfs:label": "educationalAlignment", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

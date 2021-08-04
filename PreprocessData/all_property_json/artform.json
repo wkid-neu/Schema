@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/artform", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "artform", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/artform", 
+                    "_lastone": true, 
+                    "rdfs:label": "artform"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "艺术的形式，例如油画、素描、雕塑、打印、照片、组合、拼贴等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VisualArtwork", 
+            "_last": true, 
+            "rdfs:label": "VisualArtwork"
+        }
+    ], 
+    "nameZh": "艺术形式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "e.g. Painting, Drawing, Sculpture, Print, Photograph, Assemblage, Collage, etc.", 
+    "rdfs:label": "artform", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

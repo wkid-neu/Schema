@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/containsSeason", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "containsSeason", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasPart", 
+                    "rdfs:label": "hasPart"
+                }, 
+                {
+                    "@id": "http://cnschema.org/containsSeason", 
+                    "_lastone": true, 
+                    "rdfs:label": "containsSeason"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/hasPart", 
+            "_last": true, 
+            "rdfs:label": "hasPart"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/season", 
+        "rdfs:label": "season"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "该媒体系列包含的季", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "rdfs:label": "TVSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/RadioSeries", 
+            "_last": true, 
+            "rdfs:label": "RadioSeries"
+        }
+    ], 
+    "nameZh": "包含哪些季", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "_last": true, 
+            "rdfs:label": "CreativeWorkSeason"
+        }
+    ], 
+    "rdfs:comment": "A season that is part of the media series.", 
+    "rdfs:label": "containsSeason", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

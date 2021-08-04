@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/departureBusStop", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "departureBusStop", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/departureBusStop", 
+                    "_lastone": true, 
+                    "rdfs:label": "departureBusStop"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "汽车出发的公交站或车站。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BusTrip", 
+            "_last": true, 
+            "rdfs:label": "BusTrip"
+        }
+    ], 
+    "nameZh": "出发汽车站", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BusStation", 
+            "rdfs:label": "BusStation"
+        }, 
+        {
+            "@id": "http://cnschema.org/BusStop", 
+            "_last": true, 
+            "rdfs:label": "BusStop"
+        }
+    ], 
+    "rdfs:comment": "The stop or station from which the bus departs.", 
+    "rdfs:label": "departureBusStop", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

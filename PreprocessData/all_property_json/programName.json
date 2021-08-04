@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/programName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "programName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/programName", 
+                    "_lastone": true, 
+                    "rdfs:label": "programName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "授予会员身份的计划或项目", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ProgramMembership", 
+            "_last": true, 
+            "rdfs:label": "ProgramMembership"
+        }
+    ], 
+    "nameZh": "会员身份的折扣计划", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The program providing the membership.", 
+    "rdfs:label": "programName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

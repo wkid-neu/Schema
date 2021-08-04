@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/seatRow", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "seatRow", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/seatRow", 
+                    "_lastone": true, 
+                    "rdfs:label": "seatRow"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "搴т綅鐨勬墍鍦ㄦ帓", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Seat", 
+            "_last": true, 
+            "rdfs:label": "Seat"
+        }
+    ], 
+    "nameZh": "搴т綅鎺掑彿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The row location of the reserved seat (e.g., B).", 
+    "rdfs:label": "seatRow", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/locationCreated", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\n\nThe Church at Auvers\nby \nVincent van Gogh\n,\ndepicts a church in \nAuvers-sur-Oise,\n\nbut was creaetd in \nSaint-R茅my-de-Provence.\n\n", 
+            "PRE-MARKUP": "\nThe Church at Auvers by Vincent van Gogh depicts a church in Auvers-sur-Oise, but was created in Saint-R茅my-de-Provence.\n", 
+            "RDFA": "\n\n\nThe Church at Auvers\nby \nVincent van Gogh\n,\ndepicts a church in \nAuvers-sur-Oise,\n\nbut was creaetd in \nSaint-R茅my-de-Provence.\n\n", 
+            "TYPES": [
+                "Painting", 
+                "contentLocation", 
+                "locationCreated"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "locationCreated", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/locationCreated", 
+                    "_lastone": true, 
+                    "rdfs:label": "locationCreated"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "浣滃搧涓垱寤虹殑鍦板潃", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "鍒涘缓鍦扮偣", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The location where the CreativeWork was created, which may not be the same as the location depicted in the CreativeWork.", 
+    "rdfs:label": "locationCreated", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

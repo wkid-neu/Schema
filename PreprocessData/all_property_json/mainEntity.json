@@ -1,0 +1,98 @@
+{
+    "@id": "http://cnschema.org/mainEntity", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n...\n\n  Books >\n  Literature & Fiction >\n  Classics\n\n\n\nThe Catcher in the Rye -\n Mass Market Paperback\nby J.D. Salinger\n\n  4 stars -\n  3077 reviews\n\n\n  Price: $6.99\n  \n  In Stock\n\nProduct details\n224 pages\nPublisher: Little, Brown, and Company -\n May 1, 1991\nLanguage: English\nISBN-10: 0316769487\nReviews:\n\n  5 stars -\n  \"A masterpiece of literature\"\n  by John Doe,\n  Written on May 4, 2006\n  I really enjoyed this book. It captures the essential\n  challenge people face as they try make sense of their lives and grow to adulthood.\n\n\n  4 stars -\n  \"A good read.\" \n  by Bob Smith,\n  Written on June 15, 2006\n  Catcher in the Rye is a fun book. It's a good book to read.\n\n\n...\n", 
+            "PRE-MARKUP": "Books >\n Literature & Fiction >\n Classics\n\nThe Catcher in the Rye - Mass Market Paperback\nby J.D. Salinger\n4 stars - 3077 reviews\nPrice: $6.99\nIn Stock\nProduct details\n224 pages\nPublisher: Little, Brown, and Company - May 1, 1991\nLanguage: English\nISBN-10: 0316769487\nReviews:\n5 stars - \"A masterpiece of literature\" \nby John Doe. Written on May 4, 2006\nI really enjoyed this book. It captures the essential challenge people face\nas they try make sense of their lives and grow to adulthood.\n4 stars - \"love it LOLOL111!\" \nby Bob Smith, Written on June 15, 2006\nCatcher in the Rye is a fun book. It's a good book to read.", 
+            "RDFA": "\n...\n\n  Books >\n  Literature & Fiction >\n  Classics\n\n\n\nThe Catcher in the Rye -\n Mass Market Paperback\nby J.D. Salinger\n\n  4 stars -\n  3077 reviews\n\n\n  Price: $6.99\n  \n  In Stock\n\nProduct details\n224 pages\nPublisher: Little, Brown, and Company -\n May 1, 1991\nLanguage: English\nISBN-10: 0316769487\nReviews:\n\n  5 stars -\n  \"A masterpiece of literature\"\n  by John Doe,\n  Written on May 4, 2006\n  I really enjoyed this book. It captures the essential\n  challenge people face as they try make sense of their lives and grow to adulthood.\n\n\n  4 stars -\n  \"A good read.\" \n  by Bob Smith,\n  Written on June 15, 2006\n  Catcher in the Rye is a fun book. It's a good book to read.\n\n\n...\n", 
+            "TYPES": [
+                "WebPage", 
+                "Book", 
+                "AggregateRating", 
+                "Offer", 
+                "Review", 
+                "CreativeWork", 
+                "mainEntity"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n    \n", 
+            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+            "RDFA": "TODO.", 
+            "TYPES": [
+                "mainEntity"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "mainEntity", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/about", 
+                    "rdfs:label": "about"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntity", 
+                    "_lastone": true, 
+                    "rdfs:label": "mainEntity"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/about", 
+            "_last": true, 
+            "rdfs:label": "about"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "网页或艺术品的核心实体", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/mainEntityOfPage", 
+        "rdfs:label": "mainEntityOfPage"
+    }, 
+    "nameZh": "核心实体", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "Indicates the primary entity described in some page or other CreativeWork.", 
+    "rdfs:label": "mainEntity", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

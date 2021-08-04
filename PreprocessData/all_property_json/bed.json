@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/bed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "bed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/bed", 
+                    "_lastone": true, 
+                    "rdfs:label": "bed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "https://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#STI_Accommodation_Ontology", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the STI Accommodation Ontology, see http://ontologies.sti-innsbruck.at/acco/ns.html for details.\n    Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "STI Accommodation Ontology", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "浣忓鐨勫簥鍨嬶紝渚嬪澶у簥锛屽崟浜哄簥", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Suite", 
+            "rdfs:label": "Suite"
+        }, 
+        {
+            "@id": "http://cnschema.org/HotelRoom", 
+            "_last": true, 
+            "rdfs:label": "HotelRoom"
+        }
+    ], 
+    "nameZh": "搴婁綅淇℃伅", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/BedDetails", 
+            "_last": true, 
+            "rdfs:label": "BedDetails"
+        }
+    ], 
+    "rdfs:comment": "The type of bed or beds included in the accommodation. For the single case of just one bed of a certain type, you use bed directly with a text.\n      If you want to indicate the quantity of a certain kind of bed, use an instance of BedDetails. For more detailed information, use the amenityFeature property.", 
+    "rdfs:label": "bed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

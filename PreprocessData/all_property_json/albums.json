@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/albums", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "albums", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/albums", 
+                    "_lastone": true, 
+                    "rdfs:label": "albums"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "音乐专辑大全（拼写的单数形式，album）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicGroup", 
+            "_last": true, 
+            "rdfs:label": "MusicGroup"
+        }
+    ], 
+    "nameZh": "专辑（集合）", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicAlbum", 
+            "_last": true, 
+            "rdfs:label": "MusicAlbum"
+        }
+    ], 
+    "rdfs:comment": "A collection of music albums.", 
+    "rdfs:label": "albums", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/album", 
+        "rdfs:label": "album"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

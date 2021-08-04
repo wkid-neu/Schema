@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/device", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "device", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/device", 
+                    "_lastone": true, 
+                    "rdfs:label": "device"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "运行应用所需的设备。运行该应用所要求的设备具体到品牌/型号时，用到此属性。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "nameZh": "设备", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Device required to run the application. Used in cases where a specific make/model is required to run the application.", 
+    "rdfs:label": "device", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/availableOnDevice", 
+        "rdfs:label": "availableOnDevice"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

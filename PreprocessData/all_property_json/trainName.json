@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/trainName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "trainName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/trainName", 
+                    "_lastone": true, 
+                    "rdfs:label": "trainName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "渚嬪涓滄柟蹇溅", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TrainTrip", 
+            "_last": true, 
+            "rdfs:label": "TrainTrip"
+        }
+    ], 
+    "nameZh": "鐏溅鍚嶇О", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The name of the train (e.g. The Orient Express).", 
+    "rdfs:label": "trainName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

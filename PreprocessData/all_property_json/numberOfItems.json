@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/numberOfItems", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfItems", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfItems", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfItems"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "ItemList瀹炰綋鐨勬潯鐩暟", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ItemList", 
+            "_last": true, 
+            "rdfs:label": "ItemList"
+        }
+    ], 
+    "nameZh": "鏉＄洰鏁伴噺", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of items in an ItemList. Note that some descriptions might not fully describe all items in a list (e.g., multi-page pagination); in such cases, the numberOfItems would be for the entire list.", 
+    "rdfs:label": "numberOfItems", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

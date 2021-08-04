@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/encoding", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "encoding", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/encoding", 
+                    "_lastone": true, 
+                    "rdfs:label": "encoding"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/encodings", 
+        "rdfs:label": "encodings"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一个对CreativeWork编码的媒体对象。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "编码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "_last": true, 
+            "rdfs:label": "MediaObject"
+        }
+    ], 
+    "rdfs:comment": "A media object that encodes this CreativeWork. This property is a synonym for associatedMedia.", 
+    "rdfs:label": "encoding", 
+    "wikidataName": "encoding", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P3294", 
+    "wikipediaUrl": ""
+}

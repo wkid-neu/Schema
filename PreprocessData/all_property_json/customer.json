@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/customer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "customer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/customer", 
+                    "_lastone": true, 
+                    "rdfs:label": "customer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "下单或支付单据的一方。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "rdfs:label": "Order"
+        }, 
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "顾客", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "Party placing the order or paying the invoice.", 
+    "rdfs:label": "customer", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Customer"
+}

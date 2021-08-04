@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/securityScreening", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "securityScreening", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/securityScreening", 
+                    "_lastone": true, 
+                    "rdfs:label": "securityScreening"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "航班预定所需要的安全检查类型。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FlightReservation", 
+            "_last": true, 
+            "rdfs:label": "FlightReservation"
+        }
+    ], 
+    "nameZh": "安全检查", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The type of security screening the passenger is subject to.", 
+    "rdfs:label": "securityScreening", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

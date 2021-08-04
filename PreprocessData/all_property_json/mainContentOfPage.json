@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/mainContentOfPage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "mainContentOfPage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainContentOfPage", 
+                    "_lastone": true, 
+                    "rdfs:label": "mainContentOfPage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 250,000 and 500,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "指示此网页元素是否是该页面的主题。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/WebPage", 
+            "_last": true, 
+            "rdfs:label": "WebPage"
+        }
+    ], 
+    "nameZh": "是否网页主题", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/WebPageElement", 
+            "_last": true, 
+            "rdfs:label": "WebPageElement"
+        }
+    ], 
+    "rdfs:comment": "Indicates if this web page element is the main subject of the page.", 
+    "rdfs:label": "mainContentOfPage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

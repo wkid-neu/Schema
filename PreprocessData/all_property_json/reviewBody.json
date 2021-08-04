@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/reviewBody", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "reviewBody", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/reviewBody", 
+                    "_lastone": true, 
+                    "rdfs:label": "reviewBody"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "单条评论的正文内容", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Review", 
+            "_last": true, 
+            "rdfs:label": "Review"
+        }
+    ], 
+    "nameZh": "评论的正文", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The actual body of the review.", 
+    "rdfs:label": "reviewBody", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/option", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "option", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "rdfs:label": "object"
+                }, 
+                {
+                    "@id": "http://cnschema.org/option", 
+                    "_lastone": true, 
+                    "rdfs:label": "option"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/object", 
+            "_last": true, 
+            "rdfs:label": "object"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "object的子属性，选择活动中的选项", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ChooseAction", 
+            "_last": true, 
+            "rdfs:label": "ChooseAction"
+        }
+    ], 
+    "nameZh": "选项", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "A sub property of object. The options subject to this action.", 
+    "rdfs:label": "option", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/actionOption", 
+        "rdfs:label": "actionOption"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

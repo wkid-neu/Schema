@@ -1,0 +1,76 @@
+{
+    "@id": "http://cnschema.org/hoursAvailable", 
+    "_examples": [
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  Hotel Features:\n  \n  \n    Sauna\n    \n    \n      (Open Thursdays\n       4:00 PM -\n       9:00 PM)\n    \n  \n  \n", 
+            "PRE-MARKUP": "This example is in microdata only.", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "feature", 
+                "LocationFeatureSpecification", 
+                "hoursAvailable"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hoursAvailable", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hoursAvailable", 
+                    "_lastone": true, 
+                    "rdfs:label": "hoursAvailable"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该服务或联系人可用的时间。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "rdfs:label": "Service"
+        }, 
+        {
+            "@id": "http://cnschema.org/LocationFeatureSpecification", 
+            "rdfs:label": "LocationFeatureSpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "_last": true, 
+            "rdfs:label": "ContactPoint"
+        }
+    ], 
+    "nameZh": "服务时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/OpeningHoursSpecification", 
+            "_last": true, 
+            "rdfs:label": "OpeningHoursSpecification"
+        }
+    ], 
+    "rdfs:comment": "The hours during which this service or contact is available.", 
+    "rdfs:label": "hoursAvailable", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

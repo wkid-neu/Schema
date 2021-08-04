@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/workPresented", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "workPresented", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/workFeatured", 
+                    "rdfs:label": "workFeatured"
+                }, 
+                {
+                    "@id": "http://cnschema.org/workPresented", 
+                    "_lastone": true, 
+                    "rdfs:label": "workPresented"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/workFeatured", 
+            "_last": true, 
+            "rdfs:label": "workFeatured"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "此活动期间上映的电影", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ScreeningEvent", 
+            "_last": true, 
+            "rdfs:label": "ScreeningEvent"
+        }
+    ], 
+    "nameZh": "上映的作品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Movie", 
+            "_last": true, 
+            "rdfs:label": "Movie"
+        }
+    ], 
+    "rdfs:comment": "The movie presented during this event.", 
+    "rdfs:label": "workPresented", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/additionalNumberOfGuests", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "additionalNumberOfGuests", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/additionalNumberOfGuests", 
+                    "_lastone": true, 
+                    "rdfs:label": "additionalNumberOfGuests"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "被邀请人之外，确认参加活动的客人", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RsvpAction", 
+            "_last": true, 
+            "rdfs:label": "RsvpAction"
+        }
+    ], 
+    "nameZh": "其余的客户人数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "If responding yes, the number of guests who will attend in addition to the invitee.", 
+    "rdfs:label": "additionalNumberOfGuests", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

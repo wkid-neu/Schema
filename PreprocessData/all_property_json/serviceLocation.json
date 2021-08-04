@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/serviceLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "serviceLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/serviceLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "serviceLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "人们可以获得此项服务的地方（例如，市政建筑，本地商业等）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ServiceChannel", 
+            "_last": true, 
+            "rdfs:label": "ServiceChannel"
+        }
+    ], 
+    "nameZh": "服务所在地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The location (e.g. civic structure, local business, etc.) where a person can go to access the service.", 
+    "rdfs:label": "serviceLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

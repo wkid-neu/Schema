@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/propertyID", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "propertyID", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/propertyID", 
+                    "_lastone": true, 
+                    "rdfs:label": "propertyID"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "表示属性所代表的特征的常用标识符，例如制造商或财产的标准规定。 属性ID可以是（1）前缀字符串，主要用于产品属性标准; （2）特定于站点的非前缀字符串（例如属性的主键或属性的供应商特定ID），或（3）指示属性类型的URL，指向外部词汇 或描述属性的Web资源（例如词汇表条目）。 标准机构应从其标准中提出属性标识符的标准前缀。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "_last": true, 
+            "rdfs:label": "PropertyValue"
+        }
+    ], 
+    "nameZh": "属性ID", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. propertyID can be\n(1) a prefixed string, mainly meant to be used with standards for product properties; (2) a site-specific, non-prefixed string (e.g. the primary key of the property or the vendor-specific id of the property), or (3)\na URL indicating the type of the property, either pointing to an external vocabulary, or a Web resource that describes the property (e.g. a glossary entry).\nStandards bodies should promote a standard prefix for the identifiers of properties from their standards.", 
+    "rdfs:label": "propertyID", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

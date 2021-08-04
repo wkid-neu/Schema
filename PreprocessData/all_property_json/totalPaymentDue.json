@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/totalPaymentDue", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "totalPaymentDue", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/totalPaymentDue", 
+                    "_lastone": true, 
+                    "rdfs:label": "totalPaymentDue"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "应该支付的总金额", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "应付款总额", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MonetaryAmount", 
+            "rdfs:label": "MonetaryAmount"
+        }, 
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "_last": true, 
+            "rdfs:label": "PriceSpecification"
+        }
+    ], 
+    "rdfs:comment": "The total amount due.", 
+    "rdfs:label": "totalPaymentDue", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

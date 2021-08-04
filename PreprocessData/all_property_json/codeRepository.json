@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/codeRepository", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "codeRepository", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/codeRepository", 
+                    "_lastone": true, 
+                    "rdfs:label": "codeRepository"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "源码库链接，如SVN，github，codeplex", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareSourceCode", 
+            "_last": true, 
+            "rdfs:label": "SoftwareSourceCode"
+        }
+    ], 
+    "nameZh": "代码库", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex).", 
+    "rdfs:label": "codeRepository", 
+    "wikidataName": "source code repository", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1324", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Code_repository"
+}

@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/entertainmentBusiness", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "entertainmentBusiness", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "rdfs:label": "location"
+                }, 
+                {
+                    "@id": "http://cnschema.org/entertainmentBusiness", 
+                    "_lastone": true, 
+                    "rdfs:label": "entertainmentBusiness"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/location", 
+            "_last": true, 
+            "rdfs:label": "location"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "location的子属性。该行为发生于的娱乐行业。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PerformAction", 
+            "_last": true, 
+            "rdfs:label": "PerformAction"
+        }
+    ], 
+    "nameZh": "娱乐业", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/EntertainmentBusiness", 
+            "_last": true, 
+            "rdfs:label": "EntertainmentBusiness"
+        }
+    ], 
+    "rdfs:comment": "A sub property of location. The entertainment business where the action occurred.", 
+    "rdfs:label": "entertainmentBusiness", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Entertainment_business"
+}

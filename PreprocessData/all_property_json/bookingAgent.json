@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/bookingAgent", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "bookingAgent", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/bookingAgent", 
+                    "_lastone": true, 
+                    "rdfs:label": "bookingAgent"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "绁ㄥ姟鏈嶅姟鐨勮绁ㄤ唬鐞嗗晢", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "nameZh": "璁㈢エ涓粙", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "'bookingAgent' is an out-dated term indicating a 'broker' that serves as a booking agent.", 
+    "rdfs:label": "bookingAgent", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/broker", 
+        "rdfs:label": "broker"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Booking_agent"
+}

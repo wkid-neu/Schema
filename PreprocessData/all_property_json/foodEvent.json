@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/foodEvent", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "foodEvent", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "rdfs:label": "location"
+                }, 
+                {
+                    "@id": "http://cnschema.org/foodEvent", 
+                    "_lastone": true, 
+                    "rdfs:label": "foodEvent"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/location", 
+            "_last": true, 
+            "rdfs:label": "location"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "位置的子属性，食物事件发生的地点", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CookAction", 
+            "_last": true, 
+            "rdfs:label": "CookAction"
+        }
+    ], 
+    "nameZh": "食物事件发生的地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/FoodEvent", 
+            "_last": true, 
+            "rdfs:label": "FoodEvent"
+        }
+    ], 
+    "rdfs:comment": "A sub property of location. The specific food event where the action occurred.", 
+    "rdfs:label": "foodEvent", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

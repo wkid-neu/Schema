@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/isPartOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "isPartOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isPartOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "isPartOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/partOfSeries", 
+            "rdfs:label": "partOfSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/partOfEpisode", 
+            "rdfs:label": "partOfEpisode"
+        }, 
+        {
+            "@id": "http://cnschema.org/partOfTVSeries", 
+            "rdfs:label": "partOfTVSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/partOfSeason", 
+            "_last": true, 
+            "rdfs:label": "partOfSeason"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "是它的一部分", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/hasPart", 
+        "rdfs:label": "hasPart"
+    }, 
+    "nameZh": "从属于", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of.", 
+    "rdfs:label": "isPartOf", 
+    "wikidataName": "part of", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P361", 
+    "wikipediaUrl": ""
+}

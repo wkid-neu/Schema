@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/question", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "question", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "rdfs:label": "object"
+                }, 
+                {
+                    "@id": "http://cnschema.org/question", 
+                    "_lastone": true, 
+                    "rdfs:label": "question"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/object", 
+            "_last": true, 
+            "rdfs:label": "object"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "对象、问题的子属性。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/AskAction", 
+            "_last": true, 
+            "rdfs:label": "AskAction"
+        }
+    ], 
+    "nameZh": "问题", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Question", 
+            "_last": true, 
+            "rdfs:label": "Question"
+        }
+    ], 
+    "rdfs:comment": "A sub property of object. A question.", 
+    "rdfs:label": "question", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Question"
+}

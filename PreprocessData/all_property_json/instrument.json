@@ -1,0 +1,79 @@
+{
+    "@id": "http://cnschema.org/instrument", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "instrument", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instrument", 
+                    "_lastone": true, 
+                    "rdfs:label": "instrument"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/query", 
+            "rdfs:label": "query"
+        }, 
+        {
+            "@id": "http://cnschema.org/recipe", 
+            "rdfs:label": "recipe"
+        }, 
+        {
+            "@id": "http://cnschema.org/deliveryMethod", 
+            "rdfs:label": "deliveryMethod"
+        }, 
+        {
+            "@id": "http://cnschema.org/language", 
+            "rdfs:label": "language"
+        }, 
+        {
+            "@id": "http://cnschema.org/supply", 
+            "rdfs:label": "supply"
+        }, 
+        {
+            "@id": "http://cnschema.org/tool", 
+            "_last": true, 
+            "rdfs:label": "tool"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "工作时所需用的器具", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "工具", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "The object that helped the agent perform the action. e.g. John wrote a book with a pen.", 
+    "rdfs:label": "instrument", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Instrument"
+}

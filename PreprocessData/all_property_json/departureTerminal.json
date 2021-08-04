@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/departureTerminal", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "departureTerminal", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/departureTerminal", 
+                    "_lastone": true, 
+                    "rdfs:label": "departureTerminal"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "飞机出发的航站楼的标识。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "出发航站楼", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Identifier of the flight's departure terminal.", 
+    "rdfs:label": "departureTerminal", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

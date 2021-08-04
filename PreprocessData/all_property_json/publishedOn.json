@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/publishedOn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "publishedOn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/publishedOn", 
+                    "_lastone": true, 
+                    "rdfs:label": "publishedOn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "与发布活动相关的广播媒体服务", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PublicationEvent", 
+            "_last": true, 
+            "rdfs:label": "PublicationEvent"
+        }
+    ], 
+    "nameZh": "发布的媒体", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "_last": true, 
+            "rdfs:label": "BroadcastService"
+        }
+    ], 
+    "rdfs:comment": "A broadcast service associated with the publication event.", 
+    "rdfs:label": "publishedOn", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

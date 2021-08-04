@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/passengerPriorityStatus", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "passengerPriorityStatus", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/passengerPriorityStatus", 
+                    "_lastone": true, 
+                    "rdfs:label": "passengerPriorityStatus"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "分配给乘客的安全或登机的优先级状态，例如FastTrack或Priority", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FlightReservation", 
+            "_last": true, 
+            "rdfs:label": "FlightReservation"
+        }
+    ], 
+    "nameZh": "乘客优先级状态", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QualitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The priority status assigned to a passenger for security or boarding (e.g. FastTrack or Priority).", 
+    "rdfs:label": "passengerPriorityStatus", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

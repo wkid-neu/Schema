@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/organizer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "organizer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/organizer", 
+                    "_lastone": true, 
+                    "rdfs:label": "organizer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "活动的组织者", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "组织者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "An organizer of an Event.", 
+    "rdfs:label": "organizer", 
+    "wikidataName": "organizer", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P664", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Event_management"
+}

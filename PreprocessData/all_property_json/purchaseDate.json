@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/purchaseDate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "purchaseDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/purchaseDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "purchaseDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#Automotive_Ontology_Working_Group", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Automotive Ontology Working Group, see www.automotive-ontology.org for details. Many class and property definitions are inspired by or based on abstracts from Wikipedia, the free encyclopedia.", 
+            "rdfs:label": "AutomotiveOntologyWGClass", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鐗╁搧锛堜緥锛氭苯杞︼級琚綋鍓嶇墿涓荤殑璐拱鏃ユ湡", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Vehicle", 
+            "_last": true, 
+            "rdfs:label": "Vehicle"
+        }
+    ], 
+    "nameZh": "璐拱鏃ユ湡", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "The date the item e.g. vehicle was purchased by the current owner.", 
+    "rdfs:label": "purchaseDate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

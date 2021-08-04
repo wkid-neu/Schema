@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/publicAccess", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tLeaning Tower of Pisa\n\t\n\t\tIt is a twelfth-thirteenth century Romanesque tower started building by Bonanno Pisano.\n\t\n\t\n\t\tPublic access: yes\n\t\n", 
+            "PRE-MARKUP": "Leaning Tower of Pisa\nIt is a twelfth-thirteenth century Romanesque tower started building by Bonanno Pisano.\nPublic access: yes", 
+            "RDFA": "\n\tLeaning Tower of Pisa\n\t\n\t\tIt is a twelfth-thirteenth century Romanesque tower started building by Bonanno Pisano.\n\t\n\t\n\t\tPublic access: yes\n\t\n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "publicAccess"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "publicAccess", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/publicAccess", 
+                    "_lastone": true, 
+                    "rdfs:label": "publicAccess"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "一个地点是否对公众开放，布尔值。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "nameZh": "是否对公众开放", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "A flag to signal that the Place is open to public visitors.  If this property is omitted there is no assumed default boolean value", 
+    "rdfs:label": "publicAccess", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

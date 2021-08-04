@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/dateline", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dateline", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dateline", 
+                    "_lastone": true, 
+                    "rdfs:label": "dateline"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "发稿信息是包含在新闻文章中的一小段短文，用于描述新闻的事件，地点，概要描述，但通常省略日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/NewsArticle", 
+            "_last": true, 
+            "rdfs:label": "NewsArticle"
+        }
+    ], 
+    "nameZh": "发稿地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A dateline is a brief piece of text included in news articles that describes where and when the story was written or filed though the date is often omitted. Sometimes only a placename is provided.\n\nStructured representations of dateline-related information can also be expressed more explicitly using locationCreated (which represents where a work was created e.g. where a news report was written).  For location depicted or described in the content, use contentLocation.\n\nDateline summaries are oriented more towards human readers than towards automated processing, and can vary substantially. Some examples: \"BEIRUT, Lebanon, June 2.\", \"Paris, France\", \"December 19, 2017 11:43AM Reporting from Washington\", \"Beijing/Moscow\", \"QUEZON CITY, Philippines\".", 
+    "rdfs:label": "dateline", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

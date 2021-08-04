@@ -1,0 +1,69 @@
+{
+    "@id": "http://cnschema.org/recordingOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recordingOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recordingOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "recordingOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "此录音所记录的音乐作品", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRecording", 
+            "_last": true, 
+            "rdfs:label": "MusicRecording"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/recordedAs", 
+        "rdfs:label": "recordedAs"
+    }, 
+    "nameZh": "对应的音乐作品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicComposition", 
+            "_last": true, 
+            "rdfs:label": "MusicComposition"
+        }
+    ], 
+    "rdfs:comment": "The composition this track is a recording of.", 
+    "rdfs:label": "recordingOf", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

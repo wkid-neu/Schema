@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/temporalCoverage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "temporalCoverage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/temporalCoverage", 
+                    "_lastone": true, 
+                    "rdfs:label": "temporalCoverage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/temporal", 
+        "rdfs:label": "temporal"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "作品所描写或有效于的时间段，格式是根据ISO8601的DateTime或者string。数据作品通常会有精确的相关时间（例：2011年国家普查会符合ISO8601被写为“2011/2012”）。其它作品（学术文章，电影，电视剧等）会更广泛地在作品内或利用知名的链接来标明时间段。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "数据集的时间跨度", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string indicating a time period in ISO 8601 time interval format. In\n      the case of a Dataset it will typically indicate the relevant time period in a precise notation (e.g. for a 2011 census dataset, the year 2011 would be written \"2011/2012\"). Other forms of content e.g. ScholarlyArticle, Book, TVSeries or TVEpisode may indicate their temporalCoverage in broader terms - textually or via well-known URL.\n      Written works such as books may sometimes have precise temporal coverage too, e.g. a work set in 1939 - 1945 can be indicated in ISO 8601 interval format format via \"1939/1945\".", 
+    "rdfs:label": "temporalCoverage", 
+    "wikidataName": "date depicted", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P2913", 
+    "wikipediaUrl": ""
+}

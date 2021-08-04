@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/unitText", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "unitText", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/unitText", 
+                    "_lastone": true, 
+                    "rdfs:label": "unitText"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "指示测量单位的字符串或文本。 如果您不能为unitCode提供标准单位代码，则很有用", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/TypeAndQuantityNode", 
+            "rdfs:label": "TypeAndQuantityNode"
+        }, 
+        {
+            "@id": "http://cnschema.org/UnitPriceSpecification", 
+            "rdfs:label": "UnitPriceSpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "_last": true, 
+            "rdfs:label": "PropertyValue"
+        }
+    ], 
+    "nameZh": "单位文字", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A string or text indicating the unit of measurement. Useful if you cannot provide a standard unit code for\nunitCode.", 
+    "rdfs:label": "unitText", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

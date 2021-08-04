@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/departureStation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "departureStation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/departureStation", 
+                    "_lastone": true, 
+                    "rdfs:label": "departureStation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "火车出发的火车站。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TrainTrip", 
+            "_last": true, 
+            "rdfs:label": "TrainTrip"
+        }
+    ], 
+    "nameZh": "出发火车站", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/TrainStation", 
+            "_last": true, 
+            "rdfs:label": "TrainStation"
+        }
+    ], 
+    "rdfs:comment": "The station from which the train departs.", 
+    "rdfs:label": "departureStation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

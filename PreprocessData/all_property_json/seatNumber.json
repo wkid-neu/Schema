@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/seatNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "seatNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/seatNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "seatNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "座位的（所在排）位置，例如 ２７号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Seat", 
+            "_last": true, 
+            "rdfs:label": "Seat"
+        }
+    ], 
+    "nameZh": "座位编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The location of the reserved seat (e.g., 27).", 
+    "rdfs:label": "seatNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

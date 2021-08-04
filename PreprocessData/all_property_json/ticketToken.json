@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/ticketToken", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "ticketToken", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ticketToken", 
+                    "_lastone": true, 
+                    "rdfs:label": "ticketToken"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "票据的二维码等标识符。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "_last": true, 
+            "rdfs:label": "Ticket"
+        }
+    ], 
+    "nameZh": "票据的二维码或条形码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Reference to an asset (e.g., Barcode, QR code image or PDF) usable for entrance.", 
+    "rdfs:label": "ticketToken", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

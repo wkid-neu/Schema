@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/liveBlogUpdate", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "liveBlogUpdate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/liveBlogUpdate", 
+                    "_lastone": true, 
+                    "rdfs:label": "liveBlogUpdate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "博客直播的一条更新", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LiveBlogPosting", 
+            "_last": true, 
+            "rdfs:label": "LiveBlogPosting"
+        }
+    ], 
+    "nameZh": "博客直播的一条更新", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BlogPosting", 
+            "_last": true, 
+            "rdfs:label": "BlogPosting"
+        }
+    ], 
+    "rdfs:comment": "An update to the LiveBlog.", 
+    "rdfs:label": "liveBlogUpdate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

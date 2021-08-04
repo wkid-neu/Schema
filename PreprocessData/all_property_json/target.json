@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/target", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "target", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/target", 
+                    "_lastone": true, 
+                    "rdfs:label": "target"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Over 1,000,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "琛ㄧず琛屽姩鐨勭洰鏍囧叆鍙ｇ偣", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "鐩爣", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/EntryPoint", 
+            "_last": true, 
+            "rdfs:label": "EntryPoint"
+        }
+    ], 
+    "rdfs:comment": "Indicates a target EntryPoint for an Action.", 
+    "rdfs:label": "target", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

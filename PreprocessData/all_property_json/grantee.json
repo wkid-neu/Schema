@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/grantee", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "grantee", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/grantee", 
+                    "_lastone": true, 
+                    "rdfs:label": "grantee"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "获得此许可的人员，组织，联络人或受众。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DigitalDocumentPermission", 
+            "_last": true, 
+            "rdfs:label": "DigitalDocumentPermission"
+        }
+    ], 
+    "nameZh": "受让人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "rdfs:label": "Audience"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The person, organization, contact point, or audience that has been granted this permission.", 
+    "rdfs:label": "grantee", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

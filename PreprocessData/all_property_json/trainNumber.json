@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/trainNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "trainNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/trainNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "trainNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "火车的唯一的ID", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TrainTrip", 
+            "_last": true, 
+            "rdfs:label": "TrainTrip"
+        }
+    ], 
+    "nameZh": "火车编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The unique identifier for the train.", 
+    "rdfs:label": "trainNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

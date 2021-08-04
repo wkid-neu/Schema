@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/boardingPolicy", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "boardingPolicy", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/boardingPolicy", 
+                    "_lastone": true, 
+                    "rdfs:label": "boardingPolicy"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "航空公司所用的登机政策的类型（例如基于区域的、基于分组的）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Airline", 
+            "rdfs:label": "Airline"
+        }, 
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "登机政策", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BoardingPolicyType", 
+            "_last": true, 
+            "rdfs:label": "BoardingPolicyType"
+        }
+    ], 
+    "rdfs:comment": "The type of boarding policy used by the airline (e.g. zone-based or group-based).", 
+    "rdfs:label": "boardingPolicy", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

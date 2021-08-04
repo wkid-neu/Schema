@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/wordCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "wordCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/wordCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "wordCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鏂囩珷鐨勬枃鏈腑鍖呭惈鐨勫崟璇嶆暟", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Article", 
+            "_last": true, 
+            "rdfs:label": "Article"
+        }
+    ], 
+    "nameZh": "瀛楁暟", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of words in the text of the Article.", 
+    "rdfs:label": "wordCount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Word_count"
+}

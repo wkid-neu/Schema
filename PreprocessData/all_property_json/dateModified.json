@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/dateModified", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dateModified", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dateModified", 
+                    "_lastone": true, 
+                    "rdfs:label": "dateModified"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "CreativeWork最近被修改过的日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/DataFeedItem", 
+            "_last": true, 
+            "rdfs:label": "DataFeedItem"
+        }
+    ], 
+    "nameZh": "更新日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "rdfs:label": "Date"
+        }, 
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The date on which the CreativeWork was most recently modified or when the item's entry was modified within a DataFeed.", 
+    "rdfs:label": "dateModified", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

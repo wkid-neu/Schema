@@ -1,0 +1,88 @@
+{
+    "@id": "http://cnschema.org/openingHours", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+            "PRE-MARKUP": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+            "RDFA": "\n  Philippa's Pharmacy\n  A superb collection of fine pharmaceuticals for your beauty and healthcare\n    convenience, a department of Delia's Drugstore.\n  Open: Monday-Thursday 9am-noon\n  Phone: (800)555-1234\n", 
+            "TYPES": [
+                "Pharmacy", 
+                "openingHours", 
+                "telephone"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+            "PRE-MARKUP": "Disneyland Paris\nIt's an amusement park in Marne-la-Vallée, near Paris, in France.\nHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\nEntrance: with ticket\nCurrency accepted: Euro\nPayment accepted: Cash, Credit Card\nWebsite:\n\twww.disneylandparis.it\n", 
+            "RDFA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+            "TYPES": [
+                "AmusementPark", 
+                "TouristAttraction", 
+                "isAccessibleForFree", 
+                "currenciesAccepted", 
+                "openingHours", 
+                "paymentAccepted"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "openingHours", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/openingHours", 
+                    "_lastone": true, 
+                    "rdfs:label": "openingHours"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "营业时间。例子：周二和周四下午4点到8点", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CivicStructure", 
+            "rdfs:label": "CivicStructure"
+        }, 
+        {
+            "@id": "http://cnschema.org/LocalBusiness", 
+            "_last": true, 
+            "rdfs:label": "LocalBusiness"
+        }
+    ], 
+    "nameZh": "开放时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The general opening hours for a business. Opening hours can be specified as a weekly time range, starting with days, then times per day. Multiple days can be listed with commas ',' separating each day. Day or time ranges are specified using a hyphen '-'.\n\n\nDays are specified using the following two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su.\nTimes are specified using 24:00 time. For example, 3pm is specified as 15:00. \nHere is an example: <time itemprop=\"openingHours\" datetime=\"Tu,Th 16:00-20:00\">Tuesdays and Thursdays 4-8pm</time>.\nIf a business is open 7 days a week, then it can be specified as <time itemprop=\"openingHours\" datetime=\"Mo-Su\">Monday through Sunday, all day</time>.\n\n", 
+    "rdfs:label": "openingHours", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Opening_hours"
+}

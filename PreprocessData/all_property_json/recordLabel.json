@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/recordLabel", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recordLabel", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recordLabel", 
+                    "_lastone": true, 
+                    "rdfs:label": "recordLabel"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "音乐作品的发布厂商，即通常所说的唱片公司，例如德唱，迪卡（decca)。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRelease", 
+            "_last": true, 
+            "rdfs:label": "MusicRelease"
+        }
+    ], 
+    "nameZh": "唱片公司", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The label that issued the release.", 
+    "rdfs:label": "recordLabel", 
+    "wikidataName": "record label", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P264", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Record_label"
+}

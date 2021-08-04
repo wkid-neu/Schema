@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/clipNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "clipNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/position", 
+                    "rdfs:label": "position"
+                }, 
+                {
+                    "@id": "http://cnschema.org/clipNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "clipNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/position", 
+            "_last": true, 
+            "rdfs:label": "position"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "该剪辑在有序的剪辑组中的位置。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Clip", 
+            "_last": true, 
+            "rdfs:label": "Clip"
+        }
+    ], 
+    "nameZh": "片段编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "rdfs:label": "Integer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Position of the clip within an ordered group of clips.", 
+    "rdfs:label": "clipNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

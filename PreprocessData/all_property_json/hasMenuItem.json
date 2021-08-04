@@ -1,0 +1,91 @@
+{
+    "@id": "http://cnschema.org/hasMenuItem", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A simple menu example with a single menu section for tacos and a taco menu item.\nNote that additional menus are possible for specific languages using the\ninLanguage property.", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "Menu", 
+                "MenuSection", 
+                "hasMenuItem", 
+                "hasMenuSection", 
+                "NutritionInformation", 
+                "MenuItem"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-menu-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "An example of a menu with nested MenuSections.", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "Menu", 
+                "MenuSection", 
+                "hasMenuItem", 
+                "hasMenuSection", 
+                "NutritionInformation", 
+                "MenuItem"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-menu-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasMenuItem", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasMenuItem", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasMenuItem"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "食物或饮料菜单或菜单条中包含的内容", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MenuSection", 
+            "rdfs:label": "MenuSection"
+        }, 
+        {
+            "@id": "http://cnschema.org/Menu", 
+            "_last": true, 
+            "rdfs:label": "Menu"
+        }
+    ], 
+    "nameZh": "菜单", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MenuItem", 
+            "_last": true, 
+            "rdfs:label": "MenuItem"
+        }
+    ], 
+    "rdfs:comment": "A food or drink item contained in a menu or menu section.", 
+    "rdfs:label": "hasMenuItem", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

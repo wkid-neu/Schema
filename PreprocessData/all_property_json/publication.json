@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/publication", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "publication", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/publication", 
+                    "_lastone": true, 
+                    "rdfs:label": "publication"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "涓庡晢鍝佺浉鍏崇殑鍙戝竷娲诲姩", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "鍙戝竷娲诲姩", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PublicationEvent", 
+            "_last": true, 
+            "rdfs:label": "PublicationEvent"
+        }
+    ], 
+    "rdfs:comment": "A publication event associated with the item.", 
+    "rdfs:label": "publication", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Publication"
+}

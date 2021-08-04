@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/baseSalary", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "baseSalary", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/baseSalary", 
+                    "_lastone": true, 
+                    "rdfs:label": "baseSalary"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该职位的基本工资。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/EmployeeRole", 
+            "rdfs:label": "EmployeeRole"
+        }, 
+        {
+            "@id": "http://cnschema.org/JobPosting", 
+            "_last": true, 
+            "rdfs:label": "JobPosting"
+        }
+    ], 
+    "nameZh": "底薪", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "rdfs:label": "Number"
+        }, 
+        {
+            "@id": "http://cnschema.org/MonetaryAmount", 
+            "rdfs:label": "MonetaryAmount"
+        }, 
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "_last": true, 
+            "rdfs:label": "PriceSpecification"
+        }
+    ], 
+    "rdfs:comment": "The base salary of the job or of an employee in an EmployeeRole.", 
+    "rdfs:label": "baseSalary", 
+    "wikidataName": "base salary", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P3618", 
+    "wikipediaUrl": ""
+}

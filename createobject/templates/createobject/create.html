@@ -1,0 +1,307 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}搜索{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+{% endblock %}
+{% block content %}
+<div>
+<table  id="cre_td" style="table-layout: fixed">
+    <tr><td id="name_block" style="color:#eb9316;">{{ name }}({{ name_zh }})</td>
+        <td rowspan="3" id="submit_block"></td>
+        <td id="created_entity_block" rowspan="4"></td></tr>
+    <tr><td id="description_block"><span style="color: #eb9316;">介绍:&nbsp;&nbsp;</span><span style="color: #304d5e;font-size: 15px">{{ description }}</span></td></tr>
+<tr><td id="search_block"> <input style="height: 25px;width: 250px" type="text" id="search-text" placeholder="输入要查询的属性"><button type="button" style="width:100px;margin-left: 70px">搜索</button>
+</td></tr>
+    <tr>
+        <td id="property_block">
+            <p id='search-result' align="left" style="height:500px;line-height:40px;margin:0;overflow-y:auto; overflow-x:hidden" >
+            {% for key,value in properties_info.items %}
+                <a onclick="displayProperty('{{ key }}','{{ value.name_zh}}','{{ value.description }}',{{ value.range_str }},{{ value.range_str_zh }})" title="点击填写该属性的值"><span style="color: #eb9316">{{ value.name_zh }}</span></a>&nbsp;:&nbsp;<span>{{ value.description }}</span><br>
+            {% endfor %}
+            </p>
+    </td>
+        <td id="writed_block"><p></p></td></tr>
+</table>
+</div>
+<script type="text/javascript">
+entity='{{ name }}';
+entity_name='';
+id=0;
+created_entities={};
+$(function() {
+        init();
+        })
+function init() {
+    if(localStorage.getItem("writed_data")==null)
+        {
+            writed_data = {};
+            writed_data["created_entities"] = {};
+            localStorage.setItem("writed_data",JSON.stringify(writed_data));
+
+        }
+        entity_name = prompt("为该"+entity+"实体取个名字。");
+        if (entity_name != null)
+        {
+            if(entity_name.length > 0)
+            {
+                alert("该"+entity+"实体的名字为"+entity_name);
+                var writed_data = JSON.parse(localStorage.getItem("writed_data"));
+                if (!(entity in writed_data))
+                {
+                    writed_data[entity]=[];
+                    writed_data["created_entities"][entity]=[];
+                }
+                id = writed_data[entity].length;
+                writed_data[entity].push({'名称':{'eng_name':'name','value':[['str',entity_name]]}});
+                console.log(writed_data);
+            }
+            else
+            {
+                 alert("不能取空值！");
+                init();
+            }
+
+        }
+        else {
+            alert("你按了[取消]按钮");
+            init();
+        }
+    localStorage.setItem("writed_data",JSON.stringify(writed_data));
+    displayWrited(writed_data)
+    displayEntities()
+}
+
+function displayEntities() {
+            post_data={}
+            $.ajax({
+                url: '/create/obtaining/',
+                type: "POST",
+                data: post_data,
+                success: function (data) {
+                    if (data.length==0)
+                    {
+                        return;
+                    }
+                    created_entities = JSON.parse(data)
+                    console.log(created_entities)
+                    $('#created_entity_block').html("");
+                    html="<span style=\"color:#304D5E;font-size:18px;\">已经创建的所有实体</span>"
+                    html+="<button onclick=\"displayEntities()\" type=\"button\" style=\"width:45px;margin-left:10px\">刷新</button>"
+                    html += " <p align=\"left\" style=\"height:500px;line-height:30px;margin:0;overflow-y:auto; overflow-x:hidden\" >\n"
+                    for(var i=0;i<created_entities.length;i++)
+                    {
+                        the_entity=created_entities[i]['entity'];
+                        the_entity_name=created_entities[i]['name'][0];
+                        entity_id = created_entities[i]['id']
+                        in_graph = created_entities[i]['in_graph']
+                        if(in_graph == 1)
+                        {
+                            html+="<a onclick=window.open('/create/looking/"+entity_id+"') title=\"点击查看属性信息\"><span style=\"color: #eb9316;font-size: 8px\">"+the_entity_name+"("+the_entity+")</span><span style=\"color: #304d5e;font-size: 6px\">(已进入图谱中的实体)</span></a><br>";
+
+                        }
+                        else
+                        {
+                            html+="<a onclick=window.open('/create/looking/"+entity_id+"') title=\"点击查看属性信息\"><span style=\"color: #eb9316;font-size: 8px\">"+the_entity_name+"("+the_entity+")</span><span style=\"color: #304d5e;font-size: 6px\">(未进入图谱中的实体)</span></a><br>";
+
+                        }
+
+                    }
+                    html+="<button onclick=\"generating()\" style=\"bottom: 5px;right:7px;position: fixed\">生成图谱</button>"
+                    $('#created_entity_block').append(html);
+                }
+             });
+}
+function generating() {
+    go_data = []
+    $.ajax({
+                url: '/create/generating/',
+                type: "POST",
+                data: go_data,
+                success: function (data) {
+                    displayEntities();
+
+                }
+             });
+
+}
+function fillString(property_name,description,eng_name) {
+    value_type = 'str';
+    class_id = -1;
+    the_entity_name = "";
+    $('#submit_block').html('');
+        html = "<h4>"+property_name+"</h4>";
+        html+="<h5>"+description+"</h5>";
+    html+="<input id=\"propertyValue\" style=\"height: 25px;width: 250px\" type=\"text\" id=\"search-text\" placeholder=\"填写该属性的值\">"
+    html+="<button onclick =\"addPropertyValue('"+eng_name+"','"+property_name+"','"+value_type+"','"+class_id+"','"+the_entity_name+"')\" type=\"button\" style=\"width:100px;margin-left: 50px\">填写或修改</button>"
+        $('#submit_block').append(html);
+
+}
+function fillDate(property_name,description,eng_name) {
+    value_type = 'date';
+    class_id = -1;
+    the_entity_name = "";
+    $('#submit_block').html('');
+        html = "<h4>"+property_name+"</h4>";
+        html+="<h5>"+description+"</h5>";
+    html+="<input type=\"date\" id=\"filldate\" name=\"user_date\" />\n"
+    html+="<button onclick =\"addPropertyValue('"+eng_name+"','"+property_name+"','"+value_type+"','"+class_id+"','"+the_entity_name+"')\" type=\"button\" style=\"width:100px;margin-left: 50px\">确定或修改</button>"
+        $('#submit_block').append(html);
+
+}
+function chooseEntity(property_name,description,eng_name,obj_name,obj_name_zh) {
+    console.log(obj_name)
+    $('#submit_block').html('');
+    html = "<h4>"+property_name+"</h4>";
+    html+="<h5>"+description+"</h5>";
+    html+="<button onclick=window.open('/create/creating/"+obj_name+"') type=\"button\" style=\"width:200px;\">创建一个"+obj_name_zh+"实体</button><br><br>"
+    html+="<button onclick=\"updateCreatedEntities('"+obj_name+"','"+obj_name_zh+"','"+eng_name+"','"+property_name+"')\" type=\"button\" style=\"width:200px;\">选择已有的"+obj_name_zh+"实体</button>"
+
+        $('#submit_block').append(html);
+
+}
+function updateCreatedEntities(obj_name,obj_name_zh,eng_name,property_name) {
+    console.log("===")
+     $('#created_entity_block').html("");
+    html="<span style=\"color:#304D5E;font-size:18px;\">已经创建的<span style=\"color:#9B5C00;font-size:18px;\">"+obj_name_zh+"</span>实体</span>"
+    html+="<button onclick=\"displayEntities()\" type=\"button\" style=\"width:45px;margin-left:10px\">刷新</button>"
+    html += " <p align=\"left\" style=\"height:500px;line-height:30px;margin:0;overflow-y:auto; overflow-x:hidden\" >\n"
+    console.log(created_entities)
+    value_type = 'class'
+    for(var i=0;i<created_entities.length;i++)
+    {
+        the_entity=created_entities[i]['entity'];
+        if(the_entity!=obj_name)continue;
+        the_entity_name=created_entities[i]['name'];
+        entity_id = created_entities[i]['id'];
+        in_graph = created_entities[i]['in_graph']
+        if(in_graph == 1)
+        {
+            html+="<a onclick=window.open('/create/looking/"+entity_id+"') title=\"点击查看属性信息\"><span style=\"color: #eb9316;font-size: 8px\">"+the_entity_name+"("+the_entity+")</span><span style=\"color: #304d5e;font-size: 6px\">(已进入图谱中的实体)</span>\n</a>";
+        }
+        else
+        {
+            html+="<a onclick=window.open('/create/looking/"+entity_id+"') title=\"点击查看属性信息\"><span style=\"color: #eb9316;font-size: 8px\">"+the_entity_name+"("+the_entity+")</span><span style=\"color: #304d5e;font-size: 6px\">(未进入图谱中的实体)</span>\n</a>";
+
+        }
+        html +="<span id=\"assign\" onclick =\"addPropertyValue('"+eng_name+"','"+property_name+"','"+value_type+"','"+entity_id+"','"+the_entity_name+"')\" style=\"font-size: 10px;color:black;background-color: #efefef;border: 2px\">&nbsp;&nbsp;赋值&nbsp;&nbsp;</span><br>"
+
+
+    }
+    $('#created_entity_block').append(html);
+}
+    function displayProperty(eng_name,property_name,description,range_str,range_str_zh) {
+
+        $('#submit_block').html('');
+        html = "<h4>"+property_name+"</h4>";
+        html+="<h5>"+description+"</h5>";
+        $('#submit_block').append(html);
+
+        html = " <p align=\"left\" style=\"height:200px;line-height:30px;margin:0;overflow-y:auto; overflow-x:hidden\" >\n"
+        var str="";
+        for(var i=0;i<range_str.length;i++)
+        {
+            if(range_str[i]=='NoneType')continue
+            if(range_str[i]=='str'||range_str[i]=="bool"||range_str[i]=='int'||range_str[i]=='float')
+            {
+                html+="*<a onclick=\"fillString('"+property_name+"','"+description+"','"+eng_name+"')\" title=\"自定义填充字符串\"><span style=\"color: #eb9316\">"+range_str_zh[i]+"</span></a><br>\n";
+                continue;
+            }
+            if(range_str[i]=='date')
+            {
+                html+="*<a onclick=\"fillDate('"+property_name+"','"+description+"','"+eng_name+"')\" title=\"自定义填充时间\"><span style=\"color: #eb9316\">"+range_str_zh[i]+"</span></a><br>\n";
+                continue;
+            }
+            else
+            {
+                var url = "/create/creating/"+range_str[i];
+                html+="-<a onclick=\"chooseEntity('"+property_name+"','"+description+"','"+eng_name+"','"+range_str[i]+"','"+range_str_zh[i]+"')\" title=\"为该属性创建一个"+range_str_zh[i]+"实体\">"+"<span style=\"color: #eb9316\">"+range_str_zh[i]+"("+range_str[i]+")</span></a><br>\n";
+            }
+        }
+        $('#submit_block').append(html)
+
+    }
+    function creating() {
+
+            var writed_data = JSON.parse(localStorage.getItem("writed_data"));
+            if (writed_data["created_entities"][entity].indexOf(id)>-1)
+            {
+                alert("重复创建！");
+                return;
+            }
+            writed_data["created_entities"][entity].push(id);{#  把id对应的实体删除，这个不需要#}
+            var post_data ={};
+            post_data["entity"]=entity;
+            post_data["id"]=JSON.stringify(id);
+            post_data["property_data"]=JSON.stringify(writed_data[entity][id]);
+            $.ajax({
+                url: '/create/process/',
+                type: "POST",
+                data: post_data,
+                success: function (data) {
+                    data = JSON.parse(data);
+                    displayEntities()
+                }
+             });
+            localStorage.setItem("writed_data",JSON.stringify(writed_data));
+    }
+    function addPropertyValue(eng_name,property_name,value_type,class_id,the_entity_name) {
+        console.log(value_type)
+        writed_data = JSON.parse(localStorage.getItem("writed_data"));
+        if(!(property_name in writed_data[entity][id]))
+        {
+            writed_data[entity][id][property_name]={"eng_name":eng_name,"value":[]}
+
+        }
+        if(value_type == "str")
+        {
+            var value = $('#propertyValue').val();
+            if(value.length>0)
+            {
+                writed_data[entity][id][property_name]["value"].push(['str',value]);
+                console.log(",,,,")
+            }
+        }
+        else if(value_type=='date')
+        {
+            var y=document.getElementById("filldate").value;
+            if(y.length>0)
+            {
+                writed_data[entity][id][property_name]["value"].push(['date',y]);
+            }
+        }
+        else
+        {
+            writed_data[entity][id][property_name]["value"].push(["obj",[class_id,the_entity_name]]);
+        }
+        localStorage.setItem("writed_data",JSON.stringify(writed_data));
+        console.log(writed_data)
+        displayWrited(writed_data)
+
+    }
+    function displayWrited(writed_data) {
+    $('#writed_block').html('')
+        html="<span style=\"font-size:20px;color:#eb9316;\">已填写的属性</span><br>"
+        for(var obj in writed_data[entity][id])
+        {
+
+            for (var i=0; i< writed_data[entity][id][obj]["value"].length;i++)
+            {
+                if(writed_data[entity][id][obj]["value"][i][0]=="obj")
+                {
+                    html += "<span>"+obj+":</span><a onclick=window.open('/create/looking/"+writed_data[entity][id][obj]["value"][i][1][0]+"') title=\"点击查看属性信息\"><span>"  + writed_data[entity][id][obj]["value"][i][1][1] + "</span></a><br>"
+                }
+                else
+                {
+                    html += "<span>" + obj +":" + writed_data[entity][id][obj]["value"][i][1] + "</span><br>"
+
+                }
+            }
+        }
+        html+="<button onclick=\"creating()\">创建实体</button>"
+        $('#writed_block').append(html)
+
+    }
+</script>
+{% endblock %}
+

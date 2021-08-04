@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/orderQuantity", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "orderQuantity", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderQuantity", 
+                    "_lastone": true, 
+                    "rdfs:label": "orderQuantity"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "订购的商品数量。 如果属性未设置，则设定数量为1", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/OrderItem", 
+            "_last": true, 
+            "rdfs:label": "OrderItem"
+        }
+    ], 
+    "nameZh": "订单条目的采购数量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The number of the item ordered. If the property is not set, assume the quantity is one.", 
+    "rdfs:label": "orderQuantity", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

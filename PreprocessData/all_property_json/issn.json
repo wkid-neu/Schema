@@ -1,0 +1,88 @@
+{
+    "@id": "http://cnschema.org/issn", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "issn", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/issn", 
+                    "_lastone": true, 
+                    "rdfs:label": "issn"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The W3C Schema Bib Extend (BibEx) group led the work to improve cnschema.org for bibliographic information, including terms for periodicals, articles and multi-volume works. The design was inspired in places (e.g. pageStart, pageEnd, pagination) by the Bibliographic Ontology, 'bibo'.", 
+            "rdfs:label": "BibExTerm", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "期刊的国际标准序列号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Dataset", 
+            "rdfs:label": "Dataset"
+        }, 
+        {
+            "@id": "http://cnschema.org/WebSite", 
+            "rdfs:label": "WebSite"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeries", 
+            "rdfs:label": "CreativeWorkSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Blog", 
+            "_last": true, 
+            "rdfs:label": "Blog"
+        }
+    ], 
+    "nameZh": "ISSN号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The International Standard Serial Number (ISSN) that identifies this serial publication. You can repeat this property to identify different formats of, or the linking ISSN (ISSN-L) for, this serial publication.", 
+    "rdfs:label": "issn", 
+    "wikidataName": "ISSN", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P236", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Issn"
+}

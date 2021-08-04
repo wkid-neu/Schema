@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/actionStatus", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "actionStatus", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/actionStatus", 
+                    "_lastone": true, 
+                    "rdfs:label": "actionStatus"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "表示当前执行操作的状态", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "执行操作的状态", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ActionStatusType", 
+            "_last": true, 
+            "rdfs:label": "ActionStatusType"
+        }
+    ], 
+    "rdfs:comment": "Indicates the current disposition of the Action.", 
+    "rdfs:label": "actionStatus", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

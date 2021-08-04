@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/athlete", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "athlete", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/athlete", 
+                    "_lastone": true, 
+                    "rdfs:label": "athlete"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "作为运动队队员的人，球员（与教练相对）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SportsTeam", 
+            "_last": true, 
+            "rdfs:label": "SportsTeam"
+        }
+    ], 
+    "nameZh": "运动员", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A person that acts as performing member of a sports team; a player as opposed to a coach.", 
+    "rdfs:label": "athlete", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Athlete"
+}

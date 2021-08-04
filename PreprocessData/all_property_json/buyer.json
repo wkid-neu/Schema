@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/buyer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "buyer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/buyer", 
+                    "_lastone": true, 
+                    "rdfs:label": "buyer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/participant", 
+            "_last": true, 
+            "rdfs:label": "participant"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "参与者属性的子属性。买东西的参与者、个人或者组织。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SellAction", 
+            "_last": true, 
+            "rdfs:label": "SellAction"
+        }
+    ], 
+    "nameZh": "买家", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A sub property of participant. The participant/person/organization that bought the object.", 
+    "rdfs:label": "buyer", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Buyer"
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/itemListOrder", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "itemListOrder", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/itemListOrder", 
+                    "_lastone": true, 
+                    "rdfs:label": "itemListOrder"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鍒楄〃涓厓绱犵殑鎺掑垪椤哄簭锛堝鍗囧簭锛岄檷搴忥級", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ItemList", 
+            "_last": true, 
+            "rdfs:label": "ItemList"
+        }
+    ], 
+    "nameZh": "鍒楄〃鎺掑垪椤哄簭", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/ItemListOrderType", 
+            "_last": true, 
+            "rdfs:label": "ItemListOrderType"
+        }
+    ], 
+    "rdfs:comment": "Type of ordering (e.g. Ascending, Descending, Unordered).", 
+    "rdfs:label": "itemListOrder", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,125 @@
+{
+    "@id": "http://cnschema.org/isAccessibleForFree", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tHyde Park\n\t\n\t\tIt's one of nine royal parks of London.\n\t\n\tWebsite:\n\t\twww.royalparks.org.uk/parks/hyde-park\n\t\n\t\n\t\tTicket: access for free.\n\t\n", 
+            "PRE-MARKUP": "Hyde Park\nIt's one of the nine royal parks of London.\nWebsite:\n\twww.royalparks.org.uk/parks/hyde-park\n\nTicket: access for free.", 
+            "RDFA": "\n\tHyde Park\n\t\n\t\tIt's one of nine royal parks of London.\n\t\n\tWebsite:\n\t\twww.royalparks.org.uk/parks/hyde-park\n\t\n\t\n\t\tTicket: access for free.\n\t\n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "isAccessibleForFree"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+            "PRE-MARKUP": "Disneyland Paris\nIt's an amusement park in Marne-la-Vallée, near Paris, in France.\nHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\nEntrance: with ticket\nCurrency accepted: Euro\nPayment accepted: Cash, Credit Card\nWebsite:\n\twww.disneylandparis.it\n", 
+            "RDFA": "\n\tDisneyland Paris\n\t\n\t\tIt's an amusement park in Marne-la-Vallée, near Paris, in France and is the most visited theme park in all of France and Europe.\n\t\n\tHours: Mo-Fr 10am-7pm Sa 10am-22pm Su 10am-21pm\n\t\t\n\t\t\n\t\t\n\t\n\t\n\t\tEntrance: with ticket\n\t\n\t\n\t\tCurrency accepted: Euro\n\t\n\t\n\t\tPayment accepted: Cash, Credit Card\n\t\n\tWebsite:\n\t\twww.disneylandparis.it\n\t\n", 
+            "TYPES": [
+                "AmusementPark", 
+                "TouristAttraction", 
+                "isAccessibleForFree", 
+                "currenciesAccepted", 
+                "openingHours", 
+                "paymentAccepted"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    \n    \n    \n    \n    \n    \n    \n    \n    \n    \n      \n      \n      \n    \n    \n    \n    \n    \n    \n  \n", 
+            "PRE-MARKUP": "Name: The Falles 2017\nDescription: The Falles is a traditional celebration held in commemoration of Saint Joseph in the city of Valencia, Spain. The term Falles refers to both the celebration and the monuments burnt during the celebration. Added to UNESCO's intangible cultural heritage of humanity list on 30 November 2016.\nFrom: March 3, 2017\nTo: March 3, 2017\nLocation: Valencia, ES\nPublic Access: yes\nIs Accessible For Free: yes\nTourist Audience: Cultural tourism\nImage 1: https://commons.wikimedia.org/wiki/File%3AFalla_Plaza_del_Ayuntamiento_2016_(1).jpg\nImage 2: https://commons.wikimedia.org/wiki/File:La_fallera_y_su_crem%C3%A1.jpg\nSame As: http://www.wikidata.org/entity/Q1143768", 
+            "RDFA": "\n    \n    \n    \n    \n    \n    \n    \n    \n        \n        \n        \n    \n    \n    \n    \n    \n    \n    \n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "isAccessibleForFree"
+            ], 
+            "_index": 3, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    \n    \n    \n    \n      \n      \n        \n      \n      \n        \n      \n    \n    \n      \n      \n    \n    \n      \n      \n    \n    \n    \n    \n    \n  \n", 
+            "PRE-MARKUP": "Name: Villers–Bretonneux Australian National Memorial\nDescription: The Australian National Memorial, Villers–Bretonneux is the main memorial to Australian military personnel killed on the Western Front during World War I.\nAddress: Fouilloy, FR\nGeocoordinates: lat 49.8852515, lon 2.5106436\nPublic Access: yes\nIs Accessible For Free: yes\nTourist Audience: Memorial Tourism from Australia and New Zealand\nImage: https://commons.wikimedia.org/wiki/File%3AVillers-Bretonneux_m%C3%A9morial_australien_(tour_et_croix)_1.jpg\nSame As: https://www.wikidata.org/wiki/Q2544355", 
+            "RDFA": "\n    \n    \n    \n        \n        \n            >\n            \n        \n        \n            \n        \n    \n\n\n    \n    \n\n\n    \n    \n\n\n\n    \n    \n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "touristType", 
+                "isAccessibleForFree", 
+                "Cemetery"
+            ], 
+            "_index": 4, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "isAccessibleForFree", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isAccessibleForFree", 
+                    "_lastone": true, 
+                    "rdfs:label": "isAccessibleForFree"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/free", 
+        "rdfs:label": "free"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "表示该出版物可免费获得的标志。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/PublicationEvent", 
+            "_last": true, 
+            "rdfs:label": "PublicationEvent"
+        }
+    ], 
+    "nameZh": "是否免费", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "A flag to signal that the item, event, or place is accessible for free.", 
+    "rdfs:label": "isAccessibleForFree", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

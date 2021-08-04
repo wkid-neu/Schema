@@ -1,0 +1,80 @@
+{
+    "@id": "http://cnschema.org/issueNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "issueNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/position", 
+                    "rdfs:label": "position"
+                }, 
+                {
+                    "@id": "http://cnschema.org/issueNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "issueNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The W3C Schema Bib Extend (BibEx) group led the work to improve cnschema.org for bibliographic information, including terms for periodicals, articles and multi-volume works. The design was inspired in places (e.g. pageStart, pageEnd, pagination) by the Bibliographic Ontology, 'bibo'.", 
+            "rdfs:label": "BibExTerm", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/position", 
+            "_last": true, 
+            "rdfs:label": "position"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "期刊标记符", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PublicationIssue", 
+            "_last": true, 
+            "rdfs:label": "PublicationIssue"
+        }
+    ], 
+    "nameZh": "期刊号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "Identifies the issue of publication; for example, \"iii\" or \"2\".", 
+    "rdfs:label": "issueNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

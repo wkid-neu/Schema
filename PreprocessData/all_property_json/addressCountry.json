@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/addressCountry", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "addressCountry", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/addressCountry", 
+                    "_lastone": true, 
+                    "rdfs:label": "addressCountry"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "地址所属国家,比如USA，China", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PostalAddress", 
+            "rdfs:label": "PostalAddress"
+        }, 
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "rdfs:label": "GeoShape"
+        }, 
+        {
+            "@id": "http://cnschema.org/GeoCoordinates", 
+            "_last": true, 
+            "rdfs:label": "GeoCoordinates"
+        }
+    ], 
+    "nameZh": "地址所在国家", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Country", 
+            "rdfs:label": "Country"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.", 
+    "rdfs:label": "addressCountry", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

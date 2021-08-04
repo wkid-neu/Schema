@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/acceptedAnswer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "acceptedAnswer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/suggestedAnswer", 
+                    "rdfs:label": "suggestedAnswer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/acceptedAnswer", 
+                    "_lastone": true, 
+                    "rdfs:label": "acceptedAnswer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/suggestedAnswer", 
+            "_last": true, 
+            "rdfs:label": "suggestedAnswer"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "被接受的最佳答案，通常是出现在问答网站上。不同的网站选择的机制不同，例如社区观点、提问者的观点。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Question", 
+            "_last": true, 
+            "rdfs:label": "Question"
+        }
+    ], 
+    "nameZh": "被采纳的答案", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ItemList", 
+            "rdfs:label": "ItemList"
+        }, 
+        {
+            "@id": "http://cnschema.org/Answer", 
+            "_last": true, 
+            "rdfs:label": "Answer"
+        }
+    ], 
+    "rdfs:comment": "The answer(s) that has been accepted as best, typically on a Question/Answer site. Sites vary in their selection mechanisms, e.g. drawing on community opinion and/or the view of the Question author.", 
+    "rdfs:label": "acceptedAnswer", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

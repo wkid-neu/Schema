@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/commentTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "commentTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/commentTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "commentTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "UserComment撰写的时间。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/UserComments", 
+            "_last": true, 
+            "rdfs:label": "UserComments"
+        }
+    ], 
+    "nameZh": "评论发表时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "rdfs:label": "DateTime"
+        }, 
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "The time at which the UserComment was made.", 
+    "rdfs:label": "commentTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

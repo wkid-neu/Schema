@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/numberOfEmployees", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfEmployees", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfEmployees", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfEmployees"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "组织的雇员数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BusinessAudience", 
+            "rdfs:label": "BusinessAudience"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "nameZh": "雇员数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The number of employees in an organization e.g. business.", 
+    "rdfs:label": "numberOfEmployees", 
+    "wikidataName": "employees", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1128", 
+    "wikipediaUrl": ""
+}

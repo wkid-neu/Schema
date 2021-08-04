@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/priceValidUntil", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "priceValidUntil", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/priceValidUntil", 
+                    "_lastone": true, 
+                    "rdfs:label": "priceValidUntil"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "价格失效的日期", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "_last": true, 
+            "rdfs:label": "Offer"
+        }
+    ], 
+    "nameZh": "价格有效截止日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "The date after which the price is no longer available.", 
+    "rdfs:label": "priceValidUntil", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

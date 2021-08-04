@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/reportNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "reportNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/reportNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "reportNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "出版机构给一个报告分配的编码或标识符。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Report", 
+            "_last": true, 
+            "rdfs:label": "Report"
+        }
+    ], 
+    "nameZh": "报告编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The number or other unique designator assigned to a Report by the publishing organization.", 
+    "rdfs:label": "reportNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

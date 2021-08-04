@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/performer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "performer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/performer", 
+                    "_lastone": true, 
+                    "rdfs:label": "performer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/performers", 
+        "rdfs:label": "performers"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "活动中的表演者，例如主持人，音乐家，音乐团体或演员", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "表演者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "A performer at the event—for example, a presenter, musician, musical group or actor.", 
+    "rdfs:label": "performer", 
+    "wikidataName": "performer", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P175", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Performer"
+}

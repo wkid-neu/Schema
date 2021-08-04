@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/feesAndCommissionsSpecification", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "feesAndCommissionsSpecification", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/feesAndCommissionsSpecification", 
+                    "_lastone": true, 
+                    "rdfs:label": "feesAndCommissionsSpecification"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#FIBO", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This element is based on the work of the Financial Industry Business Ontology project (see http://www.fibo.org/schema for details), in support of the W3C Financial Industry Business Ontology Community Group (http://www.fibo.org/community). Many class and property definitions are inspired by or based on http://www.fibo.org.", 
+            "rdfs:label": "FIBO", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "金融产品或金融服务机构适用的费用，佣金和其他条款的说明。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FinancialService", 
+            "rdfs:label": "FinancialService"
+        }, 
+        {
+            "@id": "http://cnschema.org/FinancialProduct", 
+            "_last": true, 
+            "rdfs:label": "FinancialProduct"
+        }
+    ], 
+    "nameZh": "费用和佣金详情", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Description of fees, commissions, and other terms applied either to a class of financial product, or by a financial service organization.", 
+    "rdfs:label": "feesAndCommissionsSpecification", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

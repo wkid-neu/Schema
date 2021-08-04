@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/nextItem", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "nextItem", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/nextItem", 
+                    "_lastone": true, 
+                    "rdfs:label": "nextItem"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指向当前列表项下一项的链接", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ListItem", 
+            "_last": true, 
+            "rdfs:label": "ListItem"
+        }
+    ], 
+    "nameZh": "下一项", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ListItem", 
+            "_last": true, 
+            "rdfs:label": "ListItem"
+        }
+    ], 
+    "rdfs:comment": "A link to the ListItem that follows the current one.", 
+    "rdfs:label": "nextItem", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

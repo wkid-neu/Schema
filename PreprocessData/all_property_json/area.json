@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/area", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "area", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/area", 
+                    "_lastone": true, 
+                    "rdfs:label": "area"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "广播覆盖的区域。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "_last": true, 
+            "rdfs:label": "BroadcastService"
+        }
+    ], 
+    "nameZh": "广播覆盖地区", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The area within which users can expect to reach the broadcast service.", 
+    "rdfs:label": "area", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/serviceArea", 
+        "rdfs:label": "serviceArea"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/dropoffLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dropoffLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dropoffLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "dropoffLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "可以归还租车的地方。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/RentalCarReservation", 
+            "_last": true, 
+            "rdfs:label": "RentalCarReservation"
+        }
+    ], 
+    "nameZh": "租车归还地点", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "Where a rental car can be dropped off.", 
+    "rdfs:label": "dropoffLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

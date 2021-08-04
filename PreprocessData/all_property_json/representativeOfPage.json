@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/representativeOfPage", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "representativeOfPage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/representativeOfPage", 
+                    "_lastone": true, 
+                    "rdfs:label": "representativeOfPage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该图片对应的页面，在这个页面里该图片是主题图。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "_last": true, 
+            "rdfs:label": "ImageObject"
+        }
+    ], 
+    "nameZh": "作为主题图所对应的页面", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Indicates whether this image is representative of the content of the page.", 
+    "rdfs:label": "representativeOfPage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,74 @@
+{
+    "@id": "http://cnschema.org/longitude", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+            "PRE-MARKUP": "What is the latitude and longitude of the Empire State Building?\nAnswer:\nLatitude: 40 deg 44 min 54.36 sec N\nLongitude: 73 deg 59 min 8.5 sec W", 
+            "RDFA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+            "TYPES": [
+                "Place", 
+                "GeoCoordinates", 
+                "latitude", 
+                "longitude", 
+                "geo"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "longitude", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/longitude", 
+                    "_lastone": true, 
+                    "rdfs:label": "longitude"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "位置的经度", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoCoordinates", 
+            "_last": true, 
+            "rdfs:label": "GeoCoordinates"
+        }
+    ], 
+    "nameZh": "经度", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The longitude of a location. For example -122.08585 (WGS 84).", 
+    "rdfs:label": "longitude", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Longitude"
+}

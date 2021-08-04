@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/predecessorOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "predecessorOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/predecessorOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "predecessorOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "产品的上一代型号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ProductModel", 
+            "_last": true, 
+            "rdfs:label": "ProductModel"
+        }
+    ], 
+    "nameZh": "上一代型号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ProductModel", 
+            "_last": true, 
+            "rdfs:label": "ProductModel"
+        }
+    ], 
+    "rdfs:comment": "A pointer from a previous, often discontinued variant of the product to its newer variant.", 
+    "rdfs:label": "predecessorOf", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

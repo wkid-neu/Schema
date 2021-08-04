@@ -1,0 +1,84 @@
+{
+    "@id": "http://cnschema.org/hasPart", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "hasPart", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasPart", 
+                    "_lastone": true, 
+                    "rdfs:label": "hasPart"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The W3C Schema Bib Extend (BibEx) group led the work to improve cnschema.org for bibliographic information, including terms for periodicals, articles and multi-volume works. The design was inspired in places (e.g. pageStart, pageEnd, pagination) by the Bibliographic Ontology, 'bibo'.", 
+            "rdfs:label": "BibExTerm", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/season", 
+            "rdfs:label": "season"
+        }, 
+        {
+            "@id": "http://cnschema.org/containsSeason", 
+            "rdfs:label": "containsSeason"
+        }, 
+        {
+            "@id": "http://cnschema.org/episode", 
+            "_last": true, 
+            "rdfs:label": "episode"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "琛ㄧず鏌愪釜浣滃搧鏄浣滃搧鐨勪竴閮ㄥ垎", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/isPartOf", 
+        "rdfs:label": "isPartOf"
+    }, 
+    "nameZh": "浣滃搧缁勪欢", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense).", 
+    "rdfs:label": "hasPart", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

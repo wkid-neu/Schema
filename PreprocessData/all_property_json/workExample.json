@@ -1,0 +1,84 @@
+{
+    "@id": "http://cnschema.org/workExample", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n    The Fellowship of the Rings was written by\n    J.R.R Tolkien and was originally published\n    in the \n        United Kingdom by \n        George Allen & Unwin\n     in 1954.\n    The book has been republished many times, including editions by \n    \n        \n            HarperCollins\n         in 1974\n        (ISBN: 0007149212)\n     and by \n    \n        \n            Ballantine\n         in 1984\n        (ISBN: 0345296052).\n    \n\n\n    The book has also been adapted for the screen several times.\n    \n        \n        J.R.R. Tolkien's The Lord of the Rings, an\n        animated version directed by Ralph Bakshi\n        and released in 1978, covered the\n        events of the novel and parts of its sequel.\n    \n    \n        \n        The movie The Lord of the Rings: The Fellowship of the\n        Ring, directed by Peter Jackson and\n        released in 2001, ran\n        178 minutes long in its\n        theatrical release.\n    \n", 
+            "PRE-MARKUP": "\n    The Fellowship of the Rings was written by J.R.R Tolkien and\n    was originally published in the United Kingdom in 1954 by George Allen &\n    Unwin.\n\n\n    The book has been republished many times, including editions by\n    HarperCollins in 1974 (ISBN: 0007149212) and by Ballantine in 1984\n    (ISBN: 0345296052).\n\n\n    The book has also been adapted for the screen several times. J.R.R.\n    Tolkien's The Lord of the Rings, an animated version directed by Ralph\n    Bakshi and released in 1978, covered the events of the novel and parts of\n    its sequel. The movie The Lord of the Rings: The Fellowship of the\n    Ring, directed by Peter Jackson and released in 2001, ran 178 minutes\n    long in its theatrical release.\n", 
+            "RDFA": "\n    \n        The Fellowship of the Rings was written by\n        J.R.R Tolkien and was originally published\n        in the \n            United Kingdom by \n            George Allen & Unwin\n         in 1954.\n        The book has been republished many times, including editions by \n        \n            \n                HarperCollins\n             in 1974\n            (ISBN: 0007149212)\n         and by \n        \n            \n                Ballantine\n             in 1984\n            (ISBN: 0345296052).\n        \n    \n    \n        The book has also been adapted for the screen several times.\n        \n            \n            J.R.R. Tolkien's The Lord of the Rings, an\n            animated version directed by Ralph Bakshi\n            and released in 1978, covered the\n            events of the novel and parts of its sequel.\n        \n        \n            \n            The movie The Lord of the Rings: The Fellowship of the\n            Ring, directed by Peter Jackson and\n            released in 2001, ran\n            178 minutes long in its\n            theatrical release.\n        \n    \n", 
+            "TYPES": [
+                "exampleOfWork", 
+                "workExample"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-periodical-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "workExample", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/workExample", 
+                    "_lastone": true, 
+                    "rdfs:label": "workExample"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_bibex", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "The W3C Schema Bib Extend (BibEx) group led the work to improve cnschema.org for bibliographic information, including terms for periodicals, articles and multi-volume works. The design was inspired in places (e.g. pageStart, pageEnd, pagination) by the Bibliographic Ontology, 'bibo'.", 
+            "rdfs:label": "BibExTerm", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "例如：平装本，第一版或电子书。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/exampleOfWork", 
+        "rdfs:label": "exampleOfWork"
+    }, 
+    "nameZh": "作品的范例", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "Example/instance/realization/derivation of the concept of this creative work. eg. The paperback edition, first edition, or eBook.", 
+    "rdfs:label": "workExample", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

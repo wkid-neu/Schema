@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/orderItemNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "orderItemNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/orderItemNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "orderItemNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "订单条目的编号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/OrderItem", 
+            "_last": true, 
+            "rdfs:label": "OrderItem"
+        }
+    ], 
+    "nameZh": "订单条目的编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The identifier of the order item.", 
+    "rdfs:label": "orderItemNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

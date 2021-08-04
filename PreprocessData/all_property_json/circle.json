@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/circle", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "circle", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/circle", 
+                    "_lastone": true, 
+                    "rdfs:label": "circle"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "圆是以某个指定经维度为中心指定长度为半径的区域。圆是由一对坐标加上以米为单位的半径来表示的。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "_last": true, 
+            "rdfs:label": "GeoShape"
+        }
+    ], 
+    "nameZh": "圆形区域", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.", 
+    "rdfs:label": "circle", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Circle"
+}

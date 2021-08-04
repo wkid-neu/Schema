@@ -1,0 +1,122 @@
+{
+    "@id": "http://cnschema.org/recipient", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recipient", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recipient", 
+                    "_lastone": true, 
+                    "rdfs:label": "recipient"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/bccRecipient", 
+            "rdfs:label": "bccRecipient"
+        }, 
+        {
+            "@id": "http://cnschema.org/ccRecipient", 
+            "rdfs:label": "ccRecipient"
+        }, 
+        {
+            "@id": "http://cnschema.org/toRecipient", 
+            "_last": true, 
+            "rdfs:label": "toRecipient"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/participant", 
+            "_last": true, 
+            "rdfs:label": "participant"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "参与者的子属性。 在行动接收端的参与者。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SendAction", 
+            "rdfs:label": "SendAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/Message", 
+            "rdfs:label": "Message"
+        }, 
+        {
+            "@id": "http://cnschema.org/DonateAction", 
+            "rdfs:label": "DonateAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/CommunicateAction", 
+            "rdfs:label": "CommunicateAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/GiveAction", 
+            "rdfs:label": "GiveAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/AuthorizeAction", 
+            "rdfs:label": "AuthorizeAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/ReturnAction", 
+            "rdfs:label": "ReturnAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/PayAction", 
+            "rdfs:label": "PayAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/TipAction", 
+            "_last": true, 
+            "rdfs:label": "TipAction"
+        }
+    ], 
+    "nameZh": "接收者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "_last": true, 
+            "rdfs:label": "Audience"
+        }
+    ], 
+    "rdfs:comment": "A sub property of participant. The participant who is at the receiving end of the action.", 
+    "rdfs:label": "recipient", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

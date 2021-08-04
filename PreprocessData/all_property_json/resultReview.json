@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/resultReview", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "resultReview", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/result", 
+                    "rdfs:label": "result"
+                }, 
+                {
+                    "@id": "http://cnschema.org/resultReview", 
+                    "_lastone": true, 
+                    "rdfs:label": "resultReview"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/result", 
+            "_last": true, 
+            "rdfs:label": "result"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "结果的子属性。以评论作为行动的结果。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ReviewAction", 
+            "_last": true, 
+            "rdfs:label": "ReviewAction"
+        }
+    ], 
+    "nameZh": "行动的评论", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Review", 
+            "_last": true, 
+            "rdfs:label": "Review"
+        }
+    ], 
+    "rdfs:comment": "A sub property of result. The review that resulted in the performing of the action.", 
+    "rdfs:label": "resultReview", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

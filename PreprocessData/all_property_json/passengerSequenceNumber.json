@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/passengerSequenceNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "passengerSequenceNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/passengerSequenceNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "passengerSequenceNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "航空公司指定的乘客序列号", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FlightReservation", 
+            "_last": true, 
+            "rdfs:label": "FlightReservation"
+        }
+    ], 
+    "nameZh": "乘客的顺序编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The passenger's sequence number as assigned by the airline.", 
+    "rdfs:label": "passengerSequenceNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,79 @@
+{
+    "@id": "http://cnschema.org/countryOfOrigin", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Ghostbusters\n  \n    Produced by: Black Rhino\n  \n  \n    Country: United States\n  \n", 
+            "PRE-MARKUP": "Ghostbusters was produced by Black Rhino in the United States.", 
+            "RDFA": "\n  Ghostbusters\n  \n    Produced by: Black Rhino\n  \n  \n    Country: United States\n  \n", 
+            "TYPES": [
+                "Movie", 
+                "countryOfOrigin"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-screeningevent-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "countryOfOrigin", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/countryOfOrigin", 
+                    "_lastone": true, 
+                    "rdfs:label": "countryOfOrigin"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "对电影或节目负责的生产公司或个人的办事处所在的国家。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Movie", 
+            "rdfs:label": "Movie"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "rdfs:label": "TVSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeason", 
+            "rdfs:label": "TVSeason"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVEpisode", 
+            "_last": true, 
+            "rdfs:label": "TVEpisode"
+        }
+    ], 
+    "nameZh": "影片制作国家", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Country", 
+            "_last": true, 
+            "rdfs:label": "Country"
+        }
+    ], 
+    "rdfs:comment": "The country of the principal offices of the production company or individual responsible for the movie or program.", 
+    "rdfs:label": "countryOfOrigin", 
+    "wikidataName": "country of origin", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P495", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Country_of_origin"
+}

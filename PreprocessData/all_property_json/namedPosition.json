@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/namedPosition", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "namedPosition", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/namedPosition", 
+                    "_lastone": true, 
+                    "rdfs:label": "namedPosition"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "作为组织的一部分，由个人或组织担任，执行或填补的职位（例如，一位运动员在一个运动队中可能担任后卫）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Role", 
+            "_last": true, 
+            "rdfs:label": "Role"
+        }
+    ], 
+    "nameZh": "角色名称", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A position played, performed or filled by a person or organization, as part of an organization. For example, an athlete in a SportsTeam might play in the position named 'Quarterback'.", 
+    "rdfs:label": "namedPosition", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/roleName", 
+        "rdfs:label": "roleName"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

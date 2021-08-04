@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/screenCount", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "screenCount", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/screenCount", 
+                    "_lastone": true, 
+                    "rdfs:label": "screenCount"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "影院的放映厅数量", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MovieTheater", 
+            "_last": true, 
+            "rdfs:label": "MovieTheater"
+        }
+    ], 
+    "nameZh": "放映厅数量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "The number of screens in the movie theater.", 
+    "rdfs:label": "screenCount", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

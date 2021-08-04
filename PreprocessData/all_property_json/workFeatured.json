@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/workFeatured", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "workFeatured", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/workFeatured", 
+                    "_lastone": true, 
+                    "rdfs:label": "workFeatured"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/workPerformed", 
+            "rdfs:label": "workPerformed"
+        }, 
+        {
+            "@id": "http://cnschema.org/workPresented", 
+            "_last": true, 
+            "rdfs:label": "workPresented"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "在某些活动中所推广的作品（例：在展览活动所展览的展览品）。特定的子属性可被用于“workPerformed”（用于类似剧院的场合）和“workPresented”（用于类似电影院的场合）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "特色作品", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "A work featured in some event, e.g. exhibited in an ExhibitionEvent.\n       Specific subproperties are available for workPerformed (e.g. a play), or a workPresented (a Movie at a ScreeningEvent).", 
+    "rdfs:label": "workFeatured", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

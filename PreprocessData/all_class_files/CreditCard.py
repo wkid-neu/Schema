@@ -1,0 +1,9 @@
+from PreprocessData.all_class_files.LoanOrCredit import LoanOrCredit
+from PreprocessData.all_class_files.PaymentCard import PaymentCard
+import global_data
+
+
+class CreditCard(LoanOrCredit,PaymentCard):
+    def __init__(self, additionalType=None, alternateName=None, description=None, disambiguatingDescription=None, identifier=None, image=None, mainEntityOfPage=None, name=None, potentialAction=None, sameAs=None, url=None, aggregateRating=None, areaServed=None, audience=None, availableChannel=None, award=None, brand=None, broker=None, category=None, hasOfferCatalog=None, hoursAvailable=None, isRelatedTo=None, isSimilarTo=None, logo=None, offers=None, provider=None, providerMobility=None, review=None, serviceOutput=None, serviceType=None, annualPercentageRate=None, feesAndCommissionsSpecification=None, interestRate=None, amount=None, loanTerm=None, requiredCollateral=None):
+        LoanOrCredit.__init__(self, additionalType, alternateName, description, disambiguatingDescription, identifier, image, mainEntityOfPage, name, potentialAction, sameAs, url, aggregateRating, areaServed, audience, availableChannel, award, brand, broker, category, hasOfferCatalog, hoursAvailable, isRelatedTo, isSimilarTo, logo, offers, provider, providerMobility, review, serviceOutput, serviceType, annualPercentageRate, feesAndCommissionsSpecification, interestRate, amount, loanTerm, requiredCollateral)
+        PaymentCard.__init__(self, additionalType, alternateName, description, disambiguatingDescription, identifier, image, mainEntityOfPage, name, potentialAction, sameAs, url, aggregateRating, areaServed, audience, availableChannel, award, brand, broker, category, hasOfferCatalog, hoursAvailable, isRelatedTo, isSimilarTo, logo, offers, provider, providerMobility, review, serviceOutput, serviceType, annualPercentageRate, feesAndCommissionsSpecification, interestRate)

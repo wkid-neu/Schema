@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/result", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "result", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/result", 
+                    "_lastone": true, 
+                    "rdfs:label": "result"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/resultReview", 
+            "rdfs:label": "resultReview"
+        }, 
+        {
+            "@id": "http://cnschema.org/resultComment", 
+            "_last": true, 
+            "rdfs:label": "resultComment"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "行动的结果。例如约翰写了一本书。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "行动的结果", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "The result produced in the action. e.g. John wrote a book.", 
+    "rdfs:label": "result", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

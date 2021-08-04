@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/temporal", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "temporal", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/temporal", 
+                    "_lastone": true, 
+                    "rdfs:label": "temporal"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "数据集的时间适用范围，例如 2011年人口普查数据集，2011年（按ISO 8601时间间隔格式）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Dataset", 
+            "_last": true, 
+            "rdfs:label": "Dataset"
+        }
+    ], 
+    "nameZh": "数据集的时间跨度", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The range of temporal applicability of a dataset, e.g. for a 2011 census dataset, the year 2011 (in ISO 8601 time interval format).", 
+    "rdfs:label": "temporal", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/temporalCoverage", 
+        "rdfs:label": "temporalCoverage"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Temporal"
+}

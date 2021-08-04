@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/reviewRating", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "reviewRating", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/reviewRating", 
+                    "_lastone": true, 
+                    "rdfs:label": "reviewRating"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "单条评论所给出的评分。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Review", 
+            "_last": true, 
+            "rdfs:label": "Review"
+        }
+    ], 
+    "nameZh": "评论的打分", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Rating", 
+            "_last": true, 
+            "rdfs:label": "Rating"
+        }
+    ], 
+    "rdfs:comment": "The rating given in this review. Note that reviews can themselves be rated. The reviewRating applies to rating given by the review. The aggregateRating property applies to the review itself, as a creative work.", 
+    "rdfs:label": "reviewRating", 
+    "wikidataName": "review score", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P444", 
+    "wikipediaUrl": ""
+}

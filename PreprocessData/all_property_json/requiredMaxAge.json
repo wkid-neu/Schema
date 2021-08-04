@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/requiredMaxAge", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "requiredMaxAge", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/requiredMaxAge", 
+                    "_lastone": true, 
+                    "rdfs:label": "requiredMaxAge"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "对于受众的最大年龄要求", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PeopleAudience", 
+            "_last": true, 
+            "rdfs:label": "PeopleAudience"
+        }
+    ], 
+    "nameZh": "最大年龄要求", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "Audiences defined by a person's maximum age.", 
+    "rdfs:label": "requiredMaxAge", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

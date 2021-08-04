@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/playMode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "playMode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/playMode", 
+                    "_lastone": true, 
+                    "rdfs:label": "playMode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "指示这个游戏是多人游戏，合作游戏还是单人游戏。该游戏可以同时被标记为多人游戏，合作游戏和单人游戏。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "rdfs:label": "VideoGame"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "_last": true, 
+            "rdfs:label": "VideoGameSeries"
+        }
+    ], 
+    "nameZh": "游戏玩家模式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/GamePlayMode", 
+            "_last": true, 
+            "rdfs:label": "GamePlayMode"
+        }
+    ], 
+    "rdfs:comment": "Indicates whether this game is multi-player, co-op or single-player.  The game can be marked as multi-player, co-op and single-player at the same time.", 
+    "rdfs:label": "playMode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

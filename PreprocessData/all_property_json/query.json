@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/query", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "query", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instrument", 
+                    "rdfs:label": "instrument"
+                }, 
+                {
+                    "@id": "http://cnschema.org/query", 
+                    "_lastone": true, 
+                    "rdfs:label": "query"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/instrument", 
+            "_last": true, 
+            "rdfs:label": "instrument"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "工具的子属性。对此行动所使用的查询。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SearchAction", 
+            "_last": true, 
+            "rdfs:label": "SearchAction"
+        }
+    ], 
+    "nameZh": "查询", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A sub property of instrument. The query used on this action.", 
+    "rdfs:label": "query", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

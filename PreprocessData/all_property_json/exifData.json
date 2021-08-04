@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/exifData", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "exifData", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/exifData", 
+                    "_lastone": true, 
+                    "rdfs:label": "exifData"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该对象的EXIF数据。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ImageObject", 
+            "_last": true, 
+            "rdfs:label": "ImageObject"
+        }
+    ], 
+    "nameZh": "图片对象的EXIF信息", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/PropertyValue", 
+            "_last": true, 
+            "rdfs:label": "PropertyValue"
+        }
+    ], 
+    "rdfs:comment": "exif data for this object.", 
+    "rdfs:label": "exifData", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Exif"
+}

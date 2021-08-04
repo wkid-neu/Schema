@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/targetProduct", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "targetProduct", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/targetProduct", 
+                    "_lastone": true, 
+                    "rdfs:label": "targetProduct"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "软件可以适用的目标操作系统或者产品。如果有多个版本都可以适用，则只能使用产品名称", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareSourceCode", 
+            "_last": true, 
+            "rdfs:label": "SoftwareSourceCode"
+        }
+    ], 
+    "nameZh": "软件应用的目标操作系统", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/SoftwareApplication", 
+            "_last": true, 
+            "rdfs:label": "SoftwareApplication"
+        }
+    ], 
+    "rdfs:comment": "Target Operating System / Product to which the code applies.  If applies to several versions, just the product name can be used.", 
+    "rdfs:label": "targetProduct", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

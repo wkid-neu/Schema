@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/underName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "underName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/underName", 
+                    "_lastone": true, 
+                    "rdfs:label": "underName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "例如：机票的持有者，为谁预订的服务", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "rdfs:label": "Ticket"
+        }, 
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "nameZh": "持票人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The person or organization the reservation or ticket is for.", 
+    "rdfs:label": "underName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

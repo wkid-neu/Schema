@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/targetCollection", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "targetCollection", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "rdfs:label": "object"
+                }, 
+                {
+                    "@id": "http://cnschema.org/targetCollection", 
+                    "_lastone": true, 
+                    "rdfs:label": "targetCollection"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/object", 
+            "_last": true, 
+            "rdfs:label": "object"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/collection", 
+        "rdfs:label": "collection"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "行动要达到的一系列目标", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/UpdateAction", 
+            "_last": true, 
+            "rdfs:label": "UpdateAction"
+        }
+    ], 
+    "nameZh": "行动要达到的目标", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "A sub property of object. The collection target of the action.", 
+    "rdfs:label": "targetCollection", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/gameItem", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gameItem", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gameItem", 
+                    "_lastone": true, 
+                    "rdfs:label": "gameItem"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "娓告垙涓瓨鍦ㄧ殑鐗╁搧", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Game", 
+            "_last": true, 
+            "rdfs:label": "Game"
+        }
+    ], 
+    "nameZh": "娓告垙閬撳叿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "An item is an object within the game world that can be collected by a player or, occasionally, a non-player character.", 
+    "rdfs:label": "gameItem", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

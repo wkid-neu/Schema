@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/programMembershipUsed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "programMembershipUsed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/programMembershipUsed", 
+                    "_lastone": true, 
+                    "rdfs:label": "programMembershipUsed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "此预订（飞行，旅馆等）是否有应用任何会员身份（优惠）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "nameZh": "使用的会员身份", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/ProgramMembership", 
+            "_last": true, 
+            "rdfs:label": "ProgramMembership"
+        }
+    ], 
+    "rdfs:comment": "Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the reservation.", 
+    "rdfs:label": "programMembershipUsed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

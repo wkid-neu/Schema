@@ -1,0 +1,79 @@
+{
+    "@id": "http://cnschema.org/season", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "season", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/hasPart", 
+                    "rdfs:label": "hasPart"
+                }, 
+                {
+                    "@id": "http://cnschema.org/season", 
+                    "_lastone": true, 
+                    "rdfs:label": "season"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/hasPart", 
+            "_last": true, 
+            "rdfs:label": "hasPart"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/seasons", 
+        "rdfs:label": "seasons"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "连续节目的季。例如老友记包含第三季，第四季等等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "rdfs:label": "TVSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/RadioSeries", 
+            "rdfs:label": "RadioSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "_last": true, 
+            "rdfs:label": "VideoGameSeries"
+        }
+    ], 
+    "nameZh": "季", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "_last": true, 
+            "rdfs:label": "CreativeWorkSeason"
+        }
+    ], 
+    "rdfs:comment": "A season in a media series.", 
+    "rdfs:label": "season", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/containsSeason", 
+        "rdfs:label": "containsSeason"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

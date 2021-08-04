@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/seasonNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "seasonNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/position", 
+                    "rdfs:label": "position"
+                }, 
+                {
+                    "@id": "http://cnschema.org/seasonNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "seasonNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/position", 
+            "_last": true, 
+            "rdfs:label": "position"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "鍦ㄨ繛缁妭鐩腑锛岃瀛ｇ殑椤哄簭缂栧彿", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "_last": true, 
+            "rdfs:label": "CreativeWorkSeason"
+        }
+    ], 
+    "nameZh": "瀛ｇ殑缂栧彿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "Position of the season within an ordered group of seasons.", 
+    "rdfs:label": "seasonNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

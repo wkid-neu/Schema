@@ -1,0 +1,96 @@
+{
+    "@id": "http://cnschema.org/toRecipient", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+            "PRE-MARKUP": "An message from Dom Portwood to Peter Gibbons about TPS reports, cc'ing Bill Lumbergh and bcc'ing tps-consulting@example.com", 
+            "RDFA": "\n  \n    \n    dportwood@example.com\n  \n  \n    \n    pgibbons@example.com\n  \n  \n    \n    blumbergh@example.com\n  \n  \n    tps-consulting@example.com\n  \n  \n    \n  \n  \n  \n  \n    \n  \n", 
+            "TYPES": [
+                "EmailMessage", 
+                "toRecipient", 
+                "bccRecipient", 
+                "ccRecipient"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-creativework-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "toRecipient", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recipient", 
+                    "rdfs:label": "recipient"
+                }, 
+                {
+                    "@id": "http://cnschema.org/toRecipient", 
+                    "_lastone": true, 
+                    "rdfs:label": "toRecipient"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/recipient", 
+            "_last": true, 
+            "rdfs:label": "recipient"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "消息的直接收件人", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Message", 
+            "_last": true, 
+            "rdfs:label": "Message"
+        }
+    ], 
+    "nameZh": "收件人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "_last": true, 
+            "rdfs:label": "Audience"
+        }
+    ], 
+    "rdfs:comment": "A sub property of recipient. The recipient who was directly sent the message.", 
+    "rdfs:label": "toRecipient", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

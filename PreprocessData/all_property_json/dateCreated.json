@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/dateCreated", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "dateCreated", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/dateCreated", 
+                    "_lastone": true, 
+                    "rdfs:label": "dateCreated"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "创作出CreativeWork的日期。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DataFeedItem", 
+            "rdfs:label": "DataFeedItem"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "创建日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "rdfs:label": "DateTime"
+        }, 
+        {
+            "@id": "http://cnschema.org/Date", 
+            "_last": true, 
+            "rdfs:label": "Date"
+        }
+    ], 
+    "rdfs:comment": "The date on which the CreativeWork was created or the item was added to a DataFeed.", 
+    "rdfs:label": "dateCreated", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

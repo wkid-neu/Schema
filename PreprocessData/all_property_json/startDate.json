@@ -1,0 +1,94 @@
+{
+    "@id": "http://cnschema.org/startDate", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+            "TYPES": [
+                "Event", 
+                "Place", 
+                "PostalAddress", 
+                "AggregateOffer", 
+                "location", 
+                "startDate", 
+                "address", 
+                "offers", 
+                "offerCount"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "startDate", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/startDate", 
+                    "_lastone": true, 
+                    "rdfs:label": "startDate"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "某事的开始日期和时间（按照ＩＳＯ ８６０１日期标准）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Role", 
+            "rdfs:label": "Role"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeries", 
+            "rdfs:label": "CreativeWorkSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/DatedMoneySpecification", 
+            "rdfs:label": "DatedMoneySpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWorkSeason", 
+            "_last": true, 
+            "rdfs:label": "CreativeWorkSeason"
+        }
+    ], 
+    "nameZh": "开始日期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Date", 
+            "rdfs:label": "Date"
+        }, 
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The start date and time of the item (in ISO 8601 date format).", 
+    "rdfs:label": "startDate", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

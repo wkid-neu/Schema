@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/paymentMethod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "paymentMethod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentMethod", 
+                    "_lastone": true, 
+                    "rdfs:label": "paymentMethod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "淇＄敤鍗＄殑鍚嶇О鎴栬鍗曠殑鍏朵粬浠樻鏂瑰紡", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Order", 
+            "rdfs:label": "Order"
+        }, 
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "鏀粯鏂瑰紡", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PaymentMethod", 
+            "_last": true, 
+            "rdfs:label": "PaymentMethod"
+        }
+    ], 
+    "rdfs:comment": "The name of the credit card or other method of payment for the order.", 
+    "rdfs:label": "paymentMethod", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

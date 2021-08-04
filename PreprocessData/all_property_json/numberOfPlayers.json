@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/numberOfPlayers", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfPlayers", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfPlayers", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfPlayers"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指明有多少人可以玩这个游戏（最少、最多或范围）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Game", 
+            "rdfs:label": "Game"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "_last": true, 
+            "rdfs:label": "VideoGameSeries"
+        }
+    ], 
+    "nameZh": "玩家数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "Indicate how many people can play this game (minimum, maximum, or range).", 
+    "rdfs:label": "numberOfPlayers", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/worstRating", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "worstRating", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/worstRating", 
+                    "_lastone": true, 
+                    "rdfs:label": "worstRating"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100,000 and 250,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一套评分系统中的最低值。一般缺省值为1。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Rating", 
+            "_last": true, 
+            "rdfs:label": "Rating"
+        }
+    ], 
+    "nameZh": "评价系统的最低评分", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "rdfs:label": "Number"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The lowest value allowed in this rating system. If worstRating is omitted, 1 is assumed.", 
+    "rdfs:label": "worstRating", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

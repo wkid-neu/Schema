@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/programmingModel", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "programmingModel", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/programmingModel", 
+                    "_lastone": true, 
+                    "rdfs:label": "programmingModel"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "琛ㄦ槑搴旂敤绋嬪簭缂栫▼鎺ュ彛鏄惁鍦ㄥ彈鎵樼", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/APIReference", 
+            "_last": true, 
+            "rdfs:label": "APIReference"
+        }
+    ], 
+    "nameZh": "鏄惁鎵樼浠ｇ爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Indicates whether API is managed or unmanaged.", 
+    "rdfs:label": "programmingModel", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Programming_model"
+}

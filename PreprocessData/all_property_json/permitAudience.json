@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/permitAudience", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "permitAudience", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/permitAudience", 
+                    "_lastone": true, 
+                    "rdfs:label": "permitAudience"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "这个许可证的目标受众", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Permit", 
+            "_last": true, 
+            "rdfs:label": "Permit"
+        }
+    ], 
+    "nameZh": "许可证的受众群", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Audience", 
+            "_last": true, 
+            "rdfs:label": "Audience"
+        }
+    ], 
+    "rdfs:comment": "The target audience for this permit.", 
+    "rdfs:label": "permitAudience", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

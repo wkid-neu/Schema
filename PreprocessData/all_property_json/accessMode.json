@@ -1,0 +1,105 @@
+{
+    "@id": "http://cnschema.org/accessMode", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A graphic novel book example.\nSee also https://github.com/daisy/epub-revision-a11y/wiki/ePub-3.1-Accessibility--Proposal-To-Schema.org", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "accessMode", 
+                "accessModeSufficient", 
+                "accessibilitySummary", 
+                "accessibilityFeature"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/issue-1100-examples.txt"
+        }, 
+        {
+            "JSON": "{\n  \"@context\": \"http://cnschema.org/\",\n  \"@type\": \"Movie\",\n  \"accessMode\": [\"auditory\", \"visual\"],\n  \"accessibilityFeature\": [\"audioDescription\", \"captions\"],\n  \"accessModeSufficient\": [ \n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"textual\", \"visual\"], \n      \"description\": \"Closed captioning\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\"], \n      \"description\": \"Audio description\"\n    }\n  ],\n  \"accessibilitySummary\": \"Captions provided in English; short scenes in French have English subtitles instead.\"\n}", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A second example.\nSee also https://github.com/daisy/epub-revision-a11y/wiki/ePub-3.1-Accessibility--Proposal-To-Schema.org", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "accessMode", 
+                "accessModeSufficient", 
+                "accessibilitySummary", 
+                "accessibilityFeature"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/issue-1100-examples.txt"
+        }, 
+        {
+            "JSON": "{\n  \"@context\": \"http://cnschema.org/\",\n  \"@type\": \"Book\",\n  \"name\": \"Alice in Wonderland\",\n  \"accessMode\": [\"auditory\", \"textual\", \"visual\"],\n  \"accessibilityFeature\": [\"alternativeText\", \"synchronizedAudioText\"],\n  \"accessModeSufficient\": [ \n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"textual\"], \n      \"description\": \"See the text\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"textual\", \"visual\"], \n      \"description\": \"See the text and images\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\"], \n      \"description\": \"Hear the text and image descriptions\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\", \"visual\"], \n      \"description\": \"Hear the text and see the images\"\n    },\n    {\n      \"@type\": \"ItemList\", \n      \"itemListElement\": [\"auditory\", \"visual\", \"textual\"], \n      \"description\": \"Hear the text and see the text and images\"\n    }\n  ],\n  \"accessibilitySummary\": \"Short descriptions are provided; long descriptions of the images are not needed for most readers.\"\n}", 
+            "MICRODATA": "TODO", 
+            "PRE-MARKUP": "A third example.\nSee also https://github.com/daisy/epub-revision-a11y/wiki/ePub-3.1-Accessibility--Proposal-To-Schema.org", 
+            "RDFA": "TODO", 
+            "TYPES": [
+                "accessMode", 
+                "accessModeSufficient", 
+                "accessibilitySummary", 
+                "accessibilityFeature"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/issue-1100-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "accessMode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/accessMode", 
+                    "_lastone": true, 
+                    "rdfs:label": "accessMode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_source": [
+        {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1100", 
+            "_last": true, 
+            "rdfs:comment": "https://github.com/schemaorg/schemaorg/issues/1100", 
+            "rdfs:label": "https://github.com/schemaorg/schemaorg/issues/1100"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "人类感知外部信息的一种方式，例如：听觉，触觉，文字，视觉，颜色相关，图表，化学视觉，图表视觉，数学公式视觉，音乐视觉。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "感知形式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The human sensory perceptual system or cognitive faculty through which a person may process or perceive information. Expected values include: auditory, tactile, textual, visual, colorDependent, chartOnVisual, chemOnVisual, diagramOnVisual, mathOnVisual, musicOnVisual, textOnVisual.", 
+    "rdfs:label": "accessMode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

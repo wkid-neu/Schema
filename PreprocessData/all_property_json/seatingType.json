@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/seatingType", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "seatingType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/seatingType", 
+                    "_lastone": true, 
+                    "rdfs:label": "seatingType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "座位的类型", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Seat", 
+            "_last": true, 
+            "rdfs:label": "Seat"
+        }
+    ], 
+    "nameZh": "座位类型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "rdfs:label": "QualitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The type/class of the seat.", 
+    "rdfs:label": "seatingType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

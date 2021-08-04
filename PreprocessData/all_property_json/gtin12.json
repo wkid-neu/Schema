@@ -1,0 +1,71 @@
+{
+    "@id": "http://cnschema.org/gtin12", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gtin12", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "rdfs:label": "identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gtin12", 
+                    "_lastone": true, 
+                    "rdfs:label": "gtin12"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/identifier", 
+            "_last": true, 
+            "rdfs:label": "identifier"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "12浣嶅叏鐞冭锤鏄撳搧椤硅瘑鍒爜", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Demand", 
+            "_last": true, 
+            "rdfs:label": "Demand"
+        }
+    ], 
+    "nameZh": "12浣嶅叏鐞冭锤鏄撳搧椤硅瘑鍒爜", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The GTIN-12 code of the product, or the product to which the offer refers. The GTIN-12 is the 12-digit GS1 Identification Key composed of a U.P.C. Company Prefix, Item Reference, and Check Digit used to identify trade items. See GS1 GTIN Summary for more details.", 
+    "rdfs:label": "gtin12", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/GTIN-12"
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/children", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "children", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/children", 
+                    "_lastone": true, 
+                    "rdfs:label": "children"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "此人的孩子。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "子女", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A child of the person.", 
+    "rdfs:label": "children", 
+    "wikidataName": "child", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P40", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Children"
+}

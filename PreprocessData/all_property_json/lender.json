@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/lender", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "lender", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "rdfs:label": "participant"
+                }, 
+                {
+                    "@id": "http://cnschema.org/lender", 
+                    "_lastone": true, 
+                    "rdfs:label": "lender"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/participant", 
+            "_last": true, 
+            "rdfs:label": "participant"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "借出东西给别人的人", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BorrowAction", 
+            "_last": true, 
+            "rdfs:label": "BorrowAction"
+        }
+    ], 
+    "nameZh": "借出者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "A sub property of participant. The person that lends the object being borrowed.", 
+    "rdfs:label": "lender", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Lender"
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/eventStatus", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "eventStatus", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/eventStatus", 
+                    "_lastone": true, 
+                    "rdfs:label": "eventStatus"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "表示事件的状态，事件被取消或重新安排时特别有用。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "活动的状态", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/EventStatusType", 
+            "_last": true, 
+            "rdfs:label": "EventStatusType"
+        }
+    ], 
+    "rdfs:comment": "An eventStatus of an event represents its status; particularly useful when an event is cancelled or rescheduled.", 
+    "rdfs:label": "eventStatus", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

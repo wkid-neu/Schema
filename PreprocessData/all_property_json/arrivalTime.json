@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/arrivalTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "arrivalTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/arrivalTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "arrivalTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "锛堢悊鎯筹級杈惧埌鏃堕棿", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Trip", 
+            "_last": true, 
+            "rdfs:label": "Trip"
+        }
+    ], 
+    "nameZh": "鍒拌揪鏃堕棿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The expected arrival time.", 
+    "rdfs:label": "arrivalTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

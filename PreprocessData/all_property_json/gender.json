@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/gender", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "gender", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/gender", 
+                    "_lastone": true, 
+                    "rdfs:label": "gender"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "浜虹殑鎬у埆", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "nameZh": "鎬у埆", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/GenderType", 
+            "rdfs:label": "GenderType"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Gender of the person. While http://cnschema.org/Male and http://cnschema.org/Female may be used, text strings are also acceptable for people who do not identify as a binary gender.", 
+    "rdfs:label": "gender", 
+    "wikidataName": "sex or gender", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P21", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Gender"
+}

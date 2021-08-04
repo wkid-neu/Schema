@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/ticketedSeat", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "ticketedSeat", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ticketedSeat", 
+                    "_lastone": true, 
+                    "rdfs:label": "ticketedSeat"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "与票据对应的座位", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "_last": true, 
+            "rdfs:label": "Ticket"
+        }
+    ], 
+    "nameZh": "票据对应的座位", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Seat", 
+            "_last": true, 
+            "rdfs:label": "Seat"
+        }
+    ], 
+    "rdfs:comment": "The seat associated with the ticket.", 
+    "rdfs:label": "ticketedSeat", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

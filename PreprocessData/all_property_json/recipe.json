@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/recipe", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "recipe", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instrument", 
+                    "rdfs:label": "instrument"
+                }, 
+                {
+                    "@id": "http://cnschema.org/recipe", 
+                    "_lastone": true, 
+                    "rdfs:label": "recipe"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/instrument", 
+            "_last": true, 
+            "rdfs:label": "instrument"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "做菜行为所使用的菜谱。工具（instrument）的子属性。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CookAction", 
+            "_last": true, 
+            "rdfs:label": "CookAction"
+        }
+    ], 
+    "nameZh": "菜谱", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Recipe", 
+            "_last": true, 
+            "rdfs:label": "Recipe"
+        }
+    ], 
+    "rdfs:comment": "A sub property of instrument. The recipe/instructions used to perform the action.", 
+    "rdfs:label": "recipe", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Recipe"
+}

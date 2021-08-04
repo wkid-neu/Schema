@@ -1,0 +1,95 @@
+{
+    "@id": "http://cnschema.org/availableLanguage", 
+    "_examples": [
+        {
+            "JSON": "This example is in microdata only.", 
+            "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  We speak:\n  \n    \n      English\n    \n    \n      German\n    \n  \n", 
+            "PRE-MARKUP": "This example is in microdata only.", 
+            "RDFA": "This example is in microdata only.", 
+            "TYPES": [
+                "availableLanguage", 
+                "Language"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\tNeuschwanstein Castle\n\tIt is a nineteenth-century Romanesque Revival palace in\n\t\t\n\t\t\tSchwangau, in\n\t\t\tGermany.\n\t\t\n\t\n\tGuided tours in\n\t\t\n\t\t\tGerman\n\t\t and\n\t\t\n\t\t\tEnglish.\n\t\t\n\t\n", 
+            "PRE-MARKUP": "Neuschwanstein Castle\nNeuschwanstein Castle is a nineteenth-century Romanesque Revival palace in Schwangau, in southwest Bavaria, Germany.\nGuided tours in German and English.", 
+            "RDFA": "\n\tNeuschwanstein Castle\n\tIt is a nineteenth-century Romanesque Revival palace in\n\t\t\n\t\t\tSchwangau, in\n\t\t\tGermany.\n\t\t\n\t\n\tGuided tours in\n\t\t\n\t\t\tGerman\n\t\t and\n\t\t\n\t\t\tEnglish.\n\t\t\n\t\n", 
+            "TYPES": [
+                "TouristAttraction", 
+                "availableLanguage"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-tourism-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "availableLanguage", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/availableLanguage", 
+                    "_lastone": true, 
+                    "rdfs:label": "availableLanguage"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该商品所支持的语言", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/ServiceChannel", 
+            "rdfs:label": "ServiceChannel"
+        }, 
+        {
+            "@id": "http://cnschema.org/LodgingBusiness", 
+            "rdfs:label": "LodgingBusiness"
+        }, 
+        {
+            "@id": "http://cnschema.org/TouristAttraction", 
+            "_last": true, 
+            "rdfs:label": "TouristAttraction"
+        }
+    ], 
+    "nameZh": "支持的语言", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Language", 
+            "rdfs:label": "Language"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard. See also inLanguage", 
+    "rdfs:label": "availableLanguage", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

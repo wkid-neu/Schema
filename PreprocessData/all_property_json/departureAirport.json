@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/departureAirport", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "departureAirport", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/departureAirport", 
+                    "_lastone": true, 
+                    "rdfs:label": "departureAirport"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "飞机起飞的机场。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "出发机场", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Airport", 
+            "_last": true, 
+            "rdfs:label": "Airport"
+        }
+    ], 
+    "rdfs:comment": "The airport where the flight originates.", 
+    "rdfs:label": "departureAirport", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

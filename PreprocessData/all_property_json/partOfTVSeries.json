@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/partOfTVSeries", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "partOfTVSeries", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/isPartOf", 
+                    "rdfs:label": "isPartOf"
+                }, 
+                {
+                    "@id": "http://cnschema.org/partOfTVSeries", 
+                    "_lastone": true, 
+                    "rdfs:label": "partOfTVSeries"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/isPartOf", 
+            "_last": true, 
+            "rdfs:label": "isPartOf"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "这一集或季所属的电视连续剧", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TVEpisode", 
+            "rdfs:label": "TVEpisode"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVClip", 
+            "rdfs:label": "TVClip"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeason", 
+            "_last": true, 
+            "rdfs:label": "TVSeason"
+        }
+    ], 
+    "nameZh": "所属系列", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "_last": true, 
+            "rdfs:label": "TVSeries"
+        }
+    ], 
+    "rdfs:comment": "The TV series to which this episode or season belongs.", 
+    "rdfs:label": "partOfTVSeries", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/partOfSeries", 
+        "rdfs:label": "partOfSeries"
+    }, 
+    "wikidataName": "series", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P179", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/illustrator", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "illustrator", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/illustrator", 
+                    "_lastone": true, 
+                    "rdfs:label": "illustrator"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "书籍的插图绘制者", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Book", 
+            "_last": true, 
+            "rdfs:label": "Book"
+        }
+    ], 
+    "nameZh": "插图绘制者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "The illustrator of the book.", 
+    "rdfs:label": "illustrator", 
+    "wikidataName": "illustrator", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P110", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Illustrator"
+}

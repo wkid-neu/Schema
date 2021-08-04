@@ -1,0 +1,77 @@
+{
+    "@id": "http://cnschema.org/track", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "track", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/track", 
+                    "_lastone": true, 
+                    "rdfs:label": "track"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#MBZ", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This vocabulary was improved through collaboration with the MusicBrainz project\n    (www.musicbrainz.org), and is partially inspired by the MusicBrainz and\n    Music Ontology schemas.", 
+            "rdfs:label": "MBZ", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_supersede": {
+        "@id": "http://cnschema.org/tracks", 
+        "rdfs:label": "tracks"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一段音乐记录，通常包含一首歌。如果给定了条目列表，那条目列表当中应包括MusicRecording。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicPlaylist", 
+            "rdfs:label": "MusicPlaylist"
+        }, 
+        {
+            "@id": "http://cnschema.org/MusicGroup", 
+            "_last": true, 
+            "rdfs:label": "MusicGroup"
+        }
+    ], 
+    "nameZh": "音轨", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MusicRecording", 
+            "rdfs:label": "MusicRecording"
+        }, 
+        {
+            "@id": "http://cnschema.org/ItemList", 
+            "_last": true, 
+            "rdfs:label": "ItemList"
+        }
+    ], 
+    "rdfs:comment": "A music recording (track)—usually a single song. If an ItemList is given, the list should contain items of type MusicRecording.", 
+    "rdfs:label": "track", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

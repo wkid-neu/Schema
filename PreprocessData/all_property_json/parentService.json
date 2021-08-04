@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/parentService", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "parentService", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/parentService", 
+                    "_lastone": true, 
+                    "rdfs:label": "parentService"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "一个广播服务的上级广播服务，例如，一个地区频道所属的国家频道", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "_last": true, 
+            "rdfs:label": "BroadcastService"
+        }
+    ], 
+    "nameZh": "上级服务", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastService", 
+            "_last": true, 
+            "rdfs:label": "BroadcastService"
+        }
+    ], 
+    "rdfs:comment": "A broadcast service to which the broadcast service may belong to such as regional variations of a national channel.", 
+    "rdfs:label": "parentService", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

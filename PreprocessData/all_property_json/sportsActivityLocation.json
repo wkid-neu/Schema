@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/sportsActivityLocation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "sportsActivityLocation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/location", 
+                    "rdfs:label": "location"
+                }, 
+                {
+                    "@id": "http://cnschema.org/sportsActivityLocation", 
+                    "_lastone": true, 
+                    "rdfs:label": "sportsActivityLocation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/location", 
+            "_last": true, 
+            "rdfs:label": "location"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "地点的子属性，表示体育活动举行的地方", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ExerciseAction", 
+            "_last": true, 
+            "rdfs:label": "ExerciseAction"
+        }
+    ], 
+    "nameZh": "运动场所", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/SportsActivityLocation", 
+            "_last": true, 
+            "rdfs:label": "SportsActivityLocation"
+        }
+    ], 
+    "rdfs:comment": "A sub property of location. The sports activity location where this action occurred.", 
+    "rdfs:label": "sportsActivityLocation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

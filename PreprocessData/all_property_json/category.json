@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/category", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "category", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/category", 
+                    "_lastone": true, 
+                    "rdfs:label": "category"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该项的类别。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "rdfs:label": "Invoice"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "nameZh": "类别", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "rdfs:label": "Text"
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "rdfs:label": "Thing"
+        }
+    ], 
+    "rdfs:comment": "A category for the item. Greater signs or slashes can be used to informally indicate a category hierarchy.", 
+    "rdfs:label": "category", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

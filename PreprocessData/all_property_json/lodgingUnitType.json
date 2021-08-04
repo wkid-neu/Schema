@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/lodgingUnitType", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "lodgingUnitType", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/lodgingUnitType", 
+                    "_lastone": true, 
+                    "rdfs:label": "lodgingUnitType"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "旅馆房间房型的描述", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LodgingReservation", 
+            "_last": true, 
+            "rdfs:label": "LodgingReservation"
+        }
+    ], 
+    "nameZh": "旅馆房间房型", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QualitativeValue", 
+            "rdfs:label": "QualitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Textual description of the unit type (including suite vs. room, size of bed, etc.).", 
+    "rdfs:label": "lodgingUnitType", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

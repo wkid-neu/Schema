@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/eligibleQuantity", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "eligibleQuantity", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/eligibleQuantity", 
+                    "_lastone": true, 
+                    "rdfs:label": "eligibleQuantity"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "报价最多可有购买多少货品，例如每客户最多可以购买一个优惠产品。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Demand", 
+            "rdfs:label": "Demand"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "_last": true, 
+            "rdfs:label": "PriceSpecification"
+        }
+    ], 
+    "nameZh": "适用数量", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "_last": true, 
+            "rdfs:label": "QuantitativeValue"
+        }
+    ], 
+    "rdfs:comment": "The interval and unit of measurement of ordering quantities for which the offer or price specification is valid. This allows e.g. specifying that a certain freight charge is valid only for a certain quantity.", 
+    "rdfs:label": "eligibleQuantity", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

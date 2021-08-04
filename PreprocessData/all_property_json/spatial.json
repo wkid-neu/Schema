@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/spatial", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "spatial", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/spatial", 
+                    "_lastone": true, 
+                    "rdfs:label": "spatial"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "数据集的空间适用范围，例如 对于纽约天气数据集，数据集对应的地区就表示纽约州", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Dataset", 
+            "_last": true, 
+            "rdfs:label": "Dataset"
+        }
+    ], 
+    "nameZh": "数据集对应的地区", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The range of spatial applicability of a dataset, e.g. for a dataset of New York weather, the state of New York.", 
+    "rdfs:label": "spatial", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/spatialCoverage", 
+        "rdfs:label": "spatialCoverage"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

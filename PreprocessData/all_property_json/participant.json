@@ -1,0 +1,115 @@
+{
+    "@id": "http://cnschema.org/participant", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "participant", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/participant", 
+                    "_lastone": true, 
+                    "rdfs:label": "participant"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/landlord", 
+            "rdfs:label": "landlord"
+        }, 
+        {
+            "@id": "http://cnschema.org/sportsTeam", 
+            "rdfs:label": "sportsTeam"
+        }, 
+        {
+            "@id": "http://cnschema.org/opponent", 
+            "rdfs:label": "opponent"
+        }, 
+        {
+            "@id": "http://cnschema.org/vendor", 
+            "rdfs:label": "vendor"
+        }, 
+        {
+            "@id": "http://cnschema.org/winner", 
+            "rdfs:label": "winner"
+        }, 
+        {
+            "@id": "http://cnschema.org/recipient", 
+            "rdfs:label": "recipient"
+        }, 
+        {
+            "@id": "http://cnschema.org/realEstateAgent", 
+            "rdfs:label": "realEstateAgent"
+        }, 
+        {
+            "@id": "http://cnschema.org/buyer", 
+            "rdfs:label": "buyer"
+        }, 
+        {
+            "@id": "http://cnschema.org/endorsee", 
+            "rdfs:label": "endorsee"
+        }, 
+        {
+            "@id": "http://cnschema.org/seller", 
+            "rdfs:label": "seller"
+        }, 
+        {
+            "@id": "http://cnschema.org/loser", 
+            "rdfs:label": "loser"
+        }, 
+        {
+            "@id": "http://cnschema.org/lender", 
+            "rdfs:label": "lender"
+        }, 
+        {
+            "@id": "http://cnschema.org/sender", 
+            "rdfs:label": "sender"
+        }, 
+        {
+            "@id": "http://cnschema.org/borrower", 
+            "_last": true, 
+            "rdfs:label": "borrower"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "间接参与行动的其他人。 例如 约翰与史蒂夫写了一本书", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Action", 
+            "_last": true, 
+            "rdfs:label": "Action"
+        }
+    ], 
+    "nameZh": "参与者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "Other co-agents that participated in the action indirectly. e.g. John wrote a book with Steve.", 
+    "rdfs:label": "participant", 
+    "wikidataName": "participant", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P710", 
+    "wikipediaUrl": ""
+}

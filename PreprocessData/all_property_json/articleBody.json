@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/articleBody", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "articleBody", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/articleBody", 
+                    "_lastone": true, 
+                    "rdfs:label": "articleBody"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Over 1,000,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "文章的主体部分。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Article", 
+            "_last": true, 
+            "rdfs:label": "Article"
+        }
+    ], 
+    "nameZh": "文章正文", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The actual body of the article.", 
+    "rdfs:label": "articleBody", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

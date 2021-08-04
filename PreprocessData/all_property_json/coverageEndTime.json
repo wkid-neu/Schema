@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/coverageEndTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "coverageEndTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/coverageEndTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "coverageEndTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鍗氬瀵逛竴涓簨浠剁殑鎶ュ缁撴潫鏃堕棿", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LiveBlogPosting", 
+            "_last": true, 
+            "rdfs:label": "LiveBlogPosting"
+        }
+    ], 
+    "nameZh": "鍗氬鐩存挱缁撴潫鏃堕棿", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The time when the live blog will stop covering the Event. Note that coverage may continue after the Event concludes.", 
+    "rdfs:label": "coverageEndTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

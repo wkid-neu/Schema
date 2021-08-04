@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/totalPrice", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "totalPrice", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/totalPrice", 
+                    "_lastone": true, 
+                    "rdfs:label": "totalPrice"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "预订服务或者购票的总价格，包含税，运费等", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "rdfs:label": "Ticket"
+        }, 
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "nameZh": "总价", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "rdfs:label": "Number"
+        }, 
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "rdfs:label": "PriceSpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The total price for the reservation or ticket, including applicable taxes, shipping, etc.", 
+    "rdfs:label": "totalPrice", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/expectsAcceptanceOf", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "expectsAcceptanceOf", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/expectsAcceptanceOf", 
+                    "_lastone": true, 
+                    "rdfs:label": "expectsAcceptanceOf"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "行动前必须接受的条件。例如，用户可能需要购买电影才能观看。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ConsumeAction", 
+            "_last": true, 
+            "rdfs:label": "ConsumeAction"
+        }
+    ], 
+    "nameZh": "行动前必须接受的条件", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "_last": true, 
+            "rdfs:label": "Offer"
+        }
+    ], 
+    "rdfs:comment": "An Offer which must be accepted before the user can perform the Action. For example, the user may need to buy a movie before being able to watch it.", 
+    "rdfs:label": "expectsAcceptanceOf", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

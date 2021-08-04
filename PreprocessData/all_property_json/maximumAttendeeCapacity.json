@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/maximumAttendeeCapacity", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "maximumAttendeeCapacity", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/maximumAttendeeCapacity", 
+                    "_lastone": true, 
+                    "rdfs:label": "maximumAttendeeCapacity"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "可以参加活动或场地的总人数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "_last": true, 
+            "rdfs:label": "Event"
+        }
+    ], 
+    "nameZh": "最多可容纳多少人参与", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The total number of individuals that may attend an event or venue.", 
+    "rdfs:label": "maximumAttendeeCapacity", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

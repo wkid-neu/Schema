@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/billingPeriod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "billingPeriod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/billingPeriod", 
+                    "_lastone": true, 
+                    "rdfs:label": "billingPeriod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "单据结算的时间间隔。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "_last": true, 
+            "rdfs:label": "Invoice"
+        }
+    ], 
+    "nameZh": "账单结算周期", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Duration", 
+            "_last": true, 
+            "rdfs:label": "Duration"
+        }
+    ], 
+    "rdfs:comment": "The time interval used to compute the invoice.", 
+    "rdfs:label": "billingPeriod", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

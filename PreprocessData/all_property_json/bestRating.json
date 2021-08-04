@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/bestRating", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "bestRating", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/bestRating", 
+                    "_lastone": true, 
+                    "rdfs:label": "bestRating"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 250,000 and 500,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "该评分系统中允许的最高评分分数，如果没有设置最高评分分数，就假定为5。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Rating", 
+            "_last": true, 
+            "rdfs:label": "Rating"
+        }
+    ], 
+    "nameZh": "支持的最高评分分数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "rdfs:label": "Number"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The highest value allowed in this rating system. If bestRating is omitted, 5 is assumed.", 
+    "rdfs:label": "bestRating", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

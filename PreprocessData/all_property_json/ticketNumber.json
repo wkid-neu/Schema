@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/ticketNumber", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "ticketNumber", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ticketNumber", 
+                    "_lastone": true, 
+                    "rdfs:label": "ticketNumber"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "可以确定票据的唯一标识", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "_last": true, 
+            "rdfs:label": "Ticket"
+        }
+    ], 
+    "nameZh": "票据编号", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The unique identifier for the ticket.", 
+    "rdfs:label": "ticketNumber", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

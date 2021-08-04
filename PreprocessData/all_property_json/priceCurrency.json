@@ -1,0 +1,64 @@
+{
+    "@id": "http://cnschema.org/priceCurrency", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "priceCurrency", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/priceCurrency", 
+                    "_lastone": true, 
+                    "rdfs:label": "priceCurrency"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 500,000 and 1,000,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "价格或价格分量的货币（以3个字母的ISO 4217格式），附在价格明细及其子类型上。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "rdfs:label": "PriceSpecification"
+        }, 
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "rdfs:label": "Reservation"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Ticket", 
+            "_last": true, 
+            "rdfs:label": "Ticket"
+        }
+    ], 
+    "nameZh": "价格对应的货币单位", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The currency of the price, or a price component when attached to PriceSpecification and its subtypes.\n\nUse standard formats: ISO 4217 currency format e.g. \"USD\"; Ticker symbol for cryptocurrencies e.g. \"BTC\"; well known names for Local Exchange Tradings Systems (LETS) and other currency types e.g. \"Ithaca HOUR\".", 
+    "rdfs:label": "priceCurrency", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

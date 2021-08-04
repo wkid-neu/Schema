@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/suggestedMinAge", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "suggestedMinAge", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/suggestedMinAge", 
+                    "_lastone": true, 
+                    "rdfs:label": "suggestedMinAge"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "推荐的内容受众的最小年龄", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PeopleAudience", 
+            "_last": true, 
+            "rdfs:label": "PeopleAudience"
+        }
+    ], 
+    "nameZh": "建议的受众最小年龄", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Number", 
+            "_last": true, 
+            "rdfs:label": "Number"
+        }
+    ], 
+    "rdfs:comment": "Minimal age recommended for viewing content.", 
+    "rdfs:label": "suggestedMinAge", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

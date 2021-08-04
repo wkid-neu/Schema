@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/license", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "license", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/license", 
+                    "_lastone": true, 
+                    "rdfs:label": "license"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "适用于此内容的许可证文件，通常由URL指示。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "许可证书", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/URL", 
+            "rdfs:label": "URL"
+        }, 
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "rdfs:comment": "A license document that applies to this content, typically indicated by URL.", 
+    "rdfs:label": "license", 
+    "wikidataName": "license", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P275", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/License"
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/commentText", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "commentText", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/commentText", 
+                    "_lastone": true, 
+                    "rdfs:label": "commentText"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 50,000 and 100,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "UserComment的文本。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/UserComments", 
+            "_last": true, 
+            "rdfs:label": "UserComments"
+        }
+    ], 
+    "nameZh": "评论文字", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The text of the UserComment.", 
+    "rdfs:label": "commentText", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/producer", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "producer", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/producer", 
+                    "_lastone": true, 
+                    "rdfs:label": "producer"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "制作作品（例如音乐，电影，电视剧等）的人或者组织", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "_last": true, 
+            "rdfs:label": "CreativeWork"
+        }
+    ], 
+    "nameZh": "制作人", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "rdfs:label": "Person"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.).", 
+    "rdfs:label": "producer", 
+    "wikidataName": "producer", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P162", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Producer"
+}

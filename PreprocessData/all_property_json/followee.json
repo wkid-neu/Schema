@@ -1,0 +1,67 @@
+{
+    "@id": "http://cnschema.org/followee", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "followee", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/object", 
+                    "rdfs:label": "object"
+                }, 
+                {
+                    "@id": "http://cnschema.org/followee", 
+                    "_lastone": true, 
+                    "rdfs:label": "followee"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/object", 
+            "_last": true, 
+            "rdfs:label": "object"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "社交网络上被别人关注", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/FollowAction", 
+            "_last": true, 
+            "rdfs:label": "FollowAction"
+        }
+    ], 
+    "nameZh": "被关注", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A sub property of object. The person or organization being followed.", 
+    "rdfs:label": "followee", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

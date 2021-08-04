@@ -1,0 +1,88 @@
+{
+    "@id": "http://cnschema.org/directors", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "directors", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/directors", 
+                    "_lastone": true, 
+                    "rdfs:label": "directors"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "电影、电视剧、电视剧集或电视游戏的导演。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Episode", 
+            "rdfs:label": "Episode"
+        }, 
+        {
+            "@id": "http://cnschema.org/RadioSeries", 
+            "rdfs:label": "RadioSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "rdfs:label": "VideoGame"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoGameSeries", 
+            "rdfs:label": "VideoGameSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/VideoObject", 
+            "rdfs:label": "VideoObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/Clip", 
+            "rdfs:label": "Clip"
+        }, 
+        {
+            "@id": "http://cnschema.org/MovieSeries", 
+            "rdfs:label": "MovieSeries"
+        }, 
+        {
+            "@id": "http://cnschema.org/Movie", 
+            "rdfs:label": "Movie"
+        }, 
+        {
+            "@id": "http://cnschema.org/TVSeries", 
+            "_last": true, 
+            "rdfs:label": "TVSeries"
+        }
+    ], 
+    "nameZh": "导演", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A director of e.g. tv, radio, movie, video games etc. content. Directors can be associated with individual items or with a series, episode, clip.", 
+    "rdfs:label": "directors", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/director", 
+        "rdfs:label": "director"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

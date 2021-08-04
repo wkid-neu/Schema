@@ -1,0 +1,138 @@
+{
+    "@id": "http://cnschema.org/aggregateRating", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+            "PRE-MARKUP": "GreatFood\n4 stars - based on 250 reviews\n1901 Lemur Ave\nSunnyvale, CA 94086\n(408) 714-1489\nwww.greatfood.com\nHours:\nMon-Sat 11am - 2:30pm\nMon-Thur 5pm - 9:30pm\nFri-Sat 5pm - 10pm\nCategories: Middle Eastern, Mediterranean\nPrice Range: $$\nTakes Reservations: Yes", 
+            "RDFA": "\n  GreatFood\n  \n    4 stars -\n    based on 250 reviews\n  \n  \n    1901 Lemur Ave\n    Sunnyvale,\n    CA 94086\n  \n  (408) 714-1489\n  www.greatfood.com\n  Hours:\n  Mon-Sat 11am - 2:30pm\n  Mon-Thu 5pm - 9:30pm\n  Fri-Sat 5pm - 10:00pm\n  Categories:\n  \n    Middle Eastern\n  ,\n  \n    Mediterranean\n  \n  Price Range: $$\n  Takes Reservations: Yes\n", 
+            "TYPES": [
+                "Restaurant", 
+                "AggregateRating", 
+                "FoodEstablishment", 
+                "LocalBusiness", 
+                "aggregateRating", 
+                "ratingValue", 
+                "reviewCount"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+            "PRE-MARKUP": "Kenmore White 17\" Microwave\n\nRated 3.5/5 based on 11 customer reviews\n$55.00\nIn stock\nProduct description:\n0.7 cubic feet countertop microwave. Has six preset cooking categories and\n convenience features like Add-A-Minute and Child Lock.\nCustomer reviews:\nNot a happy camper - by Ellie, April 1, 2011\n1/5 stars\nThe lamp burned out and now I have to replace it.\n Value purchase - by Lucas, March 25, 2011\n4/5 stars\nGreat microwave for the price. It is small and fits in my apartment.\n...", 
+            "RDFA": "\n  Kenmore White 17\" Microwave\n  \n  \n   Rated 3.5/5\n   based on 11 customer reviews\n  \n  \n    \n    $1,000.00\n    In stock\n  \n  Product description:\n  0.7 cubic feet countertop microwave.\n  Has six preset cooking categories and convenience features like\n  Add-A-Minute and Child Lock.\n  Customer reviews:\n  \n    Not a happy camper -\n    by Ellie,\n    April 1, 2011\n    \n      \n      1/\n      5stars\n    \n    The lamp burned out and now I have to replace\n    it. \n  \n  \n    Value purchase -\n    by Lucas,\n    March 25, 2011\n    \n      \n      4/\n      5stars\n    \n    Great microwave for the price. It is small and\n    fits in my apartment.\n  \n  ...\n", 
+            "TYPES": [
+                "Product", 
+                "AggregateRating", 
+                "Offer", 
+                "Review", 
+                "Rating", 
+                "price", 
+                "aggregateRating", 
+                "ratingValue", 
+                "reviewCount", 
+                "availability", 
+                "InStock"
+            ], 
+            "_index": 2, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+            "TYPES": [
+                "Product", 
+                "AggregateRating", 
+                "AggregateOffer", 
+                "Offer", 
+                "aggregateRating", 
+                "image", 
+                "offers"
+            ], 
+            "_index": 3, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "aggregateRating", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/aggregateRating", 
+                    "_lastone": true, 
+                    "rdfs:label": "aggregateRating"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 250,000 and 500,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "基于该项的一系列评论的总体评价。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/CreativeWork", 
+            "rdfs:label": "CreativeWork"
+        }, 
+        {
+            "@id": "http://cnschema.org/Brand", 
+            "rdfs:label": "Brand"
+        }, 
+        {
+            "@id": "http://cnschema.org/Event", 
+            "rdfs:label": "Event"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "rdfs:label": "Place"
+        }, 
+        {
+            "@id": "http://cnschema.org/Product", 
+            "rdfs:label": "Product"
+        }, 
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "nameZh": "总体评分", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/AggregateRating", 
+            "_last": true, 
+            "rdfs:label": "AggregateRating"
+        }
+    ], 
+    "rdfs:comment": "The overall rating, based on a collection of reviews or ratings, of the item.", 
+    "rdfs:label": "aggregateRating", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

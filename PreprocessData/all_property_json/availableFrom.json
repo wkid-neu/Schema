@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/availableFrom", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "availableFrom", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/availableFrom", 
+                    "_lastone": true, 
+                    "rdfs:label": "availableFrom"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "可以从商店、储物柜等地方提货的开始时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DeliveryEvent", 
+            "_last": true, 
+            "rdfs:label": "DeliveryEvent"
+        }
+    ], 
+    "nameZh": "提货开始时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "When the item is available for pickup from the store, locker, etc.", 
+    "rdfs:label": "availableFrom", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

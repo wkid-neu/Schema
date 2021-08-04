@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/characterName", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "characterName", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/characterName", 
+                    "_lastone": true, 
+                    "rdfs:label": "characterName"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "演出和剧目中演员所扮演的角色的名字", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PerformanceRole", 
+            "_last": true, 
+            "rdfs:label": "PerformanceRole"
+        }
+    ], 
+    "nameZh": "人物角色名字", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The name of a character played in some acting or performing role, i.e. in a PerformanceRole.", 
+    "rdfs:label": "characterName", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

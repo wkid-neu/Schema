@@ -1,0 +1,76 @@
+{
+    "@id": "http://cnschema.org/serviceArea", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "serviceArea", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/serviceArea", 
+                    "_lastone": true, 
+                    "rdfs:label": "serviceArea"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_supersede": {
+        "@id": "http://cnschema.org/area", 
+        "rdfs:label": "area"
+    }, 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "服务覆盖的地理区域。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ContactPoint", 
+            "rdfs:label": "ContactPoint"
+        }, 
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "nameZh": "服务区域", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/AdministrativeArea", 
+            "rdfs:label": "AdministrativeArea"
+        }, 
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "rdfs:label": "GeoShape"
+        }, 
+        {
+            "@id": "http://cnschema.org/Place", 
+            "_last": true, 
+            "rdfs:label": "Place"
+        }
+    ], 
+    "rdfs:comment": "The geographic area where the service is provided.", 
+    "rdfs:label": "serviceArea", 
+    "supersededBy": {
+        "@id": "http://cnschema.org/areaServed", 
+        "rdfs:label": "areaServed"
+    }, 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

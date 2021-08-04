@@ -1,0 +1,89 @@
+{
+    "@id": "http://cnschema.org/offeredBy", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+            "TYPES": [
+                "Offer", 
+                "offeredBy", 
+                "Book", 
+                "additionalType"
+            ], 
+            "_index": 1, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+        }, 
+        {
+            "JSON": "", 
+            "MICRODATA": "\n\n\nIn search of Haydn [videorecording] / Phil Grabsky Films.com & Seventh Art Productions in association with Sky Art HD ; filmed, written and directed by Phil Grabsky.\nRecord details\n\n\tPublisher: [Brighton, UK] : Seventh Art Productions, \n\n[2011]\n\n\n\t\tSubject:\n\t\t\tHaydn, Joseph, 1732-1809.Composers > Austria > Biography.\n\t\t\n\t\tGenre:\n\t\t\tDocumentary films.\n\t\t\n\n\n    LocationCall Number / Copy NotesBarcodeShelving LocationStatus\n\t\n\t\tMusic Resource Centre\n\t\tML 410 H4 I5 2011\n\t\t30007008812793\n\t\tCirculation\n\t\t \n\t\t\t\n\t\t\t\n\t\t\n\t\n\n", 
+            "PRE-MARKUP": "\n\nIn search of Haydn [videorecording] / Phil Grabsky Films.com & Seventh Art Productions in association with Sky Art HD ; filmed, written and directed by Phil Grabsky.\nRecord details\n\n\tPublisher:[Brighton, UK] :Seventh Art Productions,[2011]\n\n\n\t\tSubject:\n\t\t\tHaydn, Joseph, 1732-1809.Composers > Austria > Biography.\n\t\t\n\t\tGenre:\n\t\t\tDocumentary films.\n\t\t\n\n\n    LocationCall Number / Copy NotesBarcodeShelving LocationStatusDue Date\n\t\n\t\tMusic Resource Centre\n\t\tML 410 H4 I5 2011\n\t\t30007008812793\n\t\tCirculation\n\t\t \n\t\n\n", 
+            "RDFA": "\nIn search of Haydn [videorecording] / Phil Grabsky Films.com & Seventh Art Productions in association with Sky Art HD ; filmed, written and directed by Phil Grabsky.\nRecord details\n\n\tPublisher: [Brighton, UK] : Seventh Art Productions, [2011]\n\n\n\t\tSubject:\n\t\t\tHaydn, Joseph, 1732-1809.Composers > Austria > Biography.\n\t\t\n\t\tGenre:\n\t\t\tDocumentary films.\n\t\t\n\n\n    LocationCall Number / Copy NotesBarcodeShelving LocationStatusDue Date\n\t\n\t\tMusic Resource Centre\n\t\tML 410 H4 I5 2011\n\t\t30007008812793\n\t\tCirculation\n\t\t \n\t\t\t\n\t\t\t\n\t\t\n\t\n\n", 
+            "TYPES": [
+                "offeredBy", 
+                "Book"
+            ], 
+            "_index": 2, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "offeredBy", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/offeredBy", 
+                    "_lastone": true, 
+                    "rdfs:label": "offeredBy"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "指向提供报价的组织或个人", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "_last": true, 
+            "rdfs:label": "Offer"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/makesOffer", 
+        "rdfs:label": "makesOffer"
+    }, 
+    "nameZh": "报价者", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "rdfs:label": "Organization"
+        }, 
+        {
+            "@id": "http://cnschema.org/Person", 
+            "_last": true, 
+            "rdfs:label": "Person"
+        }
+    ], 
+    "rdfs:comment": "A pointer to the organization or person making the offer.", 
+    "rdfs:label": "offeredBy", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

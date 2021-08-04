@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/accessCode", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "accessCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/accessCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "accessCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "密码。或者个人识别码（英语：Personal identification number，缩写为 PIN），又译为用户个人识别号码，常被称为PIN码（PIN number），是一串数字构成的通行码，用来认证使用者身份，授权他进入系统。或者访问某个系统所需要的认证码。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/DeliveryEvent", 
+            "_last": true, 
+            "rdfs:label": "DeliveryEvent"
+        }
+    ], 
+    "nameZh": "存取码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "Password, PIN, or access code needed for delivery (e.g. from a locker).", 
+    "rdfs:label": "accessCode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

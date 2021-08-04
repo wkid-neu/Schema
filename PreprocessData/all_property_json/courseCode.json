@@ -1,0 +1,68 @@
+{
+    "@id": "http://cnschema.org/courseCode", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "No Microdata", 
+            "PRE-MARKUP": "\n\n\n    \n        Physics\n        \n            \n                University of Bristol \n            \n        \n        \n            Course code: F300\n        \n    \n", 
+            "RDFA": "\n\n\n    \n        Physics\n        \n            \n                University of Bristol \n            \n        \n        \n            Course code F300\n        \n    \n", 
+            "TYPES": [
+                "Course", 
+                "courseCode", 
+                "provider"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-course-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "courseCode", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/courseCode", 
+                    "_lastone": true, 
+                    "rdfs:label": "courseCode"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "课程提供者使用的课程的标识符（例如CS101或6.001）。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Course", 
+            "_last": true, 
+            "rdfs:label": "Course"
+        }
+    ], 
+    "nameZh": "课程的代码", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The identifier for the Course used by the course provider (e.g. CS101 or 6.001).", 
+    "rdfs:label": "courseCode", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

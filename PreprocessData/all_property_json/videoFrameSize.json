@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/videoFrameSize", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "videoFrameSize", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/videoFrameSize", 
+                    "_lastone": true, 
+                    "rdfs:label": "videoFrameSize"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "瑙嗛鐢婚潰灏哄", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoObject", 
+            "_last": true, 
+            "rdfs:label": "VideoObject"
+        }
+    ], 
+    "nameZh": "瑙嗛鐢婚潰灏哄", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The frame size of the video.", 
+    "rdfs:label": "videoFrameSize", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

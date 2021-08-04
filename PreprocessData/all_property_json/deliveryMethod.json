@@ -1,0 +1,75 @@
+{
+    "@id": "http://cnschema.org/deliveryMethod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "deliveryMethod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/instrument", 
+                    "rdfs:label": "instrument"
+                }, 
+                {
+                    "@id": "http://cnschema.org/deliveryMethod", 
+                    "_lastone": true, 
+                    "rdfs:label": "deliveryMethod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/instrument", 
+            "_last": true, 
+            "rdfs:label": "instrument"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "instrument的子属性。物流送货的方式。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/TrackAction", 
+            "rdfs:label": "TrackAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/SendAction", 
+            "rdfs:label": "SendAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/ReceiveAction", 
+            "rdfs:label": "ReceiveAction"
+        }, 
+        {
+            "@id": "http://cnschema.org/OrderAction", 
+            "_last": true, 
+            "rdfs:label": "OrderAction"
+        }
+    ], 
+    "nameZh": "物流送货方式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DeliveryMethod", 
+            "_last": true, 
+            "rdfs:label": "DeliveryMethod"
+        }
+    ], 
+    "rdfs:comment": "A sub property of instrument. The method of delivery.", 
+    "rdfs:label": "deliveryMethod", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

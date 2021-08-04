@@ -1,0 +1,82 @@
+{
+    "@id": "http://cnschema.org/duringMedia", 
+    "_examples": [
+        {
+            "JSON": "", 
+            "MICRODATA": "\n  Change a Flat Tire\n  About \n    \n    \n  $20\n  About 30 minutes\n  Necessary Items:\n  Spare tire\n  \n    Lug wrench\n    \n  \n  Jack\n  \n    Wheel wedges\n    \n  \n  \n    Flares\n    \n  \n  \n    Preparation\n    \n    \n      \n      \n        \n        Turn on your hazard lights and set the flares.\n      \n      \n        \n        You're going to need space and want to be visible.\n      \n    \n    \n      \n      \n        \n        Position your wheel wedges in front of the front tires if a rear tire is flat, or behind the rear tires if a front tire is flat.\n      \n      \n        \n        You don't want the car to move while you're working on it.\n      \n    \n  \n  \n    Raise the car\n    \n    \n      \n      \n        \n        \n        Position the jack underneath the car, next to the flat tire.\n      \n    \n    \n      \n      \n        \n        \n          \n        \n        Raise the jack until the flat tire is just barely off of the ground.\n        \n          \n        \n      \n      \n        \n        It doesn't need to be too high.\n      \n    \n    \n      \n      \n        \n        Remove the hubcap and loosen the lug nuts.\n      \n    \n    \n      \n      \n        \n        Remove the flat tire and put the spare tire on the exposed lug bolts.\n      \n    \n    \n      \n      \n        \n        Tighten the lug nuts by hand.\n      \n      \n        \n        Don't use the wrench just yet.\n      \n    \n  \n  \n    Finishing up\n    \n    \n      \n      \n        \n        Lower the jack and tighten the lug nuts with the wrench.\n      \n    \n    \n      \n      \n        \n        Replace the hubcap.\n      \n    \n    \n      \n      \n        \n        Put the equipment and the flat tire away.\n      \n    \n  \n", 
+            "PRE-MARKUP": "\n  Change a Flat Tire\n  About $20\n  About 30 minutes\n  Necessary Items:\n  Spare tire\n  Lug wrench\n  Jack\n  Wheel wedges\n  Flares\n  \n    Preparation\n    \n      \n        Turn on your hazard lights and set the flares.\n      \n      \n        You're going to need space and want to be visible.\n      \n        \n          Position your wheel wedges in front of the front tires if a rear tire is flat, or behind the rear tires if a front tire is flat.\n        \n        \n          You don't want the car to move while you're working on it.\n        \n      \n    \n  \n  \n    Raise the car\n    \n      \n        \n        Position the jack underneath the car, next to the flat tire.\n      \n    \n    \n      \n        \n        Raise the jack until the flat tire is just barely off of the ground.\n        \n      \n      \n        It doesn't need to be too high.\n      \n    \n    \n      \n        Remove the hubcap and loosen the lug nuts.\n      \n    \n    \n      \n        Remove the flat tire and put the spare tire on the exposed lug bolts.\n      \n    \n    \n      \n        Tighten the lug nuts by hand.\n      \n      \n        Don't use the wrench just yet.\n      \n    \n  \n  \n    Finishing up\n    \n      \n        Lower the jack and tighten the lug nuts with the wrench.\n      \n    \n    \n      \n        Replace the hubcap.\n      \n    \n    \n      \n        Put the equipment and the flat tire away.\n      \n    \n  \n", 
+            "RDFA": "\n  Change a Flat Tire\n  About \n    \n    \n  $20\n  About 30 minutes\n  Necessary Items:\n  Spare tire\n  \n    Lug wrench\n    \n  \n  Jack\n  \n    Wheel wedges\n    \n  \n  \n    Flares\n    \n  \n  \n    Preparation\n    \n    \n      \n      \n        \n        Turn on your hazard lights and set the flares.\n      \n      \n        \n        You're going to need space and want to be visible.\n      \n    \n    \n      \n      \n        \n        Position your wheel wedges in front of the front tires if a rear tire is flat, or behind the rear tires if a front tire is flat.\n      \n      \n        \n        You don't want the car to move while you're working on it.\n      \n    \n  \n  \n    Raise the car\n    \n    \n      \n      \n        \n        \n        Position the jack underneath the car, next to the flat tire.\n      \n    \n    \n      \n      \n        \n        \n          \n        \n        Raise the jack until the flat tire is just barely off of the ground.\n        \n          \n        \n      \n      \n        \n        It doesn't need to be too high.\n      \n    \n    \n      \n      \n        \n        Remove the hubcap and loosen the lug nuts.\n      \n    \n    \n      \n      \n        \n        Remove the flat tire and put the spare tire on the exposed lug bolts.\n      \n    \n    \n      \n      \n        \n        Tighten the lug nuts by hand.\n      \n      \n        \n        Don't use the wrench just yet.\n      \n    \n  \n  \n    Finishing up\n    \n    \n      \n      \n        \n        Lower the jack and tighten the lug nuts with the wrench.\n      \n    \n    \n      \n      \n        \n        Replace the hubcap.\n      \n    \n    \n      \n      \n        \n        Put the equipment and the flat tire away.\n      \n    \n  \n", 
+            "TYPES": [
+                "HowTo", 
+                "estimatedCost", 
+                "totalTime", 
+                "tool", 
+                "supply", 
+                "steps", 
+                "HowToSection", 
+                "HowToStep", 
+                "HowToDirection", 
+                "HowToTip", 
+                "afterMedia", 
+                "beforeMedia", 
+                "duringMedia"
+            ], 
+            "_index": 1, 
+            "_last": true, 
+            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-howto-examples.txt"
+        }
+    ], 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "duringMedia", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/duringMedia", 
+                    "_lastone": true, 
+                    "rdfs:label": "duringMedia"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "鎵ц鎿嶄綔鏃舵樉绀虹殑鍥剧墖鎴栬棰戠瓑濯掍綋瀵硅薄", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/HowToDirection", 
+            "_last": true, 
+            "rdfs:label": "HowToDirection"
+        }
+    ], 
+    "nameZh": "鎿嶄綔涓殑濯掍綋灞曠ず", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/MediaObject", 
+            "rdfs:label": "MediaObject"
+        }, 
+        {
+            "@id": "http://cnschema.org/URL", 
+            "_last": true, 
+            "rdfs:label": "URL"
+        }
+    ], 
+    "rdfs:comment": "A media object representing the circumstances while performing this direction.", 
+    "rdfs:label": "duringMedia", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

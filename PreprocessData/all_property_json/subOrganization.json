@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/subOrganization", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "subOrganization", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/subOrganization", 
+                    "_lastone": true, 
+                    "rdfs:label": "subOrganization"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "两个组织之间的关系。其中第二个组织，例如以子公司的名字，属于第一个组织。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/parentOrganization", 
+        "rdfs:label": "parentOrganization"
+    }, 
+    "nameZh": "子机构", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Organization", 
+            "_last": true, 
+            "rdfs:label": "Organization"
+        }
+    ], 
+    "rdfs:comment": "A relationship between two organizations where the first includes the second, e.g., as a subsidiary. See also: the more specific 'department' property.", 
+    "rdfs:label": "subOrganization", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

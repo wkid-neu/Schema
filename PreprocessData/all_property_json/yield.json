@@ -1,0 +1,63 @@
+{
+    "@id": "http://cnschema.org/yield", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "yield", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/yield", 
+                    "_lastone": true, 
+                    "rdfs:label": "yield"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/recipeYield", 
+            "_last": true, 
+            "rdfs:label": "recipeYield"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "操作所产出的结果", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/HowTo", 
+            "_last": true, 
+            "rdfs:label": "HowTo"
+        }
+    ], 
+    "nameZh": "相关产出", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/QuantitativeValue", 
+            "rdfs:label": "QuantitativeValue"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The quantity that results by performing instructions. For example, a paper airplane, 10 personalized candles.", 
+    "rdfs:label": "yield", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

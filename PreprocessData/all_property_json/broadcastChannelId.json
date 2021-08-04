@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/broadcastChannelId", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "broadcastChannelId", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/broadcastChannelId", 
+                    "_lastone": true, 
+                    "rdfs:label": "broadcastChannelId"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "可以在供应商中识别出该BroadcastService的唯一地址。 在美国，这通常是一个数字。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/BroadcastChannel", 
+            "_last": true, 
+            "rdfs:label": "BroadcastChannel"
+        }
+    ], 
+    "nameZh": "广播频道ID", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The unique address by which the BroadcastService can be identified in a provider lineup. In US, this is typically a number.", 
+    "rdfs:label": "broadcastChannelId", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

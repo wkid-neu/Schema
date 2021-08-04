@@ -1,0 +1,60 @@
+{
+    "@id": "http://cnschema.org/claimReviewed", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "claimReviewed", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/claimReviewed", 
+                    "_lastone": true, 
+                    "rdfs:label": "claimReviewed"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_source": [
+        {
+            "@id": "https://github.com/schemaorg/schemaorg/issues/1061", 
+            "_last": true, 
+            "rdfs:comment": "https://github.com/schemaorg/schemaorg/issues/1061", 
+            "rdfs:label": "https://github.com/schemaorg/schemaorg/issues/1061"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "针对ClaimReview中的某个声明做出的简短评论摘要", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ClaimReview", 
+            "_last": true, 
+            "rdfs:label": "ClaimReview"
+        }
+    ], 
+    "nameZh": "被评价的声明", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "A short summary of the specific claims reviewed in a ClaimReview.", 
+    "rdfs:label": "claimReviewed", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

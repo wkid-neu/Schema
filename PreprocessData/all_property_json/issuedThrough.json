@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/issuedThrough", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "issuedThrough", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/issuedThrough", 
+                    "_lastone": true, 
+                    "rdfs:label": "issuedThrough"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "琚鍙殑鏈嶅姟", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Permit", 
+            "_last": true, 
+            "rdfs:label": "Permit"
+        }
+    ], 
+    "nameZh": "琚鍙殑鏈嶅姟", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Service", 
+            "_last": true, 
+            "rdfs:label": "Service"
+        }
+    ], 
+    "rdfs:comment": "The service through with the permit was granted.", 
+    "rdfs:label": "issuedThrough", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

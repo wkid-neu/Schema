@@ -1,0 +1,73 @@
+{
+    "@id": "http://cnschema.org/acceptedPaymentMethod", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "acceptedPaymentMethod", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/acceptedPaymentMethod", 
+                    "_lastone": true, 
+                    "rdfs:label": "acceptedPaymentMethod"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "卖家接受的支付方式，现金、信用卡等。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Offer", 
+            "rdfs:label": "Offer"
+        }, 
+        {
+            "@id": "http://cnschema.org/Demand", 
+            "_last": true, 
+            "rdfs:label": "Demand"
+        }
+    ], 
+    "nameZh": "卖家接受的支付方式", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/PaymentMethod", 
+            "rdfs:label": "PaymentMethod"
+        }, 
+        {
+            "@id": "http://cnschema.org/LoanOrCredit", 
+            "_last": true, 
+            "rdfs:label": "LoanOrCredit"
+        }
+    ], 
+    "rdfs:comment": "The payment method(s) accepted by seller for this offer.", 
+    "rdfs:label": "acceptedPaymentMethod", 
+    "wikidataName": "payment types accepted", 
+    "wikidataUrl": "https://www.wikidata.org/entity/P2851", 
+    "wikipediaUrl": ""
+}

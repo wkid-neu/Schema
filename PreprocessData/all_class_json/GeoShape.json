@@ -1,0 +1,1777 @@
+{
+    "@id": "http://cnschema.org/GeoShape", 
+    "_group_type": true, 
+    "_layer": "core", 
+    "_node_label": "GeoShape", 
+    "_pRange": [
+        {
+            "@id": "http://cnschema.org/areaServed", 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/serviceArea", 
+                "rdfs:label": "serviceArea"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "服务或产品所覆盖的区域。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Demand", 
+                    "rdfs:label": "Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service", 
+                    "rdfs:label": "Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer", 
+                    "rdfs:label": "Offer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification", 
+                    "_last": true, 
+                    "rdfs:label": "DeliveryChargeSpecification"
+                }
+            ], 
+            "nameZh": "服务覆盖区域", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/AdministrativeArea", 
+                    "rdfs:label": "AdministrativeArea"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "rdfs:label": "Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "rdfs:label": "Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape", 
+                    "_last": true, 
+                    "rdfs:label": "GeoShape"
+                }
+            ], 
+            "rdfs:comment": "The geographic area where a service or offered item is provided.", 
+            "rdfs:label": "areaServed", 
+            "wikidataName": "operating area", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P2541", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/eligibleRegion", 
+            "_layer": "core", 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "报价适用的区域，例如免运费仅限于北京三环内用户。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Demand", 
+                    "rdfs:label": "Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification", 
+                    "rdfs:label": "DeliveryChargeSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer", 
+                    "_last": true, 
+                    "rdfs:label": "Offer"
+                }
+            ], 
+            "nameZh": "适用地区", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "rdfs:label": "Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "rdfs:label": "Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape", 
+                    "_last": true, 
+                    "rdfs:label": "GeoShape"
+                }
+            ], 
+            "rdfs:comment": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\n\nSee also ineligibleRegion.", 
+            "rdfs:label": "eligibleRegion", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/geo", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                    "PRE-MARKUP": "What is the latitude and longitude of the Empire State Building?\nAnswer:\nLatitude: 40 deg 44 min 54.36 sec N\nLongitude: 73 deg 59 min 8.5 sec W", 
+                    "RDFA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                    "TYPES": [
+                        "Place", 
+                        "GeoCoordinates", 
+                        "latitude", 
+                        "longitude", 
+                        "geo"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "This example is in microdata only.", 
+                    "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n    Technikerstrasse 21\n    6020\n    Innsbruck\n    Tyrol,\n    Austria\n  \n  \n    \n    \n  \n", 
+                    "PRE-MARKUP": "This example is in microdata only.", 
+                    "RDFA": "This example is in microdata only.", 
+                    "TYPES": [
+                        "GeoCoordinates", 
+                        "geo"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                }
+            ], 
+            "_layer": "core", 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "地理位置的坐标。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "_last": true, 
+                    "rdfs:label": "Place"
+                }
+            ], 
+            "nameZh": "经纬度", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/GeoCoordinates", 
+                    "rdfs:label": "GeoCoordinates"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape", 
+                    "_last": true, 
+                    "rdfs:label": "GeoShape"
+                }
+            ], 
+            "rdfs:comment": "The geo coordinates of the place.", 
+            "rdfs:label": "geo", 
+            "wikidataName": "coordinate location", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P625", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Geographic_coordinate_system"
+        }, 
+        {
+            "@id": "http://cnschema.org/ineligibleRegion", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "不适合区域", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Demand", 
+                    "rdfs:label": "Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer", 
+                    "rdfs:label": "Offer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification", 
+                    "_last": true, 
+                    "rdfs:label": "DeliveryChargeSpecification"
+                }
+            ], 
+            "nameZh": "不适用地区", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "rdfs:label": "Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text", 
+                    "rdfs:label": "Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape", 
+                    "_last": true, 
+                    "rdfs:label": "GeoShape"
+                }
+            ], 
+            "rdfs:comment": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\n\nSee also eligibleRegion.", 
+            "rdfs:label": "ineligibleRegion", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/serviceArea", 
+            "_last": true, 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/area", 
+                "rdfs:label": "area"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "服务覆盖的地理区域。", 
+            "domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint", 
+                    "rdfs:label": "ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization", 
+                    "rdfs:label": "Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service", 
+                    "_last": true, 
+                    "rdfs:label": "Service"
+                }
+            ], 
+            "nameZh": "服务区域", 
+            "rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/AdministrativeArea", 
+                    "rdfs:label": "AdministrativeArea"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape", 
+                    "rdfs:label": "GeoShape"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place", 
+                    "_last": true, 
+                    "rdfs:label": "Place"
+                }
+            ], 
+            "rdfs:comment": "The geographic area where the service is provided.", 
+            "rdfs:label": "serviceArea", 
+            "supersededBy": {
+                "@id": "http://cnschema.org/areaServed", 
+                "rdfs:label": "areaServed"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_pTree": [
+        {
+            "@id": "http://cnschema.org/GeoShape", 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/address", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                            "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                            "TYPES": [
+                                "Place", 
+                                "LocalBusiness", 
+                                "address", 
+                                "streetAddress", 
+                                "addressLocality", 
+                                "PostalAddress", 
+                                "telephone"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                            "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                            "TYPES": [
+                                "Event", 
+                                "Place", 
+                                "PostalAddress", 
+                                "AggregateOffer", 
+                                "location", 
+                                "startDate", 
+                                "address", 
+                                "offers", 
+                                "offerCount"
+                            ], 
+                            "_index": 4, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的物理地址。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "rdfs:label": "GeoShape"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Organization", 
+                            "rdfs:label": "Organization"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoCoordinates", 
+                            "rdfs:label": "GeoCoordinates"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Person", 
+                            "rdfs:label": "Person"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Place", 
+                            "_last": true, 
+                            "rdfs:label": "Place"
+                        }
+                    ], 
+                    "nameZh": "地址", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PostalAddress", 
+                            "rdfs:label": "PostalAddress"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "Physical address of the item.", 
+                    "rdfs:label": "address", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/addressCountry", 
+                    "_layer": "core", 
+                    "_usage": "Between 100,000 and 250,000 domains", 
+                    "descriptionZh": "地址所属国家,比如USA，China", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PostalAddress", 
+                            "rdfs:label": "PostalAddress"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "rdfs:label": "GeoShape"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoCoordinates", 
+                            "_last": true, 
+                            "rdfs:label": "GeoCoordinates"
+                        }
+                    ], 
+                    "nameZh": "地址所在国家", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Country", 
+                            "rdfs:label": "Country"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.", 
+                    "rdfs:label": "addressCountry", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/box", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "边界框是由两个点形成的矩形所包围的区域。第一个点是下角，第二个点是上角。边界框用空格符分隔的两个点来表示。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "nameZh": "边界框", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.", 
+                    "rdfs:label": "box", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/circle", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "圆是以某个指定经维度为中心指定长度为半径的区域。圆是由一对坐标加上以米为单位的半径来表示的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "nameZh": "圆形区域", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.", 
+                    "rdfs:label": "circle", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Circle"
+                }, 
+                {
+                    "@id": "http://cnschema.org/elevation", 
+                    "_layer": "core", 
+                    "_usage": "Between 100 and 1000 domains", 
+                    "descriptionZh": "该地的高程。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoCoordinates", 
+                            "rdfs:label": "GeoCoordinates"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "nameZh": "海拔高度", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "rdfs:label": "Text"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Number", 
+                            "_last": true, 
+                            "rdfs:label": "Number"
+                        }
+                    ], 
+                    "rdfs:comment": "The elevation of a location (WGS 84).", 
+                    "rdfs:label": "elevation", 
+                    "wikidataName": "elevation above sea level", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2044", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Elevation"
+                }, 
+                {
+                    "@id": "http://cnschema.org/line", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "由两点或多点组成的点对点路径", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "nameZh": "直线", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.", 
+                    "rdfs:label": "line", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Line_(geometry)"
+                }, 
+                {
+                    "@id": "http://cnschema.org/polygon", 
+                    "_layer": "core", 
+                    "_usage": "Between 10 and 100 domains", 
+                    "descriptionZh": "多边形是由起点和终点相同的点对点路径包围的区域。 多边形表示为一系列四个或更多的空格分隔点，其中第一个和最后一个点相同。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "_last": true, 
+                            "rdfs:label": "GeoShape"
+                        }
+                    ], 
+                    "nameZh": "多边形", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.", 
+                    "rdfs:label": "polygon", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Polygon"
+                }, 
+                {
+                    "@id": "http://cnschema.org/postalCode", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                            "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                            "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                            "TYPES": [
+                                "Organization", 
+                                "PostalAddress", 
+                                "address", 
+                                "streetAddress", 
+                                "postalCode", 
+                                "addressLocality", 
+                                "faxNumber", 
+                                "telephone"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 500,000 and 1,000,000 domains", 
+                    "descriptionZh": "邮政编码，例如94043", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/GeoShape", 
+                            "rdfs:label": "GeoShape"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/PostalAddress", 
+                            "rdfs:label": "PostalAddress"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/GeoCoordinates", 
+                            "_last": true, 
+                            "rdfs:label": "GeoCoordinates"
+                        }
+                    ], 
+                    "nameZh": "邮政编码", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The postal code. For example, 94043.", 
+                    "rdfs:label": "postalCode", 
+                    "wikidataName": "postal code", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P281", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Postal_code"
+                }
+            ], 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "一个地方的地理形状", 
+            "nameZh": "地理区域形状", 
+            "rdfs:comment": "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.", 
+            "rdfs:label": "GeoShape", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": ""
+        }, 
+        {
+            "@id": "http://cnschema.org/Thing", 
+            "_last": true, 
+            "_layer": "core", 
+            "_properties": [
+                {
+                    "@id": "http://cnschema.org/additionalType", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": " \n \n   \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           \n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n           \n           \n         \n       \n     \n ", 
+                            "PRE-MARKUP": "\n \n   Le concerto\n   \n       Bibliographic Details\n       \n         \n           Main Author: \n           Ferchault, Guy\n         \n       \n   \n \n \n     Holdings details from Anytown City Library\n     \n       \n       \n         Copy \n         Available\n           Barcode: CONC91000937\n           Call number: 780 R2\n           Library: Anytown City Library\n         \n       \n     \n ", 
+                            "RDFA": " \n\n    \n        Le concerto\n    \n    \n        Bibliographic Details\n        \n            \n                \n                    Main Author:\n                \n                \n                    Ferchault, Guy\n                \n            \n        \n    \n\n\n    Holdings details from Anytown City Library\n    \n        \n        \n            \n                Copy\n            \n            \n                Available\n                \n                    Barcode: CONC91000937\n                \n                \n                    Call number: 780 R2\n                \n                \n                    Library: Anytown City Library\n                \n            \n        \n    \n", 
+                            "TYPES": [
+                                "Offer", 
+                                "offeredBy", 
+                                "Book", 
+                                "additionalType"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-offeredby-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "该项的一个附加类型， 通常用于从外部词典中向微数据语法添加更加具体的类型。它表示事物和事物本身所属的类之间的关系。在RDFa语法中, 对多类型最好使用‘typeof’属性这样的本地RDFa语法. Schema.org 工具对额外类型的理解较弱，特别是外部定义的额外类型。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "附加类型", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. In RDFa syntax, it is better to use the native RDFa syntax - the 'typeof' attribute - for multiple types. Schema.org tools may have only weaker understanding of extra types, in particular those defined externally.", 
+                    "rdfs:label": "additionalType", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/alternateName", 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "该项的别名。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "别名", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "An alias for the item.", 
+                    "rdfs:label": "alternateName", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/description", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "PRE-MARKUP": "12oclock_girona.mp3\nTotal Time: 0m:15s - Recorded on a terrace of Girona a sunday morning\ncomposed by Roger\n ", 
+                            "RDFA": "\n  12oclock_girona.mp3\n\n\n \n\n      \n      Recorded on a terrace of Girona a sunday morning\n\n", 
+                            "TYPES": [
+                                "MediaObject", 
+                                "AudioObject", 
+                                "encodingFormat", 
+                                "contentUrl", 
+                                "description", 
+                                "duration"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "该项的一个简单描述。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A description of the item.", 
+                    "rdfs:label": "description", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Description"
+                }, 
+                {
+                    "@id": "http://cnschema.org/disambiguatingDescription", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "PRE-MARKUP": "George Bush, the 41st President of the United States is the father of George W. Bush, the 43rd President of the United States.", 
+                            "RDFA": "\n  George Bush, the\n  41st President of the United States\n  is the father of\n  \n    George W. Bush, the\n    43rd President of the United States.\n  \n", 
+                            "TYPES": [
+                                "Person", 
+                                "disambiguatingDescription"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "描述的子属性。 用于消除与其他类似项之间歧义的简短描述。 其它属性（特别是名称）的信息对于消歧义可能是必要的。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "消歧描述", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.", 
+                    "rdfs:label": "disambiguatingDescription", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/identifier", 
+                    "_examples": [
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"Book\",\n \"name\": \"Library linked data in the cloud : OCLC's experiments with new models of resource description\",\n \"author\": \"Carol Jean Godby\",\n \"isbn\": \"9781627052191\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"OCoLC\",\n   \"value\":  \"889647468\"\n   },\n \"sameAs\": \"http://www.worldcat.org/oclc/889647468\"\n}", 
+                            "MICRODATA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n    Details: WorldCat.org\n", 
+                            "PRE-MARKUP": "\nTitle: Library linked data in the cloud : OCLC's experiments with new models of resource description\nAuthor: Carol Jean Godby\nISBN: 9781627052191\noclcnum: 889647468\nDetails: WorldCat.org\n", 
+                            "RDFA": "\n    Title: Library linked data in the cloud : OCLC's experiments with new models of resource description\n    Author: Carol Jean Godby\n    ISBN: 9781627052191\n    \n        OCoLC: 889647468\n    \n\n    \n    Details: WorldCat.org", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }, 
+                        {
+                            "JSON": "{\n \"@context\": \"http://cnschema.org/\",\n \"@type\": \"LocalBusiness\",\n \"name\": \"A UK Organization Ltd\",\n \"address\": \"1 A Street, London\"\n \"identifier\": {\n \"@type\": \"PropertyValue\",\n   \"propertyID\": \"Company Number\",\n   \"value\":  \"99065782\"\n   },\n}", 
+                            "MICRODATA": "\n    Company Record\n    A UK Organization Ltd\n    Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "PRE-MARKUP": "\nCompany Record\nA UK Organization Ltd\nRegistered office address: 1 A Street, London\nCompany Number: 99065782\n", 
+                            "RDFA": "\n    Company Record\n    \n        A UK Organization Ltd\n        Registered office address: 1 A Street, London\n    \n        Company Number: 99065782\n    \n", 
+                            "TYPES": [
+                                "identifier"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-identifier-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Between 1000 and 10,000 domains", 
+                    "descriptionZh": "标识符", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "标识符", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/PropertyValue", 
+                            "rdfs:label": "PropertyValue"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The identifier property represents any kind of identifier for any kind of Thing, such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See background notes for more details.", 
+                    "rdfs:label": "identifier", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Identifier"
+                }, 
+                {
+                    "@id": "http://cnschema.org/image", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  \n  Dell UltraSharp 30\" LCD Monitor\n  \n    87\n    out of 100\n    based on 24 user ratings\n  \n  \n    $1250\n    to $1495\n    from 8 sellers\n    Sellers:\n    \n        \n        Save A Lot Monitors - $1250\n    \n    \n        \n        Jon Doe's Gadgets - $1350\n    \n  \n  ...\n", 
+                            "PRE-MARKUP": "\nDell UltraSharp 30\" LCD Monitor\n87 out of 100 based on 24 user ratings\n$1250 to $1495 from 8 sellers\nSellers:\n\n  Save A Lot Monitors - $1250\n\n  Jon Doe's Gadgets - $1350\n...", 
+                            "RDFA": "\n     Dell UltraSharp 30\" LCD Monitor\n    \n        87 out of \n        100 based on \n        24 user ratings\n    \n    \n        $1250 to \n        $1495 from \n        8 sellers Sellers:\n        \n            Save A Lot Monitors - $1250\n        \n        \n            Jon Doe's Gadgets - $1350\n        \n        ...\n    \n", 
+                            "TYPES": [
+                                "Product", 
+                                "AggregateRating", 
+                                "AggregateOffer", 
+                                "Offer", 
+                                "aggregateRating", 
+                                "image", 
+                                "offers"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "PRE-MARKUP": "Mom's World Famous Banana Bread\nBy John Smith, May 8, 2009\n\nThis classic banana bread recipe comes from my mom -- the walnuts add a nice\n texture and flavor to the banana bread.\nPrep Time: 15 minutes\nCook time: 1 hour\nYield: 1 loaf\nTags: Low fat\nNutrition facts:\n240 calories, 9 grams fat\nIngredients:\n- 3 or 4 ripe bananas, smashed\n- 1 egg\n- 3/4 cup of sugar\n...\nInstructions:\n Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add the\n flour last. Pour the mixture into a loaf pan and bake for one hour.\n140 comments:\nFrom Janel, May 5 -- thank you, great recipe!\n...", 
+                            "RDFA": "\n  Mom's World Famous Banana Bread\n  By John Smith,\n  May 8, 2009\n  \n  This classic banana bread recipe comes\n  from my mom -- the walnuts add a nice texture and flavor to the banana\n  bread.\n  Prep Time: 15 minutes\n  Cook time: 1 hour\n  Yield: 1 loaf\n  Tags: Low Fat\n  \n    Nutrition facts:\n    240 calories,\n    9 grams fat\n  \n  Ingredients:\n  - 3 or 4 ripe bananas, smashed\n  - 1 egg\n  - 3/4 cup of sugar\n  ...\n  Instructions:\n  \n  Preheat the oven to 350 degrees. Mix in the ingredients in a bowl. Add\n  the flour last. Pour the mixture into a loaf pan and bake for one hour.\n  \n  140 comments:\n  \n    \n    \n  \n  From Janel, May 5 -- thank you, great recipe!\n  ...\n", 
+                            "TYPES": [
+                                "Recipe", 
+                                "NutritionInformation", 
+                                "image", 
+                                "datePublished", 
+                                "prepTime", 
+                                "cookTime", 
+                                "recipeYield", 
+                                "recipeIngredient", 
+                                "calories", 
+                                "fatContent", 
+                                "suitableForDiet", 
+                                "LowFatDiet", 
+                                "RestrictedDiet"
+                            ], 
+                            "_index": 2, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }, 
+                        {
+                            "JSON": "This example is in microdata only.", 
+                            "MICRODATA": "\n  ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "PRE-MARKUP": "ACME Hotel Innsbruck\n  \n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n", 
+                            "RDFA": "This example is in microdata only.", 
+                            "TYPES": [
+                                "Hotel", 
+                                "logo", 
+                                "image"
+                            ], 
+                            "_index": 3, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "图片", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "图片", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "rdfs:label": "URL"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/ImageObject", 
+                            "_last": true, 
+                            "rdfs:label": "ImageObject"
+                        }
+                    ], 
+                    "rdfs:comment": "An image of the item. This can be a URL or a fully described ImageObject.", 
+                    "rdfs:label": "image", 
+                    "wikidataName": "image", 
+                    "wikidataUrl": "https://www.wikidata.org/entity/P18", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Image"
+                }, 
+                {
+                    "@id": "http://cnschema.org/mainEntityOfPage", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "PRE-MARKUP": "     \n      Cath's Cafe\n      Open: Daily from 11:00am till 8pm\n      Phone: 555-0100-3344\n      View our menu.\n     ", 
+                            "RDFA": "\n    Cath's Cafe\n    Open: Daily from 11:00am till 8pm\n    Phone: 555-0100-3344\n    View our menu.\n", 
+                            "TYPES": [
+                                "mainEntityOfPage"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-mainEntity-examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "", 
+                    "descriptionZh": "表示这个东西是描述的主要实体的页面", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "inverseOf": {
+                        "@id": "http://cnschema.org/mainEntity", 
+                        "rdfs:label": "mainEntity"
+                    }, 
+                    "nameZh": "页面的核心实体", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/CreativeWork", 
+                            "rdfs:label": "CreativeWork"
+                        }, 
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See background notes for details.", 
+                    "rdfs:label": "mainEntityOfPage", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/name", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "条目的名称", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "名称", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Text", 
+                            "_last": true, 
+                            "rdfs:label": "Text"
+                        }
+                    ], 
+                    "rdfs:comment": "The name of the item.", 
+                    "rdfs:label": "name", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/Name"
+                }, 
+                {
+                    "@id": "http://cnschema.org/potentialAction", 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "潜在的与之搭配的动作，它描述了一个理想化的动作，在这个动作中，这个东西会起到“对象”的作用。", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "预期的行动", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Action", 
+                            "_last": true, 
+                            "rdfs:label": "Action"
+                        }
+                    ], 
+                    "rdfs:comment": "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.", 
+                    "rdfs:label": "potentialAction", 
+                    "wikidataName": "", 
+                    "wikidataUrl": "", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/sameAs", 
+                    "_layer": "core", 
+                    "_usage": "Between 10,000 and 50,000 domains", 
+                    "descriptionZh": "两个概念等价", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "等同", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.", 
+                    "rdfs:label": "sameAs", 
+                    "wikidataName": "exact match", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P2888", 
+                    "wikipediaUrl": ""
+                }, 
+                {
+                    "@id": "http://cnschema.org/url", 
+                    "_examples": [
+                        {
+                            "JSON": "", 
+                            "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                            "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                            "TYPES": [
+                                "Person", 
+                                "PostalAddress", 
+                                "addressRegion", 
+                                "postalCode", 
+                                "address", 
+                                "streetAddress", 
+                                "telephone", 
+                                "email", 
+                                "url", 
+                                "addressLocality"
+                            ], 
+                            "_index": 1, 
+                            "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                        }
+                    ], 
+                    "_layer": "core", 
+                    "_usage": "Over 1,000,000 domains", 
+                    "descriptionZh": "链接", 
+                    "domainIncludes": [
+                        {
+                            "@id": "http://cnschema.org/Thing", 
+                            "_last": true, 
+                            "rdfs:label": "Thing"
+                        }
+                    ], 
+                    "nameZh": "链接", 
+                    "rangeIncludes": [
+                        {
+                            "@id": "http://cnschema.org/URL", 
+                            "_last": true, 
+                            "rdfs:label": "URL"
+                        }
+                    ], 
+                    "rdfs:comment": "URL of the item.", 
+                    "rdfs:label": "url", 
+                    "wikidataName": "reference URL", 
+                    "wikidataUrl": "http://www.wikidata.org/entity/P854", 
+                    "wikipediaUrl": "https://en.wikipedia.org/wiki/URL"
+                }
+            ], 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "一切事物的基类", 
+            "nameZh": "事物", 
+            "rdfs:comment": "The most generic type of item.", 
+            "rdfs:label": "Thing", 
+            "wikidataName": "entity", 
+            "wikidataUrl": "https://www.wikidata.org/wiki/Q35120", 
+            "wikipediaUrl": ""
+        }
+    ], 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Intangible", 
+                    "rdfs:label": "Intangible"
+                }, 
+                {
+                    "@id": "http://cnschema.org/StructuredValue", 
+                    "rdfs:label": "StructuredValue"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape", 
+                    "_lastone": true, 
+                    "rdfs:label": "GeoShape"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_rNews", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This class contains derivatives of IPTC rNews properties. rNews is a data model of publishing metadata with serializations currently available for RDFa as well as HTML5 Microdata. More information about the IPTC and rNews can be found at rnews.org.", 
+            "rdfs:label": "rNews", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_sub": [
+        {
+            "@id": "http://cnschema.org/GeoCircle", 
+            "_last": true, 
+            "rdfs:label": "GeoCircle"
+        }
+    ], 
+    "_super": [
+        {
+            "@id": "http://cnschema.org/StructuredValue", 
+            "_last": true, 
+            "rdfs:label": "StructuredValue"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 100 and 1000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "一个地方的地理形状", 
+    "isDomainOf": [
+        {
+            "@id": "http://cnschema.org/address", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                    "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "TYPES": [
+                        "Person", 
+                        "PostalAddress", 
+                        "addressRegion", 
+                        "postalCode", 
+                        "address", 
+                        "streetAddress", 
+                        "telephone", 
+                        "email", 
+                        "url", 
+                        "addressLocality"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                    "PRE-MARKUP": "Beachwalk Beachwear & Giftware\nA superb collection of fine gifts and clothing to accent your stay in Mexico Beach.\n3102 Highway 98\nMexico Beach, FL\nPhone: 850-648-4200", 
+                    "RDFA": "\n  Beachwalk Beachwear & Giftware\n   A superb collection of fine gifts and clothing\n  to accent your stay in Mexico Beach.\n  \n    3102 Highway 98\n    Mexico Beach,\n    FL\n  \n  Phone: 850-648-4200\n", 
+                    "TYPES": [
+                        "Place", 
+                        "LocalBusiness", 
+                        "address", 
+                        "streetAddress", 
+                        "addressLocality", 
+                        "PostalAddress", 
+                        "telephone"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                    "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                    "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                    "TYPES": [
+                        "Organization", 
+                        "PostalAddress", 
+                        "address", 
+                        "streetAddress", 
+                        "postalCode", 
+                        "addressLocality", 
+                        "faxNumber", 
+                        "telephone"
+                    ], 
+                    "_index": 3, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                    "PRE-MARKUP": "\nNBA Eastern Conference First Round Playoff Tickets:\n Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1)\n\nThu, 04/21/16\n8:00 p.m.\n\nWells Fargo Center\n\nPhiladelphia, PA\nPriced from: $35\n1938 tickets left", 
+                    "RDFA": "\n  \n  NBA Eastern Conference First Round Playoff Tickets:\n   Miami Heat at Philadelphia 76ers - Game 3 (Home Game 1) \n  \n  \n    Thu, 04/21/16\n    8:00 p.m.\n  \n    \n    Wells Fargo Center\n    \n    \n      Philadelphia,\n      PA\n    \n  \n  \n    Priced from: $35\n    1938 tickets left\n  \n", 
+                    "TYPES": [
+                        "Event", 
+                        "Place", 
+                        "PostalAddress", 
+                        "AggregateOffer", 
+                        "location", 
+                        "startDate", 
+                        "address", 
+                        "offers", 
+                        "offerCount"
+                    ], 
+                    "_index": 4, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Over 1,000,000 domains", 
+            "descriptionZh": "该项的物理地址。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoCoordinates"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Person"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/PostalAddress"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "nameZh": "地址", 
+            "rdfs:comment": "Physical address of the item.", 
+            "rdfs:label": "address", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/addressCountry", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "地址所属国家,比如USA，China", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/PostalAddress"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoCoordinates"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Country"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }
+            ], 
+            "nameZh": "地址所在国家", 
+            "rdfs:comment": "The country. For example, USA. You can also provide the two-letter ISO 3166-1 alpha-2 country code.", 
+            "rdfs:label": "addressCountry", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/box", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "边界框是由两个点形成的矩形所包围的区域。第一个点是下角，第二个点是上角。边界框用空格符分隔的两个点来表示。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/GeoShape"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "边界框", 
+            "rdfs:comment": "A box is the area enclosed by the rectangle formed by two points. The first point is the lower corner, the second point is the upper corner. A box is expressed as two points separated by a space character.", 
+            "rdfs:label": "box", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/circle", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "圆是以某个指定经维度为中心指定长度为半径的区域。圆是由一对坐标加上以米为单位的半径来表示的。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/GeoShape"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "圆形区域", 
+            "rdfs:comment": "A circle is the circular region of a specified radius centered at a specified latitude and longitude. A circle is expressed as a pair followed by a radius in meters.", 
+            "rdfs:label": "circle", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Circle", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/elevation", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "该地的高程。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/GeoCoordinates"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Number"
+                }
+            ], 
+            "nameZh": "海拔高度", 
+            "rdfs:comment": "The elevation of a location (WGS 84).", 
+            "rdfs:label": "elevation", 
+            "wikidataName": "elevation above sea level", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P2044", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Elevation", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/line", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "由两点或多点组成的点对点路径", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/GeoShape"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "直线", 
+            "rdfs:comment": "A line is a point-to-point path consisting of two or more points. A line is expressed as a series of two or more point objects separated by space.", 
+            "rdfs:label": "line", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Line_(geometry)", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/polygon", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 10 and 100 domains", 
+            "descriptionZh": "多边形是由起点和终点相同的点对点路径包围的区域。 多边形表示为一系列四个或更多的空格分隔点，其中第一个和最后一个点相同。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/GeoShape"
+            }, 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "多边形", 
+            "rdfs:comment": "A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. A polygon is expressed as a series of four or more space delimited points where the first and final points are identical.", 
+            "rdfs:label": "polygon", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Polygon", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/postalCode", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "PRE-MARKUP": "Jane Doe\n\nProfessor\n20341 Whitworth Institute\n405 Whitworth\nSeattle WA 98052\n(425) 123-4567\njane-doe@illinois.edu\nJane's home page:\njanedoe.com\nGraduate students:\nAlice Jones\nBob Smith", 
+                    "RDFA": "\n  Jane Doe\n  \n  Professor\n  \n    \n      20341 Whitworth Institute\n      405 N. Whitworth\n    \n    Seattle,\n    WA\n    98052\n  \n  (425) 123-4567\n  \n    jane-doe@xyz.edu\n  Jane's home page:\n  janedoe.com\n  Graduate students:\n  \n    Alice Jones\n  \n    Bob Smith\n", 
+                    "TYPES": [
+                        "Person", 
+                        "PostalAddress", 
+                        "addressRegion", 
+                        "postalCode", 
+                        "address", 
+                        "streetAddress", 
+                        "telephone", 
+                        "email", 
+                        "url", 
+                        "addressLocality"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n ,\nHistory:\n", 
+                    "PRE-MARKUP": "Google.Org\nContact Details:\nMain address: 38 avenue de l'Opera, F-75002 Paris, France\n Tel: ( 33 1) 42 68 53 00, Fax: ( 33 1) 42 68 53 01\nE-mail: secretariat (at) google.org\nURL: www.google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook: Member 1, Member 2\nHistory:", 
+                    "RDFA": "\n  Google.org (GOOG)\nContact Details:\n  \n    Main address:\n      38 avenue de l'Opera\n      F-75002\n      Paris, France\n    ,\n  \n    Tel:( 33 1) 42 68 53 00 ,\n    Fax:( 33 1) 42 68 53 01 ,\n    E-mail: secretariat(at)google.org\nMembers:\n- National Scientific Members in 100 countries and territories: Country1, Country2, ...\n- Scientific Union Members, 30 organizations listed in this Yearbook:\nList of Alumni:\n \n   Jack Dan\n ,\n \n   John Smith\n \nHistory:\n", 
+                    "TYPES": [
+                        "Organization", 
+                        "PostalAddress", 
+                        "address", 
+                        "streetAddress", 
+                        "postalCode", 
+                        "addressLocality", 
+                        "faxNumber", 
+                        "telephone"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "Between 500,000 and 1,000,000 domains", 
+            "descriptionZh": "邮政编码，例如94043", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }, 
+                {
+                    "@id": "http://cnschema.org/PostalAddress"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoCoordinates"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": {
+                "@id": "http://cnschema.org/Text"
+            }, 
+            "nameZh": "邮政编码", 
+            "rdfs:comment": "The postal code. For example, 94043.", 
+            "rdfs:label": "postalCode", 
+            "wikidataName": "postal code", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P281", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Postal_code", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "isRangeOf": [
+        {
+            "@id": "http://cnschema.org/areaServed", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_sub": [
+                "http://cnschema.org/availableAtOrFrom", 
+                "http://cnschema.org/eligibleRegion"
+            ], 
+            "_supersede": {
+                "@id": "http://cnschema.org/serviceArea", 
+                "rdfs:label": "serviceArea"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "服务或产品所覆盖的区域。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/AdministrativeArea"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }
+            ], 
+            "nameZh": "服务覆盖区域", 
+            "rdfs:comment": "The geographic area where a service or offered item is provided.", 
+            "rdfs:label": "areaServed", 
+            "wikidataName": "operating area", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P2541", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/eligibleRegion", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_super": [
+                "http://cnschema.org/areaServed"
+            ], 
+            "_usage": "Between 100 and 1000 domains", 
+            "descriptionZh": "报价适用的区域，例如免运费仅限于北京三环内用户。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }
+            ], 
+            "http://purl.org/dc/terms/source": {
+                "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms"
+            }, 
+            "nameZh": "适用地区", 
+            "rdfs:comment": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is valid.\n\nSee also ineligibleRegion.", 
+            "rdfs:label": "eligibleRegion", 
+            "rdfs:subPropertyOf": {
+                "@id": "http://cnschema.org/areaServed"
+            }, 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/geo", 
+            "@type": "rdf:Property", 
+            "_examples": [
+                {
+                    "JSON": "", 
+                    "MICRODATA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                    "PRE-MARKUP": "What is the latitude and longitude of the Empire State Building?\nAnswer:\nLatitude: 40 deg 44 min 54.36 sec N\nLongitude: 73 deg 59 min 8.5 sec W", 
+                    "RDFA": "\n  What is the latitude and longitude of the Empire State Building?\n  Answer:\n  \n    Latitude: 40 deg 44 min 54.36 sec N\n    Longitude: 73 deg 59 min 8.5 dec W\n    \n    \n  \n", 
+                    "TYPES": [
+                        "Place", 
+                        "GeoCoordinates", 
+                        "latitude", 
+                        "longitude", 
+                        "geo"
+                    ], 
+                    "_index": 1, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/examples.txt"
+                }, 
+                {
+                    "JSON": "This example is in microdata only.", 
+                    "MICRODATA": "\n  ACME Hotel Innsbruck\n  A beautifully located business hotel right in the\nheart of the alps. Watch the sun rise over the scenic Inn valley while\nenjoying your morning coffee.\n  \n    Technikerstrasse 21\n    6020\n    Innsbruck\n    Tyrol,\n    Austria\n  \n  \n    \n    \n  \n", 
+                    "PRE-MARKUP": "This example is in microdata only.", 
+                    "RDFA": "This example is in microdata only.", 
+                    "TYPES": [
+                        "GeoCoordinates", 
+                        "geo"
+                    ], 
+                    "_index": 2, 
+                    "_source": "https://github.com/schemaorg/schemaorg/raw/master/data/sdo-hotels-examples.txt"
+                }
+            ], 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "Between 100,000 and 250,000 domains", 
+            "descriptionZh": "地理位置的坐标。", 
+            "http://cnschema.org/domainIncludes": {
+                "@id": "http://cnschema.org/Place"
+            }, 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/GeoCoordinates"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }
+            ], 
+            "nameZh": "经纬度", 
+            "rdfs:comment": "The geo coordinates of the place.", 
+            "rdfs:label": "geo", 
+            "wikidataName": "coordinate location", 
+            "wikidataUrl": "http://www.wikidata.org/entity/P625", 
+            "wikipediaUrl": "https://en.wikipedia.org/wiki/Geographic_coordinate_system", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/ineligibleRegion", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_layer": "core", 
+            "_usage": "", 
+            "descriptionZh": "不适合区域", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/Demand"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Offer"
+                }, 
+                {
+                    "@id": "http://cnschema.org/DeliveryChargeSpecification"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/Place"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Text"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }
+            ], 
+            "nameZh": "不适用地区", 
+            "rdfs:comment": "The ISO 3166-1 (ISO 3166-1 alpha-2) or ISO 3166-2 code, the place, or the GeoShape for the geo-political region(s) for which the offer or delivery charge specification is not valid, e.g. a region where the transaction is not allowed.\n\nSee also eligibleRegion.", 
+            "rdfs:label": "ineligibleRegion", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }, 
+        {
+            "@id": "http://cnschema.org/serviceArea", 
+            "@type": "rdf:Property", 
+            "_group": "property", 
+            "_last": true, 
+            "_layer": "core", 
+            "_supersede": {
+                "@id": "http://cnschema.org/area", 
+                "rdfs:label": "area"
+            }, 
+            "_usage": "Between 1000 and 10,000 domains", 
+            "descriptionZh": "服务覆盖的地理区域。", 
+            "http://cnschema.org/domainIncludes": [
+                {
+                    "@id": "http://cnschema.org/ContactPoint"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Organization"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Service"
+                }
+            ], 
+            "http://cnschema.org/rangeIncludes": [
+                {
+                    "@id": "http://cnschema.org/AdministrativeArea"
+                }, 
+                {
+                    "@id": "http://cnschema.org/GeoShape"
+                }, 
+                {
+                    "@id": "http://cnschema.org/Place"
+                }
+            ], 
+            "http://cnschema.org/supersededBy": {
+                "@id": "http://cnschema.org/areaServed"
+            }, 
+            "nameZh": "服务区域", 
+            "rdfs:comment": "The geographic area where the service is provided.", 
+            "rdfs:label": "serviceArea", 
+            "wikidataName": "", 
+            "wikidataUrl": "", 
+            "wikipediaUrl": "", 
+            "xtype": "rdf:Property"
+        }
+    ], 
+    "nameZh": "地理区域形状", 
+    "rdfs:comment": "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs. Either whitespace or commas can be used to separate latitude and longitude; whitespace should be used when writing a list of several such points.", 
+    "rdfs:label": "GeoShape", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

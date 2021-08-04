@@ -1,0 +1,65 @@
+{
+    "@id": "http://cnschema.org/valueAddedTaxIncluded", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "valueAddedTaxIncluded", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/valueAddedTaxIncluded", 
+                    "_lastone": true, 
+                    "rdfs:label": "valueAddedTaxIncluded"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_sourceAck": [
+        {
+            "@id": "http://www.w3.org/wiki/WebSchemas/SchemaDotOrgSources#source_GoodRelationsTerms", 
+            "@type": "http://cnschema.org/Organization", 
+            "_group": "other", 
+            "_last": true, 
+            "_layer": "core", 
+            "_usage": "", 
+            "rdfs:comment": "This term uses terminology from the GoodRelations Vocabulary for E-Commerce, created by Martin Hepp. GoodRelations is a data model for sharing e-commerce data on the Web. More information about GoodRelations can be found at http://purl.org/goodrelations/.", 
+            "rdfs:label": "GoodRelationsTerms", 
+            "xtype": "http://cnschema.org/Organization"
+        }
+    ], 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10,000 and 50,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "指定价格规格中是否包含适用的增值税（VAT）", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PriceSpecification", 
+            "_last": true, 
+            "rdfs:label": "PriceSpecification"
+        }
+    ], 
+    "nameZh": "是否含税", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Boolean", 
+            "_last": true, 
+            "rdfs:label": "Boolean"
+        }
+    ], 
+    "rdfs:comment": "Specifies whether the applicable value-added tax (VAT) is included in the price specification or not.", 
+    "rdfs:label": "valueAddedTaxIncluded", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

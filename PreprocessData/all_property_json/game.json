@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/game", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "game", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/game", 
+                    "_lastone": true, 
+                    "rdfs:label": "game"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "服务器上运行的游戏", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/GameServer", 
+            "_last": true, 
+            "rdfs:label": "GameServer"
+        }
+    ], 
+    "inverseOf": {
+        "@id": "http://cnschema.org/gameServer", 
+        "rdfs:label": "gameServer"
+    }, 
+    "nameZh": "游戏", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/VideoGame", 
+            "_last": true, 
+            "rdfs:label": "VideoGame"
+        }
+    ], 
+    "rdfs:comment": "Video game which is played on this server.", 
+    "rdfs:label": "game", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Game"
+}

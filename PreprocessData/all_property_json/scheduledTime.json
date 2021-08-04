@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/scheduledTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "scheduledTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/scheduledTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "scheduledTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "预约的时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/PlanAction", 
+            "_last": true, 
+            "rdfs:label": "PlanAction"
+        }
+    ], 
+    "nameZh": "预约的时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The time the object is scheduled to.", 
+    "rdfs:label": "scheduledTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

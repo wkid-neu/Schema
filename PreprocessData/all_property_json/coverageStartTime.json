@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/coverageStartTime", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "coverageStartTime", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/coverageStartTime", 
+                    "_lastone": true, 
+                    "rdfs:label": "coverageStartTime"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "博客对一个事件的报导开始时间", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/LiveBlogPosting", 
+            "_last": true, 
+            "rdfs:label": "LiveBlogPosting"
+        }
+    ], 
+    "nameZh": "博客直播开始时间", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/DateTime", 
+            "_last": true, 
+            "rdfs:label": "DateTime"
+        }
+    ], 
+    "rdfs:comment": "The time when the live blog will begin covering the Event. Note that coverage may begin before the Event's start time. The LiveBlogPosting may also be created before coverage begins.", 
+    "rdfs:label": "coverageStartTime", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

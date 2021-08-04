@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/numberOfPages", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "numberOfPages", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/numberOfPages", 
+                    "_lastone": true, 
+                    "rdfs:label": "numberOfPages"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 1000 and 10,000 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "书的总页数", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Book", 
+            "_last": true, 
+            "rdfs:label": "Book"
+        }
+    ], 
+    "nameZh": "总页数", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Integer", 
+            "_last": true, 
+            "rdfs:label": "Integer"
+        }
+    ], 
+    "rdfs:comment": "The number of pages in the book.", 
+    "rdfs:label": "numberOfPages", 
+    "wikidataName": "number of pages", 
+    "wikidataUrl": "http://www.wikidata.org/entity/P1104", 
+    "wikipediaUrl": ""
+}

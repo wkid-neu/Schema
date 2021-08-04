@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/paymentMethodId", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "paymentMethodId", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/paymentMethodId", 
+                    "_lastone": true, 
+                    "rdfs:label": "paymentMethodId"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "使用付款方式的标识符，例如信用卡的最后4位数字", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Invoice", 
+            "rdfs:label": "Invoice"
+        }, 
+        {
+            "@id": "http://cnschema.org/Order", 
+            "_last": true, 
+            "rdfs:label": "Order"
+        }
+    ], 
+    "nameZh": "支付方式ID", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "An identifier for the method of payment used (e.g. the last 4 digits of the credit card).", 
+    "rdfs:label": "paymentMethodId", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}

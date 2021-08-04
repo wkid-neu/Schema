@@ -1,0 +1,56 @@
+{
+    "@id": "http://cnschema.org/flightDistance", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "flightDistance", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/flightDistance", 
+                    "_lastone": true, 
+                    "rdfs:label": "flightDistance"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "", 
+    "_version": "3.4", 
+    "descriptionZh": "航班飞行的距离。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/Flight", 
+            "_last": true, 
+            "rdfs:label": "Flight"
+        }
+    ], 
+    "nameZh": "飞行距离", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Distance", 
+            "rdfs:label": "Distance"
+        }, 
+        {
+            "@id": "http://cnschema.org/Text", 
+            "_last": true, 
+            "rdfs:label": "Text"
+        }
+    ], 
+    "rdfs:comment": "The distance of the flight.", 
+    "rdfs:label": "flightDistance", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": "https://en.wikipedia.org/wiki/Flight_length"
+}

@@ -1,0 +1,52 @@
+{
+    "@id": "http://cnschema.org/subReservation", 
+    "_group_property": true, 
+    "_layer": "core", 
+    "_node_label": "subReservation", 
+    "_paths": [
+        {
+            "_last": true, 
+            "_path": [
+                {
+                    "@id": "http://cnschema.org/Thing", 
+                    "rdfs:label": "Thing"
+                }, 
+                {
+                    "@id": "http://meta.cnschema.org/Property", 
+                    "rdfs:label": "Property"
+                }, 
+                {
+                    "@id": "http://cnschema.org/subReservation", 
+                    "_lastone": true, 
+                    "rdfs:label": "subReservation"
+                }
+            ]
+        }
+    ], 
+    "_sitename": "cnschema.org", 
+    "_url_root": ".", 
+    "_url_schema": "http://cnschema.org", 
+    "_usage": "Between 10 and 100 domains", 
+    "_version": "3.4", 
+    "descriptionZh": "此整体预定当中的个体预订事项，通常此属性是重复的。", 
+    "domainIncludes": [
+        {
+            "@id": "http://cnschema.org/ReservationPackage", 
+            "_last": true, 
+            "rdfs:label": "ReservationPackage"
+        }
+    ], 
+    "nameZh": "子预定信息", 
+    "rangeIncludes": [
+        {
+            "@id": "http://cnschema.org/Reservation", 
+            "_last": true, 
+            "rdfs:label": "Reservation"
+        }
+    ], 
+    "rdfs:comment": "The individual reservations included in the package. Typically a repeated property.", 
+    "rdfs:label": "subReservation", 
+    "wikidataName": "", 
+    "wikidataUrl": "", 
+    "wikipediaUrl": ""
+}
