@@ -2,7 +2,7 @@ from django.urls import path
 from MapSchema import views
 
 urlpatterns = [
-    path('display/', views.map_index),
-    path('enter/',views.enter),
-    path('form/',views.form)
+    path('display/<type>/', views.map_index),
+    path('process/', views.process_form),
+    path('get_points/',views.get_points)
 ]

@@ -28,6 +28,7 @@ class TransNode(object):
             if key == 'node_id' or key == 'name' or value_list is None or len(value_list) == 0:
                 continue
             for value in value_list:
+                print(value)
                 if type(value).__name__ in self.common_properties:
                     common_class_name = self.common_properties[type(value).__name__]
                     common_module_meta = __import__("createobject.neo_classes", globals(), locals(),

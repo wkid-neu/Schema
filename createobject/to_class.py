@@ -20,7 +20,13 @@ class TransClass(object):
         self.nodes=[]
 
     def trans_date(self, name):
-        return datetime.strptime(name, "%Y-%m-%d").date()
+        lens = len(name.split("-"))
+        if lens == 1:
+            return datetime.strptime(name, "%Y").date()
+        if lens == 2:
+            return datetime.strptime(name, "%Y-%m").date()
+        if lens == 3:
+            return datetime.strptime(name, "%Y-%m-%d").date()
 
     def trans_bool(self, name):
         if name == "True":
@@ -60,7 +66,7 @@ class TransClass(object):
                 continue
             self.node_data[node] = []
 
-        # print(self.node_data)
+        print(self.node_data)
         for obj in self.node_data:
             if obj in self.vis:
                 continue

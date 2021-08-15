@@ -4,56 +4,147 @@
     <link rel="stylesheet" href="{% static 'css/address.css' %}">
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=h40MTWwwSpgwCUEw8MbIiBnc3X4keNgX"></script>
+    <script type="text/javascript" src="{% static 'js/3.1.1/layer.js' %}"></script>
+
 {% endblock %}
 {% block title %}主页{% endblock %}
 {% block content %}
-    <div id="allmap"></div>
-<a href="/map/enter/">
+      <div  id="show_div" style="display:none;" class="smart-green">
+    <img src="" id="img" style="width: 400px">
+       <p><div class="lab">建筑名称 :</div>
+        <span id="building_name" class="value"> </span>
+    </p>
+    <p><div class="lab">原始标题 :</div>
+        <span id="title" class="value"> </span>
+    </p>
+       <p><div class="lab">拍摄者 :</div>
+       <span id="author" class="value"> </span>
+    </p>
+       <p><div class="lab">拍摄时间 :</div>
+       <span id="cre_date" class="value"> </span>
+    </p>
+       <p><div class="lab">地理位置 :</div>
+      <span id="location" class="value"> </span>
+    </p>
+       <p><div class="lab">图片说明:</div>
+      <span id="img_description" class="value"> </span>
+    </p>
+    <p><div class="lab">图片格式 :</div>
+      <span id="encode_type" class="value"> </span>
+    </p>
+       <p><div class="lab"> 建筑现状:</div>
+      <span id="building_information" class="value"> </span>
+    </p>
+       <p><div class="lab"> 发布者:</div>
+      <span id="announcer" class="value"> </span>
+    </p>
+       <p><div class="lab"> 版权人:</div>
+      <span id="CopyrightOwner" class="value"> </span>
+    </p>
+       <p><div class="lab"> 图片来源:</div>
+      <span id="file_url" class="value"> </span>
+    </p>
+       <p><div class="lab"> 分类:</div>
+      <span id="type" class="value"> </span>
+    </p>
+  </div>
+  <div style="margin-left:20px;width:1700px;height:650px;border:1px solid gray" id="allmap"></div>
+<a href="/map/display/enter">
 <button>编辑地图</button>
 </a>
+    <input type="button" value="返回上一页" onclick="javascript:history.go(-1)" />
+<script type="text/javascript">
+   var map = new BMap.Map("allmap"); // 创建Map实例
 
-    <script type="text/javascript">
-    // 百度地图API功能
+    map.centerAndZoom(new BMap.Point(123.471095,41.68383), 17); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
 
-    var map = new BMap.Map("allmap");
-    map.centerAndZoom("沈阳", 10);
-
-    map.enableScrollWheelZoom(true);
-    var navigationControl = new BMap.NavigationControl({
-        // 靠左上角位置
+    //添加地图类型控件
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes : [ BMAP_NORMAL_MAP, BMAP_HYBRID_MAP ]
+    }));
+    map.setCurrentCity("沈阳"); // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
+    //点击地图并在此添加标记
+    //向地图中添加缩放控件
+    var ctrlNav = new window.BMap.NavigationControl({
         anchor: BMAP_ANCHOR_TOP_LEFT,
-        // LARGE类型
-        type: BMAP_NAVIGATION_CONTROL_LARGE,
-        // 启用显示定位
-        enableGeolocation: true
+        type: BMAP_NAVIGATION_CONTROL_LARGE
     });
-    map.addControl(navigationControl);
+    map.addControl(ctrlNav);
+    //向地图中添加缩略图控件
+    var ctrlOve = new window.BMap.OverviewMapControl({
+        anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+        isOpen: 1
+    });
+    map.addControl(ctrlOve);
+    //向地图中添加比例尺控件
+    var ctrlSca = new window.BMap.ScaleControl({
+        anchor: BMAP_ANCHOR_BOTTOM_LEFT
+    });
+    map.addControl(ctrlSca);
+
 
 $(function() {
         get_location();
         })
     function get_location() {
-
-        var address_latitude ={{ address_latitude |safe}};
-        var address_longitude ={{ address_longitude|safe }};
-        var address_data ={{ address_data |safe}};
-console.log(address_data)
-        for (var i = 0; i < address_longitude.length; i++) {
+    var post_data = "";
+    var receive_data="";
+    var address_latitude ="";
+    var address_longitude ="";
+    var address_data ="";
+        $.ajax({
+                url: '/map/get_points/',
+                type: "POST",
+                data: post_data,
+                success: function (data) {
+                    receive_data = JSON.parse(data);
+                    address_latitude =receive_data["address_latitude"];
+        address_longitude =receive_data["address_longitude"];
+        address_data =receive_data["address_data"];
+        console.log(receive_data)
+                for (var i = 0; i < address_longitude.length; i++) {
             var point = new BMap.Point(address_longitude[i], address_latitude[i]); //循环生成新的地图点
             createMarker(point,address_data[i])
         }
+
+                },
+                error:function () {
+                  alert("获取失败！")
+                }
+             });
+
     }
 function createMarker(point,point_data) {
+    console.log(point)
     var marker = new BMap.Marker(point); //按照地图点坐标生成标记
     map.addOverlay(marker);
     marker.addEventListener('click', function () {
         showInfo(this,point_data);
     });
 }
+
 function showInfo(thisMarker,point_info) {
-    //获取点的信息
-    var infoWindow = new BMap.InfoWindow(point_info); //创建信息窗口对象
-    thisMarker.openInfoWindow(infoWindow); //图片加载完后重绘infoWindow
+    console.log(point_info)
+    for(var i in point_info)
+    {
+        var str=point_info[i][0];
+        if(i == "building_name")str=str.slice(0,-2)
+        for(var j=1;j<point_info[i].length;j++)
+        {
+            str = str + " " + point_info[i][j];
+            if(i == "building_name")str=str.slice(0,-2)
+        }
+        $('#'+i).text(str)
+    }
+    console.log("..\\..\\"+point_info["img"][0])
+    $("#img").attr("src","..\\..\\..\\"+point_info["img"][0]);
+     layer.open({
+    type: 1,
+    title: '标注信息',
+    area: ['500px', '750px'],
+    content: $('#show_div')
+  });
 }
 
 </script>

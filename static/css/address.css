@@ -1,16 +1,28 @@
-body, html {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            font-family: "微软雅黑";
-        }
+#show_div {
+/*margin-left: auto;*/
 
-        #allmap {
-            height: 700px;
-            width: 100%;
-        }
+ width: 500px;
+/*background: #F8F8F8;*/
+padding: 20px 60px 40px 20px;
+color: #000000;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+}
+.lab
+{ display: inline-block;
+ Text-align:justify;
+text-align-last:justify;
+ width: 65px;
+ color: #000000;
+ solid-color: #9d9d9d;
+font-weight: bold;
+  font-size: 13px;
 
-        #r-result {
-            width: 100%;
-            font-size: 14px;
-        }
+}
+.value
+{
+ word-break: break-all;
+ width: 500px;
+ font-size: 13px;
+}

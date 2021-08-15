@@ -1,4 +1,7 @@
 import hashlib
+import os
+import Schema.settings as settings
+
 from django.shortcuts import render, redirect
 from django.shortcuts import HttpResponse
 from login import models
@@ -25,11 +28,6 @@ def kg_index(request):
 
 
 def display(request):
-    user_id = request.session.get("user_id")
-    if request.session.get('extract', None) is None:
-        print("用户的图谱取出来了。")
-        set_entities_data(user_id)
-        request.session['extract'] = True
     return render(request, "KGPage/display.html")
 
 
@@ -61,7 +59,7 @@ def set_entities_data(user_id):  # 《======================--------------------
     print(created_entities)
     global_data.set_created_enetities(created_entities)
     global_data.set_created_classes(created_classes)
-    entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links})
+    entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links},ensure_ascii=False)
     json_path = "D:\pycharm\Projects\Schema\static\KGJson\{}_nodes_json.json".format(user_id)
     try:
         with open(json_path, 'w', encoding='utf-8') as f:
@@ -87,6 +85,7 @@ def login(request):
                     request.session['is_login'] = True
                     request.session['user_id'] = user.id
                     request.session['user_name'] = user.name
+                    set_entities_data(user.id)
                     return redirect('/index/')
                 else:
                     message = "密码不正确!"
@@ -128,6 +127,10 @@ def register(request):
                 new_user.email = email
                 new_user.sex = sex
                 new_user.save()
+                user_directory = os.path.join(settings.MEDIA_ROOT,"{}_files\\".format(username))
+                print(user_directory)
+                if not os.path.exists(user_directory):
+                     os.makedirs(user_directory)
                 return redirect('/login/')  # 自动跳转到登录页面
     register_form = RegisterForm()
     return render(request, 'login/register.html', locals())

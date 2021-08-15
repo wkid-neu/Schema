@@ -17,7 +17,7 @@
         <td id="property_block">
             <p id='search-result' align="left" style="height:500px;line-height:40px;margin:0;overflow-y:auto; overflow-x:hidden" >
             {% for key,value in properties_info.items %}
-                <a onclick="displayProperty('{{ key }}','{{ value.name_zh}}','{{ value.description }}',{{ value.range_str }},{{ value.range_str_zh }})" title="点击填写该属性的值"><span style="color: #eb9316">{{ value.name_zh }}</span></a>&nbsp;:&nbsp;<span>{{ value.description }}</span><br>
+                <a onclick="displayProperty('{{ key }}','{{ value.name_zh}}','{{ value.description }}',{{ value.range_str }},{{ value.range_str_zh }})" title="点击填写该属性的值"><span style="color: #eb9316">{{ value.name_zh }}({{ key}})</span></a>&nbsp;:&nbsp;<span>{{ value.description }}</span><br>
             {% endfor %}
             </p>
     </td>

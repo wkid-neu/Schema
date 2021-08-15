@@ -3,58 +3,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-      <link href="{% static 'bootstrap-3.3.7-dist/css/bootstrap.min.css' %}" rel="stylesheet">
+
+      <link href="{% static 'css/enter_form.css' %}" rel="stylesheet">
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <script src="{% static 'js/jquery-3.2.1.js' %}"></script>
 </head>
 <body>
 <div>
-    <div >
-        <form action="create/search/" method="get" style="margin: auto 0;">
-           <p>搜索你想标注的事物</p>
-            <input style="height: 20px;width: 200px" type="text" id="search-text" name="q">
-        </form>
-        <p id='search-result'  style="font-size:10px;width:200px;height:150px;line-height:25px;margin:0;overflow-y:auto; overflow-x:hidden" ></p>
-
-    </div>
+   <form  action="/map/process/" method="post" enctype="multipart/form-data" class="smart-green" >
+{% csrf_token %}
+       <input type="hidden" id="lng"/>
+       <input type="hidden" id="lat"/>
+    <input type="file"  required="required" name="up_file" id="up_file" onchange="checkFileExt(this.value)">
+       <label><span>建筑名称 :</span>
+        <input id="building_name" required="required" type="text" name="building_name"  />
+        <div class="error-msg"></div>
+    </label>
+    <label><span>原始标题 :</span>
+        <input id="title" required="required" type="text" name="title"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span>拍摄者 :</span>
+        <input id="author" type="text" name="author"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span>拍摄时间 :</span>
+        <input id="cre_date" required="required" type="date" name="cre_date"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span>地理位置 :</span>
+        <input id="location" type="text" name="location"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span>图片说明:</span>
+        <textarea id="img_description" required="required" name="img_description"></textarea>
+        <div class="error-msg"></div>
+    </label>
+    <label><span>图片格式 :</span>
+        <input id="encode_type" required="required" type="text" name="encode_type"  onclick="get_type()"/>
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 建筑现状:</span>
+        <textarea id="building_information"  required="required" name="building_information"></textarea>
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 发布者:</span>
+        <input id="announcer" type="text" name="announcer"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 版权人:</span>
+        <input id="CopyrightOwner" type="text" name="CopyrightOwner"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 图片来源:</span>
+        <input id="file_url" type="text" name="file_url"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 分类:</span>
+        <input id="type" type="text" name="type"  onclick="load()"/>
+        <div class="error-msg"></div>
+    </label>
+       <input type="hidden" name="lng" value="{{ lng }}" >
+       <input type="hidden" name="lat" value="{{ lat }}" >
+    <div class="success-msg"></div>
+    <label><span>&nbsp;</span><input type="submit" class="button" value="确定" /></label>
+    <input type="hidden" name="csrfmiddlewaretoken" value="SfHkbL4feo1G00sJQtbO7TtLN4c2BUwa" />
+</form>
 </div>
 <script type="text/javascript">
-function get_result()
+function checkFileExt(filename)
 {
-    var dest = $("#search-text").val();                         //获取搜索框输入的值
-            $.get("/create/search",{'dest':dest}, function(data){               //参数：发送的url；传入的数据；请求成功后的调用函数（data即是试图函数返回的json格式数据）详情
-                data = data['result'];
-                var entity_name = '';
-                var namezh = '';
-                var url = '';
-                var html="";
-                for (var i = data.length - 1; i >= 0; i--) {
-                    entity_name = data[i][0];
-                    namezh = data[i][1];
-                    url = '/create/creating/'+entity_name;
-                    html =`<span><a href=${url}>`+entity_name+"("+namezh+")"+"</a></span><br/>";
-                    $('#search-result').append(html)      //加入到search-result部分显示
-                };
-            })
+ var flag = false; //状态
+ var arr = ["jpg","png","gif","jpeg","mp4","rmvb","mkv"];
+ //取出上传文件的扩展名
+ var index = filename.lastIndexOf(".");
+ var ext = filename.substr(index+1);
+ //循环比较
+ for(var i=0;i<arr.length;i++)
+ {
+  if(ext == arr[i])
+  {
+   flag = true; //一旦找到合适的，立即退出循环
+   break;
+  }
+ }
+ //条件判断
+ if(!flag)
+ {
+     $("#up_file").val("")
+  alert("不支持此类文件！")
+ }
 }
-    $(document).ready(function(){
-        $("#search-text").keyup(function(){
-            get_result();
 
-        });
+function get_type() {
+     var file = $("#up_file").val();
+ var pos = file.lastIndexOf("\\");
+ var filename = file.substring(pos+1);
 
-        $('#search-text').keydown(function(){ //键盘松手触发
-            $('#search-result').empty();
-        })
-         $('#search-text').blur(function(){ //数去焦点
-            setTimeout(() => {
-            $('#search-result').hide();
-        },500)
-        })
-
-    });
-
+ var fileextname = filename.substring(filename.lastIndexOf(".")+1, filename.length);
+ console.log(fileextname)
+ $("#encode_type").val(fileextname)
+}
 </script>
 
 </body>

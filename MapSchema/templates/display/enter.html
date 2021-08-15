@@ -2,6 +2,7 @@
 {% load static %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/address.css' %}">
+      <link href="{% static 'css/enter_form.css' %}" rel="stylesheet">
 
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=h40MTWwwSpgwCUEw8MbIiBnc3X4keNgX"></script>
@@ -9,14 +10,126 @@
 {% endblock %}
 {% block title %}主页{% endblock %}
 {% block content %}
-    <div id="allmap"></div>
-    <p>。。。。。</p>
-<input type="button" value="保存设置" οnclick="javascrtpt:window.location.href='/map/enter/'">
+    <div id="enter_form" style="display: none">
 
-    <script type="text/javascript">
+   <form  action="" method="post" enctype="multipart/form-data" id="form" class="smart-green" >
+{% csrf_token %}
+    <input type="file"  required="required" name="up_file" id="up_file" onchange="checkFileExt(this.value)">
+               <div id = "up_file_error" class="error-msg"></div>
+
+       <label><span>建筑名称 :</span>
+        <input id="building_name" required="required" type="text" name="building_name"  />
+        <div id = "building_name_error" class="error-msg"></div>
+    </label>
+    <label><span>原始标题 :</span>
+        <input id="title" required="required" type="text" name="title"  />
+        <div id = "title_error" class="error-msg"></div>
+    </label>
+       <label><span>拍摄者 :</span>
+        <input id="author" type="text" name="author"  />
+        <div id = "author_error" class="error-msg"></div>
+    </label>
+       <label><span>拍摄时间 :</span>
+        <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 60px;border-radius: 3px"/>
+       <input id="cre_date_month" required="required" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 40px;border-radius: 3px"/>
+       <input id="cre_date_day" required="required" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 40px;border-radius: 3px"/>
+        <div id = "cre_date_error" class="error-msg"></div>
+    </label>
+       <label><span>地理位置 :</span>
+        <input id="location" type="text" name="location"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span>图片说明:</span>
+        <textarea id="img_description" required="required" name="img_description"></textarea>
+        <div id = "img_description_error" class="error-msg"></div>
+    </label>
+    <label><span>图片格式 :</span>
+        <input id="encode_type" required="required" type="text" name="encode_type"  onclick="get_type()"/>
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 建筑现状:</span>
+        <textarea id="building_information"  required="required" name="building_information"></textarea>
+        <div id = "building_information_error" class="error-msg"></div>
+    </label>
+       <label><span> 发布者:</span>
+        <input id="announcer" type="text" name="announcer"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 版权人:</span>
+        <input id="CopyrightOwner" type="text" name="CopyrightOwner"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 图片来源:</span>
+        <input id="file_url" type="text" name="file_url"  />
+        <div class="error-msg"></div>
+    </label>
+       <label><span> 分类:</span>
+        <input id="type" type="text" name="type" />
+        <div class="error-msg"></div>
+    </label>
+    <div class="success-msg"></div>
+    <input type="hidden" name="csrfmiddlewaretoken" value="SfHkbL4feo1G00sJQtbO7TtLN4c2BUwa" />
+</form>
+</div>
+ <div  id="show_div" style="display:none;" class="smart-green">
+    <img src="" id="show_img" style="width: 400px">
+       <p><div class="lab">建筑名称 :</div>
+        <span id="show_building_name" class="value"> </span>
+    </p>
+    <p><div class="lab">原始标题 :</div>
+        <span id="show_title" class="value"> </span>
+    </p>
+       <p><div class="lab">拍摄者 :</div>
+       <span id="show_author" class="value"> </span>
+    </p>
+       <p><div class="lab">拍摄时间 :</div>
+       <span id="show_cre_date" class="value"> </span>
+    </p>
+       <p><div class="lab">地理位置 :</div>
+      <span id="show_location" class="value"> </span>
+    </p>
+       <p><div class="lab">图片说明:</div>
+      <span id="show_img_description" class="value"> </span>
+    </p>
+    <p><div class="lab">图片格式 :</div>
+      <span id="show_encode_type" class="value"> </span>
+    </p>
+       <p><div class="lab"> 建筑现状:</div>
+      <span id="show_building_information" class="value"> </span>
+    </p>
+       <p><div class="lab"> 发布者:</div>
+      <span id="show_announcer" class="value"> </span>
+    </p>
+       <p><div class="lab"> 版权人:</div>
+      <span id="show_CopyrightOwner" class="value"> </span>
+    </p>
+       <p><div class="lab"> 图片来源:</div>
+      <span id="show_file_url" class="value"> </span>
+    </p>
+       <p><div class="lab"> 分类:</div>
+      <span id="show_type" class="value"> </span>
+    </p>
+ </div>
+<form action="" method="get">
+  <label >地点：</label>
+  <input id="where" name="where" type="text" >
+  <input type="button" value="地图上找" onClick="sear(document.getElementById('where').value);" />
+  <br />
+
+  <div style="margin-left:20px;width:1700px;height:650px;border:1px solid gray" id="allmap"></div>
+  <br />
+  经纬度：
+  <input id="lonlat" name="lonlat" type="text">
+    <p><a  href="/display/" style="color: #eb9316">查看对应的图谱</a></p>
+
+</form>
+    <input type="button" value="返回上一页" onclick="javascript:history.go(-1)" />
+
+
+<script type="text/javascript">
     // 百度地图API功能
-
        // 百度地图API功能
+    var flag=false;
     var marker;
     var time = 0;
     var bjh = $("input[name='bjh']").val();
@@ -26,6 +139,8 @@
     var pointY;
 
     var map = new BMap.Map("allmap"); // 创建Map实例
+
+map.setDefaultCursor("crosshair");
     map.centerAndZoom(new BMap.Point(123.471095,41.68383), 17); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
 
     //添加地图类型控件
@@ -35,45 +150,335 @@
     map.setCurrentCity("沈阳"); // 设置地图显示的城市 此项是必须设置的
     map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
     //点击地图并在此添加标记
+    //向地图中添加缩放控件
+    var ctrlNav = new window.BMap.NavigationControl({
+        anchor: BMAP_ANCHOR_TOP_LEFT,
+        type: BMAP_NAVIGATION_CONTROL_LARGE
+    });
+    map.addControl(ctrlNav);
+    //向地图中添加缩略图控件
+    var ctrlOve = new window.BMap.OverviewMapControl({
+        anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+        isOpen: 1
+    });
+    map.addControl(ctrlOve);
+    //向地图中添加比例尺控件
+    var ctrlSca = new window.BMap.ScaleControl({
+        anchor: BMAP_ANCHOR_BOTTOM_LEFT
+    });
+    map.addControl(ctrlSca);
     map.addEventListener("click", function(e) {//鼠标单击地图触发
         if (time >= 1) {
             return;
         } else {
+
             popLayer(e);
+        }
+    });
+map.addEventListener("mousemove", function(e) {//鼠标单击地图触发
+        fill_lonlat(e);
+    });
+$(function() {
+        get_location();
+        })
+     function get_location() {
+    var post_data = "";
+    var receive_data="";
+    var address_latitude ="";
+    var address_longitude ="";
+    var address_data ="";
+        $.ajax({
+                url: '/map/get_points/',
+                type: "POST",
+                data: post_data,
+                success: function (data) {
+                    receive_data = JSON.parse(data);
+                    address_latitude =receive_data["address_latitude"];
+        address_longitude =receive_data["address_longitude"];
+        address_data =receive_data["address_data"];
+        console.log(receive_data)
+                for (var i = 0; i < address_longitude.length; i++) {
+            var point = new BMap.Point(address_longitude[i], address_latitude[i]); //循环生成新的地图点
+            createMarker(point,address_data[i])
+        }
+
+                },
+                error:function () {
+                  alert("获取失败！")
+                }
+             });
+
+    }
+function fill_lonlat(e) {
+    	$('#lonlat').val(e.point.lng + ", " + e.point.lat);
+
+}
+function createMarker(point,point_data) {
+    var marker = new BMap.Marker(point); //按照地图点坐标生成标记
+    map.addOverlay(marker);
+    marker.addEventListener('click', function () {
+        showInfo(this,point,point_data);
+    });
+}
+function showInfo(thisMarker,point,point_info) {
+    console.log(point_info)
+    flag=true;
+    for(var i in point_info)
+    {
+        var str=point_info[i][0];
+        if(i == "building_name")str=str.slice(0,-2)
+        for(var j=1;j<point_info[i].length;j++)
+        {
+            str = str + " " + point_info[i][j];
+            if(i == "building_name")str=str.slice(0,-2)
+        }
+        $('#'+"show_"+i).text(str)
+    }
+    $("#show_img").attr("src","..\\..\\..\\"+point_info["img"][0]);
+     layer.open({
+    type: 1,
+    title: '标注信息',
+    area: ['500px', '750px'],
+    content: $('#show_div')
+  });
+}
+function check_year(val) {
+    console.log(val,typeof val,val.length)
+    var zero="";
+    if(val.length>4)return true;
+    val = pad_zero(0,val);
+    var reg = /^[\d]+$/;
+    return !reg.test(val);
+}
+function check_month(val) {
+    var zero="";
+    if(val.length>2)return true;
+    val = pad_zero(1,val);
+    var reg = /^[\d]+$/;
+    if(!reg.test(val))return true;
+    var value_z = parseInt(val);
+    if(value_z<1||val>12)return true;
+    return false;
+}
+function check_day(val,month,year) {
+    var zero="";
+    month = parseInt(month);
+    year = parseInt(year);
+    if(val.length>2)return true;
+    val = pad_zero(1,val);
+    var reg = /^[\d]+$/;
+    if(!reg.test(val))return true;
+    var day=[[31,28,31,30,31,30,31,31,30,31,30,31],[31,29,31,30,31,30,31,31,30,31,30,31]];
+    if(val<1||val>day[check_run(parseInt(year))][parseInt(month)-1])
+        return true;
+    return false;
+
+}
+function pad_zero(flag,val) {
+    var len=4;
+    var zero="";
+    if(flag==1)len=2;
+    for(var i=0;i<len-val.length;i++)
+    {
+        zero+="0";
+    }
+    return zero+val;
+}
+function check_run(year) {
+    if(year%4==0&&year%100!=0)
+    {
+        return 1;
+    }
+    if(year%400==0)
+    {
+        return 1;
+    }
+    return 0;
+}
+function popLayer(e) {
+    console.log(e.point)
+if(flag)
+{
+    flag=false;
+    return;}
+    document.getElementById('form').reset();
+    var index = layer.open({
+    type: 1,
+    title: '编辑标注信息',
+    area: ['550px', '650px'],
+    shadeClose: true, //点击遮罩关闭
+    content: $('#enter_form'),
+    btn:['提交','取消'],
+    yes:function () {
+        $('.error-msg').html("");
+
+        var flag2 = true;
+        var lng = e.point.lng;
+        var lat = e.point.lat;
+        var up_file = $('#up_file').val();
+        var title = $('#title').val();
+        var building_name = $('#building_name').val();
+        var building_information = $('#building_information').val();
+        var cre_date_year = $('#cre_date_year').val();
+        var cre_date_month = $('#cre_date_month').val();
+        var cre_date_day = $('#cre_date_day').val();
+        var author = $('#author').val();
+        var CopyrightOwner = $('#CopyrightOwner').val();
+        var img_description = $('#img_description').val();
+        var location = $('#location').val();
+        var encode_type = $('#encode_type').val();
+        var announcer = $('#announcer').val();
+        var file_url = $('#file_url').val();
+        var type = $('#type').val();
+        if(isEmpty(up_file))
+        {
+            $('#up_file_error').html("选择一个文件!");
+            flag2=false;
+        }
+        if(isEmpty(building_name))
+        {
+            $('#building_name_error').html("请填写该字段!");
+            flag2=false;
+        }
+        if(isEmpty(cre_date_year))
+        {
+            $('#cre_date_error').html("年份不能空!");
+            flag2=false;
+        }
+        if(isEmpty(building_information))
+        {
+            $('#building_information_error').html("请填写该字段!");
+            flag2=false;
+        }if(isEmpty(img_description))
+        {
+            $('#img_description_error').html("请填写该字段!");
+            flag2=false;
+        }
+        if(isEmpty(title))
+        {
+            $('#title_error').html("请填写该字段!");
+            flag2=false;
+        }
+        if(isEmpty(author))
+        {
+            $('#author_error').html("请填写该字段!");
+            flag2=false;
+        }
+        if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
+        {
+            $('#cre_date_error').html("日期不合法!");            return;
+
+        }
+        if(isEmpty(cre_date_month)&&!isEmpty(cre_date_day))
+        {
+            $('#cre_date_error').html("日期不合法!");           return;
+
+        }
+        if(!isEmpty(cre_date_month)&&check_month(cre_date_month))
+        {
+            $('#cre_date_error').html("日期不合法!");           return;
+
+        }
+        if(!isEmpty(cre_date_day)&&check_day(cre_date_day,cre_date_month,cre_date_year))
+        {
+            $('#cre_date_error').html("日期不合法!");            return;
+
+        }
+        if(flag2)
+        {
+    var selectedFile=new FormData();
+    var cre_date=pad_zero(0,cre_date_year);
+     if(!isEmpty(cre_date_month))cre_date=cre_date+"-"+pad_zero(1,cre_date_month);
+    if(!isEmpty(cre_date_day))cre_date=cre_date+"-"+pad_zero(1,cre_date_day);
+    console.log(cre_date)
+    selectedFile.append("up_file",document.getElementById("up_file").files[0]);
+    selectedFile.append("lng",lng);
+    selectedFile.append("lat",lat);
+    selectedFile.append("title",title);
+    selectedFile.append("building_name",building_name);
+    selectedFile.append("cre_date",cre_date);
+    selectedFile.append("building_information",building_information);selectedFile.append("author",author);
+    selectedFile.append("CopyrightOwner",CopyrightOwner);selectedFile.append("img_description",img_description);
+    selectedFile.append("location",location);selectedFile.append("encode_type",encode_type);
+    selectedFile.append("announcer",announcer);
+    selectedFile.append("file_url",file_url);selectedFile.append("type",type);
+    console.log(selectedFile)
+    $.ajax({
+        type: 'post',
+        url: '/map/process/',
+        cache: false,
+        async: true,
+        data: selectedFile,
+        processData:false,
+        contentType:false,
+ success: function (result) {
+            layer.alert("标注成功!")
+            layer.close(index);
+            get_location();
+        },
+        error:function (){
+            layer.alert("标注失败!")
         }
 
     });
 
-function popLayer(e) {
-    console.log(e.point.lng,e.point.lat)
-    layer.open({
-    type: 2,
-    title: '编辑标注信息',
-    closeBtn: 1,
-    area: ['700px', '550px'],
-    shadeClose: true, //点击遮罩关闭
-    content: '/map/form/',
-    end:function(){
-            var handle_status = $("#handle_status").val();
-            if ( handle_status == '1' ) {
-                layer.msg('保存成功！',{
-                    icon: 1,
-                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
-                },function(){
-                    history.go(0);
-                });
-            } else if ( handle_status == '2' ) {
-                layer.msg('修改失败！',{
-                    icon: 2,
-                    time: 2000 //2秒关闭（如果不配置，默认是3秒）
-                },function(){
-                    history.go(0);
-                });
-            }
         }
-  });
 
+        },
+    no:function(){//取消按钮
+            //do something;
+        layer.close(index);
+        }
+
+  });
     }
+//判断字符是否为空的方法
+function isEmpty(obj){
+    if(typeof obj == "undefined" || obj == null || obj == ""){
+        return true;
+    }else{
+        return false;
+    }
+}
+function sear(result) {//地图搜索
+    var local = new BMap.LocalSearch(map, {
+        renderOptions: {map: map}
+    });
+    local.search(result);
+}
+function checkFileExt(filename)
+{
+ var flag = false; //状态
+ var arr = ["jpg","png","gif","jpeg","mp4","rmvb","mkv"];
+ //取出上传文件的扩展名
+ var index = filename.lastIndexOf(".");
+ var ext = filename.substr(index+1);
+ //循环比较
+ for(var i=0;i<arr.length;i++)
+ {
+  if(ext == arr[i])
+  {
+   flag = true; //一旦找到合适的，立即退出循环
+   break;
+  }
+ }
+ //条件判断
+ if(!flag)
+ {
+     $("#up_file").val("")
+  alert("不支持此类文件！")
+ }
+}
+
+function get_type() {
+     var file = $("#up_file").val();
+ var pos = file.lastIndexOf("\\");
+ var filename = file.substring(pos+1);
+
+ var fileextname = filename.substring(filename.lastIndexOf(".")+1, filename.length);
+ console.log(fileextname)
+ $("#encode_type").val(fileextname)
+}
 
 </script>
 {% endblock %}
