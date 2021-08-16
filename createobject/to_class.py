@@ -48,11 +48,6 @@ class TransClass(object):
             ed_node = self.id_node_tab[ed_node.identity]
             three_tuple['a'] = st_node
             three_tuple['b'] = ed_node
-        process_data = []
-        for three_tuple in data:
-            st_node = three_tuple['a']
-            rel = three_tuple['rel']
-            ed_node = three_tuple['b']
         node_set = set()
         for three_tuple in data:
             st_node = three_tuple['a']
