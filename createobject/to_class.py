@@ -10,14 +10,15 @@ class TransClass(object):
         self.result = {}
         self.common_data = ['Text', 'Integer', 'Float', 'Bool', 'Date']
         self.node_data = {}
+        self.id_node_tab = {}
         self.monitor_id = monitor_id
         self.properties_name_contrast = global_data.get_properties_name_contrast()
         self.node_dict = {}
         self.entity_class_json = {}
         self.id_class_json = {}
         self.class_to_id = {}
-        self.links=[]
-        self.nodes=[]
+        self.links = []
+        self.nodes = []
 
     def trans_date(self, name):
         lens = len(name.split("-"))
@@ -36,6 +37,22 @@ class TransClass(object):
     def transfer(self):
         data = self.graph.run(
             "match (a)-[rel]->(b) where a.monitor_id={} return a,rel,b".format(self.monitor_id)).data()
+        for three_tuple in data:
+            st_node = three_tuple['a']
+            if st_node.identity not in self.id_node_tab:
+                self.id_node_tab[st_node.identity] = st_node
+            st_node = self.id_node_tab[st_node.identity]
+            ed_node = three_tuple['b']
+            if ed_node.identity not in self.id_node_tab:
+                self.id_node_tab[ed_node.identity] = ed_node
+            ed_node = self.id_node_tab[ed_node.identity]
+            three_tuple['a'] = st_node
+            three_tuple['b'] = ed_node
+        process_data = []
+        for three_tuple in data:
+            st_node = three_tuple['a']
+            rel = three_tuple['rel']
+            ed_node = three_tuple['b']
         node_set = set()
         for three_tuple in data:
             st_node = three_tuple['a']

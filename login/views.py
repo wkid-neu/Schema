@@ -60,7 +60,7 @@ def set_entities_data(user_id):  # 《======================--------------------
     global_data.set_created_enetities(created_entities)
     global_data.set_created_classes(created_classes)
     entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links},ensure_ascii=False)
-    json_path = "D:\pycharm\Projects\Schema\static\KGJson\{}_nodes_json.json".format(user_id)
+    json_path = os.path.join(settings.STATICFILES_DIRS[0],"KGJson\{}_nodes_json.json").format(user_id)
     try:
         with open(json_path, 'w', encoding='utf-8') as f:
             f.write(entities_json)
@@ -68,6 +68,7 @@ def set_entities_data(user_id):  # 《======================--------------------
         print("图谱转换JSON成功！")
     except Exception as e:
         print("图谱转换JSON失败！")
+        print(e)
 
 
 def login(request):
@@ -91,6 +92,7 @@ def login(request):
                     message = "密码不正确!"
             except Exception as e:
                 message = "用户不存在!"
+                print(e)
         return render(request, 'login/login.html', locals())
     login_form = UserForm()
     return render(request, 'login/login.html', locals())
