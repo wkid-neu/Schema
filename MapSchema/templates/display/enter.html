@@ -198,7 +198,7 @@ $(function() {
         address_data =receive_data["address_data"];
         console.log(receive_data)
                 for (var i = 0; i < address_longitude.length; i++) {
-            var point = new BMap.Point(address_longitude[i], address_latitude[i]); //循环生成新的地图点
+            var point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
             createMarker(point,address_data[i])
         }
 
@@ -214,13 +214,20 @@ function fill_lonlat(e) {
 
 }
 function createMarker(point,point_data) {
-    var marker = new BMap.Marker(point); //按照地图点坐标生成标记
+    var marker = new BMap.Marker(point, {
+  // 初始化五角星symbol
+  icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {
+    scale: 1,
+    fillColor: "yellow",
+    fillOpacity: 0.8
+  })
+});
     map.addOverlay(marker);
     marker.addEventListener('click', function () {
-        showInfo(this,point,point_data);
+        showInfo(this,point_data);
     });
 }
-function showInfo(thisMarker,point,point_info) {
+function showInfo(thisMarker,point_info) {
     console.log(point_info)
     flag=true;
     for(var i in point_info)
@@ -235,11 +242,31 @@ function showInfo(thisMarker,point,point_info) {
         $('#'+"show_"+i).text(str)
     }
     $("#show_img").attr("src","..\\..\\..\\"+point_info["img"][0]);
-     layer.open({
+     var index = layer.open({
     type: 1,
     title: '标注信息',
     area: ['500px', '750px'],
-    content: $('#show_div')
+    shadeClose: true, //点击遮罩关闭
+    content: $('#show_div'),
+     btn:['删除该标注点'],
+     btn1:function () {
+            var post_data ={ "node_id":point_info["node_id"]};
+            console.log(post_data)
+        $.ajax({
+                url: '/map/delete_point/',
+                type: "POST",
+                data: post_data,
+                async: true,
+                success: function (data) {
+                    layer.alert("已删除！")
+                    map.removeOverlay(thisMarker);
+                    layer.close(index);
+                },
+                error:function () {
+                  layer.alert("删除失败！")
+                }
+             });
+     }
   });
 }
 function check_year(val) {
@@ -311,7 +338,6 @@ if(flag)
     btn:['提交','取消'],
     yes:function () {
         $('.error-msg').html("");
-
         var flag2 = true;
         var lng = e.point.lng;
         var lat = e.point.lat;

@@ -1,3 +1,4 @@
+import threading
 from datetime import datetime
 from django.shortcuts import render
 import json
@@ -7,6 +8,7 @@ from django.shortcuts import HttpResponse
 from PreprocessData.all_class_files.all_class import *
 from createobject.to_node import TransNode
 from createobject.to_class import TransClass
+from createobject.process_node import delete_kg
 from login.views import display, set_entities_data
 
 
@@ -27,6 +29,8 @@ def get_points(request):
     user_id = request.session.get("user_id")
     created_entities = global_data.get_created_entities()
     markpoint_data = created_entities[user_id]
+    user_kg_ids = global_data.get_kg_ids()
+    point_kg_ids = user_kg_ids[user_id]
     address_longitude = []
     address_latitude = []
     address_data = []
@@ -43,8 +47,8 @@ def get_points(request):
                          "building_information": property_list["mentions"][0].description,
                          "announcer": property_list["publisher"][0].name,
                          "CopyrightOwner": property_list["copyrightHolder"][0].name,
-                         "img": property_list["mentions"][0].image
-                         }
+                         "img": property_list["mentions"][0].image,
+                         "node_id": id}
             address_longitude.append(property_list["mentions"][0].geo[0].longitude)
             address_latitude.append(property_list["mentions"][0].geo[0].latitude)
             address_data.append(temp_data)
@@ -68,6 +72,10 @@ def trans_date(cre_date):
         return datetime.strptime(cre_date, "%Y-%m").date()
     if lens == 3:
         return datetime.strptime(cre_date, "%Y-%m-%d").date()
+
+
+def update(request):
+    return render(request, "display/result.html")
 
 
 def process_form(request):
@@ -130,4 +138,20 @@ def process_form(request):
         trans_node.to_node(Photograph_obj)
         set_entities_data(user_id)
 
+    return render(request, "display/result.html")
+
+
+def delete_process(user_id, node_id):
+    user_kg_ids = global_data.get_kg_ids()
+    point_kg_ids = user_kg_ids[user_id]
+    delete_kg(point_kg_ids[int(node_id)])
+    set_entities_data(user_id)
+
+
+def delete_point(request):
+    user_id = request.session.get("user_id")
+    if request.method == "POST":
+        node_id = request.POST.get("node_id")
+    thread1 = threading.Thread(target=delete_process, args=(user_id, node_id,))
+    thread1.start()
     return render(request, "display/result.html")

@@ -104,7 +104,7 @@ $(function() {
         address_data =receive_data["address_data"];
         console.log(receive_data)
                 for (var i = 0; i < address_longitude.length; i++) {
-            var point = new BMap.Point(address_longitude[i], address_latitude[i]); //循环生成新的地图点
+            var point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
             createMarker(point,address_data[i])
         }
 
@@ -116,8 +116,14 @@ $(function() {
 
     }
 function createMarker(point,point_data) {
-    console.log(point)
-    var marker = new BMap.Marker(point); //按照地图点坐标生成标记
+    var marker = new BMap.Marker(point, {
+  // 初始化五角星symbol
+  icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {
+    scale: 1,
+    fillColor: "yellow",
+    fillOpacity: 0.8
+  })
+});
     map.addOverlay(marker);
     marker.addEventListener('click', function () {
         showInfo(this,point_data);

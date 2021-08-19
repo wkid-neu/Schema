@@ -44,6 +44,7 @@ def get_md5(password, salt='breeze'):
 def set_entities_data(user_id):  # 《======================-----------------------待修改的地方
     created_entities = global_data.get_created_entities()
     created_classes = global_data.get_created_classes()
+    user_kg_ids = global_data.get_kg_ids()
     transfer = TransClass(user_id)
     transfer.transfer()
     entity_list = {}
@@ -57,8 +58,12 @@ def set_entities_data(user_id):  # 《======================--------------------
     created_classes[user_id] = class_list
     print(created_classes)
     print(created_entities)
+    user_kg_ids[user_id]=transfer.kg_ids
+    print(transfer.kg_ids)
     global_data.set_created_enetities(created_entities)
     global_data.set_created_classes(created_classes)
+    global_data.set_kg_ids(user_kg_ids)
+    print(global_data.get_kg_ids())
     entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links},ensure_ascii=False)
     json_path = os.path.join(settings.STATICFILES_DIRS[0],"KGJson\{}_nodes_json.json").format(user_id)
     try:

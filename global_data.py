@@ -6,6 +6,7 @@ class global_var:
     pre_data = {"NoneType": "空值", "str": "自定义字符串", "int": "整数", "bool": "布尔（真假）", "date": "日期", "float": "非整数"}
     msql = datasql()
     properties_data = msql.query("property_tab")
+    user_kg_ids = {}
     properties_name_contrast = {}
     properties_name_invert = dict(zip([obj[0] for obj in properties_data], [obj[1] for obj in properties_data]))
     range_result = msql.query("range_tab")
@@ -86,3 +87,11 @@ def get_created_classes():
 
 def get_pre_data():
     return global_var.pre_data
+
+
+def get_kg_ids():
+    return global_var.user_kg_ids
+
+
+def set_kg_ids(value):
+    global_var.user_kg_ids = value

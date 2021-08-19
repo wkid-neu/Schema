@@ -14,6 +14,7 @@ class TransClass(object):
         self.monitor_id = monitor_id
         self.properties_name_contrast = global_data.get_properties_name_contrast()
         self.node_dict = {}
+        self.kg_ids = {}
         self.entity_class_json = {}
         self.id_class_json = {}
         self.class_to_id = {}
@@ -82,9 +83,11 @@ class TransClass(object):
         for obj in self.node_data:
             if obj in self.vis:
                 continue
-            self.process(obj)
+            self.kg_ids[obj.identity]=[]
+            self.process(obj.identity,  obj)
 
-    def process(self, node):
+    def process(self, root_node_id ,node):
+        self.kg_ids[root_node_id].append(node.identity)
         if node in self.vis:
             return
         self.vis.append(node)
@@ -116,12 +119,11 @@ class TransClass(object):
                 if value in self.node_dict:
                     kwargs[node_property].append(self.node_dict.get(value))
                     continue
-                kwargs[node_property].append(self.process(value))
+                kwargs[node_property].append(self.process(root_node_id,value))
         node_t_class = class_meta(**kwargs)
         if not hasattr(node_t_class, 'node_id'):
             setattr(node_t_class, 'node_id', node.identity)
         self.node_dict[node] = node_t_class
-
         self.result[node.identity] = {"class": node_t_class, "fill_data": kwargs}
         self.entity_class_json[class_].append({"class": node_t_class, "node_id": node.identity, "name": kwargs['name']})
         return node_t_class
