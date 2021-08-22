@@ -34,8 +34,9 @@ $(function() {
         })
 function init() {
 
-    if(localStorage.getItem("writed_data")=="undefined")
-        {
+    if(localStorage.getItem("writed_data")=="undefined"||localStorage.getItem("writed_data")==null)
+        {                
+
             writed_data = {};
             writed_data["created_entities"] = {};
             localStorage.setItem("writed_data",JSON.stringify(writed_data));
@@ -46,7 +47,7 @@ function init() {
             if(entity_name.length > 0)
             {
                 alert("该"+entity+"实体的名字为"+entity_name);
-                localStorage.getItem("writed_data")
+                console.log(localStorage.getItem("writed_data"))
                 var writed_data = JSON.parse(localStorage.getItem("writed_data"));
                 if (!(entity in writed_data))
                 {
