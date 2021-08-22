@@ -1,9 +1,7 @@
 
 from django_neomodel import DjangoNode
-from neomodel import (config, StructuredNode, Property, StringProperty, IntegerProperty,
-                      UniqueIdProperty, BooleanProperty, DateProperty, DateTimeProperty,
-                      ArrayProperty, JSONProperty, FloatProperty, RelationshipTo, RelationshipFrom)
-from createobject.set_relationship import create_relationship_to,create_relationship_from,create_relationship
+from neomodel import (config, StringProperty, IntegerProperty)
+from objTonode.set_relationship import create_relationship_to
 
 config.DATABASE_URL = 'bolt://neo4j:123123@localhost:7687'
 
@@ -30,6 +28,7 @@ class Thing(DjangoNode):
     name = StringProperty()
 
     monitor_id = IntegerProperty()
+    app_name = StringProperty()
 
     potentialAction = create_relationship_to(['AssessAction', 'ChooseAction', 'VoteAction', 'IgnoreAction', 'ReactAction', 'WantAction', 'AgreeAction', 'DisagreeAction', 'DislikeAction', 'EndorseAction', 'LikeAction', 'ReviewAction', 'ConsumeAction', 'DrinkAction', 'EatAction', 'InstallAction', 'ListenAction', 'ReadAction', 'UseAction', 'WearAction', 'ViewAction', 'WatchAction', 'ControlAction', 'DeactivateAction', 'ResumeAction', 'SuspendAction', 'ActivateAction', 'CreateAction', 'DrawAction', 'FilmAction', 'PaintAction', 'PhotographAction', 'WriteAction', 'CookAction', 'FindAction', 'TrackAction', 'CheckAction', 'DiscoverAction', 'InteractAction', 'JoinAction', 'LeaveAction', 'MarryAction', 'RegisterAction', 'SubscribeAction', 'UnRegisterAction', 'BefriendAction', 'CommunicateAction', 'InformAction', 'RsvpAction', 'ConfirmAction', 'InviteAction', 'ReplyAction', 'ShareAction', 'AskAction', 'CheckInAction', 'CheckOutAction', 'CommentAction', 'FollowAction', 'MoveAction', 'TravelAction', 'ArriveAction', 'DepartAction', 'OrganizeAction', 'PlanAction', 'ReserveAction', 'ScheduleAction', 'CancelAction', 'AllocateAction', 'AssignAction', 'AuthorizeAction', 'RejectAction', 'AcceptAction', 'ApplyAction', 'BookmarkAction', 'PlayAction', 'ExerciseAction', 'PerformAction', 'SearchAction', 'TradeAction', 'BuyAction', 'DonateAction', 'OrderAction', 'PayAction', 'QuoteAction', 'RentAction', 'SellAction', 'TipAction', 'TransferAction', 'BorrowAction', 'DownloadAction', 'GiveAction', 'LendAction', 'ReceiveAction', 'ReturnAction', 'SendAction', 'TakeAction', 'UpdateAction', 'AddAction', 'InsertAction', 'PrependAction', 'AppendAction', 'DeleteAction', 'ReplaceAction', 'AchieveAction', 'LoseAction', 'TieAction', 'WinAction', 'Action'], '预期的行动')
 

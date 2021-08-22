@@ -6,16 +6,16 @@ import os
 import Schema.settings as settings
 from django.shortcuts import HttpResponse
 from PreprocessData.all_class_files.all_class import *
-from createobject.to_node import TransNode
-from createobject.to_class import TransClass
-from createobject.process_node import delete_kg
-from login.views import display, set_entities_data
+from objTonode.to_class import TransClass
+from objTonode.to_node import TransNode
+from objTonode.process_node import delete_kg
 
 
 # Create your views here.
 
 
 def map_index(request, type):
+    request.session["app_name"] = "MapSchema"
     if request.session.get('is_login', None):
         if type == "address":
             return render(request, 'display/address.html')
@@ -25,12 +25,35 @@ def map_index(request, type):
         return render(request, "login/nologin.html")
 
 
-def get_points(request):
-    user_id = request.session.get("user_id")
-    created_entities = global_data.get_created_entities()
-    markpoint_data = created_entities[user_id]
-    user_kg_ids = global_data.get_kg_ids()
-    point_kg_ids = user_kg_ids[user_id]
+def set_allmarkers_data(user_id):
+    transfer = TransClass(user_id, "MapSchema")
+    transfer.transfer(extract_all=True)
+    entity_list = {}
+    for entity in transfer.entity_class_json:
+        for obj in transfer.entity_class_json[entity]:
+            entity_list[obj['node_id']] = [entity, transfer.result[obj["node_id"]]["fill_data"],
+                                           transfer.result[obj["node_id"]]["monitor_id"]]
+    global_data.set_mappoints(entity_list)
+    global_data.set_kg_ids(transfer.kg_ids, "MapSchema")
+    print(global_data.get_kg_ids())
+    entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links}, ensure_ascii=False)
+    json_path = os.path.join(settings.STATICFILES_DIRS[0], "KGJson\MapSchema_nodes_json.json")
+    try:
+        with open(json_path, 'w', encoding='utf-8') as f:
+            f.write(entities_json)
+            f.close()
+        print("图谱转换JSON成功！")
+    except Exception as e:
+        print("图谱转换JSON失败！")
+        print(e)
+
+
+def get_all_points(request):
+    if global_data.global_var.MAP_FLAG == False:
+        global_data.set_MAP_FLAG(True)
+        user_id = request.session.get("user_id")
+        set_allmarkers_data(user_id)
+    markpoint_data = global_data.get_mappoints()
     address_longitude = []
     address_latitude = []
     address_data = []
@@ -42,13 +65,13 @@ def get_points(request):
                          "img_description": property_list['description'],
                          "encode_type": property_list['encodingFormat'],
                          "type": property_list['keywords'], "file_url": property_list['citation'],
-                         "author": property_list["publisher"][0].name,
+                         "creator": property_list["creator"][0].name,
                          "location": property_list["mentions"][0].address,
                          "building_information": property_list["mentions"][0].description,
                          "announcer": property_list["publisher"][0].name,
                          "CopyrightOwner": property_list["copyrightHolder"][0].name,
                          "img": property_list["mentions"][0].image,
-                         "node_id": id}
+                         "node_id": id, "monitor_id": markpoint_data[id][2]}
             address_longitude.append(property_list["mentions"][0].geo[0].longitude)
             address_latitude.append(property_list["mentions"][0].geo[0].latitude)
             address_data.append(temp_data)
@@ -79,6 +102,7 @@ def update(request):
 
 
 def process_form(request):
+    app_name = request.session.get("app_name")
     user_id = request.session['user_id']
     user_name = request.session['user_name']
     if request.method == "POST":
@@ -98,7 +122,7 @@ def process_form(request):
         lat = request.POST['lat']
         building_name = request.POST['building_name']
         title = request.POST['title']
-        author_name = request.POST['author']
+        creator_name = request.POST['creator']
         cre_date = request.POST['cre_date']
 
         location = request.POST['location']
@@ -109,9 +133,9 @@ def process_form(request):
         CopyrightOwner_name = request.POST['CopyrightOwner']
         file_url = request.POST['file_url']
         type_data = request.POST['type'].split(" ")
-        author = "Person"
-        author_property = {'name': [author_name]}
-        author_obj = create_obj(author, author_property)
+        creator = "Person"
+        creator_property = {'name': [creator_name]}
+        creator_obj = create_obj(creator, creator_property)
         CopyrightOwner = "Person"
         CopyrightOwner_property = {'name': [CopyrightOwner_name]}
         CopyrightOwner_obj = create_obj(CopyrightOwner, CopyrightOwner_property)
@@ -128,24 +152,24 @@ def process_form(request):
         building_obj = create_obj(building, building_property)
         Photograph = "Photograph"
         Photograph_property = {'name': [building_name + "照片"], "headline": [title], "description": [img_description],
-                               "keywords": type_data, "author": [author_obj], "publisher": [announcer_obj],
+                               "keywords": type_data, "creator": [creator_obj], "publisher": [announcer_obj],
                                "mentions": [building_obj], "copyrightHolder": [CopyrightOwner_obj],
                                "encodingFormat": [encode_type], "citation": [file_url],
                                "dateCreated": [trans_date(cre_date)]}
         print(Photograph_property)
         Photograph_obj = create_obj(Photograph, Photograph_property)
-        trans_node = TransNode(user_id)
+        trans_node = TransNode(user_id, "MapSchema")
         trans_node.to_node(Photograph_obj)
-        set_entities_data(user_id)
+        set_allmarkers_data(user_id)
 
     return render(request, "display/result.html")
 
 
 def delete_process(user_id, node_id):
     user_kg_ids = global_data.get_kg_ids()
-    point_kg_ids = user_kg_ids[user_id]
-    delete_kg(point_kg_ids[int(node_id)])
-    set_entities_data(user_id)
+    MapSchema_kg_ids = user_kg_ids["MapSchema"]
+    delete_kg(MapSchema_kg_ids[int(node_id)])
+    set_allmarkers_data(user_id)
 
 
 def delete_point(request):

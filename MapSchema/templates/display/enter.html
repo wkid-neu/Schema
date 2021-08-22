@@ -26,8 +26,8 @@
         <div id = "title_error" class="error-msg"></div>
     </label>
        <label><span>拍摄者 :</span>
-        <input id="author" type="text" name="author"  />
-        <div id = "author_error" class="error-msg"></div>
+        <input id="creator" type="text" name="creator"  />
+        <div id = "creator_error" class="error-msg"></div>
     </label>
        <label><span>拍摄时间 :</span>
         <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 60px;border-radius: 3px"/>
@@ -37,7 +37,7 @@
     </label>
        <label><span>地理位置 :</span>
         <input id="location" type="text" name="location"  />
-        <div class="error-msg"></div>
+        <div id = "location_error" class="error-msg"></div>
     </label>
        <label><span>图片说明:</span>
         <textarea id="img_description" required="required" name="img_description"></textarea>
@@ -64,7 +64,7 @@
         <div class="error-msg"></div>
     </label>
        <label><span> 分类:</span>
-        <input id="type" type="text" name="type" />
+        <input id="type" type="text" name="type" placeholder="可填多个标签(以空格分隔)" />
         <div class="error-msg"></div>
     </label>
     <div class="success-msg"></div>
@@ -72,7 +72,7 @@
 </form>
 </div>
  <div  id="show_div" style="display:none;" class="smart-green">
-    <img src="" id="show_img" style="width: 400px">
+    <img src="" id="show_img" style="width: 350px">
        <p><div class="lab">建筑名称 :</div>
         <span id="show_building_name" class="value"> </span>
     </p>
@@ -80,7 +80,7 @@
         <span id="show_title" class="value"> </span>
     </p>
        <p><div class="lab">拍摄者 :</div>
-       <span id="show_author" class="value"> </span>
+       <span id="show_creator" class="value"> </span>
     </p>
        <p><div class="lab">拍摄时间 :</div>
        <span id="show_cre_date" class="value"> </span>
@@ -111,25 +111,27 @@
     </p>
  </div>
 <form action="" method="get">
-  <label >地点：</label>
-  <input id="where" name="where" type="text" >
-  <input type="button" value="地图上找" onClick="sear(document.getElementById('where').value);" />
+<div id="search_block">
+  <label style="margin-left: 10px;color: white">地点：</label>
+  <input id="where" style="width: 300px;margin-top: 8px;margin-bottom: 5px";name="where" type="text" >
+  <input type="button" value="地图上找"  style="margin-right: 10px;" onClick="sear(document.getElementById('where').value);" />
+      <label style="color: white">地点：</label>
+  <input id="lonlat" style="margin-right: 10px" name="lonlat" type="text" >
+    <button><a  href="/display/" style="color: #eb9316;text-decoration: none">查看对应的图谱</a></button>
+    <button style="position:absolute;right: 0;width: 80px;margin-top: 8px;margin-right: 15px" onClick="javascript:window.history.back();return false;"><img src="../../../static/imgs/back.png" style="height: 20px"></button>
+
+</div>
+  <div style="width:100%;height:650px;border:1px solid gray" id="allmap"></div>
   <br />
 
-  <div style="margin-left:20px;width:1700px;height:650px;border:1px solid gray" id="allmap"></div>
-  <br />
-  经纬度：
-  <input id="lonlat" name="lonlat" type="text">
-    <p><a  href="/display/" style="color: #eb9316">查看对应的图谱</a></p>
 
 </form>
-    <input type="button" value="返回上一页" onclick="javascript:history.go(-1)" />
 
 
 <script type="text/javascript">
     // 百度地图API功能
        // 百度地图API功能
-    var flag=false;
+    var showflag=false;
     var marker;
     var time = 0;
     var bjh = $("input[name='bjh']").val();
@@ -214,6 +216,7 @@ function fill_lonlat(e) {
 
 }
 function createMarker(point,point_data) {
+    user_id = {{ request.session.user_id }}
     var marker = new BMap.Marker(point, {
   // 初始化五角星symbol
   icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {
@@ -222,14 +225,27 @@ function createMarker(point,point_data) {
     fillOpacity: 0.8
   })
 });
+    if(user_id == point_data["monitor_id"])
+    {
+        marker = new BMap.Marker(point, {
+  // 初始化五角星symbol
+  icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {
+    scale: 1,
+    fillColor: "red",
+    fillOpacity: 0.8
+  })
+});
+    }
+
     map.addOverlay(marker);
     marker.addEventListener('click', function () {
         showInfo(this,point_data);
     });
 }
 function showInfo(thisMarker,point_info) {
-    console.log(point_info)
-    flag=true;
+    user_id = {{ request.session.user_id }}
+    user_role  = '{{ request.session.role }}'
+    showflag=true;
     for(var i in point_info)
     {
         var str=point_info[i][0];
@@ -242,7 +258,9 @@ function showInfo(thisMarker,point_info) {
         $('#'+"show_"+i).text(str)
     }
     $("#show_img").attr("src","..\\..\\..\\"+point_info["img"][0]);
-     var index = layer.open({
+    if(user_id == point_info["monitor_id"] || user_role == "A")
+    {
+        var index = layer.open({
     type: 1,
     title: '标注信息',
     area: ['500px', '750px'],
@@ -268,6 +286,19 @@ function showInfo(thisMarker,point_info) {
              });
      }
   });
+
+    }
+    else
+    {
+     var index = layer.open({
+    type: 1,
+    title: '标注信息',
+    area: ['500px', '750px'],
+    shadeClose: true, //点击遮罩关闭
+    content: $('#show_div')
+  });
+
+    }
 }
 function check_year(val) {
     console.log(val,typeof val,val.length)
@@ -324,9 +355,9 @@ function check_run(year) {
 }
 function popLayer(e) {
     console.log(e.point)
-if(flag)
+if(showflag)
 {
-    flag=false;
+    showflag=false;
     return;}
     document.getElementById('form').reset();
     var index = layer.open({
@@ -348,7 +379,7 @@ if(flag)
         var cre_date_year = $('#cre_date_year').val();
         var cre_date_month = $('#cre_date_month').val();
         var cre_date_day = $('#cre_date_day').val();
-        var author = $('#author').val();
+        var creator = $('#creator').val();
         var CopyrightOwner = $('#CopyrightOwner').val();
         var img_description = $('#img_description').val();
         var location = $('#location').val();
@@ -363,32 +394,34 @@ if(flag)
         }
         if(isEmpty(building_name))
         {
-            $('#building_name_error').html("请填写该字段!");
-            flag2=false;
+            building_name = "？"
         }
         if(isEmpty(cre_date_year))
         {
-            $('#cre_date_error').html("年份不能空!");
+            $('#cre_date_error').html("年份不能为空!");
+            flag2=false;
+        }
+        if(isEmpty(location))
+        {
+            $('#location_error').html("地点不能为空!");
             flag2=false;
         }
         if(isEmpty(building_information))
         {
-            $('#building_information_error').html("请填写该字段!");
-            flag2=false;
+            building_information ="无"
         }if(isEmpty(img_description))
         {
-            $('#img_description_error').html("请填写该字段!");
-            flag2=false;
+            img_description = "无"
         }
+
         if(isEmpty(title))
         {
-            $('#title_error').html("请填写该字段!");
+            $('#title_error').html("标题不能为空!");
             flag2=false;
         }
-        if(isEmpty(author))
+        if(isEmpty(creator))
         {
-            $('#author_error').html("请填写该字段!");
-            flag2=false;
+            creator = "佚名"
         }
         if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
         {
@@ -423,7 +456,7 @@ if(flag)
     selectedFile.append("title",title);
     selectedFile.append("building_name",building_name);
     selectedFile.append("cre_date",cre_date);
-    selectedFile.append("building_information",building_information);selectedFile.append("author",author);
+    selectedFile.append("building_information",building_information);selectedFile.append("creator",creator);
     selectedFile.append("CopyrightOwner",CopyrightOwner);selectedFile.append("img_description",img_description);
     selectedFile.append("location",location);selectedFile.append("encode_type",encode_type);
     selectedFile.append("announcer",announcer);

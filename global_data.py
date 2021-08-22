@@ -5,8 +5,9 @@ from PreprocessData.database_op import datasql
 class global_var:
     pre_data = {"NoneType": "空值", "str": "自定义字符串", "int": "整数", "bool": "布尔（真假）", "date": "日期", "float": "非整数"}
     msql = datasql()
+    MAP_FLAG = False
     properties_data = msql.query("property_tab")
-    user_kg_ids = {}
+    user_kg_ids = {"CreKg": {}, "MapSchema": {}}
     properties_name_contrast = {}
     properties_name_invert = dict(zip([obj[0] for obj in properties_data], [obj[1] for obj in properties_data]))
     range_result = msql.query("range_tab")
@@ -18,6 +19,7 @@ class global_var:
             properties_name_contrast[obj[0]][properties_name_invert[curr_property]] = curr_property
     name_zh = dict(zip([obj[0] for obj in entity_result], [obj[1] for obj in entity_result]))
     range_table_zh = {}
+    mappoints = {}
     for key in range_table:
         value_list = []
         for obj in range_table[key]:
@@ -93,5 +95,17 @@ def get_kg_ids():
     return global_var.user_kg_ids
 
 
-def set_kg_ids(value):
-    global_var.user_kg_ids = value
+def set_kg_ids(value,key):
+    global_var.user_kg_ids[key] = value
+
+
+def get_mappoints():
+    return global_var.mappoints
+
+
+def set_mappoints(value):
+    global_var.mappoints = value
+
+
+def set_MAP_FLAG(value):
+    global_var.MAP_FLAG = value

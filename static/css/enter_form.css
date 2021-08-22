@@ -99,3 +99,8 @@ margin-bottom: 10px;
         z-index: 1001;
         text-align: center;
     }
+#search_block
+{
+    height: 40px;
+    background: #334f5e;
+}

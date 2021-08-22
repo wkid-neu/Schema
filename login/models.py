@@ -4,15 +4,18 @@ from django.db import models
 
 
 class UserinfoTab(models.Model):
+    id = models.BigAutoField(primary_key=True)
     name = models.CharField(unique=True, max_length=128)
     password = models.CharField(max_length=256)
     email = models.CharField(unique=True, max_length=254)
     sex = models.CharField(max_length=32)
-    c_time = models.DateTimeField(auto_now_add=True)
+    role = models.CharField(max_length=255)
+    c_time = models.DateTimeField()
 
     class Meta:
         managed = False
         db_table = 'userinfo_tab'
+
 
 
 class CreateinfoTab(models.Model):

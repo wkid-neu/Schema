@@ -4,7 +4,7 @@ from PreprocessData.all_class_files.all_class import *
 
 
 class TransClass(object):
-    def __init__(self, monitor_id):
+    def __init__(self, monitor_id, app_name):
         self.graph = Graph("http://localhost:7474", username="neo4j", password='123123')
         self.vis = []
         self.result = {}
@@ -12,6 +12,7 @@ class TransClass(object):
         self.node_data = {}
         self.id_node_tab = {}
         self.monitor_id = monitor_id
+        self.app_name = app_name
         self.properties_name_contrast = global_data.get_properties_name_contrast()
         self.node_dict = {}
         self.kg_ids = {}
@@ -35,9 +36,17 @@ class TransClass(object):
             return True
         return False
 
-    def transfer(self):
-        data = self.graph.run(
-            "match (a)-[rel]->(b) where a.monitor_id={} return a,rel,b".format(self.monitor_id)).data()
+    def extract_data(self, extract_all):
+        if extract_all is False:
+            data = self.graph.run(
+                "match (a)-[rel]->(b) where a.monitor_id={} and a.app_name='{}' return a,rel,b".format(self.monitor_id,self.app_name)).data()
+        else:
+            data = self.graph.run(
+                "match (a)-[rel]->(b) where a.app_name='{}' return a,rel,b".format(self.app_name)).data()
+        return data
+
+    def transfer(self, extract_all=False):
+        data = self.extract_data(extract_all)
         for three_tuple in data:
             st_node = three_tuple['a']
             if st_node.identity not in self.id_node_tab:
@@ -83,10 +92,10 @@ class TransClass(object):
         for obj in self.node_data:
             if obj in self.vis:
                 continue
-            self.kg_ids[obj.identity]=[]
-            self.process(obj.identity,  obj)
+            self.kg_ids[obj.identity] = []
+            self.process(obj.identity, obj)
 
-    def process(self, root_node_id ,node):
+    def process(self, root_node_id, node):
         self.kg_ids[root_node_id].append(node.identity)
         if node in self.vis:
             return
@@ -94,6 +103,7 @@ class TransClass(object):
         class_ = str(node.labels).split(":")[1]
 
         name = dict(node)['name']
+        master = dict(node)['monitor_id']
         if class_ in self.common_data:
             if class_ == "Date":
                 return self.trans_date(name)
@@ -119,11 +129,11 @@ class TransClass(object):
                 if value in self.node_dict:
                     kwargs[node_property].append(self.node_dict.get(value))
                     continue
-                kwargs[node_property].append(self.process(root_node_id,value))
+                kwargs[node_property].append(self.process(root_node_id, value))
         node_t_class = class_meta(**kwargs)
         if not hasattr(node_t_class, 'node_id'):
             setattr(node_t_class, 'node_id', node.identity)
         self.node_dict[node] = node_t_class
-        self.result[node.identity] = {"class": node_t_class, "fill_data": kwargs}
+        self.result[node.identity] = {"class": node_t_class, "fill_data": kwargs, "monitor_id": master}
         self.entity_class_json[class_].append({"class": node_t_class, "node_id": node.identity, "name": kwargs['name']})
         return node_t_class

@@ -1,15 +1,17 @@
+import os
 from datetime import datetime
 
 from django.db.models import Q
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from pandas._libs import json
-from createobject import models
-from login.views import set_entities_data
+
+from Schema import settings
+from objTonode.to_class import TransClass
 from createobject.models import EntityTab
 from createobject.models import PropertyTab
 from django.http import JsonResponse
-from createobject.to_node import TransNode
+from objTonode.to_node import TransNode
 import global_data
 
 imp_module = 'PreprocessData.all_class_files.{}'
@@ -20,6 +22,19 @@ range_table_zh = global_data.get_table_zh()
 
 def check(request):
     pass
+
+
+def kg_index(request):
+    request.session["app_name"] = "CreKg"
+    user_id = request.session["user_id"]
+    if request.session.get('is_login', None):
+        created_entities = global_data.get_created_entities()
+        if created_entities.get(user_id) is None:
+            set_entities_data(user_id)
+        return render(request, "createobject/choose.html")
+
+    else:
+        return render(request, "login/nologin.html")
 
 
 def search(request):
@@ -58,30 +73,6 @@ def query_entity(entityname):
 def creating(request, entityname):
     entity_data = query_entity(entityname)
     return render(request, "createobject/create.html", entity_data)
-
-
-def insert_create_entity(user_id, entity_name, customize, fill_data, storage_id):
-    created_entities = global_data.get_created_entities()
-    max_id = global_data.get_max_id()
-    fill_data = json.dumps(fill_data, ensure_ascii=False)
-    try:
-        new_create_entity = models.CreateinfoTab.objects.create()
-        new_create_entity.user_id = user_id
-        new_create_entity.entity_name = entity_name
-        new_create_entity.customize = customize
-        new_create_entity.fill_data = fill_data
-        new_create_entity.save()
-
-    except Exception as e:
-        print("插入实体失败", e)
-    created_entities[user_id].append(
-        {"id": max_id + 1, "entity_name": entity_name, "fill_data": json.loads(fill_data)})
-
-    id_map_table = global_data.get_id_map_table()
-    id_map_table[max_id + 1] = (user_id, entity_name, storage_id)
-    global_data.set_id_map_table(id_map_table)
-    global_data.set_created_enetities(created_entities)
-    global_data.set_max_id(max_id + 1)
 
 
 def process(request):
@@ -125,7 +116,6 @@ def process(request):
         print("----", entity + str(storage_id))
         global_data.set_created_classes(created_classes)
         global_data.set_created_enetities(created_entities)
-        # insert_create_entity(user_id, entity, 0, property_data, storage_id)
         print(created_classes)
         print(created_entities)
         return HttpResponse(json.dumps({
@@ -135,9 +125,10 @@ def process(request):
 
 def obtaining(request):
     created_entities = global_data.get_created_entities()
+
     user_id = request.session['user_id']
     return_json = []
-    for obj in created_entities[user_id]:
+    for obj in created_entities.get(user_id):
         return_json.append(
             {'id': obj, 'entity': created_entities[user_id][obj][0], 'name': created_entities[user_id][obj][1]['name'],
              'in_graph': created_entities[user_id][obj][2]})
@@ -164,11 +155,47 @@ def get_the_entity(request, entity_id):
     return render(request, "createobject/get_entity.html", {"result": return_json})
 
 
+def set_entities_data(user_id):  # 《======================-----------------------待修改的地方
+    created_entities = global_data.get_created_entities()
+    created_classes = global_data.get_created_classes()
+    user_kg_ids = global_data.get_kg_ids()
+    CreKg_kg_ids = user_kg_ids["CreKg"]
+    transfer = TransClass(user_id, "CreKg")
+    transfer.transfer()
+    entity_list = {}
+    for entity in transfer.entity_class_json:
+        for obj in transfer.entity_class_json[entity]:
+            entity_list[obj['node_id']] = [entity, transfer.result[obj["node_id"]]["fill_data"], 1]  # 1代表已经进入图谱
+    created_entities[user_id] = entity_list
+    class_list = {}
+    for obj in transfer.result:
+        class_list[obj] = transfer.result[obj]["class"]
+    created_classes[user_id] = class_list
+    print(created_classes)
+    print(created_entities)
+    CreKg_kg_ids[user_id] = transfer.kg_ids
+    print(transfer.kg_ids)
+    global_data.set_created_enetities(created_entities)
+    global_data.set_created_classes(created_classes)
+    global_data.set_kg_ids(CreKg_kg_ids, "CreKg")
+    print(global_data.get_kg_ids())
+    entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links}, ensure_ascii=False)
+    json_path = os.path.join(settings.STATICFILES_DIRS[0], "KGJson\CreKg_{}_nodes_json.json").format(user_id)
+    try:
+        with open(json_path, 'w', encoding='utf-8') as f:
+            f.write(entities_json)
+            f.close()
+        print("图谱转换JSON成功！")
+    except Exception as e:
+        print("图谱转换JSON失败！")
+        print(e)
+
+
 def generating(request):
     created_classes = global_data.get_created_classes()
     user_id = request.session['user_id']
     user_classes = created_classes[user_id]
-    trans_node = TransNode(user_id)
+    trans_node = TransNode(user_id, "CreKg")
     try:
         for obj in user_classes:
             if type(obj).__name__ == "int":

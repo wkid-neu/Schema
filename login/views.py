@@ -7,8 +7,6 @@ from django.shortcuts import HttpResponse
 from login import models
 from neomodel import db
 from login.forms import UserForm, RegisterForm
-import global_data
-from createobject.to_class import TransClass
 from pandas._libs import json
 
 
@@ -18,13 +16,6 @@ from pandas._libs import json
 def index(request):
     return render(request, "login/index.html")
 
-
-def kg_index(request):
-    if request.session.get('is_login', None):
-        return render(request, "login/choose.html")
-
-    else:
-        return render(request, "login/nologin.html")
 
 
 def display(request):
@@ -41,39 +32,6 @@ def get_md5(password, salt='breeze'):
     return md5.hexdigest()
 
 
-def set_entities_data(user_id):  # 《======================-----------------------待修改的地方
-    created_entities = global_data.get_created_entities()
-    created_classes = global_data.get_created_classes()
-    user_kg_ids = global_data.get_kg_ids()
-    transfer = TransClass(user_id)
-    transfer.transfer()
-    entity_list = {}
-    for entity in transfer.entity_class_json:
-        for obj in transfer.entity_class_json[entity]:
-            entity_list[obj['node_id']] = [entity, transfer.result[obj["node_id"]]["fill_data"], 1]  # 1代表已经进入图谱
-    created_entities[user_id] = entity_list
-    class_list = {}
-    for obj in transfer.result:
-        class_list[obj] = transfer.result[obj]["class"]
-    created_classes[user_id] = class_list
-    print(created_classes)
-    print(created_entities)
-    user_kg_ids[user_id]=transfer.kg_ids
-    print(transfer.kg_ids)
-    global_data.set_created_enetities(created_entities)
-    global_data.set_created_classes(created_classes)
-    global_data.set_kg_ids(user_kg_ids)
-    print(global_data.get_kg_ids())
-    entities_json = json.dumps({'nodes': transfer.nodes, 'links': transfer.links},ensure_ascii=False)
-    json_path = os.path.join(settings.STATICFILES_DIRS[0],"KGJson\{}_nodes_json.json").format(user_id)
-    try:
-        with open(json_path, 'w', encoding='utf-8') as f:
-            f.write(entities_json)
-            f.close()
-        print("图谱转换JSON成功！")
-    except Exception as e:
-        print("图谱转换JSON失败！")
-        print(e)
 
 
 def login(request):
@@ -91,7 +49,7 @@ def login(request):
                     request.session['is_login'] = True
                     request.session['user_id'] = user.id
                     request.session['user_name'] = user.name
-                    set_entities_data(user.id)
+                    request.session['role'] = user.role
                     return redirect('/index/')
                 else:
                     message = "密码不正确!"
@@ -134,10 +92,10 @@ def register(request):
                 new_user.email = email
                 new_user.sex = sex
                 new_user.save()
-                user_directory = os.path.join(settings.MEDIA_ROOT,"{}_files\\".format(username))
+                user_directory = os.path.join(settings.MEDIA_ROOT, "{}_files\\".format(username))
                 print(user_directory)
                 if not os.path.exists(user_directory):
-                     os.makedirs(user_directory)
+                    os.makedirs(user_directory)
                 return redirect('/login/')  # 自动跳转到登录页面
     register_form = RegisterForm()
     return render(request, 'login/register.html', locals())

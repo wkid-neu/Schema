@@ -11,13 +11,23 @@
 
 <div>
 
- <a href="/search/" style="color: #eb9316">创建新的图谱</a>
-    <a href="" onclick="javascript:history.go(-1)"  style="color: #eb9316">返回上一页</a>
+    <button onclick="javascript:history.back(-1);">返回上一页</button>
+
     <svg></svg></div>
     <script>
     var user_id = {{ request.session.user_id }}
+    var app_name = '{{ request.session.app_name }}'
+    var path=""
+    if(app_name == 'MapSchema')
+    {
+        path = "http://127.0.0.1:8000/static/KGJson/"+app_name+"_nodes_json.json"
+    }
+    else
+    {
+        path = "http://127.0.0.1:8000/static/KGJson/"+app_name+"_"+user_id+"_nodes_json.json"
+    }
         console.log(user_id)
-        d3.json("http://127.0.0.1:8000/static/KGJson/"+user_id+"_nodes_json.json").then(function(dataJson){
+        d3.json(path).then(function(dataJson){
             //GroupExplorer constructing function
             //this is one way to create a javascript object
             function GroupExplorer(data){
