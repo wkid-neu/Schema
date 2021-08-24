@@ -10,8 +10,9 @@
 {% endblock %}
 {% block title %}主页{% endblock %}
 {% block content %}
-    <div id="enter_form" style="display: none">
 
+
+    <div id="enter_form" style="display: none">
    <form  action="" method="post" enctype="multipart/form-data" id="form" class="smart-green" >
 {% csrf_token %}
     <input type="file"  required="required" name="up_file" id="up_file" onchange="checkFileExt(this.value)">
@@ -115,7 +116,7 @@
   <label style="margin-left: 10px;color: white">地点：</label>
   <input id="where" style="width: 300px;margin-top: 8px;margin-bottom: 5px";name="where" type="text" >
   <input type="button" value="地图上找"  style="margin-right: 10px;" onClick="sear(document.getElementById('where').value);" />
-      <label style="color: white">地点：</label>
+      <label style="color: white">经纬度：</label>
   <input id="lonlat" style="margin-right: 10px" name="lonlat" type="text" >
     <button><a  href="/display/" style="color: #eb9316;text-decoration: none">查看对应的图谱</a></button>
     <button style="position:absolute;right: 0;width: 80px;margin-top: 8px;margin-right: 15px" onClick="javascript:window.history.back();return false;"><img src="../../../static/imgs/back.png" style="height: 20px"></button>
@@ -463,16 +464,21 @@ if(showflag)
     selectedFile.append("file_url",file_url);selectedFile.append("type",type);
     console.log(selectedFile)
     $.ajax({
-        type: 'post',
+
+        async: true,
+beforeSend: function () {
+            layer.close(index);
+            $.ShowLoadDialog();
+},
+         type: 'post',
         url: '/map/process/',
         cache: false,
-        async: true,
         data: selectedFile,
         processData:false,
         contentType:false,
  success: function (result) {
+            $.ShowLoadDialogClose();
             layer.alert("标注成功!")
-            layer.close(index);
             get_location();
         },
         error:function (){
@@ -499,6 +505,29 @@ function isEmpty(obj){
         return false;
     }
 }
+(function ($) {
+        $.extend({
+            //弹窗蒙层
+            ShowLoadDialog : function () {
+                if ($("#divtipmongolia").length <= 0) {
+                    var cusrtxt = $("<div id=\"divtipmongolia\" style=\"position:absolute; z-index:6666;background-color:#000000; opacity:0.6; top:0; bottom:0; right:0; left:0;\"></div>").appendTo($("body"));
+                    var atexthtml = "<div style=\"margin-top:25%;text-align:center;font-size:13pt;color:#FCE16E\"> <img src=\"../../../static/imgs/loading.gif\" />正在处理...</div>";
+                    $("#divtipmongolia").html(atexthtml);
+                }
+                else {
+                    $("#divtipmongolia").css("display", "block");
+                }
+
+            },
+
+            //关闭蒙层
+            ShowLoadDialogClose: function ()
+            {
+                if ($("#divtipmongolia").length > 0) { $("#divtipmongolia").css("display", "none"); }
+            }
+        });
+    }
+)(jQuery)
 function sear(result) {//地图搜索
     var local = new BMap.LocalSearch(map, {
         renderOptions: {map: map}

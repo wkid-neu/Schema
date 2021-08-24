@@ -104,7 +104,11 @@ $(function() {
                 url: '/map/get_points/',
                 type: "POST",
                 data: post_data,
+            beforeSend: function () {
+            $.ShowLoadDialog();
+},
                 success: function (data) {
+                                $.ShowLoadDialogClose();
                     receive_data = JSON.parse(data);
                     address_latitude =receive_data["address_latitude"];
         address_longitude =receive_data["address_longitude"];
@@ -148,7 +152,29 @@ function createMarker(point,point_data) {
         showInfo(this,point_data);
     });
 }
+(function ($) {
+        $.extend({
+            //弹窗蒙层
+            ShowLoadDialog : function () {
+                if ($("#divtipmongolia").length <= 0) {
+                    var cusrtxt = $("<div id=\"divtipmongolia\" style=\"position:absolute; z-index:6666;background-color:#000000; opacity:0.6; top:0; bottom:0; right:0; left:0;\"></div>").appendTo($("body"));
+                    var atexthtml = "<div style=\"margin-top:25%;text-align:center;font-size:13pt;color:#FCE16E\"> <img src=\"../../../static/imgs/loading.gif\" />正在加载...</div>";
+                    $("#divtipmongolia").html(atexthtml);
+                }
+                else {
+                    $("#divtipmongolia").css("display", "block");
+                }
 
+            },
+
+            //关闭蒙层
+            ShowLoadDialogClose: function ()
+            {
+                if ($("#divtipmongolia").length > 0) { $("#divtipmongolia").css("display", "none"); }
+            }
+        });
+    }
+)(jQuery)
 function showInfo(thisMarker,point_info) {
     for(var i in point_info)
     {

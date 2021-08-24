@@ -3,6 +3,8 @@
 {% block title %}搜索{% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/create.css' %}">
+        <script type="text/javascript" src="{% static 'js/3.1.1/layer.js' %}"></script>
+
 {% endblock %}
 {% block content %}
 <div>
@@ -113,13 +115,42 @@ function displayEntities() {
                 }
              });
 }
+(function ($) {
+        $.extend({
+            //弹窗蒙层
+            ShowLoadDialog : function () {
+                if ($("#divtipmongolia").length <= 0) {
+                    var cusrtxt = $("<div id=\"divtipmongolia\" style=\"position:absolute; z-index:6666;background-color:#000000; opacity:0.6; top:0; bottom:0; right:0; left:0;\"></div>").appendTo($("body"));
+                    var atexthtml = "<div style=\"margin-top:25%;text-align:center;font-size:13pt;color:#FCE16E\"> <img src=\"../../../static/imgs/loading.gif\" />正在处理...</div>";
+                    $("#divtipmongolia").html(atexthtml);
+                }
+                else {
+                    $("#divtipmongolia").css("display", "block");
+                }
+
+            },
+
+            //关闭蒙层
+            ShowLoadDialogClose: function ()
+            {
+                if ($("#divtipmongolia").length > 0) { $("#divtipmongolia").css("display", "none"); }
+            }
+        });
+    }
+)(jQuery)
 function generating() {
     go_data = []
     $.ajax({
                 url: '/create/generating/',
                 type: "POST",
                 data: go_data,
+        beforeSend: function () {
+            $.ShowLoadDialog();
+},
                 success: function (data) {
+                    $.ShowLoadDialogClose();
+                    layer.alert("成功!")
+
                     displayEntities();
 
                 }

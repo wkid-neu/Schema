@@ -91,6 +91,7 @@ def register(request):
                 new_user.password = get_md5(password1 + username)
                 new_user.email = email
                 new_user.sex = sex
+                new_user.role = "B"
                 new_user.save()
                 user_directory = os.path.join(settings.MEDIA_ROOT, "{}_files\\".format(username))
                 print(user_directory)
