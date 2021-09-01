@@ -95,7 +95,7 @@ def get_kg_ids():
     return global_var.user_kg_ids
 
 
-def set_kg_ids(value,key):
+def set_kg_ids(value, key):
     global_var.user_kg_ids[key] = value
 
 

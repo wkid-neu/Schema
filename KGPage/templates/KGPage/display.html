@@ -26,7 +26,6 @@
     {
         path = "http://127.0.0.1:8000/static/KGJson/"+app_name+"_"+user_id+"_nodes_json.json"
     }
-        console.log(user_id)
         d3.json(path).then(function(dataJson){
             //GroupExplorer constructing function
             //this is one way to create a javascript object
@@ -95,7 +94,7 @@
                     .attr('orient', 'auto')
                     .append('svg:path')
                     .attr('d', 'M0,-5L10,0L0,5')
-                    .attr("fill","brown");
+                    .attr("fill","grey");
                 //draw links
                 var links = svg.append("g")
                     .selectAll("line")
@@ -140,7 +139,7 @@
                 //draw nodes
                 nodes_g.append("circle")
                     .attr("r",10)
-                    .attr("fill","blue");
+                    .attr("fill","orange");
                 //draw node-text
                 nodes_g.append("text")
                     .attr("x",-15)

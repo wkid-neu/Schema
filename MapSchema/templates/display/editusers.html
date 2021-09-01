@@ -1,0 +1,98 @@
+{#login/templates/login/index.html#}
+
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        <script type="text/javascript" src="{% static 'js/3.1.1/layer.js' %}"></script>
+
+{% endblock %}
+{% block title %}主页{% endblock %}
+{% block content %}
+    <table id="user_info">
+    <tr>
+        <td>姓名</td>
+        <td>性别</td>
+        <td>邮箱</td>
+        <td>注册时间</td>
+        <td>用户身份</td>
+    </tr>
+    {% for obj in result %}
+        <tr><td id="user_name">{{ obj.name }}</td><td>{{ obj.sex }}</td><td>{{ obj.email }}</td><td>{{  obj.c_time|date:"Y-m-d"}}</td>
+        <td>
+        {% if obj.role == 'A' %}
+            {{ obj.role }}
+            {% else %}
+        <select id={{ obj.name }} onclick="display_button()">
+  <option value ="{{ obj.role }}">{{ obj.role }}</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+</select>
+        {% endif %}
+        </td>
+    {% endfor %}
+        <tr style="background-color: transparent"><td colspan="7"><button style="width:100px;display: none" id="save" onclick="edit_submit()">保存</button></td></tr>
+
+    </table>
+<script>
+$(function () {
+            $('#li-3').addClass("active");
+
+})
+function display_button() {
+    $('#save').show()
+}
+function edit_submit() {
+    var tab = document.getElementsByTagName("table")[0];
+    var update_data = []
+    for (var i = 1; i < tab.rows.length-1; i++) {
+        var  user_name =tab.rows[i].cells[0].innerHTML;
+        if(typeof $('#'+user_name).val() == "undefined")continue
+        update_data.push([user_name,$('#'+user_name).val()])
+    }
+    console.log(update_data)
+     $.ajax({
+                url: '/map/edit_process/',
+                type: "POST",
+                data: {'update':JSON.stringify(update_data)},
+                success: function (data) {
+                    data = JSON.parse(data)
+                    console.log(data)
+                    if(data['status']==1)
+                    {
+                        layer.alert("保存成功!");
+
+                    }
+                    else
+                    {
+                        layer.alert("保存失败")
+
+                    }
+                }
+             });
+}
+(function ($) {
+        $.extend({
+            //弹窗蒙层
+            ShowLoadDialog : function () {
+                if ($("#divtipmongolia").length <= 0) {
+                    var cusrtxt = $("<div id=\"divtipmongolia\" style=\"position:absolute; z-index:6666;background-color:#000000; opacity:0.6; top:0; bottom:0; right:0; left:0;\"></div>").appendTo($("body"));
+                    var atexthtml = "<div style=\"margin-top:25%;text-align:center;font-size:13pt;color:#FCE16E\"> <img src=\"../../../static/imgs/loading.gif\" />正在处理...</div>";
+                    $("#divtipmongolia").html(atexthtml);
+                }
+                else {
+                    $("#divtipmongolia").css("display", "block");
+                }
+
+            },
+
+            //关闭蒙层
+            ShowLoadDialogClose: function ()
+            {
+                if ($("#divtipmongolia").length > 0) { $("#divtipmongolia").css("display", "none"); }
+            }
+        });
+    }
+)(jQuery)
+</script>
+{% endblock %}

@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 
@@ -10,12 +11,11 @@ class UserinfoTab(models.Model):
     email = models.CharField(unique=True, max_length=254)
     sex = models.CharField(max_length=32)
     role = models.CharField(max_length=255)
-    c_time = models.DateTimeField()
+    c_time = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         managed = False
         db_table = 'userinfo_tab'
-
 
 
 class CreateinfoTab(models.Model):

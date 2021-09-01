@@ -1,7 +1,12 @@
 {#login/templates/login/index.html#}
 
 {% extends 'base.html' %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+{% endblock %}
 {% block title %}主页{% endblock %}
 {% block content %}
-   <h1 style="color: #eb9316">主页</h1>
+主页
 {% endblock %}

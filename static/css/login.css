@@ -28,3 +28,41 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+#user_info thead, #user_info tr {
+border-top-width: 1px;
+border-top-style: solid;
+border-top-color: rgb(235, 242, 224);
+}
+#user_info {
+    position:absolute;
+	width:800px;
+	height:200px;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+    text-align: center;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-bottom-color: rgb(235, 242, 224);
+}
+
+/* Padding and font style */
+#user_info td, #user_info th {
+padding: 5px 10px;
+font-size: 14px;
+font-family: Verdana;
+color: rgb(149, 170, 109);
+}
+
+/* Alternating background colors */
+#user_info tr:nth-child(even) {
+background: rgb(230, 238, 214)
+}
+#user_info tr:nth-child(odd) {
+background: #FFF
+}
+td{
+    height: 50px;
+}

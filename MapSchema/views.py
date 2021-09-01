@@ -1,8 +1,11 @@
 import threading
 from datetime import datetime
+
+from django.db import models
 from django.shortcuts import render
 import json
 import os
+from login import models
 import Schema.settings as settings
 from django.shortcuts import HttpResponse
 from PreprocessData.all_class_files.all_class import *
@@ -179,3 +182,20 @@ def delete_point(request):
     thread1 = threading.Thread(target=delete_process, args=(user_id, node_id,))
     thread1.start()
     return render(request, "display/result.html")
+
+
+def edit_users(request):
+    obj = models.UserinfoTab.objects.all().values()
+    return render(request, "display/editusers.html", {'result': obj})
+
+
+def edit_process(request):
+    if request.method == "POST":
+        update_data = json.loads(request.POST.get("update"))
+        try:
+            for obj in update_data:
+                models.UserinfoTab.objects.filter(name=obj[0]).update(role=obj[1])
+        except Exception as e:
+            print(e, "更改失败!")
+            return HttpResponse(json.dumps({'status': 0}))
+        return HttpResponse(json.dumps({'status': 1}))

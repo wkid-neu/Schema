@@ -122,13 +122,9 @@
     <button style="position:absolute;right: 0;width: 80px;margin-top: 8px;margin-right: 15px" onClick="javascript:window.history.back();return false;"><img src="../../../static/imgs/back.png" style="height: 20px"></button>
 
 </div>
-  <div style="width:100%;height:650px;border:1px solid gray" id="allmap"></div>
-  <br />
-
-
+  <div style="width:100%;height:650px;border:1px solid gray" id="allmap"></div>  <br />
+        <p style="color: #304d5e;font-size: 12px">红色五角星:&nbsp;您本人创建的标注点;<br>黄色五角星:&nbsp;其他用户创建的标注点;</p>
 </form>
-
-
 <script type="text/javascript">
     // 百度地图API功能
        // 百度地图API功能
@@ -141,10 +137,10 @@
     var pointX;
     var pointY;
 
-    var map = new BMap.Map("allmap"); // 创建Map实例
+     var map = new BMap.Map("allmap" ,{ enableMapClick: false }); // 创建Map实例
 
 map.setDefaultCursor("crosshair");
-    map.centerAndZoom(new BMap.Point(123.471095,41.68383), 17); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
+    map.centerAndZoom(new BMap.Point(123.471095,41.68383), 15); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
 
     //添加地图类型控件
     map.addControl(new BMap.MapTypeControl({
@@ -182,6 +178,7 @@ map.addEventListener("mousemove", function(e) {//鼠标单击地图触发
         fill_lonlat(e);
     });
 $(function() {
+        $('#li-2').addClass("active");
         get_location();
         })
      function get_location() {
@@ -200,10 +197,13 @@ $(function() {
         address_longitude =receive_data["address_longitude"];
         address_data =receive_data["address_data"];
         console.log(receive_data)
+        var point;
                 for (var i = 0; i < address_longitude.length; i++) {
-            var point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
+            point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
             createMarker(point,address_data[i])
         }
+        map.centerAndZoom(point, 15);
+
 
                 },
                 error:function () {

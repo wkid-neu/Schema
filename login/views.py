@@ -14,8 +14,9 @@ from pandas._libs import json
 
 
 def index(request):
+    if request.session.get("is_login", None):
+        return render(request, "display/address.html")
     return render(request, "login/index.html")
-
 
 
 def display(request):
@@ -30,8 +31,6 @@ def get_md5(password, salt='breeze'):
     md5 = hashlib.md5()
     md5.update((password + salt).encode())
     return md5.hexdigest()
-
-
 
 
 def login(request):
