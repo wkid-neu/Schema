@@ -184,6 +184,8 @@ def process_range():
                             cls.append(val)
                     if type not in cls:
                         cls.append(type)
+                    if type == "date":
+                        cls.append("str")  # "明国时期"
                     if type == "Number":
                         cls.append("float")
                 result.append([name, ",".join(cls)])
@@ -196,4 +198,5 @@ def process_range():
 if __name__ == "__main__":
     # process_class()
     # process_property()
-    process_range()
+    # process_range()
+    pass

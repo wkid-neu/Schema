@@ -51,6 +51,16 @@ def set_allmarkers_data(user_id):
         print(e)
 
 
+def process_date(val_list):
+    result = []
+    for obj in val_list:
+        if type(obj).__name__ == "str":
+            result.append(obj)
+        elif type(obj).__name__ == "date":
+            result.insert(0,obj.strftime("%Y"))
+    return result
+
+
 def get_all_points(request):
     if global_data.global_var.MAP_FLAG == False:
         global_data.set_MAP_FLAG(True)
@@ -64,7 +74,7 @@ def get_all_points(request):
         if markpoint_data[id][0] == "CreativeWork":
             property_list = markpoint_data[id][1]
             temp_data = {'building_name': property_list['name'], 'title': property_list['headline'],
-                         "cre_date": property_list['dateCreated'][0].strftime("%Y"),
+                         "cre_date": process_date(property_list['dateCreated']),
                          "img_description": property_list['description'],
                          "encode_type": property_list['encodingFormat'],
                          "type": property_list['keywords'], "file_url": property_list['citation'],
@@ -127,7 +137,7 @@ def process_form(request):
         title = request.POST['title']
         creator_name = request.POST['creator']
         cre_date = request.POST['cre_date']
-
+        date_str = request.POST['cre_date_str']
         location = request.POST['location']
         img_description = request.POST['img_description']
         encode_type = request.POST['encode_type']
@@ -154,11 +164,17 @@ def process_form(request):
                              "image": [relative_path]}
         building_obj = create_obj(building, building_property)
         Photograph = "Photograph"
+        date_val = []
+        if cre_date != "null":
+            date_val.append(trans_date(cre_date))
+        if len(date_str) != 0:
+            date_val.append(date_str)
         Photograph_property = {'name': [building_name + "照片"], "headline": [title], "description": [img_description],
                                "keywords": type_data, "creator": [creator_obj], "publisher": [announcer_obj],
                                "mentions": [building_obj], "copyrightHolder": [CopyrightOwner_obj],
                                "encodingFormat": [encode_type], "citation": [file_url],
-                               "dateCreated": [trans_date(cre_date)]}
+                               "dateCreated": date_val}
+
         print(Photograph_property)
         Photograph_obj = create_obj(Photograph, Photograph_property)
         trans_node = TransNode(user_id, "MapSchema")

@@ -8,7 +8,7 @@ class TransNeoClasses(object):
         self.common_properties = {'str': 'Text', 'int': 'Integer', 'float': 'Float', 'bool': 'Bool', 'date': 'Date'}
         self.preprocess_data = preprocess_data
         self.properties_nameZh = properties_nameZh
-        self.file_path = r"../../createobject/neo_classes.py"
+        self.file_path = r"../../objTonode/neo_classes.py"
         self.vis = ['object']
         self.result = ""
         self.range_table = global_data.get_table()
@@ -17,13 +17,13 @@ from django_neomodel import DjangoNode
 from neomodel import (config, StructuredNode, Property, StringProperty, IntegerProperty,
                       UniqueIdProperty, BooleanProperty, DateProperty, DateTimeProperty,
                       ArrayProperty, JSONProperty, FloatProperty, RelationshipTo, RelationshipFrom)
-from createobject.set_relationship import create_relationship_to,create_relationship_from,create_relationship
+from objTonode.set_relationship import create_relationship_to,create_relationship_from,create_relationship
 
 config.DATABASE_URL = 'bolt://neo4j:123123@localhost:7687'
 
 
 class Meta:
-    app_label = 'createobject'\n\n
+    app_label = 'objTonode'\n\n
 '''
         self.tail = '''
 class Text(Thing):
@@ -91,6 +91,7 @@ class Float(Thing):
                     if property == 'name':
                         temp_data += 1 * tab + "name = StringProperty()\n\n"
                         temp_data += 1 * tab + "monitor_id = IntegerProperty()\n\n"
+                        temp_data += 1 * tab + "app_name = StringProperty()\n\n"
                         continue
                     pre_add_values = self.get_property_data(property)
                     temp_data += 1 * tab + "{} = create_relationship_to({}, {})\n\n".format(property, pre_add_values,

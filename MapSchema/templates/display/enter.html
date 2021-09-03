@@ -30,10 +30,15 @@
         <input id="creator" type="text" name="creator"  />
         <div id = "creator_error" class="error-msg"></div>
     </label>
-       <label><span>拍摄时间 :</span>
+       <label><p>拍摄时间 :</p>
+           <span style="font-size: 13px;color: #eb5948">1</span>
+           <div style="borer:1px solid #9b9b9b;border-radius: 3px;width: 150px;margin-left: 10px">
         <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 60px;border-radius: 3px"/>
        <input id="cre_date_month" required="required" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 40px;border-radius: 3px"/>
        <input id="cre_date_day" required="required" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 40px;border-radius: 3px"/>
+      </div>
+                          <span style="font-size: 13px;color: #eb5948">2</span>
+<input id="cre_date_str" required="required" type="text" placeholder="eg:“明国时期”"  name="cre_date_str"  style="margin-left:5px;border-radius: 3px;width: 200px"/>
         <div id = "cre_date_error" class="error-msg"></div>
     </label>
        <label><span>地理位置 :</span>
@@ -381,6 +386,7 @@ if(showflag)
         var cre_date_month = $('#cre_date_month').val();
         var cre_date_day = $('#cre_date_day').val();
         var creator = $('#creator').val();
+        var date_str = $('#cre_date_str').val();
         var CopyrightOwner = $('#CopyrightOwner').val();
         var img_description = $('#img_description').val();
         var location = $('#location').val();
@@ -397,11 +403,12 @@ if(showflag)
         {
             building_name = "？"
         }
-        if(isEmpty(cre_date_year))
+        if(isEmpty(cre_date_year)&&isEmpty(date_str))
         {
-            $('#cre_date_error').html("年份不能为空!");
+            $('#cre_date_error').html("时间不能为空!");
             flag2=false;
         }
+
         if(isEmpty(location))
         {
             $('#location_error').html("地点不能为空!");
@@ -423,6 +430,10 @@ if(showflag)
         if(isEmpty(creator))
         {
             creator = "佚名"
+        }
+        if((!isEmpty(cre_date_month)||!isEmpty(cre_date_day))&&isEmpty(cre_date_year))
+        {
+            $('#cre_date_error').html("年份不能为空!"); return;
         }
         if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
         {
@@ -447,9 +458,15 @@ if(showflag)
         if(flag2)
         {
     var selectedFile=new FormData();
-    var cre_date=pad_zero(0,cre_date_year);
-     if(!isEmpty(cre_date_month))cre_date=cre_date+"-"+pad_zero(1,cre_date_month);
-    if(!isEmpty(cre_date_day))cre_date=cre_date+"-"+pad_zero(1,cre_date_day);
+    var cre_date;
+    if(isEmpty(cre_date_year))
+        cre_date="null"
+    else
+    {
+        cre_date=pad_zero(0,cre_date_year);
+        if(!isEmpty(cre_date_month))cre_date=cre_date+"-"+pad_zero(1,cre_date_month);
+        if(!isEmpty(cre_date_day))cre_date=cre_date+"-"+pad_zero(1,cre_date_day);
+    }
     console.log(cre_date)
     selectedFile.append("up_file",document.getElementById("up_file").files[0]);
     selectedFile.append("lng",lng);
@@ -457,6 +474,7 @@ if(showflag)
     selectedFile.append("title",title);
     selectedFile.append("building_name",building_name);
     selectedFile.append("cre_date",cre_date);
+    selectedFile.append("cre_date_str",date_str);
     selectedFile.append("building_information",building_information);selectedFile.append("creator",creator);
     selectedFile.append("CopyrightOwner",CopyrightOwner);selectedFile.append("img_description",img_description);
     selectedFile.append("location",location);selectedFile.append("encode_type",encode_type);

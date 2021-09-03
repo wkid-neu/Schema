@@ -1,13 +1,15 @@
 
 from django_neomodel import DjangoNode
-from neomodel import (config, StringProperty, IntegerProperty)
-from objTonode.set_relationship import create_relationship_to
+from neomodel import (config, StructuredNode, Property, StringProperty, IntegerProperty,
+                      UniqueIdProperty, BooleanProperty, DateProperty, DateTimeProperty,
+                      ArrayProperty, JSONProperty, FloatProperty, RelationshipTo, RelationshipFrom)
+from objTonode.set_relationship import create_relationship_to,create_relationship_from,create_relationship
 
 config.DATABASE_URL = 'bolt://neo4j:123123@localhost:7687'
 
 
 class Meta:
-    app_label = 'createobject'
+    app_label = 'objTonode'
 
 
 class Thing(DjangoNode):
@@ -28,6 +30,7 @@ class Thing(DjangoNode):
     name = StringProperty()
 
     monitor_id = IntegerProperty()
+
     app_name = StringProperty()
 
     potentialAction = create_relationship_to(['AssessAction', 'ChooseAction', 'VoteAction', 'IgnoreAction', 'ReactAction', 'WantAction', 'AgreeAction', 'DisagreeAction', 'DislikeAction', 'EndorseAction', 'LikeAction', 'ReviewAction', 'ConsumeAction', 'DrinkAction', 'EatAction', 'InstallAction', 'ListenAction', 'ReadAction', 'UseAction', 'WearAction', 'ViewAction', 'WatchAction', 'ControlAction', 'DeactivateAction', 'ResumeAction', 'SuspendAction', 'ActivateAction', 'CreateAction', 'DrawAction', 'FilmAction', 'PaintAction', 'PhotographAction', 'WriteAction', 'CookAction', 'FindAction', 'TrackAction', 'CheckAction', 'DiscoverAction', 'InteractAction', 'JoinAction', 'LeaveAction', 'MarryAction', 'RegisterAction', 'SubscribeAction', 'UnRegisterAction', 'BefriendAction', 'CommunicateAction', 'InformAction', 'RsvpAction', 'ConfirmAction', 'InviteAction', 'ReplyAction', 'ShareAction', 'AskAction', 'CheckInAction', 'CheckOutAction', 'CommentAction', 'FollowAction', 'MoveAction', 'TravelAction', 'ArriveAction', 'DepartAction', 'OrganizeAction', 'PlanAction', 'ReserveAction', 'ScheduleAction', 'CancelAction', 'AllocateAction', 'AssignAction', 'AuthorizeAction', 'RejectAction', 'AcceptAction', 'ApplyAction', 'BookmarkAction', 'PlayAction', 'ExerciseAction', 'PerformAction', 'SearchAction', 'TradeAction', 'BuyAction', 'DonateAction', 'OrderAction', 'PayAction', 'QuoteAction', 'RentAction', 'SellAction', 'TipAction', 'TransferAction', 'BorrowAction', 'DownloadAction', 'GiveAction', 'LendAction', 'ReceiveAction', 'ReturnAction', 'SendAction', 'TakeAction', 'UpdateAction', 'AddAction', 'InsertAction', 'PrependAction', 'AppendAction', 'DeleteAction', 'ReplaceAction', 'AchieveAction', 'LoseAction', 'TieAction', 'WinAction', 'Action'], '预期的行动')
@@ -42,7 +45,7 @@ class Action(Thing):
 
     agent = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '行为的发起者')
 
-    endTime = create_relationship_to(['Date'], '结束时刻')
+    endTime = create_relationship_to(['Date', 'Text'], '结束时刻')
 
     error = create_relationship_to(['Action', 'AssessAction', 'ChooseAction', 'VoteAction', 'IgnoreAction', 'ReactAction', 'WantAction', 'AgreeAction', 'DisagreeAction', 'DislikeAction', 'EndorseAction', 'LikeAction', 'ReviewAction', 'ConsumeAction', 'DrinkAction', 'EatAction', 'InstallAction', 'ListenAction', 'ReadAction', 'UseAction', 'WearAction', 'ViewAction', 'WatchAction', 'ControlAction', 'DeactivateAction', 'ResumeAction', 'SuspendAction', 'ActivateAction', 'CreateAction', 'DrawAction', 'FilmAction', 'PaintAction', 'PhotographAction', 'WriteAction', 'CookAction', 'FindAction', 'TrackAction', 'CheckAction', 'DiscoverAction', 'InteractAction', 'JoinAction', 'LeaveAction', 'MarryAction', 'RegisterAction', 'SubscribeAction', 'UnRegisterAction', 'BefriendAction', 'CommunicateAction', 'InformAction', 'RsvpAction', 'ConfirmAction', 'InviteAction', 'ReplyAction', 'ShareAction', 'AskAction', 'CheckInAction', 'CheckOutAction', 'CommentAction', 'FollowAction', 'MoveAction', 'TravelAction', 'ArriveAction', 'DepartAction', 'OrganizeAction', 'PlanAction', 'ReserveAction', 'ScheduleAction', 'CancelAction', 'AllocateAction', 'AssignAction', 'AuthorizeAction', 'RejectAction', 'AcceptAction', 'ApplyAction', 'BookmarkAction', 'PlayAction', 'ExerciseAction', 'PerformAction', 'SearchAction', 'TradeAction', 'BuyAction', 'DonateAction', 'OrderAction', 'PayAction', 'QuoteAction', 'RentAction', 'SellAction', 'TipAction', 'TransferAction', 'BorrowAction', 'DownloadAction', 'GiveAction', 'LendAction', 'ReceiveAction', 'ReturnAction', 'SendAction', 'TakeAction', 'UpdateAction', 'AddAction', 'InsertAction', 'PrependAction', 'AppendAction', 'DeleteAction', 'ReplaceAction', 'AchieveAction', 'LoseAction', 'TieAction', 'WinAction', 'CreativeWork', 'CreativeWorkSeason', 'RadioSeason', 'TVSeason', 'DataCatalog', 'Dataset', 'DataFeed', 'DigitalDocument', 'NoteDigitalDocument', 'PresentationDigitalDocument', 'SpreadsheetDigitalDocument', 'TextDigitalDocument', 'Episode', 'RadioEpisode', 'TVEpisode', 'Game', 'VideoGame', 'HowTo', 'Recipe', 'Map', 'MediaObject', 'MusicVideoObject', 'VideoObject', 'AudioObject', 'DataDownload', 'ImageObject', 'Barcode', 'Menu', 'MenuSection', 'Message', 'EmailMessage', 'Movie', 'MusicComposition', 'MusicPlaylist', 'MusicRelease', 'MusicAlbum', 'MusicRecording', 'Painting', 'Photograph', 'PublicationIssue', 'PublicationVolume', 'Question', 'Review', 'ClaimReview', 'Sculpture', 'Season', 'SoftwareApplication', 'WebApplication', 'MobileApplication', 'SoftwareSourceCode', 'VisualArtwork', 'WebPage', 'AboutPage', 'CheckoutPage', 'CollectionPage', 'ImageGallery', 'VideoGallery', 'ContactPage', 'ItemPage', 'ProfilePage', 'QAPage', 'SearchResultsPage', 'WebPageElement', 'WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebSite', 'Article', 'NewsArticle', 'Report', 'ScholarlyArticle', 'SocialMediaPosting', 'BlogPosting', 'LiveBlogPosting', 'DiscussionForumPosting', 'TechArticle', 'APIReference', 'Blog', 'Book', 'Clip', 'MovieClip', 'RadioClip', 'TVClip', 'VideoGameClip', 'Code', 'Comment', 'Answer', 'Conversation', 'Course', 'CreativeWorkSeries', 'MovieSeries', 'Periodical', 'RadioSeries', 'TVSeries', 'VideoGameSeries', 'BookSeries', 'HowToDirection', 'HowToSection', 'HowToStep', 'HowToTip', 'Event', 'ExhibitionEvent', 'Festival', 'FoodEvent', 'LiteraryEvent', 'MusicEvent', 'PublicationEvent', 'BroadcastEvent', 'OnDemandEvent', 'SaleEvent', 'ScreeningEvent', 'SocialEvent', 'SportsEvent', 'TheaterEvent', 'UserInteraction', 'UserLikes', 'UserPageVisits', 'UserPlays', 'UserPlusOnes', 'UserTweets', 'UserBlocks', 'UserCheckins', 'UserComments', 'UserDownloads', 'VisualArtsEvent', 'BusinessEvent', 'ChildrensEvent', 'ComedyEvent', 'CourseInstance', 'DanceEvent', 'DeliveryEvent', 'EducationEvent', 'Intangible', 'Invoice', 'ItemList', 'OfferCatalog', 'BreadcrumbList', 'JobPosting', 'Language', 'ListItem', 'HowToItem', 'HowToSupply', 'HowToTool', 'MenuItem', 'Offer', 'AggregateOffer', 'Order', 'OrderItem', 'ParcelDelivery', 'Permit', 'GovernmentPermit', 'ProgramMembership', 'PropertyValueSpecification', 'Quantity', 'Distance', 'Duration', 'Energy', 'Mass', 'Rating', 'AggregateRating', 'Reservation', 'ReservationPackage', 'TaxiReservation', 'TrainReservation', 'BusReservation', 'EventReservation', 'FlightReservation', 'FoodEstablishmentReservation', 'LodgingReservation', 'RentalCarReservation', 'Role', 'OrganizationRole', 'EmployeeRole', 'PerformanceRole', 'Seat', 'Series', 'Service', 'Taxi', 'TaxiService', 'BroadcastService', 'CableOrSatelliteService', 'FinancialProduct', 'InvestmentOrDeposit', 'DepositAccount', 'LoanOrCredit', 'CreditCard', 'PaymentService', 'BankAccount', 'CurrencyConversionService', 'PaymentCard', 'FoodService', 'GovernmentService', 'ServiceChannel', 'StructuredValue', 'TypeAndQuantityNode', 'WarrantyPromise', 'ContactPoint', 'PostalAddress', 'DatedMoneySpecification', 'EngineSpecification', 'GeoCoordinates', 'GeoShape', 'GeoCircle', 'InteractionCounter', 'MonetaryAmount', 'NutritionInformation', 'OpeningHoursSpecification', 'OwnershipInfo', 'PriceSpecification', 'UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PropertyValue', 'LocationFeatureSpecification', 'QuantitativeValue', 'Ticket', 'Trip', 'BusTrip', 'Flight', 'TrainTrip', 'AlignmentObject', 'Audience', 'BusinessAudience', 'EducationalAudience', 'PeopleAudience', 'ParentAudience', 'BedDetails', 'Brand', 'BroadcastChannel', 'RadioChannel', 'TelevisionChannel', 'ComputerLanguage', 'DataFeedItem', 'Demand', 'DigitalDocumentPermission', 'EntryPoint', 'Enumeration', 'EventStatusType', 'GamePlayMode', 'GameServerStatus', 'GenderType', 'ItemAvailability', 'ItemListOrderType', 'MapCategoryType', 'MusicAlbumProductionType', 'MusicAlbumReleaseType', 'MusicReleaseFormatType', 'OfferItemCondition', 'OrderStatus', 'PaymentMethod', 'PaymentStatusType', 'QualitativeValue', 'SteeringPositionValue', 'DriveWheelConfigurationValue', 'ReservationStatusType', 'RestrictedDiet', 'RsvpResponseType', 'Specialty', 'WarrantyScope', 'ActionStatusType', 'BoardingPolicyType', 'BookFormatType', 'BusinessEntityType', 'BusinessFunction', 'ContactPointOption', 'DayOfWeek', 'DeliveryMethod', 'LockerDelivery', 'ParcelService', 'DigitalDocumentPermissionType', 'GameServer', 'Organization', 'PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Person', 'Place', 'Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Cemetery', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'Product', 'ProductModel', 'SomeProducts', 'Vehicle', 'Car', 'IndividualProduct', 'Thing'], '错误')
 
@@ -56,7 +59,7 @@ class Action(Thing):
 
     result = create_relationship_to(['Action', 'AssessAction', 'ChooseAction', 'VoteAction', 'IgnoreAction', 'ReactAction', 'WantAction', 'AgreeAction', 'DisagreeAction', 'DislikeAction', 'EndorseAction', 'LikeAction', 'ReviewAction', 'ConsumeAction', 'DrinkAction', 'EatAction', 'InstallAction', 'ListenAction', 'ReadAction', 'UseAction', 'WearAction', 'ViewAction', 'WatchAction', 'ControlAction', 'DeactivateAction', 'ResumeAction', 'SuspendAction', 'ActivateAction', 'CreateAction', 'DrawAction', 'FilmAction', 'PaintAction', 'PhotographAction', 'WriteAction', 'CookAction', 'FindAction', 'TrackAction', 'CheckAction', 'DiscoverAction', 'InteractAction', 'JoinAction', 'LeaveAction', 'MarryAction', 'RegisterAction', 'SubscribeAction', 'UnRegisterAction', 'BefriendAction', 'CommunicateAction', 'InformAction', 'RsvpAction', 'ConfirmAction', 'InviteAction', 'ReplyAction', 'ShareAction', 'AskAction', 'CheckInAction', 'CheckOutAction', 'CommentAction', 'FollowAction', 'MoveAction', 'TravelAction', 'ArriveAction', 'DepartAction', 'OrganizeAction', 'PlanAction', 'ReserveAction', 'ScheduleAction', 'CancelAction', 'AllocateAction', 'AssignAction', 'AuthorizeAction', 'RejectAction', 'AcceptAction', 'ApplyAction', 'BookmarkAction', 'PlayAction', 'ExerciseAction', 'PerformAction', 'SearchAction', 'TradeAction', 'BuyAction', 'DonateAction', 'OrderAction', 'PayAction', 'QuoteAction', 'RentAction', 'SellAction', 'TipAction', 'TransferAction', 'BorrowAction', 'DownloadAction', 'GiveAction', 'LendAction', 'ReceiveAction', 'ReturnAction', 'SendAction', 'TakeAction', 'UpdateAction', 'AddAction', 'InsertAction', 'PrependAction', 'AppendAction', 'DeleteAction', 'ReplaceAction', 'AchieveAction', 'LoseAction', 'TieAction', 'WinAction', 'CreativeWork', 'CreativeWorkSeason', 'RadioSeason', 'TVSeason', 'DataCatalog', 'Dataset', 'DataFeed', 'DigitalDocument', 'NoteDigitalDocument', 'PresentationDigitalDocument', 'SpreadsheetDigitalDocument', 'TextDigitalDocument', 'Episode', 'RadioEpisode', 'TVEpisode', 'Game', 'VideoGame', 'HowTo', 'Recipe', 'Map', 'MediaObject', 'MusicVideoObject', 'VideoObject', 'AudioObject', 'DataDownload', 'ImageObject', 'Barcode', 'Menu', 'MenuSection', 'Message', 'EmailMessage', 'Movie', 'MusicComposition', 'MusicPlaylist', 'MusicRelease', 'MusicAlbum', 'MusicRecording', 'Painting', 'Photograph', 'PublicationIssue', 'PublicationVolume', 'Question', 'Review', 'ClaimReview', 'Sculpture', 'Season', 'SoftwareApplication', 'WebApplication', 'MobileApplication', 'SoftwareSourceCode', 'VisualArtwork', 'WebPage', 'AboutPage', 'CheckoutPage', 'CollectionPage', 'ImageGallery', 'VideoGallery', 'ContactPage', 'ItemPage', 'ProfilePage', 'QAPage', 'SearchResultsPage', 'WebPageElement', 'WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebSite', 'Article', 'NewsArticle', 'Report', 'ScholarlyArticle', 'SocialMediaPosting', 'BlogPosting', 'LiveBlogPosting', 'DiscussionForumPosting', 'TechArticle', 'APIReference', 'Blog', 'Book', 'Clip', 'MovieClip', 'RadioClip', 'TVClip', 'VideoGameClip', 'Code', 'Comment', 'Answer', 'Conversation', 'Course', 'CreativeWorkSeries', 'MovieSeries', 'Periodical', 'RadioSeries', 'TVSeries', 'VideoGameSeries', 'BookSeries', 'HowToDirection', 'HowToSection', 'HowToStep', 'HowToTip', 'Event', 'ExhibitionEvent', 'Festival', 'FoodEvent', 'LiteraryEvent', 'MusicEvent', 'PublicationEvent', 'BroadcastEvent', 'OnDemandEvent', 'SaleEvent', 'ScreeningEvent', 'SocialEvent', 'SportsEvent', 'TheaterEvent', 'UserInteraction', 'UserLikes', 'UserPageVisits', 'UserPlays', 'UserPlusOnes', 'UserTweets', 'UserBlocks', 'UserCheckins', 'UserComments', 'UserDownloads', 'VisualArtsEvent', 'BusinessEvent', 'ChildrensEvent', 'ComedyEvent', 'CourseInstance', 'DanceEvent', 'DeliveryEvent', 'EducationEvent', 'Intangible', 'Invoice', 'ItemList', 'OfferCatalog', 'BreadcrumbList', 'JobPosting', 'Language', 'ListItem', 'HowToItem', 'HowToSupply', 'HowToTool', 'MenuItem', 'Offer', 'AggregateOffer', 'Order', 'OrderItem', 'ParcelDelivery', 'Permit', 'GovernmentPermit', 'ProgramMembership', 'PropertyValueSpecification', 'Quantity', 'Distance', 'Duration', 'Energy', 'Mass', 'Rating', 'AggregateRating', 'Reservation', 'ReservationPackage', 'TaxiReservation', 'TrainReservation', 'BusReservation', 'EventReservation', 'FlightReservation', 'FoodEstablishmentReservation', 'LodgingReservation', 'RentalCarReservation', 'Role', 'OrganizationRole', 'EmployeeRole', 'PerformanceRole', 'Seat', 'Series', 'Service', 'Taxi', 'TaxiService', 'BroadcastService', 'CableOrSatelliteService', 'FinancialProduct', 'InvestmentOrDeposit', 'DepositAccount', 'LoanOrCredit', 'CreditCard', 'PaymentService', 'BankAccount', 'CurrencyConversionService', 'PaymentCard', 'FoodService', 'GovernmentService', 'ServiceChannel', 'StructuredValue', 'TypeAndQuantityNode', 'WarrantyPromise', 'ContactPoint', 'PostalAddress', 'DatedMoneySpecification', 'EngineSpecification', 'GeoCoordinates', 'GeoShape', 'GeoCircle', 'InteractionCounter', 'MonetaryAmount', 'NutritionInformation', 'OpeningHoursSpecification', 'OwnershipInfo', 'PriceSpecification', 'UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PropertyValue', 'LocationFeatureSpecification', 'QuantitativeValue', 'Ticket', 'Trip', 'BusTrip', 'Flight', 'TrainTrip', 'AlignmentObject', 'Audience', 'BusinessAudience', 'EducationalAudience', 'PeopleAudience', 'ParentAudience', 'BedDetails', 'Brand', 'BroadcastChannel', 'RadioChannel', 'TelevisionChannel', 'ComputerLanguage', 'DataFeedItem', 'Demand', 'DigitalDocumentPermission', 'EntryPoint', 'Enumeration', 'EventStatusType', 'GamePlayMode', 'GameServerStatus', 'GenderType', 'ItemAvailability', 'ItemListOrderType', 'MapCategoryType', 'MusicAlbumProductionType', 'MusicAlbumReleaseType', 'MusicReleaseFormatType', 'OfferItemCondition', 'OrderStatus', 'PaymentMethod', 'PaymentStatusType', 'QualitativeValue', 'SteeringPositionValue', 'DriveWheelConfigurationValue', 'ReservationStatusType', 'RestrictedDiet', 'RsvpResponseType', 'Specialty', 'WarrantyScope', 'ActionStatusType', 'BoardingPolicyType', 'BookFormatType', 'BusinessEntityType', 'BusinessFunction', 'ContactPointOption', 'DayOfWeek', 'DeliveryMethod', 'LockerDelivery', 'ParcelService', 'DigitalDocumentPermissionType', 'GameServer', 'Organization', 'PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Person', 'Place', 'Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Cemetery', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'Product', 'ProductModel', 'SomeProducts', 'Vehicle', 'Car', 'IndividualProduct', 'Thing'], '行动的结果')
 
-    startTime = create_relationship_to(['Date'], '开始时刻')
+    startTime = create_relationship_to(['Date', 'Text'], '开始时刻')
 
     target = create_relationship_to(['EntryPoint'], '目标')
 
@@ -206,7 +209,7 @@ class ApplyAction(OrganizeAction):
 
 
 class PlanAction(OrganizeAction):
-    scheduledTime = create_relationship_to(['Date'], '预约的时间')
+    scheduledTime = create_relationship_to(['Date', 'Text'], '预约的时间')
 
 
 class CancelAction(PlanAction):
@@ -584,11 +587,11 @@ class CreativeWork(Thing):
 
     creator = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '作者')
 
-    dateCreated = create_relationship_to(['Date'], '创建日期')
+    dateCreated = create_relationship_to(['Date', 'Text'], '创建日期')
 
-    dateModified = create_relationship_to(['Date'], '更新日期')
+    dateModified = create_relationship_to(['Date', 'Text'], '更新日期')
 
-    datePublished = create_relationship_to(['Date'], '首发日期')
+    datePublished = create_relationship_to(['Date', 'Text'], '首发日期')
 
     discussionUrl = create_relationship_to(['Text'], '讨论URL')
 
@@ -604,7 +607,7 @@ class CreativeWork(Thing):
 
     exampleOfWork = create_relationship_to(['CreativeWorkSeason', 'RadioSeason', 'TVSeason', 'DataCatalog', 'Dataset', 'DataFeed', 'DigitalDocument', 'NoteDigitalDocument', 'PresentationDigitalDocument', 'SpreadsheetDigitalDocument', 'TextDigitalDocument', 'Episode', 'RadioEpisode', 'TVEpisode', 'Game', 'VideoGame', 'HowTo', 'Recipe', 'Map', 'MediaObject', 'MusicVideoObject', 'VideoObject', 'AudioObject', 'DataDownload', 'ImageObject', 'Barcode', 'Menu', 'MenuSection', 'Message', 'EmailMessage', 'Movie', 'MusicComposition', 'MusicPlaylist', 'MusicRelease', 'MusicAlbum', 'MusicRecording', 'Painting', 'Photograph', 'PublicationIssue', 'PublicationVolume', 'Question', 'Review', 'ClaimReview', 'Sculpture', 'Season', 'SoftwareApplication', 'WebApplication', 'MobileApplication', 'SoftwareSourceCode', 'VisualArtwork', 'WebPage', 'AboutPage', 'CheckoutPage', 'CollectionPage', 'ImageGallery', 'VideoGallery', 'ContactPage', 'ItemPage', 'ProfilePage', 'QAPage', 'SearchResultsPage', 'WebPageElement', 'WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebSite', 'Article', 'NewsArticle', 'Report', 'ScholarlyArticle', 'SocialMediaPosting', 'BlogPosting', 'LiveBlogPosting', 'DiscussionForumPosting', 'TechArticle', 'APIReference', 'Blog', 'Book', 'Clip', 'MovieClip', 'RadioClip', 'TVClip', 'VideoGameClip', 'Code', 'Comment', 'Answer', 'Conversation', 'Course', 'CreativeWorkSeries', 'MovieSeries', 'Periodical', 'RadioSeries', 'TVSeries', 'VideoGameSeries', 'BookSeries', 'HowToDirection', 'HowToSection', 'HowToStep', 'HowToTip', 'CreativeWork'], '范例作品')
 
-    expires = create_relationship_to(['Date'], '过期日期')
+    expires = create_relationship_to(['Date', 'Text'], '过期日期')
 
     funder = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '投资者')
 
@@ -732,7 +735,7 @@ class HowTo(CreativeWork):
 
     totalTime = create_relationship_to(['Duration'], '总时间')
 
-    yielded = create_relationship_to(['QuantitativeValue', 'Text'], '相关产出')
+    yielded = create_relationship_to([], '相关产出')
 
 
 class Recipe(HowTo):
@@ -868,9 +871,9 @@ class BlogPosting(SocialMediaPosting):
 
 
 class LiveBlogPosting(BlogPosting):
-    coverageEndTime = create_relationship_to(['Date'], '博客直播结束时间')
+    coverageEndTime = create_relationship_to(['Date', 'Text'], '博客直播结束时间')
 
-    coverageStartTime = create_relationship_to(['Date'], '博客直播开始时间')
+    coverageStartTime = create_relationship_to(['Date', 'Text'], '博客直播开始时间')
 
     liveBlogUpdate = create_relationship_to(['LiveBlogPosting', 'BlogPosting'], '博客直播的一条更新')
 
@@ -1050,7 +1053,7 @@ class MusicComposition(CreativeWork):
 class WebPage(CreativeWork):
     breadcrumb = create_relationship_to(['BreadcrumbList', 'Text'], '面包屑')
 
-    lastReviewed = create_relationship_to(['Date'], '最近审查时间')
+    lastReviewed = create_relationship_to(['Date', 'Text'], '最近审查时间')
 
     mainContentOfPage = create_relationship_to(['WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebPageElement'], '是否网页主题')
 
@@ -1114,11 +1117,11 @@ class Message(CreativeWork):
 
     ccRecipient = create_relationship_to(['Person', 'PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'PostalAddress', 'ContactPoint'], '抄送')
 
-    dateRead = create_relationship_to(['Date'], '阅读日期')
+    dateRead = create_relationship_to(['Date', 'Text'], '阅读日期')
 
-    dateReceived = create_relationship_to(['Date'], '接收日期')
+    dateReceived = create_relationship_to(['Date', 'Text'], '接收日期')
 
-    dateSent = create_relationship_to(['Date'], '发送日期')
+    dateSent = create_relationship_to(['Date', 'Text'], '发送日期')
 
     messageAttachment = create_relationship_to(['CreativeWorkSeason', 'RadioSeason', 'TVSeason', 'DataCatalog', 'Dataset', 'DataFeed', 'DigitalDocument', 'NoteDigitalDocument', 'PresentationDigitalDocument', 'SpreadsheetDigitalDocument', 'TextDigitalDocument', 'Episode', 'RadioEpisode', 'TVEpisode', 'Game', 'VideoGame', 'HowTo', 'Recipe', 'Map', 'MediaObject', 'MusicVideoObject', 'VideoObject', 'AudioObject', 'DataDownload', 'ImageObject', 'Barcode', 'Menu', 'MenuSection', 'Message', 'EmailMessage', 'Movie', 'MusicComposition', 'MusicPlaylist', 'MusicRelease', 'MusicAlbum', 'MusicRecording', 'Painting', 'Photograph', 'PublicationIssue', 'PublicationVolume', 'Question', 'Review', 'ClaimReview', 'Sculpture', 'Season', 'SoftwareApplication', 'WebApplication', 'MobileApplication', 'SoftwareSourceCode', 'VisualArtwork', 'WebPage', 'AboutPage', 'CheckoutPage', 'CollectionPage', 'ImageGallery', 'VideoGallery', 'ContactPage', 'ItemPage', 'ProfilePage', 'QAPage', 'SearchResultsPage', 'WebPageElement', 'WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebSite', 'Article', 'NewsArticle', 'Report', 'ScholarlyArticle', 'SocialMediaPosting', 'BlogPosting', 'LiveBlogPosting', 'DiscussionForumPosting', 'TechArticle', 'APIReference', 'Blog', 'Book', 'Clip', 'MovieClip', 'RadioClip', 'TVClip', 'VideoGameClip', 'Code', 'Comment', 'Answer', 'Conversation', 'Course', 'CreativeWorkSeries', 'MovieSeries', 'Periodical', 'RadioSeries', 'TVSeries', 'VideoGameSeries', 'BookSeries', 'HowToDirection', 'HowToSection', 'HowToStep', 'HowToTip', 'CreativeWork'], '消息附件')
 
@@ -1334,7 +1337,7 @@ class MediaObject(CreativeWork):
 
     requiresSubscription = create_relationship_to(['Bool'], '是否需要订阅')
 
-    uploadDate = create_relationship_to(['Date'], '上传日期')
+    uploadDate = create_relationship_to(['Date', 'Text'], '上传日期')
 
     width = create_relationship_to(['Distance', 'QuantitativeValue'], '宽度')
 
@@ -1388,7 +1391,7 @@ class CreativeWorkSeason(CreativeWork):
 
     director = create_relationship_to(['Person'], '导演')
 
-    endDate = create_relationship_to(['Date'], '结束日期')
+    endDate = create_relationship_to(['Date', 'Text'], '结束日期')
 
     episode = create_relationship_to(['RadioEpisode', 'TVEpisode', 'Episode'], '剧集')
 
@@ -1400,7 +1403,7 @@ class CreativeWorkSeason(CreativeWork):
 
     seasonNumber = create_relationship_to(['Text', 'Integer'], '季的编号')
 
-    startDate = create_relationship_to(['Date'], '开始日期')
+    startDate = create_relationship_to(['Date', 'Text'], '开始日期')
 
     trailer = create_relationship_to(['VideoObject'], '预告片')
 
@@ -1420,7 +1423,7 @@ class Person(Thing):
 
     award = create_relationship_to(['Text'], '所获奖项')
 
-    birthDate = create_relationship_to(['Date'], '出生日期')
+    birthDate = create_relationship_to(['Date', 'Text'], '出生日期')
 
     birthPlace = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '出生地点')
 
@@ -1432,7 +1435,7 @@ class Person(Thing):
 
     contactPoint = create_relationship_to(['PostalAddress', 'ContactPoint'], '联络点')
 
-    deathDate = create_relationship_to(['Date'], '逝世日期')
+    deathDate = create_relationship_to(['Date', 'Text'], '逝世日期')
 
     deathPlace = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '逝世地点')
 
@@ -1530,7 +1533,7 @@ class Organization(Thing):
 
     department = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization'], '部门')
 
-    dissolutionDate = create_relationship_to(['Date'], '解散日期')
+    dissolutionDate = create_relationship_to(['Date', 'Text'], '解散日期')
 
     duns = create_relationship_to(['Text'], '邓白氏编码')
 
@@ -1544,7 +1547,7 @@ class Organization(Thing):
 
     founder = create_relationship_to(['Person'], '创始人')
 
-    foundingDate = create_relationship_to(['Date'], '成立日期')
+    foundingDate = create_relationship_to(['Date', 'Text'], '成立日期')
 
     foundingLocation = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '成立地点')
 
@@ -2028,9 +2031,9 @@ class Demand(Intangible):
 
     availability = create_relationship_to(['ItemAvailability'], '供应状态')
 
-    availabilityEnds = create_relationship_to(['Date'], '供应截止时间')
+    availabilityEnds = create_relationship_to(['Date', 'Text'], '供应截止时间')
 
-    availabilityStarts = create_relationship_to(['Date'], '供应开始时间')
+    availabilityStarts = create_relationship_to(['Date', 'Text'], '供应开始时间')
 
     availableAtOrFrom = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '报价地点')
 
@@ -2078,9 +2081,9 @@ class Demand(Intangible):
 
     sku = create_relationship_to(['Text'], '单品编号')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
     warranty = create_relationship_to(['WarrantyPromise'], '担保')
 
@@ -2104,9 +2107,9 @@ class AggregateRating(Rating):
 
 
 class Trip(Intangible):
-    arrivalTime = create_relationship_to(['Date'], '到达时间')
+    arrivalTime = create_relationship_to(['Date', 'Text'], '到达时间')
 
-    departureTime = create_relationship_to(['Date'], '出发时间')
+    departureTime = create_relationship_to(['Date', 'Text'], '出发时间')
 
     offers = create_relationship_to(['AggregateOffer', 'Offer'], '报价')
 
@@ -2150,7 +2153,7 @@ class Flight(Trip):
 
     seller = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '卖家')
 
-    webCheckinTime = create_relationship_to(['Date'], '网上值机时间')
+    webCheckinTime = create_relationship_to(['Date', 'Text'], '网上值机时间')
 
 
 class TrainTrip(Trip):
@@ -2344,9 +2347,9 @@ class PriceSpecification(StructuredValue):
 
     priceCurrency = create_relationship_to(['Text'], '价格对应的货币单位')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
     valueAddedTaxIncluded = create_relationship_to(['Bool'], '是否含税')
 
@@ -2402,9 +2405,9 @@ class PropertyValue(StructuredValue):
 class LocationFeatureSpecification(PropertyValue):
     hoursAvailable = create_relationship_to(['OpeningHoursSpecification'], '服务时间')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
 
 class GeoShape(StructuredValue):
@@ -2456,9 +2459,9 @@ class DatedMoneySpecification(StructuredValue):
 
     currency = create_relationship_to(['Text'], '货币种类')
 
-    endDate = create_relationship_to(['Date'], '结束日期')
+    endDate = create_relationship_to(['Date', 'Text'], '结束日期')
 
-    startDate = create_relationship_to(['Date'], '开始日期')
+    startDate = create_relationship_to(['Date', 'Text'], '开始日期')
 
 
 class ContactPoint(StructuredValue):
@@ -2508,9 +2511,9 @@ class MonetaryAmount(StructuredValue):
 
     minValue = create_relationship_to(['Integer'], '最小值')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
     value = create_relationship_to(['Integer', 'Bool', 'Text', 'TypeAndQuantityNode', 'WarrantyPromise', 'ContactPoint', 'PostalAddress', 'DatedMoneySpecification', 'EngineSpecification', 'GeoCoordinates', 'GeoShape', 'GeoCircle', 'InteractionCounter', 'MonetaryAmount', 'NutritionInformation', 'OpeningHoursSpecification', 'OwnershipInfo', 'PriceSpecification', 'UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PropertyValue', 'LocationFeatureSpecification', 'QuantitativeValue', 'StructuredValue'], '值')
 
@@ -2520,15 +2523,15 @@ class EngineSpecification(StructuredValue):
 
 
 class OpeningHoursSpecification(StructuredValue):
-    closes = create_relationship_to(['Date'], '关门时间')
+    closes = create_relationship_to(['Date', 'Text'], '关门时间')
 
     dayOfWeek = create_relationship_to(['DayOfWeek'], '星期几')
 
-    opens = create_relationship_to(['Date'], '开门时间')
+    opens = create_relationship_to(['Date', 'Text'], '开门时间')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
 
 class QuantitativeValue(StructuredValue):
@@ -2550,9 +2553,9 @@ class QuantitativeValue(StructuredValue):
 class OwnershipInfo(StructuredValue):
     acquiredFrom = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '获取来源')
 
-    ownedFrom = create_relationship_to(['Date'], '所有权开始时间')
+    ownedFrom = create_relationship_to(['Date', 'Text'], '所有权开始时间')
 
-    ownedThrough = create_relationship_to(['Date'], '所有权结束时间')
+    ownedThrough = create_relationship_to(['Date', 'Text'], '所有权结束时间')
 
     typeOfGood = create_relationship_to(['Taxi', 'TaxiService', 'BroadcastService', 'CableOrSatelliteService', 'FinancialProduct', 'InvestmentOrDeposit', 'DepositAccount', 'LoanOrCredit', 'CreditCard', 'PaymentService', 'BankAccount', 'CurrencyConversionService', 'PaymentCard', 'FoodService', 'GovernmentService', 'Service', 'ProductModel', 'SomeProducts', 'Vehicle', 'Car', 'IndividualProduct', 'Product'], '货物类型')
 
@@ -2612,11 +2615,11 @@ class Permit(Intangible):
 
     validFor = create_relationship_to(['Duration'], '有效时间')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
     validIn = create_relationship_to(['City', 'Country', 'State', 'AdministrativeArea'], '有效地区')
 
-    validUntil = create_relationship_to(['Date'], '失效日期')
+    validUntil = create_relationship_to(['Date', 'Text'], '失效日期')
 
 
 class GovernmentPermit(Permit):
@@ -2624,11 +2627,11 @@ class GovernmentPermit(Permit):
 
 
 class DataFeedItem(Intangible):
-    dateCreated = create_relationship_to(['Date'], '创建日期')
+    dateCreated = create_relationship_to(['Date', 'Text'], '创建日期')
 
-    dateDeleted = create_relationship_to(['Date'], '删除日期')
+    dateDeleted = create_relationship_to(['Date', 'Text'], '删除日期')
 
-    dateModified = create_relationship_to(['Date'], '更新日期')
+    dateModified = create_relationship_to(['Date', 'Text'], '更新日期')
 
     item = create_relationship_to(['Action', 'AssessAction', 'ChooseAction', 'VoteAction', 'IgnoreAction', 'ReactAction', 'WantAction', 'AgreeAction', 'DisagreeAction', 'DislikeAction', 'EndorseAction', 'LikeAction', 'ReviewAction', 'ConsumeAction', 'DrinkAction', 'EatAction', 'InstallAction', 'ListenAction', 'ReadAction', 'UseAction', 'WearAction', 'ViewAction', 'WatchAction', 'ControlAction', 'DeactivateAction', 'ResumeAction', 'SuspendAction', 'ActivateAction', 'CreateAction', 'DrawAction', 'FilmAction', 'PaintAction', 'PhotographAction', 'WriteAction', 'CookAction', 'FindAction', 'TrackAction', 'CheckAction', 'DiscoverAction', 'InteractAction', 'JoinAction', 'LeaveAction', 'MarryAction', 'RegisterAction', 'SubscribeAction', 'UnRegisterAction', 'BefriendAction', 'CommunicateAction', 'InformAction', 'RsvpAction', 'ConfirmAction', 'InviteAction', 'ReplyAction', 'ShareAction', 'AskAction', 'CheckInAction', 'CheckOutAction', 'CommentAction', 'FollowAction', 'MoveAction', 'TravelAction', 'ArriveAction', 'DepartAction', 'OrganizeAction', 'PlanAction', 'ReserveAction', 'ScheduleAction', 'CancelAction', 'AllocateAction', 'AssignAction', 'AuthorizeAction', 'RejectAction', 'AcceptAction', 'ApplyAction', 'BookmarkAction', 'PlayAction', 'ExerciseAction', 'PerformAction', 'SearchAction', 'TradeAction', 'BuyAction', 'DonateAction', 'OrderAction', 'PayAction', 'QuoteAction', 'RentAction', 'SellAction', 'TipAction', 'TransferAction', 'BorrowAction', 'DownloadAction', 'GiveAction', 'LendAction', 'ReceiveAction', 'ReturnAction', 'SendAction', 'TakeAction', 'UpdateAction', 'AddAction', 'InsertAction', 'PrependAction', 'AppendAction', 'DeleteAction', 'ReplaceAction', 'AchieveAction', 'LoseAction', 'TieAction', 'WinAction', 'CreativeWork', 'CreativeWorkSeason', 'RadioSeason', 'TVSeason', 'DataCatalog', 'Dataset', 'DataFeed', 'DigitalDocument', 'NoteDigitalDocument', 'PresentationDigitalDocument', 'SpreadsheetDigitalDocument', 'TextDigitalDocument', 'Episode', 'RadioEpisode', 'TVEpisode', 'Game', 'VideoGame', 'HowTo', 'Recipe', 'Map', 'MediaObject', 'MusicVideoObject', 'VideoObject', 'AudioObject', 'DataDownload', 'ImageObject', 'Barcode', 'Menu', 'MenuSection', 'Message', 'EmailMessage', 'Movie', 'MusicComposition', 'MusicPlaylist', 'MusicRelease', 'MusicAlbum', 'MusicRecording', 'Painting', 'Photograph', 'PublicationIssue', 'PublicationVolume', 'Question', 'Review', 'ClaimReview', 'Sculpture', 'Season', 'SoftwareApplication', 'WebApplication', 'MobileApplication', 'SoftwareSourceCode', 'VisualArtwork', 'WebPage', 'AboutPage', 'CheckoutPage', 'CollectionPage', 'ImageGallery', 'VideoGallery', 'ContactPage', 'ItemPage', 'ProfilePage', 'QAPage', 'SearchResultsPage', 'WebPageElement', 'WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebSite', 'Article', 'NewsArticle', 'Report', 'ScholarlyArticle', 'SocialMediaPosting', 'BlogPosting', 'LiveBlogPosting', 'DiscussionForumPosting', 'TechArticle', 'APIReference', 'Blog', 'Book', 'Clip', 'MovieClip', 'RadioClip', 'TVClip', 'VideoGameClip', 'Code', 'Comment', 'Answer', 'Conversation', 'Course', 'CreativeWorkSeries', 'MovieSeries', 'Periodical', 'RadioSeries', 'TVSeries', 'VideoGameSeries', 'BookSeries', 'HowToDirection', 'HowToSection', 'HowToStep', 'HowToTip', 'Event', 'ExhibitionEvent', 'Festival', 'FoodEvent', 'LiteraryEvent', 'MusicEvent', 'PublicationEvent', 'BroadcastEvent', 'OnDemandEvent', 'SaleEvent', 'ScreeningEvent', 'SocialEvent', 'SportsEvent', 'TheaterEvent', 'UserInteraction', 'UserLikes', 'UserPageVisits', 'UserPlays', 'UserPlusOnes', 'UserTweets', 'UserBlocks', 'UserCheckins', 'UserComments', 'UserDownloads', 'VisualArtsEvent', 'BusinessEvent', 'ChildrensEvent', 'ComedyEvent', 'CourseInstance', 'DanceEvent', 'DeliveryEvent', 'EducationEvent', 'Intangible', 'Invoice', 'ItemList', 'OfferCatalog', 'BreadcrumbList', 'JobPosting', 'Language', 'ListItem', 'HowToItem', 'HowToSupply', 'HowToTool', 'MenuItem', 'Offer', 'AggregateOffer', 'Order', 'OrderItem', 'ParcelDelivery', 'Permit', 'GovernmentPermit', 'ProgramMembership', 'PropertyValueSpecification', 'Quantity', 'Distance', 'Duration', 'Energy', 'Mass', 'Rating', 'AggregateRating', 'Reservation', 'ReservationPackage', 'TaxiReservation', 'TrainReservation', 'BusReservation', 'EventReservation', 'FlightReservation', 'FoodEstablishmentReservation', 'LodgingReservation', 'RentalCarReservation', 'Role', 'OrganizationRole', 'EmployeeRole', 'PerformanceRole', 'Seat', 'Series', 'Service', 'Taxi', 'TaxiService', 'BroadcastService', 'CableOrSatelliteService', 'FinancialProduct', 'InvestmentOrDeposit', 'DepositAccount', 'LoanOrCredit', 'CreditCard', 'PaymentService', 'BankAccount', 'CurrencyConversionService', 'PaymentCard', 'FoodService', 'GovernmentService', 'ServiceChannel', 'StructuredValue', 'TypeAndQuantityNode', 'WarrantyPromise', 'ContactPoint', 'PostalAddress', 'DatedMoneySpecification', 'EngineSpecification', 'GeoCoordinates', 'GeoShape', 'GeoCircle', 'InteractionCounter', 'MonetaryAmount', 'NutritionInformation', 'OpeningHoursSpecification', 'OwnershipInfo', 'PriceSpecification', 'UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PropertyValue', 'LocationFeatureSpecification', 'QuantitativeValue', 'Ticket', 'Trip', 'BusTrip', 'Flight', 'TrainTrip', 'AlignmentObject', 'Audience', 'BusinessAudience', 'EducationalAudience', 'PeopleAudience', 'ParentAudience', 'BedDetails', 'Brand', 'BroadcastChannel', 'RadioChannel', 'TelevisionChannel', 'ComputerLanguage', 'DataFeedItem', 'Demand', 'DigitalDocumentPermission', 'EntryPoint', 'Enumeration', 'EventStatusType', 'GamePlayMode', 'GameServerStatus', 'GenderType', 'ItemAvailability', 'ItemListOrderType', 'MapCategoryType', 'MusicAlbumProductionType', 'MusicAlbumReleaseType', 'MusicReleaseFormatType', 'OfferItemCondition', 'OrderStatus', 'PaymentMethod', 'PaymentStatusType', 'QualitativeValue', 'SteeringPositionValue', 'DriveWheelConfigurationValue', 'ReservationStatusType', 'RestrictedDiet', 'RsvpResponseType', 'Specialty', 'WarrantyScope', 'ActionStatusType', 'BoardingPolicyType', 'BookFormatType', 'BusinessEntityType', 'BusinessFunction', 'ContactPointOption', 'DayOfWeek', 'DeliveryMethod', 'LockerDelivery', 'ParcelService', 'DigitalDocumentPermissionType', 'GameServer', 'Organization', 'PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Person', 'Place', 'Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Cemetery', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'Product', 'ProductModel', 'SomeProducts', 'Vehicle', 'Car', 'IndividualProduct', 'Thing'], '条目')
 
@@ -2670,7 +2673,7 @@ class Order(Intangible):
 
     isGift = create_relationship_to(['Bool'], '是否礼物')
 
-    orderDate = create_relationship_to(['Date'], '订单的下单日期')
+    orderDate = create_relationship_to(['Date', 'Text'], '订单的下单日期')
 
     orderDelivery = create_relationship_to(['ParcelDelivery'], '订单的物流选择')
 
@@ -2682,7 +2685,7 @@ class Order(Intangible):
 
     partOfInvoice = create_relationship_to(['Invoice'], '所属账单')
 
-    paymentDueDate = create_relationship_to(['Date'], '最晚付款日期')
+    paymentDueDate = create_relationship_to(['Date', 'Text'], '最晚付款日期')
 
     paymentMethod = create_relationship_to(['PaymentCard', 'CreditCard', 'PaymentMethod'], '支付方式')
 
@@ -2726,11 +2729,11 @@ class Brand(Intangible):
 
 
 class Role(Intangible):
-    endDate = create_relationship_to(['Date'], '结束日期')
+    endDate = create_relationship_to(['Date', 'Text'], '结束日期')
 
     roleName = create_relationship_to(['Text'], '角色名称')
 
-    startDate = create_relationship_to(['Date'], '开始日期')
+    startDate = create_relationship_to(['Date', 'Text'], '开始日期')
 
 
 class PerformanceRole(Role):
@@ -2774,7 +2777,7 @@ class Seat(Intangible):
 
 
 class Ticket(Intangible):
-    dateIssued = create_relationship_to(['Date'], '签发日期')
+    dateIssued = create_relationship_to(['Date', 'Text'], '签发日期')
 
     issuedBy = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization'], '许可的签发机构')
 
@@ -2806,7 +2809,7 @@ class Invoice(Intangible):
 
     minimumPaymentDue = create_relationship_to(['UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PriceSpecification', 'MonetaryAmount'], '最小付款额')
 
-    paymentDueDate = create_relationship_to(['Date'], '最晚付款日期')
+    paymentDueDate = create_relationship_to(['Date', 'Text'], '最晚付款日期')
 
     paymentMethod = create_relationship_to(['PaymentCard', 'CreditCard', 'PaymentMethod'], '支付方式')
 
@@ -2818,7 +2821,7 @@ class Invoice(Intangible):
 
     referencesOrder = create_relationship_to(['Order'], '对应的订单')
 
-    scheduledPaymentDate = create_relationship_to(['Date'], '预约的付款日期')
+    scheduledPaymentDate = create_relationship_to(['Date', 'Text'], '预约的付款日期')
 
     totalPaymentDue = create_relationship_to(['MonetaryAmount', 'UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PriceSpecification'], '应付款总额')
 
@@ -3106,9 +3109,9 @@ class ParcelDelivery(Intangible):
 
     deliveryStatus = create_relationship_to(['DeliveryEvent'], '物流送货状态')
 
-    expectedArrivalFrom = create_relationship_to(['Date'], '预计最早送达时间')
+    expectedArrivalFrom = create_relationship_to(['Date', 'Text'], '预计最早送达时间')
 
-    expectedArrivalUntil = create_relationship_to(['Date'], '预计最晚送达时间')
+    expectedArrivalUntil = create_relationship_to(['Date', 'Text'], '预计最晚送达时间')
 
     hasDeliveryMethod = create_relationship_to(['LockerDelivery', 'ParcelService', 'DeliveryMethod'], '物流送货方式')
 
@@ -3128,7 +3131,7 @@ class ParcelDelivery(Intangible):
 class JobPosting(Intangible):
     baseSalary = create_relationship_to(['Integer', 'MonetaryAmount', 'UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PriceSpecification'], '底薪')
 
-    datePosted = create_relationship_to(['Date'], '发布日期')
+    datePosted = create_relationship_to(['Date', 'Text'], '发布日期')
 
     educationRequirements = create_relationship_to(['Text'], '教育背景要求')
 
@@ -3160,17 +3163,17 @@ class JobPosting(Intangible):
 
     title = create_relationship_to(['Text'], '头衔')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
     workHours = create_relationship_to(['Text'], '工作时间')
 
 
 class Reservation(Intangible):
-    bookingTime = create_relationship_to(['Date'], '预订时间')
+    bookingTime = create_relationship_to(['Date', 'Text'], '预订时间')
 
     broker = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '经纪人')
 
-    modifiedTime = create_relationship_to(['Date'], '更新时间')
+    modifiedTime = create_relationship_to(['Date', 'Text'], '更新时间')
 
     priceCurrency = create_relationship_to(['Text'], '价格对应的货币单位')
 
@@ -3196,7 +3199,7 @@ class TaxiReservation(Reservation):
 
     pickupLocation = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '接人地点')
 
-    pickupTime = create_relationship_to(['Date'], '接人时间')
+    pickupTime = create_relationship_to(['Date', 'Text'], '接人时间')
 
 
 class ReservationPackage(Reservation):
@@ -3208,9 +3211,9 @@ class EventReservation(Reservation):
 
 
 class LodgingReservation(Reservation):
-    checkinTime = create_relationship_to(['Date'], '入住时间')
+    checkinTime = create_relationship_to(['Date', 'Text'], '入住时间')
 
-    checkoutTime = create_relationship_to(['Date'], '退房时间')
+    checkoutTime = create_relationship_to(['Date', 'Text'], '退房时间')
 
     lodgingUnitDescription = create_relationship_to(['Text'], '旅馆房间描述')
 
@@ -3236,11 +3239,11 @@ class TrainReservation(Reservation):
 
 
 class FoodEstablishmentReservation(Reservation):
-    endTime = create_relationship_to(['Date'], '结束时刻')
+    endTime = create_relationship_to(['Date', 'Text'], '结束时刻')
 
     partySize = create_relationship_to(['Integer', 'QuantitativeValue'], '预约活动的参与人数')
 
-    startTime = create_relationship_to(['Date'], '开始时刻')
+    startTime = create_relationship_to(['Date', 'Text'], '开始时刻')
 
 
 class BusReservation(Reservation):
@@ -3250,11 +3253,11 @@ class BusReservation(Reservation):
 class RentalCarReservation(Reservation):
     dropoffLocation = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '租车归还地点')
 
-    dropoffTime = create_relationship_to(['Date'], '租车归还时间')
+    dropoffTime = create_relationship_to(['Date', 'Text'], '租车归还时间')
 
     pickupLocation = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '接人地点')
 
-    pickupTime = create_relationship_to(['Date'], '接人时间')
+    pickupTime = create_relationship_to(['Date', 'Text'], '接人时间')
 
 
 class Offer(Intangible):
@@ -3270,9 +3273,9 @@ class Offer(Intangible):
 
     availability = create_relationship_to(['ItemAvailability'], '供应状态')
 
-    availabilityEnds = create_relationship_to(['Date'], '供应截止时间')
+    availabilityEnds = create_relationship_to(['Date', 'Text'], '供应截止时间')
 
-    availabilityStarts = create_relationship_to(['Date'], '供应开始时间')
+    availabilityStarts = create_relationship_to(['Date', 'Text'], '供应开始时间')
 
     availableAtOrFrom = create_relationship_to(['Residence', 'ApartmentComplex', 'GatedResidenceCommunity', 'TouristAttraction', 'Accommodation', 'Apartment', 'CampingPitch', 'House', 'SingleFamilyResidence', 'Room', 'HotelRoom', 'MeetingRoom', 'Suite', 'AdministrativeArea', 'City', 'Country', 'State', 'CivicStructure', 'Crematorium', 'EventVenue', 'GovernmentBuilding', 'LegislativeBuilding', 'CityHall', 'Courthouse', 'DefenceEstablishment', 'Embassy', 'Museum', 'MusicVenue', 'Park', 'ParkingFacility', 'PerformingArtsTheater', 'PlaceOfWorship', 'Synagogue', 'BuddhistTemple', 'CatholicChurch', 'Church', 'HinduTemple', 'Mosque', 'Playground', 'RVPark', 'StadiumOrArena', 'SubwayStation', 'TaxiStand', 'TrainStation', 'Zoo', 'Airport', 'Aquarium', 'Beach', 'Bridge', 'BusStation', 'BusStop', 'Campground', 'Cemetery', 'FireStation', 'Hospital', 'MovieTheater', 'PoliceStation', 'Landform', 'Mountain', 'Volcano', 'BodyOfWater', 'Canal', 'LakeBodyOfWater', 'OceanBodyOfWater', 'Pond', 'Reservoir', 'RiverBodyOfWater', 'SeaBodyOfWater', 'Waterfall', 'Continent', 'LandmarksOrHistoricalBuildings', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'EmploymentAgency', 'EntertainmentBusiness', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'Place'], '报价地点')
 
@@ -3322,7 +3325,7 @@ class Offer(Intangible):
 
     priceSpecification = create_relationship_to(['UnitPriceSpecification', 'CompoundPriceSpecification', 'DeliveryChargeSpecification', 'PaymentChargeSpecification', 'PriceSpecification'], '价格明细')
 
-    priceValidUntil = create_relationship_to(['Date'], '价格有效截止日期')
+    priceValidUntil = create_relationship_to(['Date', 'Text'], '价格有效截止日期')
 
     review = create_relationship_to(['ClaimReview', 'Review'], '事物的评论')
 
@@ -3332,9 +3335,9 @@ class Offer(Intangible):
 
     sku = create_relationship_to(['Text'], '单品编号')
 
-    validFrom = create_relationship_to(['Date'], '生效日期')
+    validFrom = create_relationship_to(['Date', 'Text'], '生效日期')
 
-    validThrough = create_relationship_to(['Date'], '有效截止日期')
+    validThrough = create_relationship_to(['Date', 'Text'], '有效截止日期')
 
     warranty = create_relationship_to(['WarrantyPromise'], '担保')
 
@@ -3366,11 +3369,11 @@ class Event(Thing):
 
     director = create_relationship_to(['Person'], '导演')
 
-    doorTime = create_relationship_to(['Date'], '允许进场时间')
+    doorTime = create_relationship_to(['Date', 'Text'], '允许进场时间')
 
     duration = create_relationship_to(['Duration'], '持续时间')
 
-    endDate = create_relationship_to(['Date'], '结束日期')
+    endDate = create_relationship_to(['Date', 'Text'], '结束日期')
 
     eventStatus = create_relationship_to(['EventStatusType'], '活动的状态')
 
@@ -3390,7 +3393,7 @@ class Event(Thing):
 
     performer = create_relationship_to(['Person', 'PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization'], '表演者')
 
-    previousStartDate = create_relationship_to(['Date'], '之前计划的开始日期')
+    previousStartDate = create_relationship_to(['Date', 'Text'], '之前计划的开始日期')
 
     recordedIn = create_relationship_to(['CreativeWorkSeason', 'RadioSeason', 'TVSeason', 'DataCatalog', 'Dataset', 'DataFeed', 'DigitalDocument', 'NoteDigitalDocument', 'PresentationDigitalDocument', 'SpreadsheetDigitalDocument', 'TextDigitalDocument', 'Episode', 'RadioEpisode', 'TVEpisode', 'Game', 'VideoGame', 'HowTo', 'Recipe', 'Map', 'MediaObject', 'MusicVideoObject', 'VideoObject', 'AudioObject', 'DataDownload', 'ImageObject', 'Barcode', 'Menu', 'MenuSection', 'Message', 'EmailMessage', 'Movie', 'MusicComposition', 'MusicPlaylist', 'MusicRelease', 'MusicAlbum', 'MusicRecording', 'Painting', 'Photograph', 'PublicationIssue', 'PublicationVolume', 'Question', 'Review', 'ClaimReview', 'Sculpture', 'Season', 'SoftwareApplication', 'WebApplication', 'MobileApplication', 'SoftwareSourceCode', 'VisualArtwork', 'WebPage', 'AboutPage', 'CheckoutPage', 'CollectionPage', 'ImageGallery', 'VideoGallery', 'ContactPage', 'ItemPage', 'ProfilePage', 'QAPage', 'SearchResultsPage', 'WebPageElement', 'WPAdBlock', 'WPFooter', 'WPHeader', 'WPSideBar', 'SiteNavigationElement', 'Table', 'WebSite', 'Article', 'NewsArticle', 'Report', 'ScholarlyArticle', 'SocialMediaPosting', 'BlogPosting', 'LiveBlogPosting', 'DiscussionForumPosting', 'TechArticle', 'APIReference', 'Blog', 'Book', 'Clip', 'MovieClip', 'RadioClip', 'TVClip', 'VideoGameClip', 'Code', 'Comment', 'Answer', 'Conversation', 'Course', 'CreativeWorkSeries', 'MovieSeries', 'Periodical', 'RadioSeries', 'TVSeries', 'VideoGameSeries', 'BookSeries', 'HowToDirection', 'HowToSection', 'HowToStep', 'HowToTip', 'CreativeWork'], '所属媒体记录')
 
@@ -3400,7 +3403,7 @@ class Event(Thing):
 
     sponsor = create_relationship_to(['Person', 'PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization'], '赞助者')
 
-    startDate = create_relationship_to(['Date'], '开始日期')
+    startDate = create_relationship_to(['Date', 'Text'], '开始日期')
 
     subEvent = create_relationship_to(['ExhibitionEvent', 'Festival', 'FoodEvent', 'LiteraryEvent', 'MusicEvent', 'PublicationEvent', 'BroadcastEvent', 'OnDemandEvent', 'SaleEvent', 'ScreeningEvent', 'SocialEvent', 'SportsEvent', 'TheaterEvent', 'UserInteraction', 'UserLikes', 'UserPageVisits', 'UserPlays', 'UserPlusOnes', 'UserTweets', 'UserBlocks', 'UserCheckins', 'UserComments', 'UserDownloads', 'VisualArtsEvent', 'BusinessEvent', 'ChildrensEvent', 'ComedyEvent', 'CourseInstance', 'DanceEvent', 'DeliveryEvent', 'EducationEvent', 'Event'], '子活动')
 
@@ -3492,7 +3495,7 @@ class UserCheckins(UserInteraction):
 class UserComments(UserInteraction):
     commentText = create_relationship_to(['Text'], '评论文字')
 
-    commentTime = create_relationship_to(['Date'], '评论发表时间')
+    commentTime = create_relationship_to(['Date', 'Text'], '评论发表时间')
 
     creator = create_relationship_to(['PerformingGroup', 'TheaterGroup', 'DanceGroup', 'MusicGroup', 'SportsOrganization', 'SportsTeam', 'Airline', 'Corporation', 'EducationalOrganization', 'ElementarySchool', 'HighSchool', 'MiddleSchool', 'Preschool', 'School', 'CollegeOrUniversity', 'GovernmentOrganization', 'LocalBusiness', 'LodgingBusiness', 'Motel', 'Resort', 'BedAndBreakfast', 'Campground', 'Hostel', 'Hotel', 'ProfessionalService', 'RadioStation', 'RealEstateAgent', 'RecyclingCenter', 'SelfStorage', 'ShoppingCenter', 'SportsActivityLocation', 'SportsClub', 'StadiumOrArena', 'TennisComplex', 'BowlingAlley', 'ExerciseGym', 'GolfCourse', 'HealthClub', 'PublicSwimmingPool', 'SkiResort', 'Store', 'TireShop', 'ToyStore', 'WholesaleStore', 'AutoPartsStore', 'BikeStore', 'BookStore', 'ClothingStore', 'ComputerStore', 'ConvenienceStore', 'DepartmentStore', 'ElectronicsStore', 'Florist', 'FurnitureStore', 'GardenStore', 'GroceryStore', 'HardwareStore', 'HobbyShop', 'HomeGoodsStore', 'JewelryStore', 'LiquorStore', 'MensClothingStore', 'MobilePhoneStore', 'MovieRentalStore', 'MusicStore', 'OfficeEquipmentStore', 'OutletStore', 'PawnShop', 'PetStore', 'ShoeStore', 'SportingGoodsStore', 'TelevisionStation', 'TouristInformationCenter', 'TravelAgency', 'AnimalShelter', 'AutomotiveBusiness', 'AutoRental', 'AutoRepair', 'AutoWash', 'GasStation', 'MotorcycleDealer', 'MotorcycleRepair', 'AutoBodyShop', 'AutoDealer', 'ChildCare', 'Dentist', 'DryCleaningOrLaundry', 'EmergencyService', 'FireStation', 'Hospital', 'PoliceStation', 'EmploymentAgency', 'EntertainmentBusiness', 'MovieTheater', 'NightClub', 'AdultEntertainment', 'AmusementPark', 'ArtGallery', 'Casino', 'ComedyClub', 'FinancialService', 'InsuranceAgency', 'AccountingService', 'AutomatedTeller', 'BankOrCreditUnion', 'FoodEstablishment', 'IceCreamShop', 'Restaurant', 'Winery', 'Bakery', 'BarOrPub', 'Brewery', 'CafeOrCoffeeShop', 'FastFoodRestaurant', 'GovernmentOffice', 'PostOffice', 'HealthAndBeautyBusiness', 'NailSalon', 'TattooParlor', 'BeautySalon', 'DaySpa', 'HairSalon', 'HomeAndConstructionBusiness', 'HousePainter', 'HVACBusiness', 'Locksmith', 'MovingCompany', 'Plumber', 'RoofingContractor', 'Electrician', 'GeneralContractor', 'InternetCafe', 'LegalService', 'Notary', 'Attorney', 'Library', 'MedicalOrganization', 'Pharmacy', 'Physician', 'NGO', 'Organization', 'Person'], '作者')
 
@@ -3534,9 +3537,9 @@ class VisualArtsEvent(Event):
 class DeliveryEvent(Event):
     accessCode = create_relationship_to(['Text'], '存取码')
 
-    availableFrom = create_relationship_to(['Date'], '提货开始时间')
+    availableFrom = create_relationship_to(['Date', 'Text'], '提货开始时间')
 
-    availableThrough = create_relationship_to(['Date'], '提货截止时间')
+    availableThrough = create_relationship_to(['Date', 'Text'], '提货截止时间')
 
     hasDeliveryMethod = create_relationship_to(['LockerDelivery', 'ParcelService', 'DeliveryMethod'], '物流送货方式')
 
@@ -3620,11 +3623,11 @@ class Product(Thing):
 
     productID = create_relationship_to(['Text'], '产品ID')
 
-    productionDate = create_relationship_to(['Date'], '生产日期')
+    productionDate = create_relationship_to(['Date', 'Text'], '生产日期')
 
-    purchaseDate = create_relationship_to(['Date'], '购买日期')
+    purchaseDate = create_relationship_to(['Date', 'Text'], '购买日期')
 
-    releaseDate = create_relationship_to(['Date'], '发布日期')
+    releaseDate = create_relationship_to(['Date', 'Text'], '发布日期')
 
     review = create_relationship_to(['ClaimReview', 'Review'], '事物的评论')
 
@@ -3638,7 +3641,7 @@ class Product(Thing):
 class Vehicle(Product):
     cargoVolume = create_relationship_to(['QuantitativeValue'], '汽车载货容量')
 
-    dateVehicleFirstRegistered = create_relationship_to(['Date'], '汽车首次注册日期')
+    dateVehicleFirstRegistered = create_relationship_to(['Date', 'Text'], '汽车首次注册日期')
 
     driveWheelConfiguration = create_relationship_to(['DriveWheelConfigurationValue', 'Text'], '驱动轮配置')
 
@@ -3662,9 +3665,9 @@ class Vehicle(Product):
 
     numberOfPreviousOwners = create_relationship_to(['QuantitativeValue', 'Integer'], '历任车主数')
 
-    productionDate = create_relationship_to(['Date'], '生产日期')
+    productionDate = create_relationship_to(['Date', 'Text'], '生产日期')
 
-    purchaseDate = create_relationship_to(['Date'], '购买日期')
+    purchaseDate = create_relationship_to(['Date', 'Text'], '购买日期')
 
     steeringPosition = create_relationship_to(['SteeringPositionValue'], '方向盘位置')
 
@@ -3678,7 +3681,7 @@ class Vehicle(Product):
 
     vehicleInteriorType = create_relationship_to(['Text'], '车辆内饰类型')
 
-    vehicleModelDate = create_relationship_to(['Date'], '车辆型号发布日期')
+    vehicleModelDate = create_relationship_to(['Date', 'Text'], '车辆型号发布日期')
 
     vehicleSeatingCapacity = create_relationship_to(['QuantitativeValue', 'Integer'], '车辆可容纳最大人数')
 
@@ -3744,11 +3747,11 @@ class HowToStep(ListItem,CreativeWork,ItemList):
 
 
 class CreativeWorkSeries(Series,CreativeWork):
-    endDate = create_relationship_to(['Date'], '结束日期')
+    endDate = create_relationship_to(['Date', 'Text'], '结束日期')
 
     issn = create_relationship_to(['Text'], 'ISSN号')
 
-    startDate = create_relationship_to(['Date'], '开始日期')
+    startDate = create_relationship_to(['Date', 'Text'], '开始日期')
 
 
 class BookSeries(CreativeWorkSeries):
@@ -4290,9 +4293,9 @@ class LodgingBusiness(LocalBusiness):
 
     availableLanguage = create_relationship_to(['Language', 'Text'], '支持的语言')
 
-    checkinTime = create_relationship_to(['Date'], '入住时间')
+    checkinTime = create_relationship_to(['Date', 'Text'], '入住时间')
 
-    checkoutTime = create_relationship_to(['Date'], '退房时间')
+    checkoutTime = create_relationship_to(['Date', 'Text'], '退房时间')
 
     petsAllowed = create_relationship_to(['Text', 'Bool'], '是否允许带宠物')
 
