@@ -15,12 +15,12 @@
     <div id="enter_form" style="display: none">
    <form  action="" method="post" enctype="multipart/form-data" id="form" class="smart-green" >
 {% csrf_token %}
-    <input type="file"  required="required" name="up_file" id="up_file" onchange="checkFileExt(this.value)">
-               <div id = "up_file_error" class="error-msg"></div>
+    <input type="file"  required="required" name="up_file" id="up_file"  onchange="checkFileExt(this.value)">
+               <div id = "up_file_error" class="error-msg" style="font-weight: bold"></div>
 
        <label><span>建筑名称 :</span>
         <input id="building_name" required="required" type="text" name="building_name"  />
-        <div id = "building_name_error" class="error-msg"></div>
+        <div id = "building_name_error" class="error-msg" ></div>
     </label>
     <label><span>原始标题 :</span>
         <input id="title" required="required" type="text" name="title"  />
@@ -31,14 +31,13 @@
         <div id = "creator_error" class="error-msg"></div>
     </label>
        <label><p>拍摄时间 :</p>
-           <span style="font-size: 13px;color: #eb5948">1</span>
-           <div style="borer:1px solid #9b9b9b;border-radius: 3px;width: 150px;margin-left: 10px">
+           <div style="border:1px solid #9b9b9b;border-radius: 3px;width: 150px;display: inline-block">
         <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 60px;border-radius: 3px"/>
        <input id="cre_date_month" required="required" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 40px;border-radius: 3px"/>
        <input id="cre_date_day" required="required" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 40px;border-radius: 3px"/>
-      </div>
-                          <span style="font-size: 13px;color: #eb5948">2</span>
-<input id="cre_date_str" required="required" type="text" placeholder="eg:“明国时期”"  name="cre_date_str"  style="margin-left:5px;border-radius: 3px;width: 200px"/>
+           </div>
+           <div style="display:inline-block;"> <p style="display: inline-block;margin-left: 10px;margin-right: 10px;font-size: 15px">or</p></div>
+<input id="cre_date_str" required="required" type="text" placeholder="eg:“明国时期”"  name="cre_date_str"  style="height:35px;display: inline-block;width: 200px;border-radius: 3px"/>
         <div id = "cre_date_error" class="error-msg"></div>
     </label>
        <label><span>地理位置 :</span>
@@ -396,7 +395,7 @@ if(showflag)
         var type = $('#type').val();
         if(isEmpty(up_file))
         {
-            $('#up_file_error').html("选择一个文件!");
+            $('#up_file_error').html("*选择一个文件!");
             flag2=false;
         }
         if(isEmpty(building_name))
@@ -405,13 +404,13 @@ if(showflag)
         }
         if(isEmpty(cre_date_year)&&isEmpty(date_str))
         {
-            $('#cre_date_error').html("时间不能为空!");
+            $('#cre_date_error').html("*时间不能为空!");
             flag2=false;
         }
 
         if(isEmpty(location))
         {
-            $('#location_error').html("地点不能为空!");
+            $('#location_error').html("*地点不能为空!");
             flag2=false;
         }
         if(isEmpty(building_information))
@@ -424,7 +423,7 @@ if(showflag)
 
         if(isEmpty(title))
         {
-            $('#title_error').html("标题不能为空!");
+            $('#title_error').html("*标题不能为空!");
             flag2=false;
         }
         if(isEmpty(creator))
@@ -433,26 +432,26 @@ if(showflag)
         }
         if((!isEmpty(cre_date_month)||!isEmpty(cre_date_day))&&isEmpty(cre_date_year))
         {
-            $('#cre_date_error').html("年份不能为空!"); return;
+            $('#cre_date_error').html("*年份不能为空!"); return;
         }
         if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
         {
-            $('#cre_date_error').html("日期不合法!");            return;
+            $('#cre_date_error').html("*日期不合法!");            return;
 
         }
         if(isEmpty(cre_date_month)&&!isEmpty(cre_date_day))
         {
-            $('#cre_date_error').html("日期不合法!");           return;
+            $('#cre_date_error').html("*日期不合法!");           return;
 
         }
         if(!isEmpty(cre_date_month)&&check_month(cre_date_month))
         {
-            $('#cre_date_error').html("日期不合法!");           return;
+            $('#cre_date_error').html("*日期不合法!");           return;
 
         }
         if(!isEmpty(cre_date_day)&&check_day(cre_date_day,cre_date_month,cre_date_year))
         {
-            $('#cre_date_error').html("日期不合法!");            return;
+            $('#cre_date_error').html("*日期不合法!");            return;
 
         }
         if(flag2)
