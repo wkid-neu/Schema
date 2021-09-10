@@ -31,13 +31,13 @@
         <div id = "creator_error" class="error-msg"></div>
     </label>
        <label><p>拍摄时间 :</p>
-           <div style="border:1px solid #9b9b9b;border-radius: 3px;width: 150px;display: inline-block">
-        <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 60px;border-radius: 3px"/>
-       <input id="cre_date_month" required="required" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 40px;border-radius: 3px"/>
-       <input id="cre_date_day" required="required" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 40px;border-radius: 3px"/>
+           <div style="border:1px solid #9b9b9b;border-radius: 3px;width: 110px;display: inline-block">
+        <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 40px;border-radius: 3px"/>
+       <input id="cre_date_month" required="required" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 30px;border-radius: 3px"/>
+       <input id="cre_date_day" required="required" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 30px;border-radius: 3px"/>
            </div>
-           <div style="display:inline-block;"> <p style="display: inline-block;margin-left: 10px;margin-right: 10px;font-size: 15px">or</p></div>
-<input id="cre_date_str" required="required" type="text" placeholder="eg:“明国时期”"  name="cre_date_str"  style="height:35px;display: inline-block;width: 200px;border-radius: 3px"/>
+           <div style="display:inline-block;"> <p style="display: inline-block;margin-left: 5px;margin-right: 5px;font-size: 15px">or</p></div>
+<input id="cre_date_str" required="required" type="text" placeholder="eg:“明国时期”"  name="cre_date_str"  style="height:35px;display: inline-block;width: 150px;border-radius: 3px"/>
         <div id = "cre_date_error" class="error-msg"></div>
     </label>
        <label><span>地理位置 :</span>
@@ -77,7 +77,7 @@
 </form>
 </div>
  <div  id="show_div" style="display:none;" class="smart-green">
-    <img src="" id="show_img" style="width: 200px">
+    <img src="" id="show_img" style="width: 250px">
        <p><div class="lab">建筑名称 :</div>
         <span id="show_building_name" class="value"> </span>
     </p>
@@ -298,7 +298,7 @@ function showInfo(thisMarker,point_info) {
      var index = layer.open({
     type: 1,
     title: '标注信息',
-    area: ['500px', '750px'],
+    area: ['350px', '550px'],
     shadeClose: true, //点击遮罩关闭
     content: $('#show_div')
   });
