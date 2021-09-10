@@ -211,6 +211,7 @@ $(function() {
 
                 },
                 error:function () {
+               $.ShowLoadDialogClose();
                   alert("获取失败！")
                 }
              });
@@ -499,6 +500,7 @@ beforeSend: function () {
             get_location();
         },
         error:function (){
+            $.ShowLoadDialogClose();
             layer.alert("标注失败!")
         }
 

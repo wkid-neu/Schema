@@ -115,6 +115,7 @@ $(function() {
             map.centerAndZoom(point, 15);
                 },
                 error:function () {
+                   $.ShowLoadDialogClose();
                   alert("获取失败！")
                 }
              });
