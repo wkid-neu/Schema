@@ -11,7 +11,7 @@
 {% block title %}主页{% endblock %}
 {% block content %}
       <div  id="show_div" style="display:none;" class="smart-green">
-    <img src="" id="img" style="width: 400px">
+    <img src="" id="img" style="width: 200px">
        <p><div class="lab">建筑名称 :</div>
         <span id="building_name" class="value"> </span>
     </p>
@@ -53,7 +53,6 @@
   <div style="width:100%;height:700px;border:1px solid gray" id="allmap"></div><br>
     <p style="color: #304d5e;font-size: 12px">红色五角星:&nbsp;您本人创建的标注点;<br>黄色五角星:&nbsp;其他用户创建的标注点;</p>
 
-  <div>
 <script type="text/javascript">
    var map = new BMap.Map("allmap" ,{ enableMapClick: false }); // 创建Map实例
 
@@ -188,7 +187,7 @@ function showInfo(thisMarker,point_info) {
      layer.open({
     type: 1,
     title: '标注信息',
-    area: ['500px', '750px'],
+    area: ['350px', '550px'],
     content: $('#show_div')
   });
 }
