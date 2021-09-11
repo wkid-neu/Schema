@@ -18,7 +18,6 @@ from objTonode.process_node import delete_kg
 
 
 def map_index(request, type):
-    request.session["app_name"] = "MapSchema"
     if request.session.get('is_login', None):
         if type == "address":
             return render(request, 'display/address.html')
@@ -115,7 +114,6 @@ def update(request):
 
 
 def process_form(request):
-    app_name = request.session.get("app_name")
     user_id = request.session['user_id']
     user_name = request.session['user_name']
     if request.method == "POST":

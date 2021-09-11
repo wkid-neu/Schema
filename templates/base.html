@@ -54,6 +54,10 @@
         {% if request.session.role == "A" %}
             <li  id="li-3" style="color: #eb9316"><a href="/map/edit_users" style="color: #334f5e">编辑用户</a></li>
         {% endif %}
+                  {% if request.session.is_login == True %}
+
+            <li  id="li-1" style="color: #eb9316"><a href="/display" style="color: #ffa500">浏览图谱</a></li>
+                              {% endif %}
           </ul>
 
           <ul class="nav navbar-nav navbar-right">

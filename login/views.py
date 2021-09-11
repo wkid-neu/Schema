@@ -49,6 +49,7 @@ def login(request):
                     request.session['user_id'] = user.id
                     request.session['user_name'] = user.name
                     request.session['role'] = user.role
+                    request.session["app_name"] = "MapSchema"
                     return redirect('/index/')
                 else:
                     message = "密码不正确!"
