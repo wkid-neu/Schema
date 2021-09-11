@@ -66,10 +66,14 @@ def get_all_points(request):
         user_id = request.session.get("user_id")
         set_allmarkers_data(user_id)
     markpoint_data = global_data.get_mappoints()
+    user_kg_ids = global_data.get_kg_ids()
+    photos_id = user_kg_ids["MapSchema"]
+    re_photos_id = sorted(list(photos_id.keys()))
     address_longitude = []
     address_latitude = []
     address_data = []
-    for id in markpoint_data:
+    print(markpoint_data)
+    for id in re_photos_id:
         if markpoint_data[id][0] == "CreativeWork":
             property_list = markpoint_data[id][1]
             temp_data = {'building_name': property_list['name'], 'title': property_list['headline'],
