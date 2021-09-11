@@ -104,13 +104,17 @@ def create_obj(class_name, property_list):
 
 
 def trans_date(cre_date):
-    lens = len(cre_date.split("-"))
+    date_split = cre_date.split("-")
+    lens = len(date_split)
     if lens == 1:
-        return datetime.strptime(cre_date, "%Y").date()
+        return "{}年".format(date_split[0])
+        #return datetime.strptime(cre_date, "%Y").date()
     if lens == 2:
-        return datetime.strptime(cre_date, "%Y-%m").date()
+        return "{}年{}月".format(date_split[0],date_split[1])
+        #return datetime.strptime(cre_date, "%Y-%m").date()
     if lens == 3:
-        return datetime.strptime(cre_date, "%Y-%m-%d").date()
+        return "{}年{}月{}日".format(date_split[0],date_split[1],date_split[2])
+        #return datetime.strptime(cre_date, "%Y-%m-%d").date()
 
 
 def update(request):
