@@ -120,13 +120,11 @@
   <label style="margin-left: 10px;color: white">地点：</label>
   <input id="where" style="width: 300px;margin-top: 8px;margin-bottom: 5px";name="where" type="text" >
   <input type="button" value="地图上找"  style="margin-right: 10px;" onClick="sear(document.getElementById('where').value);" />
-      <label style="color: white">经纬度：</label>
-  <input id="lonlat" style="margin-right: 10px" name="lonlat" type="text" >
     <button style="position:absolute;right: 0;width: 80px;margin-top: 8px;margin-right: 15px" onClick="javascript:window.history.back();return false;"><img src="../../../static/imgs/back.png" style="height: 20px"></button>
 
 </div>
-  <div style="width:100%;height:650px;border:1px solid gray" id="allmap"></div>  <br />
-        <p style="color: #304d5e;font-size: 12px">红色五角星:&nbsp;您本人创建的标注点;<br>黄色五角星:&nbsp;其他用户创建的标注点;</p>
+  <div style="width:100%;height:650px;border:1px solid gray;" id="allmap"></div>  <br />
+        <p style="color: #304d5e;font-size: 12px;margin-left: 5px">红色五角星:&nbsp;您本人创建的标注点;<br>黄色五角星:&nbsp;其他用户创建的标注点;</p>
 </form>
 <script type="text/javascript">
     // 百度地图API功能
@@ -177,9 +175,6 @@ map.setDefaultCursor("crosshair");
             popLayer(e);
         }
     });
-map.addEventListener("mousemove", function(e) {//鼠标单击地图触发
-        fill_lonlat(e);
-    });
 $(function() {
         $('#li-2').addClass("active");
         get_location();
@@ -216,10 +211,6 @@ $(function() {
              });
 
     }
-function fill_lonlat(e) {
-    	$('#lonlat').val(e.point.lng + ", " + e.point.lat);
-
-}
 function createMarker(point,point_data) {
     user_id = {{ request.session.user_id }}
     var marker = new BMap.Marker(point, {
