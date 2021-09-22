@@ -56,7 +56,7 @@ def process_date(val_list):
         if type(obj).__name__ == "str":
             result.append(obj)
         elif type(obj).__name__ == "date":
-            result.insert(0,obj.strftime("%Y"))
+            result.insert(0, obj.strftime("%Y"))
     return result
 
 
@@ -74,20 +74,21 @@ def get_all_points(request):
     address_data = []
     print(markpoint_data)
     for id in re_photos_id:
-        if markpoint_data[id][0] == "CreativeWork":
+        if markpoint_data[id][0] in ["ImageObject", "VideoObject"]:
             property_list = markpoint_data[id][1]
             temp_data = {'building_name': property_list['name'], 'title': property_list['headline'],
                          "cre_date": process_date(property_list['dateCreated']),
-                         "img_description": property_list['description'],
+                         "file_description": property_list['description'],
                          "encode_type": property_list['encodingFormat'],
-                         "type": property_list['keywords'], "file_url": property_list['citation'],
+                         "type": property_list['keywords'], "file_citation": property_list['citation'],
                          "creator": property_list["creator"][0].name,
                          "location": property_list["mentions"][0].address,
                          "building_information": property_list["mentions"][0].description,
                          "announcer": property_list["publisher"][0].name,
                          "CopyrightOwner": property_list["copyrightHolder"][0].name,
-                         "img": property_list["mentions"][0].image,
-                         "node_id": id, "monitor_id": markpoint_data[id][2]}
+                         "mediaObject": property_list["url"],
+                         "node_id": id, "monitor_id": markpoint_data[id][2],
+                         "marker_type": 1 if markpoint_data[id][0] == "ImageObject" else 2}
             address_longitude.append(property_list["mentions"][0].geo[0].longitude)
             address_latitude.append(property_list["mentions"][0].geo[0].latitude)
             address_data.append(temp_data)
@@ -107,14 +108,14 @@ def trans_date(cre_date):
     date_split = cre_date.split("-")
     lens = len(date_split)
     if lens == 1:
-        return "{}年".format(date_split[0])
-        #return datetime.strptime(cre_date, "%Y").date()
+        return "{}年".format(date_split[0])  # 暂时将日期都变成str，因为没有月份或者日期，系统会补全
+        # return datetime.strptime(cre_date, "%Y").date()
     if lens == 2:
-        return "{}年{}月".format(date_split[0],date_split[1])
-        #return datetime.strptime(cre_date, "%Y-%m").date()
+        return "{}年{}月".format(date_split[0], date_split[1])
+        # return datetime.strptime(cre_date, "%Y-%m").date()
     if lens == 3:
-        return "{}年{}月{}日".format(date_split[0],date_split[1],date_split[2])
-        #return datetime.strptime(cre_date, "%Y-%m-%d").date()
+        return "{}年{}月{}日".format(date_split[0], date_split[1], date_split[2])
+        # return datetime.strptime(cre_date, "%Y-%m-%d").date()
 
 
 def update(request):
@@ -125,18 +126,6 @@ def process_form(request):
     user_id = request.session['user_id']
     user_name = request.session['user_name']
     if request.method == "POST":
-        file_obj = request.FILES.get("up_file")
-        user_directory = os.path.join(settings.MEDIA_ROOT, "{}_files\\".format(user_name))
-        file_path = os.path.join(user_directory, file_obj.name)
-        try:
-            f1 = open(file_path, "wb")
-            for i in file_obj.chunks():
-                f1.write(i)
-            f1.close()
-        except Exception as e:
-            print(e)
-            print("文件读写失败！")
-        relative_path = "..\\static\\upload_media\\{}_files\\{}".format(user_name, file_obj.name)
         lng = request.POST['lng']
         lat = request.POST['lat']
         building_name = request.POST['building_name']
@@ -145,13 +134,30 @@ def process_form(request):
         cre_date = request.POST['cre_date']
         date_str = request.POST['cre_date_str']
         location = request.POST['location']
-        img_description = request.POST['img_description']
+        file_description = request.POST['file_description']
         encode_type = request.POST['encode_type']
         building_information = request.POST['building_information']
         announcer_name = request.POST['announcer']
         CopyrightOwner_name = request.POST['CopyrightOwner']
-        file_url = request.POST['file_url']
+        file_citation = request.POST['file_citation']
         type_data = request.POST['type'].split(" ")
+        marker_type = request.POST['marker_type']
+        file_url = ""
+        if marker_type == "1":
+            file_obj = request.FILES.get("up_file")
+            user_directory = os.path.join(settings.MEDIA_ROOT, "{}_files\\".format(user_name))
+            file_path = os.path.join(user_directory, file_obj.name)
+            try:
+                f1 = open(file_path, "wb")
+                for i in file_obj.chunks():
+                    f1.write(i)
+                f1.close()
+            except Exception as e:
+                print(e)
+                print("文件读写失败！")
+            file_url = "..\\static\\upload_media\\{}_files\\{}".format(user_name, file_obj.name)
+        elif marker_type == "2":
+            file_url = request.POST['video_url']
         creator = "Person"
         creator_property = {'name': [creator_name]}
         creator_obj = create_obj(creator, creator_property)
@@ -166,25 +172,26 @@ def process_form(request):
         GeoCoordinates_obj = create_obj(GeoCoordinates, GeoCoordinates_property)
         building = "LandmarksOrHistoricalBuildings"
         building_property = {'name': [building_name], "address": [location], "description": [building_information],
-                             "geo": [GeoCoordinates_obj],
-                             "image": [relative_path]}
+                             "geo": [GeoCoordinates_obj]}
         building_obj = create_obj(building, building_property)
-        Photograph = "Photograph"
+        MediaObject = "ImageObject" if marker_type == "1" else "VideoObject"
         date_val = []
         if cre_date != "null":
-            date_val.append(trans_date(cre_date))
+            date_val.append(trans_date(cre_date)+'#')
         if len(date_str) != 0:
             date_val.append(date_str)
-        Photograph_property = {'name': [building_name + "照片"], "headline": [title], "description": [img_description],
-                               "keywords": type_data, "creator": [creator_obj], "publisher": [announcer_obj],
-                               "mentions": [building_obj], "copyrightHolder": [CopyrightOwner_obj],
-                               "encodingFormat": [encode_type], "citation": [file_url],
-                               "dateCreated": date_val}
+        object_str = "照片" if marker_type == "1" else "视频"
+        MediaObject_property = {'name': [building_name + object_str],
+                                "headline": [title], "description": [file_description],
+                                "keywords": type_data, "creator": [creator_obj], "publisher": [announcer_obj],
+                                "mentions": [building_obj], "copyrightHolder": [CopyrightOwner_obj],
+                                "encodingFormat": [encode_type], "citation": [file_citation],
+                                "dateCreated": date_val, "url": [file_url]}
 
-        print(Photograph_property)
-        Photograph_obj = create_obj(Photograph, Photograph_property)
+        print(MediaObject_property)
+        MediaObject_obj = create_obj(MediaObject, MediaObject_property)
         trans_node = TransNode(user_id, "MapSchema")
-        trans_node.to_node(Photograph_obj)
+        trans_node.to_node(MediaObject_obj)
         set_allmarkers_data(user_id)
 
     return render(request, "display/result.html")

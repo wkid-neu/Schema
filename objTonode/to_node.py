@@ -18,6 +18,8 @@ class TransNode(object):
             kwargs["monitor_id"] = self.monitor_id
             kwargs["app_name"] = self.app_name
         neo_node = class_meta(**kwargs)
+        class_hierarchy_list = neo_node.inherited_labels()
+        neo_node.class_hierarchy = ':'.join(class_hierarchy_list)
         neo_node.save()
         for key in attr_value:
             value_list = attr_value.get(key)
@@ -29,7 +31,9 @@ class TransNode(object):
                     common_module_meta = __import__("objTonode.neo_classes", globals(), locals(),
                                                     [common_class_name])
                     common_class_meta = getattr(common_module_meta, common_class_name)
-                    val_node = common_class_meta(name=value, monitor_id=self.monitor_id,app_name = self.app_name)
+                    val_node = common_class_meta(name=value, monitor_id=self.monitor_id, app_name=self.app_name)
+                    class_hierarchy_list = val_node.inherited_labels()
+                    val_node.class_hierarchy = ':'.join(class_hierarchy_list)
                     val_node.save()
                 else:  # if cur_node  exits ,contniue
                     if value in self.vis:

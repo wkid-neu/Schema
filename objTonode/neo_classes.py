@@ -29,6 +29,8 @@ class Thing(DjangoNode):
 
     name = StringProperty()
 
+    class_hierarchy = StringProperty()
+
     monitor_id = IntegerProperty()
 
     app_name = StringProperty()

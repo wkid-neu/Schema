@@ -90,6 +90,7 @@ class Float(Thing):
                 for property in entity_properties:
                     if property == 'name':
                         temp_data += 1 * tab + "name = StringProperty()\n\n"
+                        temp_data += 1 * tab + "class_hierarchy = StringProperty()\n\n"
                         temp_data += 1 * tab + "monitor_id = IntegerProperty()\n\n"
                         temp_data += 1 * tab + "app_name = StringProperty()\n\n"
                         continue

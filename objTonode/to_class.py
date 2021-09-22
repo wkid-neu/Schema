@@ -65,7 +65,7 @@ class TransClass(object):
             ed_node = three_tuple['b']
             if self.node_data.get(st_node) is None:
                 self.node_data[st_node] = {}
-            class_name = str(st_node.labels).split(":")[1]  # 不一定第一个label就是它的类型
+            class_name = dict(st_node)['class_hierarchy'].split(":")[0]  # 不一定第一个label就是它的类型
             if self.node_data[st_node].get(self.properties_name_contrast[class_name][list(rel.types())[0]]) is None:
                 self.node_data[st_node][self.properties_name_contrast[class_name][list(rel.types())[0]]] = []
             self.node_data[st_node][self.properties_name_contrast[class_name][list(rel.types())[0]]].append(
@@ -100,7 +100,7 @@ class TransClass(object):
         if node in self.vis:
             return
         self.vis.append(node)
-        class_ = str(node.labels).split(":")[1]
+        class_ = dict(node)['class_hierarchy'].split(":")[0]
 
         name = dict(node)['name']
         master = dict(node)['monitor_id']

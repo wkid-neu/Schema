@@ -13,17 +13,21 @@
 
 
     <div id="enter_form" style="display: none">
+    <img src="" id="show_img" style="width: 250px;margin-left: 15px">
    <form  action="" method="post" enctype="multipart/form-data" id="form" class="smart-green" >
 {% csrf_token %}
-    <input type="file"  required="required" name="up_file" id="up_file"  onchange="checkFileExt(this.value)">
+    <input type="file"  name="up_file" id="up_file"  onchange="checkFileExt(this.value)">
                <div id = "up_file_error" class="error-msg" style="font-weight: bold"></div>
-
+<label id="video_url_block" style="display: none"><span>视频网址 :</span>
+        <input id="video_url"  type="text" name="video_url"  />
+        <div id = "video_url_error" class="error-msg" ></div>
+    </label>
        <label><span>建筑名称 :</span>
-        <input id="building_name" required="required" type="text" name="building_name"  />
+        <input id="building_name"  type="text" name="building_name"  />
         <div id = "building_name_error" class="error-msg" ></div>
     </label>
     <label><span>原始标题 :</span>
-        <input id="title" required="required" type="text" name="title"  />
+        <input id="title"  type="text" name="title"  />
         <div id = "title_error" class="error-msg"></div>
     </label>
        <label><span>拍摄者 :</span>
@@ -32,28 +36,28 @@
     </label>
        <label><p>拍摄时间 :</p>
            <div style="border:1px solid #9b9b9b;border-radius: 3px;width: 115px;display: inline-block">
-        <input id="cre_date_year" required="required" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 45px;border-radius: 3px"/>
-       <input id="cre_date_month" required="required" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 30px;border-radius: 3px"/>
-       <input id="cre_date_day" required="required" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 30px;border-radius: 3px"/>
+        <input id="cre_date_year"  type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 45px;border-radius: 3px"/>
+       <input id="cre_date_month"  type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 30px;border-radius: 3px"/>
+       <input id="cre_date_day"  type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 30px;border-radius: 3px"/>
            </div>
            <div style="display:inline-block;"> <p style="display: inline-block;margin-left: 5px;margin-right: 5px;font-size: 15px">or</p></div>
-<input id="cre_date_str" required="required" type="text" placeholder="例如:“明国时期”"  name="cre_date_str"  style="height:35px;display: inline-block;width: 150px;border-radius: 3px"/>
+<input id="cre_date_str"  type="text" placeholder="例如:“明国时期”"  name="cre_date_str"  style="height:35px;display: inline-block;width: 150px;border-radius: 3px"/>
         <div id = "cre_date_error" class="error-msg"></div>
     </label>
        <label><span>地理位置 :</span>
         <input id="location" type="text" name="location"  />
         <div id = "location_error" class="error-msg"></div>
     </label>
-       <label><span>图片说明:</span>
-        <textarea id="img_description" required="required" name="img_description"></textarea>
-        <div id = "img_description_error" class="error-msg"></div>
+       <label ><span id="description_value"></span>
+        <textarea id="file_description"  name="file_description"></textarea>
+        <div id = "file_description_error" class="error-msg"></div>
     </label>
-    <label><span>图片格式 :</span>
-        <input id="encode_type" required="required" type="text" name="encode_type"  onclick="get_type()"/>
+    <label id="encodetype_value_block" ><span id="encodetype_value"></span>
+        <input id="encode_type"  type="text" name="encode_type"/>
         <div class="error-msg"></div>
     </label>
        <label><span> 建筑现状:</span>
-        <textarea id="building_information"  required="required" name="building_information"></textarea>
+        <textarea id="building_information"  name="building_information"></textarea>
         <div id = "building_information_error" class="error-msg"></div>
     </label>
        <label><span> 发布者:</span>
@@ -64,8 +68,8 @@
         <input id="CopyrightOwner" type="text" name="CopyrightOwner"  />
         <div class="error-msg"></div>
     </label>
-       <label><span> 图片来源:</span>
-        <input id="file_url" type="text" name="file_url"  />
+       <label ><span id="source_value"></span>
+        <input id="file_citation" type="text" name="file_citation"  />
         <div class="error-msg"></div>
     </label>
        <label><span> 分类:</span>
@@ -76,45 +80,6 @@
     <input type="hidden" name="csrfmiddlewaretoken" value="SfHkbL4feo1G00sJQtbO7TtLN4c2BUwa" />
 </form>
 </div>
- <div  id="show_div" style="display:none;" class="smart-green">
-    <img src="" id="show_img" style="width: 250px">
-       <p><div class="lab">建筑名称 :</div>
-        <span id="show_building_name" class="value"> </span>
-    </p>
-    <p><div class="lab">原始标题 :</div>
-        <span id="show_title" class="value"> </span>
-    </p>
-       <p><div class="lab">拍摄者 :</div>
-       <span id="show_creator" class="value"> </span>
-    </p>
-       <p><div class="lab">拍摄时间 :</div>
-       <span id="show_cre_date" class="value"> </span>
-    </p>
-       <p><div class="lab">地理位置 :</div>
-      <span id="show_location" class="value"> </span>
-    </p>
-       <p><div class="lab">图片说明:</div>
-      <span id="show_img_description" class="value"> </span>
-    </p>
-    <p><div class="lab">图片格式 :</div>
-      <span id="show_encode_type" class="value"> </span>
-    </p>
-       <p><div class="lab"> 建筑现状:</div>
-      <span id="show_building_information" class="value"> </span>
-    </p>
-       <p><div class="lab"> 发布者:</div>
-      <span id="show_announcer" class="value"> </span>
-    </p>
-       <p><div class="lab"> 版权人:</div>
-      <span id="show_CopyrightOwner" class="value"> </span>
-    </p>
-       <p><div class="lab"> 图片来源:</div>
-      <span id="show_file_url" class="value"> </span>
-    </p>
-       <p><div class="lab"> 分类:</div>
-      <span id="show_type" class="value"> </span>
-    </p>
- </div>
 <form action="" method="get">
 <div id="search_block">
   <label style="margin-left: 10px;color: white">地点：</label>
@@ -129,6 +94,7 @@
 <script type="text/javascript">
     // 百度地图API功能
        // 百度地图API功能
+    var type_arr = [];
     var showflag=false;
     var marker;
     var time = 0;
@@ -137,6 +103,7 @@
     var sqr = $("input[name='sqr']").val();
     var pointX;
     var pointY;
+    var marker_type;
 
      var map = new BMap.Map("allmap" ,{ enableMapClick: false }); // 创建Map实例
 
@@ -171,8 +138,7 @@ map.setDefaultCursor("crosshair");
         if (time >= 1) {
             return;
         } else {
-
-            popLayer(e);
+            choose_form(e);
         }
     });
 $(function() {
@@ -238,22 +204,94 @@ function createMarker(point,point_data) {
         showInfo(this,point_data);
     });
 }
-function showInfo(thisMarker,point_info) {
+
+    function display_date(pointInfo_datestr, type) {
+        if(type == 0)
+        {
+            $('#cre_date_str').val(pointInfo_datestr);
+            $('#cre_date_str').css("background","#e8f0fe");
+        }
+        else if(type==1)
+        {
+            pointInfo_datestr = pointInfo_datestr.replace('#',"");
+            var reg = new RegExp("[年月日]","g");
+            var temp_str = pointInfo_datestr.replace(reg,"|");
+            var str_list = temp_str.substring(0,temp_str.length-1).split('|');
+            $('#cre_date_year').val(str_list[0]);
+            $('#cre_date_year').css("background","#e8f0fe");
+            if(str_list.length>1)
+            {$('#cre_date_month').val(str_list[1]);
+            $('#cre_date_month').css("background","#e8f0fe");}
+            if(str_list.length>2)
+            {$('#cre_date_day').val(str_list[2]);
+            $('#cre_date_day').css("background","#e8f0fe");}
+        }
+    }
+function clear_form() {
+    document.getElementById('form').reset();
+    $("input").css('background',"#FBFBFB");
+    $("textarea").css('background',"#FBFBFB");
+    $('.error-msg').html('');
+    $("#show_img").attr("src","");
+}
+    function showInfo(thisMarker,point_info) {
+    clear_form()
     user_id = {{ request.session.user_id }}
-    user_role  = '{{ request.session.role }}'
+    user_role  = '{{ request.session.role }}';
     showflag=true;
+    console.log(point_info["node_id"])
     for(var i in point_info)
     {
         var str=point_info[i][0];
-        if(i == "building_name")str=str.slice(0,-2)
-        for(var j=1;j<point_info[i].length;j++)
+        if(i == "building_name")
         {
-            str = str + " " + point_info[i][j];
-            if(i == "building_name")str=str.slice(0,-2)
+            str=str.slice(0,-2);
+            $('#'+i).val(str);
+            if(str!="")$('#'+i).css("background","#e8f0fe");
         }
-        $('#'+"show_"+i).text(str)
+        else if(i == "cre_date")
+        {
+            if(point_info[i].length>1)
+            {
+                display_date(point_info[i][0],0);
+                display_date(point_info[i][1],1);
+            }
+            else
+            {
+                if(point_info[i][0].charAt(point_info[i][0].length-1)=='#')
+                {
+                    display_date(point_info[i][0],1);
+                }
+                else
+                {
+                    display_date(point_info[i][0],0);
+                }
+            }
+        }
+        else
+        {
+            for(var j=1;j<point_info[i].length;j++)
+            {
+                str = str + " " + point_info[i][j];
+            }
+            $('#'+i).val(str);
+            if(str!="")$('#'+i).css("background","#e8f0fe");
+        }
+
+
     }
-    $("#show_img").attr("src","..\\..\\..\\"+point_info["img"][0]);
+    if (point_info["marker_type"]=='1')
+    {
+        image_show()
+        $('#up_file').css("display","none");
+        $("#show_img").attr("src","..\\..\\..\\"+point_info["mediaObject"][0]);
+    }
+    else if(point_info["marker_type"]=='2')
+    {
+        video_show()
+        $("#video_url").val(point_info["mediaObject"]);
+        $("#video_url").css("background","#e8f0fe");
+    }
     if(user_id == point_info["monitor_id"] || user_role == "A")
     {
         var index = layer.open({
@@ -261,7 +299,7 @@ function showInfo(thisMarker,point_info) {
     title: '标注信息',
     area: ['350px', '550px'],
     shadeClose: true, //点击遮罩关闭
-    content: $('#show_div'),
+    content: $('#enter_form'),
      btn:['删除该标注点'],
      btn1:function () {
             var post_data ={ "node_id":point_info["node_id"]};
@@ -291,21 +329,18 @@ function showInfo(thisMarker,point_info) {
     title: '标注信息',
     area: ['350px', '550px'],
     shadeClose: true, //点击遮罩关闭
-    content: $('#show_div')
+    content: $('#show_editor_div')
   });
 
     }
 }
 function check_year(val) {
-    console.log(val,typeof val,val.length)
-    var zero="";
     if(val.length>4)return true;
     val = pad_zero(0,val);
     var reg = /^[\d]+$/;
     return !reg.test(val);
 }
 function check_month(val) {
-    var zero="";
     if(val.length>2)return true;
     val = pad_zero(1,val);
     var reg = /^[\d]+$/;
@@ -315,7 +350,6 @@ function check_month(val) {
     return false;
 }
 function check_day(val,month,year) {
-    var zero="";
     month = parseInt(month);
     year = parseInt(year);
     if(val.length>2)return true;
@@ -349,16 +383,65 @@ function check_run(year) {
     }
     return 0;
 }
-function popLayer(e) {
-    console.log(e.point)
-if(showflag)
+function choose_form(e) {
+    if(showflag)
 {
     showflag=false;
     return;}
-    document.getElementById('form').reset();
+    var index = layer.open({
+        skin:"choose_form",
+        type: 1,
+        title: '选择标注信息类型',
+        area: ['230px', '100px'],
+        shadeClose: true, //点击遮罩关闭
+        btn: ['图片标注','视频标注'],
+        btn1: function () {
+            type_arr = ["jpg","png","gif","jpeg"];
+            marker_type = 1;
+            popLayer(e);
+            layer.close(index)
+        },
+        btn2: function () {
+            type_arr = ["mp4","rmvb","mkv"];
+            marker_type = 2;
+            popLayer(e);
+            layer.close(index)
+
+        }
+    })
+}
+function video_show() {
+        $("#show_img").attr("src","");
+        $('#description_value').html("视频说明 :");
+        $('#encodetype_value_block').css("display","none");
+        $('#source_value').html("视频来源 :");
+        $('#up_file').css("display","none");
+        $('#video_url_block').css("display","block");
+}
+function image_show() {
+        $('#description_value').html("图片说明 :");
+        $('#encodetype_value_block').css("display","block");
+        $('#encodetype_value').html("图片格式 :");
+        $('#source_value').html("图片来源 :");
+        $('#up_file').css("display","block");
+        $('#video_url_block').css("display","none");
+}
+function popLayer(e) {
+    clear_form()
+    var title_info;
+    if(marker_type == 2)
+    {
+        title_info = "编辑视频标注信息";
+        video_show()
+    }
+    else if(marker_type == 1)
+    {
+        title_info = "编辑图片标注信息";
+        image_show()
+    }
     var index = layer.open({
     type: 1,
-    title: '编辑标注信息',
+    title: title_info,
     area: ['350px', '550px'],
     shadeClose: true, //点击遮罩关闭
     content: $('#enter_form'),
@@ -369,6 +452,7 @@ if(showflag)
         var lng = e.point.lng;
         var lat = e.point.lat;
         var up_file = $('#up_file').val();
+        var video_url=$('#video_url').val();
         var title = $('#title').val();
         var building_name = $('#building_name').val();
         var building_information = $('#building_information').val();
@@ -378,15 +462,20 @@ if(showflag)
         var creator = $('#creator').val();
         var date_str = $('#cre_date_str').val();
         var CopyrightOwner = $('#CopyrightOwner').val();
-        var img_description = $('#img_description').val();
+        var file_description = $('#file_description').val();
         var location = $('#location').val();
         var encode_type = $('#encode_type').val();
         var announcer = $('#announcer').val();
-        var file_url = $('#file_url').val();
+        var file_citation = $('#file_citation').val();
         var type = $('#type').val();
-        if(isEmpty(up_file))
+        if(marker_type == 1 && isEmpty(up_file))
         {
             $('#up_file_error').html("*选择一个文件!");
+            flag2=false;
+        }
+        if(marker_type == 2 && isEmpty(video_url))
+        {
+            $('#video_url_error').html("*填写一个视频网址!");
             flag2=false;
         }
         if(isEmpty(building_name))
@@ -407,9 +496,9 @@ if(showflag)
         if(isEmpty(building_information))
         {
             building_information ="无"
-        }if(isEmpty(img_description))
+        }if(isEmpty(file_description))
         {
-            img_description = "无"
+            file_description = "无"
         }
 
         if(isEmpty(title))
@@ -427,21 +516,25 @@ if(showflag)
         }
         if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
         {
+            console.log("---")
             $('#cre_date_error').html("*日期不合法!");            return;
 
         }
         if(isEmpty(cre_date_month)&&!isEmpty(cre_date_day))
-        {
+        {            console.log("---")
+
             $('#cre_date_error').html("*日期不合法!");           return;
 
         }
         if(!isEmpty(cre_date_month)&&check_month(cre_date_month))
-        {
+        {            console.log("---")
+
             $('#cre_date_error').html("*日期不合法!");           return;
 
         }
         if(!isEmpty(cre_date_day)&&check_day(cre_date_day,cre_date_month,cre_date_year))
-        {
+        {            console.log("---")
+
             $('#cre_date_error').html("*日期不合法!");            return;
 
         }
@@ -450,7 +543,7 @@ if(showflag)
     var selectedFile=new FormData();
     var cre_date;
     if(isEmpty(cre_date_year))
-        cre_date="null"
+        cre_date="null";
     else
     {
         cre_date=pad_zero(0,cre_date_year);
@@ -465,12 +558,18 @@ if(showflag)
     selectedFile.append("building_name",building_name);
     selectedFile.append("cre_date",cre_date);
     selectedFile.append("cre_date_str",date_str);
-    selectedFile.append("building_information",building_information);selectedFile.append("creator",creator);
-    selectedFile.append("CopyrightOwner",CopyrightOwner);selectedFile.append("img_description",img_description);
-    selectedFile.append("location",location);selectedFile.append("encode_type",encode_type);
+    selectedFile.append("building_information",building_information);
+    selectedFile.append("creator",creator);
+    selectedFile.append("video_url",video_url);
+    selectedFile.append("CopyrightOwner",CopyrightOwner);
+    selectedFile.append("file_description",file_description);
+    selectedFile.append("location",location);
+    selectedFile.append("encode_type",encode_type);
     selectedFile.append("announcer",announcer);
-    selectedFile.append("file_url",file_url);selectedFile.append("type",type);
-    console.log(selectedFile)
+    selectedFile.append("file_citation",file_citation);
+    selectedFile.append("type",type);
+    selectedFile.append("marker_type",marker_type);
+    console.log(selectedFile);
     $.ajax({
 
         async: true,
@@ -486,7 +585,7 @@ beforeSend: function () {
         contentType:false,
  success: function (result) {
             $.ShowLoadDialogClose();
-            layer.alert("标注成功!")
+            layer.alert("标注成功!");
             get_location();
         },
         error:function (){
@@ -546,14 +645,13 @@ function sear(result) {//地图搜索
 function checkFileExt(filename)
 {
  var flag = false; //状态
- var arr = ["jpg","png","gif","jpeg","mp4","rmvb","mkv"];
  //取出上传文件的扩展名
  var index = filename.lastIndexOf(".");
  var ext = filename.substr(index+1);
  //循环比较
- for(var i=0;i<arr.length;i++)
+ for(var i=0;i<type_arr.length;i++)
  {
-  if(ext == arr[i])
+  if(ext == type_arr[i])
   {
    flag = true; //一旦找到合适的，立即退出循环
    break;
@@ -562,8 +660,12 @@ function checkFileExt(filename)
  //条件判断
  if(!flag)
  {
-     $("#up_file").val("")
+     $("#up_file").val("");
   alert("不支持此类文件！")
+ }
+ else {
+     if(marker_type == 1)
+     get_type();
  }
 }
 
