@@ -54,8 +54,6 @@ def login(request):
                 if user.password == get_md5(password + username):
                     pduser = models.UserinfoTab.objects.filter(name=username).values()[0]["session"]
                     if pduser is None:
-                        print(pduser,type(pduser))
-
                         request.session['is_login'] = True
                         request.session['user_id'] = user.id
                         request.session['user_name'] = user.name
@@ -68,7 +66,6 @@ def login(request):
                         ip = request.META['REMOTE_ADDR']
                         ####登录后，会生成session_key,将session_key写入到用户表的session里面
                         models.UserinfoTab.objects.filter(name=username).update(session=session_id, login_ip = ip)
-                        return redirect('/index/')
                     else:
                         request.session.delete(pduser)
                         request.session['is_login'] = True
@@ -76,14 +73,16 @@ def login(request):
                         request.session['user_name'] = user.name
                         request.session['role'] = user.role
                         request.session["app_name"] = "MapSchema"
+                        if not request.session.session_key:
+                            request.session.save()
                         session_id = request.session.session_key
                         models.UserinfoTab.objects.filter(name=username).update(session=session_id)
                         # 获取登录IP
                         ip = request.META['REMOTE_ADDR']
                         models.UserinfoTab.objects.filter(name=username).update(login_ip=ip)
                         time_now = datetime.now().strftime("%Y-%m-%d %X")
-                        models.LogininfoTab.objects.create(name=username, login_ip=ip, login_time=time_now, status="登录成功")
-                        return redirect("/index/")
+                    models.LogininfoTab.objects.create(name=username, login_ip=ip, login_time=time_now, status="登录成功")
+                    return redirect("/index/")
                 else:
                     time_now = datetime.now().strftime("%Y-%m-%d %X")
                     models.Logininfo.objects.create(user=username, login_ip=ip, login_time=time_now, status="密码错误")
