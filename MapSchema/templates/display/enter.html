@@ -228,6 +228,8 @@ function createMarker(point,point_data) {
         }
     }
 function clear_form() {
+    $("#form").find("input").removeAttr("readonly");
+    $("#form").find("textarea").removeAttr("readonly");
     document.getElementById('form').reset();
     $("input").css('background',"#FBFBFB");
     $("textarea").css('background',"#FBFBFB");
@@ -324,12 +326,14 @@ function clear_form() {
     }
     else
     {
+        $("#form").find("input").attr("readonly","readonly");
+        $("#form").find("textarea").attr("readonly","readonly");
      var index = layer.open({
     type: 1,
     title: '标注信息',
     area: ['350px', '550px'],
     shadeClose: true, //点击遮罩关闭
-    content: $('#show_editor_div')
+    content: $('#enter_form')
   });
 
     }
