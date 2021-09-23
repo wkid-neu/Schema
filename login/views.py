@@ -1,5 +1,11 @@
 import hashlib
 import os
+from datetime import time, datetime
+
+from django.contrib.sessions.models import Session
+from django.db.models import Q
+from django.utils import timezone
+
 import Schema.settings as settings
 
 from django.shortcuts import render, redirect
@@ -42,16 +48,45 @@ def login(request):
         if login_form.is_valid():
             username = login_form.cleaned_data['username']
             password = login_form.cleaned_data['password']
+            ip = request.META['REMOTE_ADDR']
             try:
                 user = models.UserinfoTab.objects.get(name=username)
                 if user.password == get_md5(password + username):
-                    request.session['is_login'] = True
-                    request.session['user_id'] = user.id
-                    request.session['user_name'] = user.name
-                    request.session['role'] = user.role
-                    request.session["app_name"] = "MapSchema"
-                    return redirect('/index/')
+                    pduser = models.UserinfoTab.objects.filter(name=username).values()[0]["session"]
+                    if pduser is None:
+                        print(pduser,type(pduser))
+
+                        request.session['is_login'] = True
+                        request.session['user_id'] = user.id
+                        request.session['user_name'] = user.name
+                        request.session['role'] = user.role
+                        request.session["app_name"] = "MapSchema"
+                        if not request.session.session_key:
+                            request.session.save()
+                        session_id = request.session.session_key
+                        print(session_id,"sss")
+                        ip = request.META['REMOTE_ADDR']
+                        ####登录后，会生成session_key,将session_key写入到用户表的session里面
+                        models.UserinfoTab.objects.filter(name=username).update(session=session_id, login_ip = ip)
+                        return redirect('/index/')
+                    else:
+                        request.session.delete(pduser)
+                        request.session['is_login'] = True
+                        request.session['user_id'] = user.id
+                        request.session['user_name'] = user.name
+                        request.session['role'] = user.role
+                        request.session["app_name"] = "MapSchema"
+                        session_id = request.session.session_key
+                        models.UserinfoTab.objects.filter(name=username).update(session=session_id)
+                        # 获取登录IP
+                        ip = request.META['REMOTE_ADDR']
+                        models.UserinfoTab.objects.filter(name=username).update(login_ip=ip)
+                        time_now = datetime.now().strftime("%Y-%m-%d %X")
+                        models.LogininfoTab.objects.create(name=username, login_ip=ip, login_time=time_now, status="登录成功")
+                        return redirect("/index/")
                 else:
+                    time_now = datetime.now().strftime("%Y-%m-%d %X")
+                    models.Logininfo.objects.create(user=username, login_ip=ip, login_time=time_now, status="密码错误")
                     message = "密码不正确!"
             except Exception as e:
                 message = "用户不存在!"

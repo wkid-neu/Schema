@@ -8,14 +8,30 @@ class UserinfoTab(models.Model):
     id = models.BigAutoField(primary_key=True)
     name = models.CharField(unique=True, max_length=128)
     password = models.CharField(max_length=256)
-    email = models.CharField(unique=True, max_length=254)
+    email = models.CharField(unique=True, max_length=256)
     sex = models.CharField(max_length=32)
-    role = models.CharField(max_length=255)
-    c_time = models.DateTimeField(auto_now_add=True)
+    role = models.CharField(max_length=32)
+    c_time = models.DateTimeField()
+    session = models.CharField(max_length=256, blank=True, null=True)
+    login_ip = models.CharField(max_length=32, blank=True, null=True)
 
     class Meta:
         managed = False
         db_table = 'userinfo_tab'
+
+
+class LogininfoTab(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    name = models.CharField(max_length=128)
+    login_ip = models.CharField(max_length=32)
+    login_time = models.CharField(max_length=128)
+    status = models.CharField(max_length=128)
+
+    class Meta:
+        managed = False
+        db_table = 'logininfo_tab'
+
+
 
 
 class CreateinfoTab(models.Model):
