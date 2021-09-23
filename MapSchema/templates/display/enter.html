@@ -143,6 +143,7 @@ map.setDefaultCursor("crosshair");
     });
 $(function() {
         $('#li-2').addClass("active");
+        var winWidth,winHeight=0;
         var map_block = document.getElementById('allmap');
         if (window.innerWidth)
         winWidth = window.innerWidth;
@@ -159,7 +160,7 @@ $(function() {
         winHeight = document.documentElement.clientHeight;
         winWidth = document.documentElement.clientWidth;
         }
-        map_block.style.height = winHeight*4/5 + 'px';
+        map_block.style.height = winHeight*2/3 + 'px';
         map_block.style.width = winWidth + 'px';
         get_location();
         })
