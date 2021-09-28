@@ -1,9 +1,12 @@
 from django.db.models import Max
+from py2neo import Graph
 from PreprocessData.database_op import datasql
 
 
 class global_var:
-    pre_data = {"NoneType": "空值", "str": "自定义字符串", "int": "整数", "bool": "布尔（真假）", "date": "日期", "float": "非整数"}
+    graph = Graph("http://localhost:7474", username="neo4j", password='123123')
+    pre_data = {"NoneType": "空值", "str": "自定义字符串", "Text": "自定义字符串", "Integer": "整数", "Bool": "布尔（真假）", "Date": "日期",
+                "Float": "非整数"}
     msql = datasql()
     MAP_FLAG = False
     properties_data = msql.query("property_tab")
@@ -33,6 +36,10 @@ class global_var:
     class_to_id = {}
     id_map_table = {}
     max_id = 1
+
+
+def get_graph():
+    return global_var.graph
 
 
 def set_table(value):

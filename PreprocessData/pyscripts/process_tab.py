@@ -169,25 +169,28 @@ def process_range():
                 content = json.loads(temp_content)
                 name = content["_node_label"]
                 cls = ['NoneType']
-                for obj in content["rangeIncludes"]:
-                    type = obj["rdfs:label"]
-                    if type == "Text" or type.lower() == "url":
-                        type = "str"
-                    elif type == "Integer" or type == "Number":
-                        type = "int"
-                    elif type == "Boolean":
-                        type = 'bool'
-                    elif type == "Date" or type == "DateTime" or type == "Time":
-                        type = 'date'
-                    else:
-                        for val in all_subclasses.get(type):
-                            cls.append(val)
-                    if type not in cls:
-                        cls.append(type)
-                    if type == "date":
-                        cls.append("str")  # "明国时期"
-                    if type == "Number":
-                        cls.append("float")
+                if name == "name":
+                    cls.append("str")
+                else:
+                    for obj in content["rangeIncludes"]:
+                        type = obj["rdfs:label"]
+                        if type == "Text" or type.lower() == "url":
+                            type = "Text"
+                        elif type == "Integer" or type == "Number":
+                            type = "Integer"
+                        elif type == "Boolean":
+                            type = 'Bool'
+                        elif type == "Date" or type == "DateTime" or type == "Time":
+                            type = 'Date'
+                        else:
+                            for val in all_subclasses.get(type):
+                                cls.append(val)
+                        if type not in cls:
+                            cls.append(type)
+                        if type == "Date":
+                            cls.append("Text")  # "明国时期"
+                        if type == "Number":
+                            cls.append("Float")
                 result.append([name, ",".join(cls)])
         except Exception as e:
             print("{}失败！".format(name), e)

@@ -3,7 +3,18 @@
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/address.css' %}">
       <link href="{% static 'css/enter_form.css' %}" rel="stylesheet">
-
+<style>
+ body .demo-class .layui-layer-btn0{
+  border-color: #4898d5;
+  background-color: #2e8ded;
+  color: #ffffff;
+ }
+ body .demo-class .layui-layer-btn1{
+  border-color: #d55324;
+  background-color: #ed310b;
+  color: #fff;
+ }
+</style>
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=h40MTWwwSpgwCUEw8MbIiBnc3X4keNgX"></script>
     <script type="text/javascript" src="{% static 'js/3.1.1/layer.js' %}"></script>
@@ -13,10 +24,12 @@
 
 
     <div id="enter_form" style="display: none">
-    <img src="" id="show_img" style="width: 250px;margin-left: 15px">
+    <img src="" id="show_img" style="width: 250px;margin-left: 15px;margin-bottom: 5px">
    <form  action="" method="post" enctype="multipart/form-data" id="form" class="smart-green" >
 {% csrf_token %}
+<a href="javascript:;" class="file" id="up_file_block"><span id="file_button_text"></span>
     <input type="file"  name="up_file" id="up_file"  onchange="checkFileExt(this.value)">
+</a>
                <div id = "up_file_error" class="error-msg" style="font-weight: bold"></div>
 <label id="video_url_block" style="display: none"><span>视频网址 :</span>
         <input id="video_url"  type="text" name="video_url"  />
@@ -180,13 +193,15 @@ $(function() {
         address_longitude =receive_data["address_longitude"];
         address_data =receive_data["address_data"];
         console.log(receive_data)
-        var point;
+        var point,center_point="none";
+        var user_id = {{ request.session.user_id }}
                 for (var i = 0; i < address_longitude.length; i++) {
-            point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
-            createMarker(point,address_data[i])
+                    point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
+                    if(address_data[i]["monitor_id"]==user_id)center_point=point;
+                    createMarker(point,address_data[i])
         }
-        map.centerAndZoom(point, 15);
-
+                if(center_point=="none")center_point=point;
+                map.centerAndZoom(center_point, 15);
 
                 },
                 error:function () {
@@ -224,7 +239,7 @@ function createMarker(point,point_data) {
     });
 }
 
-    function display_date(pointInfo_datestr, type) {
+function display_date(pointInfo_datestr, type) {
         if(type == 0)
         {
             $('#cre_date_str').val(pointInfo_datestr);
@@ -255,7 +270,7 @@ function clear_form() {
     $('.error-msg').html('');
     $("#show_img").attr("src","");
 }
-    function showInfo(thisMarker,point_info) {
+function showInfo(thisMarker,point_info) {
     clear_form()
     user_id = {{ request.session.user_id }}
     user_role  = '{{ request.session.role }}';
@@ -303,8 +318,8 @@ function clear_form() {
     }
     if (point_info["marker_type"]=='1')
     {
-        image_show()
-        $('#up_file').css("display","none");
+        image_show("重新上传文件")
+        type_arr = ["jpg","png","gif","jpeg"];
         $("#show_img").attr("src","..\\..\\..\\"+point_info["mediaObject"][0]);
     }
     else if(point_info["marker_type"]=='2')
@@ -316,13 +331,19 @@ function clear_form() {
     if(user_id == point_info["monitor_id"] || user_role == "A")
     {
         var index = layer.open({
+    skin:'demo-class',
     type: 1,
     title: '标注信息',
     area: ['350px', '550px'],
     shadeClose: true, //点击遮罩关闭
     content: $('#enter_form'),
-     btn:['删除该标注点'],
-     btn1:function () {
+    btn:['保存修改','删除该标注点'],
+    btn1:function()
+    {
+        $('.error-msg').html("");
+        create_update_point(thisMarker.point.lng,thisMarker.point.lat,point_info["marker_type"],index,true,point_info["node_id"])
+    },
+     btn2:function () {
             var post_data ={ "node_id":point_info["node_id"]};
             console.log(post_data)
         $.ajax({
@@ -357,6 +378,200 @@ function clear_form() {
 
     }
 }
+function create_update_point(lng,lat,marker_type,index,update=false,node_id=null) {
+    console.log(update)
+        var flag2 = true;
+        var up_file = $('#up_file').val();
+        var video_url=$('#video_url').val();
+        var title = $('#title').val();
+        var building_name = $('#building_name').val();
+        var building_information = $('#building_information').val();
+        var cre_date_year = $('#cre_date_year').val();
+        var cre_date_month = $('#cre_date_month').val();
+        var cre_date_day = $('#cre_date_day').val();
+        var creator = $('#creator').val();
+        var date_str = $('#cre_date_str').val();
+        var CopyrightOwner = $('#CopyrightOwner').val();
+        var file_description = $('#file_description').val();
+        var location = $('#location').val();
+        var encode_type = $('#encode_type').val();
+        var announcer = $('#announcer').val();
+        var file_citation = $('#file_citation').val();
+        var type = $('#type').val();
+        if(marker_type == 1 && isEmpty(up_file)&&!update)
+        {
+            $('#up_file_error').html("*选择一个文件!");
+            flag2=false;
+        }
+        if(marker_type == 2 && isEmpty(video_url))
+        {
+            $('#video_url_error').html("*填写一个视频网址!");
+            flag2=false;
+        }
+        if(isEmpty(building_name))
+        {
+            building_name = "？"
+        }
+        if(isEmpty(cre_date_year)&&isEmpty(date_str))
+        {
+            $('#cre_date_error').html("*时间不能为空!");
+            flag2=false;
+        }
+
+        if(isEmpty(location))
+        {
+            $('#location_error').html("*地点不能为空!");
+            flag2=false;
+        }
+        if(isEmpty(building_information))
+        {
+            building_information ="无"
+        }if(isEmpty(file_description))
+        {
+            file_description = "无"
+        }
+        if(isEmpty(title))
+        {
+            $('#title_error').html("*标题不能为空!");
+            flag2=false;
+        }
+        if(isEmpty(creator))
+        {
+            creator = "佚名"
+        }
+        if((!isEmpty(cre_date_month)||!isEmpty(cre_date_day))&&isEmpty(cre_date_year))
+        {
+            $('#cre_date_error').html("*年份不能为空!"); return;
+        }
+        if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
+        {
+            $('#cre_date_error').html("*日期不合法!");            return;
+
+        }
+        if(isEmpty(cre_date_month)&&!isEmpty(cre_date_day))
+        {
+            $('#cre_date_error').html("*日期不合法!");           return;
+
+        }
+        if(!isEmpty(cre_date_month)&&check_month(cre_date_month))
+        {
+            $('#cre_date_error').html("*日期不合法!");           return;
+
+        }
+        if(!isEmpty(cre_date_day)&&check_day(cre_date_day,cre_date_month,cre_date_year))
+        {
+            $('#cre_date_error').html("*日期不合法!");            return;
+
+        }
+        if(flag2)
+        {
+    var selectedFile=new FormData();
+    var cre_date;
+    if(isEmpty(cre_date_year))
+        cre_date="null";
+    else
+    {
+        cre_date=pad_zero(0,cre_date_year);
+        if(!isEmpty(cre_date_month))cre_date=cre_date+"-"+pad_zero(1,cre_date_month);
+        if(!isEmpty(cre_date_day))cre_date=cre_date+"-"+pad_zero(1,cre_date_day);
+    }
+    console.log(cre_date)
+    selectedFile.append("up_file",document.getElementById("up_file").files[0]);
+    selectedFile.append("lng",lng);
+    selectedFile.append("lat",lat);
+    selectedFile.append("title",title);
+    selectedFile.append("building_name",building_name);
+    selectedFile.append("cre_date",cre_date);
+    selectedFile.append("cre_date_str",date_str);
+    selectedFile.append("building_information",building_information);
+    selectedFile.append("creator",creator);
+    selectedFile.append("video_url",video_url);
+    selectedFile.append("CopyrightOwner",CopyrightOwner);
+    selectedFile.append("file_description",file_description);
+    selectedFile.append("location",location);
+    selectedFile.append("encode_type",encode_type);
+    selectedFile.append("announcer",announcer);
+    selectedFile.append("file_citation",file_citation);
+    selectedFile.append("type",type);
+    selectedFile.append("marker_type",marker_type);
+    if(update) selectedFile.append("node_id",node_id);
+
+    console.log(selectedFile);
+    var to_url = "";
+    var alert_info = "";
+    var alert_err = "";
+    if(update)
+    {
+        alert_info = "保存成功!";
+        alert_err = "保存失败!";
+        to_url = '/map/update/';
+    }
+    else if(!update)
+    {
+        alert_info = "标注成功!";
+        alert_err = "标注失败!"
+        to_url = '/map/process/';
+    }
+    $.ajax({
+
+        async: true,
+beforeSend: function () {
+            layer.close(index);
+            $.ShowLoadDialog();
+},
+         type: 'post',
+        url: to_url,
+        cache: false,
+        data: selectedFile,
+        processData:false,
+        contentType:false,
+ success: function (result) {
+            $.ShowLoadDialogClose();
+            layer.alert(alert_info);
+            get_location();
+        },
+        error:function (){
+            $.ShowLoadDialogClose();
+            layer.alert(alert_err)
+        }
+
+    });
+
+        }
+}
+function popLayer(e) {
+    clear_form()
+    var title_info;
+    if(marker_type == 2)
+    {
+        title_info = "编辑视频标注信息";
+        video_show()
+    }
+    else if(marker_type == 1)
+    {
+        title_info = "编辑图片标注信息";
+        image_show("选择文件")
+    }
+    var index = layer.open({
+    type: 1,
+    title: title_info,
+    area: ['350px', '550px'],
+    shadeClose: true, //点击遮罩关闭
+    content: $('#enter_form'),
+    btn:['提交','取消'],
+    yes:function () {
+        $('.error-msg').html("");
+        var lng = e.point.lng;
+        var lat = e.point.lat;
+        create_update_point(lng,lat,marker_type,index)
+        },
+    no:function(){//取消按钮
+            //do something;
+        layer.close(index);
+        }
+
+  });
+    }
 function check_year(val) {
     if(val.length>4)return true;
     val = pad_zero(0,val);
@@ -438,197 +653,18 @@ function video_show() {
         $('#description_value').html("视频说明 :");
         $('#encodetype_value_block').css("display","none");
         $('#source_value').html("视频来源 :");
-        $('#up_file').css("display","none");
+        $('#up_file_block').css("display","none");
         $('#video_url_block').css("display","block");
 }
-function image_show() {
+function image_show(button_text) {
         $('#description_value').html("图片说明 :");
         $('#encodetype_value_block').css("display","block");
         $('#encodetype_value').html("图片格式 :");
         $('#source_value').html("图片来源 :");
-        $('#up_file').css("display","block");
+        $('#up_file_block').css("display","inline-block");
+        $('#file_button_text').html(button_text);
         $('#video_url_block').css("display","none");
 }
-function popLayer(e) {
-    clear_form()
-    var title_info;
-    if(marker_type == 2)
-    {
-        title_info = "编辑视频标注信息";
-        video_show()
-    }
-    else if(marker_type == 1)
-    {
-        title_info = "编辑图片标注信息";
-        image_show()
-    }
-    var index = layer.open({
-    type: 1,
-    title: title_info,
-    area: ['350px', '550px'],
-    shadeClose: true, //点击遮罩关闭
-    content: $('#enter_form'),
-    btn:['提交','取消'],
-    yes:function () {
-        $('.error-msg').html("");
-        var flag2 = true;
-        var lng = e.point.lng;
-        var lat = e.point.lat;
-        var up_file = $('#up_file').val();
-        var video_url=$('#video_url').val();
-        var title = $('#title').val();
-        var building_name = $('#building_name').val();
-        var building_information = $('#building_information').val();
-        var cre_date_year = $('#cre_date_year').val();
-        var cre_date_month = $('#cre_date_month').val();
-        var cre_date_day = $('#cre_date_day').val();
-        var creator = $('#creator').val();
-        var date_str = $('#cre_date_str').val();
-        var CopyrightOwner = $('#CopyrightOwner').val();
-        var file_description = $('#file_description').val();
-        var location = $('#location').val();
-        var encode_type = $('#encode_type').val();
-        var announcer = $('#announcer').val();
-        var file_citation = $('#file_citation').val();
-        var type = $('#type').val();
-        if(marker_type == 1 && isEmpty(up_file))
-        {
-            $('#up_file_error').html("*选择一个文件!");
-            flag2=false;
-        }
-        if(marker_type == 2 && isEmpty(video_url))
-        {
-            $('#video_url_error').html("*填写一个视频网址!");
-            flag2=false;
-        }
-        if(isEmpty(building_name))
-        {
-            building_name = "？"
-        }
-        if(isEmpty(cre_date_year)&&isEmpty(date_str))
-        {
-            $('#cre_date_error').html("*时间不能为空!");
-            flag2=false;
-        }
-
-        if(isEmpty(location))
-        {
-            $('#location_error').html("*地点不能为空!");
-            flag2=false;
-        }
-        if(isEmpty(building_information))
-        {
-            building_information ="无"
-        }if(isEmpty(file_description))
-        {
-            file_description = "无"
-        }
-
-        if(isEmpty(title))
-        {
-            $('#title_error').html("*标题不能为空!");
-            flag2=false;
-        }
-        if(isEmpty(creator))
-        {
-            creator = "佚名"
-        }
-        if((!isEmpty(cre_date_month)||!isEmpty(cre_date_day))&&isEmpty(cre_date_year))
-        {
-            $('#cre_date_error').html("*年份不能为空!"); return;
-        }
-        if(!isEmpty(cre_date_year)&&check_year(cre_date_year))
-        {
-            console.log("---")
-            $('#cre_date_error').html("*日期不合法!");            return;
-
-        }
-        if(isEmpty(cre_date_month)&&!isEmpty(cre_date_day))
-        {            console.log("---")
-
-            $('#cre_date_error').html("*日期不合法!");           return;
-
-        }
-        if(!isEmpty(cre_date_month)&&check_month(cre_date_month))
-        {            console.log("---")
-
-            $('#cre_date_error').html("*日期不合法!");           return;
-
-        }
-        if(!isEmpty(cre_date_day)&&check_day(cre_date_day,cre_date_month,cre_date_year))
-        {            console.log("---")
-
-            $('#cre_date_error').html("*日期不合法!");            return;
-
-        }
-        if(flag2)
-        {
-    var selectedFile=new FormData();
-    var cre_date;
-    if(isEmpty(cre_date_year))
-        cre_date="null";
-    else
-    {
-        cre_date=pad_zero(0,cre_date_year);
-        if(!isEmpty(cre_date_month))cre_date=cre_date+"-"+pad_zero(1,cre_date_month);
-        if(!isEmpty(cre_date_day))cre_date=cre_date+"-"+pad_zero(1,cre_date_day);
-    }
-    console.log(cre_date)
-    selectedFile.append("up_file",document.getElementById("up_file").files[0]);
-    selectedFile.append("lng",lng);
-    selectedFile.append("lat",lat);
-    selectedFile.append("title",title);
-    selectedFile.append("building_name",building_name);
-    selectedFile.append("cre_date",cre_date);
-    selectedFile.append("cre_date_str",date_str);
-    selectedFile.append("building_information",building_information);
-    selectedFile.append("creator",creator);
-    selectedFile.append("video_url",video_url);
-    selectedFile.append("CopyrightOwner",CopyrightOwner);
-    selectedFile.append("file_description",file_description);
-    selectedFile.append("location",location);
-    selectedFile.append("encode_type",encode_type);
-    selectedFile.append("announcer",announcer);
-    selectedFile.append("file_citation",file_citation);
-    selectedFile.append("type",type);
-    selectedFile.append("marker_type",marker_type);
-    console.log(selectedFile);
-    $.ajax({
-
-        async: true,
-beforeSend: function () {
-            layer.close(index);
-            $.ShowLoadDialog();
-},
-         type: 'post',
-        url: '/map/process/',
-        cache: false,
-        data: selectedFile,
-        processData:false,
-        contentType:false,
- success: function (result) {
-            $.ShowLoadDialogClose();
-            layer.alert("标注成功!");
-            get_location();
-        },
-        error:function (){
-            $.ShowLoadDialogClose();
-            layer.alert("标注失败!")
-        }
-
-    });
-
-        }
-
-        },
-    no:function(){//取消按钮
-            //do something;
-        layer.close(index);
-        }
-
-  });
-    }
-//判断字符是否为空的方法
 function isEmpty(obj){
     if(typeof obj == "undefined" || obj == null || obj == ""){
         return true;
@@ -667,6 +703,7 @@ function sear(result) {//地图搜索
 }
 function checkFileExt(filename)
 {
+    console.log("---",type_arr)
  var flag = false; //状态
  //取出上传文件的扩展名
  var index = filename.lastIndexOf(".");

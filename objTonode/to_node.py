@@ -1,12 +1,43 @@
+import global_data
+
+
 class TransNode(object):
     def __init__(self, monitor_id, app_name=None):
-        self.vis = {}
+        self.cre_vis = {}
+        self.upd_vis = []
+        self.update_cypher = ""
         self.monitor_id = monitor_id
         self.app_name = app_name
-        self.common_properties = {'str': 'Text', 'int': 'Integer', 'float': 'Float', 'bool': 'Bool', 'date': 'Date'}
+        if app_name == "MapSchema":
+            self.markpoint_data = global_data.get_mappoints()
+
+    def update_node(self, obj):
+        if obj in self.upd_vis:
+            return
+        self.upd_vis.append(obj)
+        cur_node_id = obj.node_id
+        attr_value = obj.__dict__
+        for key in attr_value:
+            value_list = attr_value.get(key)
+            if key == 'node_id' or key == 'class_hierarchy' or key == 'app_name' or value_list is None or len(
+                    value_list) == 0:
+                continue
+            for value in value_list:
+                if key == "name":
+                    if '\\' in value:
+                        value = value.replace('\\', '\\\\')
+                    update = "match (n) where id(n)={} set n.name='{}' \n".format(cur_node_id, value)
+                    self.update_cypher += update
+                else:
+                    self.update_node(value)
+        graph = global_data.get_graph()
+        try:
+            graph.run(self.update_cypher)
+        except Exception as e:
+            print("更改失败", e)
 
     def to_node(self, obj):
-        if obj in self.vis:
+        if obj in self.cre_vis:
             return
         class_name = type(obj).__name__
         attr_value = obj.__dict__
@@ -26,21 +57,11 @@ class TransNode(object):
             if key == 'node_id' or key == 'name' or key == 'app_name' or value_list is None or len(value_list) == 0:
                 continue
             for value in value_list:
-                if type(value).__name__ in self.common_properties:
-                    common_class_name = self.common_properties[type(value).__name__]
-                    common_module_meta = __import__("objTonode.neo_classes", globals(), locals(),
-                                                    [common_class_name])
-                    common_class_meta = getattr(common_module_meta, common_class_name)
-                    val_node = common_class_meta(name=value, monitor_id=self.monitor_id, app_name=self.app_name)
-                    class_hierarchy_list = val_node.inherited_labels()
-                    val_node.class_hierarchy = ':'.join(class_hierarchy_list)
-                    val_node.save()
-                else:  # if cur_node  exits ,contniue
-                    if value in self.vis:
-                        val_node = self.vis[value]
-                    else:
-                        val_node = self.to_node(value)
+                if value in self.cre_vis:
+                    val_node = self.cre_vis[value]
+                else:
+                    val_node = self.to_node(value)
                 if val_node is not None:
                     getattr(neo_node, key).connect(val_node)
-        self.vis[obj] = neo_node
+        self.cre_vis[obj] = neo_node
         return neo_node

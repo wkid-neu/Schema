@@ -32,6 +32,26 @@ def run(preprocess_data):
                 continue
             vis.append(class_name)
             content += all_class_content[class_name]+'\n\n'
+    content += '''
+class Text(Thing):
+    pass
+
+
+class Date(Thing):
+    pass
+
+
+class Bool(Thing):
+    pass
+
+
+class Integer(Thing):
+    pass
+
+
+class Float(Thing):
+    pass  
+    '''
     with open(r'..\all_class_files\all_class.py', 'w', encoding='utf-8') as f:
         f.write(content)
         f.close()

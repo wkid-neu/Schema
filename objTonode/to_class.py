@@ -1,14 +1,12 @@
 from datetime import datetime
-from py2neo import Graph
 from PreprocessData.all_class_files.all_class import *
 
 
 class TransClass(object):
     def __init__(self, monitor_id, app_name):
-        self.graph = Graph("http://localhost:7474", username="neo4j", password='123123')
+        self.graph = global_data.get_graph()
         self.vis = []
         self.result = {}
-        self.common_data = ['Text', 'Integer', 'Float', 'Bool', 'Date']
         self.node_data = {}
         self.id_node_tab = {}
         self.monitor_id = monitor_id
@@ -21,20 +19,6 @@ class TransClass(object):
         self.class_to_id = {}
         self.links = []
         self.nodes = []
-
-    def trans_date(self, name):
-        lens = len(name.split("-"))
-        if lens == 1:
-            return datetime.strptime(name, "%Y").date()
-        if lens == 2:
-            return datetime.strptime(name, "%Y-%m").date()
-        if lens == 3:
-            return datetime.strptime(name, "%Y-%m-%d").date()
-
-    def trans_bool(self, name):
-        if name == "True":
-            return True
-        return False
 
     def extract_data(self, extract_all):
         if extract_all is False:
@@ -87,7 +71,6 @@ class TransClass(object):
             if node in self.node_data:
                 continue
             self.node_data[node] = []
-
         print(self.node_data)
         for obj in self.node_data:
             if obj in self.vis:
@@ -104,16 +87,6 @@ class TransClass(object):
 
         name = dict(node)['name']
         master = dict(node)['monitor_id']
-        if class_ in self.common_data:
-            if class_ == "Date":
-                return self.trans_date(name)
-            if class_ == "Integer":
-                return int(name)
-            if class_ == "Bool":
-                return self.trans_bool(name)
-            if class_ == "Float":
-                return float(name)
-            return name
         if self.entity_class_json.get(class_) is None:
             self.entity_class_json[class_] = []
         if node.identity in self.result:

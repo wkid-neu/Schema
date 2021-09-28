@@ -126,15 +126,20 @@ $(function() {
                 success: function (data) {
                                 $.ShowLoadDialogClose();
                     receive_data = JSON.parse(data);
+                    console.log(receive_data)
                     address_latitude =receive_data["address_latitude"];
         address_longitude =receive_data["address_longitude"];
         address_data =receive_data["address_data"];
-        var point;
+        var point,center_point="none";
+        var user_id = {{ request.session.user_id }}
                 for (var i = 0; i < address_longitude.length; i++) {
-           point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
-            createMarker(point,address_data[i])
+                    point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
+                    if(address_data[i]["monitor_id"]==user_id)center_point=point;
+                    createMarker(point,address_data[i])
         }
-            map.centerAndZoom(point, 15);
+                if(center_point=="none")center_point=point;
+                map.centerAndZoom(center_point, 15);
+
                 },
                 error:function () {
                    $.ShowLoadDialogClose();

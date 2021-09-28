@@ -13878,3 +13878,23 @@ class HairSalon(HealthAndBeautyBusiness):
         HealthAndBeautyBusiness.__init__(self, additionalType, alternateName, description, disambiguatingDescription, identifier, image, mainEntityOfPage, name, potentialAction, sameAs, url, address, aggregateRating, alumni, areaServed, award, brand, contactPoint, department, dissolutionDate, duns, email, employee, event, faxNumber, founder, foundingDate, foundingLocation, funder, globalLocationNumber, hasOfferCatalog, hasPOS, isicV4, legalName, leiCode, location, logo, makesOffer, member, memberOf, naics, numberOfEmployees, owns, parentOrganization, publishingPrinciples, review, seeks, sponsor, subOrganization, taxID, telephone, vatID, additionalProperty, amenityFeature, branchCode, containedInPlace, containsPlace, geo, hasMap, isAccessibleForFree, maximumAttendeeCapacity, openingHoursSpecification, photo, publicAccess, smokingAllowed, specialOpeningHoursSpecification, currenciesAccepted, openingHours, paymentAccepted, priceRange)
 
 
+
+class Text(Thing):
+    pass
+
+
+class Date(Thing):
+    pass
+
+
+class Bool(Thing):
+    pass
+
+
+class Integer(Thing):
+    pass
+
+
+class Float(Thing):
+    pass  
+    
