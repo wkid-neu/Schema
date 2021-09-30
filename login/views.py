@@ -138,6 +138,6 @@ def register(request):
 
 def logout(request):
     if not request.session.get('is_login', None):
-        return redirect("/index/")
+        return render(request, "login/index.html")
     request.session.flush()
-    return redirect("/index/")
+    return render(request, "login/index.html")

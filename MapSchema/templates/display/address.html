@@ -143,7 +143,7 @@ $(function() {
                 },
                 error:function () {
                    $.ShowLoadDialogClose();
-                  alert("获取失败！")
+                  layer.alert("获取失败！")
                 }
              });
 
@@ -218,29 +218,39 @@ function showInfo(thisMarker,point_info) {
     {
 
         image_show()
-    $("#show_img").attr("src","..\\..\\..\\"+point_info["mediaObject"][0]);
+    $("#show_img").attr("src","..\\..\\..\\"+point_info["mediaObject"][0][0]);
 
     }
     else if(point_info["marker_type"]=='2')
     {
         video_show()
-        $("#video_url").attr('href',point_info["mediaObject"][0]);
-        $('#video_url').html(point_info["mediaObject"][0]);
+        $("#video_url").attr('href',point_info["mediaObject"][0][0]);
+        $('#video_url').html(point_info["mediaObject"][0][0]);
     }
     for(var i in point_info)
     {
-        var str="",temp_str;
-        for(var j=0;j<point_info[i].length;j++)
+        if(i=='node_id' || i=='monitor_id'||i=='marker_type')continue;
+        value_tuple = point_info[i]
+        console.log(typeof value_tuple)
+        var str,temp_str;
+        temp_str = value_tuple[0][0];
+        if(i == "building_name")temp_str = temp_str.slice(0,-2);
+        if(i=="cre_date")
         {
-            temp_str = point_info[i][j];
-            if(i == "building_name")temp_str = temp_str.slice(0,-2);
+            temp_str =  temp_str.replace('#','');
+        }
+        for(var j=1;j<value_tuple.length;j++)
+        {
+            str = value_tuple[j][0];
+            if(i == "building_name")str = str.slice(0,-2);
             if(i=="cre_date")
             {
-                temp_str =  temp_str.replace('#','');
+                str =  str.replace('#','');
             }
-            str = str + " " + temp_str;
+            temp_str += ' '+str;
+
         }
-        $('#'+i).text(str)
+        $('#'+i).text(temp_str)
     }
      layer.open({
     type: 1,

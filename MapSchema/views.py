@@ -1,6 +1,6 @@
 import threading
 from datetime import datetime
-
+import base64
 from django.db import models
 from django.shortcuts import render
 import json
@@ -80,18 +80,19 @@ def trans_bool(self, name):
 def trans_data(obj_list):
     result = []
     for obj in obj_list:
+        obj_node_id = obj.node_id
         class_ = type(obj).__name__
         name = obj.name[0]
-        if class_ == "Text":
-            result.append(str(name))
         if class_ == "Date":
-            result.append(process_date(name))
-        if class_ == "Integer":
-            result.append(int(name))
-        if class_ == "Bool":
-            result.append(trans_bool(name))
-        if class_ == "Float":
-            result.append(float(name))
+            result.append((process_date(name),obj_node_id))
+        elif class_ == "Integer":
+            result.append((int(name),obj_node_id))
+        elif class_ == "Bool":
+            result.append((trans_bool(name),obj_node_id))
+        elif class_ == "Float":
+            result.append((float(name),obj_node_id))
+        else:
+            result.append((str(name),obj_node_id))
     return result
 
 
@@ -111,17 +112,17 @@ def get_all_points(request):
     for id in re_medias_id:
         if markpoint_data[id][0] in ["ImageObject", "VideoObject"]:
             property_list = markpoint_data[id][1]
-            temp_data = {'building_name': property_list['name'], 'title': trans_data(property_list['headline']),
+            temp_data = {'building_name': [(property_list['name'][0], id)], 'title': trans_data(property_list['headline']),
                          "cre_date": trans_data(property_list['dateCreated']),
                          "file_description": trans_data(property_list['description']),
                          "encode_type": trans_data(property_list['encodingFormat']),
                          "type": trans_data(property_list['keywords']),
                          "file_citation": trans_data(property_list['citation']),
-                         "creator": property_list["creator"][0].name,
+                         "creator": trans_data(property_list["creator"]),
                          "location": trans_data(property_list["mentions"][0].address),
                          "building_information": trans_data(property_list["mentions"][0].description),
-                         "announcer": property_list["publisher"][0].name,
-                         "CopyrightOwner": property_list["copyrightHolder"][0].name,
+                         "announcer": trans_data(property_list["publisher"]),
+                         "CopyrightOwner": trans_data(property_list["copyrightHolder"]),
                          "mediaObject": trans_data(property_list["url"]),
                          "node_id": id, "monitor_id": markpoint_data[id][2],
                          "marker_type": 1 if markpoint_data[id][0] == "ImageObject" else 2}
@@ -152,7 +153,7 @@ def trans_common_obj(val_list):
     return result
 
 
-def trans_date(cre_date):
+def trans_date_str(cre_date):
     date_split = cre_date.split("-")
     lens = len(date_split)
     if lens == 1:
@@ -169,30 +170,29 @@ def trans_date(cre_date):
 def update(request):
     user_id = request.session['user_id']
     user_name = request.session['user_name']
-    markpoint_data = global_data.get_mappoints()
     if request.method == "POST":
-        node_id = request.POST['node_id']
-        dest_media_obj = markpoint_data[int(node_id)][3]
-        marker_type = request.POST['marker_type']
-        if marker_type == "1":
-            file_obj = request.FILES.get("up_file")
-            if file_obj is not None:
-                user_directory = os.path.join(settings.MEDIA_ROOT, "{}_files\\".format(user_name))
-                file_path = os.path.join(user_directory, file_obj.name)
-                try:
-                    f1 = open(file_path, "wb")
-                    for i in file_obj.chunks():
-                        f1.write(i)
-                    f1.close()
-                except Exception as e:
-                    print(e)
-                    print("文件读写失败！")
-                dest_media_obj.url[0].name = ["..\\static\\upload_media\\{}_files\\{}".format(user_name, file_obj.name)]
-        print(dest_media_obj.node_id)
-        trans_node = TransNode(user_id, "MapSchema")
-        trans_node.update_node(dest_media_obj)
-        print("======", trans_node.update_cypher)
-        set_allmarkers_data(user_id)
+        post_data = json.loads(request.POST.get('post_data'))
+        update_cypher = []
+        for node_id in post_data:
+            for obj in post_data[node_id]:
+                update_tuple = post_data[node_id][obj]
+                if obj == "show_img":
+                    base64_text, file_name = update_tuple[0].split(',')[1], update_tuple[1]
+                    trans_img = base64.b64decode(base64_text)
+                    user_directory = os.path.join(settings.MEDIA_ROOT, "{}_files\\".format(user_name))
+                    with open(os.path.join(user_directory, file_name), 'wb') as f:
+                        f.write(trans_img)
+                    update_val = "..\\\\static\\\\upload_media\\\\{}_files\\\\{}".format(user_name, file_name)
+                    update_node_id = update_tuple[2]
+                else:
+                    update_val = update_tuple[0]
+                    update_node_id = update_tuple[1]
+                update_cypher.append("match (n) where id(n)={} set n.name = \"{}\"".format(update_node_id, update_val))
+        for obj in update_cypher:
+            print(obj)
+    trans_node = TransNode(user_id, "MapSchema")
+    trans_node.update_node(update_cypher)
+    set_allmarkers_data(user_id)
     return render(request, "display/result.html")
 
 
@@ -206,7 +206,6 @@ def process_form(request):
         title = request.POST['title']
         creator_name = request.POST['creator']
         cre_date = request.POST['cre_date']
-        date_str = request.POST['cre_date_str']
         location = request.POST['location']
         file_description = request.POST['file_description']
         encode_type = request.POST['encode_type']
@@ -214,7 +213,7 @@ def process_form(request):
         announcer_name = request.POST['announcer']
         CopyrightOwner_name = request.POST['CopyrightOwner']
         file_citation = request.POST['file_citation']
-        type_data = request.POST['type'].split(" ")
+        type_data = request.POST['type']
         marker_type = request.POST['marker_type']
         file_url = ""
         if marker_type == "1":
@@ -251,21 +250,16 @@ def process_form(request):
                              "geo": [GeoCoordinates_obj]}
         building_obj = create_obj(building, building_property)
         MediaObject = "ImageObject" if marker_type == "1" else "VideoObject"
-        date_val = []
-        if cre_date != "null":
-            date_val.append(trans_date(cre_date) + '#')
-        if len(date_str) != 0:
-            date_val.append(date_str)
         object_str = "照片" if marker_type == "1" else "视频"
         MediaObject_property = {'name': [building_name + object_str],
                                 "headline": trans_common_obj([title]),
                                 "description": trans_common_obj([file_description]),
-                                "keywords": trans_common_obj(type_data), "creator": [creator_obj],
+                                "keywords": trans_common_obj([type_data]), "creator": [creator_obj],
                                 "publisher": [announcer_obj],
                                 "mentions": [building_obj], "copyrightHolder": [CopyrightOwner_obj],
                                 "encodingFormat": trans_common_obj([encode_type]),
                                 "citation": trans_common_obj([file_citation]),
-                                "dateCreated": trans_common_obj(date_val), "url": trans_common_obj([file_url])}
+                                "dateCreated": trans_common_obj([cre_date]), "url": trans_common_obj([file_url])}
 
         print(MediaObject_property)
         MediaObject_obj = create_obj(MediaObject, MediaObject_property)

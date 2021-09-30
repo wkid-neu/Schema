@@ -28,8 +28,9 @@
    <form  action="" method="post" enctype="multipart/form-data" id="form" class="smart-green" >
 {% csrf_token %}
 <a href="javascript:;" class="file" id="up_file_block"><span id="file_button_text"></span>
-    <input type="file"  name="up_file" id="up_file"  onchange="checkFileExt(this.value)">
+    <input type="file"  name="up_file" id="up_file"  onchange="up_img_process(this.value)">
 </a>
+<img id='up_demo_block' style="width: 250px;margin-bottom: 5px">
                <div id = "up_file_error" class="error-msg" style="font-weight: bold"></div>
 <label id="video_url_block" style="display: none"><span>视频网址 :</span>
         <input id="video_url"  type="text" name="video_url"  />
@@ -47,14 +48,17 @@
         <input id="creator" type="text" name="creator"  />
         <div id = "creator_error" class="error-msg"></div>
     </label>
-       <label><p>拍摄时间 :</p>
-           <div style="border:1px solid #9b9b9b;border-radius: 3px;width: 115px;display: inline-block">
-        <input id="cre_date_year"  type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 45px;border-radius: 3px"/>
-       <input id="cre_date_month"  type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 30px;border-radius: 3px"/>
-       <input id="cre_date_day"  type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 30px;border-radius: 3px"/>
+       <label><p style="display: inline-block">拍摄时间 :</p>
+       <select id="select_1" style="background-color:#e8f0fe;margin-left:10px;height:23px;margin-top:5px;width:70px;display: inline-block" onchange="select_datefill()">
+  <option value ="A">样式&nbsp;A</option>
+  <option value ="B">样式&nbsp;B</option>
+</select>
+           <div id="date_A" style="border:1px solid #9b9b9b;border-radius: 3px;width: 140px;">
+        <input id="cre_date_year"  class="unify_date_id" type="text" placeholder="年" name="cre_date_year"  style="display: inline-block;width: 50px;border-radius: 3px"/>
+       <input id="cre_date_month"  class="unify_date_id" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 40px;border-radius: 3px"/>
+       <input id="cre_date_day"  class="unify_date_id" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 40px;border-radius: 3px"/>
            </div>
-           <div style="display:inline-block;"> <p style="display: inline-block;margin-left: 5px;margin-right: 5px;font-size: 15px">or</p></div>
-<input id="cre_date_str"  type="text" placeholder="例如:“明国时期”"  name="cre_date_str"  style="height:35px;display: inline-block;width: 150px;border-radius: 3px"/>
+<input id="cre_date_str"  class="unify_date_id" type="text" placeholder="例如:“明国时期”"  name="cre_date_str"  style="display:none;height:35px;width: 140px;border-radius: 3px"/>
         <div id = "cre_date_error" class="error-msg"></div>
     </label>
        <label><span>地理位置 :</span>
@@ -98,6 +102,7 @@
   <label style="margin-left: 10px;color: white">地点：</label>
   <input id="where" style="width: 300px;margin-top: 8px;margin-bottom: 5px";name="where" type="text" >
   <input type="button" value="地图上找"  style="margin-right: 10px;" onClick="sear(document.getElementById('where').value);" />
+    <button style="position:absolute;right: 100px;width: 80px;margin-top: 9px;margin-right: 15px;color: #ed310b" onClick="return submit_update()">提交修改</button>
     <button style="position:absolute;right: 0;width: 80px;margin-top: 8px;margin-right: 15px" onClick="javascript:window.history.back();return false;"><img src="../../../static/imgs/back.png" style="height: 20px"></button>
 
 </div>
@@ -107,6 +112,10 @@
 <script type="text/javascript">
     // 百度地图API功能
        // 百度地图API功能
+    if(!localStorage.hasOwnProperty("MapSchema_update_data"))
+    {
+            localStorage.setItem("MapSchema_update_data",JSON.stringify({}));
+    }
     var type_arr = [];
     var showflag=false;
     var marker;
@@ -188,13 +197,13 @@ $(function() {
                 type: "POST",
                 data: post_data,
                 success: function (data) {
-                    receive_data = JSON.parse(data);
-                    address_latitude =receive_data["address_latitude"];
-        address_longitude =receive_data["address_longitude"];
-        address_data =receive_data["address_data"];
-        console.log(receive_data)
-        var point,center_point="none";
-        var user_id = {{ request.session.user_id }}
+                receive_data = JSON.parse(data);
+                address_latitude =receive_data["address_latitude"];
+                address_longitude =receive_data["address_longitude"];
+                address_data =receive_data["address_data"];
+                console.log(receive_data)
+                var point,center_point="none";
+                var user_id = {{ request.session.user_id }}
                 for (var i = 0; i < address_longitude.length; i++) {
                     point = new BMap.Point(parseFloat(address_longitude[i]), parseFloat(address_latitude[i])); //循环生成新的地图点
                     if(address_data[i]["monitor_id"]==user_id)center_point=point;
@@ -211,6 +220,26 @@ $(function() {
              });
 
     }
+ function select_datefill(){
+ var vs = $('#select_1').val();
+      console.log(vs)
+
+ if(vs=="A")
+ {
+     $('#date_A').css("display","block");
+      $('#cre_date_str').css("display","none");
+      $('#cre_date_str').val("");
+
+ }
+ else
+ {
+      $('#date_A').css("display","none");
+     $('#cre_date_str').css("display","block");
+     $('#cre_date_year').val("");
+    $('#cre_date_month').val("");
+    $('#cre_date_day').val("");
+ }
+}
 function createMarker(point,point_data) {
     user_id = {{ request.session.user_id }}
     var marker = new BMap.Marker(point, {
@@ -239,14 +268,19 @@ function createMarker(point,point_data) {
     });
 }
 
-function display_date(pointInfo_datestr, type) {
+function display_date(pointInfo_datestr, type,node_id) {
         if(type == 0)
         {
+            $('#select_1').val('B');
+           select_datefill()
             $('#cre_date_str').val(pointInfo_datestr);
+            $('#cre_date_str').attr("node_id",node_id);
             $('#cre_date_str').css("background","#e8f0fe");
         }
         else if(type==1)
         {
+            $('#select_1').val('A');
+            select_datefill()
             pointInfo_datestr = pointInfo_datestr.replace('#',"");
             var reg = new RegExp("[年月日]","g");
             var temp_str = pointInfo_datestr.replace(reg,"|");
@@ -259,6 +293,8 @@ function display_date(pointInfo_datestr, type) {
             if(str_list.length>2)
             {$('#cre_date_day').val(str_list[2]);
             $('#cre_date_day').css("background","#e8f0fe");}
+            $('.unify_date_id').attr("node_id",node_id);
+
         }
     }
 function clear_form() {
@@ -269,67 +305,118 @@ function clear_form() {
     $("textarea").css('background',"#FBFBFB");
     $('.error-msg').html('');
     $("#show_img").attr("src","");
+    $("#up_demo_block").attr("src","");
+
 }
 function showInfo(thisMarker,point_info) {
     clear_form()
+    var update_data = JSON.parse(localStorage.getItem("MapSchema_update_data"))
+    if(!update_data.hasOwnProperty(point_info["node_id"]))update_data[point_info["node_id"]]={}
+    var record_set = update_data[point_info["node_id"]]
     user_id = {{ request.session.user_id }}
     user_role  = '{{ request.session.role }}';
     showflag=true;
     console.log(point_info["node_id"])
     for(var i in point_info)
     {
-        var str=point_info[i][0];
+        if(i=='node_id' || i=='monitor_id'||i=='marker_type')continue;
+        var value_str=point_info[i],temp_str;
         if(i == "building_name")
         {
-            str=str.slice(0,-2);
-            $('#'+i).val(str);
-            if(str!="")$('#'+i).css("background","#e8f0fe");
+            temp_str= value_str[0][0].slice(0,-2);
+             for(var index_i=1; index_i<value_str.length;index_i++) {
+            temp_str += " "+value_str[index_i][0]
+           temp_str=temp_str.slice(0,-2);
+             }
+            $('#'+i).val(temp_str);
+             $('#'+i).attr('node_id',value_str[0][1])
+            if(temp_str!="")$('#'+i).css("background","#e8f0fe");
         }
         else if(i == "cre_date")
         {
-            if(point_info[i].length>1)
+            temp_str= value_str[0][0]
+            if(record_set.hasOwnProperty("cre_date"))temp_str=record_set["cre_date"][0]
+            console.log(temp_str)
+            if(temp_str.charAt(temp_str.length-1)=='#')
             {
-                display_date(point_info[i][0],0);
-                display_date(point_info[i][1],1);
+                display_date(temp_str,1,value_str[0][1]);
             }
             else
             {
-                if(point_info[i][0].charAt(point_info[i][0].length-1)=='#')
-                {
-                    display_date(point_info[i][0],1);
-                }
-                else
-                {
-                    display_date(point_info[i][0],0);
-                }
+                display_date(temp_str,0,value_str[0][1]);
             }
         }
         else
         {
-            for(var j=1;j<point_info[i].length;j++)
-            {
-                str = str + " " + point_info[i][j];
-            }
-            $('#'+i).val(str);
-            if(str!="")$('#'+i).css("background","#e8f0fe");
+           temp_str=""
+           for(var index_i in value_str)
+           {
+            temp_str = value_str[index_i][0]
+           }
+            $('#'+i).val(temp_str);
+            $('#'+i).attr('node_id',value_str[0][1])
+            if(temp_str!="")$('#'+i).css("background","#e8f0fe");
         }
-
-
     }
+    for(var obj in record_set)
+    {
+        $('#'+obj).val(record_set[obj][0]);
+    }
+
     if (point_info["marker_type"]=='1')
     {
         image_show("重新上传文件")
         type_arr = ["jpg","png","gif","jpeg"];
-        $("#show_img").attr("src","..\\..\\..\\"+point_info["mediaObject"][0]);
+        $("#show_img").attr("src","..\\..\\..\\"+point_info["mediaObject"][0][0]);
+        if(record_set.hasOwnProperty("show_img"))
+            $("#show_img").attr("src", record_set["show_img"][0]);
+            $("#show_img").attr("node_id", value_str[0][1]);
+
     }
     else if(point_info["marker_type"]=='2')
     {
         video_show()
-        $("#video_url").val(point_info["mediaObject"]);
+        $("#video_url").val(point_info["mediaObject"][0][0]);
+        if(record_set.hasOwnProperty("video_url"))
+            $("#video_url").val(record_set["video_url"]);
         $("#video_url").css("background","#e8f0fe");
+        $("#video_url").attr("node_id", value_str[0][1]);
+
     }
     if(user_id == point_info["monitor_id"] || user_role == "A")
     {
+            $("#form").find("input").each(function () {
+         var or_val = $(this).val()
+         $(this).bind('input propertychange', function() {
+
+             var cur_val = $(this).val()
+             if($(this).attr('class')=='unify_date_id')
+                 return
+             if($(this).attr('type')=='text')
+             {
+              record_set[$(this).attr('id')]=[cur_val,$(this).attr('node_id')]
+             }
+             else if($(this).attr('type')=='file')
+             {
+               let file = document.getElementById("up_file");
+                let pos=file.value.lastIndexOf("\\");
+                 let file_name = file.value.substring(pos+1);
+                 console.log(file_name)
+                let reader = new FileReader();
+                reader.onload = function(){
+                 record_set['show_img']= [this.result,file_name,$('#show_img').attr('node_id')]
+                    };
+            reader.readAsDataURL(file.files[0]);
+             }
+         })
+         })
+            $("#form").find("textarea").each(function () {
+              or_val = $(this).val()
+             $(this).bind('input propertychange', function() {
+                  cur_val = $(this).val()
+                 record_set[$(this).attr('id')]=[cur_val,$(this).attr('node_id')]
+             })
+         })
         var index = layer.open({
     skin:'demo-class',
     type: 1,
@@ -341,7 +428,7 @@ function showInfo(thisMarker,point_info) {
     btn1:function()
     {
         $('.error-msg').html("");
-        create_update_point(thisMarker.point.lng,thisMarker.point.lat,point_info["marker_type"],index,true,point_info["node_id"])
+        create_update_point(thisMarker.point.lng,thisMarker.point.lat,point_info["marker_type"],index,true,point_info,update_data)
     },
      btn2:function () {
             var post_data ={ "node_id":point_info["node_id"]};
@@ -378,7 +465,51 @@ function showInfo(thisMarker,point_info) {
 
     }
 }
-function create_update_point(lng,lat,marker_type,index,update=false,node_id=null) {
+function submit_update() {
+    var update_data = JSON.parse(localStorage.getItem("MapSchema_update_data"))
+    console.log(update_data)
+    if($.isEmptyObject(update_data))
+    {
+        alert_info = "没有需要更改的信息。";
+            var index = layer.open({
+                type: 0,
+                content: alert_info,
+               });
+
+    }
+    else
+    {
+        var post_data={};
+        for(var obj in update_data)
+        {
+            if($.isEmptyObject(update_data[obj]))
+            {
+                continue
+            }
+            post_data[obj]=update_data[obj]
+        }
+        console.log(post_data)
+               $.ajax({
+                url: '/map/update/',
+                type: "POST",
+                data: {"post_data":JSON.stringify(post_data)},
+            beforeSend: function () {
+            $.ShowLoadDialog();},
+                success: function (data) {
+                    $.ShowLoadDialogClose();
+                  layer.alert("提交修改成功！")
+                localStorage.setItem("MapSchema_update_data",JSON.stringify({}))
+                    get_location()
+                },
+                error:function () {
+                   $.ShowLoadDialogClose();
+                  layer.alert("提交修改失败！")
+                }
+             });
+    }
+    return false
+}
+function create_update_point(lng,lat,marker_type,index,update=false,point_info=null,update_data=null) {
     console.log(update)
         var flag2 = true;
         var up_file = $('#up_file').val();
@@ -465,82 +596,95 @@ function create_update_point(lng,lat,marker_type,index,update=false,node_id=null
         }
         if(flag2)
         {
-    var selectedFile=new FormData();
-    var cre_date;
-    if(isEmpty(cre_date_year))
-        cre_date="null";
-    else
-    {
-        cre_date=pad_zero(0,cre_date_year);
-        if(!isEmpty(cre_date_month))cre_date=cre_date+"-"+pad_zero(1,cre_date_month);
-        if(!isEmpty(cre_date_day))cre_date=cre_date+"-"+pad_zero(1,cre_date_day);
-    }
-    console.log(cre_date)
-    selectedFile.append("up_file",document.getElementById("up_file").files[0]);
-    selectedFile.append("lng",lng);
-    selectedFile.append("lat",lat);
-    selectedFile.append("title",title);
-    selectedFile.append("building_name",building_name);
-    selectedFile.append("cre_date",cre_date);
-    selectedFile.append("cre_date_str",date_str);
-    selectedFile.append("building_information",building_information);
-    selectedFile.append("creator",creator);
-    selectedFile.append("video_url",video_url);
-    selectedFile.append("CopyrightOwner",CopyrightOwner);
-    selectedFile.append("file_description",file_description);
-    selectedFile.append("location",location);
-    selectedFile.append("encode_type",encode_type);
-    selectedFile.append("announcer",announcer);
-    selectedFile.append("file_citation",file_citation);
-    selectedFile.append("type",type);
-    selectedFile.append("marker_type",marker_type);
-    if(update) selectedFile.append("node_id",node_id);
+            var selectedFile=new FormData();
+            var cre_date;
+            var select_val=$('#select_1').val()
+            if(isEmpty(cre_date_year))
+                cre_date="null";
+            else
+            {
+                cre_date=pad_zero(0,cre_date_year)+"年";
+                if(!isEmpty(cre_date_month))cre_date=cre_date+pad_zero(1,cre_date_month)+"月";
+                if(!isEmpty(cre_date_day))cre_date=cre_date+pad_zero(1,cre_date_day)+"日";
+                cre_date+='#'
+            }
+             if(select_val=='A')
+            {
+                selectedFile.append("cre_date",cre_date);
 
-    console.log(selectedFile);
-    var to_url = "";
-    var alert_info = "";
-    var alert_err = "";
-    if(update)
-    {
-        alert_info = "保存成功!";
-        alert_err = "保存失败!";
-        to_url = '/map/update/';
-    }
-    else if(!update)
-    {
-        alert_info = "标注成功!";
-        alert_err = "标注失败!"
-        to_url = '/map/process/';
-    }
-    $.ajax({
+            }
+            else if(select_val=='B')
+            {
+                selectedFile.append("cre_date",date_str);
+            }
+            if(update)
+            {
+                var record_set = update_data[point_info["node_id"]]
+                if(select_val=='A')
+                {
+                    record_set['cre_date']=[cre_date,$('.unify_date_id').attr('node_id')]
+                }
+                else if(select_val=='B')
+                {
+                    record_set['cre_date']=[date_str,$('#cre_date_str').attr('node_id')]
+                }
+                update_data[point_info["node_id"]]=record_set
+                localStorage.setItem("MapSchema_update_data",JSON.stringify(update_data))
+                alert_info = "保存成功!,修改信息只是暂时保存，需要点击“ 提交修改 ”按钮才能完成更新。";
+                var index = layer.open({
+                    type: 0,
+                    content: alert_info,
+                    btn: ['确定'],});
+                return;// 检验填写的数据，不用生成点
+            }
+            selectedFile.append("up_file",document.getElementById("up_file").files[0]);
+            selectedFile.append("lng",lng);
+            selectedFile.append("lat",lat);
+            selectedFile.append("title",title);
+            selectedFile.append("building_name",building_name);
+            selectedFile.append("building_information",building_information);
+            selectedFile.append("creator",creator);
+            selectedFile.append("video_url",video_url);
+            selectedFile.append("CopyrightOwner",CopyrightOwner);
+            selectedFile.append("file_description",file_description);
+            selectedFile.append("location",location);
+            selectedFile.append("encode_type",encode_type);
+            selectedFile.append("announcer",announcer);
+            selectedFile.append("file_citation",file_citation);
+            selectedFile.append("type",type);
+            selectedFile.append("marker_type",marker_type);
 
-        async: true,
-beforeSend: function () {
-            layer.close(index);
-            $.ShowLoadDialog();
-},
-         type: 'post',
-        url: to_url,
-        cache: false,
-        data: selectedFile,
-        processData:false,
-        contentType:false,
- success: function (result) {
-            $.ShowLoadDialogClose();
-            layer.alert(alert_info);
-            get_location();
+        console.log(selectedFile);
+            $.ajax({
+                async: true,
+        beforeSend: function () {
+                    layer.close(index);
+                    $.ShowLoadDialog();
         },
-        error:function (){
-            $.ShowLoadDialogClose();
-            layer.alert(alert_err)
-        }
+                 type: 'post',
+                url: '/map/process/',
+                cache: false,
+                data: selectedFile,
+                processData:false,
+                contentType:false,
+         success: function (result) {
+                    $.ShowLoadDialogClose();
+                    layer.alert("标注成功!");
+                    get_location();
+                },
+                error:function (){
+                    $.ShowLoadDialogClose();
+                    layer.alert("标注失败!")
+                }
 
-    });
+            });
 
         }
 }
 function popLayer(e) {
+    map.centerAndZoom(e.point, 15);
     clear_form()
+    select_datefill()
     var title_info;
     if(marker_type == 2)
     {
@@ -650,6 +794,7 @@ function choose_form(e) {
 }
 function video_show() {
         $("#show_img").attr("src","");
+        $("#up_demo_block").attr("src","");
         $('#description_value').html("视频说明 :");
         $('#encodetype_value_block').css("display","none");
         $('#source_value').html("视频来源 :");
@@ -666,7 +811,7 @@ function image_show(button_text) {
         $('#video_url_block').css("display","none");
 }
 function isEmpty(obj){
-    if(typeof obj == "undefined" || obj == null || obj == ""){
+    if(typeof obj == "undefined" || obj == null || obj == ""||obj.toString()=='{}'){
         return true;
     }else{
         return false;
@@ -701,11 +846,28 @@ function sear(result) {//地图搜索
     });
     local.search(result);
 }
-function checkFileExt(filename)
+function up_img_process(filename)
 {
+    let file = document.getElementById("up_file").files[0];
+  let reader = new FileReader();
+
+    if($('#show_img').attr('src').length==0)
+    {
+        reader.onload = function(){
+      $('#up_demo_block').attr('src', this.result);
+        };
+            reader.readAsDataURL(file);
+
+    }
+    else if($('#show_img').attr('src').length>0)
+    {
+        reader.onload = function(){
+      $('#show_img').attr('src', this.result);
+        };
+            reader.readAsDataURL(file);
+    }
     console.log("---",type_arr)
  var flag = false; //状态
- //取出上传文件的扩展名
  var index = filename.lastIndexOf(".");
  var ext = filename.substr(index+1);
  //循环比较

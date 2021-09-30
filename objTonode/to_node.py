@@ -4,37 +4,19 @@ import global_data
 class TransNode(object):
     def __init__(self, monitor_id, app_name=None):
         self.cre_vis = {}
+        self.graph = global_data.get_graph()
         self.upd_vis = []
-        self.update_cypher = ""
         self.monitor_id = monitor_id
         self.app_name = app_name
         if app_name == "MapSchema":
             self.markpoint_data = global_data.get_mappoints()
 
-    def update_node(self, obj):
-        if obj in self.upd_vis:
-            return
-        self.upd_vis.append(obj)
-        cur_node_id = obj.node_id
-        attr_value = obj.__dict__
-        for key in attr_value:
-            value_list = attr_value.get(key)
-            if key == 'node_id' or key == 'class_hierarchy' or key == 'app_name' or value_list is None or len(
-                    value_list) == 0:
-                continue
-            for value in value_list:
-                if key == "name":
-                    if '\\' in value:
-                        value = value.replace('\\', '\\\\')
-                    update = "match (n) where id(n)={} set n.name='{}' \n".format(cur_node_id, value)
-                    self.update_cypher += update
-                else:
-                    self.update_node(value)
-        graph = global_data.get_graph()
-        try:
-            graph.run(self.update_cypher)
-        except Exception as e:
-            print("更改失败", e)
+    def update_node(self, update_cypher):
+        for obj in update_cypher:
+            try:
+                self.graph.run(obj)
+            except Exception as e:
+                print("更改失败", e)
 
     def to_node(self, obj):
         if obj in self.cre_vis:
