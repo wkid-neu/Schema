@@ -58,7 +58,7 @@
        <input id="cre_date_month"  class="unify_date_id" type="text" placeholder="月" name="cre_date_month"  style="display: inline-block;width: 40px;border-radius: 3px"/>
        <input id="cre_date_day"  class="unify_date_id" type="text" placeholder="日"  name="cre_date_day"  style="display: inline-block;width: 40px;border-radius: 3px"/>
            </div>
-<input id="cre_date_str"  class="unify_date_id" type="text" placeholder="例如:“明国时期”"  name="cre_date_str"  style="display:none;height:35px;width: 140px;border-radius: 3px"/>
+<input id="cre_date_str"  class="unify_date_id" type="text" placeholder="例如:“民国时期”"  name="cre_date_str"  style="display:none;height:35px;width: 140px;border-radius: 3px"/>
         <div id = "cre_date_error" class="error-msg"></div>
     </label>
        <label><span>地理位置 :</span>
@@ -274,7 +274,7 @@ function display_date(pointInfo_datestr, type,node_id) {
             $('#select_1').val('B');
            select_datefill()
             $('#cre_date_str').val(pointInfo_datestr);
-            $('#cre_date_str').attr("node_id",node_id);
+            $('.unify_date_id').attr("node_id",node_id);
             $('#cre_date_str').css("background","#e8f0fe");
         }
         else if(type==1)
@@ -300,6 +300,7 @@ function display_date(pointInfo_datestr, type,node_id) {
 function clear_form() {
     $("#form").find("input").removeAttr("readonly");
     $("#form").find("textarea").removeAttr("readonly");
+    $("#up_file").attr("disabled",false);
     document.getElementById('form').reset();
     $("input").css('background',"#FBFBFB");
     $("textarea").css('background',"#FBFBFB");
@@ -345,6 +346,7 @@ function showInfo(thisMarker,point_info) {
             {
                 display_date(temp_str,0,value_str[0][1]);
             }
+
         }
         else
         {
@@ -394,6 +396,7 @@ function showInfo(thisMarker,point_info) {
                  return
              if($(this).attr('type')=='text')
              {
+                 if($(this).attr('id')=='creator'&&cur_val==""){cur_val="佚名";}
               record_set[$(this).attr('id')]=[cur_val,$(this).attr('node_id')]
              }
              else if($(this).attr('type')=='file')
@@ -453,6 +456,7 @@ function showInfo(thisMarker,point_info) {
     }
     else
     {
+        $("#up_file").attr("disabled",true);
         $("#form").find("input").attr("readonly","readonly");
         $("#form").find("textarea").attr("readonly","readonly");
      var index = layer.open({
@@ -554,13 +558,6 @@ function create_update_point(lng,lat,marker_type,index,update=false,point_info=n
             $('#location_error').html("*地点不能为空!");
             flag2=false;
         }
-        if(isEmpty(building_information))
-        {
-            building_information ="无"
-        }if(isEmpty(file_description))
-        {
-            file_description = "无"
-        }
         if(isEmpty(title))
         {
             $('#title_error').html("*标题不能为空!");
@@ -626,7 +623,7 @@ function create_update_point(lng,lat,marker_type,index,update=false,point_info=n
                 }
                 else if(select_val=='B')
                 {
-                    record_set['cre_date']=[date_str,$('#cre_date_str').attr('node_id')]
+                    record_set['cre_date']=[date_str,$('.unify_date_id').attr('node_id')]
                 }
                 update_data[point_info["node_id"]]=record_set
                 localStorage.setItem("MapSchema_update_data",JSON.stringify(update_data))

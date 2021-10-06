@@ -53,6 +53,7 @@ def login(request):
                 user = models.UserinfoTab.objects.get(name=username)
                 if user.password == get_md5(password + username):
                     pduser = models.UserinfoTab.objects.filter(name=username).values()[0]["session"]
+                    time_now = datetime.now().strftime("%Y-%m-%d %X")
                     if pduser is None:
                         request.session['is_login'] = True
                         request.session['user_id'] = user.id
@@ -62,10 +63,8 @@ def login(request):
                         if not request.session.session_key:
                             request.session.save()
                         session_id = request.session.session_key
-                        print(session_id,"sss")
                         ip = request.META['REMOTE_ADDR']
-                        ####登录后，会生成session_key,将session_key写入到用户表的session里面
-                        models.UserinfoTab.objects.filter(name=username).update(session=session_id, login_ip = ip)
+                        models.UserinfoTab.objects.filter(name=username).update(session=session_id, login_ip=ip)
                     else:
                         request.session.delete(pduser)
                         request.session['is_login'] = True
@@ -80,7 +79,6 @@ def login(request):
                         # 获取登录IP
                         ip = request.META['REMOTE_ADDR']
                         models.UserinfoTab.objects.filter(name=username).update(login_ip=ip)
-                        time_now = datetime.now().strftime("%Y-%m-%d %X")
                     models.LogininfoTab.objects.create(name=username, login_ip=ip, login_time=time_now, status="登录成功")
                     return redirect("/index/")
                 else:

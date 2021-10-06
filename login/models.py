@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 
 
@@ -11,7 +13,7 @@ class UserinfoTab(models.Model):
     email = models.CharField(unique=True, max_length=256)
     sex = models.CharField(max_length=32)
     role = models.CharField(max_length=32)
-    c_time = models.DateTimeField()
+    c_time = models.DateTimeField(default=datetime.datetime.now)
     session = models.CharField(max_length=256, blank=True, null=True)
     login_ip = models.CharField(max_length=32, blank=True, null=True)
 

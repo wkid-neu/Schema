@@ -103,7 +103,7 @@ function clear_cookie() {
             yes: function(index){
                 //do something
                 localStorage.setItem("MapSchema_update_data",JSON.stringify({}))
-                logout()
+                window.location.href="/logout/";
                 layer.close(index);
               },
               btn2: function(index){
@@ -114,24 +114,10 @@ function clear_cookie() {
     }
     else
     {
-        logout()
+        window.location.href="/logout/";
     }
 }
-function logout() {
-    var post_data = ""
-       $.ajax({
-                url: '/logout/',
-                type: "POST",
-                data: post_data,
-                success: function (data) {
-                    location.reload();
 
-                },
-                error:function () {
-
-                }
-             });
-}
   </script>
   </body>
 </html>
