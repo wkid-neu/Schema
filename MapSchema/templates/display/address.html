@@ -234,7 +234,6 @@ function showInfo(thisMarker,point_info) {
         console.log(typeof value_tuple)
         var str,temp_str;
         temp_str = value_tuple[0][0];
-        if(i == "building_name")temp_str = temp_str.slice(0,-2);
         if(i=="cre_date")
         {
             temp_str =  temp_str.replace('#','');
@@ -242,7 +241,6 @@ function showInfo(thisMarker,point_info) {
         for(var j=1;j<value_tuple.length;j++)
         {
             str = value_tuple[j][0];
-            if(i == "building_name")str = str.slice(0,-2);
             if(i=="cre_date")
             {
                 str =  str.replace('#','');

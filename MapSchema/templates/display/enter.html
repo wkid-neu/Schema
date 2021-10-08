@@ -312,7 +312,7 @@ function clear_form() {
 function showInfo(thisMarker,point_info) {
     clear_form()
     var update_data = JSON.parse(localStorage.getItem("MapSchema_update_data"))
-    if(!update_data.hasOwnProperty(point_info["node_id"]))update_data[point_info["node_id"]]={}
+    if(!update_data.hasOwnProperty(point_info["node_id"]))update_data[point_info["node_id"]]={"marker_type":point_info["marker_type"]}
     var record_set = update_data[point_info["node_id"]]
     user_id = {{ request.session.user_id }}
     user_role  = '{{ request.session.role }}';
@@ -322,18 +322,7 @@ function showInfo(thisMarker,point_info) {
     {
         if(i=='node_id' || i=='monitor_id'||i=='marker_type')continue;
         var value_str=point_info[i],temp_str;
-        if(i == "building_name")
-        {
-            temp_str= value_str[0][0].slice(0,-2);
-             for(var index_i=1; index_i<value_str.length;index_i++) {
-            temp_str += " "+value_str[index_i][0]
-           temp_str=temp_str.slice(0,-2);
-             }
-            $('#'+i).val(temp_str);
-             $('#'+i).attr('node_id',value_str[0][1])
-            if(temp_str!="")$('#'+i).css("background","#e8f0fe");
-        }
-        else if(i == "cre_date")
+        if(i == "cre_date")
         {
             temp_str= value_str[0][0]
             if(record_set.hasOwnProperty("cre_date"))temp_str=record_set["cre_date"][0]
@@ -444,6 +433,8 @@ function showInfo(thisMarker,point_info) {
                 success: function (data) {
                     layer.alert("已删除！")
                     map.removeOverlay(thisMarker);
+                    update_data[point_info["node_id"]]={"marker_type":point_info["marker_type"]}
+                    localStorage.setItem("MapSchema_update_data",JSON.stringify(update_data))
                     layer.close(index);
                 },
                 error:function () {

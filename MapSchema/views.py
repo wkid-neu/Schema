@@ -84,15 +84,15 @@ def trans_data(obj_list):
         class_ = type(obj).__name__
         name = obj.name[0]
         if class_ == "Date":
-            result.append((process_date(name),obj_node_id))
+            result.append((process_date(name), obj_node_id))
         elif class_ == "Integer":
-            result.append((int(name),obj_node_id))
+            result.append((int(name), obj_node_id))
         elif class_ == "Bool":
-            result.append((trans_bool(name),obj_node_id))
+            result.append((trans_bool(name), obj_node_id))
         elif class_ == "Float":
-            result.append((float(name),obj_node_id))
+            result.append((float(name), obj_node_id))
         else:
-            result.append((str(name),obj_node_id))
+            result.append((str(name), obj_node_id))
     return result
 
 
@@ -112,7 +112,8 @@ def get_all_points(request):
     for id in re_medias_id:
         if markpoint_data[id][0] in ["ImageObject", "VideoObject"]:
             property_list = markpoint_data[id][1]
-            temp_data = {'building_name': [(property_list['name'][0], id)], 'title': trans_data(property_list['headline']),
+            temp_data = {'building_name': trans_data(property_list['mentions']),
+                         'title': trans_data(property_list['headline']),
                          "cre_date": trans_data(property_list['dateCreated']),
                          "file_description": trans_data(property_list['description']),
                          "encode_type": trans_data(property_list['encodingFormat']),
@@ -174,7 +175,10 @@ def update(request):
         post_data = json.loads(request.POST.get('post_data'))
         update_cypher = []
         for node_id in post_data:
+            marker_type = post_data[node_id]["marker_type"]
+            print(post_data[node_id])
             for obj in post_data[node_id]:
+                if obj == "marker_type": continue
                 update_tuple = post_data[node_id][obj]
                 if obj == "show_img":
                     base64_text, file_name = update_tuple[0].split(',')[1], update_tuple[1]
@@ -188,6 +192,12 @@ def update(request):
                     update_val = update_tuple[0]
                     update_node_id = update_tuple[1]
                 update_cypher.append("match (n) where id(n)={} set n.name = \"{}\"".format(update_node_id, update_val))
+                if obj == "building_name":
+                    print(",,",update_val)
+                    update_cypher.append(
+                        "match (n) where id(n)={} set n.name = \"{}\"".format(node_id,
+                                                                              update_val + ("照片" if marker_type == 1 else "视频")))
+
         for obj in update_cypher:
             print(obj)
     trans_node = TransNode(user_id, "MapSchema")
