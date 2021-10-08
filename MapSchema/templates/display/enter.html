@@ -102,7 +102,7 @@
   <label style="margin-left: 10px;color: white">地点：</label>
   <input id="where" style="margin-top: 8px;margin-bottom: 5px";name="where" type="text" >
   <input type="button" value="地图上找"  style="margin-right: 10px;" onClick="sear(document.getElementById('where').value);" />
-    <button id="update_submit" style="margin-top: 9px;color: #ed310b" onClick="return submit_update()">提交修改</button>
+    <button id="update_submit" style="width:100px;margin-top: 9px;color: #ed310b" onClick="return submit_update()">提交修改</button>
 
 </div>
   <div style="border:1px solid gray;" id="allmap"></div>  <br />
@@ -184,8 +184,8 @@ $(function() {
         var where_block = document.getElementById('where');
         var submit_block = document.getElementById('update_submit');
         var search_block = document.getElementById('search_block');
-        where_block.style.width = winWidth/7 + 'px';
-        submit_block.style.marginLeft=winWidth*5/7+40+'px';
+        where_block.style.width = winWidth/6 + 'px';
+        submit_block.style.cssFloat="right";
         search_block.style.width=winWidth + 'px';
         map_block.style.height = winHeight*2/3 +50+ 'px';
         map_block.style.width = winWidth + 'px';
