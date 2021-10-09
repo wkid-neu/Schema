@@ -12,8 +12,13 @@
 {% block content %}
       <div  id="show_div" style="display:none;" class="smart-green">
     <img src="" id="show_img" style="width: 250px;">
-    <div id="video_url_block" style="display: none" class="field_div"><div class="lab">视频网址 :</div>
-        <a id="video_url" href="" class="value"></a>
+    <div id="video_url_block" style="display: none" class="field_div"><div class="lab">视频 :</div>
+
+
+        <div ><video width="300" id ="video" class="videoContent" controls>
+   <source id="video_url" src="" type="video/mp4"/>
+</video></div>
+
     </div>
        <div class="field_div"><div class="lab">建筑名称 :</div>
         <span id="building_name" class="value"> </span>
@@ -199,6 +204,7 @@ function createMarker(point,point_data) {
     }
 )(jQuery)
 function video_show() {
+
         $("#show_img").attr("src","");
         $('#description_value').html("视频说明 :");
         $('#encodetype_value_block').css("display","none");
@@ -224,8 +230,10 @@ function showInfo(thisMarker,point_info) {
     else if(point_info["marker_type"]=='2')
     {
         video_show()
-        $("#video_url").attr('href',point_info["mediaObject"][0][0]);
-        $('#video_url').html(point_info["mediaObject"][0][0]);
+        console.log(point_info["mediaObject"][0][0])
+        $("#video_url").attr('src',point_info["mediaObject"][0][0]);
+        document.getElementById("video").load();
+
     }
     for(var i in point_info)
     {

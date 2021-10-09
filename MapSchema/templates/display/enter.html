@@ -34,6 +34,11 @@
                <div id = "up_file_error" class="error-msg" style="font-weight: bold"></div>
 <label id="video_url_block" style="display: none"><span>视频网址 :</span>
         <input id="video_url"  type="text" name="video_url"  />
+
+    <div ><span></span><br><video width="300" id ="video" class="videoContent" controls>
+   <source id="video_play_url" src="" type="video/mp4"/>
+</video></div>
+
         <div id = "video_url_error" class="error-msg" ></div>
     </label>
        <label><span>建筑名称 :</span>
@@ -372,9 +377,16 @@ function showInfo(thisMarker,point_info) {
     else if(point_info["marker_type"]=='2')
     {
         video_show()
+        $("#video_play_url").attr('src',point_info["mediaObject"][0][0]);
+        document.getElementById("video").load();
         $("#video_url").val(point_info["mediaObject"][0][0]);
         if(record_set.hasOwnProperty("video_url"))
+        {
             $("#video_url").val(record_set["video_url"]);
+            $("#video_play_url").attr('src',record_set["video_url"]);
+            document.getElementById("video").load();
+        }
+
         $("#video_url").css("background","#e8f0fe");
         $("#video_url").attr("node_id", value_str[0][1]);
 
