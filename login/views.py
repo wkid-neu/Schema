@@ -83,7 +83,7 @@ def login(request):
                     return redirect("/index/")
                 else:
                     time_now = datetime.now().strftime("%Y-%m-%d %X")
-                    models.Logininfo.objects.create(user=username, login_ip=ip, login_time=time_now, status="密码错误")
+                    models.LogininfoTab.objects.create(name=username, login_ip=ip, login_time=time_now, status="密码错误")
                     message = "密码不正确!"
             except Exception as e:
                 message = "用户不存在!"

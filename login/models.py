@@ -34,8 +34,6 @@ class LogininfoTab(models.Model):
         db_table = 'logininfo_tab'
 
 
-
-
 class CreateinfoTab(models.Model):
     id = models.BigAutoField(primary_key=True)
     user_id = models.BigIntegerField(blank=True, null=True)
