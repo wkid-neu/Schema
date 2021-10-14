@@ -37,9 +37,6 @@
 <label id="video_url_block" style="display: none"><span>视频网址 :</span>
         <input id="video_url"  type="text" name="video_url"  />
 
-<div id="videoCon" class="video" onclick="playQQVideo()">dd</div>
-
-
     <div id="video_play_block"><span></span><br><video width="300" id ="video" class="videoContent" controls>
    <source id="video_play_url" src="" type="video/mp4"/>
 </video></div>
@@ -284,24 +281,7 @@ function createMarker(point,point_data) {
         showInfo(this,point_data);
     });
 }
-
-function playQQVideo(){
-
-    var video = new tvp.VideoInfo();
-    video.setVid("wxv_1664248775357284355");//视频vid
-    var player = new tvp.Player(300, 150);//视频高宽
-    player.setCurVideo(video);
-    player.addParam("autoplay","0");//是否自动播放，1为自动播放，0为不自动播放
-    player.addParam("wmode","opaque");
-    player.addParam("showend",0);
-    player.addParam("adplay",0);
-    player.addParam("wmode","transparent");
-    player.addParam("pic","<%=request.getContextPath()%>/images/cover.png");//默认图片地址
-    player.addParam("flashskin", "http://imgcache.qq.com/minivideo_v1/vd/res/skins/web_small_loading.swf");//是否调用精简皮肤，不使用则删掉此行代码
-    player.write("videoCon");
-
-
-}
+    
 function display_date(pointInfo_datestr, type,node_id) {
         if(type == 0)
         {
