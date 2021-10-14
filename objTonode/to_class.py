@@ -1,10 +1,13 @@
 from datetime import datetime
+
+from py2neo import Graph
+
 from PreprocessData.all_class_files.all_class import *
 
 
 class TransClass(object):
     def __init__(self, monitor_id, app_name):
-        self.graph = global_data.get_graph()
+        self.graph = Graph("http://localhost:7474", username="neo4j", password='123123')
         self.vis = []
         self.result = {}
         self.node_data = {}

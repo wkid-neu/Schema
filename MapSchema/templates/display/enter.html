@@ -18,6 +18,8 @@
     <script type="text/javascript"
             src="http://api.map.baidu.com/api?v=2.0&ak=h40MTWwwSpgwCUEw8MbIiBnc3X4keNgX"></script>
     <script type="text/javascript" src="{% static 'js/3.1.1/layer.js' %}"></script>
+    <script src="http://qzs.qq.com/tencentvideo_v1/js/tvp/tvp.player.js" charset="utf-8"></script>
+
 {% endblock %}
 {% block title %}主页{% endblock %}
 {% block content %}
@@ -34,6 +36,9 @@
                <div id = "up_file_error" class="error-msg" style="font-weight: bold"></div>
 <label id="video_url_block" style="display: none"><span>视频网址 :</span>
         <input id="video_url"  type="text" name="video_url"  />
+
+<div id="videoCon" class="video" onclick="playQQVideo()">dd</div>
+
 
     <div id="video_play_block"><span></span><br><video width="300" id ="video" class="videoContent" controls>
    <source id="video_play_url" src="" type="video/mp4"/>
@@ -116,6 +121,32 @@
 <script type="text/javascript">
     // 百度地图API功能
        // 百度地图API功能
+    $('#li-2').addClass("active");
+        var winWidth,winHeight=0;
+        var map_block = document.getElementById('allmap');
+        if (window.innerWidth)
+        winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth))
+        winWidth = document.body.clientWidth;
+        //获取窗口高度
+        if (window.innerHeight)
+        winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight))
+        winHeight = document.body.clientHeight;
+        //通过深入Document内部对body进行检测，获取窗口大小
+        if (document.documentElement  && document.documentElement.clientHeight && document.documentElement.clientWidth)
+        {
+        winHeight = document.documentElement.clientHeight;
+        winWidth = document.documentElement.clientWidth;
+        }
+        var where_block = document.getElementById('where');
+        var submit_block = document.getElementById('update_submit');
+        var search_block = document.getElementById('search_block');
+        where_block.style.width = winWidth/6 + 'px';
+        submit_block.style.cssFloat="right";
+        search_block.style.width=winWidth + 'px';
+        map_block.style.height = winHeight*2/3 +50+ 'px';
+        map_block.style.width = winWidth + 'px';
     if(!localStorage.hasOwnProperty("MapSchema_update_data"))
     {
             localStorage.setItem("MapSchema_update_data",JSON.stringify({}));
@@ -134,7 +165,7 @@
      var map = new BMap.Map("allmap" ,{ enableMapClick: false }); // 创建Map实例
 
 map.setDefaultCursor("crosshair");
-    map.centerAndZoom(new BMap.Point(123.471095,41.68383), 15); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
+    map.centerAndZoom(new BMap.Point(123.423808, 41.70225), 15); // 初始化地图,设置中心点坐标和地图级别,****代表经纬度，可以通过http://api.map.baidu.com/lbsapi/creatmap/ 来查看你需要的城市的经纬度
 
     //添加地图类型控件
     map.addControl(new BMap.MapTypeControl({
@@ -168,41 +199,17 @@ map.setDefaultCursor("crosshair");
         }
     });
 $(function() {
-        $('#li-2').addClass("active");
-        var winWidth,winHeight=0;
-        var map_block = document.getElementById('allmap');
-        if (window.innerWidth)
-        winWidth = window.innerWidth;
-        else if ((document.body) && (document.body.clientWidth))
-        winWidth = document.body.clientWidth;
-        //获取窗口高度
-        if (window.innerHeight)
-        winHeight = window.innerHeight;
-        else if ((document.body) && (document.body.clientHeight))
-        winHeight = document.body.clientHeight;
-        //通过深入Document内部对body进行检测，获取窗口大小
-        if (document.documentElement  && document.documentElement.clientHeight && document.documentElement.clientWidth)
-        {
-        winHeight = document.documentElement.clientHeight;
-        winWidth = document.documentElement.clientWidth;
-        }
-        var where_block = document.getElementById('where');
-        var submit_block = document.getElementById('update_submit');
-        var search_block = document.getElementById('search_block');
-        where_block.style.width = winWidth/6 + 'px';
-        submit_block.style.cssFloat="right";
-        search_block.style.width=winWidth + 'px';
-        map_block.style.height = winHeight*2/3 +50+ 'px';
-        map_block.style.width = winWidth + 'px';
+
         get_location();
         })
-     function get_location() {
+function get_location() {
     var post_data = "";
     var receive_data="";
     var address_latitude ="";
     var address_longitude ="";
     var address_data ="";
         $.ajax({
+                async:false,
                 url: '/map/get_points/',
                 type: "POST",
                 data: post_data,
@@ -278,6 +285,23 @@ function createMarker(point,point_data) {
     });
 }
 
+function playQQVideo(){
+
+    var video = new tvp.VideoInfo();
+    video.setVid("wxv_1664248775357284355");//视频vid
+    var player = new tvp.Player(300, 150);//视频高宽
+    player.setCurVideo(video);
+    player.addParam("autoplay","0");//是否自动播放，1为自动播放，0为不自动播放
+    player.addParam("wmode","opaque");
+    player.addParam("showend",0);
+    player.addParam("adplay",0);
+    player.addParam("wmode","transparent");
+    player.addParam("pic","<%=request.getContextPath()%>/images/cover.png");//默认图片地址
+    player.addParam("flashskin", "http://imgcache.qq.com/minivideo_v1/vd/res/skins/web_small_loading.swf");//是否调用精简皮肤，不使用则删掉此行代码
+    player.write("videoCon");
+
+
+}
 function display_date(pointInfo_datestr, type,node_id) {
         if(type == 0)
         {
