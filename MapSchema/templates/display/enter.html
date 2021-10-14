@@ -281,7 +281,7 @@ function createMarker(point,point_data) {
         showInfo(this,point_data);
     });
 }
-    
+
 function display_date(pointInfo_datestr, type,node_id) {
         if(type == 0)
         {
@@ -692,7 +692,6 @@ function create_update_point(lng,lat,marker_type,index,update=false,point_info=n
         }
 }
 function popLayer(e) {
-    map.centerAndZoom(e.point, 15);
     clear_form()
     select_datefill()
     var title_info;
