@@ -193,17 +193,18 @@ def update(request):
                     update_node_id = update_tuple[1]
                 update_cypher.append("match (n) where id(n)={} set n.name = \"{}\"".format(update_node_id, update_val))
                 if obj == "building_name":
-                    print(",,",update_val)
+                    print(",,", update_val)
                     update_cypher.append(
                         "match (n) where id(n)={} set n.name = \"{}\"".format(node_id,
-                                                                              update_val + ("照片" if marker_type == 1 else "视频")))
+                                                                              update_val + (
+                                                                                  "照片" if marker_type == 1 else "视频")))
 
         for obj in update_cypher:
             print(obj)
     trans_node = TransNode(user_id, "MapSchema")
     trans_node.update_node(update_cypher)
     set_allmarkers_data(user_id)
-    return render(request, "display/result.html")
+    return HttpResponse(json.dumps({"status": 1}))
 
 
 def process_form(request):
@@ -277,13 +278,16 @@ def process_form(request):
         trans_node.to_node(MediaObject_obj)
         set_allmarkers_data(user_id)
 
-    return render(request, "display/result.html")
+    return HttpResponse(json.dumps({"status": 1}))
 
 
 def delete_process(user_id, node_id):
     user_kg_ids = global_data.get_kg_ids()
     MapSchema_kg_ids = user_kg_ids["MapSchema"]
-    delete_kg(MapSchema_kg_ids[int(node_id)])
+    try:
+        delete_kg(MapSchema_kg_ids[int(node_id)])
+    except Exception as e:
+        print("删除失败!", e)
     set_allmarkers_data(user_id)
 
 
@@ -293,7 +297,7 @@ def delete_point(request):
         node_id = request.POST.get("node_id")
     thread1 = threading.Thread(target=delete_process, args=(user_id, node_id,))
     thread1.start()
-    return render(request, "display/result.html")
+    return HttpResponse(json.dumps({"status": 1}))
 
 
 def edit_users(request):

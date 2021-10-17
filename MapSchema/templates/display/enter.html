@@ -451,10 +451,9 @@ function showInfo(thisMarker,point_info) {
                 url: '/map/delete_point/',
                 type: "POST",
                 data: post_data,
-                async: true,
                 success: function (data) {
-                    layer.alert("已删除！")
                     map.removeOverlay(thisMarker);
+                    layer.alert("已删除！")
                     update_data[point_info["node_id"]]={"marker_type":point_info["marker_type"]}
                     localStorage.setItem("MapSchema_update_data",JSON.stringify(update_data))
                     layer.close(index);
@@ -508,6 +507,7 @@ function submit_update() {
         console.log(post_data)
                $.ajax({
                 url: '/map/update/',
+               async:true,
                 type: "POST",
                 data: {"post_data":JSON.stringify(post_data)},
             beforeSend: function () {

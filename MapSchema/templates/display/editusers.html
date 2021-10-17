@@ -54,6 +54,7 @@ function edit_submit() {
      $.ajax({
                 url: '/map/edit_process/',
                 type: "POST",
+                async:false,
                 data: {'update':JSON.stringify(update_data)},
                 success: function (data) {
                     data = JSON.parse(data)
