@@ -454,7 +454,7 @@ function showInfo(thisMarker,point_info) {
                 success: function (data) {
                     map.removeOverlay(thisMarker);
                     layer.alert("已删除！")
-                    update_data[point_info["node_id"]]={"marker_type":point_info["marker_type"]}
+                    delete update_data[point_info["node_id"]];
                     localStorage.setItem("MapSchema_update_data",JSON.stringify(update_data))
                     layer.close(index);
                 },
