@@ -1,7 +1,7 @@
 #show_div {
 /*margin-left: auto;*/
 
- width: 350px;
+ width: 340px;
 /*background: #F8F8F8;*/
 padding: 20px 60px 40px 20px;
 color: #000000;
@@ -29,5 +29,5 @@ font-weight: bold;
 .field_div
 {
  line-height: 25px;
- width: 340px;
+ width: 300px;
 }
