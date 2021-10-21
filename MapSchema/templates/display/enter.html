@@ -37,9 +37,9 @@
 <label id="video_url_block" style="display: none"><span>视频网址 :</span>
         <input id="video_url"  type="text" name="video_url"  />
 
-    <div id="video_play_block"><span></span><br><video width="300" id ="video" class="videoContent" controls>
-   <source id="video_play_url" src="" type="video/mp4"/>
-</video></div>
+     <div id ="video" class="videoContent">
+        <iframe class="video_iframe"   width="300" height="200" id="video_url" src="http://v.qq.com/iframe/player.html?vid=d0163kxz8di&amp;width=300&amp;height=250&amp;auto=0" allowfullscreen="false" frameborder="0" scrolling="no"></iframe>
+        </div>
 
         <div id = "video_url_error" class="error-msg" ></div>
     </label>
@@ -383,13 +383,11 @@ function showInfo(thisMarker,point_info) {
         video_show()
         $('#video_play_block').css("display","block");
         $("#video_play_url").attr('src',point_info["mediaObject"][0][0]);
-        document.getElementById("video").load();
         $("#video_url").val(point_info["mediaObject"][0][0]);
         if(record_set.hasOwnProperty("video_url"))
         {
             $("#video_url").val(record_set["video_url"][0]);
             $("#video_play_url").attr('src',record_set["video_url"][0]);
-            document.getElementById("video").load();
         }
 
         $("#video_url").css("background","#e8f0fe");

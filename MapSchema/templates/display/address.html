@@ -15,9 +15,9 @@
     <div id="video_url_block" style="display: none" class="field_div"><div class="lab">视频 :</div>
 
 
-        <div ><video width="300" id ="video" class="videoContent" controls>
-   <source id="video_url" src="" type="video/mp4"/>
-</video></div>
+        <div id ="video" class="videoContent">
+        <iframe class="video_iframe"   width="300" height="200" id="video_url" src="http://v.qq.com/iframe/player.html?vid=d0163kxz8di&amp;width=300&amp;height=250&amp;auto=0" allowfullscreen="false" frameborder="0" scrolling="no"></iframe>
+        </div>
 
     </div>
        <div class="field_div"><div class="lab">建筑名称 :</div>
@@ -60,7 +60,6 @@
 
   <div style="border:1px solid gray" id="allmap"></div><br>
     <p style="color: #304d5e;font-size: 12px;margin-left: 5px">红色五角星:&nbsp;您本人创建的标注点;<br>黄色五角星:&nbsp;其他用户创建的标注点;</p>
-
 <script type="text/javascript">
         $('#li-1').addClass("active");
         var winWidth,winHeight=0;
@@ -237,7 +236,6 @@ function showInfo(thisMarker,point_info) {
         video_show()
         console.log(point_info["mediaObject"][0][0])
         $("#video_url").attr('src',point_info["mediaObject"][0][0]);
-        document.getElementById("video").load();
 
     }
     for(var i in point_info)
@@ -266,7 +264,7 @@ function showInfo(thisMarker,point_info) {
      layer.open({
     type: 1,
     title: '标注信息',
-    area: ['360px', '550px'],
+    area: ['350px', '550px'],
     content: $('#show_div')
   });
 }
