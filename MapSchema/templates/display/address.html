@@ -159,27 +159,60 @@ $(function() {
     }
 function createMarker(point,point_data) {
     user_id = {{ request.session.user_id }}
-    var marker = new BMap.Marker(point, {
-  // 初始化五角星symbol
-  icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {
-    scale: 1,
-    fillColor: "yellow",
-    fillOpacity: 0.8
-  })
-});
-    if(user_id == point_data["monitor_id"])
-    {
-        marker = new BMap.Marker(point, {
-  // 初始化五角星symbol
-  icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {
-    scale: 1,
-    fillColor: "red",
-    fillOpacity: 0.8
-  })
-});
-    }
+     var myIcon1 = new BMap.Icon("../../../static/imgs/img_icon.jpeg", new BMap.Size(25, 25), {
+        // 指定定位位置。
+        // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+        // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+        // 图标中央下端的尖角位置。
+        anchor: new BMap.Size(10, 10),
+    });
+      var myIcon2 = new BMap.Icon("../../../static/imgs/video_icon.jpeg", new BMap.Size(25, 25), {
+        // 指定定位位置。
+        // 当标注显示在地图上时，其所指向的地理位置距离图标左上
+        // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
+        // 图标中央下端的尖角位置。
+        anchor: new BMap.Size(10, 10),
+    });
+      var marker;
+      if(point_data["marker_type"]=='1')
+      {
+          marker = new BMap.Marker(point, {icon: myIcon1});
+      }
+      else if(point_data["marker_type"]=='2')
+      {
+          marker = new BMap.Marker(point, {icon: myIcon2});
+
+      }
+
+    {#if(user_id == point_data["monitor_id"])#}
+    {#{#}
+    {#        marker = new BMap.Marker(point, {#}
+    {#      // 初始化五角星symbol#}
+    {#      icon: new BMap.Symbol(BMap_Symbol_SHAPE_STAR, {#}
+    {#        scale: 1,#}
+    {#        fillColor: "red",#}
+    {#        fillOpacity: 0.8#}
+    {#      })#}
+    {#    });#}
+    {#}#}
+
+
+
 
     map.addOverlay(marker);
+    var opts = {
+		width : 50,     // 信息窗口宽度
+		height: 50,     // 信息窗口高度
+		title : "地点名称：" , // 信息窗口标题
+		};
+    var infoWindow = new BMap.InfoWindow(point_data["building_name"][0][0], opts);  // 创建信息窗口对象
+
+		marker.addEventListener("mouseover", function(){
+			map.openInfoWindow(infoWindow,point); //开启信息窗口
+		});
+		marker.addEventListener("mouseout", function() {
+            map.closeInfoWindow(infoWindow, point); //开启信息窗口
+        });
     marker.addEventListener('click', function () {
         showInfo(this,point_data);
     });
@@ -242,7 +275,6 @@ function showInfo(thisMarker,point_info) {
     {
         if(i=='node_id' || i=='monitor_id'||i=='marker_type')continue;
         value_tuple = point_info[i]
-        console.log(typeof value_tuple)
         var str,temp_str;
         temp_str = value_tuple[0][0];
         if(i=="cre_date")

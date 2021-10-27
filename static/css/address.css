@@ -31,3 +31,50 @@ font-weight: bold;
  line-height: 25px;
  width: 300px;
 }
+/*地图标题*/
+.BMap_bubble_title {
+	color:white;
+	font-size:13px;
+	font-weight:bold;
+	text-align:left;
+	padding-left:5px;
+	padding-top:5px;
+	border-bottom:1px solid #ffffff;
+	background-color: #eb9316;
+}
+/* 消息内容 */
+.BMap_bubble_content {
+	background-color:white;
+	padding-left:5px;
+	padding-top:5px;
+	padding-bottom:10px;
+}
+/* 内容 */
+.BMap_pop div:nth-child(9) {
+	top:35px !important;
+	border-radius:7px;
+}
+/* 左上角删除按键 */
+.BMap_pop img {
+	top:43px !important;
+	left:215px !important;
+}
+.BMap_top {
+	display:none;
+}
+.BMap_bottom {
+	display:none;
+}
+.BMap_center {
+	display:none;
+}
+/* 隐藏边角 */
+.BMap_pop div:nth-child(1) div {
+	display:none;
+}
+.BMap_pop div:nth-child(3) {
+	display:none;
+}
+.BMap_pop div:nth-child(7) {
+	display:none;
+}
