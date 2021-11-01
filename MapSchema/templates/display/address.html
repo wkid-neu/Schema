@@ -159,14 +159,14 @@ $(function() {
     }
 function createMarker(point,point_data) {
     user_id = {{ request.session.user_id }}
-     var myIcon1 = new BMap.Icon("../../../static/imgs/3120d5360c8067cdd8ed56c9c5e45a6.png", new BMap.Size(27, 25), {
+     var myIcon1 = new BMap.Icon("../../../static/imgs/img_icon.png", new BMap.Size(38, 36), {
         // 指定定位位置。
         // 当标注显示在地图上时，其所指向的地理位置距离图标左上
         // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
         // 图标中央下端的尖角位置。
         anchor: new BMap.Size(10, 10),
     });
-      var myIcon2 = new BMap.Icon("../../../static/imgs/e36c2251bb9dda53ca110e4c0dd9239.png", new BMap.Size(27, 21), {
+      var myIcon2 = new BMap.Icon("../../../static/imgs/video_icon.png", new BMap.Size(38, 30), {
         // 指定定位位置。
         // 当标注显示在地图上时，其所指向的地理位置距离图标左上
         // 角各偏移10像素和25像素。您可以看到在本例中该位置即是
