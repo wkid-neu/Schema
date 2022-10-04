@@ -4,6 +4,7 @@ from PreprocessData.database_op import datasql
 
 
 class global_var:
+    graph = Graph("bolt://localhost:7687", username="neo4j", password='123123')
     pre_data = {"NoneType": "空值", "str": "自定义字符串", "Text": "自定义字符串", "Integer": "整数", "Bool": "布尔（真假）", "Date": "日期",
                 "Float": "非整数"}
     msql = datasql()
@@ -39,6 +40,10 @@ class global_var:
 
 def set_table(value):
     global_var.range_table = value
+
+
+def get_graph():
+    return global_var.graph
 
 
 def get_table():

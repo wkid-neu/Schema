@@ -6,7 +6,7 @@ import global_data
 class TransNode(object):
     def __init__(self, monitor_id, app_name=None):
         self.cre_vis = {}
-        self.graph = Graph("http://localhost:7474", username="neo4j", password='123123')
+        self.graph = global_data.get_graph()
         self.upd_vis = []
         self.monitor_id = monitor_id
         self.app_name = app_name

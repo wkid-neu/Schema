@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-{% block title %}搜索{% endblock %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/create.css' %}">
       <script type="text/javascript" src="http://d3js.org/d3.v5.min.js"></script>
@@ -10,21 +9,21 @@
 {% block content %}
 
 <div>
-
-    <button onclick="javascript:history.back(-1);">返回上一页</button>
-
     <svg></svg></div>
     <script>
+            $('#li-4').addClass("active");
     var user_id = {{ request.session.user_id }}
     var app_name = '{{ request.session.app_name }}'
     var path=""
     if(app_name == 'MapSchema')
     {
         path = "http://127.0.0.1:8000/static/KGJson/"+app_name+"_nodes_json.json"
+         //path = "/static/KGJson/"+app_name+"_nodes_json.json"
     }
     else
     {
         path = "http://127.0.0.1:8000/static/KGJson/"+app_name+"_"+user_id+"_nodes_json.json"
+        // path = "/static/KGJson/"+app_name+"_"+user_id+"_nodes_json.json"
     }
         d3.json(path).then(function(dataJson){
             //GroupExplorer constructing function

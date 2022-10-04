@@ -4,6 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -5837,6 +5838,17 @@ button.list-group-item-danger.active:focus {
   padding: 9px;
   border-radius: 3px;
 }
+ .beian {
+
+       position:absolute;
+
+      left:50%;
+
+      bottom:0;
+
+      text-align :center;
+
+        }
 .close {
   float: right;
   font-size: 21px;
